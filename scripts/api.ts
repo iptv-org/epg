@@ -26,8 +26,10 @@ async function loadData() {
   data.feedsKeyByStreamId = feeds.keyBy((feed: sdk.Models.Feed) => feed.getStreamId())
   data.feedsGroupedByChannelId = feeds.groupBy((feed: sdk.Models.Feed) => feed.channel)
 
-  const searchableData = channels.map((channel: sdk.Models.Channel) => channel.getSearchable())
-  searchIndex = sdk.SearchEngine.createIndex<sdk.Types.ChannelSearchableData>(searchableData.all())
+  const searchableData = channels.map((channel: sdk.Models.Channel) =>
+    sanitizeSearchableData(channel.getSearchable())
+  )
+  searchIndex = sdk.SearchEngine.createIndex<sdk.Types.ChannelSearchableData>(searchableData)
 }
 
 async function downloadData() {
@@ -113,6 +115,22 @@ function searchChannels(query: string): Collection<sdk.Models.Channel> {
   )
 
   return channels
+}
+
+function sanitizeSearchableData(
+  item: sdk.Types.ChannelSearchableData
+): sdk.Types.ChannelSearchableData {
+  const sanitized = Object.fromEntries(
+    Object.entries(item).map(([key, value]) => {
+      if (Array.isArray(value)) {
+        return [key, value.filter(entry => entry !== null && entry !== undefined)]
+      }
+
+      return [key, value === undefined || value === null ? '' : value]
+    })
+  )
+
+  return sanitized as sdk.Types.ChannelSearchableData
 }
 
 export { data, loadData, downloadData, searchChannels }

@@ -107,8 +107,8 @@ describe('epg:grab', () => {
       { to: 'string' }
     )
 
-    const output = new Set(outputString.split('\r\n'))
-    const expected = new Set(expectedString.split('\r\n'))
+    const output = new Set(normalizeContent(outputString).split('\r\n'))
+    const expected = new Set(normalizeContent(expectedString).split('\r\n'))
 
     expect(output).toEqual(expected)
   })
@@ -160,8 +160,8 @@ describe('epg:grab', () => {
       { to: 'string' }
     )
 
-    const output = new Set(outputString.split('\r\n'))
-    const expected = new Set(expectedString.split('\r\n'))
+    const output = new Set(normalizeContent(outputString).split('\r\n'))
+    const expected = new Set(normalizeContent(expectedString).split('\r\n'))
 
     expect(output).toEqual(expected)
   })
@@ -198,10 +198,114 @@ describe('epg:grab', () => {
       content('tests/__data__/expected/epg_grab/json/guide.json')
     )
   })
+
+  it('can fill schedule gaps with localized dummy programs', () => {
+    const outputPath = path.resolve('tests/__data__/output/guides/fill_gaps.guide.xml')
+    const cmd = `cross-env SITES_DIR=tests/__data__/input/fill_gaps/sites CURR_DATE=2022-10-20 DATA_DIR=tests/__data__/input/data npm run grab --- --sites=gapfill.com --fill-gaps --json --output="${outputPath}"`
+    const stdout = execSync(cmd, { encoding: 'utf8' })
+    if (process.env.DEBUG === 'true') console.log(cmd, stdout)
+
+    const xml = fs.readFileSync(pathToFileURL(outputPath), 'utf8')
+    const json = JSON.parse(
+      fs.readFileSync(pathToFileURL('tests/__data__/output/guides/fill_gaps.json'), 'utf8')
+    )
+
+    const xmlProgrammeCount = (xml.match(/<programme /g) || []).length
+    expect(xmlProgrammeCount).toBe(38)
+    expect(json.programs).toHaveLength(38)
+
+    const enPrograms = json.programs.filter((program: any) => program.channel === 'GapLong.us')
+    expect(enPrograms).toHaveLength(8)
+    expect(
+      enPrograms
+        .filter((program: any) => program.titles[0].value === 'Off Air')
+        .map((program: any) => [program.start, program.stop])
+    ).toEqual([
+      [1666224000000, 1666238400000],
+      [1666238400000, 1666240200000],
+      [1666249800000, 1666264200000],
+      [1666264200000, 1666278600000],
+      [1666278600000, 1666293000000],
+      [1666293000000, 1666307400000],
+      [1666307400000, 1666310400000]
+    ])
+
+    const frPrograms = json.programs.filter((program: any) => program.channel === 'GapEmpty.fr')
+    expect(frPrograms).toHaveLength(6)
+    expect(frPrograms.every((program: any) => program.titles[0].value === 'Pause')).toBe(true)
+
+    const itPrograms = json.programs.filter((program: any) => program.channel === 'GapMiddle.it')
+    expect(itPrograms).toHaveLength(9)
+    expect(
+      itPrograms
+        .filter((program: any) => program.titles[0].value === 'Pausa')
+        .map((program: any) => [program.start, program.stop])
+    ).toEqual([
+      [1666224000000, 1666227600000],
+      [1666231200000, 1666242000000],
+      [1666245600000, 1666260000000],
+      [1666260000000, 1666274400000],
+      [1666274400000, 1666288800000],
+      [1666288800000, 1666303200000],
+      [1666303200000, 1666310400000]
+    ])
+
+    const dePrograms = json.programs.filter((program: any) => program.channel === 'GapOverlap.de')
+    expect(dePrograms).toHaveLength(8)
+    expect(
+      dePrograms
+        .filter((program: any) => program.titles[0].value === 'Sendepause')
+        .map((program: any) => [program.start, program.stop])
+    ).toEqual([
+      [1666224000000, 1666227600000],
+      [1666245600000, 1666260000000],
+      [1666260000000, 1666274400000],
+      [1666274400000, 1666288800000],
+      [1666288800000, 1666303200000],
+      [1666303200000, 1666310400000]
+    ])
+
+    const esPrograms = json.programs.filter((program: any) => program.channel === 'GapError.es')
+    expect(esPrograms).toHaveLength(0)
+    expect(stdout).toContain('ERR: Parser failure')
+
+    const fallbackPrograms = json.programs.filter(
+      (program: any) => program.channel === 'GapFallback.xx'
+    )
+    const fallbackDummies = fallbackPrograms.filter(
+      (program: any) => program.titles[0].value === 'Off Air'
+    )
+    expect(fallbackPrograms).toHaveLength(7)
+    expect(fallbackDummies).toHaveLength(6)
+    expect(fallbackDummies.every((program: any) => program.titles[0].lang === 'xx')).toBe(true)
+
+    const dummyPrograms = json.programs.filter((program: any) => {
+      const title = program.titles[0].value
+      return ['Off Air', 'Pause', 'Pausa', 'Sendepause'].includes(title)
+    })
+    expect(
+      dummyPrograms.every((program: any) => program.stop - program.start <= 4 * 60 * 60 * 1000)
+    ).toBe(true)
+    expect(
+      dummyPrograms.every(
+        (program: any) => program.descriptions.length === 0 && program.categories.length === 0
+      )
+    ).toBe(true)
+
+    expect(xml).toContain('<title lang="fr">Pause</title>')
+    expect(xml).toContain('<title lang="de">Sendepause</title>')
+    expect(xml).toContain('<title lang="xx">Off Air</title>')
+  })
 })
 
 function content(filepath: string) {
   const string = fs.readFileSync(pathToFileURL(filepath), 'utf8')
 
-  return new Set(string.split('\r\n'))
+  return new Set(normalizeContent(string).split('\r\n'))
+}
+
+function normalizeContent(content: string) {
+  return content
+    .replace(/<url>[^<]*<\/url>/g, '')
+    .replace(/,"url":"[^"]*"/g, ',"url":null')
 }

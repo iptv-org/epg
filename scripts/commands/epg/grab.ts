@@ -9,10 +9,11 @@ import { Storage } from '@freearhey/storage-js'
 import { CurlGenerator } from 'curl-generator'
 import { QueueItem } from '../../types/queue'
 import { Option, program } from 'commander'
-import { SITES_DIR } from '../../constants'
+import { ROOT_DIR, SITES_DIR } from '../../constants'
 import { data, loadData } from '../../api'
 import dayjs, { Dayjs } from 'dayjs'
 import merge from 'lodash.merge'
+import fs from 'fs'
 import path from 'path'
 import {
   parseBooleanOrString,
@@ -62,6 +63,11 @@ program
       .env('MAX_CONNECTIONS')
   )
   .addOption(
+    new Option('--fill-gaps', 'Fill schedule gaps with a dummy program')
+      .argParser(parseBoolean)
+      .env('FILL_GAPS')
+  )
+  .addOption(
     new Option('--gzip [path]', 'Create a compressed version of the guide as well')
       .argParser(parseBooleanOrString)
       .env('GZIP')
@@ -91,9 +97,27 @@ interface GrabOptions {
   lang?: string
   days?: number
   proxy?: string
+  fillGaps?: boolean
 }
 
 const options: GrabOptions = program.opts()
+const DEFAULT_LANG = 'en'
+const DEFAULT_GAP_TITLE = 'Off Air'
+const MAX_GAP_DURATION_MS = 4 * 60 * 60 * 1000
+const GAP_TITLES_PATH = path.resolve(ROOT_DIR, 'scripts/data/gap_titles.json')
+
+interface ChannelDayInfo {
+  channelId: string
+  site: string
+  lang: string
+  rangeStart: number
+  rangeEnd: number
+}
+
+interface ChannelDayState {
+  hasSuccess: boolean
+  hasFailure: boolean
+}
 
 async function main() {
   if (!Array.isArray(options.sites) && typeof options.channels !== 'string')
@@ -128,6 +152,7 @@ async function main() {
   if (typeof options.maxConnections === 'number')
     globalConfig.maxConnections = options.maxConnections
   if (typeof options.curl === 'boolean') globalConfig.curl = options.curl
+  if (typeof options.fillGaps === 'boolean') globalConfig.fillGaps = options.fillGaps
   if (typeof options.gzip === 'boolean' || typeof options.gzip === 'string')
     globalConfig.gzip = options.gzip
   if (typeof options.json === 'boolean' || typeof options.json === 'string')
@@ -219,11 +244,14 @@ async function main() {
 
   logger.info('creating queue...')
   const queue = new Collection<QueueItem>()
+  const channelDayInfoByKey = new Map<string, ChannelDayInfo>()
+  const channelDayStateByKey = new Map<string, ChannelDayState>()
 
   let index = 0
   for (const channel of channelsFromXML.all()) {
     channel.index = index++
     if (!channel.site || !channel.site_id || !channel.name) continue
+    const site = channel.site
 
     const config = merge({}, defaultConfig, await loadJs(channel.getConfigPath()))
 
@@ -232,11 +260,30 @@ async function main() {
     const days = globalConfig.days || config.days
     const currDate = dayjs.utc(process.env.CURR_DATE || new Date().toISOString())
     const dates = Array.from({ length: days }, (_, day) => currDate.add(day, 'd'))
+    const lang = channel.lang || DEFAULT_LANG
 
     dates.forEach((date: Dayjs) => {
+      const rangeStart = date.startOf('day').valueOf()
+      const dayKey = buildDayKey(channel.xmltv_id, site, lang, rangeStart)
+
+      channelDayInfoByKey.set(dayKey, {
+        channelId: channel.xmltv_id,
+        site,
+        lang,
+        rangeStart,
+        rangeEnd: date.startOf('day').add(1, 'd').valueOf()
+      })
+      if (!channelDayStateByKey.has(dayKey)) {
+        channelDayStateByKey.set(dayKey, {
+          hasSuccess: false,
+          hasFailure: false
+        })
+      }
+
       queue.add({
         channel,
         date,
+        dayKey,
         config: { ...config },
         error: null
       })
@@ -258,7 +305,9 @@ async function main() {
 
   const requests = queue.all().map((queueItem: QueueItem) =>
     limit(async () => {
-      const { channel, config, date } = queueItem
+      const { channel, config, date, dayKey } = queueItem
+      const dayState = channelDayStateByKey.get(dayKey)
+      const originalUrl = channel.url
 
       if (!channel.logo) {
         if (config.logo) {
@@ -270,33 +319,69 @@ async function main() {
 
       channels.add(channel)
 
-      const channelPrograms = await grabber.grab(
-        channel,
-        date,
-        config,
-        (context: epgGrabber.Types.GrabCallbackContext, error: Error | null) => {
-          logger.info(
-            `  [${i}/${total}] ${context.channel.site} (${context.channel.lang}) - ${
-              context.channel.xmltv_id
-            } - ${context.date.format('MMM D, YYYY')} (${context.programs.length} programs)`
-          )
-          if (i < total) i++
+      let hasError = false
 
-          if (error) {
-            logger.info(`    ERR: ${error.message}`)
+      try {
+        const channelPrograms = await grabber.grab(
+          channel,
+          date,
+          config,
+          (context: epgGrabber.Types.GrabCallbackContext, error: Error | null) => {
+            logger.info(
+              `  [${i}/${total}] ${context.channel.site} (${context.channel.lang}) - ${
+                context.channel.xmltv_id
+              } - ${context.date.format('MMM D, YYYY')} (${context.programs.length} programs)`
+            )
+            if (i < total) i++
+
+            if (error) {
+              hasError = true
+              logger.info(`    ERR: ${error.message}`)
+            }
+          }
+        )
+
+        const _programs = new Collection<epgGrabber.Program>(channelPrograms).map<Program>(
+          program => new Program(program.toObject())
+        )
+
+        programs.concat(_programs)
+
+        if (dayState) {
+          if (hasError) {
+            dayState.hasFailure = true
+          } else {
+            dayState.hasSuccess = true
           }
         }
-      )
-
-      const _programs = new Collection<epgGrabber.Program>(channelPrograms).map<Program>(
-        program => new Program(program.toObject())
-      )
-
-      programs.concat(_programs)
+      } catch (error) {
+        const currentIndex = i
+        if (i < total) i++
+        logger.info(
+          `  [${currentIndex}/${total}] ${channel.site} (${channel.lang}) - ${channel.xmltv_id} - ${date.format(
+            'MMM D, YYYY'
+          )} (0 programs)`
+        )
+        logger.info(`    ERR: ${(error as Error).message}`)
+        if (dayState) dayState.hasFailure = true
+      } finally {
+        channel.url = originalUrl
+      }
     })
   )
 
   await Promise.all(requests)
+
+  const fillGaps =
+    options.fillGaps === undefined ? Boolean(defaultConfig.fillGaps) : parseBoolean(options.fillGaps)
+  if (fillGaps) {
+    fillProgramGaps({
+      programs,
+      channelDayInfoByKey,
+      channelDayStateByKey,
+      gapTitlesByLang: loadGapTitles()
+    })
+  }
 
   const output = globalConfig.output || defaultConfig.output
 
@@ -340,6 +425,148 @@ async function main() {
 }
 
 main()
+
+function fillProgramGaps({
+  programs,
+  channelDayInfoByKey,
+  channelDayStateByKey,
+  gapTitlesByLang
+}: {
+  programs: Collection<Program>
+  channelDayInfoByKey: Map<string, ChannelDayInfo>
+  channelDayStateByKey: Map<string, ChannelDayState>
+  gapTitlesByLang: Record<string, string>
+}) {
+  const programsByDayKey = new Map<string, Program[]>()
+
+  for (const program of programs.all()) {
+    if (typeof program.start !== 'number' || typeof program.stop !== 'number') continue
+
+    const lang = resolveProgramLang(program)
+    const dayKey = buildDayKey(program.channel, program.site, lang, dayjs.utc(program.start).startOf('day').valueOf())
+    const groupPrograms = programsByDayKey.get(dayKey) || []
+    groupPrograms.push(program)
+    programsByDayKey.set(dayKey, groupPrograms)
+  }
+
+  const gapPrograms: Program[] = []
+
+  for (const [dayKey, dayInfo] of channelDayInfoByKey) {
+    const dayState = channelDayStateByKey.get(dayKey)
+    if (!dayState || dayState.hasFailure || !dayState.hasSuccess) continue
+
+    const groupPrograms = (programsByDayKey.get(dayKey) || [])
+      .filter(program => isValidProgramRange(program))
+      .sort((a, b) => a.start - b.start || a.stop - b.stop)
+
+    const gapTitle = getGapTitle(dayInfo.lang, gapTitlesByLang)
+    let cursor = dayInfo.rangeStart
+
+    for (const program of groupPrograms) {
+      if (program.stop <= dayInfo.rangeStart) {
+        cursor = Math.max(cursor, program.stop)
+        continue
+      }
+      if (program.start >= dayInfo.rangeEnd) break
+
+      const programStart = Math.max(program.start, dayInfo.rangeStart)
+      const programStop = Math.min(program.stop, dayInfo.rangeEnd)
+
+      if (programStart > cursor) {
+        appendGapPrograms({
+          gapPrograms,
+          site: dayInfo.site,
+          channelId: dayInfo.channelId,
+          lang: dayInfo.lang,
+          title: gapTitle,
+          start: cursor,
+          stop: programStart
+        })
+      }
+
+      cursor = Math.max(cursor, programStop)
+    }
+
+    if (cursor < dayInfo.rangeEnd) {
+      appendGapPrograms({
+        gapPrograms,
+        site: dayInfo.site,
+        channelId: dayInfo.channelId,
+        lang: dayInfo.lang,
+        title: gapTitle,
+        start: cursor,
+        stop: dayInfo.rangeEnd
+      })
+    }
+  }
+
+  programs.concat(new Collection(gapPrograms))
+}
+
+function appendGapPrograms({
+  gapPrograms,
+  site,
+  channelId,
+  lang,
+  title,
+  start,
+  stop
+}: {
+  gapPrograms: Program[]
+  site: string
+  channelId: string
+  lang: string
+  title: string
+  start: number
+  stop: number
+}) {
+  let cursor = start
+
+  while (cursor < stop) {
+    const chunkStop = Math.min(cursor + MAX_GAP_DURATION_MS, stop)
+    gapPrograms.push(
+      new Program({
+        site,
+        channel: channelId,
+        start: cursor,
+        stop: chunkStop,
+        titles: [{ value: title, lang }]
+      } as epgGrabber.Program)
+    )
+    cursor = chunkStop
+  }
+}
+
+function isValidProgramRange(program: Program): boolean {
+  return (
+    typeof program.start === 'number' &&
+    typeof program.stop === 'number' &&
+    Number.isFinite(program.start) &&
+    Number.isFinite(program.stop) &&
+    program.stop > program.start
+  )
+}
+
+function buildDayKey(channelId: string, site: string, lang: string, rangeStart: number): string {
+  return `${channelId}:${site}:${lang}:${rangeStart}`
+}
+
+function resolveProgramLang(program: Program): string {
+  const firstTitle = Array.isArray(program.titles) ? program.titles[0] : null
+  return firstTitle && firstTitle.lang ? firstTitle.lang : DEFAULT_LANG
+}
+
+function loadGapTitles(): Record<string, string> {
+  try {
+    return JSON.parse(fs.readFileSync(GAP_TITLES_PATH, 'utf8'))
+  } catch {
+    return {}
+  }
+}
+
+function getGapTitle(lang: string, gapTitlesByLang: Record<string, string>): string {
+  return gapTitlesByLang[lang] || gapTitlesByLang[DEFAULT_LANG] || DEFAULT_GAP_TITLE
+}
 
 function getLogoForChannel(channel: Channel): string | null {
   const feedData = data.feedsKeyByStreamId.get(channel.xmltv_id)

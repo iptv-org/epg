@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channels site="gapfill.com">
+  <channel lang="en" xmltv_id="GapLong.us" site_id="201">Gap Long</channel>
+  <channel lang="fr" xmltv_id="GapEmpty.fr" site_id="202">Gap Empty</channel>
+  <channel lang="it" xmltv_id="GapMiddle.it" site_id="203">Gap Middle</channel>
+  <channel lang="de" xmltv_id="GapOverlap.de" site_id="204">Gap Overlap</channel>
+  <channel lang="es" xmltv_id="GapError.es" site_id="205">Gap Error</channel>
+  <channel lang="xx" xmltv_id="GapFallback.xx" site_id="206">Gap Fallback</channel>
+</channels>

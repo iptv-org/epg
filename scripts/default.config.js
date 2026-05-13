@@ -1,6 +1,7 @@
 export default {
   output: 'guide.xml',
   days: 1,
+  fillGaps: false,
   delay: 0,
   maxConnections: 1,
   curl: false,
