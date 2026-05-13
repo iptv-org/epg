@@ -94,8 +94,7 @@ it('can map a channel feed entry', () => {
     expect(result[0]).toMatchObject({
       lang: 'de',
       site_id: '259549736360',
-      name: 'Das Erste',
-      logo: 'https://example.com/das-erste-colored.png'
+      name: 'Das Erste'
     })
   })
 })

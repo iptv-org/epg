@@ -213,8 +213,7 @@ function parseChannel(entry) {
   return {
     lang: 'de',
     site_id: siteId,
-    name,
-    logo: parseStationLogo(station)
+    name
   }
 }
 
@@ -321,17 +320,6 @@ function parseProgramImage(program) {
     .sort((a, b) => (b.width || 0) * (b.height || 0) - (a.width || 0) * (a.height || 0))
 
   return thumbnails[0] ? thumbnails[0].url : null
-}
-
-function parseStationLogo(station) {
-  if (!station || !station.thumbnails) return null
-
-  return (
-    station.thumbnails.stationLogoColored?.url ||
-    station.thumbnails.stationLogo?.url ||
-    station.thumbnails.stationBackground?.url ||
-    null
-  )
 }
 
 function parseCountry(value) {
