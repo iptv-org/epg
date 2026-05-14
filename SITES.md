@@ -210,7 +210,7 @@
     <tr><td><a href="sites/tvheute.at">tvheute.at</a></td><td align="right">53</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvi.iol.pt">tvi.iol.pt</a></td><td align="right">7</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvim.tv">tvim.tv</a></td><td align="right">25</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/tvinsider.com">tvinsider.com</a></td><td align="right">374</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/tvinsider.com">tvinsider.com</a></td><td align="right">374</td><td align="center">🟢</td><td>https://github.com/iptv-org/epg/issues/3144</td></tr>
     <tr><td><a href="sites/tvireland.ie">tvireland.ie</a></td><td align="right">334</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvkaista.org">tvkaista.org</a></td><td align="right">149</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvmi.mt">tvmi.mt</a></td><td align="right">3</td><td align="center">🟢</td><td></td></tr>
