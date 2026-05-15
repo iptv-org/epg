@@ -240,6 +240,7 @@
     <tr><td><a href="sites/webtv.sk">webtv.sk</a></td><td align="right">186</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/winplay.co">winplay.co</a></td><td align="right">3</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/worldfishingnetwork.com">worldfishingnetwork.com</a></td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/www.magenta.tv">www.magenta.tv</a></td><td align="right">404</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/www.tv-tokyo.co.jp">www.tv-tokyo.co.jp</a></td><td align="right">2</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/www3.nhk.or.jp">www3.nhk.or.jp</a></td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/x1co.com.br">x1co.com.br</a></td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
