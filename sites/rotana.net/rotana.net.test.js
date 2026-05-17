@@ -11,7 +11,7 @@ dayjs.extend(utc)
 
 jest.mock('axios')
 
-const date = dayjs.utc('2024-11-26').startOf('d')
+const date = dayjs.utc('2026-05-16').startOf('d')
 const channel = {
   lang: 'en',
   site_id: '439',
@@ -20,12 +20,12 @@ const channel = {
 const channelAr = Object.assign({}, channel, { lang: 'ar' })
 
 axios.get.mockImplementation(url => {
-  if (url === 'https://rotana.net/en/streams?channel=439&itemId=736970') {
+  if (url === 'https://rotana.net/en/streams?channel=439&itemId=1160904&playnow=0') {
     return Promise.resolve({
       data: fs.readFileSync(path.resolve(__dirname, '__data__/program_en.html'))
     })
   }
-  if (url === 'https://rotana.net/ar/streams?channel=439&itemId=736970') {
+  if (url === 'https://rotana.net/ar/streams?channel=439&itemId=1160904&playnow=0') {
     return Promise.resolve({
       data: fs.readFileSync(path.resolve(__dirname, '__data__/program_ar.html'))
     })
@@ -64,16 +64,17 @@ it('can parse english response', async () => {
     return a
   })
 
-  expect(result.length).toBe(12)
-  expect(result[11]).toMatchObject({
-    start: '2024-11-26T20:00:00.000Z',
-    stop: '2024-11-26T22:00:00.000Z',
-    title: 'Khiyana Mashroua',
+  expect(result.length).toBe(13)
+  expect(result[12]).toMatchObject({
+    start: '2026-05-16T19:00:00.000Z',
+    stop: '2026-05-16T21:00:00.000Z',
+    title: 'The Street Player',
     description:
-      'Hisham knows that his father has given all his wealth to his elder brother. This leads him to plan to kill his brother to make it look like a defense of honor, which he does by killing his wife along...',
+      'Fares (Adel Emam) suffers from the neglect of his work and life because of his passion for football and betting, and he wants to get his wife back while he receives an offer to work in a car showroom.',
     image:
-      'https://s3.eu-central-1.amazonaws.com/rotana.website/spider_storage/1398X1000/1687084565',
-    category: 'Movie'
+      'https://s3.eu-central-1.amazonaws.com/rotana.website/spider_storage/1398X1000/1696246957.webp',
+    category: 'Movie',
+    date: '1984'
   })
 })
 
@@ -90,16 +91,17 @@ it('can parse arabic response', async () => {
     return a
   })
 
-  expect(result.length).toBe(12)
-  expect(result[11]).toMatchObject({
-    start: '2024-11-26T20:00:00.000Z',
-    stop: '2024-11-26T22:00:00.000Z',
-    title: 'خيانة مشروعة',
+  expect(result.length).toBe(13)
+  expect(result[12]).toMatchObject({
+    start: '2026-05-16T19:00:00.000Z',
+    stop: '2026-05-16T21:00:00.000Z',
+    title: 'الحريف',
     description:
-      'يعلم هشام البحيري أن والده قد حرمه من الميراث، ووهب كل ثروته لشقيقه اﻷكبر، وهو ما يدفعه لتدبير جريمة قتل شقيقه لتبدو وكأنها دفاع عن الشرف، وذلك حين يقتل هشام زوجته مع شقيقه.',
+      'فارس (عادل إمام) يعاني من إهمال عمله وحياته بسبب شغفه بكرة القدم والمراهنات، ويرغب في استعادة زوجته بينما يتلقى عرضًا للعمل في معرض سيارات',
     image:
-      'https://s3.eu-central-1.amazonaws.com/rotana.website/spider_storage/1398X1000/1687084565',
-    category: 'فيلم'
+      'https://s3.eu-central-1.amazonaws.com/rotana.website/spider_storage/1398X1000/1696246957.webp',
+    category: 'فيلم',
+    date: '1984'
   })
 })
 
