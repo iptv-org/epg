@@ -1,6 +1,6 @@
 # osn.com
 
-https://osn.com/ _[Geo-blocked]_
+https://www.osn.com/en-sa/osntv _[Geo-blocked]_
 
 ### Download the guide
 

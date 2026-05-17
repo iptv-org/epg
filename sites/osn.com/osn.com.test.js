@@ -8,50 +8,69 @@ const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
-const date = dayjs.utc('2024-11-27', 'YYYY-MM-DD').startOf('d')
-const channelAR = { site_id: 'FTF', xmltv_id: 'Fatafeat.ae', lang: 'ar' }
-const channelEN = { site_id: 'FTF', xmltv_id: 'Fatafeat.ae', lang: 'en' }
-const content = fs.readFileSync(path.join(__dirname, '__data__', 'content.json'))
+const date = dayjs.utc('2026-05-16').startOf('d')
+const channelAR = { site_id: '4506', xmltv_id: 'OSNKids.ae@SD', lang: 'ar' }
+const channelEN = { site_id: '4506', xmltv_id: 'OSNKids.ae@SD', lang: 'en' }
+const content = fs.readFileSync(path.join(__dirname, '/__data__/content.json'))
 
 it('can generate valid request headers', () => {
   const result = request.headers({ channel: channelAR, date })
   expect(result).toMatchObject({
-    Referer: 'https://www.osn.com/ar-ae/watch/tv-schedule'
+    'X-Encrypted-Data':
+      'e0srp4UFarSGxZt4iWaXSZTCg6vB46NRZmY5V9wEzxHeB1bwR1HXrAuTI8FCVH7i3+uVqkDQSgRxjRFPYdrXhqedzEogwcjDnjRPmLtFxEA='
   })
 })
 
 it('can generate valid url', () => {
   const result = url({ channel: channelAR, date })
   expect(result).toBe(
-    'https://www.osn.com/api/TVScheduleWebService.asmx/time?dt=11%2F27%2F2024&co=AE&ch=FTF&mo=false&hr=0'
+    'https://www.osn.com/apidata/tv-schedule-timeline?t=batch1-time1778846400000-1778932800000-boxAndroid'
   )
 })
 
 it('can parse response (ar)', () => {
-  const result = parser({ date, channel: channelAR, content }).map(a => {
-    a.start = a.start.toJSON()
-    a.stop = a.stop.toJSON()
-    return a
-  })
-  expect(result.length).toBe(29)
-  expect(result[1]).toMatchObject({
-    start: '2024-11-26T20:50:00.000Z',
-    stop: '2024-11-26T21:45:00.000Z',
-    title: 'بيت الحلويات: الحلقة 3'
+  const result = parser({ date, channel: channelAR, content })
+    .map(a => {
+      a.start = a.start.toJSON()
+      a.stop = a.stop.toJSON()
+      return a
+    })
+
+  expect(result.length).toBe(105)
+  expect(result[104]).toMatchObject({
+    start: '2026-05-16T11:50:00.000Z',
+    stop: '2026-05-16T12:14:00.000Z',
+    title: 'ميكس ماستر',
+    subTitle: 'سيكريت إيجنت وولفمان!',
+    description:
+      'يبدأ وولفمان، أحد أعضاء مجلس الشيوخ في أتريا، تحقيقًا في لغز ظهور أساتذة المزج المظلم في بلدة غيمبريدج.',
+    categories: ['رسوم متحركة', 'مغامرات'],
+    season: 2,
+    episode: 23,
+    date: '2010'
   })
 })
 
 it('can parse response (en)', () => {
-  const result = parser({ date, channel: channelEN, content }).map(a => {
-    a.start = a.start.toJSON()
-    a.stop = a.stop.toJSON()
-    return a
-  })
-  expect(result.length).toBe(29)
-  expect(result[1]).toMatchObject({
-    start: '2024-11-26T20:50:00.000Z',
-    stop: '2024-11-26T21:45:00.000Z',
-    title: 'House Of Desserts: Episode 3'
+  const result = parser({ date, channel: channelEN, content })
+    .map(a => {
+      a.start = a.start.toJSON()
+      a.stop = a.stop.toJSON()
+      return a
+    })
+
+  expect(result.length).toBe(105)
+  expect(result[104]).toMatchObject({
+    start: '2026-05-16T11:50:00.000Z',
+    stop: '2026-05-16T12:14:00.000Z',
+    title: 'Mix Master',
+    subTitle: 'Secret Agent Wolfman!',
+    description:
+      'Wolfman, one of the members of council of elders in Atreia, starts an investigation into the mystery of the appearances of Dark Mix Masters in Gamebridge Town.',
+    categories: ['Animation', 'Adventure'],
+    season: 2,
+    episode: 23,
+    date: '2010'
   })
 })
 
