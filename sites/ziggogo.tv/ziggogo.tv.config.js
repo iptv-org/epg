@@ -14,7 +14,7 @@ module.exports = {
     }
   },
   url({ date, segment = 0 }) {
-    return `https://static.spark.ziggogo.tv/eng/web/epg-service-lite/nl/en/events/segments/${date.format(
+    return `https://staticqbr-prod-nl.gnp.cloud.ziggogo.tv/eng/web/epg-service-lite/nl/en/events/segments/${date.format(
       'YYYYMMDD'
     )}${segment.toString().padStart(2, '0')}0000`
   },
