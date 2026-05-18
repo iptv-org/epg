@@ -40,7 +40,8 @@ module.exports = {
     if (items.length) {
       const queues = []
       for (const item of items) {
-        const url = `https://rotana.net/${channel.lang}/streams?channel=${channel.site_id}&itemId=${item.program}`
+        const url =
+          `https://rotana.net/${channel.lang}/streams?channel=${channel.site_id}&itemId=${item.program}&playnow=0`
         const params = {
           headers: {
             ...defaultHeaders,
@@ -58,18 +59,26 @@ module.exports = {
     return programs
   },
   async channels({ lang = 'en' }) {
+    const channels = []
     const result = await axios
-      .get('https://rotana.net/api/channels')
+      .get(`https://rotana.net/${lang}/streams`, { headers: defaultHeaders })
       .then(response => response.data)
       .catch(console.error)
 
-    return result.data.map(item => {
-      return {
-        lang,
-        site_id: item.id,
-        name: item.name[lang]
-      }
-    })
+    if (result) {
+      const $ = cheerio.load(result)
+      $('#channels-list > li > a')
+        .toArray()
+        .forEach(item => {
+          channels.push({
+            lang,
+            site_id: $(item).attr('href').match(/channel=(\d+)/)[1],
+            name: $(item).text().trim()
+          })
+        })
+    }
+
+    return channels
   }
 }
 
@@ -82,7 +91,7 @@ function parseProgram(item, result) {
         case 'Text':
           if (item.description === undefined) {
             const desc = $(el).text().trim()
-            if (desc) {
+            if (desc.length) {
               item.description = desc
             }
           }
@@ -181,9 +190,8 @@ function parseItems(content, date) {
 function parseCookies(headers) {
   const cookies = []
   if (headers && Array.isArray(headers['set-cookie'])) {
-    headers['set-cookie'].forEach(cookie => {
-      cookies.push(cookie.split('; ')[0])
-    })
+    cookies.push(...headers['set-cookie']
+      .map(cookie => cookie.split(';')[0].trim()))
   }
   return cookies.length ? cookies.join('; ') : null
 }
