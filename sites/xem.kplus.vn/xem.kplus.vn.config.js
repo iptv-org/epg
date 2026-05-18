@@ -3,7 +3,7 @@ const axios = require('axios')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
-const doFetch = require('@ntlab/sfetch')
+const doFetch = require('../../scripts/core/multifetch')
 
 dayjs.extend(utc)
 dayjs.extend(timezone)

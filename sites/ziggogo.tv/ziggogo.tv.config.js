@@ -1,6 +1,6 @@
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
-const doFetch = require('@ntlab/sfetch')
+const doFetch = require('../../scripts/core/multifetch')
 const uniqBy = require('lodash.uniqby')
 
 dayjs.extend(utc)

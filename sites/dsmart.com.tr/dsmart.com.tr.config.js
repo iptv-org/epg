@@ -2,14 +2,12 @@ const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 const duration = require('dayjs/plugin/duration')
-const doFetch = require('@ntlab/sfetch')
-const debug = require('debug')('site:dsmart.com.tr')
+const doFetch = require('../../scripts/core/multifetch')
 
 dayjs.extend(utc)
 dayjs.extend(customParseFormat)
 dayjs.extend(duration)
 
-doFetch.setDebugger(debug)
 
 const channelsWithSchedule = true
 const pageLimit = 10

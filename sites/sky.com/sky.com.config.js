@@ -1,16 +1,12 @@
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
-const doFetch = require('@ntlab/sfetch')
-const debug = require('debug')('site:sky.com')
+const axios = require('axios')
+const doFetch = require('../../scripts/core/multifetch')
 const sortBy = require('lodash.sortby')
-const path = require('path')
-const fs = require('fs/promises')
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
-
-doFetch.setDebugger(debug)
 
 module.exports = {
   site: 'sky.com',
@@ -53,24 +49,15 @@ module.exports = {
     return programs
   },
   async channels() {
-    const dataPath = path.join(__dirname, '__data__', 'content.json')
-    let regions = []
-
-    try {
-      const raw = await fs.readFile(dataPath, 'utf8')
-      const payload = JSON.parse(raw)
-      if (Array.isArray(payload.regions)) {
-        regions = payload.regions
+    const regions = await axios.get('https://epgservices.sky.com/999/api/2.0/regions/json')
+    .then(res => res.data.regions)
+    .then(region => region.map(region => {
+      if (!region || region.b === undefined || region.sb === undefined) return null
+      return {
+        bouquet: region.b,
+        subBouquet: region.sb
       }
-    } catch (err) {
-      debug('Failed to read regions from %s: %o', dataPath, err)
-      throw err
-    }
-
-    if (regions.length === 0) {
-      debug('No regions defined in %s', dataPath)
-      return []
-    }
+    }).filter(region => region !== null))
 
     const uniqueRegions = new Map()
     regions.forEach(region => {

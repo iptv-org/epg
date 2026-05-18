@@ -1,5 +1,6 @@
 const dayjs = require('dayjs')
 const axios = require('axios')
+const parseDuration = require('parse-duration').default
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -65,7 +66,7 @@ module.exports = {
     }
 
     items.forEach(item => {
-      const { start, stop } = parseDuration(date, item)
+      const { start, stop } = parseTimes(date, item)
       if (!start.isValid() || !stop.isValid()) return
       // Can contain Season and Episode in title, but not always. If title is missing, skip the program
       if (!item?.content?.title) return
@@ -124,32 +125,20 @@ module.exports = {
   }
 }
 
-function parseDuration(date, item) {
-  const current_date = date.format('YYYY-MM-DD')
+function parseTimes(date, item) {
   const time = item.content?.broadcastBeginDate
-  const duration = item.content?.duration // e.g. "11 min 45 s", "1 h 30 min", "30 min"
+  const durationStr = item.content?.duration // e.g. "11 min 45 s", "1 h 30 min", "30 min"
 
   if (!time) return { start: dayjs(null), stop: dayjs(null) }
 
   const timeParts = time.split('h')
-
-  let durationInSeconds = 0
-  if (duration) {
-    const durationParts = duration.split(' ')
-    for (let i = 0; i < durationParts.length; i++) {
-      const part = durationParts[i]
-      if (part === 'h' && i > 0) {
-        durationInSeconds += parseInt(durationParts[i - 1]) * 3600
-      } else if (part === 'min' && i > 0) {
-        durationInSeconds += parseInt(durationParts[i - 1]) * 60
-      } else if (part === 's' && i > 0) {
-        durationInSeconds += parseInt(durationParts[i - 1])
-      }
-    }
+  const start = dayjs.utc(`${date.format('YYYY-MM-DD')} ${timeParts[0]}:${timeParts[1]}`, 'YYYY-MM-DD HH:mm')
+  
+  let stop = start
+  if (durationStr) {
+    stop = start.add(parseDuration(durationStr) || 0, 'ms')
   }
 
-  const start = dayjs.utc(`${current_date} ${timeParts[0]}:${timeParts[1]}`, 'YYYY-MM-DD HH:mm')
-  const stop = start.add(durationInSeconds, 'second')
   return { start, stop }
 }
 

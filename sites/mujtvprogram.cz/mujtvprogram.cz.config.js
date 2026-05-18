@@ -2,7 +2,7 @@ const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
-const convert = require('xml-js')
+const convert = require('xml-js-v2')
 
 dayjs.extend(utc)
 dayjs.extend(timezone)

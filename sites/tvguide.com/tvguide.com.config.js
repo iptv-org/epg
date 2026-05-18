@@ -2,7 +2,6 @@ const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
-const debug = require('debug')('site:tvguide.com')
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
@@ -67,12 +66,12 @@ module.exports = {
     if (queues.length && fetchSegments) {
       for (let segment = 2; segment <= segments; segment++) {
         const segmentUrl = await module.exports.url({ date, segment })
-        debug(`fetch segment ${segment}: ${segmentUrl}`)
+        console.debug(`fetch segment ${segment}: ${segmentUrl}`)
         try {
           const res = await axios.get(segmentUrl, { headers })
           queues.push(...f(res.data))
         } catch (err) {
-          debug(`Failed to fetch segment ${segment}: ${err.message}`)
+          console.debug(`Failed to fetch segment ${segment}: ${err.message}`)
         }
       }
     }
@@ -92,7 +91,7 @@ module.exports = {
           stop: dayjs.unix(item.endTime || queue.i.endTime)
         })
       } catch (err) {
-        debug(`Failed to fetch program details ${queue.url}: ${err.message}`)
+        console.debug(`Failed to fetch program details ${queue.url}: ${err.message}`)
       }
     }
     return programs

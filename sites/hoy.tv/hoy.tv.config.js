@@ -1,5 +1,5 @@
 const axios = require('axios')
-const convert = require('xml-js')
+const convert = require('xml-js-v2')
 const dayjs = require('dayjs')
 const timezone = require('dayjs/plugin/timezone')
 

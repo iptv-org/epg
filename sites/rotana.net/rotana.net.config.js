@@ -4,14 +4,11 @@ const dayjs = require('dayjs')
 const timezone = require('dayjs/plugin/timezone')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
-const doFetch = require('@ntlab/sfetch')
-const debug = require('debug')('site:rotana.net')
+const doFetch = require('../../scripts/core/multifetch')
 
 dayjs.extend(timezone)
 dayjs.extend(utc)
 dayjs.extend(customParseFormat)
-
-doFetch.setCheckResult(false).setDebugger(debug)
 
 const tz = 'Asia/Riyadh'
 const defaultHeaders = {
