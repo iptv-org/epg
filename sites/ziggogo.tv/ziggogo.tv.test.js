@@ -19,13 +19,13 @@ const channel = {
 
 axios.get.mockImplementation(url => {
   const urls = {
-    'https://static.spark.ziggogo.tv/eng/web/epg-service-lite/nl/en/events/segments/20241217000000':
+    'https://staticqbr-prod-nl.gnp.cloud.ziggogo.tv/eng/web/epg-service-lite/nl/en/events/segments/20241217000000':
       'content00.json',
-    'https://static.spark.ziggogo.tv/eng/web/epg-service-lite/nl/en/events/segments/20241217060000':
+    'https://staticqbr-prod-nl.gnp.cloud.ziggogo.tv/eng/web/epg-service-lite/nl/en/events/segments/20241217060000':
       'content06.json',
-    'https://static.spark.ziggogo.tv/eng/web/epg-service-lite/nl/en/events/segments/20241217120000':
+    'https://staticqbr-prod-nl.gnp.cloud.ziggogo.tv/eng/web/epg-service-lite/nl/en/events/segments/20241217120000':
       'content12.json',
-    'https://static.spark.ziggogo.tv/eng/web/epg-service-lite/nl/en/events/segments/20241217180000':
+    'https://staticqbr-prod-nl.gnp.cloud.ziggogo.tv/eng/web/epg-service-lite/nl/en/events/segments/20241217180000':
       'content18.json',
     'https://spark-prod-nl.gnp.cloud.ziggogo.tv/eng/web/linear-service/v2/replayEvent/crid:~~2F~~2Fgn.tv~~2F28844562~~2FEP027607161610,imi:1d49feeb2ef4e3db0bde030e7cf6e55e06d56fed?returnLinearContent=true&forceLinearResponse=true&language=nl':
       'program01.json',
@@ -46,7 +46,7 @@ axios.get.mockImplementation(url => {
 
 it('can generate valid url', () => {
   expect(url({ date })).toBe(
-    'https://static.spark.ziggogo.tv/eng/web/epg-service-lite/nl/en/events/segments/20241217000000'
+    'https://staticqbr-prod-nl.gnp.cloud.ziggogo.tv/eng/web/epg-service-lite/nl/en/events/segments/20241217000000'
   )
 })
 
