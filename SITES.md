@@ -123,7 +123,7 @@
     <tr><td><a href="sites/ontvtonight.com">ontvtonight.com</a></td><td align="right">5177</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/opto.sic.pt">opto.sic.pt</a></td><td align="right">3</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/orangetv.orange.es">orangetv.orange.es</a></td><td align="right">273</td><td align="center">🔴</td><td>https://github.com/iptv-org/epg/issues/3099</td></tr>
-    <tr><td><a href="sites/osn.com">osn.com</a></td><td align="right">67</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/osn.com">osn.com</a></td><td align="right">79</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/passie.nl">passie.nl</a></td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/pbsguam.org">pbsguam.org</a></td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/pickx.be">pickx.be</a></td><td align="right">404</td><td align="center">🟢</td><td></td></tr>
@@ -142,7 +142,7 @@
     <tr><td><a href="sites/raiplay.it">raiplay.it</a></td><td align="right">17</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/reportv.com.ar">reportv.com.ar</a></td><td align="right">163</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/rikstv.no">rikstv.no</a></td><td align="right">80</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/rotana.net">rotana.net</a></td><td align="right">16</td><td align="center">🔴</td><td>https://github.com/iptv-org/epg/issues/3018</td></tr>
+    <tr><td><a href="sites/rotana.net">rotana.net</a></td><td align="right">9</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/roya-tv.com">roya-tv.com</a></td><td align="right">10</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/rthk.hk">rthk.hk</a></td><td align="right">4</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/rtmklik.rtm.gov.my">rtmklik.rtm.gov.my</a></td><td align="right">8</td><td align="center">🟢</td><td></td></tr>
