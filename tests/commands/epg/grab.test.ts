@@ -138,7 +138,7 @@ describe('epg:grab', () => {
     expect(output).toEqual(expected)
   })
 
-  it('can grab epg with gzip option enabled', () => {
+  it('can grab epg with gzip path', () => {
     const cmd = `${ENV_VAR} npm run grab --- --channels=tests/__data__/input/epg_grab/sites/example2.com/example2.com.channels.xml --output="${path.resolve(
       'tests/__data__/output/guides/guide.xml'
     )}" --gzip="${path.resolve('tests/__data__/output/guides/custom.xml.gz')}"`
@@ -182,10 +182,11 @@ describe('epg:grab', () => {
     )
   })
 
-  it('can grab epg with json option enabled', () => {
-    const cmd = `${ENV_VAR} npm run grab --- --channels=tests/__data__/input/epg_grab/sites/example2.com/example2.com.channels.xml --output="${path.resolve(
+  it('can grab epg with json path', () => {
+    const cmd = `${ENV_VAR} npm run grab --- --channels=tests/__data__/input/epg_grab/sites/example2.com/example2.com.channels.xml --output="${path.relative(
+      process.cwd(),
       'tests/__data__/output/guides/guide.xml'
-    )}" --json="${path.resolve('tests/__data__/output/guides/custom.json')}"`
+    )}" --json="${path.relative(process.cwd(), 'tests/__data__/output/guides/custom.json')}"`
     const stdout = execSync(cmd, { encoding: 'utf8' })
     if (process.env.DEBUG === 'true') console.log(cmd, stdout)
 
