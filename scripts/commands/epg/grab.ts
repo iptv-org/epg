@@ -1,4 +1,3 @@
-import { loadJs, parseProxy, parseNumber, parseList } from '../../core'
 import { Logger, Timer, Collection, Template } from '@freearhey/core'
 import epgGrabber, { EPGGrabber, EPGGrabberMock } from 'epg-grabber'
 import { CurlBody } from 'curl-generator/dist/bodies/body'
@@ -15,6 +14,14 @@ import { data, loadData } from '../../api'
 import dayjs, { Dayjs } from 'dayjs'
 import merge from 'lodash.merge'
 import path from 'path'
+import {
+  parseBooleanOrString,
+  parseBoolean,
+  parseNumber,
+  parseProxy,
+  parseList,
+  loadJs
+} from '../../core'
 
 program
   .addOption(
@@ -55,11 +62,19 @@ program
       .env('MAX_CONNECTIONS')
   )
   .addOption(
-    new Option('--gzip [path]', 'Create a compressed version of the guide as well').env('GZIP')
+    new Option('--gzip [path]', 'Create a compressed version of the guide as well')
+      .argParser(parseBooleanOrString)
+      .env('GZIP')
   )
-  .addOption(new Option('--json [path]', 'Create a JSON version of the guide as well').env('JSON'))
-  .addOption(new Option('--curl', 'Display each request as CURL').env('CURL'))
-  .addOption(new Option('--debug', 'Enable debug mode').env('DEBUG'))
+  .addOption(
+    new Option('--json [path]', 'Create a JSON version of the guide as well')
+      .argParser(parseBooleanOrString)
+      .env('JSON')
+  )
+  .addOption(
+    new Option('--curl', 'Display each request as CURL').argParser(parseBoolean).env('CURL')
+  )
+  .addOption(new Option('--debug', 'Enable debug mode').argParser(parseBoolean).env('DEBUG'))
   .parse()
 
 interface GrabOptions {

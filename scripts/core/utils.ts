@@ -114,3 +114,23 @@ export function parseNumber(value: string): number {
 export function parseList(value: string): string[] {
   return value.split(',')
 }
+
+export function parseBoolean(value: string | boolean | undefined): boolean {
+  if (value === undefined) return true
+  if (typeof value === 'boolean') return value
+  if (typeof value === 'string' && value.toLowerCase() === 'true') return true
+
+  return false
+}
+
+export function parseBooleanOrString(value: string | boolean): string | boolean {
+  if (value === undefined) return true
+  if (typeof value === 'boolean') return value
+  if (typeof value === 'string') {
+    const normalized = value.toLowerCase()
+    if (normalized === 'true') return true
+    if (normalized === 'false') return false
+  }
+
+  return value
+}
