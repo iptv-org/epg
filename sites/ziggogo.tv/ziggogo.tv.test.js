@@ -11,28 +11,26 @@ dayjs.extend(utc)
 
 jest.mock('axios')
 
-const date = dayjs.utc('2024-12-17', 'YYYY-MM-DD').startOf('d')
+const date = dayjs.utc('2026-05-30').startOf('d')
 const channel = {
-  site_id: 'NL_000001_019401',
-  xmltv_id: 'NPO1.nl'
+  site_id: 'NL_000007_019181',
+  xmltv_id: 'RTL7.nl@SD'
 }
 
 axios.get.mockImplementation(url => {
   const urls = {
-    'https://staticqbr-prod-nl.gnp.cloud.ziggogo.tv/eng/web/epg-service-lite/nl/en/events/segments/20241217000000':
+    'https://staticqbr-prod-nl.gnp.cloud.ziggogo.tv/eng/web/epg-service-lite/nl/en/events/segments/20260530000000':
       'content00.json',
-    'https://staticqbr-prod-nl.gnp.cloud.ziggogo.tv/eng/web/epg-service-lite/nl/en/events/segments/20241217060000':
+    'https://staticqbr-prod-nl.gnp.cloud.ziggogo.tv/eng/web/epg-service-lite/nl/en/events/segments/20260530060000':
       'content06.json',
-    'https://staticqbr-prod-nl.gnp.cloud.ziggogo.tv/eng/web/epg-service-lite/nl/en/events/segments/20241217120000':
+    'https://staticqbr-prod-nl.gnp.cloud.ziggogo.tv/eng/web/epg-service-lite/nl/en/events/segments/20260530120000':
       'content12.json',
-    'https://staticqbr-prod-nl.gnp.cloud.ziggogo.tv/eng/web/epg-service-lite/nl/en/events/segments/20241217180000':
+    'https://staticqbr-prod-nl.gnp.cloud.ziggogo.tv/eng/web/epg-service-lite/nl/en/events/segments/20260530180000':
       'content18.json',
-    'https://spark-prod-nl.gnp.cloud.ziggogo.tv/eng/web/linear-service/v2/replayEvent/crid:~~2F~~2Fgn.tv~~2F28844562~~2FEP027607161610,imi:1d49feeb2ef4e3db0bde030e7cf6e55e06d56fed?returnLinearContent=true&forceLinearResponse=true&language=nl':
+    'https://spark-prod-nl.gnp.cloud.ziggogo.tv/eng/web/linear-service/v2/replayEvent/crid:~~2F~~2Fgn.tv~~2F32036579~~2FSH062278610000~~2F492767862,imi:25ee264da729e66ee9ab4cb70d30ab2d76b661f4?returnLinearContent=true&forceLinearResponse=true&language=nl':
       'program01.json',
-    'https://spark-prod-nl.gnp.cloud.ziggogo.tv/eng/web/linear-service/v2/replayEvent/crid:~~2F~~2Fgn.tv~~2F28842707~~2FEP022675661065,imi:33138a61bfa639696f386a5b8da9052e98cffdf8?returnLinearContent=true&forceLinearResponse=true&language=nl':
-      'program02.json',
-    'https://spark-prod-nl.gnp.cloud.ziggogo.tv/eng/web/linear-service/v2/replayEvent/crid:~~2F~~2Fgn.tv~~2F28728829~~2FEP052397600066,imi:34a0b026912de96e3546b15ad2983070a250dfd5?returnLinearContent=true&forceLinearResponse=true&language=nl':
-      'program03.json'
+    'https://spark-prod-nl.gnp.cloud.ziggogo.tv/eng/web/linear-service/v2/replayEvent/crid:~~2F~~2Fgn.tv~~2F18311595~~2FEP027840300446,imi:dc898b6240c51d7bb7aa0c13d38409e025ce0a71?returnLinearContent=true&forceLinearResponse=true&language=nl':
+      'program02.json'
   }
   let data = ''
   if (urls[url] !== undefined) {
@@ -46,7 +44,7 @@ axios.get.mockImplementation(url => {
 
 it('can generate valid url', () => {
   expect(url({ date })).toBe(
-    'https://staticqbr-prod-nl.gnp.cloud.ziggogo.tv/eng/web/epg-service-lite/nl/en/events/segments/20241217000000'
+    'https://staticqbr-prod-nl.gnp.cloud.ziggogo.tv/eng/web/epg-service-lite/nl/en/events/segments/20260530000000'
   )
 })
 
@@ -61,37 +59,28 @@ it('can parse response', async () => {
     return p
   })
 
-  expect(result.length).toBe(3)
-  expect(result[0]).toMatchObject({
-    start: '2024-12-17T00:10:00.000Z',
-    stop: '2024-12-17T00:35:00.000Z',
-    title: 'EenVandaag',
-    description:
-      'Op pad met HTS-rebellen in Syrië. Nieuwe aanpak tegen te veel zitten. VS heeft Tiktok-ban bijna rond. Wat is de rol van Nederland in de onderhandeling rondom Oekraïne?',
-    category: ['Nieuws', 'Actualiteit'],
-    season: 11,
-    episode: 300,
-    actor: [
-      'Rik van de Westelaken',
-      'Roos Moggré',
-      'Pieter Jan Hagens',
-      'Toine van Peperstraten',
-      'Charlotte Nijs',
-      'Hila Noorzai',
-      'Rob Hadders',
-      'Joyce Boverhuis'
-    ]
-  })
+  expect(result.length).toBe(21)
   expect(result[2]).toMatchObject({
-    start: '2024-12-17T14:55:00.000Z',
-    stop: '2024-12-17T15:58:00.000Z',
-    title: 'Bar Laat',
+    start: '2026-05-30T04:00:00.000Z',
+    stop: '2026-05-30T11:03:00.000Z',
+    title: 'Telvero',
     description:
-      'Bij het Rijnstate Ziekenhuis zijn opnieuw enorme misstanden aan het licht gekomen rond spermadonatie. KRO-NCRV maakte er een docuserie over. Maker Annemieke Ruggenberg schuift aan samen met zaaddonor Peter en donorkinderen Roos en Maria.',
-    category: ['Talkshow'],
-    season: 1,
-    episode: 65,
-    actor: ['Sophie Hilbrand', 'Jeroen Pauw', 'Tim de Wit']
+      'Homeshoppingprogramma waarin de kijker via de telefoon allerlei producten kan aanschaffen.',
+    category: ["Consumentenprogramma's", 'Shoppen'],
+    season: 78610000,
+    episode: 492767862
+  })
+  expect(result[19]).toMatchObject({
+    start: '2026-05-30T22:44:00.000Z',
+    stop: '2026-05-30T23:39:00.000Z',
+    title: 'Pawn Stars',
+    subTitle: 'Mystery Safe',
+    description:
+      'Rick en Chum onderhandelen over een Superman-pyjama. Rick tikt een vintage industriële snijmachine op de kop. Chum roept de hulp in van Alex als hij een zeldzaam jasje uit de Tweede Wereldoorlog tegenkomt.',
+    category: ['Reality', 'Veiling'],
+    season: 17,
+    episode: 24,
+    actor: ['Corey Harrison', 'Rick Harrison', 'Austin Chumlee Russell']
   })
 })
 
