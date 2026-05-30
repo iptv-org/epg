@@ -121,9 +121,14 @@ async function doFetch(queues: QueueEntry[], cb: Callback) {
                             debug(`mock response type: ${typeof mockResponse}, has data: ${hasData}, keys: ${keys}`, url, JSON.stringify(requestConfig))
                         }
 
-                        // Check if response looks like it's already formatted (has 'data' and optionally 'status'/'headers')
-                        const isFormatted = isObj && 'data' in mockResponse && 'status' in mockResponse
-                        response = isFormatted ? mockResponse : { data: mockResponse, status: 200, headers: {} }
+                        // Treat any object with `data` as already formatted; preserve headers when normalizing.
+                        const isFormatted = isObj && 'data' in mockResponse
+                        const hasHeaders = isObj && 'headers' in mockResponse
+                        response = isFormatted
+                            ? mockResponse
+                            : hasHeaders
+                                ? { data: undefined, status: 200, headers: (mockResponse as { headers: unknown }).headers }
+                                : { data: mockResponse, status: 200, headers: {} }
                     } else if (mocks.size > 0) {
                         // If mocks are set up but this URL doesn't match, return 404
                         response = { data: '', status: 404, headers: {} }
@@ -139,8 +144,9 @@ async function doFetch(queues: QueueEntry[], cb: Callback) {
                         }
                     }
                     
-                    const res = response as { data?: unknown; headers?: unknown } | undefined
-                    if ((checkResult && res?.data) || !checkResult) {
+                    const res = response as { data?: unknown; headers?: unknown; status?: number } | undefined
+                    const hasSuccessfulResponse = !!res && (typeof res.status !== 'number' || (res.status >= 200 && res.status < 300))
+                    if ((checkResult && hasSuccessfulResponse) || !checkResult) {
                         cb(queue, res?.data, res?.headers)
                     }
                 } catch (err: unknown) {

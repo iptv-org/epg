@@ -53,7 +53,7 @@ module.exports = {
     return programs
   },
   async channels() {
-    const doFetch = require('@ntlab/sfetch')
+    const doFetch = require('../../scripts/core/multifetch')
     const channels = {}
     const queues = [{ t: 'p', url: 'https://www.mytelly.co.uk/getform', params: this.request }]
     await doFetch(queues, (queue, res) => {
