@@ -11,7 +11,7 @@ dayjs.extend(utc)
 
 jest.mock('axios')
 
-const date = dayjs.utc('2025-01-12', 'YYYY-MM-DD').startOf('d')
+const date = dayjs.utc('2026-05-29').startOf('d')
 const channel = {
   site_id: '1010',
   xmltv_id: 'La1.es'
@@ -20,11 +20,11 @@ const channel = {
 axios.get.mockImplementation(url => {
   const result = {}
   const urls = {
-    'https://epg.orangetv.orange.es/epg/Smartphone_Android/1_PRO/20250112_8h_1.json':
+    'https://epg.orangetv.orange.es/epg/SmartTV_Android/1_PRO/20260529_8h_1.json':
       'data1.json',
-    'https://epg.orangetv.orange.es/epg/Smartphone_Android/1_PRO/20250112_8h_2.json':
+    'https://epg.orangetv.orange.es/epg/SmartTV_Android/1_PRO/20260529_8h_2.json':
       'data2.json',
-    'https://epg.orangetv.orange.es/epg/Smartphone_Android/1_PRO/20250112_8h_3.json':
+    'https://epg.orangetv.orange.es/epg/SmartTV_Android/1_PRO/20260529_8h_3.json':
       'data3.json',
   }
   if (urls[url] !== undefined) {
@@ -39,7 +39,7 @@ axios.get.mockImplementation(url => {
 
 it('can generate valid url', () => {
   expect(url({ date })).toBe(
-    'https://epg.orangetv.orange.es/epg/Smartphone_Android/1_PRO/20250112_8h_1.json'
+    'https://epg.orangetv.orange.es/epg/SmartTV_Android/1_PRO/20260529_8h_1.json'
   )
 })
 
@@ -51,27 +51,27 @@ it('can parse response', async () => {
     return p
   })
 
-  expect(results.length).toBe(18)
+  expect(results.length).toBe(21)
   expect(results[0]).toMatchObject({
-    start: '2025-01-11T22:55:00.000Z',
-    stop: '2025-01-12T00:40:00.000Z',
-    title: 'Una joven prometedora',
+    start: '2026-05-28T21:23:54.000Z',
+    stop: '2026-05-28T23:06:22.000Z',
+    title: 'Llenos de gracia',
     description:
-      'Cassie tenía un brillante futuro por delante. Sin embargo, un incidente provocó que no pudiese cumplir sus sueños. Con el paso del tiempo, tendrá la oportunidad de enmendar los errores del pasado.',
-    category: ['Cine', 'Drama', 'Suspense'],
-    icon: 'https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_2247567.jpg'
+      'Marina es una monja atípica, recién llegada a El Parral, un colegio con niños problemáticos. A pesar de que los internos, niños sin familia, la reciben con mil trastadas, poco a poco se crearán entre ellos vínculos casi familiares.',
+    category: ['Cine', 'Comedia', 'Familiar'],
+    icon: 'https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4609317.jpg'
   })
-  expect(results[17]).toMatchObject({
-    start: '2025-01-12T21:05:00.000Z',
-    stop: '2025-01-12T23:05:00.000Z',
-    title: 'Bake Off: Famosos al horno - T2, E01: Bake Off: Famosos al horno',
-    sub_title: 'Bake Off: Famosos al horno',
+  expect(results[18]).toMatchObject({
+    start: '2026-05-29T18:55:00.000Z',
+    stop: '2026-05-29T19:45:00.000Z',
+    title: 'Telediario 2 - T2026, E149: 29 de Mayo de 2026',
+    sub_title: 'Telediario 2',
     description:
-      'Nervios y emoción en el debut de los 14 pasteleros de la nueva temporada de Bake off Famosos al horno. En el primer programa hornearán unas galletas dedicadas a sus mascotas y una tradicional tarta de queso.',
-    category: ['Programa', 'Reality'],
-    icon: 'https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_3520028.jpg',
-    season: 2,
-    episode: 1
+      'Programa de noticias diarias nacionales e internacionales en directo.',
+    category: ['Programa', 'Informativo'],
+    icon: 'https://pc.orangetv.orange.es/pc/api/rtv/v1/images/epg/COVER/COVER_4301953.jpg',
+    season: 2026,
+    episode: 149
   })
 })
 
