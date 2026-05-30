@@ -1,1 +1,230 @@
-[{"responseElementType": "ProgramList", "channelExternalId": "1010", "programs": [{"startDate": 1736658000000, "endDate": 1736674500000, "attachments": [{"name": "COVER", "value": "/epg/COVER/COVER_3108557.jpg"}], "seriesSeason": "", "episodeId": "", "referenceProgramId": "780871999", "prLevel": 1, "id": 15058342585, "description": "Noticias de los servicios informativos del Canal 24 Horas", "seriesName": "", "genres": [{"externalId": "Programa", "name": "Programa", "id": 9169074970}, {"externalId": "Informativo", "name": "Informativo", "id": 862353792}], "name": "Noticias 24H", "flags": 14}, {"startDate": 1736674500000, "endDate": 1736676600000, "attachments": [{"name": "COVER", "value": "/epg/COVER/COVER_469238.jpg"}], "seriesSeason": "8", "episodeId": "12", "referenceProgramId": "780872016", "prLevel": 1, "id": 15058342081, "description": "Magacín de salud semanal con la periodista Miriam Moreno con vocación de servicio público. En cada edición ofrece a los espectadores los mejores consejos y cambios en la rutina que pueden servir para llevar una vida más saludable.", "seriesName": "Saber vivir", "genres": [{"externalId": "Programa", "name": "Programa", "id": 9169074970}, {"externalId": "Salud", "name": "Salud", "id": 862341634}], "name": "Saber vivir - T8, E12: Saber vivir", "flags": 15}, {"startDate": 1736676600000, "endDate": 1736679900000, "attachments": [{"name": "COVER", "value": "/epg/COVER/COVER_3261229.jpg"}], "seriesSeason": "17", "episodeId": "8", "referenceProgramId": "780916571", "prLevel": 4, "id": 15073959340, "description": "El programa viaja hasta Bulgaria para conocer su capital Sofía, una de las ciudades más antiguas de Europa y también de las más desconocidas. El espacio de viajes de La 1 también llegará hasta la ciudad medieval de Veliko Tarnovo y Varna.", "seriesName": "Españoles en el mundo", "genres": [{"externalId": "Documental", "name": "Documental", "id": 30089199}, {"externalId": "Viajes y aventuras", "name": "Viajes y aventuras", "id": 9198977905}], "name": "Españoles en el mundo - T17, E08: Sofia, Bulgaria", "flags": 15}, {"startDate": 1736679900000, "endDate": 1736683200000, "attachments": [{"name": "COVER", "value": "/epg/COVER/COVER_3261229.jpg"}], "seriesSeason": "16", "episodeId": "9", "referenceProgramId": "780872010", "prLevel": 4, "id": 15058342225, "description": "El programa cruza el charco para trasladarse a Washington D.C., donde de la mano de seis personas españolas, se descubren lugares como la Casa Blanca, el Capitolio, el Museo de Historia Natural o el Memorial de los Veteranos de Vietnam.", "seriesName": "Españoles en el mundo", "genres": [{"externalId": "Documental", "name": "Documental", "id": 30089199}, {"externalId": "Viajes y aventuras", "name": "Viajes y aventuras", "id": 9198977905}], "name": "Españoles en el mundo - T16, E09: Washington, Distrito Columbia", "flags": 15}, {"startDate": 1736683200000, "endDate": 1736686500000, "attachments": [{"name": "COVER", "value": "/epg/COVER/COVER_3256949.jpg"}], "seriesSeason": "12", "episodeId": "4", "referenceProgramId": "780872014", "prLevel": 4, "id": 15058342441, "description": "Cruzamos el Estrecho de Gibraltar para conocer la huella española en los dominios del antiguo Protectorado en Marruecos.", "seriesName": "Españoles en el mundo", "genres": [{"externalId": "Documental", "name": "Documental", "id": 30089199}, {"externalId": "Viajes y aventuras", "name": "Viajes y aventuras", "id": 9198977905}], "name": "Españoles en el mundo - T12, E04: Tánger, Tetuán y Chauen", "flags": 15}, {"startDate": 1736686500000, "endDate": 1736690400000, "attachments": [{"name": "COVER", "value": "/epg/COVER/COVER_415745.jpg"}], "seriesSeason": "2", "episodeId": "4", "referenceProgramId": "780872015", "prLevel": 1, "id": 15058341793, "description": "Anne Igartiburu y Jordi González hacen un repaso a la actualidad de la crónica social, con los nombres propios más importantes de la semana y estando en directo en todos los acontecimientos y eventos que se produzcan.", "seriesName": "D Corazón", "genres": [{"externalId": "Programa", "name": "Programa", "id": 9169074970}, {"externalId": "Prensa rosa", "name": "Prensa rosa", "id": 11611838587}], "name": "D Corazón - T2, E04: D Corazón", "flags": 15}, {"startDate": 1736690400000, "endDate": 1736694000000, "attachments": [{"name": "COVER", "value": "/epg/COVER/COVER_663318.jpg"}], "seriesSeason": "", "episodeId": "", "referenceProgramId": "780872012", "prLevel": 1, "id": 15058342729, "description": "Informativo de Televisión Española de los fines de semana. Lara Siscar e Igor Gómez se encargan de presentar las últimas noticias de ámbito nacional e internacional surgidas durante el día", "seriesName": "", "genres": [{"externalId": "Programa", "name": "Programa", "id": 9169074970}, {"externalId": "Informativo", "name": "Informativo", "id": 862353792}], "name": "Telediario 1 Fin de Semana", "flags": 14}]}]
+[
+  {
+    "responseElementType": "ProgramList",
+    "channelExternalId": "1010",
+    "programs": [
+      {
+        "startDate": 1780033800000,
+        "endDate": 1780043700000,
+        "attachments": [
+          {
+            "name": "COVER",
+            "value": "/epg/COVER/COVER_3997920.jpg"
+          }
+        ],
+        "seriesSeason": "2026",
+        "episodeId": "105",
+        "referenceProgramId": "785628646",
+        "prLevel": 7,
+        "id": 16067266000,
+        "description": "El programa cuenta con  reportajes y entrevistas, dedicados a analizar en profundidad el mundo de la política y la actualidad.",
+        "seriesName": "La hora de La 1",
+        "genres": [
+          {
+            "externalId": "Programa",
+            "name": "Programa",
+            "id": 9169074970
+          },
+          {
+            "externalId": "Informativo",
+            "name": "Informativo",
+            "id": 862353792
+          },
+          {
+            "externalId": "Otros",
+            "name": "Otros",
+            "id": 24434204
+          }
+        ],
+        "name": "La hora de La 1 - T2026, E105: La hora de La 1 - 29.05.2026",
+        "flags": 15
+      },
+      {
+        "startDate": 1780043700000,
+        "endDate": 1780059300000,
+        "attachments": [
+          {
+            "name": "COVER",
+            "value": "/epg/COVER/COVER_3997922.jpg"
+          }
+        ],
+        "seriesSeason": "1",
+        "episodeId": "294",
+        "referenceProgramId": "785628704",
+        "prLevel": 7,
+        "id": 16067265925,
+        "description": "Mañaneros es el magacine matinal de entretenimiento de tve,  que recoge la actualidad con rigor y en tiempo real., de una manera ágil, amable e interactiva.",
+        "seriesName": "Mañaneros 360",
+        "genres": [
+          {
+            "externalId": "Programa",
+            "name": "Programa",
+            "id": 9169074970
+          },
+          {
+            "externalId": "Talk Show",
+            "name": "Talk Show",
+            "id": 862338541
+          }
+        ],
+        "name": "Mañaneros 360 - T1, E294: Mañaneros 360 - 29.05.2026",
+        "flags": 15
+      },
+      {
+        "startDate": 1780059300000,
+        "endDate": 1780061700000,
+        "attachments": [
+          {
+            "name": "COVER",
+            "value": "/epg/COVER/COVER_4265375.jpg"
+          }
+        ],
+        "seriesSeason": "2026",
+        "episodeId": "149",
+        "referenceProgramId": "785628667",
+        "prLevel": 1,
+        "id": 16067266750,
+        "description": "Espacio de información nacional e internacional diaria, en directo.",
+        "seriesName": "Telediario 1",
+        "genres": [
+          {
+            "externalId": "Programa",
+            "name": "Programa",
+            "id": 9169074970
+          },
+          {
+            "externalId": "Informativo",
+            "name": "Informativo",
+            "id": 862353792
+          }
+        ],
+        "name": "Telediario 1 - T2026, E149: 29 de Mayo de 2026",
+        "flags": 15
+      },
+      {
+        "startDate": 1780061700000,
+        "endDate": 1780062000000,
+        "attachments": [
+          {
+            "name": "COVER",
+            "value": "/epg/COVER/COVER_3994869.jpg"
+          }
+        ],
+        "seriesSeason": "",
+        "episodeId": "",
+        "referenceProgramId": "785628500",
+        "prLevel": 1,
+        "id": 16067265625,
+        "description": "Bloque diario dedicado al deporte tras el informativo: resultados, análisis y reportajes nacionales e internacionales.",
+        "seriesName": "",
+        "genres": [
+          {
+            "externalId": "Deportes",
+            "name": "Deportes",
+            "id": 862349933
+          },
+          {
+            "externalId": "Programa Deportivo",
+            "name": "Programa Deportivo",
+            "id": 9198951724
+          }
+        ],
+        "name": "Deportes 1 (RTVE)",
+        "flags": 14
+      },
+      {
+        "startDate": 1780062000000,
+        "endDate": 1780062300000,
+        "attachments": [
+          {
+            "name": "COVER",
+            "value": "/epg/COVER/COVER_3994873.jpg"
+          }
+        ],
+        "seriesSeason": "",
+        "episodeId": "",
+        "referenceProgramId": "785628649",
+        "prLevel": 1,
+        "id": 16067264650,
+        "description": "La mejor manera de enterarse de la previsión meteorológica para los próximos días. La información del tiempo de TVE es un clásico de la historia audiovisual española. Avalada por el Instituto Nacional de Meteorología, goza de un alto nivel de acierto.",
+        "seriesName": "",
+        "genres": [
+          {
+            "externalId": "Programa",
+            "name": "Programa",
+            "id": 9169074970
+          },
+          {
+            "externalId": "Informativo",
+            "name": "Informativo",
+            "id": 862353792
+          }
+        ],
+        "name": "El Tiempo (RTVE)",
+        "flags": 14
+      },
+      {
+        "startDate": 1780062300000,
+        "endDate": 1780062900000,
+        "attachments": [
+          {
+            "name": "COVER",
+            "value": "/epg/COVER/COVER_3994877.jpg"
+          }
+        ],
+        "seriesSeason": "",
+        "episodeId": "",
+        "referenceProgramId": "785628502",
+        "prLevel": 1,
+        "id": 16067265475,
+        "description": "Redifusión de los mejores momentos de La1.",
+        "seriesName": "",
+        "genres": [
+          {
+            "externalId": "Programa",
+            "name": "Programa",
+            "id": 9169074970
+          },
+          {
+            "externalId": "Informativo",
+            "name": "Informativo",
+            "id": 862353792
+          }
+        ],
+        "name": "Redifusión La1",
+        "flags": 14
+      },
+      {
+        "startDate": 1780062900000,
+        "endDate": 1780069500000,
+        "attachments": [
+          {
+            "name": "COVER",
+            "value": "/epg/COVER/COVER_4452167.jpg"
+          }
+        ],
+        "seriesSeason": "1",
+        "episodeId": "176",
+        "referenceProgramId": "785701691",
+        "prLevel": 7,
+        "id": 16079705569,
+        "description": "Magacine de actualidad social y política con secciones de humor y de verificación de noticias falsas.",
+        "seriesName": "Directo al grano",
+        "genres": [
+          {
+            "externalId": "Programa",
+            "name": "Programa",
+            "id": 9169074970
+          },
+          {
+            "externalId": "Actualidad",
+            "name": "Actualidad",
+            "id": 862333517
+          }
+        ],
+        "name": "Directo al grano - T1, E176: Episodio 176",
+        "flags": 15
+      }
+    ]
+  }
+]
