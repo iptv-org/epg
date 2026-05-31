@@ -1,9 +1,11 @@
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const doFetch = require('@ntlab/sfetch')
-const uniqBy = require('lodash.uniqby')
 
 dayjs.extend(utc)
+doFetch.setCheckResult(false)
+
+const caches = {}
 
 module.exports = {
   site: 'ziggogo.tv',
@@ -13,62 +15,72 @@ module.exports = {
       ttl: 24 * 60 * 60 * 1000 // 1 day
     }
   },
-  url({ date, segment = 0 }) {
-    return `https://staticqbr-prod-nl.gnp.cloud.ziggogo.tv/eng/web/epg-service-lite/nl/en/events/segments/${date.format(
-      'YYYYMMDD'
-    )}${segment.toString().padStart(2, '0')}0000`
+  url({ date }) {
+    return segmentUrl(date)
   },
   async parser({ content, channel, date }) {
     const programs = []
     if (!content) return []
     const parsed = typeof content === 'string' ? JSON.parse(content) : content
     if (!Array.isArray(parsed.entries)) return []
-    const entries = parsed.entries
 
-    // fetch other segments
-    let segments = [
-      module.exports.url({ date, segment: 6 }),
-      module.exports.url({ date, segment: 12 }),
-      module.exports.url({ date, segment: 18 })
-    ]
-    await doFetch(segments, (url, res) => {
-      if (Array.isArray(res.entries)) {
-        entries.push(...res.entries)
+    const events = []
+    const f = entries => {
+      entries
+        .filter(entry => entry.channelId === channel.site_id)
+        .forEach(entry => {
+          if (Array.isArray(entry.events)) {
+            entry.events.forEach(event => {
+              if (!events.find(ev => ev.event.id === event.id)) {
+                events.push({
+                  url:
+                    `https://spark-prod-nl.gnp.cloud.ziggogo.tv/eng/web/linear-service/v2/replayEvent/${event.id}?returnLinearContent=true&forceLinearResponse=true&language=nl`,
+                  event
+                })
+              }
+            })
+          }
+        })
+    }
+    f(parsed.entries)
+
+    // fetch other segments or use cache if exist
+    const segments = []
+    for (const segment of [6, 12, 18]) {
+      const url = segmentUrl(date, segment)
+      if (caches[url] !== undefined) {
+        f(caches[url])
+      } else {
+        segments.push(url)
       }
-    })
-
-    let events = []
-    entries
-      .filter(item => item.channelId === channel.site_id)
-      .forEach(item => {
-        if (!Array.isArray(item.events)) return
-        events.push(
-          ...item.events.map(event => ({
-            startTime: event.startTime,
-            url: `https://spark-prod-nl.gnp.cloud.ziggogo.tv/eng/web/linear-service/v2/replayEvent/${event.id}?returnLinearContent=true&forceLinearResponse=true&language=nl`
-          }))
-        )
+    }
+    if (segments.length) {
+      await doFetch(segments, (url, res) => {
+        if (Array.isArray(res?.entries)) {
+          caches[url] = res.entries
+          f(res.entries)
+        }
       })
-
-    events = uniqBy(events, 'startTime')
+    }
 
     // fetch detailed guide
     if (events.length) {
-      await doFetch(events, (url, res) => {
+      await doFetch(events, (queue, res) => {
+        const event = res ? res : queue.event
         programs.push({
-          title: res.title,
-          subTitle: res.episodeName,
-          description: res.longDescription ? res.longDescription : res.shortDescription,
-          category: res.genres,
-          season: res.seasonNumber,
-          episode: res.episodeNumber,
-          country: res.countryOfOrigin,
-          actor: res.actors,
-          director: res.directors,
-          producer: res.producers,
-          date: res.productionDate,
-          start: dayjs.utc(res.startTime * 1000),
-          stop: dayjs.utc(res.endTime * 1000)
+          title: event.title,
+          subTitle: event.episodeName,
+          description: event.longDescription ? event.longDescription : event.shortDescription,
+          category: event.genres,
+          season: event.seasonNumber,
+          episode: event.episodeNumber,
+          country: event.countryOfOrigin,
+          actor: event.actors,
+          director: event.directors,
+          producer: event.producers,
+          date: event.productionDate,
+          start: dayjs.utc(event.startTime * 1000),
+          stop: dayjs.utc(event.endTime * 1000)
         })
       })
     }
@@ -101,4 +113,10 @@ module.exports = {
 
     return channels
   }
+}
+
+function segmentUrl(date, segment = 0) {
+  return `https://staticqbr-prod-nl.gnp.cloud.ziggogo.tv/eng/web/epg-service-lite/nl/en/events/segments/${date.format(
+    'YYYYMMDD'
+  )}${segment.toString().padStart(2, '0')}0000`
 }
