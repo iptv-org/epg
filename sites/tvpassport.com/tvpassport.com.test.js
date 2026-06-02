@@ -1,11 +1,15 @@
 const { parser, url } = require('./tvpassport.com.config.js')
+const axios = require('axios')
 const fs = require('fs')
 const path = require('path')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
+
+jest.mock('axios')
 
 const date = dayjs.utc('2022-10-04', 'YYYY-MM-DD').startOf('d')
 const channel = {
@@ -13,8 +17,12 @@ const channel = {
   xmltv_id: 'YTATV.us'
 }
 
-it('can generate valid url', () => {
-  expect(url({ channel, date })).toBe(
+axios.head.mockImplementation(() => {
+  return Promise.resolve({})
+})
+
+it('can generate valid url', async () => {
+  expect(await url({ channel, date })).toBe(
     'https://www.tvpassport.com/tv-listings/stations/youtoo-america-network/5463/2022-10-04'
   )
 })
