@@ -31,7 +31,7 @@ module.exports = {
             if (Array.isArray(schedule.events)) {
               sortBy(schedule.events, p => p.st).forEach(event => {
                 const start = dayjs.utc(event.st * 1000)
-                if (start.isSame(date.tz('Europe/London'), 'd')) {
+                if (start.tz('Europe/London').isSame(date, 'd')) {
                   const image = `https://images.metadata.sky.com/pd-image/${event.programmeuuid}/16-9/640`
                   programs.push({
                     title: event.t,
