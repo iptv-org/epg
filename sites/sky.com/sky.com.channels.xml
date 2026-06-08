@@ -11,7 +11,6 @@
   <channel site="sky.com" site_id="1183" lang="en" xmltv_id="">Disney Jr HD</channel>
   <channel site="sky.com" site_id="1190" lang="en" xmltv_id="">Disney+CineHD</channel>
   <channel site="sky.com" site_id="1205" lang="en" xmltv_id="">LBC News</channel>
-  <channel site="sky.com" site_id="1229" lang="en" xmltv_id="">Sky Arts</channel>
   <channel site="sky.com" site_id="1261" lang="en" xmltv_id="">RTÉ Radio 1</channel>
   <channel site="sky.com" site_id="1262" lang="en" xmltv_id="">RTÉ 2FM</channel>
   <channel site="sky.com" site_id="1263" lang="en" xmltv_id="">RTÉ R na G</channel>
@@ -56,6 +55,7 @@
   <channel site="sky.com" site_id="4163" lang="en" xmltv_id="">EWTN Catholic</channel>
   <channel site="sky.com" site_id="4611" lang="en" xmltv_id="">LEGEND</channel>
   <channel site="sky.com" site_id="5040" lang="en" xmltv_id="">Arise News</channel>
+  <channel site="sky.com" site_id="6761" lang="en" xmltv_id="">QUEST</channel>
   <channel site="sky.com" site_id="8040" lang="en" xmltv_id="">My Sky</channel>
   <channel site="sky.com" site_id="8266" lang="en" xmltv_id="">My Account</channel>
   <channel site="sky.com" site_id="8301" lang="en" xmltv_id="">Program Your Remote</channel>
@@ -70,7 +70,6 @@
   <channel site="sky.com" site_id="3027" lang="en" xmltv_id="5USA.uk@Plus1">5USA+1</channel>
   <channel site="sky.com" site_id="3022" lang="en" xmltv_id="5USA.uk@SD">5 USA</channel>
   <channel site="sky.com" site_id="1031" lang="en" xmltv_id="40Plus.uk@SD">TVX 40+</channel>
-  <channel site="sky.com" site_id="1104" lang="en" xmltv_id="A1TVRajasthan.in@SD">Islam Bangla</channel>
   <channel site="sky.com" site_id="3255" lang="en" xmltv_id="AajTak.in@SD">AAJ TAK</channel>
   <channel site="sky.com" site_id="3594" lang="en" xmltv_id="Aastha.in@SD">Aastha</channel>
   <channel site="sky.com" site_id="4195" lang="en" xmltv_id="AdultChannel.uk@SD">Adult Channel</channel>
@@ -121,7 +120,6 @@
   <channel site="sky.com" site_id="4100" lang="en" xmltv_id="BestDirect.uk@SD">Best Direct</channel>
   <channel site="sky.com" site_id="1065" lang="en" xmltv_id="Blaze.uk@SD">BLAZE</channel>
   <channel site="sky.com" site_id="1074" lang="en" xmltv_id="BloombergTV.us@Europe">Bloomberg HD</channel>
-  <channel site="sky.com" site_id="4030" lang="en" xmltv_id="Boomerang.uk@HD">Boomerang HD</channel>
   <channel site="sky.com" site_id="5603" lang="en" xmltv_id="Boomerang.uk@Plus1">Boomerang+1</channel>
   <channel site="sky.com" site_id="5609" lang="en" xmltv_id="Boomerang.uk@SD">Boomerang</channel>
   <channel site="sky.com" site_id="1371" lang="en" xmltv_id="Cartoonito.uk@SD">Cartoonito</channel>
@@ -149,7 +147,6 @@
   <channel site="sky.com" site_id="1675" lang="en" xmltv_id="Channel4.uk@UKPlus1">Channel 4+1</channel>
   <channel site="sky.com" site_id="4058" lang="en" xmltv_id="Channel5.uk@HD">5 HD</channel>
   <channel site="sky.com" site_id="1839" lang="en" xmltv_id="Channel5.uk@Plus1">5+1</channel>
-  <channel site="sky.com" site_id="1800" lang="en" xmltv_id="Channel5.uk@SD">5</channel>
   <channel site="sky.com" site_id="5520" lang="en" xmltv_id="Channels24.ng@SD">Channels 24</channel>
   <channel site="sky.com" site_id="3815" lang="en" xmltv_id="ChannelS.uk@SD">CHSTV</channel>
   <channel site="sky.com" site_id="1850" lang="en" xmltv_id="ChlLineup.uk@SD">Chl Line-up</channel>
@@ -224,12 +221,10 @@
   <channel site="sky.com" site_id="3771" lang="en" xmltv_id="GREATmovies.uk@UKPlus1">G! Mystery+1</channel>
   <channel site="sky.com" site_id="1133" lang="en" xmltv_id="GREATromance.uk@Ireland">Great! Action</channel>
   <channel site="sky.com" site_id="3643" lang="en" xmltv_id="GREATromance.uk@UK">Great! Romance</channel>
-  <channel site="sky.com" site_id="3751" lang="en" xmltv_id="GREATromance.uk@UKPlus1">Great! Romance+1</channel>
+  <channel site="sky.com" site_id="3751" lang="en" xmltv_id="GREATromance.uk@UKPlus1">G! Romance+1</channel>
   <channel site="sky.com" site_id="1320" lang="en" xmltv_id="GREATtv.ie@SD">Great! TV</channel>
   <channel site="sky.com" site_id="5338" lang="en" xmltv_id="GREATtv.uk@Plus1">Great! TV+1</channel>
   <channel site="sky.com" site_id="4266" lang="en" xmltv_id="GREATtv.uk@SD">Great! TV</channel>
-  <channel site="sky.com" site_id="2408" lang="en" xmltv_id="HGTV.ie@SD">HGTV</channel>
-  <channel site="sky.com" site_id="2309" lang="en" xmltv_id="HGTV.uk@Plus1">HGTV+1</channel>
   <channel site="sky.com" site_id="2301" lang="en" xmltv_id="HGTV.uk@SD">HGTV</channel>
   <channel site="sky.com" site_id="3580" lang="en" xmltv_id="HighStreetTV1.uk@SD">High Street TV 1</channel>
   <channel site="sky.com" site_id="5706" lang="en" xmltv_id="HighStreetTV2.uk@SD">High Street TV 2</channel>
@@ -282,7 +277,6 @@
   <channel site="sky.com" site_id="3731" lang="en" xmltv_id="KWSMLD323.us@SD">NTD</channel>
   <channel site="sky.com" site_id="4610" lang="en" xmltv_id="Legend.uk@SD">LEGEND</channel>
   <channel site="sky.com" site_id="3845" lang="en" xmltv_id="LFCTV.uk@SD">LFCTV HD</channel>
-  <channel site="sky.com" site_id="5090" lang="en" xmltv_id="LondonLive.uk@SD">London TV</channel>
   <channel site="sky.com" site_id="1228" lang="en" xmltv_id="LoveWorldUK.ng@SD">LoveWorld HD</channel>
   <channel site="sky.com" site_id="4460" lang="en" xmltv_id="MadaniChannelEnglish.pk@SD">Madani Chnl</channel>
   <channel site="sky.com" site_id="1069" lang="en" xmltv_id="MasalaTV.pk@SD">HUM News</channel>
@@ -319,8 +313,8 @@
   <channel site="sky.com" site_id="1857" lang="en" xmltv_id="NickJr.uk@SD">Nick Jr.</channel>
   <channel site="sky.com" site_id="5192" lang="en" xmltv_id="NickJrToo.ie@SD">Nick Jr. Too</channel>
   <channel site="sky.com" site_id="4340" lang="en" xmltv_id="NickJrToo.uk@SD">Nick Jr. Too</channel>
-  <channel site="sky.com" site_id="5527" lang="en" xmltv_id="Nicktoons.ie@SD">Nick Alvinnnn!!!</channel>
-  <channel site="sky.com" site_id="1849" lang="en" xmltv_id="Nicktoons.uk@SD">Nick Alvinnnn!!!</channel>
+  <channel site="sky.com" site_id="5527" lang="en" xmltv_id="Nicktoons.ie@SD">Nicktoons</channel>
+  <channel site="sky.com" site_id="1849" lang="en" xmltv_id="Nicktoons.uk@SD">Nicktoons</channel>
   <channel site="sky.com" site_id="3715" lang="en" xmltv_id="NoorTV.uk@SD">Noor TV</channel>
   <channel site="sky.com" site_id="3403" lang="en" xmltv_id="Now70s.uk@SD">NOW 70s</channel>
   <channel site="sky.com" site_id="4541" lang="en" xmltv_id="Now80s.uk@SD">NOW 80s</channel>
@@ -373,15 +367,14 @@
   <channel site="sky.com" site_id="1413" lang="en" xmltv_id="SkyAtlantic.uk@Plus1">Sky Atlantic+1</channel>
   <channel site="sky.com" site_id="1412" lang="en" xmltv_id="SkyAtlantic.uk@SD">Sky Atlantic</channel>
   <channel site="sky.com" site_id="4014" lang="en" xmltv_id="SkyCinemaAction.uk@HD">Sky Action HD</channel>
-  <channel site="sky.com" site_id="1199" lang="en" xmltv_id="SkyCinemaAnimation.uk@SD">SkyAnimationHD</channel>
   <channel site="sky.com" site_id="4019" lang="en" xmltv_id="SkyCinemaComedy.uk@HD">Sky Comedy HD</channel>
   <channel site="sky.com" site_id="4016" lang="en" xmltv_id="SkyCinemaDrama.uk@HD">Sky Drama HD</channel>
   <channel site="sky.com" site_id="4018" lang="en" xmltv_id="SkyCinemaFamily.uk@HD">Sky Family HD</channel>
   <channel site="sky.com" site_id="4015" lang="en" xmltv_id="SkyCinemaGreats.uk@SD">Sky Greats HD</channel>
-  <channel site="sky.com" site_id="4033" lang="en" xmltv_id="SkyCinemaHits.uk@SD">Sky Box Set HD</channel>
+  <channel site="sky.com" site_id="4033" lang="en" xmltv_id="SkyCinemaHits.uk@SD">SkyAnimationHD</channel>
   <channel site="sky.com" site_id="4021" lang="en" xmltv_id="SkyCinemaPremiere.uk@HD">SkyPremiereHD</channel>
   <channel site="sky.com" site_id="4017" lang="en" xmltv_id="SkyCinemaSciFiHorror.uk@HD">Sky ScFi/HorHD</channel>
-  <channel site="sky.com" site_id="4020" lang="en" xmltv_id="SkyCinemaSelect.uk@SD">Sky5*MoviesHD</channel>
+  <channel site="sky.com" site_id="4020" lang="en" xmltv_id="SkyCinemaSelect.uk@SD">SkyDirectorsHD</channel>
   <channel site="sky.com" site_id="4062" lang="en" xmltv_id="SkyCinemaThriller.uk@HD">Sky Thriller HD</channel>
   <channel site="sky.com" site_id="1146" lang="en" xmltv_id="SkyComedy.ie@SD">Sky Comedy</channel>
   <channel site="sky.com" site_id="1143" lang="en" xmltv_id="SkyComedy.uk@HD">Sky Comedy HD</channel>
@@ -412,9 +405,6 @@
   <channel site="sky.com" site_id="4645" lang="en" xmltv_id="SkyNewsArabia.ae@SD">SkyNewsArabia</channel>
   <channel site="sky.com" site_id="4074" lang="en" xmltv_id="SkySciFi.uk@HD">Sky Sci-Fi HD</channel>
   <channel site="sky.com" site_id="2505" lang="en" xmltv_id="SkySciFi.uk@SD">Sky Sci-Fi</channel>
-  <channel site="sky.com" site_id="1278" lang="en" xmltv_id="SkyShowcase.ie@HD">SkyShowcaseHD</channel>
-  <channel site="sky.com" site_id="1279" lang="en" xmltv_id="SkyShowcase.ie@SD">Sky Showcase</channel>
-  <channel site="sky.com" site_id="1275" lang="en" xmltv_id="SkyShowcase.uk@HD">SkyShowcaseHD</channel>
   <channel site="sky.com" site_id="1277" lang="en" xmltv_id="SkyShowcase.uk@Plus1">SkyShowcase+1</channel>
   <channel site="sky.com" site_id="3839" lang="en" xmltv_id="SkySportsArena.ie@SD">SkySp+</channel>
   <channel site="sky.com" site_id="3940" lang="en" xmltv_id="SkySportsArena.uk@HD">SkySp+ HD</channel>
@@ -467,8 +457,6 @@
   <channel site="sky.com" site_id="3109" lang="en" xmltv_id="TBNUK.uk@SD">TBN UK</channel>
   <channel site="sky.com" site_id="4192" lang="en" xmltv_id="TelevisionX.uk@SD">Television X</channel>
   <channel site="sky.com" site_id="4034" lang="en" xmltv_id="TG4.ie@HD">TG4 HD</channel>
-  <channel site="sky.com" site_id="1134" lang="en" xmltv_id="Thats60s.uk@SD">That&apos;s TV 3</channel>
-  <channel site="sky.com" site_id="1311" lang="en" xmltv_id="Thats70s.uk@SD">That&apos;s TV 2</channel>
   <channel site="sky.com" site_id="1017" lang="en" xmltv_id="ThatsTV.uk@SD">That&apos;s TV</channel>
   <channel site="sky.com" site_id="1234" lang="en" xmltv_id="TinyPop.uk@SD">Tiny Pop</channel>
   <channel site="sky.com" site_id="1113" lang="en" xmltv_id="TJC.uk@HD">TJC HD</channel>

@@ -1,6 +1,7 @@
 const { parser, url } = require('./sky.com.config.js')
 const fs = require('fs')
 const path = require('path')
+const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -8,62 +9,66 @@ const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
-const date = dayjs.utc('2024-12-14', 'YYYY-MM-DD').startOf('d')
+jest.mock('axios')
+
+const date = dayjs.utc('2026-06-08').startOf('d')
 const channel = {
   site_id: '4086',
-  xmltv_id: 'SkyHistoryHD.uk'
+  xmltv_id: 'SkyHistory.uk@HD'
 }
 
+axios.get.mockImplementation(url => {
+  const urls = {
+    'https://awk.epgsky.com/hawk/linear/schedule/20260608/4086': 'content1.json',
+    'https://awk.epgsky.com/hawk/linear/schedule/20260609/4086': 'content2.json'
+  }
+  let data = ''
+  if (urls[url] !== undefined) {
+    data = fs.readFileSync(path.join(__dirname, '__data__', urls[url])).toString()
+  }
+  return Promise.resolve({ data })
+})
+
 it('can generate valid url', () => {
-  expect(url({ channel, date })).toBe('https://awk.epgsky.com/hawk/linear/schedule/20241214/4086')
+  expect(url({ channel, date })).toBe('https://awk.epgsky.com/hawk/linear/schedule/20260608/4086')
 })
 
-it('can parse response', () => {
-  const content = fs.readFileSync(path.join(__dirname, '__data__', 'content.json'))
-  const result = parser({ content, channel, date }).map(p => {
-    p.start = p.start.toJSON()
-    p.stop = p.stop.toJSON()
-    return p
-  })
+it('can parse response', async () => {
+  const content = fs.readFileSync(path.join(__dirname, '__data__', 'content1.json'))
+  const result = (await parser({ content, channel, date }))
+    .map(p => {
+      p.start = p.start.toJSON()
+      p.stop = p.stop.toJSON()
+      return p
+    })
 
-  expect(result.length).toBe(31)
+  expect(result.length).toBe(30)
   expect(result[0]).toMatchObject({
-    start: '2024-12-14T00:00:00.000Z',
-    stop: '2024-12-14T00:30:00.000Z',
-    title: 'Storage Wars',
+    start: '2026-06-07T23:45:00.000Z',
+    stop: '2026-06-08T00:45:00.000Z',
+    title: 'The UnBelievable With Dan Aykroyd',
     description:
-      'A Sale Of Two Cities: Emily brings her mother along with her to Walnut, and Darrell wastes no time finding an advantage. Ivy and Ivy jr clean up with their locker. (S12, ep 4)',
-    season: 12,
-    episode: 4,
-    icon: 'https://images.metadata.sky.com/pd-image/b9572a38-8db7-471e-a2d7-462e1dd26af2/16-9/640',
-    image: 'https://images.metadata.sky.com/pd-image/b9572a38-8db7-471e-a2d7-462e1dd26af2/16-9/640'
-  })
-  expect(result[2]).toMatchObject({
-    start: '2024-12-14T01:00:00.000Z',
-    stop: '2024-12-14T01:30:00.000Z',
-    title: 'Storage Wars',
-    description:
-      'Not All That Glitters Is Gourd: Back in the city of Orange, the Vegas Ladies arrive in vintage style - though not everyone agrees. (S12, ep 6)',
-    season: 12,
+      'Bizarre Innovations: Discover bizarre innovations like a fully functioning car that hovers in midair. Or clothing made out of everyone\'s favorite source of calcium. (S2, ep 6)',
+    season: 2,
     episode: 6,
-    icon: 'https://images.metadata.sky.com/pd-image/e9521ccc-bdcc-4075-9c2e-bc835247148b/16-9/640',
-    image: 'https://images.metadata.sky.com/pd-image/e9521ccc-bdcc-4075-9c2e-bc835247148b/16-9/640'
+    icon: 'https://images.metadata.sky.com/pd-image/007ade72-3239-47d7-a452-3070eb8e591d/16-9/640',
+    image: 'https://images.metadata.sky.com/pd-image/007ade72-3239-47d7-a452-3070eb8e591d/16-9/640'
   })
-  expect(result[30]).toMatchObject({
-    start: '2024-12-14T23:00:00.000Z',
-    stop: '2024-12-15T01:00:00.000Z',
-    title: 'American Godfathers: The Five Families',
+  expect(result[29]).toMatchObject({
+    start: '2026-06-08T23:00:00.000Z',
+    stop: '2026-06-09T00:00:00.000Z',
+    title: 'Digging For Britain',
     description:
-      "Rise of the New Dons: Follow the conflict between the families' old guard and a new generation of younger, American-born mobsters willing to defy their authority. (S1, ep 2)",
+      'The Tudors: Dr Alice Roberts pays tribute to the Bard, visiting Shakespeare\'s first theatre in London\'s Shoreditch and sifting through the poet\'s rubbish! (S1, ep 4)',
     season: 1,
-    episode: 2,
-    icon: 'https://images.metadata.sky.com/pd-image/4e38c66b-c2ae-3669-a7ff-e7588743e7ac/16-9/640',
-    image: 'https://images.metadata.sky.com/pd-image/4e38c66b-c2ae-3669-a7ff-e7588743e7ac/16-9/640'
+    episode: 4,
+    icon: 'https://images.metadata.sky.com/pd-image/68152ae7-97d6-44c8-8a54-e78710b94a76/16-9/640',
+    image: 'https://images.metadata.sky.com/pd-image/68152ae7-97d6-44c8-8a54-e78710b94a76/16-9/640'
   })
 })
 
-it('can handle empty guide', () => {
-  const result = parser({
+it('can handle empty guide', async () => {
+  const result = await parser({
     date,
     channel,
     content: ''
