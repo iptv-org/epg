@@ -1,0 +1,43 @@
+{
+  "date": "20260608",
+  "schedule": [
+    {
+      "sid": "4086",
+      "events": [
+        {
+          "st": 1780873200,
+          "d": 1800,
+          "programmeuuid": "11111111-1111-1111-1111-111111111111",
+          "seasonnumber": 1,
+          "episodenumber": 1,
+          "t": "Midnight Show",
+          "sy": "Starts at 00:00 BST on 8 June (23:00Z on the 7th). Lives entirely before UTC midnight, so a UTC-only start/stop check drops it."
+        },
+        {
+          "st": 1780875900,
+          "d": 3600,
+          "t": "Quarter To One",
+          "sy": "Starts 00:45 BST and straddles UTC midnight (23:45Z -> 00:45Z). tohenk's example from the schedule response."
+        },
+        {
+          "st": 1780916400,
+          "d": 3600,
+          "t": "Midday Movie",
+          "sy": "Noon BST sanity check, well inside the day."
+        },
+        {
+          "st": 1780957800,
+          "d": 1800,
+          "t": "Late Night",
+          "sy": "Last programme of the 8 June local day, starting 23:30 BST."
+        },
+        {
+          "st": 1780961400,
+          "d": 1800,
+          "t": "Next Day Breakfast",
+          "sy": "Starts 00:30 BST on 9 June (23:30Z on the 8th). Belongs to the next local day and must be dropped, even though it falls on UTC day 8."
+        }
+      ]
+    }
+  ]
+}

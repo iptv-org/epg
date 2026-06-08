@@ -62,6 +62,57 @@ it('can parse response', () => {
   })
 })
 
+it('keeps BST early-morning programmes and drops the next local day', () => {
+  // Sky buckets each schedule by UK *local* day, so a request for 8 June (BST,
+  // UTC+1) returns events from 00:00 BST (23:00Z on the 7th) onwards. Four of the
+  // five events below belong to the 8 June local day; the 00:30 BST 9 June event
+  // sits on UTC day 8 but must NOT leak into the 8 June guide.
+  const date = dayjs.utc('2026-06-08', 'YYYY-MM-DD').startOf('d')
+  const content = fs.readFileSync(path.join(__dirname, '__data__', 'content_bst.json'))
+  const result = parser({ content, channel, date }).map(p => {
+    p.start = p.start.toJSON()
+    p.stop = p.stop.toJSON()
+    return p
+  })
+
+  expect(result.length).toBe(4)
+  expect(result.map(p => p.title)).toEqual([
+    'Midnight Show',
+    'Quarter To One',
+    'Midday Movie',
+    'Late Night'
+  ])
+
+  // 00:00 BST: starts 23:00Z on the previous UTC day and never crosses UTC
+  // midnight. A UTC-only start/stop check drops this; the local-day filter keeps it.
+  expect(result[0]).toMatchObject({
+    start: '2026-06-07T23:00:00.000Z',
+    stop: '2026-06-07T23:30:00.000Z',
+    title: 'Midnight Show',
+    season: 1,
+    episode: 1,
+    icon: 'https://images.metadata.sky.com/pd-image/11111111-1111-1111-1111-111111111111/16-9/640',
+    image: 'https://images.metadata.sky.com/pd-image/11111111-1111-1111-1111-111111111111/16-9/640'
+  })
+
+  // 00:45 BST, straddling UTC midnight (23:45Z -> 00:45Z) — the example from the PR thread.
+  expect(result[1]).toMatchObject({
+    start: '2026-06-07T23:45:00.000Z',
+    stop: '2026-06-08T00:45:00.000Z',
+    title: 'Quarter To One'
+  })
+
+  // Last programme of the local day, starting 23:30 BST.
+  expect(result[3]).toMatchObject({
+    start: '2026-06-08T22:30:00.000Z',
+    stop: '2026-06-08T23:00:00.000Z',
+    title: 'Late Night'
+  })
+
+  // 00:30 BST on 9 June (23:30Z on the 8th): on UTC day 8, but the next local day.
+  expect(result.find(p => p.title === 'Next Day Breakfast')).toBeUndefined()
+})
+
 it('can handle empty guide', () => {
   const result = parser({
     date,
