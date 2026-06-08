@@ -35,14 +35,17 @@ module.exports = {
       const programUrl = parseProgramUrl($item)
       const details = await loadProgramDetails(programUrl)
       let image
+      let icon
       if (details) {
         image = details.image
+        icon = image
       }
 
       programs.push({
         title: parseTitle($item),
         description: parseDescription($item),
         image,
+        icon,
         category: parseCategory($item),
         start,
         stop
