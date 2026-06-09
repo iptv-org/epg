@@ -104,7 +104,7 @@ function parseStart($item, date) {
   const timeString = $item('.hours > .hour').text()
   const dateString = `${date.format('MM/DD/YYYY')} ${timeString}`
 
-  return dayjs.tz(dateString, 'MM/DD/YYYY HH:mm', 'Europe/Warsaw').utc()
+  return dayjs(dateString, 'MM/DD/YYYY HH:mm').tz('Europe/Warsaw', true).utc()
 }
 
 function parseCategory($item) {
