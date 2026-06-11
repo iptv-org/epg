@@ -9,6 +9,8 @@ dayjs.extend(utc)
 
 doFetch.setCheckResult(false).setDebugger(debug)
 
+const eventIds = []
+
 module.exports = {
   site: 'sky.com',
   days: 2,
@@ -35,12 +37,14 @@ module.exports = {
             .filter(schedule => schedule.sid === channel.site_id)
             .forEach(schedule => {
               if (Array.isArray(schedule.events)) {
-                schedule.events.forEach(event => {
-                  // use event id (eid) as unique filter
-                  if (events[event.eid] === undefined) {
-                    events[event.eid] = event
-                  }
-                })
+                schedule.events
+                  .filter(event => !eventIds.includes(event.eid))
+                  .forEach(event => {
+                    // use event id (eid) as unique filter
+                    if (events[event.eid] === undefined) {
+                      events[event.eid] = event
+                    }
+                  })
               }
             })
         }
@@ -59,6 +63,7 @@ module.exports = {
             const start = dayjs.utc(event.st * 1000)
             const stop = start.add(event.d, 's')
             if (date.isSame(start, 'd') || (date.isSame(stop, 'd') && stop > date)) {
+              eventIds.push(event.eid)
               const image = `https://images.metadata.sky.com/pd-image/${event.programmeuuid}/16-9/640`
               programs.push({
                 title: event.t,
