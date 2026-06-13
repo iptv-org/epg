@@ -189,7 +189,7 @@
     <tr><td><a href="sites/tv.dir.bg">tv.dir.bg</a></td><td align="right">100</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.lv">tv.lv</a></td><td align="right">137</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.magenta.at">tv.magenta.at</a></td><td align="right">307</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/tv.mail.ru">tv.mail.ru</a></td><td align="right">664</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/tv.mail.ru">tv.mail.ru</a></td><td align="right">664</td><td align="center">🟢</td><td>https://github.com/iptv-org/epg/issues/3174</td></tr>
     <tr><td><a href="sites/tv.movistar.co">tv.movistar.co</a></td><td align="right">97</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.movistar.com.pe">tv.movistar.com.pe</a></td><td align="right">262</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.nu">tv.nu</a></td><td align="right">199</td><td align="center">🟢</td><td></td></tr>
