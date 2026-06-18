@@ -1,49 +1,79 @@
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
-const timezone = require('dayjs/plugin/timezone')
 const doFetch = require('@ntlab/sfetch')
 const debug = require('debug')('site:sky.com')
-const sortBy = require('lodash.sortby')
 const path = require('path')
 const fs = require('fs/promises')
 
 dayjs.extend(utc)
-dayjs.extend(timezone)
 
-doFetch.setDebugger(debug)
+doFetch.setCheckResult(false).setDebugger(debug)
+
+const eventIds = []
 
 module.exports = {
   site: 'sky.com',
   days: 2,
+  request: {
+    cache: {
+      ttl: 24 * 60 * 60 * 1000 // 1 day
+    }
+  },
   url({ date, channel }) {
     return `https://awk.epgsky.com/hawk/linear/schedule/${date.format('YYYYMMDD')}/${
       channel.site_id
     }`
   },
-  parser({ content, channel, date }) {
+  async parser({ content, channel, date }) {
     const programs = []
     if (content) {
-      const items = JSON.parse(content) || null
-      if (Array.isArray(items.schedule)) {
-        items.schedule
-          .filter(schedule => schedule.sid === channel.site_id)
-          .forEach(schedule => {
-            if (Array.isArray(schedule.events)) {
-              sortBy(schedule.events, p => p.st).forEach(event => {
-                const start = dayjs.utc(event.st * 1000)
-                if (start.isSame(date.tz('Europe/London'), 'd')) {
-                  const image = `https://images.metadata.sky.com/pd-image/${event.programmeuuid}/16-9/640`
-                  programs.push({
-                    title: event.t,
-                    description: event.sy,
-                    season: event.seasonnumber,
-                    episode: event.episodenumber,
-                    start,
-                    stop: start.add(event.d, 's'),
-                    icon: image,
-                    image
+      const events = {}
+      const ev = items => {
+        if (typeof items === 'string' || Buffer.isBuffer(items)) {
+          items = JSON.parse(items)
+        }
+        if (Array.isArray(items?.schedule)) {
+          items.schedule
+            .filter(schedule => schedule.sid === channel.site_id)
+            .forEach(schedule => {
+              if (Array.isArray(schedule.events)) {
+                schedule.events
+                  .filter(event => !eventIds.includes(event.eid))
+                  .forEach(event => {
+                    // use event id (eid) as unique filter
+                    if (events[event.eid] === undefined) {
+                      events[event.eid] = event
+                    }
                   })
-                }
+              }
+            })
+        }
+      }
+      ev(content)
+      if (Object.keys(events).length) {
+        date = date.startOf('d')
+        // fetch next day schedule to get 24 hours schedule
+        await doFetch([module.exports.url({ channel, date: date.add(1, 'd') })], (url, res) => {
+          if (res) {
+            ev(res)
+          }
+        })
+        Object.values(events)
+          .forEach(event => {
+            const start = dayjs.utc(event.st * 1000)
+            const stop = start.add(event.d, 's')
+            if (date.isSame(start, 'd') || (date.isSame(stop, 'd') && stop > date)) {
+              eventIds.push(event.eid)
+              const image = `https://images.metadata.sky.com/pd-image/${event.programmeuuid}/16-9/640`
+              programs.push({
+                title: event.t,
+                description: event.sy,
+                season: event.seasonnumber,
+                episode: event.episodenumber,
+                start,
+                stop,
+                icon: image,
+                image
               })
             }
           })
@@ -53,14 +83,14 @@ module.exports = {
     return programs
   },
   async channels() {
-    const dataPath = path.join(__dirname, '__data__', 'content.json')
-    let regions = []
+    const dataPath = path.join(__dirname, '__data__', 'regions.json')
+    const regions = []
 
     try {
       const raw = await fs.readFile(dataPath, 'utf8')
       const payload = JSON.parse(raw)
       if (Array.isArray(payload.regions)) {
-        regions = payload.regions
+        regions.push(...payload.regions)
       }
     } catch (err) {
       debug('Failed to read regions from %s: %o', dataPath, err)
