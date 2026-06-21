@@ -5,6 +5,7 @@ const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
@@ -16,14 +17,14 @@ jest.mock('axios')
 axios.get.mockImplementation(url => {
   if (
     url ===
-    'https://tv-hr-prod.yo-digital.com/hr-bifrost/epg/channel/schedules?date=2025-01-24&hour_offset=3&hour_range=3&channelMap_id&filler=true&app_language=hr&natco_code=hr'
+    'https://tv-hr-prod.yo-digital.com/hr-bifrost/epg/channel/schedules?date=2025-01-24&hour_offset=3&hour_range=3&channelMap_id=&filler=true&app_language=hr&natco_code=hr'
   ) {
     return Promise.resolve({
       data: JSON.parse(fs.readFileSync(path.resolve(__dirname, '__data__/content_3.json')))
     })
   } else if (
     url ===
-    'https://tv-hr-prod.yo-digital.com/hr-bifrost/epg/channel/schedules?date=2025-01-24&hour_offset=21&hour_range=3&channelMap_id&filler=true&app_language=hr&natco_code=hr'
+    'https://tv-hr-prod.yo-digital.com/hr-bifrost/epg/channel/schedules?date=2025-01-24&hour_offset=21&hour_range=3&channelMap_id=&filler=true&app_language=hr&natco_code=hr'
   ) {
     return Promise.resolve({
       data: JSON.parse(fs.readFileSync(path.resolve(__dirname, '__data__/content_21.json')))
@@ -37,14 +38,14 @@ axios.get.mockImplementation(url => {
 
 it('can generate valid url', () => {
   expect(url({ date })).toBe(
-    'https://tv-hr-prod.yo-digital.com/hr-bifrost/epg/channel/schedules?date=2025-01-24&hour_offset=0&hour_range=3&channelMap_id&filler=true&app_language=hr&natco_code=hr'
+    'https://tv-hr-prod.yo-digital.com/hr-bifrost/epg/channel/schedules?date=2025-01-24&hour_offset=0&hour_range=3&channelMap_id=&filler=true&app_language=hr&natco_code=hr'
   )
 })
 
 it('can generate valid request headers', () => {
   expect(request.headers).toMatchObject({
     app_key: 'GWaBW4RTloLwpUgYVzOiW5zUxFLmoMj5',
-    app_version: '02.0.1080',
+    app_version: '02.0.1470',
   })
 })
 
