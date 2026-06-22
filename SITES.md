@@ -102,7 +102,7 @@
     <tr><td><a href="sites/mi.tv">mi.tv</a></td><td align="right">2084</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/mncvision.id">mncvision.id</a></td><td align="right">107</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/moji.id">moji.id</a></td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/mojmaxtv.hrvatskitelekom.hr">mojmaxtv.hrvatskitelekom.hr</a></td><td align="right">243</td><td align="center">🟢</td><td>https://github.com/iptv-org/epg/issues/3176</td></tr>
+    <tr><td><a href="sites/mojmaxtv.hrvatskitelekom.hr">mojmaxtv.hrvatskitelekom.hr</a></td><td align="right">243</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/mon-programme-tv.be">mon-programme-tv.be</a></td><td align="right">111</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/movistarplus.es">movistarplus.es</a></td><td align="right">138</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/mtel.ba">mtel.ba</a></td><td align="right">501</td><td align="center">🟢</td><td></td></tr>
@@ -161,7 +161,7 @@
     <tr><td><a href="sites/skylife.co.kr">skylife.co.kr</a></td><td align="right">257</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/skyperfectv.co.jp">skyperfectv.co.jp</a></td><td align="right">196</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/snrt.ma">snrt.ma</a></td><td align="right">11</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/sporttv.pt">sporttv.pt</a></td><td align="right">9</td><td align="center">🔴</td><td>https://github.com/iptv-org/epg/issues/3166</td></tr>
+    <tr><td><a href="sites/sporttv.pt">sporttv.pt</a></td><td align="right">9</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/starhubtvplus.com">starhubtvplus.com</a></td><td align="right">118</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/startimestv.com">startimestv.com</a></td><td align="right">77</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/streamingtvguides.com">streamingtvguides.com</a></td><td align="right">3066</td><td align="center">🟢</td><td></td></tr>
