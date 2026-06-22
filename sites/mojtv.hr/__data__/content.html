@@ -1,0 +1,19 @@
+<!-- Trimmed fixture: two overlapping .tvprogram-lista blocks (the "big" list + the main
+     list), both title formats, a spacer row, and a next-day spillover row — exercises the
+     parser's dedup, dual-format title extraction, and same-day filtering. -->
+<html><body>
+<div class="big">
+  <div class="tvprogram-lista"><ul>
+    <li><span class="progress"></span><a class="show" href="/emisije/1/a.aspx" rel="2026-06-22 06:25:00-2026-06-22 06:45:00"><em class="time">06:25</em><span class="h"><strong class="title">TV kalendar</strong><span>Dokumentarna emisija.</span></span></a></li>
+    <li><a class="show" href="/emisije/2/b.aspx" rel="2026-06-22 06:45:00-2026-06-22 07:00:00"><em class="time">06:45</em><span class="h"><strong>Vijesti</strong><strong class="desc">Pregled vijesti.</strong></span></a></li>
+  </ul></div>
+</div>
+<div id="tvprogramlista">
+  <div class="tvprogram-lista"><ul>
+    <li><a class="show" href="/emisije/2/b.aspx" rel="2026-06-22 06:45:00-2026-06-22 07:00:00"><em class="time">06:45</em><span class="h"><strong>Vijesti</strong><strong class="desc">Pregled vijesti.</strong></span></a></li>
+    <li><a class="show" href="/emisije/3/c.aspx" rel="2026-06-22 07:00:00-2026-06-22 07:30:00"><em class="time">07:00</em><span class="h"><strong>Dobro jutro</strong><strong class="desc">Jutarnji program.</strong></span></a></li>
+    <li><span class="spacer"></span></li>
+    <li><a class="show" href="/emisije/9/d.aspx" rel="2026-06-23 00:10:00-2026-06-23 00:40:00"><em class="time">00:10</em><span class="h"><strong>Spillover</strong></span></a></li>
+  </ul></div>
+</div>
+</body></html>

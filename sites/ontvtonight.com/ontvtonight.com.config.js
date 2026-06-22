@@ -180,5 +180,5 @@ function parseDescription($item) {
 function parseItems(content) {
   const $ = cheerio.load(content)
 
-  return $('#content > div > div > div > table > tbody > tr').toArray()
+  return $('table.table-hover > tbody > tr').toArray()
 }
