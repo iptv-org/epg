@@ -1,26 +1,62 @@
 const cheerio = require('cheerio')
 const dayjs = require('dayjs')
+const axios = require('axios')
+
+const USER_AGENT =
+  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36'
+
+// Base headers for the program (JSONP) request. The session cookie is added per request.
+const HEADERS = {
+  'x-requested-with': 'XMLHttpRequest',
+  'user-agent': USER_AGENT,
+  'referer': 'https://tvprofil.com/tvprogram/',
+  'accept':
+    'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01'
+}
+
+// The site signs every program request with a per-page-load nonce ("bi") that is tied to a
+// session cookie. Without a matching cookie + signature the endpoint returns a microtime nonce
+// or `{code:403,"Session expired"}` instead of program data. So we load the country's program
+// page once, read `bi` and the session cookie, cache it, and reuse it for all of that country's
+// channels. The session is refreshed when it gets stale or after a failed (empty) response.
+const sessions = new Map()
+const SESSION_TTL = 90 * 1000
+
+// The site rate-limits aggressively (serves a tiny interstitial instead of the page). When we
+// hit that, back off globally so the remaining channels fail fast instead of each hammering the
+// page and prolonging the block.
+let throttledUntil = 0
+const THROTTLE_BACKOFF = 60 * 1000
 
 module.exports = {
   site: 'tvprofil.com',
   days: 2,
-  url: function ({ channel, date }) {
-    const parts = channel.site_id.split('#')
-    const query = buildQuery(parts[1], date)
+  async url({ channel, date }) {
+    const [progsPath, kanal] = channel.site_id.split('#')
+    const session = await ensureSession(progsPath)
+    const query = buildQuery(date.format('YYYY-MM-DD'), kanal, channel.lang, session.bi)
 
-    return `https://tvprofil.com/${parts[0]}/program/?${query}`
+    return `https://tvprofil.com/${progsPath}/program/?${query}`
   },
   request: {
-    headers: {
-      'x-requested-with': 'XMLHttpRequest',
-      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36',
-      'referer': 'https://tvprofil.com/tvprogram/',
-      'accept': 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01'
+    async headers({ channel }) {
+      const [progsPath] = channel.site_id.split('#')
+      const session = await ensureSession(progsPath)
+
+      return { ...HEADERS, cookie: session.cookie }
     }
   },
-  parser: function ({ content }) {
+  parser: function ({ content, channel }) {
     let programs = []
     const items = parseItems(content)
+
+    // An empty result here means the response was not valid program data (expired session,
+    // rate-limit, microtime nonce, ...). Drop the cached session so the next request re-handshakes.
+    if (items.length === 0 && channel) {
+      const [progsPath] = channel.site_id.split('#')
+      sessions.delete(progsPath)
+    }
+
     items.forEach(item => {
       const $ = cheerio.load(item)
       $('div.row').each((_, el) => {
@@ -39,8 +75,6 @@ module.exports = {
     return programs
   },
   async channels() {
-    const axios = require('axios')
-
     // prettier-ignore
     const countries = {
       al: { channelsPath: '/al', progsPath: 'al/programacioni', lang: 'sq' },
@@ -83,7 +117,7 @@ module.exports = {
           },
           headers: {
             'x-requested-with': 'XMLHttpRequest',
-            'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36',
+            'user-agent': USER_AGENT,
             'referer': 'https://tvprofil.com/programtv/',
             'accept': 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
           }
@@ -147,41 +181,93 @@ function parseItems(content) {
   return [json.data.program]
 }
 
-function buildQuery(site_id, date) {
-  const query = {
-    datum: date.format('YYYY-MM-DD'),
-    kanal: site_id
-    // callback: 'cb' // possibly still working
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms))
+}
+
+// Load a country's program page to obtain its session cookie and the current `bi` nonce.
+// Retries past the site's rate-limit interstitial. Results are cached per country.
+async function ensureSession(progsPath) {
+  const cached = sessions.get(progsPath)
+  if (cached && Date.now() - cached.ts < SESSION_TTL) return cached
+
+  if (Date.now() < throttledUntil) {
+    throw new Error('tvprofil.com: backing off after rate-limit')
   }
 
-  let c = 4
-  let a = query.datum + query.kanal + c
-  let ua = query.kanal + query.datum
+  const pageUrl = `https://tvprofil.com/${progsPath}/`
+  let cookie = ''
 
-  if (
-    typeof ua === 'undefined' ||
-    ua === null ||
-    ua === '' ||
-    ua === 0 ||
-    ua === '0' ||
-    ua !== ua
-  ) {
-    ua = 'none'
+  for (let attempt = 1; attempt <= 5; attempt++) {
+    const res = await axios
+      .get(pageUrl, {
+        headers: { 'user-agent': USER_AGENT, 'referer': 'https://tvprofil.com/', cookie },
+        validateStatus: () => true
+      })
+      .catch(() => null)
+
+    if (res) {
+      const setCookie = res.headers && res.headers['set-cookie']
+      if (setCookie && setCookie.length) cookie = mergeCookies(cookie, setCookie)
+
+      const match = String(res.data).match(/"bi":(\d+)/)
+      if (match) {
+        const session = { cookie, bi: parseInt(match[1]), ts: Date.now() }
+        sessions.set(progsPath, session)
+
+        return session
+      }
+    }
+
+    if (attempt < 5) await sleep(1500)
   }
 
-  for (let j = 0; j < ua.length; j++) c += ua.charCodeAt(j)
+  throttledUntil = Date.now() + THROTTLE_BACKOFF
+  throw new Error(`tvprofil.com: could not establish a session for "${progsPath}" (rate-limited)`)
+}
 
-  let i = a.length
-  let b = 2
-  while (i--) {
-    b += (a.charCodeAt(i) + c * 2) * i
+function mergeCookies(existing, setCookie) {
+  const jar = {}
+  if (existing) {
+    existing.split('; ').forEach(pair => {
+      const i = pair.indexOf('=')
+      if (i > -1) jar[pair.slice(0, i)] = pair.slice(i + 1)
+    })
   }
+  setCookie.forEach(cookie => {
+    const pair = cookie.split(';')[0]
+    const i = pair.indexOf('=')
+    if (i > -1) jar[pair.slice(0, i)] = pair.slice(i + 1)
+  })
 
-  b = b.toString()
-  const lastCharCode = b.charCodeAt(b.length - 1)
-  const key = 'b' + lastCharCode
-  query['callback'] = `tvprogramit${lastCharCode}`
+  return Object.entries(jar)
+    .map(([key, value]) => `${key}=${value}`)
+    .join('; ')
+}
+
+// Port of the site's current request-signing function (`bazinga`), inlined in the program page.
+function buildQuery(datum, kanal, lang, bi) {
+  const { key, b } = sign(datum, kanal, bi)
+
+  const query = { datum, kanal }
+  query['callback'] = `sport${lang || ''}${b}`
   query[key] = b
 
   return new URLSearchParams(query).toString()
+}
+
+function sign(datum, kanal, bi) {
+  let b = 2
+  let c = 5
+  const a = datum + kanal + c
+  let i = a.length
+  const ua = kanal + datum || 'none'
+
+  for (let j = 0; j < ua.length; j++) c += ua.charCodeAt(j)
+  while (i--) b += (a.charCodeAt(i) + c * 2 + bi) * i
+
+  b = b.toString()
+  const key = 'b' + b.charCodeAt(b.length - 1)
+
+  return { key, b }
 }
