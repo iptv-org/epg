@@ -12,6 +12,10 @@ const channel = {
   site_id: 'au#1692/7two',
   xmltv_id: '7two.au'
 }
+const usChannel = {
+  site_id: 'us#69021345/wcbs',
+  xmltv_id: 'WCBSTV21.us@HD'
+}
 
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
@@ -50,6 +54,35 @@ it('can parse response', () => {
       start: '2021-11-25T11:50:00.000Z',
       stop: '2021-11-25T12:50:00.000Z',
       title: 'Inspector Morse: The Remorseful Day'
+    }
+  ])
+})
+
+it('can parse response from the US (redesigned) template', () => {
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/us_content.html'), 'utf8')
+  const result = parser({ content, channel: usChannel, date }).map(p => {
+    p.start = p.start.toJSON()
+    p.stop = p.stop.toJSON()
+    return p
+  })
+
+  expect(result).toMatchObject([
+    {
+      start: '2021-11-25T11:00:00.000Z',
+      stop: '2021-11-25T12:00:00.000Z',
+      title: "NCIS: Hawai'i",
+      description: 'Dies Irae  - Season 2, Episode 22'
+    },
+    {
+      start: '2021-11-25T12:00:00.000Z',
+      stop: '2021-11-25T13:30:00.000Z',
+      title: 'Face the Nation'
+    },
+    {
+      start: '2021-11-25T13:30:00.000Z',
+      stop: '2021-11-25T14:30:00.000Z',
+      title: 'The Price Is Right',
+      description: 'Premiere  - Season 53, Episode 1'
     }
   ])
 })
