@@ -5,34 +5,38 @@ const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 const uniqBy = require('lodash.uniqby')
+const AwsWaf = require('@ntlab/awswaf')
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
+let awsWafToken, awsWafTokenFetching
+const cookies = {}
+const headers = {
+  'user-agent':
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36',
+}
+
 module.exports = {
   site: 'ontvtonight.com',
   days: 2,
-  url: function ({ date, channel }) {
-    const [region, id] = channel.site_id.split('#')
-    let url = 'https://www.ontvtonight.com'
-    if (region && region !== 'us') url += `/${region}`
-    url += `/guide/listings/channel/${id}.html?dt=${date.format('YYYY-MM-DD')}`
-
-    return url
+  url({ date, channel }) {
+    return getSiteUrl(channel, date)
   },
   request: {
-    headers: {
-      'user-agent':
-        'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36'
+    async headers({ date, channel }) {
+      await fetchCookiesOrToken(getSiteUrl(channel, date))
+
+      return  getHeaders()
     }
   },
-  parser: function ({ content, date, channel }) {
+  parser({ content, date, channel }) {
     const programs = []
-    const items = parseItems(content)
+    const [$, items] = parseItems(content)
     items.forEach(item => {
       const prev = programs[programs.length - 1]
-      const $item = cheerio.load(item)
+      const $item = $(item)
       let start = parseStart($item, date, channel)
       if (prev) {
         if (start.isBefore(prev.start)) {
@@ -53,88 +57,63 @@ module.exports = {
     return programs
   },
   async channels({ country }) {
-    const providers = {
-      au: ['o', 'a'],
-      ca: [
-        'Y464014423',
-        '-464014503',
-        '-464014594',
-        '-464014738',
-        'X3153330286',
-        'X464014503',
-        'X464013696',
-        'X464014594',
-        'X464014738',
-        'X464014470',
-        'X464013514',
-        'X1210684931',
-        'T3153330286',
-        'T464014503',
-        'T1810267316',
-        'T1210684931'
-      ],
-      us: [
-        'Y341768590',
-        'Y1693286984',
-        'Y8833268284',
-        '-341767428',
-        '-341769166',
-        '-341769884',
-        '-3679985536',
-        '-341766967',
-        'X4100694897',
-        'X341767428',
-        'X341768182',
-        'X341767434',
-        'X341768272',
-        'X341769884',
-        'X3679985536',
-        'X3679984937',
-        'X341764975',
-        'X3679985052',
-        'X341766967',
-        'K4805071612',
-        'K5039655414'
-      ]
-    }
-    const regions = {
-      au: [
-        1, 2, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 17, 18, 29, 28, 27, 26, 25, 23, 22,
-        21, 20, 19, 24, 30, 31, 32, 33, 34, 35, 36, 39, 38, 37, 40, 41, 42, 43, 44, 45, 46, 47, 48,
-        49, 50, 51, 52, 53
-      ],
-      ca: [null],
-      us: [null]
-    }
-    const zipcodes = {
-      au: [null],
-      ca: ['M5G1P5', 'H3B1X8', 'V6Z2H7', 'T2P3E6', 'T5J2Z2', 'K1P1B1'],
-      us: [10199, 90052, 60607, 77201, 85026, 19104, 78284, 92199, 75260]
-    }
-
     const channels = []
-    for (let provider of providers[country]) {
-      for (let zipcode of zipcodes[country]) {
-        for (let region of regions[country]) {
-          let url = 'https://www.ontvtonight.com'
-          if (country === 'us') url += '/guide/schedule'
-          else url += `/${country}/guide/schedule`
-          const data = await axios
-            .post(url, null, {
-              params: {
-                provider,
-                region,
-                zipcode,
-                TVperiod: 'Night',
-                date: dayjs().format('YYYY-MM-DD'),
-                st: 0,
-                is_mobile: 1
-              }
-            })
-            .then(r => r.data)
-            .catch(console.log)
+    const sUrls = []
+    let $, providers, regions
+    const u = (p, r) => {
+      const res = []
+      for (const provider of p) {
+        for (const region of r) {
+          const url = getScheduleUrl(country, provider, region)
+          if (!sUrls.includes(url)) {
+            sUrls.push(url)
+            res.push(url)
+          }
+        }
+      }
 
-          const $ = cheerio.load(data)
+      return res
+    }
+    const v = items => {
+      return items
+        .toArray()
+        .map(item => $(item).attr('value'))
+    }
+    const urls = [`${getBaseUrl(country)}/guide/tvbycity.html`]
+    while (urls.length) {
+      const url = urls.shift()
+      await fetchCookiesOrToken(url)
+      const data = await axios.request({
+          url,
+          method: url.includes('tvbycity') ? 'get' : 'post',
+          headers: getHeaders()
+        })
+        .then(res => res.data)
+        .catch(() => {
+          // ignore error
+        })
+      if (data) {
+        $ = cheerio.load(data)
+        if (url.includes('tvbycity')) {
+          $('article ul li a')
+            .toArray()
+            .forEach(el => {
+              urls.push(`${getBaseUrl()}${$(el).attr('href')}`)
+            })
+        } else if (url.includes('listings')) {
+          console.log(`Listing ${url}...`)
+          providers = v($('#guide_provider option'))
+          if ($('#guide_region').parents('.stream-filter').hasClass('d-none')) {
+            regions = v($('#provider-zip'))
+          } else {
+            regions = v($('#guide_region option'))
+          }
+          const _urls = u(providers, regions)
+          if (_urls.length) {
+            urls.push(..._urls)
+          }
+        } else {
+          console.log(`${url} (${urls.length} to go)...`)
           $('.channelname').each((i, el) => {
             let name = $(el).find('center > a:eq(1)').text()
             name = name.replace(/--/gi, '-')
@@ -163,22 +142,117 @@ function parseStart($item, date, channel) {
     us: 'America/New_York'
   }
   const [region] = channel.site_id.split('#')
-  const timeString = $item('td:nth-child(1) > h5').text().trim()
+  const timeString = $item.find('td:nth-child(1) > h5').text().trim()
   const dateString = `${date.format('YYYY-MM-DD')} ${timeString}`
 
   return dayjs.tz(dateString, 'YYYY-MM-DD H:mm a', timezones[region])
 }
 
 function parseTitle($item) {
-  return $item('td:nth-child(2) > h5').text().trim()
+  return $item.find('td:nth-child(2) > h5').text().trim()
 }
 
 function parseDescription($item) {
-  return $item('td:nth-child(2) > h6').text().trim()
+  return $item.find('td:nth-child(2) > h6').text().trim()
 }
 
 function parseItems(content) {
   const $ = cheerio.load(content)
 
-  return $('#content > div > div > div > table > tbody > tr').toArray()
+  return [$, $('table > tbody > tr').toArray()]
+}
+
+function getHeaders() {
+  return {
+    ...headers,
+    cookie: Object.entries(cookies)
+      .map(kv => `${kv[0]}=${kv[1]}`)
+      .join('; ')
+  }
+}
+
+function getBaseUrl(country) {
+  return `https://www.ontvtonight.com${country && country !== 'us' ? '/' + country : ''}`
+}
+
+function getSiteUrl(channel, date) {
+  const [country, id] = channel.site_id.split('#')
+
+  return `${getBaseUrl(country)}/guide/listings/channel/${id}.html?dt=${date.format('YYYY-MM-DD')}`
+}
+
+function getScheduleUrl(country, provider, region) {
+  return `${getBaseUrl(country)}/guide/schedule?provider=${
+    provider
+  }&region=${
+    region
+  }&TVperiod=Night&date=${dayjs().format('YYYY-MM-DD')}&st=0&u_time=0000&is_mobile=1`
+}
+
+async function fetchCookiesOrToken(url) {
+  const f = async (m = 'head') => {
+    let waf
+    await axios[m](url, { headers: getHeaders() })
+      .then(res => saveCookies(res))
+      .catch(err => {
+        if (err instanceof axios.AxiosError && err.status === 405) {
+          waf = err.response
+        }
+      })
+    if (waf) {
+      if (m === 'head') {
+        await f('get')
+      } else if (waf.data) {
+        console.log(`WAF triggered from ${url}, fetching token...`)
+        awsWafTokenFetching = true
+        try {
+          await fetchWafToken(waf.data)
+        } catch (err) {
+          console.error(err)
+        }
+        awsWafTokenFetching = false
+      }
+    }
+  }
+  await f()
+  if (awsWafTokenFetching) {
+    // delay other connection to finish if token is fetching
+    await new Promise(resolve => {
+      process.nextTick(() => {
+        if (!awsWafTokenFetching) {
+          resolve()
+        }
+      })
+    })
+  }
+}
+
+function saveCookies(res) {
+  if (res.headers && Array.isArray(res.headers['set-cookie'])) {
+    res.headers['set-cookie']
+      .map(cookie => cookie.split(';')[0].trim())
+      .forEach(cookie => {
+        const [k, v] = cookie.split('=')
+        cookies[k] = v
+      })
+  }
+
+  return res
+}
+
+async function fetchWafToken(content) {
+  const $ = cheerio.load(content)
+  const challengeJs = $('script[src]')
+    .toArray()
+    .map(s => $(s).attr('src'))
+    .filter(s => s.includes('challenge.js'))
+  if (challengeJs.length) {
+    const [, endpoint] = challengeJs[0].match(/(https:\/\/[^"]+)\/challenge\.js/)
+    const waf = new AwsWaf(endpoint, 'www.ontvtonight.com', headers['user-agent'])
+    awsWafToken = await waf.getToken()
+    if (awsWafToken) {
+      console.log(`Got WAF token ${awsWafToken}...`)
+      cookies['aws-waf-token'] = awsWafToken
+    }
+  }
 }
