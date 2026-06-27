@@ -10,7 +10,7 @@ const regions = [
   { name: 'th',  channels: 'channels-th.xml',  output: 'th/guide.xml' },
   { name: 'no',  channels: 'channels-no.xml',  output: 'no/guide.xml' },
   { name: 'uk',  channels: 'channels-uk.xml',  output: 'uk/guide.xml' },
-  { name: 'int', channels: 'channels-int.xml', output: 'int/guide.xml' }
+  { name: 'us',  channels: 'channels-us.xml',  output: 'us/guide.xml'  }
 ]
 
 // Builds all regional channel files then runs every regional grab in sequence.

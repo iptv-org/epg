@@ -29,7 +29,7 @@ function classify(lang, site, siteId) {
   if (NORDIC_LANGS.has(lang)) return 'no'
   if (siteId.startsWith('UK1#') || siteId.startsWith('IE1#')) return 'uk'
   if (UK_SITES.has(site) || site.endsWith('.co.uk') || site.endsWith('.ie')) return 'uk'
-  return 'int'
+  return 'us'
 }
 
 function makeXml(lines) {
@@ -42,7 +42,7 @@ if (!fs.existsSync(INPUT)) {
   process.exit(1)
 }
 
-const buckets = { th: [], no: [], uk: [], int: [] }
+const buckets = { th: [], no: [], uk: [], us: [] }
 
 for (const line of fs.readFileSync(INPUT, 'utf8').split('\n')) {
   if (!line.trim().startsWith('<channel ')) continue
