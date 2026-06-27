@@ -123,7 +123,7 @@
     <tr><td><a href="sites/ontvtonight.com">ontvtonight.com</a></td><td align="right">5177</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/opto.sic.pt">opto.sic.pt</a></td><td align="right">3</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/orangetv.orange.es">orangetv.orange.es</a></td><td align="right">227</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/osn.com">osn.com</a></td><td align="right">79</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/osn.com">osn.com</a></td><td align="right">79</td><td align="center">🟢</td><td>https://github.com/iptv-org/epg/issues/3181</td></tr>
     <tr><td><a href="sites/passie.nl">passie.nl</a></td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/pbsguam.org">pbsguam.org</a></td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/pickx.be">pickx.be</a></td><td align="right">404</td><td align="center">🟢</td><td></td></tr>
