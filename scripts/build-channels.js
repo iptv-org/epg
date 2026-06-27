@@ -107,7 +107,7 @@ buckets.uk.push(
 )
 
 // International / US
-buckets.int.push(
+buckets.us.push(
   ...readChannels(path.join(CSRC, 'ontvtonight-directv-ny.channels.xml'),
     { defaultLang: 'en', isWebGrab: true, fixOntvtonight: true }),
   ...readChannels(path.join(FORK, 'sites/tvtv.us/tvtv.us.channels.xml')),
