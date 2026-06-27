@@ -7,8 +7,7 @@ dayjs.extend(utc)
 dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
-const BASE_URL =
-  'https://dttguide.nbtc.go.th/BcsEpgDataServices/BcsEpgDataController/getProgramDataWeb'
+const BASE_URL = 'https://nbtc-epg-proxy.teaustheim.workers.dev/getProgramDataWeb'
 const TIMEZONE = 'Asia/Bangkok'
 
 module.exports = {
@@ -17,21 +16,7 @@ module.exports = {
   request: {
     method: 'POST',
     headers() {
-      return {
-        Accept: '*/*',
-        'Accept-Language': 'en-US,en;q=0.9',
-        'Content-Type': 'application/json; charset=UTF-8',
-        Origin: 'https://dttguide.nbtc.go.th',
-        Referer: 'https://dttguide.nbtc.go.th/dttguide/',
-        'Sec-Ch-Ua': '"Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"',
-        'Sec-Ch-Ua-Mobile': '?0',
-        'Sec-Ch-Ua-Platform': '"Windows"',
-        'Sec-Fetch-Dest': 'empty',
-        'Sec-Fetch-Mode': 'cors',
-        'Sec-Fetch-Site': 'same-origin',
-        'User-Agent':
-          'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
-      }
+      return { 'Content-Type': 'application/json; charset=UTF-8' }
     },
     data({ channel }) {
       const [channelType] = channel.site_id.split('|')
