@@ -24,9 +24,10 @@ const UK_SITES = new Set([
   'schedules.tv'
 ])
 
-function classify(lang, site) {
+function classify(lang, site, siteId) {
   if (lang === 'th') return 'th'
   if (NORDIC_LANGS.has(lang)) return 'no'
+  if (siteId.startsWith('UK1#') || siteId.startsWith('IE1#')) return 'uk'
   if (UK_SITES.has(site) || site.endsWith('.co.uk') || site.endsWith('.ie')) return 'uk'
   return 'int'
 }
@@ -47,7 +48,8 @@ for (const line of fs.readFileSync(INPUT, 'utf8').split('\n')) {
   if (!line.trim().startsWith('<channel ')) continue
   const lang = (line.match(/\slang="([^"]*)"/) || [])[1] || ''
   const site = (line.match(/\ssite="([^"]*)"/) || [])[1] || ''
-  buckets[classify(lang, site)].push(line)
+  const siteId = (line.match(/\ssite_id="([^"]*)"/) || [])[1] || ''
+  buckets[classify(lang, site, siteId)].push(line)
 }
 
 for (const name of Object.keys(buckets)) {
