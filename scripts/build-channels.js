@@ -3,21 +3,36 @@
 const fs = require('fs')
 const path = require('path')
 
-const FORK = path.resolve(__dirname, '..')
-const SOURCES = path.join('C:', 'Users', 'tausthei', 'ClaudeCode')
-const OUTPUT = path.join('C:', 'Users', 'tausthei', 'ClaudeCode')
+const FORK    = path.resolve(__dirname, '..')
+const PUBLIC  = path.join(FORK, 'public')
+const CSRC    = path.join(FORK, 'channels-sources')
 
-// Read a channels.xml file and return an array of channel objects.
-// opts.lang        — default lang attribute when not present in file
-// opts.isWebGrab   — strips update= attr, clears xmltv_id, keeps site_id as-is
-// opts.fixOntvtonight — rewrites ##N/slug → us#N/slug
+// ── Classification (same rules as split-channels.js) ─────────────────────────
+
+const NORDIC_LANGS = new Set(['no', 'nb', 'sv', 'fi', 'da'])
+const UK_SITES     = new Set([
+  'sky.com', 'freeview.co.uk', 'mytelly.co.uk', 'tv24.co.uk',
+  'virgintvgo.virginmedia.com', 'entertainment.ie', 'player.ee.co.uk',
+  'bbc.co.uk', 'itv.com', 'channel4.com', 'channel5.com', 'itvx.com', 'schedules.tv'
+])
+
+function classify(lang, site, siteId) {
+  if (lang === 'th') return 'th'
+  if (NORDIC_LANGS.has(lang)) return 'no'
+  if (siteId.startsWith('UK1#') || siteId.startsWith('IE1#')) return 'uk'
+  if (UK_SITES.has(site) || site.endsWith('.co.uk') || site.endsWith('.ie')) return 'uk'
+  return 'int'
+}
+
+// ── Channel file reader ───────────────────────────────────────────────────────
+
 function readChannels(filePath, opts = {}) {
-  const { lang: defaultLang = 'en', isWebGrab = false, fixOntvtonight = false } = opts
+  const { defaultLang = 'en', isWebGrab = false, fixOntvtonight = false } = opts
   let content
   try {
     content = fs.readFileSync(filePath, 'utf8')
   } catch {
-    console.warn(`  SKIP (not found): ${filePath}`)
+    console.warn(`  skip (not found): ${path.basename(filePath)}`)
     return []
   }
 
@@ -32,7 +47,6 @@ function readChannels(filePath, opts = {}) {
     const name    = (line.match(/>([^<]+)<\/channel>/) || [])[1]?.trim() || ''
 
     if (!site || !siteId || !name) continue
-
     if (fixOntvtonight) siteId = siteId.replace(/^##/, 'us#')
 
     channels.push({ site, siteId, lang, xmltvId, name })
@@ -40,7 +54,9 @@ function readChannels(filePath, opts = {}) {
   return channels
 }
 
-function makeXml(channels, comment) {
+// ── XML writer ────────────────────────────────────────────────────────────────
+
+function writeRegion(region, channels) {
   const seen = new Set()
   const lines = []
   for (const ch of channels) {
@@ -49,54 +65,66 @@ function makeXml(channels, comment) {
     seen.add(key)
     lines.push(`  <channel site="${ch.site}" site_id="${ch.siteId}" lang="${ch.lang}" xmltv_id="${ch.xmltvId}">${ch.name}</channel>`)
   }
-  const header = comment ? `  <!-- ${comment} -->\n` : ''
-  return `<?xml version="1.0" encoding="UTF-8"?>\n<channels>\n${header}${lines.join('\n')}\n</channels>\n`
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<channels>\n${lines.join('\n')}\n</channels>\n`
+  fs.mkdirSync(path.join(PUBLIC, region), { recursive: true })
+  fs.writeFileSync(path.join(PUBLIC, `channels-${region}.xml`), xml)
+  console.log(`channels-${region}.xml: ${lines.length} channels`)
 }
 
-function write(filename, channels, comment) {
-  const xml = makeXml(channels, comment)
-  const outPath = path.join(OUTPUT, filename)
-  fs.writeFileSync(outPath, xml)
-  const count = (xml.match(/<channel /g) || []).length
-  console.log(`${filename}: ${count} channels  →  ${outPath}`)
+// ── Build buckets ─────────────────────────────────────────────────────────────
+
+const buckets = { th: [], no: [], uk: [], int: [] }
+
+// 1. Split user's public/channels.xml by region (same as split-channels.js)
+const masterPath = path.join(PUBLIC, 'channels.xml')
+if (fs.existsSync(masterPath)) {
+  for (const line of fs.readFileSync(masterPath, 'utf8').split('\n')) {
+    if (!line.trim().startsWith('<channel ')) continue
+    const lang   = (line.match(/\blang="([^"]*)"/)    || [])[1] || ''
+    const site   = (line.match(/\bsite="([^"]*)"/)    || [])[1] || ''
+    const siteId = (line.match(/\bsite_id="([^"]*)"/) || [])[1] || ''
+    const region = classify(lang, site, siteId)
+    buckets[region].push({ site, siteId, lang,
+      xmltvId: (line.match(/\bxmltv_id="([^"]*)"/) || [])[1] || '',
+      name: (line.match(/>([^<]+)<\/channel>/) || [])[1]?.trim() || ''
+    })
+  }
 }
 
-// ── Norway ────────────────────────────────────────────────────────────────────
-// allente.no: iptv-org version (WebGrab+ site_ids are different)
-// rikstv.no:  WebGrab+ version has more channels and site_ids match iptv-org
-const norway = [
+// 2. Add iptv-org + channels-sources channels per region
+
+// Norway
+buckets.no.push(
   ...readChannels(path.join(FORK, 'sites/allente.no/allente.no_no.channels.xml')),
-  ...readChannels(path.join(SOURCES, 'Norway/rikstv.no.channels.xml'),
-    { lang: 'no', isWebGrab: true }),
-]
-write('channels-no.xml', norway, 'Sources: allente.no (iptv-org), rikstv.no (WebGrab+)')
+  ...readChannels(path.join(CSRC, 'rikstv.no.channels.xml'), { defaultLang: 'no', isWebGrab: true })
+)
 
-// ── UK ────────────────────────────────────────────────────────────────────────
-// WebGrab+ sky.com/freeview/mytelly use different site_id formats — use iptv-org files
-const uk = [
+// UK
+buckets.uk.push(
   ...readChannels(path.join(FORK, 'sites/sky.com/sky.com.channels.xml')),
   ...readChannels(path.join(FORK, 'sites/freeview.co.uk/freeview.co.uk.channels.xml')),
-  ...readChannels(path.join(FORK, 'sites/mytelly.co.uk/mytelly.co.uk.channels.xml')),
-]
-write('channels-uk.xml', uk, 'Sources: sky.com, freeview.co.uk, mytelly.co.uk (all iptv-org)')
+  ...readChannels(path.join(FORK, 'sites/mytelly.co.uk/mytelly.co.uk.channels.xml'))
+)
 
-// ── USA ───────────────────────────────────────────────────────────────────────
-// ontvtonight: WebGrab+ ## prefix → us# prefix (site_ids otherwise identical)
-// tvtv.us/xumo.tv: WebGrab+ uses different ID format — use iptv-org files
-const usa = [
-  ...readChannels(
-    path.join(SOURCES, 'USA/ontvtonight.com.channels.10001-Satellite - DirecTV New York.xml'),
-    { lang: 'en', isWebGrab: true, fixOntvtonight: true }),
+// International / US
+buckets.int.push(
+  ...readChannels(path.join(CSRC, 'ontvtonight-directv-ny.channels.xml'),
+    { defaultLang: 'en', isWebGrab: true, fixOntvtonight: true }),
   ...readChannels(path.join(FORK, 'sites/tvtv.us/tvtv.us.channels.xml')),
-  ...readChannels(path.join(FORK, 'sites/xumo.tv/xumo.tv.channels.xml')),
-]
-write('channels-us.xml', usa, 'Sources: ontvtonight.com (WebGrab+→converted), tvtv.us, xumo.tv (iptv-org)')
+  ...readChannels(path.join(FORK, 'sites/xumo.tv/xumo.tv.channels.xml'))
+)
 
-// ── Thailand ──────────────────────────────────────────────────────────────────
-// gigatv: use iptv-org file (has @SD xmltv_ids — strip those so they match NBTC ids)
-// tv.trueid.net: iptv-org file
-const gigaRaw = readChannels(path.join(FORK, 'sites/gigatv.3bbtv.co.th/gigatv.3bbtv.co.th.channels.xml'))
-const giga = gigaRaw.map(ch => ({ ...ch, xmltvId: ch.xmltvId.replace(/@SD$/, '') }))
-const trueid = readChannels(path.join(FORK, 'sites/tv.trueid.net/tv.trueid.net_th.channels.xml'))
-const thailand = [...giga, ...trueid]
-write('channels-th.xml', thailand, 'Sources: gigatv.3bbtv.co.th, tv.trueid.net (iptv-org)')
+// Thailand — strip @SD suffix from gigatv xmltv_ids so they match the NBTC ids
+const gigaChannels = readChannels(
+  path.join(FORK, 'sites/gigatv.3bbtv.co.th/gigatv.3bbtv.co.th.channels.xml')
+).map(ch => ({ ...ch, xmltvId: ch.xmltvId.replace(/@SD$/, '') }))
+
+buckets.th.push(
+  ...gigaChannels,
+  ...readChannels(path.join(FORK, 'sites/tv.trueid.net/tv.trueid.net_th.channels.xml'))
+)
+
+// 3. Write
+for (const [region, channels] of Object.entries(buckets)) {
+  writeRegion(region, channels)
+}
