@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channels>
+  <!-- National channels — channelType 1 -->
+  <channel site="dttguide.nbtc.go.th" site_id="1|02" lang="th" xmltv_id="NBT2HD.th">NBT 2 HD</channel>
+  <channel site="dttguide.nbtc.go.th" site_id="1|03" lang="th" xmltv_id="ThaiPBS.th">Thai PBS</channel>
+  <channel site="dttguide.nbtc.go.th" site_id="1|05" lang="th" xmltv_id="Channel5.th">ททบ. 5</channel>
+  <channel site="dttguide.nbtc.go.th" site_id="1|07" lang="th" xmltv_id="TSports7.th">T Sports 7</channel>
+  <channel site="dttguide.nbtc.go.th" site_id="1|10" lang="th" xmltv_id="ThaiParliamentTelevision.th">Thai Parliament Television</channel>
+  <channel site="dttguide.nbtc.go.th" site_id="1|16" lang="th" xmltv_id="TNN16.th">TNN16</channel>
+  <channel site="dttguide.nbtc.go.th" site_id="1|18" lang="th" xmltv_id="JKN18.th">JKN 18</channel>
+  <channel site="dttguide.nbtc.go.th" site_id="1|22" lang="th" xmltv_id="NationTV.th">Nation TV</channel>
+  <channel site="dttguide.nbtc.go.th" site_id="1|23" lang="th" xmltv_id="WorkpointTV.th">Workpoint TV</channel>
+  <channel site="dttguide.nbtc.go.th" site_id="1|24" lang="th" xmltv_id="True4U.th">True4U</channel>
+  <channel site="dttguide.nbtc.go.th" site_id="1|25" lang="th" xmltv_id="GMM25.th">GMM 25</channel>
+  <channel site="dttguide.nbtc.go.th" site_id="1|27" lang="th" xmltv_id="Channel8.th">Channel 8</channel>
+  <channel site="dttguide.nbtc.go.th" site_id="1|29" lang="th" xmltv_id="MONO29.th">MONO 29</channel>
+  <channel site="dttguide.nbtc.go.th" site_id="1|30" lang="th" xmltv_id="MCOTHD.th">MCOT HD</channel>
+  <channel site="dttguide.nbtc.go.th" site_id="1|31" lang="th" xmltv_id="One31.th">ONE 31</channel>
+  <channel site="dttguide.nbtc.go.th" site_id="1|32" lang="th" xmltv_id="ThairathTV.th">Thairath TV</channel>
+  <channel site="dttguide.nbtc.go.th" site_id="1|33" lang="th" xmltv_id="3HD.th">3HD</channel>
+  <channel site="dttguide.nbtc.go.th" site_id="1|34" lang="th" xmltv_id="AmarinTV.th">Amarin TV HD</channel>
+  <channel site="dttguide.nbtc.go.th" site_id="1|35" lang="th" xmltv_id="Channel7.th">7HD</channel>
+  <channel site="dttguide.nbtc.go.th" site_id="1|36" lang="th" xmltv_id="PPTV.th">PPTV</channel>
+
+  <!-- NBT regional channels — channelType 2 -->
+  <channel site="dttguide.nbtc.go.th" site_id="2|11C" lang="th" xmltv_id="">NBT Central</channel>
+  <channel site="dttguide.nbtc.go.th" site_id="2|11N" lang="th" xmltv_id="">NBT North</channel>
+  <channel site="dttguide.nbtc.go.th" site_id="2|11E" lang="th" xmltv_id="">NBT Northeast</channel>
+  <channel site="dttguide.nbtc.go.th" site_id="2|11S" lang="th" xmltv_id="">NBT South</channel>
+</channels>

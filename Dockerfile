@@ -1,5 +1,5 @@
 FROM node:22-alpine
-ARG GIT_REPO=https://github.com/iptv-org/epg.git
+ARG GIT_REPO=https://github.com/dj1p/epg.git
 ARG GIT_BRANCH=master
 ARG WORKDIR=/epg
 ENV CRON_SCHEDULE="0 0 * * *"
