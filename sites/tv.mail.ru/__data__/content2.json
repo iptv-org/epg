@@ -1,0 +1,278 @@
+{
+  "data": {
+    "schedule": {
+      "items": [
+        {
+          "id": 3161,
+          "name": "Мосфильм. Золотая коллекция",
+          "url": "/moskva/channel/3161/",
+          "logo_picture": {
+            "uuid": "68dc738d-986d-5247-b33e-f314113ef9cb",
+            "key": "AAACoQ27_vcIk20hmphmYeLcyCNxk32Ful-NTVWnqlCGhe6lDYifu2DKVm7CE5ewfsEYS3_UEZFsAm-yCDKmIJa_nPc",
+            "width": 128,
+            "height": 128,
+            "source": {
+              "id": 1,
+              "title": "",
+              "url": ""
+            },
+            "params": {
+              "dpr": [200],
+              "scale": true
+            },
+            "fmt": [
+              "png"
+            ],
+            "title": "",
+            "error": "NO_ERROR",
+            "baseURL": "https://resizer.mail.ru/p/"
+          },
+          "has_live": false,
+          "events": [
+            {
+              "id": 277466571,
+              "url": "/moskva/event/599772/?event_id=277466571",
+              "name": "Однажды утром",
+              "start": "07:05",
+              "start_ts": 1781755500,
+              "stop_ts": 1781756100,
+              "image": "https://tv.mail.ru/tvpic/2/12/8563361.jpg",
+              "category_id": 20
+            },
+            {
+              "id": 277466579,
+              "url": "/moskva/event/735402/?event_id=277466579",
+              "name": "Русалочка",
+              "start": "07:15",
+              "start_ts": 1781756100,
+              "stop_ts": 1781757900,
+              "image": "https://tv.mail.ru/tvpic/4/04/8917067.jpg",
+              "category_id": 20
+            },
+            {
+              "id": 277182138,
+              "url": "/moskva/event/329965/?event_id=277182138",
+              "name": "Заколдованный мальчик",
+              "start": "07:30",
+              "start_ts": 1781757000,
+              "stop_ts": 1781760300,
+              "image": "https://tv.mail.ru/tvpic/6/65/651001.jpg",
+              "category_id": 20
+            },
+            {
+              "id": 277466575,
+              "url": "/moskva/event/768968/?event_id=277466575",
+              "name": "Сказка о Золотом Петушке",
+              "start": "07:45",
+              "start_ts": 1781757900,
+              "stop_ts": 1781760300,
+              "image": "https://tv.mail.ru/tvpic/8/15/083970.jpg",
+              "category_id": 20
+            },
+            {
+              "id": 277182152,
+              "url": "/moskva/event/245237/?event_id=277182152",
+              "name": "Двенадцать месяцев",
+              "start": "08:25",
+              "start_ts": 1781760300,
+              "stop_ts": 1781763900,
+              "image": "https://tv.mail.ru/tvpic/6/21/138367.jpg",
+              "category_id": 20
+            },
+            {
+              "id": 277182199,
+              "url": "/moskva/event/145968/?event_id=277182199",
+              "name": "Будьте моим мужем",
+              "start": "09:25",
+              "start_ts": 1781763900,
+              "stop_ts": 1781769600,
+              "image": "https://tv.mail.ru/tvpic/1/97/9152186.jpg",
+              "category_id": 1
+            },
+            {
+              "id": 277182131,
+              "url": "/moskva/event/171015/?event_id=277182131",
+              "name": "Вечный зов (На своей земле)",
+              "start": "11:00",
+              "start_ts": 1781769600,
+              "stop_ts": 1781774400,
+              "image": "https://tv.mail.ru/tvpic/4/03/8603506.jpg",
+              "category_id": 2
+            },
+            {
+              "id": 277182105,
+              "url": "/moskva/event/171015/?event_id=277182105",
+              "name": "Вечный зов (Испытание)",
+              "start": "12:15",
+              "start_ts": 1781774100,
+              "stop_ts": 1781778900,
+              "image": "https://tv.mail.ru/tvpic/4/03/8603506.jpg",
+              "category_id": 2
+            },
+            {
+              "id": 277466569,
+              "url": "/moskva/event/171015/?event_id=277466569",
+              "name": "Вечный зов (Испытание)",
+              "start": "12:20",
+              "start_ts": 1781774400,
+              "stop_ts": 1781778900,
+              "image": "https://tv.mail.ru/tvpic/4/03/8603506.jpg",
+              "category_id": 2
+            },
+            {
+              "id": 277182186,
+              "url": "/moskva/event/529366/?event_id=277182186",
+              "name": "Мужики!..",
+              "start": "13:35",
+              "start_ts": 1781778900,
+              "stop_ts": 1781785500,
+              "image": "https://tv.mail.ru/tvpic/1/99/8206300.jpg",
+              "category_id": 1
+            },
+            {
+              "id": 277182180,
+              "url": "/moskva/event/144472/?event_id=277182180",
+              "name": "Бриллиантовая рука",
+              "start": "15:20",
+              "start_ts": 1781785200,
+              "stop_ts": 1781791500,
+              "image": "https://tv.mail.ru/tvpic/2/06/2756727.jpg",
+              "category_id": 1
+            },
+            {
+              "id": 277466573,
+              "url": "/moskva/event/144472/?event_id=277466573",
+              "name": "Бриллиантовая рука",
+              "start": "15:25",
+              "start_ts": 1781785500,
+              "stop_ts": 1781792100,
+              "image": "https://tv.mail.ru/tvpic/2/06/2756727.jpg",
+              "category_id": 1
+            },
+            {
+              "id": 277182171,
+              "url": "/moskva/event/829566/?event_id=277182171",
+              "name": "Тайны следствия (Заказчик: Часть 1-я)",
+              "start": "17:05",
+              "start_ts": 1781791500,
+              "stop_ts": 1781794800,
+              "image": "https://tv.mail.ru/tvpic/1/29/6544072.jpg",
+              "category_id": 2
+            },
+            {
+              "id": 277466572,
+              "url": "/moskva/event/829566/?event_id=277466572",
+              "name": "Тайны следствия (Заказчик: Часть 1-я)",
+              "start": "17:15",
+              "start_ts": 1781792100,
+              "stop_ts": 1781798400,
+              "image": "https://tv.mail.ru/tvpic/1/29/6544072.jpg",
+              "category_id": 2
+            },
+            {
+              "id": 277182183,
+              "url": "/moskva/event/829566/?event_id=277182183",
+              "name": "Тайны следствия (Заказчик: Часть 2-я)",
+              "start": "18:00",
+              "start_ts": 1781794800,
+              "stop_ts": 1781798100,
+              "image": "https://tv.mail.ru/tvpic/1/29/6544072.jpg",
+              "category_id": 2
+            },
+            {
+              "id": 277466570,
+              "url": "/moskva/event/199929/?event_id=277466570",
+              "name": "Всадник по имени Смерть",
+              "start": "19:00",
+              "start_ts": 1781798400,
+              "stop_ts": 1781805600,
+              "image": "https://tv.mail.ru/tvpic/1/67/9640263.jpg",
+              "category_id": 1
+            },
+            {
+              "id": 277182143,
+              "url": "/moskva/event/124536/?event_id=277182143",
+              "name": "Белое солнце пустыни",
+              "start": "20:50",
+              "start_ts": 1781805000,
+              "stop_ts": 1781810700,
+              "image": "https://tv.mail.ru/tvpic/1/23/9959547.jpg",
+              "category_id": 1
+            },
+            {
+              "id": 277466580,
+              "url": "/moskva/event/124536/?event_id=277466580",
+              "name": "Белое солнце пустыни",
+              "start": "21:00",
+              "start_ts": 1781805600,
+              "stop_ts": 1781811000,
+              "image": "https://tv.mail.ru/tvpic/1/23/9959547.jpg",
+              "category_id": 1
+            },
+            {
+              "id": 277182094,
+              "url": "/moskva/event/322390/?event_id=277182094",
+              "name": "За спичками",
+              "start": "22:25",
+              "start_ts": 1781810700,
+              "stop_ts": 1781817300,
+              "image": "https://tv.mail.ru/tvpic/1/41/0358818.jpg",
+              "category_id": 1
+            },
+            {
+              "id": 277466576,
+              "url": "/moskva/event/322390/?event_id=277466576",
+              "name": "За спичками",
+              "start": "22:30",
+              "start_ts": 1781811000,
+              "stop_ts": 1781817600,
+              "image": "https://tv.mail.ru/tvpic/1/41/0358818.jpg",
+              "category_id": 1
+            },
+            {
+              "id": 277182151,
+              "url": "/moskva/event/851623/?event_id=277182151",
+              "name": "Тот самый Мюнхгаузен",
+              "start": "00:15",
+              "start_ts": 1781817300,
+              "stop_ts": 1781825700,
+              "image": "https://tv.mail.ru/tvpic/2/40/1296158.jpg",
+              "category_id": 1
+            },
+            {
+              "id": 277466574,
+              "url": "/moskva/event/851623/?event_id=277466574",
+              "name": "Тот самый Мюнхгаузен",
+              "start": "00:20",
+              "start_ts": 1781817600,
+              "stop_ts": 1781826300,
+              "image": "https://tv.mail.ru/tvpic/2/40/1296158.jpg",
+              "category_id": 1
+            },
+            {
+              "id": 277466578,
+              "url": "/moskva/event/702859/?event_id=277466578",
+              "name": "Путешествие мсье Перришона",
+              "start": "02:45",
+              "start_ts": 1781826300,
+              "stop_ts": 1781830800,
+              "image": "https://tv.mail.ru/tvpic/2/71/6928921.jpg",
+              "category_id": 1
+            },
+            {
+              "id": 277466577,
+              "url": "/moskva/event/274206/?event_id=277466577",
+              "name": "Дни Турбиных",
+              "start": "04:00",
+              "start_ts": 1781830800,
+              "stop_ts": 1781840100,
+              "image": "https://tv.mail.ru/tvpic/2/08/690341.jpg",
+              "category_id": 1
+            }
+          ]
+        }
+      ],
+      "has_next_page": true
+    }
+  }
+}
