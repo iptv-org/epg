@@ -120,7 +120,8 @@ const gigaChannels = readChannels(
 ).map(ch => ({ ...ch, xmltvId: ch.xmltvId.replace(/@SD$/, '') }))
 
 buckets.th.push(
-  ...gigaChannels
+  ...gigaChannels,
+  ...readChannels(path.join(FORK, 'sites/tv.trueid.net/tv.trueid.net_th.channels.xml'))
 )
 
 // 3. Write
