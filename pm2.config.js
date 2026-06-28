@@ -1,10 +1,10 @@
 const CRON = process.env.CRON_SCHEDULE || '0 4 * * *'
 
 const grabAll = process.env.SITES
-  ? `npm run grab -- --sites=${process.env.SITES} ${
+  ? `bash scripts/grab-with-history.sh --sites=${process.env.SITES} ${
       process.env.CLANG ? `--lang=${process.env.CLANG}` : ''
     } --output=public/guide.xml`
-  : 'npm run grab -- --channels=public/channels.xml --output=public/guide.xml'
+  : 'bash scripts/grab-with-history.sh --channels=public/channels.xml --output=public/guide.xml'
 
 const regions = [
   { name: 'th',  channels: 'channels-th.xml',  output: 'th/guide.xml' },
@@ -19,7 +19,7 @@ const regions = [
 const buildAndGrabAll = [
   'node scripts/build-channels.js',
   ...regions.map(({ channels, output }) =>
-    `npm run grab -- --channels=public/${channels} --output=public/${output}`
+    `bash scripts/grab-with-history.sh --channels=public/${channels} --output=public/${output}`
   ),
   grabAll
 ].join(' && ')
@@ -43,7 +43,7 @@ const apps = [
   // Per-region scheduled grabs
   ...regions.map(({ name, channels, output }) => ({
     name: `grab-${name}`,
-    script: `npx chronos -e "npm run grab -- --channels=public/${channels} --output=public/${output}" -p "${CRON}" -l`,
+    script: `npx chronos -e "bash scripts/grab-with-history.sh --channels=public/${channels} --output=public/${output}" -p "${CRON}" -l`,
     instances: 1,
     watch: false,
     autorestart: true
