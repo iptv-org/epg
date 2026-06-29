@@ -24,11 +24,14 @@ const UK_SITES = new Set([
   'schedules.tv'
 ])
 
+const SG_SITES = new Set(['mewatch.sg', 'singtel.com', 'starhubtvplus.com'])
+
 function classify(lang, site, siteId) {
   if (lang === 'th') return 'th'
   if (NORDIC_LANGS.has(lang)) return 'no'
   if (siteId.startsWith('UK1#') || siteId.startsWith('IE1#')) return 'uk'
   if (UK_SITES.has(site) || site.endsWith('.co.uk') || site.endsWith('.ie')) return 'uk'
+  if (SG_SITES.has(site) || site.endsWith('.sg')) return 'sg'
   return 'us'
 }
 
@@ -42,7 +45,7 @@ if (!fs.existsSync(INPUT)) {
   process.exit(1)
 }
 
-const buckets = { th: [], no: [], uk: [], us: [] }
+const buckets = { th: [], no: [], uk: [], sg: [], us: [] }
 
 for (const line of fs.readFileSync(INPUT, 'utf8').split('\n')) {
   if (!line.trim().startsWith('<channel ')) continue

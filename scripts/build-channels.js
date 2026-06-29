@@ -15,12 +15,14 @@ const UK_SITES     = new Set([
   'virgintvgo.virginmedia.com', 'entertainment.ie', 'player.ee.co.uk',
   'bbc.co.uk', 'itv.com', 'channel4.com', 'channel5.com', 'itvx.com', 'schedules.tv'
 ])
+const SG_SITES     = new Set(['mewatch.sg', 'singtel.com', 'starhubtvplus.com'])
 
 function classify(lang, site, siteId) {
   if (lang === 'th') return 'th'
   if (NORDIC_LANGS.has(lang)) return 'no'
   if (siteId.startsWith('UK1#') || siteId.startsWith('IE1#')) return 'uk'
   if (UK_SITES.has(site) || site.endsWith('.co.uk') || site.endsWith('.ie')) return 'uk'
+  if (SG_SITES.has(site) || site.endsWith('.sg')) return 'sg'
   return 'us'
 }
 
@@ -73,7 +75,7 @@ function writeRegion(region, channels) {
 
 // ── Build buckets ─────────────────────────────────────────────────────────────
 
-const buckets = { th: [], no: [], uk: [], us: [] }
+const buckets = { th: [], no: [], uk: [], sg: [], us: [] }
 
 // 1. Split user's public/channels.xml by region (same as split-channels.js)
 const masterPath = path.join(PUBLIC, 'channels.xml')
@@ -104,6 +106,13 @@ buckets.uk.push(
   ...readChannels(path.join(FORK, 'sites/sky.com/sky.com.channels.xml')),
   ...readChannels(path.join(FORK, 'sites/freeview.co.uk/freeview.co.uk.channels.xml')),
   ...readChannels(path.join(FORK, 'sites/mytelly.co.uk/mytelly.co.uk.channels.xml'))
+)
+
+// Singapore
+buckets.sg.push(
+  ...readChannels(path.join(FORK, 'sites/starhubtvplus.com/starhubtvplus.com_en.channels.xml')),
+  ...readChannels(path.join(FORK, 'sites/mewatch.sg/mewatch.sg.channels.xml')),
+  ...readChannels(path.join(FORK, 'sites/singtel.com/singtel.com.channels.xml'))
 )
 
 // International / US
