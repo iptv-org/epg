@@ -1,9 +1,11 @@
 const { parser, url, request } = require('./ontvtonight.com.config.js')
 const fs = require('fs')
 const path = require('path')
+const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
@@ -13,16 +15,20 @@ const channel = {
   xmltv_id: '7two.au'
 }
 
+jest.mock('axios')
+
+axios.head.mockImplementation(() => Promise.resolve({}))
+
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
     'https://www.ontvtonight.com/au/guide/listings/channel/1692/7two.html?dt=2021-11-25'
   )
 })
 
-it('can generate valid request headers', () => {
-  expect(request.headers).toMatchObject({
+it('can generate valid request headers', async () => {
+  expect(await request.headers({ channel, date })).toMatchObject({
     'user-agent':
-      'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36'
+      'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36'
   })
 })
 
