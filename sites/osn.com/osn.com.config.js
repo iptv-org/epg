@@ -7,6 +7,11 @@ const crypto = require('crypto')
 dayjs.extend(utc)
 dayjs.extend(timezone)
 
+/**
+ * OSN.COM note:
+ * - API allows only at max 5 channels, otherwise returns 406
+ */
+
 // https://www.osn.com/_next/static/chunks/87cf1e375968671c.js
 
 const cipherName = 'aes-256-cbc'
@@ -15,36 +20,50 @@ const cipherIv = Buffer.from('b7cc0a48d6d023bc1a2a670953ec5622', 'hex')
 
 const tz = dayjs.tz.guess()
 const oneDayMs = 864e5
-const headers = {
-  'User-Agent':
-    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 OPR/104.0.0.0'
-}
-let batch = 0
+const headers = {}
+const caches = {}
+let allChannels
 
 module.exports = {
   site: 'osn.com',
   days: 2,
-  url({ channel, date }) {
-    const data = getChannelData({ channel, date })
-    return `https://www.osn.com/apidata/tv-schedule-timeline?t=batch${++batch}-time${data.startTime}-${data.endTime}-boxAndroid`
+  async url({ date }) {
+    return (await getUrlData(date)).url
   },
   request: {
-    headers({ channel, date }) {
-      return {
-        ...headers,
-        'X-Encrypted-Data': encrypt(JSON.stringify(getChannelData({ channel, date })))
-      }
+    cache: {
+      ttl: 24 * 60 * 60 * 1000 // 1 day
+    },
+    async headers({ date }) {
+      return await getHeaders(date)
     }
   },
-  parser({ content, channel }) {
+  async parser({ content, channel, date }) {
     const programs = []
-    if (typeof content === 'string' || Buffer.isBuffer(content)) {
-      content = JSON.parse(content)
-    }
-    if (content?.encrypted) {
-      content = JSON.parse(decrypt(content.encrypted))
-    }
+    content = getDecryptedData(content)
     if (Array.isArray(content?.entries)) {
+      // get remaining segments entries
+      const cacheId = date.format('YYYYMMDD')
+      if (caches[cacheId] === undefined) {
+        caches[cacheId] = []
+        const segments = await getUrlData(date, false)
+        while (segments.length) {
+          const segment = segments.shift()
+          const result = await axios
+            .get(segment.url, { headers: await getHeaders(segment.data) })
+            .then(res => getDecryptedData(res.data))
+            .catch(err => console.error(`${segment.url}: ${err.message}!`))
+          if (Array.isArray(result?.entries)) {
+            caches[cacheId].push(...result.entries)
+          }
+        }
+        // add 5s delay to avoid 406
+        await new Promise(resolve => setTimeout(resolve, 5000))
+      }
+      // add entries from cache
+      if (Array.isArray(caches[cacheId])) {
+        content.entries.push(...caches[cacheId])
+      }
       content.entries
         .filter(entry => entry.guid == channel.site_id)
         .forEach(entry => {
@@ -83,42 +102,117 @@ module.exports = {
   },
   async channels({ lang = 'ar' }) {
     const channels = []
-    const result = await axios
-      .get('https://www.osn.com/apidata/channels?platform=Android', { headers })
-      .then(response => response.data)
-      .catch(console.error)
-
-    if (result?.encrypted) {
-      const items = JSON.parse(decrypt(result.encrypted))
+    const items = await fetchChannels()
+    if (Array.isArray(items)) {
       channels.push(...items.map(item => ({
         lang,
         site_id: item.guid,
         name: item.title
       })))
     }
+
     return channels
   }
+}
+
+async function fetchChannels() {
+  if (allChannels === undefined) {
+    const result = await axios
+      .get('https://www.osn.com/apidata/channels?platform=Android', { headers: await getHeaders() })
+      .then(res => getDecryptedData(res.data))
+      .catch(console.error)
+
+    if (Array.isArray(result)) {
+      allChannels = result
+    }
+  }
+
+  return allChannels
+}
+
+async function getHeaders(data) {
+  if (dayjs.isDayjs(data)) {
+    data = (await getUrlData(data)).data
+  }
+  const res = { ...headers }
+  if (data) {
+    res['X-Encrypted-Data'] = getEncryptedData(data)
+  }
+
+  return res
+}
+
+async function getUrlData(date, first = true) {
+  const parts = []
+  const startOfDay = date.tz(tz).startOf('d')
+  const endOfDay = startOfDay.add(oneDayMs, 'ms')
+  const startStop = {
+    startTime: startOfDay.valueOf(),
+    endTime: endOfDay.valueOf()
+  }
+  await fetchChannels()
+  const segments = await getUrlSegments()
+  let i = 0
+  for (const v of segments) {
+    const data = {
+      url: `https://www.osn.com/apidata/tv-schedule-timeline?t=batch${++i}-time${
+          startStop.startTime
+        }-${
+          startStop.endTime
+        }-boxAndroid`,
+      data: {
+        channelGuid: v.join('|'),
+        ...startStop
+      }
+    }
+    if (first) {
+      return data
+    } else if (i === 1) {
+      continue
+    }
+    parts.push(data)
+  }
+
+  return parts
+}
+
+async function getUrlSegments() {
+  await fetchChannels()
+  const segments = []
+  const _channels = [...allChannels.map(item => item.guid)]
+  while (_channels.length) {
+    segments.push(_channels.splice(0, 5))
+  }
+  return segments
+}
+
+function getEncryptedData(data) {
+  return encrypt(JSON.stringify(data))
+}
+
+function getDecryptedData(data) {
+  if (typeof data === 'string' || Buffer.isBuffer(data)) {
+    data = JSON.parse(data)
+  }
+  if (data?.encrypted) {
+    data = JSON.parse(decrypt(data.encrypted))
+  }
+
+  return data
 }
 
 function encrypt(data, encoding = 'utf8') {
   const cipher = crypto.createCipheriv(cipherName, cipherKey, cipherIv)
   const encrypted = cipher.update(data, encoding, 'base64')
+
   return (encrypted + cipher.final('base64'))
 }
 
 function decrypt(data, encoding = 'utf8') {
   const decipher = crypto.createDecipheriv(cipherName, cipherKey, cipherIv)
   const decrypted = decipher.update(data, 'base64', encoding)
-  return (decrypted + decipher.final(encoding))
-}
 
-function getChannelData({ channel, date }) {
-  const startOfDay = date.tz(tz).startOf('d')
-  return {
-    channelGuid: channel.site_id,
-    startTime: startOfDay.valueOf(),
-    endTime: startOfDay.valueOf() + oneDayMs
-  }
+  return (decrypted + decipher.final(encoding))
 }
 
 function dotProp(o, prop) {
