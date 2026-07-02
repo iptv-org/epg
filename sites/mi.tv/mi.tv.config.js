@@ -23,14 +23,22 @@ module.exports = {
     const [country, id] = channel.site_id.split('#')
     return `https://mi.tv/${country}/async/channel/${id}/${date.format('YYYY-MM-DD')}/0`
   },
-  parser({ content, date }) {
+  parser({ content, date, channel }) { 
+    const country = channel?.site_id?.split('#')?.[0] || null
+    let hourformat
+    if (country === 'co') { // Colombia uses h:mma instead of HH:mm 
+      hourformat = 'h:mma'
+    } else {
+      hourformat = 'HH:mm'
+    } 
     const programs = []
-    const items = parseItems(content)
-    items.forEach(item => {
+    const $ = cheerio.load(content)
+    const items = parseItems($)
+    for (const item of items) { 
       const prev = programs[programs.length - 1]
-      const $item = cheerio.load(item)
-      let start = parseStart($item, date)
-      if (!start) return
+      const $item = $(item) 
+      let start = parseStart($item, date, hourformat)
+      if (!start) continue
       if (prev) {
         if (start.isBefore(prev.start)) {
           start = start.add(1, 'd')
@@ -47,7 +55,7 @@ module.exports = {
         start,
         stop
       })
-    })
+    } 
 
     return programs
   },
@@ -82,29 +90,29 @@ module.exports = {
   }
 }
 
-function parseStart($item, date) {
-  const timeString = $item('a > div.content > span.time').text()
+function parseStart($item, date, hourformat) {
+  const timeString = $item.find('a > div.content > span.time').text()
   if (!timeString) return null
   const dateString = `${date.format('MM/DD/YYYY')} ${timeString}`
 
-  return dayjs.utc(dateString, 'MM/DD/YYYY HH:mm')
+  return dayjs.utc(dateString, `MM/DD/YYYY ${hourformat}`)
 }
 
 function parseTitle($item) {
-  return $item('a > div.content > h2').text().trim()
+  return $item.find('a > div.content > h2').text().trim()
 }
 
 function parseCategory($item) {
-  return $item('a > div.content > span.sub-title').text().trim()
+  return $item.find('a > div.content > span.sub-title').text().trim()
 }
 
 function parseDescription($item) {
-  return $item('a > div.content > p.synopsis').text().trim()
+  return $item.find('a > div.content > p.synopsis').text().trim()
 }
 
 
 function parseImage($item) {
-  const styleAttr = $item('a > div.image-parent > div.image').attr('style')
+  const styleAttr = $item.find('a > div.image-parent > div.image').attr('style')
   
   if (styleAttr) {
     const match = styleAttr.match(/background-image:\s*url\(['"]?(.*?)['"]?\)/)
@@ -113,7 +121,7 @@ function parseImage($item) {
     }
   }
   
-  const backgroundImage = $item('a > div.image-parent > div.image').css('background-image')
+  const backgroundImage = $item.find('a > div.image-parent > div.image').css('background-image')
   
   if (backgroundImage && backgroundImage !== 'none') {
     const match = backgroundImage.match(/url\(['"]?(.*?)['"]?\)/)
@@ -137,8 +145,6 @@ function cleanUrl(url) {
 }
 
 
-function parseItems(content) {
-  const $ = cheerio.load(content)
-
+function parseItems($) { 
   return $('#listings > ul > li').toArray()
 }
