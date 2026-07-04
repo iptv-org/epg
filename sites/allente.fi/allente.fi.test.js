@@ -1,4 +1,4 @@
-const { parser, url } = require('./allente.no.config.js')
+const { parser, url } = require('./allente.fi.config.js')
 const fs = require('fs')
 const path = require('path')
 const dayjs = require('dayjs')
@@ -9,7 +9,7 @@ const channel = {
 }
 
 it('can generate valid url', () => {
-  expect(url({ date })).toBe('https://www.allente.no/api/epg/refetch-epg-data?Start=2026-06-28')
+  expect(url({ date })).toBe('https://www.allente.fi/api/epg/refetch-epg-data?Start=2026-06-28')
 })
 
 it('can parse response', () => {
@@ -28,7 +28,7 @@ it('can parse response', () => {
     title: 'Trucks!',
     description:
       'The hosts present viewers with all of the latest trends and models for trucks while also demonstrating a series of how-to projects.',
-    category: ['Livsstil', 'Antikviteter'],
+    category: ['Elämäntapa', 'Antiikki'],
     image:
       'https://allente-imgmgr.akamaized.net/11823019554723227163.jpg?im=Resize,width=600,%20height=338',
     season: 19,
@@ -39,7 +39,7 @@ it('can parse response', () => {
     start: '2026-06-28T23:30:00.000Z',
     stop: '2026-06-29T03:00:00.000Z',
     title: 'Airing Break',
-    category: ['Diverse'],
+    category: ['Sekalaiset'],
     season: null,
     episode: null
   })

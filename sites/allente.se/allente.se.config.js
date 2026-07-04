@@ -3,7 +3,7 @@ const dayjs = require('dayjs')
 const eventIds = []
 
 module.exports = {
-  site: 'allente.no',
+  site: 'allente.se',
   days: 2,
   request: {
     cache: {
@@ -11,7 +11,7 @@ module.exports = {
     }
   },
   url({ date }) {
-    return `https://www.allente.no/api/epg/refetch-epg-data?Start=${date.format('YYYY-MM-DD')}`
+    return `https://www.allente.se/api/epg/refetch-epg-data?Start=${date.format('YYYY-MM-DD')}`
   },
   parser({ content, channel }) {
     const programs = []
@@ -49,14 +49,14 @@ module.exports = {
   async channels() {
     const channels = []
     const axios = require('axios')
-    const res = await axios.get(`https://www.allente.no/api/epg/refetch-epg-data?Start=${dayjs().format('YYYY-MM-DD')}`)
+    const res = await axios.get(`https://www.allente.se/api/epg/refetch-epg-data?Start=${dayjs().format('YYYY-MM-DD')}`)
       .then(res => res.data)
       .catch(console.error)
 
     if (Array.isArray(res.channels)) {
       channels.push(...res.channels
         .map(item => ({
-            lang: 'no',
+            lang: 'se',
             site_id: item.id,
             name: item.name
           })
