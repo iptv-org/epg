@@ -5,7 +5,7 @@ https://maxstream.tv/home
 ### Download the guide
 
 ```sh
-npm run grab --- --channels=sites/maxstream.tv/maxstream.tv.channels.xml
+npm run grab --- --sites=maxstream.tv
 ```
 
 ### Update channel list

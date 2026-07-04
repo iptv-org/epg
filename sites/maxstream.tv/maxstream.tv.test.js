@@ -6,38 +6,45 @@ const utc = require('dayjs/plugin/utc')
 
 dayjs.extend(utc)
 
-const date = dayjs.utc('2026-05-02').startOf('d')
-const channel = { site_id: '0_86sal99e' }
+const date = dayjs.utc('2026-07-04').startOf('d')
+const channel = { site_id: '0_meap4fi2' }
 
 it('can generate valid url', () => {
-  expect(url({ channel })).toBe('https://vmp.maxstream.tv/api/v3/videos/0_86sal99e/schedules')
+  expect(url({ channel })).toBe('https://api.maxstream.tv/v1/videos/0_meap4fi2/schedule')
 })
 
 it('can parse response', () => {
   const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json')).toString()
-  const results = parser({ content, channel, date }).map(p => {
-    p.start = p.start.toJSON()
-    p.stop = p.stop.toJSON()
-    return p
-  })
+  const results = parser({ content, channel, date })
+    .map(p => {
+      p.start = p.start.toJSON()
+      p.stop = p.stop.toJSON()
+      return p
+    })
 
-  expect(results.length).toBe(49)
+  expect(results.length).toBe(31)
   expect(results[0]).toMatchObject({
-    title: "I'll Become A Villainess Who Goes Down In History - Eps.12",
+    title: 'The Way Back',
     description:
-      'Seorang gadis bereinkarnasi sebagai tokoh antagonis dalam novel fantasi. Ia bertekad menjadi villain sejati, namun pilihan tindakannya justru mengubah jalan cerita dan memengaruhi hubungan dengan karakter lain.',
-    start: '2026-05-01T16:30:00.000Z',
-    stop: '2026-05-01T17:00:00.000Z',
-    episode: 12
+      'Mantan atlet basket yang berjuang melawan kecanduan mendapatkan kesempatan kedua dengan melatih tim sekolah lamanya.',
+    start: '2026-07-03T22:50:00.000Z',
+    stop: '2026-07-04T00:50:00.000Z',
   })
-  expect(results[46]).toMatchObject({
-    title: 'Haikyu!! 4Th Season - Eps.22',
+  expect(results[1]).toMatchObject({
+    title: 'Dirty Money S1 - Eps. 10',
     description:
-      'Karasuno melaju ke turnamen nasional dan menghadapi tim-tim elit dengan gaya bermain berbeda. Latihan intens dan strategi baru menguji kemampuan Hinata serta rekan-rekannya dalam menghadapi tekanan pertandingan besar.',
-    start: '2026-05-02T15:26:00.000Z',
-    stop: '2026-05-02T16:00:00.000Z',
-    season: 4,
-    episode: 22
+      'Serial dokumenter yang mengungkap skandal keuangan terbesar di dunia, membongkar praktik curang para korporasi dan dampaknya pada masyarakat luas.',
+    start: '2026-07-04T00:50:00.000Z',
+    stop: '2026-07-04T01:20:00.000Z',
+    season: 1,
+    episode: 10
+  })
+  expect(results[30]).toMatchObject({
+    title: 'He\'s Just Not That Into You',
+    description:
+      'Komedi romantis tentang lika-liku pencarian cinta dan salah paham dalam membaca tanda pasangan.',
+    start: '2026-07-04T16:15:00.000Z',
+    stop: '2026-07-04T18:25:00.000Z',
   })
 })
 
