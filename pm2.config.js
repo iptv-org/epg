@@ -28,7 +28,7 @@ const buildAndGrabAll = [
 const apps = [
   {
     name: 'serve',
-    script: 'npx serve -- public -l 3002',
+    script: 'npx serve public -l 3002',
     instances: 1,
     watch: false,
     autorestart: true
