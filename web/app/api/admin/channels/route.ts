@@ -40,7 +40,14 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: result.error }, { status: 409 })
   }
 
-  rebuildChannelFiles()
+  try {
+    rebuildChannelFiles()
+  } catch (error) {
+    return NextResponse.json(
+      { ok: true, warning: 'channel saved, but rebuilding derived files failed — run node scripts/build-channels.js manually' },
+      { status: 201 }
+    )
+  }
   return NextResponse.json({ ok: true }, { status: 201 })
 }
 
@@ -62,6 +69,13 @@ export async function DELETE(request: NextRequest) {
     return NextResponse.json({ error: result.error }, { status: 404 })
   }
 
-  rebuildChannelFiles()
+  try {
+    rebuildChannelFiles()
+  } catch (error) {
+    return NextResponse.json(
+      { ok: true, warning: 'channel saved, but rebuilding derived files failed — run node scripts/build-channels.js manually' },
+      { status: 200 }
+    )
+  }
   return NextResponse.json({ ok: true })
 }
