@@ -22,6 +22,10 @@ export default function ChannelsClient() {
 
   async function loadChannels() {
     const response = await fetch('/api/admin/channels')
+    if (!response.ok) {
+      setMessage('Error: failed to load channels')
+      return
+    }
     const data = await response.json()
     setChannels(data.channels || [])
   }
@@ -37,40 +41,57 @@ export default function ChannelsClient() {
     }
     const controller = new AbortController()
     fetch(`/api/admin/channels/search?q=${encodeURIComponent(query)}`, { signal: controller.signal })
-      .then(r => r.json())
-      .then(data => setResults(data.results || []))
-      .catch(() => {})
+      .then(async r => {
+        const data = await r.json()
+        if (!r.ok) {
+          setMessage('Error: channel search failed')
+          return
+        }
+        setResults(data.results || [])
+      })
+      .catch(err => {
+        if (err instanceof Error && err.name === 'AbortError') return
+        setMessage('Error: channel search failed')
+      })
     return () => controller.abort()
   }, [query])
 
   async function addChannel(channel: Channel) {
     setMessage(null)
-    const response = await fetch('/api/admin/channels', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(channel)
-    })
-    const data = await response.json()
-    if (!response.ok) {
-      setMessage(`Error: ${data.error}`)
-      return
+    try {
+      const response = await fetch('/api/admin/channels', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(channel)
+      })
+      const data = await response.json()
+      if (!response.ok) {
+        setMessage(`Error: ${data.error}`)
+        return
+      }
+      setMessage(`Added "${channel.name}" — run a fetch to pull its schedule.`)
+      await loadChannels()
+    } catch (err) {
+      setMessage('Error: failed to add channel')
     }
-    setMessage(`Added "${channel.name}" — run a fetch to pull its schedule.`)
-    await loadChannels()
   }
 
   async function removeChannel(site: string, siteId: string) {
     setMessage(null)
-    const response = await fetch(
-      `/api/admin/channels?site=${encodeURIComponent(site)}&siteId=${encodeURIComponent(siteId)}`,
-      { method: 'DELETE' }
-    )
-    const data = await response.json()
-    if (!response.ok) {
-      setMessage(`Error: ${data.error}`)
-      return
+    try {
+      const response = await fetch(
+        `/api/admin/channels?site=${encodeURIComponent(site)}&siteId=${encodeURIComponent(siteId)}`,
+        { method: 'DELETE' }
+      )
+      const data = await response.json()
+      if (!response.ok) {
+        setMessage(`Error: ${data.error}`)
+        return
+      }
+      await loadChannels()
+    } catch (err) {
+      setMessage('Error: failed to remove channel')
     }
-    await loadChannels()
   }
 
   return (
