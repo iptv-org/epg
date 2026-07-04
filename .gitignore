@@ -8,7 +8,9 @@
 /guides/
 /web/node_modules/
 /web/.next/
+/web/.env.local
 /data/
+/public/
 
 # macOS
 .DS_Store
