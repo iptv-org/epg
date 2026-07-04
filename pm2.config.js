@@ -47,6 +47,7 @@ const apps = [
     args: 'start -p 3001',
     cwd: './web',
     instances: 1,
+    exec_mode: 'fork',
     watch: false,
     autorestart: true
   },
