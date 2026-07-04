@@ -56,14 +56,12 @@
     "next": "^15.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "@node-rs/argon2": "^2.0.2",
-    "better-sqlite3": "^11.8.0"
+    "@node-rs/argon2": "^2.0.2"
   },
   "devDependencies": {
     "@types/node": "^22.10.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
-    "@types/better-sqlite3": "^7.6.12",
     "typescript": "^5.7.0",
     "jest": "^29.7.0",
     "@swc/core": "^1.10.0",
@@ -73,8 +71,15 @@
 }
 ```
 
-`better-sqlite3` isn't used until Plan 2, but pinning it now avoids a second
-`npm install` churn later — it has no effect on this plan's tasks.
+`better-sqlite3` is deliberately **not** included here even though Plan 2
+needs it: it requires native compilation (no prebuilt musl/Alpine binary),
+and this repo's `Dockerfile` doesn't install a build toolchain (`python3`,
+`make`, `g++`). Adding it now was tried during execution and immediately
+needed `--ignore-scripts` to install locally — a strong signal it would
+also fail `docker build` in Task 13, which does a plain `npm install` with
+no such flag. Plan 2 must either add the build toolchain to the Dockerfile
+alongside `better-sqlite3`, or pick a SQLite binding with real Alpine
+prebuilds, and verify a Docker build before relying on it.
 
 - [ ] **Step 2: Create `web/tsconfig.json`**
 
