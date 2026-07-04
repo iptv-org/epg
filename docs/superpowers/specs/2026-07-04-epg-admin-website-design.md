@@ -197,8 +197,13 @@ epg/
    within 15 minutes, reject further attempts from that IP regardless of
    password correctness until the window elapses.
 3. `POST /api/admin/auth/logout` clears the cookie.
-4. Mutating API routes (`channels`, `fetch`) additionally check a
-   same-origin/CSRF header, since the session is cookie-based.
+4. **Deviation from the original design (accepted during implementation):**
+   no separate same-origin/CSRF header check was added to mutating routes.
+   `SameSite=Lax` already prevents the session cookie from being attached to
+   a cross-site POST/DELETE, which is the actual threat this point was meant
+   to cover, so a redundant explicit check was judged unnecessary. Revisit
+   if a future change relaxes `SameSite` or introduces a legitimate
+   cross-origin caller.
 
 ## Error handling
 
