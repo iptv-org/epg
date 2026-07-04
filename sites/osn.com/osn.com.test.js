@@ -1,4 +1,5 @@
 const { parser, url, request } = require('./osn.com.config')
+const axios = require('axios')
 const fs = require('fs')
 const path = require('path')
 const dayjs = require('dayjs')
@@ -8,28 +9,57 @@ const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
+jest.mock('axios')
+
 const date = dayjs.utc('2026-05-16').startOf('d')
 const channelAR = { site_id: '4506', xmltv_id: 'OSNKids.ae@SD', lang: 'ar' }
 const channelEN = { site_id: '4506', xmltv_id: 'OSNKids.ae@SD', lang: 'en' }
 const content = fs.readFileSync(path.join(__dirname, '/__data__/content.json'))
 
-it('can generate valid request headers', () => {
-  const result = request.headers({ channel: channelAR, date })
+axios.get.mockImplementation(url => {
+  const urls = {
+    'https://www.osn.com/apidata/channels?platform=Android': 'channel.json',
+    'https://www.osn.com/apidata/tv-schedule-timeline?t=batch1-time1778846400000-1778932800000-boxAndroid': 'content.json',
+    'https://www.osn.com/apidata/tv-schedule-timeline?t=batch2-time1778846400000-1778932800000-boxAndroid': 'empty.json',
+    'https://www.osn.com/apidata/tv-schedule-timeline?t=batch3-time1778846400000-1778932800000-boxAndroid': 'empty.json',
+    'https://www.osn.com/apidata/tv-schedule-timeline?t=batch4-time1778846400000-1778932800000-boxAndroid': 'empty.json',
+    'https://www.osn.com/apidata/tv-schedule-timeline?t=batch5-time1778846400000-1778932800000-boxAndroid': 'empty.json',
+    'https://www.osn.com/apidata/tv-schedule-timeline?t=batch6-time1778846400000-1778932800000-boxAndroid': 'empty.json',
+    'https://www.osn.com/apidata/tv-schedule-timeline?t=batch7-time1778846400000-1778932800000-boxAndroid': 'empty.json',
+    'https://www.osn.com/apidata/tv-schedule-timeline?t=batch8-time1778846400000-1778932800000-boxAndroid': 'empty.json',
+    'https://www.osn.com/apidata/tv-schedule-timeline?t=batch9-time1778846400000-1778932800000-boxAndroid': 'empty.json',
+    'https://www.osn.com/apidata/tv-schedule-timeline?t=batch10-time1778846400000-1778932800000-boxAndroid': 'empty.json',
+    'https://www.osn.com/apidata/tv-schedule-timeline?t=batch11-time1778846400000-1778932800000-boxAndroid': 'empty.json',
+    'https://www.osn.com/apidata/tv-schedule-timeline?t=batch12-time1778846400000-1778932800000-boxAndroid': 'empty.json',
+    'https://www.osn.com/apidata/tv-schedule-timeline?t=batch13-time1778846400000-1778932800000-boxAndroid': 'empty.json',
+    'https://www.osn.com/apidata/tv-schedule-timeline?t=batch14-time1778846400000-1778932800000-boxAndroid': 'empty.json',
+    'https://www.osn.com/apidata/tv-schedule-timeline?t=batch15-time1778846400000-1778932800000-boxAndroid': 'empty.json',
+    'https://www.osn.com/apidata/tv-schedule-timeline?t=batch16-time1778846400000-1778932800000-boxAndroid': 'empty.json'
+  }
+  let data = ''
+  if (urls[url] !== undefined) {
+    data = fs.readFileSync(path.join(__dirname, '__data__', urls[url])).toString()
+  }
+  return Promise.resolve({ data })
+})
+
+it('can generate valid request headers', async () => {
+  const result = await request.headers({ date })
   expect(result).toMatchObject({
     'X-Encrypted-Data':
-      'e0srp4UFarSGxZt4iWaXSZTCg6vB46NRZmY5V9wEzxHeB1bwR1HXrAuTI8FCVH7i3+uVqkDQSgRxjRFPYdrXhqedzEogwcjDnjRPmLtFxEA='
+      'e0srp4UFarSGxZt4iWaXSSZCApUQYlb/CPhOH0/r/rUzyU/aVEst9+dVQueAwTe3A/or1iCzDEaiVfQ/VTxF9ZdIzOZeb3SSRap3YK7IFkj7Km6L8aXxpsNeQua/L/Ar'
   })
 })
 
-it('can generate valid url', () => {
-  const result = url({ channel: channelAR, date })
+it('can generate valid url', async () => {
+  const result = await url({ date })
   expect(result).toBe(
     'https://www.osn.com/apidata/tv-schedule-timeline?t=batch1-time1778846400000-1778932800000-boxAndroid'
   )
 })
 
-it('can parse response (ar)', () => {
-  const result = parser({ date, channel: channelAR, content })
+it('can parse response (ar)', async () => {
+  const result = (await parser({ date, channel: channelAR, content }))
     .map(a => {
       a.start = a.start.toJSON()
       a.stop = a.stop.toJSON()
@@ -51,8 +81,8 @@ it('can parse response (ar)', () => {
   })
 })
 
-it('can parse response (en)', () => {
-  const result = parser({ date, channel: channelEN, content })
+it('can parse response (en)', async () => {
+  const result = (await parser({ date, channel: channelEN, content }))
     .map(a => {
       a.start = a.start.toJSON()
       a.stop = a.stop.toJSON()
@@ -74,7 +104,7 @@ it('can parse response (en)', () => {
   })
 })
 
-it('can handle empty guide', () => {
-  const result = parser({ date, channel: channelAR, content: '[]' })
+it('can handle empty guide', async () => {
+  const result = await parser({ date, channel: channelAR, content: '[]' })
   expect(result).toMatchObject([])
 })
