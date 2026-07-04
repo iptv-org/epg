@@ -8,6 +8,7 @@ Tools for downloading the EPG (Electronic Program Guide) for thousands of TV cha
 - 🚀 [Usage](#usage)
 - 💫 [Update](#update)
 - 🐋 [Docker](#docker)
+- 🔐 [Admin website](#admin-website)
 - 📅 [Guides](#guides)
 - 🗄 [Database](#database)
 - 👨‍💻 [API](#api)
@@ -220,6 +221,38 @@ ghcr.io/iptv-org/epg:master
 | TIMEOUT         | Timeout for each request in milliseconds (default: 30000)                                                          |
 | DELAY           | Delay between request in milliseconds (default: 0)                                                                 |
 | RUN_AT_STARTUP  | Run grab on container startup (default: true)                                                                      |
+
+## Admin website
+
+This fork adds a password-protected admin site at `/admin` for managing the
+channel list without editing files by hand. It runs as an additional process
+inside the same container, reverse-proxied by Caddy alongside the existing
+static file server — none of the URLs above change.
+
+Currently supported: adding and removing channels (via catalog search or
+manual entry). On-demand fetch triggering and job status/logs are planned as
+a follow-up and aren't available yet.
+
+### Required setup
+
+Two environment variables must be set, or the admin site will fail to start:
+
+| Variable             | Description                                                                                                                                             |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `ADMIN_PASSWORD_HASH` | An argon2id hash of your chosen admin password. Generate one with: `node -e "require('@node-rs/argon2').hash('your-password').then(console.log)"` (run from the `web/` directory, after `npm install`). |
+| `SESSION_SECRET`      | A random secret string used to sign session cookies (e.g. `openssl rand -hex 32`).                                                                     |
+
+Two persistent volumes must also be mounted on the container:
+
+| Container path | Purpose                                                                                                         |
+| -------------- | ---------------------------------------------------------------------------------------------------------------- |
+| `/epg/public`   | Everything currently served (guides, channel lists) **plus** the admin-managed `channels.xml` master list. Without this volume, the container has no persistent storage at all and channel edits are lost on every restart. |
+| `/epg/data`     | Reserved for the admin site's internal state (job history, once that feature ships). Kept separate from `/epg/public` so it's never web-servable. |
+
+### Access
+
+Once deployed, visit `http://<host>:3000/admin`, log in with the password
+corresponding to `ADMIN_PASSWORD_HASH`, and manage channels from there.
 
 ## Guides
 
