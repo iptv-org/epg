@@ -1660,7 +1660,7 @@ git commit -m "add admin dashboard shell page"
 		reverse_proxy 127.0.0.1:3001
 	}
 
-	handle /api/admin* {
+	handle /api/admin/* {
 		reverse_proxy 127.0.0.1:3001
 	}
 
