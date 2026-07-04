@@ -43,6 +43,7 @@ export async function POST(request: NextRequest) {
   try {
     rebuildChannelFiles()
   } catch (error) {
+    console.error('rebuildChannelFiles failed after addChannel', error)
     return NextResponse.json(
       { ok: true, warning: 'channel saved, but rebuilding derived files failed — run node scripts/build-channels.js manually' },
       { status: 201 }
@@ -72,8 +73,9 @@ export async function DELETE(request: NextRequest) {
   try {
     rebuildChannelFiles()
   } catch (error) {
+    console.error('rebuildChannelFiles failed after removeChannel', error)
     return NextResponse.json(
-      { ok: true, warning: 'channel saved, but rebuilding derived files failed — run node scripts/build-channels.js manually' },
+      { ok: true, warning: 'channel removed, but rebuilding derived files failed — run node scripts/build-channels.js manually' },
       { status: 200 }
     )
   }
