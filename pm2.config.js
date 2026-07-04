@@ -43,8 +43,8 @@ const apps = [
   },
   {
     name: 'web',
-    script: 'npm',
-    args: 'start',
+    script: 'node_modules/next/dist/bin/next',
+    args: 'start -p 3001',
     cwd: './web',
     instances: 1,
     watch: false,
