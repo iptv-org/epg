@@ -47,6 +47,7 @@ export default function ChannelsClient() {
           setMessage('Error: channel search failed')
           return
         }
+        setMessage(null)
         setResults(data.results || [])
       })
       .catch(err => {
