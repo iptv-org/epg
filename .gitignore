@@ -6,6 +6,9 @@
 /guide.xml.gz
 .secrets
 /guides/
+/web/node_modules/
+/web/.next/
+/data/
 
 # macOS
 .DS_Store
