@@ -3,8 +3,15 @@ import { verifyPassword, createSessionToken } from '@/lib/auth'
 import { isLockedOut, recordFailedAttempt, clearAttempts } from '@/lib/rateLimit'
 import { SESSION_COOKIE } from '@/lib/session'
 
+function getClientIp(request: NextRequest): string {
+  const forwardedFor = request.headers.get('x-forwarded-for')
+  if (!forwardedFor) return 'unknown'
+  const parts = forwardedFor.split(',').map(part => part.trim())
+  return parts[parts.length - 1] || 'unknown'
+}
+
 export async function POST(request: NextRequest) {
-  const ip = request.headers.get('x-forwarded-for') || 'unknown'
+  const ip = getClientIp(request)
 
   if (isLockedOut(ip)) {
     return NextResponse.json({ error: 'too many attempts, try again later' }, { status: 429 })

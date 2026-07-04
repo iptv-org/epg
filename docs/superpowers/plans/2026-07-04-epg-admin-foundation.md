@@ -1022,8 +1022,15 @@ import { verifyPassword, createSessionToken } from '@/lib/auth'
 import { isLockedOut, recordFailedAttempt, clearAttempts } from '@/lib/rateLimit'
 import { SESSION_COOKIE } from '@/lib/session'
 
+function getClientIp(request: NextRequest): string {
+  const forwardedFor = request.headers.get('x-forwarded-for')
+  if (!forwardedFor) return 'unknown'
+  const parts = forwardedFor.split(',').map(part => part.trim())
+  return parts[parts.length - 1] || 'unknown'
+}
+
 export async function POST(request: NextRequest) {
-  const ip = request.headers.get('x-forwarded-for') || 'unknown'
+  const ip = getClientIp(request)
 
   if (isLockedOut(ip)) {
     return NextResponse.json({ error: 'too many attempts, try again later' }, { status: 429 })
@@ -1051,6 +1058,13 @@ export async function POST(request: NextRequest) {
   return response
 }
 ```
+
+`getClientIp` takes the *last* comma-separated hop of `X-Forwarded-For`
+rather than the raw header, because the raw header is client-settable and
+using it verbatim lets an attacker spoof a new value per request and never
+trip the lockout. Caddy (the container's sole entry point, added in Task 12)
+appends the real client address as the last hop rather than overwriting the
+header, so the last hop is the one value the client cannot control.
 
 - [ ] **Step 3: Create the logout API route**
 
