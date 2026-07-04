@@ -28,7 +28,24 @@ const buildAndGrabAll = [
 const apps = [
   {
     name: 'serve',
-    script: 'npx serve -- public',
+    script: 'npx serve -- public -l 3002',
+    instances: 1,
+    watch: false,
+    autorestart: true
+  },
+  {
+    name: 'caddy',
+    script: 'caddy',
+    args: 'run --config Caddyfile --adapter caddyfile',
+    instances: 1,
+    watch: false,
+    autorestart: true
+  },
+  {
+    name: 'web',
+    script: 'npm',
+    args: 'start',
+    cwd: './web',
     instances: 1,
     watch: false,
     autorestart: true

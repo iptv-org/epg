@@ -1,0 +1,13 @@
+:3000 {
+	handle /admin* {
+		reverse_proxy 127.0.0.1:3001
+	}
+
+	handle /api/admin* {
+		reverse_proxy 127.0.0.1:3001
+	}
+
+	handle {
+		reverse_proxy 127.0.0.1:3002
+	}
+}
