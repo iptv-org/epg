@@ -24,8 +24,8 @@ export function channelsXmlPath(): string {
   return path.join(publicDir(), 'channels.xml')
 }
 
-export function jobsDbPath(): string {
-  return path.join(dataDir(), 'jobs.db')
+export function jobsDir(): string {
+  return path.join(dataDir(), 'jobs')
 }
 
 export function locksDir(): string {

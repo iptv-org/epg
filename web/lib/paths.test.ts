@@ -5,7 +5,7 @@ import {
   sitesDir,
   channelsSourcesDir,
   channelsXmlPath,
-  jobsDbPath,
+  jobsDir,
   locksDir
 } from '@/lib/paths'
 
@@ -31,7 +31,7 @@ describe('paths', () => {
     expect(sitesDir()).toBe('/tmp/fake-sites')
     expect(channelsSourcesDir()).toBe('/tmp/fake-sources')
     expect(channelsXmlPath()).toBe(path.join('/tmp/fake-public', 'channels.xml'))
-    expect(jobsDbPath()).toBe(path.join('/tmp/fake-data', 'jobs.db'))
+    expect(jobsDir()).toBe(path.join('/tmp/fake-data', 'jobs'))
     expect(locksDir()).toBe(path.join('/tmp/fake-data', 'locks'))
   })
 
