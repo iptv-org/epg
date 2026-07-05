@@ -36,6 +36,8 @@ export function startJob(options: StartJobOptions): StartJobResult {
 
   const child = spawn(command, args, { cwd })
 
+  let finalized = false
+
   child.stdout.on('data', (chunk: Buffer) => {
     const text = chunk.toString()
     appendJobLog(id, text)
@@ -48,6 +50,8 @@ export function startJob(options: StartJobOptions): StartJobResult {
   })
 
   child.on('exit', (code: number | null) => {
+    if (finalized) return
+    finalized = true
     unlockRegion(region)
     const status: JobStatus = code === 0 ? 'success' : 'failed'
     const finished: JobMeta = {
@@ -55,6 +59,21 @@ export function startJob(options: StartJobOptions): StartJobResult {
       status,
       finishedAt: new Date().toISOString(),
       exitCode: code
+    }
+    writeJobMeta(finished)
+    jobEvents.emit('done', id, finished)
+  })
+
+  child.on('error', (err: Error) => {
+    if (finalized) return
+    finalized = true
+    unlockRegion(region)
+    appendJobLog(id, `\n[jobRunner] failed to start process: ${err.message}\n`)
+    const finished: JobMeta = {
+      ...meta,
+      status: 'failed',
+      finishedAt: new Date().toISOString(),
+      exitCode: null
     }
     writeJobMeta(finished)
     jobEvents.emit('done', id, finished)

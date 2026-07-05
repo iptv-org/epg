@@ -55,6 +55,25 @@ describe('jobRunner', () => {
     expect(result.job.exitCode).toBe(1)
   })
 
+  it('a spawn failure (bad command) is recorded as failed, releases the region lock, and does not crash the process', async () => {
+    const result = await startJobAndWait({
+      region: 'th',
+      command: '/nonexistent/definitely-not-a-real-binary',
+      args: [],
+      cwd: tmpDir
+    })
+    expect(result.ok).toBe(true)
+    if (!result.ok) return
+    expect(result.job.status).toBe('failed')
+    expect(result.job.exitCode).toBeNull()
+
+    // Region lock must have been released, so a new job for the same region can start immediately.
+    // Use startJobAndWait so the process fully exits before the test ends (avoids Windows file
+    // locks on tmpDir from a still-running child process interfering with afterEach cleanup).
+    const second = await startJobAndWait({ region: 'th', command: 'node', args: ['-e', ''], cwd: tmpDir })
+    expect(second.ok).toBe(true)
+  })
+
   it('subscribeToJob receives live log lines and a done callback', async () => {
     const lines: string[] = []
     let doneStatus: string | null = null
