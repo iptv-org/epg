@@ -4,7 +4,7 @@ ENV CRON_SCHEDULE="0 0 * * *"
 ENV RUN_AT_STARTUP=true
 RUN apk update \
     && apk upgrade --available \
-    && apk add curl tzdata bash caddy \
+    && apk add curl tzdata bash caddy util-linux \
     && npm install pm2 -g \
     && mkdir /public
 WORKDIR $WORKDIR
