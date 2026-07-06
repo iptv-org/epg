@@ -33,7 +33,9 @@ export async function POST(request: NextRequest) {
 
   execFileSync('node', ['scripts/build-channels.js'], { cwd: REPO_ROOT })
 
-  runAllSequentially().catch(() => {})
+  runAllSequentially().catch(err => {
+    console.error('fetch all: sequential run failed', err)
+  })
 
   return NextResponse.json({ ok: true, message: 'fetch all started' }, { status: 202 })
 }
