@@ -179,7 +179,7 @@
     <tr><td><a href="sites/telkussa.fi">telkussa.fi</a></td><td align="right">66</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/telsu.fi">telsu.fi</a></td><td align="right">17</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/thesportplus.com">thesportplus.com</a></td><td align="right">3</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/tivie.id">tivie.id</a></td><td align="right">56</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/tivie.id">tivie.id</a></td><td align="right">55</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tivu.tv">tivu.tv</a></td><td align="right">80</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/toonamiaftermath.com">toonamiaftermath.com</a></td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/turksatkablo.com.tr">turksatkablo.com.tr</a></td><td align="right">177</td><td align="center">🟢</td><td></td></tr>
