@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="vodafone.pt" site_id="8598" lang="pt" xmltv_id="">BenficaTV Multicam 1</channel>
-  <channel site="vodafone.pt" site_id="8599" lang="pt" xmltv_id="">BenficaTV Multicam 2</channel>
-  <channel site="vodafone.pt" site_id="8600" lang="pt" xmltv_id="">BenficaTV Multicam 3</channel>
-  <channel site="vodafone.pt" site_id="8601" lang="pt" xmltv_id="">BenficaTV Multicam 4</channel>
-  <channel site="vodafone.pt" site_id="8775" lang="pt" xmltv_id="">HGTV</channel>
   <channel site="vodafone.pt" site_id="2749" lang="pt" xmltv_id="24Horas.es@SD">24h</channel>
   <channel site="vodafone.pt" site_id="2844" lang="pt" xmltv_id="24Kitchen.us@Portugal">24Kitchen</channel>
   <channel site="vodafone.pt" site_id="5583" lang="pt" xmltv_id="ABolaTV.pt@SD">A Bola TV</channel>
@@ -21,7 +16,10 @@
   <channel site="vodafone.pt" site_id="8781" lang="pt" xmltv_id="BabyTV.uk@UK">BabyTV</channel>
   <channel site="vodafone.pt" site_id="2746" lang="pt" xmltv_id="BBCNews.uk@Europe">BBC World News</channel>
   <channel site="vodafone.pt" site_id="2852" lang="pt" xmltv_id="BenficaTV.pt@SD">BTV</channel>
-  <channel site="vodafone.pt" site_id="8636" lang="pt" xmltv_id="Biggs.pt@SD">Biggs</channel>
+  <channel site="vodafone.pt" site_id="8598" lang="pt" xmltv_id="BTVMulticam1.pt@SD">BenficaTV Multicam 1</channel>
+  <channel site="vodafone.pt" site_id="8599" lang="pt" xmltv_id="BTVMulticam2.pt@SD">BenficaTV Multicam 2</channel>
+  <channel site="vodafone.pt" site_id="8600" lang="pt" xmltv_id="BTVMulticam3.pt@SD">BenficaTV Multicam 3</channel>
+  <channel site="vodafone.pt" site_id="8601" lang="pt" xmltv_id="BTVMulticam4.pt@SD">BenficaTV Multicam 4</channel>
   <channel site="vodafone.pt" site_id="2760" lang="pt" xmltv_id="BloombergTV.us@Europe">Bloomberg</channel>
   <channel site="vodafone.pt" site_id="5585" lang="pt" xmltv_id="Canal11.pt@SD">Canal 11</channel>
   <channel site="vodafone.pt" site_id="2814" lang="pt" xmltv_id="Canal180.pt@SD">Canal 180</channel>
@@ -67,6 +65,7 @@
   <channel site="vodafone.pt" site_id="2710" lang="pt" xmltv_id="GaliciaTVEuropa.es@SD">Galicia</channel>
   <channel site="vodafone.pt" site_id="7075" lang="pt" xmltv_id="Gametoon.nl@SD">GameToon</channel>
   <channel site="vodafone.pt" site_id="8013" lang="pt" xmltv_id="GINXTV.uk@SD">GINX ESports TV</channel>
+  <channel site="vodafone.pt" site_id="8775" lang="pt" xmltv_id="HGTV.us@Portugal">HGTV</channel>
   <channel site="vodafone.pt" site_id="8783" lang="pt" xmltv_id="Historia.pt@SD">História</channel>
   <channel site="vodafone.pt" site_id="2933" lang="pt" xmltv_id="InsightTV.nl@SD">InSight TV</channel>
   <channel site="vodafone.pt" site_id="8776" lang="pt" xmltv_id="InvestigationDiscoveryEurope.us@SD">Investigation Discovery</channel>
@@ -145,5 +144,6 @@
   <channel site="vodafone.pt" site_id="8368" lang="pt" xmltv_id="UnifeTV.pt@SD">uniFÉ</channel>
   <channel site="vodafone.pt" site_id="2861" lang="pt" xmltv_id="VOX.de@SD">Vox</channel>
   <channel site="vodafone.pt" site_id="8399" lang="pt" xmltv_id="VPlusTVI.pt@SD">V+ TVI</channel>
+  <channel site="vodafone.pt" site_id="8636" lang="pt" xmltv_id="VinTV.pt@SD">VinTV</channel>
   <channel site="vodafone.pt" site_id="8901" lang="pt" xmltv_id="WSport.za@SD">W-Sport</channel>
 </channels>
