@@ -134,7 +134,7 @@ async function main() {
     globalConfig.json = options.json
   if (typeof options.debug === 'boolean') globalConfig.debug = options.debug
 
-  logger.debug(`config: ${JSON.stringify(globalConfig, null, 2)}`)
+  logger.debug(`config: ${JSON.stringify(globalConfig, getCircularReplacer(), 2)}`)
 
   const grabber =
     process.env.NODE_ENV === 'test'
@@ -143,7 +143,7 @@ async function main() {
 
   grabber.client.instance.interceptors.request.use(
     request => {
-      logger.debug(`request: ${JSON.stringify(request, null, 2)}`)
+      logger.debug(`request: ${JSON.stringify(request, getCircularReplacer(), 2)}`)
 
       const curl = globalConfig.curl || defaultConfig.curl
       if (curl) {
@@ -356,4 +356,17 @@ function getLogoForChannel(channel: Channel): string | null {
   }
 
   return null
+}
+
+function getCircularReplacer() {
+  const seen = new WeakSet()
+  return (key: string, value: any) => {
+    if (typeof value === 'object' && value !== null) {
+      if (seen.has(value)) {
+        return '[Circular]'
+      }
+      seen.add(value)
+    }
+    return value
+  }
 }
