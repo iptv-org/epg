@@ -1,3 +1,11 @@
+import {
+  loadJs,
+  parseProxy,
+  parseNumber,
+  parseList,
+  parseBooleanOrString,
+  parseBoolean
+} from '../../core'
 import { Logger, Timer, Collection, Template } from '@freearhey/core'
 import epgGrabber, { EPGGrabber, EPGGrabberMock } from 'epg-grabber'
 import { CurlBody } from 'curl-generator/dist/bodies/body'
@@ -12,17 +20,14 @@ import { Option, program } from 'commander'
 import { ROOT_DIR, SITES_DIR } from '../../constants'
 import { data, loadData } from '../../api'
 import dayjs, { Dayjs } from 'dayjs'
+import timezone from 'dayjs/plugin/timezone'
+import utc from 'dayjs/plugin/utc'
 import merge from 'lodash.merge'
 import fs from 'fs'
 import path from 'path'
-import {
-  parseBooleanOrString,
-  parseBoolean,
-  parseNumber,
-  parseProxy,
-  parseList,
-  loadJs
-} from '../../core'
+
+dayjs.extend(utc)
+dayjs.extend(timezone)
 
 program
   .addOption(
@@ -103,13 +108,17 @@ interface GrabOptions {
 const options: GrabOptions = program.opts()
 const DEFAULT_LANG = 'en'
 const DEFAULT_GAP_TITLE = 'Off Air'
-const MAX_GAP_DURATION_MS = 4 * 60 * 60 * 1000
+const DEFAULT_TIMEZONE = 'UTC'
+const GAP_DURATION_HOURS = 4
+const HOUR_MS = 60 * 60 * 1000
+const MAX_GAP_DURATION_MS = GAP_DURATION_HOURS * HOUR_MS
 const GAP_TITLES_PATH = path.resolve(ROOT_DIR, 'scripts/data/gap_titles.json')
 
 interface ChannelDayInfo {
   channelId: string
   site: string
   lang: string
+  timezone: string
   rangeStart: number
   rangeEnd: number
 }
@@ -261,17 +270,19 @@ async function main() {
     const currDate = dayjs.utc(process.env.CURR_DATE || new Date().toISOString())
     const dates = Array.from({ length: days }, (_, day) => currDate.add(day, 'd'))
     const lang = channel.lang || DEFAULT_LANG
+    const timezone = resolveChannelTimezone(channel)
 
     dates.forEach((date: Dayjs) => {
-      const rangeStart = date.startOf('day').valueOf()
+      const { rangeStart, rangeEnd } = getChannelDayRange(date, timezone)
       const dayKey = buildDayKey(channel.xmltv_id, site, lang, rangeStart)
 
       channelDayInfoByKey.set(dayKey, {
         channelId: channel.xmltv_id,
         site,
         lang,
+        timezone,
         rangeStart,
-        rangeEnd: date.startOf('day').add(1, 'd').valueOf()
+        rangeEnd
       })
       if (!channelDayStateByKey.has(dayKey)) {
         channelDayStateByKey.set(dayKey, {
@@ -437,16 +448,16 @@ function fillProgramGaps({
   channelDayStateByKey: Map<string, ChannelDayState>
   gapTitlesByLang: Record<string, string>
 }) {
-  const programsByDayKey = new Map<string, Program[]>()
+  const programsByChannelKey = new Map<string, Program[]>()
 
   for (const program of programs.all()) {
     if (typeof program.start !== 'number' || typeof program.stop !== 'number') continue
 
     const lang = resolveProgramLang(program)
-    const dayKey = buildDayKey(program.channel, program.site, lang, dayjs.utc(program.start).startOf('day').valueOf())
-    const groupPrograms = programsByDayKey.get(dayKey) || []
+    const channelKey = buildChannelKey(program.channel, program.site, lang)
+    const groupPrograms = programsByChannelKey.get(channelKey) || []
     groupPrograms.push(program)
-    programsByDayKey.set(dayKey, groupPrograms)
+    programsByChannelKey.set(channelKey, groupPrograms)
   }
 
   const gapPrograms: Program[] = []
@@ -455,8 +466,9 @@ function fillProgramGaps({
     const dayState = channelDayStateByKey.get(dayKey)
     if (!dayState || dayState.hasFailure || !dayState.hasSuccess) continue
 
-    const groupPrograms = (programsByDayKey.get(dayKey) || [])
-      .filter(program => isValidProgramRange(program))
+    const channelKey = buildChannelKey(dayInfo.channelId, dayInfo.site, dayInfo.lang)
+    const groupPrograms = (programsByChannelKey.get(channelKey) || [])
+      .filter(program => isProgramInRange(program, dayInfo.rangeStart, dayInfo.rangeEnd))
       .sort((a, b) => a.start - b.start || a.stop - b.stop)
 
     const gapTitle = getGapTitle(dayInfo.lang, gapTitlesByLang)
@@ -478,6 +490,7 @@ function fillProgramGaps({
           site: dayInfo.site,
           channelId: dayInfo.channelId,
           lang: dayInfo.lang,
+          timezone: dayInfo.timezone,
           title: gapTitle,
           start: cursor,
           stop: programStart
@@ -493,6 +506,7 @@ function fillProgramGaps({
         site: dayInfo.site,
         channelId: dayInfo.channelId,
         lang: dayInfo.lang,
+        timezone: dayInfo.timezone,
         title: gapTitle,
         start: cursor,
         stop: dayInfo.rangeEnd
@@ -508,6 +522,7 @@ function appendGapPrograms({
   site,
   channelId,
   lang,
+  timezone,
   title,
   start,
   stop
@@ -516,6 +531,7 @@ function appendGapPrograms({
   site: string
   channelId: string
   lang: string
+  timezone: string
   title: string
   start: number
   stop: number
@@ -523,9 +539,7 @@ function appendGapPrograms({
   let cursor = start
 
   while (cursor < stop) {
-    const dayStart = dayjs.utc(cursor).startOf('day').valueOf()
-    const nextBoundary =
-      dayStart + Math.ceil((cursor - dayStart) / MAX_GAP_DURATION_MS) * MAX_GAP_DURATION_MS
+    const nextBoundary = getNextGapBoundary(cursor, timezone)
     const alignedStop = nextBoundary > cursor ? nextBoundary : cursor + MAX_GAP_DURATION_MS
     const chunkStop = Math.min(alignedStop, stop)
     gapPrograms.push(
@@ -551,13 +565,91 @@ function isValidProgramRange(program: Program): boolean {
   )
 }
 
+function isProgramInRange(program: Program, rangeStart: number, rangeEnd: number): boolean {
+  return isValidProgramRange(program) && program.stop > rangeStart && program.start < rangeEnd
+}
+
+function buildChannelKey(channelId: string, site: string, lang: string): string {
+  return `${channelId}:${site}:${lang}`
+}
+
 function buildDayKey(channelId: string, site: string, lang: string, rangeStart: number): string {
   return `${channelId}:${site}:${lang}:${rangeStart}`
+}
+
+function getChannelDayRange(
+  date: Dayjs,
+  timezone: string
+): {
+  rangeStart: number
+  rangeEnd: number
+} {
+  return {
+    rangeStart: dayjs.tz(date.format('YYYY-MM-DD'), timezone).valueOf(),
+    rangeEnd: dayjs.tz(date.add(1, 'd').format('YYYY-MM-DD'), timezone).valueOf()
+  }
+}
+
+function getNextGapBoundary(cursor: number, timezone: string): number {
+  const localCursor = dayjs(cursor).tz(timezone)
+  const localHours =
+    localCursor.hour() +
+    localCursor.minute() / 60 +
+    localCursor.second() / (60 * 60) +
+    localCursor.millisecond() / HOUR_MS
+  let boundaryHour = Math.ceil(localHours / GAP_DURATION_HOURS) * GAP_DURATION_HOURS
+
+  if (boundaryHour === localHours) boundaryHour += GAP_DURATION_HOURS
+
+  const boundaryDate =
+    boundaryHour >= 24
+      ? localCursor.add(1, 'd').format('YYYY-MM-DD')
+      : localCursor.format('YYYY-MM-DD')
+  const boundaryHourOfDay = String(boundaryHour % 24).padStart(2, '0')
+
+  return dayjs.tz(`${boundaryDate}T${boundaryHourOfDay}:00:00`, timezone).valueOf()
 }
 
 function resolveProgramLang(program: Program): string {
   const firstTitle = Array.isArray(program.titles) ? program.titles[0] : null
   return firstTitle && firstTitle.lang ? firstTitle.lang : DEFAULT_LANG
+}
+
+function resolveChannelTimezone(channel: Channel): string {
+  const [channelId] = channel.xmltv_id.split('@')
+  const feedTimezone = getFirstTimezoneId(data.feedsKeyByStreamId.get(channel.xmltv_id)?.getTimezones())
+  if (feedTimezone) return feedTimezone
+
+  const mainFeedTimezone = getFirstTimezoneId(getMainFeed(channelId)?.getTimezones())
+  if (mainFeedTimezone) return mainFeedTimezone
+
+  const channelData = data.channelsKeyById.get(channelId)
+  const channelTimezone = getFirstTimezoneId(channelData?.getTimezones())
+  if (channelTimezone) return channelTimezone
+
+  const countryCode = channelData?.country || getCountryCodeFromChannelId(channelId)
+  const countryTimezones = countryCode
+    ? data.timezonesGroupedByCountryCode.get(countryCode.toUpperCase())
+    : null
+
+  return countryTimezones && countryTimezones.length ? countryTimezones[0].id : DEFAULT_TIMEZONE
+}
+
+function getMainFeed(channelId: string) {
+  const feeds = data.feedsGroupedByChannelId.get(channelId) || []
+
+  return feeds.find(feed => feed.is_main)
+}
+
+function getFirstTimezoneId(timezones?: Collection<{ id: string }>): string | null {
+  const timezone = timezones ? timezones.first() : null
+  return timezone ? timezone.id : null
+}
+
+function getCountryCodeFromChannelId(channelId: string): string | null {
+  const countryCode = channelId.split('.').pop()
+
+  return countryCode && /^[a-z]{2}$/i.test(countryCode) ? countryCode.toUpperCase() : null
 }
 
 function loadGapTitles(): Record<string, string> {
@@ -590,8 +682,8 @@ function getLogoForChannel(channel: Channel): string | null {
 }
 
 function getCircularReplacer() {
-  const seen = new WeakSet()
-  return (key: string, value: any) => {
+  const seen = new WeakSet<object>()
+  return (key: string, value: unknown) => {
     if (typeof value === 'object' && value !== null) {
       if (seen.has(value)) {
         return '[Circular]'

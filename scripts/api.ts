@@ -6,7 +6,8 @@ import * as sdk from '@iptv-org/sdk'
 const data = {
   channelsKeyById: new Dictionary<sdk.Models.Channel>(),
   feedsKeyByStreamId: new Dictionary<sdk.Models.Feed>(),
-  feedsGroupedByChannelId: new Dictionary<sdk.Models.Feed[]>()
+  feedsGroupedByChannelId: new Dictionary<sdk.Models.Feed[]>(),
+  timezonesGroupedByCountryCode: new Map<string, sdk.Models.Timezone[]>()
 }
 
 interface SearchIndex {
@@ -20,16 +21,33 @@ async function loadData() {
   await dataManager.loadFromDisk()
   dataManager.processData()
 
-  const { channels, feeds } = dataManager.getProcessedData()
+  const { channels, feeds, timezones } = dataManager.getProcessedData()
 
   data.channelsKeyById = channels.keyBy((channel: sdk.Models.Channel) => channel.id)
   data.feedsKeyByStreamId = feeds.keyBy((feed: sdk.Models.Feed) => feed.getStreamId())
   data.feedsGroupedByChannelId = feeds.groupBy((feed: sdk.Models.Feed) => feed.channel)
+  data.timezonesGroupedByCountryCode = groupTimezonesByCountryCode(timezones)
 
   const searchableData = channels.map((channel: sdk.Models.Channel) =>
     sanitizeSearchableData(channel.getSearchable())
   )
   searchIndex = sdk.SearchEngine.createIndex<sdk.Types.ChannelSearchableData>(searchableData)
+}
+
+function groupTimezonesByCountryCode(
+  timezones: Collection<sdk.Models.Timezone>
+): Map<string, sdk.Models.Timezone[]> {
+  const timezonesGroupedByCountryCode = new Map<string, sdk.Models.Timezone[]>()
+
+  timezones.forEach((timezone: sdk.Models.Timezone) => {
+    timezone.countries.forEach((countryCode: string) => {
+      const countryTimezones = timezonesGroupedByCountryCode.get(countryCode) || []
+      countryTimezones.push(timezone)
+      timezonesGroupedByCountryCode.set(countryCode, countryTimezones)
+    })
+  })
+
+  return timezonesGroupedByCountryCode
 }
 
 async function downloadData() {

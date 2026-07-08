@@ -49,6 +49,24 @@ module.exports = {
             stop: `${date.format('YYYY-MM-DD')}T13:00:00.000Z`
           }
         ]
+      case 'GapBoundary.de':
+        return [
+          {
+            title: 'Early Program (gapfill.com)',
+            start: `${date.format('YYYY-MM-DD')}T00:45:00.000Z`,
+            stop: `${date.format('YYYY-MM-DD')}T01:30:00.000Z`
+          },
+          {
+            title: 'Middle Program (gapfill.com)',
+            start: `${date.format('YYYY-MM-DD')}T08:00:00.000Z`,
+            stop: `${date.format('YYYY-MM-DD')}T11:00:00.000Z`
+          },
+          {
+            title: 'Next Program (gapfill.com)',
+            start: `${date.format('YYYY-MM-DD')}T12:00:00.000Z`,
+            stop: `${date.format('YYYY-MM-DD')}T13:00:00.000Z`
+          }
+        ]
       default:
         return []
     }
