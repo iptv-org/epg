@@ -34,6 +34,26 @@ describe('epg:grab', () => {
     expect(stdout).toContain('curl https://example.com')
   })
 
+  it('can disable curl and debug with environment variables', () => {
+    const cmd = `${ENV_VAR} CURL=false DEBUG=false npm run grab --- --sites=example.com --output="${path.resolve(
+      'tests/__data__/output/guides/disabled-options.guide.xml'
+    )}"`
+    const stdout = execSync(cmd, { encoding: 'utf8' })
+
+    expect(stdout).not.toContain('curl https://example.com')
+    expect(stdout).not.toContain('config:')
+  })
+
+  it('can enable curl and debug with environment variables', () => {
+    const cmd = `${ENV_VAR} CURL=true DEBUG=true npm run grab --- --sites=example.com --output="${path.resolve(
+      'tests/__data__/output/guides/enabled-options.guide.xml'
+    )}"`
+    const stdout = execSync(cmd, { encoding: 'utf8' })
+
+    expect(stdout).toContain('curl https://example.com')
+    expect(stdout).toContain('config:')
+  })
+
   it('can grab epg with wildcard as output', () => {
     const cmd = `${ENV_VAR} npm run grab --- --channels="tests/__data__/input/epg_grab/sites/example.com/example.com.channels.xml" --output="tests/__data__/output/guides/wildcard/{site}/{lang}/guide.xml"`
     const stdout = execSync(cmd, { encoding: 'utf8' })
