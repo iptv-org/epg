@@ -18,28 +18,43 @@ export default function JobDetailClient({ id }: { id: string }) {
   const logRef = useRef<HTMLPreElement>(null)
 
   useEffect(() => {
+    let cancelled = false
     let eventSource: EventSource | null = null
 
     async function load() {
       const response = await fetch(`/api/admin/jobs/${id}`)
+      if (cancelled) return
       if (!response.ok) {
         setError('Error: job not found')
         return
       }
       const data = await response.json()
+      if (cancelled) return
       setJob(data.job)
       setLog(data.log)
 
       if (data.job.status === 'running') {
-        eventSource = new EventSource(`/api/admin/jobs/${id}/stream`)
-        eventSource.onmessage = event => {
+        const source = new EventSource(`/api/admin/jobs/${id}/stream`)
+        if (cancelled) {
+          // Cleanup already ran before this async fetch resolved; don't
+          // leave a dangling connection open on a torn-down effect.
+          source.close()
+          return
+        }
+        eventSource = source
+        source.onmessage = event => {
           const payload = JSON.parse(event.data)
+          if (typeof payload.log === 'string') {
+            // Full resync of the log as of connection time (covers the gap
+            // between the initial fetch and the SSE connection opening).
+            setLog(payload.log)
+          }
           if (payload.line) {
             setLog(prev => prev + payload.line)
           }
           if (payload.done) {
             setJob(prev => (prev ? { ...prev, status: payload.status } : prev))
-            eventSource?.close()
+            source.close()
           }
         }
       }
@@ -48,6 +63,7 @@ export default function JobDetailClient({ id }: { id: string }) {
     load()
 
     return () => {
+      cancelled = true
       eventSource?.close()
     }
   }, [id])
