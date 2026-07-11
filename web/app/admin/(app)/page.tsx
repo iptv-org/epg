@@ -1,9 +1,6 @@
 import Link from 'next/link'
-import { requireSession } from '@/lib/session'
 
-export default async function AdminDashboard() {
-  await requireSession()
-
+export default function AdminDashboard() {
   return (
     <main>
       <h1>EPG Admin</h1>
