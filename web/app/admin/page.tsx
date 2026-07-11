@@ -11,12 +11,10 @@ export default async function AdminDashboard() {
         <li>
           <Link href="/admin/channels">Manage channels</Link>
         </li>
+        <li>
+          <Link href="/admin/jobs">Fetch jobs &amp; logs</Link>
+        </li>
       </ul>
-      <p>
-        On-demand fetch, job status, and logs are added in a follow-up
-        change — channel changes here take effect the next time the existing
-        scheduled fetch runs.
-      </p>
     </main>
   )
 }
