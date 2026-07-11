@@ -30,3 +30,40 @@ button {
 .error {
   color: #c0392b;
 }
+
+.admin-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 2rem;
+  border-bottom: 1px solid #8884;
+}
+
+.admin-nav-title {
+  font-weight: 600;
+}
+
+.admin-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.admin-nav-link {
+  color: inherit;
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.admin-nav-link.active {
+  opacity: 1;
+  font-weight: 600;
+}
+
+.admin-nav-link:hover {
+  opacity: 1;
+}
+
+.admin-nav-logout-form {
+  margin: 0;
+}
