@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { execFileSync } from 'child_process'
 import path from 'path'
 import { startJobAndWait } from '@/lib/jobRunner'
-import { isRegionLocked } from '@/lib/jobLock'
+import { isRegionLocked, isFetchAllRunning, lockFetchAll, unlockFetchAll } from '@/lib/jobLock'
 import { isAuthorized } from '@/lib/session'
 
 const REGIONS = ['th', 'no', 'uk', 'sg', 'us']
@@ -31,11 +31,33 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: 'unauthorized' }, { status: 401 })
   }
 
-  execFileSync('node', ['scripts/build-channels.js'], { cwd: REPO_ROOT })
+  // Fail fast if a "fetch all" run is already in flight. Without this, a
+  // second concurrent POST would start its own runAllSequentially() loop,
+  // which (since per-region locks are only checked/set synchronously inside
+  // each iteration, with an `await` yielding control between regions) can
+  // interleave with the first loop and run two *different* regions in
+  // parallel — defeating the sequential guarantee this endpoint exists to
+  // provide. This check-and-set is synchronous, so there is no window for a
+  // second request to race between the check and the lock.
+  if (isFetchAllRunning()) {
+    return NextResponse.json({ error: 'fetch all is already running' }, { status: 409 })
+  }
+  lockFetchAll()
 
-  runAllSequentially().catch(err => {
-    console.error('fetch all: sequential run failed', err)
-  })
+  try {
+    execFileSync('node', ['scripts/build-channels.js'], { cwd: REPO_ROOT })
+  } catch (err) {
+    unlockFetchAll()
+    throw err
+  }
+
+  runAllSequentially()
+    .catch(err => {
+      console.error('fetch all: sequential run failed', err)
+    })
+    .finally(() => {
+      unlockFetchAll()
+    })
 
   return NextResponse.json({ ok: true, message: 'fetch all started' }, { status: 202 })
 }

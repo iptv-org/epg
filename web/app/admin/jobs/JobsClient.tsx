@@ -17,6 +17,7 @@ const REGIONS = ['th', 'no', 'uk', 'sg', 'us']
 export default function JobsClient() {
   const [jobs, setJobs] = useState<JobMeta[]>([])
   const [message, setMessage] = useState<string | null>(null)
+  const [fetchAllPending, setFetchAllPending] = useState(false)
 
   async function loadJobs() {
     const response = await fetch('/api/admin/jobs')
@@ -51,7 +52,13 @@ export default function JobsClient() {
   }
 
   async function startFetchAll() {
+    // Belt-and-suspenders only: this stops a normal double-click from firing
+    // two requests, but it cannot prevent duplicate requests from two tabs
+    // or windows. The server-side guard (jobLock's fetchAllRunning flag) is
+    // what actually guarantees only one "fetch all" run proceeds at a time.
+    if (fetchAllPending) return
     setMessage(null)
+    setFetchAllPending(true)
     try {
       const response = await fetch('/api/admin/fetch/all', { method: 'POST' })
       const data = await response.json()
@@ -63,6 +70,8 @@ export default function JobsClient() {
       await loadJobs()
     } catch (err) {
       setMessage('Error: failed to start fetch all')
+    } finally {
+      setFetchAllPending(false)
     }
   }
 
@@ -78,7 +87,9 @@ export default function JobsClient() {
             Fetch {region}
           </button>
         ))}
-        <button onClick={startFetchAll}>Fetch all</button>
+        <button onClick={startFetchAll} disabled={fetchAllPending}>
+          {fetchAllPending ? 'Starting fetch all…' : 'Fetch all'}
+        </button>
       </section>
 
       <section>
