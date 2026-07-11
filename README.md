@@ -229,9 +229,10 @@ channel list without editing files by hand. It runs as an additional process
 inside the same container, reverse-proxied by Caddy alongside the existing
 static file server — none of the URLs above change.
 
-Currently supported: adding and removing channels (via catalog search or
-manual entry). On-demand fetch triggering and job status/logs are planned as
-a follow-up and aren't available yet.
+Supported: adding and removing channels (via catalog search or manual
+entry), triggering an on-demand fetch per region or for all regions at
+once, and viewing job history with a live-updating log for in-progress
+fetches.
 
 ### Required setup
 
