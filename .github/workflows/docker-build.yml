@@ -2,23 +2,77 @@ name: Build and publish Docker image
 
 on:
   workflow_dispatch:
+    inputs:
+      api_ref:
+        description: Optional iptv-org/api commit, tag or branch (blank uses current gh-pages)
+        required: false
+        type: string
   push:
     branches:
       - master
 
 env:
-    IMAGE: ghcr.io/${{ github.repository_owner }}/epg
+  IMAGE: ghcr.io/${{ github.repository_owner }}/epg
 
 permissions:
-  contents: write
-  packages: write
+  contents: read
 
 concurrency:
   group: docker-build
   cancel-in-progress: true
 
 jobs:
+  api:
+    runs-on: ubuntu-24.04
+    outputs:
+      revision: ${{ steps.snapshot.outputs.revision }}
+      snapshot_digest: ${{ steps.snapshot.outputs.snapshot_digest }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Download immutable API snapshot
+        id: snapshot
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REQUESTED_REF: ${{ inputs.api_ref }}
+        run: |
+          set -euo pipefail
+
+          data_dir="${RUNNER_TEMP}/api-data"
+          requested_ref="${REQUESTED_REF:-gh-pages}"
+          snapshot="$(
+            node docker/api-snapshot.mjs create \
+              --ref "$requested_ref" \
+              --output "$data_dir"
+          )"
+          revision="$(jq -er '.revision' <<< "$snapshot")"
+          snapshot_digest="$(jq -er '.snapshotDigest' <<< "$snapshot")"
+
+          echo "revision=$revision" >> "$GITHUB_OUTPUT"
+          echo "snapshot_digest=$snapshot_digest" >> "$GITHUB_OUTPUT"
+
+          {
+            echo "### API snapshot"
+            echo
+            echo "- Revision: \`$revision\`"
+            echo "- Content digest: \`sha256:$snapshot_digest\`"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload API snapshot
+        uses: actions/upload-artifact@v7
+        with:
+          name: api-data-${{ steps.snapshot.outputs.revision }}
+          path: ${{ runner.temp }}/api-data/
+          if-no-files-found: error
+          retention-days: 1
+
   build:
+    needs: api
+    permissions:
+      contents: read
+      packages: write
     strategy:
       fail-fast: false
       matrix:
@@ -26,11 +80,11 @@ jobs:
           - platform: linux/amd64
             runner: ubuntu-24.04
             tag_suffix: linux-amd64
-            # node_image:        # use default from Dockerfile
+            node_image: '' # use default from Dockerfile
           - platform: linux/arm64
             runner: ubuntu-24.04-arm
             tag_suffix: linux-arm64
-            # node_image:        # use default from Dockerfile
+            node_image: '' # use default from Dockerfile
         #   - platform: linux/arm/v7
         #     runner: ubuntu-24.04-arm
         #     tag_suffix: linux-armv7
@@ -41,6 +95,23 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v5
+
+      - name: Download API snapshot
+        uses: actions/download-artifact@v8
+        with:
+          name: api-data-${{ needs.api.outputs.revision }}
+          path: ${{ runner.temp }}/api-data
+
+      - name: Verify API snapshot
+        shell: bash
+        env:
+          EXPECTED_REVISION: ${{ needs.api.outputs.revision }}
+          EXPECTED_SNAPSHOT_DIGEST: ${{ needs.api.outputs.snapshot_digest }}
+        run: |
+          node docker/api-snapshot.mjs verify \
+            --directory "${RUNNER_TEMP}/api-data" \
+            --expected-revision "$EXPECTED_REVISION" \
+            --expected-digest "$EXPECTED_SNAPSHOT_DIGEST"
 
       - name: Docker meta
         id: meta
@@ -79,11 +150,18 @@ jobs:
           platforms: ${{ matrix.platform }}
           push: true
           tags: ${{ env.IMAGE }}
-          labels: ${{ steps.meta.outputs.labels }}
+          labels: |
+            ${{ steps.meta.outputs.labels }}
+            org.iptv-org.api.revision=${{ needs.api.outputs.revision }}
+            org.iptv-org.api.snapshot-digest=sha256:${{ needs.api.outputs.snapshot_digest }}
           outputs: type=image,push-by-digest=true,name-canonical=true,push=true
-          build-args: ${{ steps.node-image.outputs.arg }}
+          build-contexts: |
+            api-data=${{ runner.temp }}/api-data
+          build-args: |
+            API_DATA_SOURCE=snapshot
+            ${{ steps.node-image.outputs.arg }}
           cache-from: type=gha,scope=epg-${{ matrix.tag_suffix }}
-          cache-to:   type=gha,mode=max,scope=epg-${{ matrix.tag_suffix }}
+          cache-to: type=gha,mode=max,scope=epg-${{ matrix.tag_suffix }}
 
       - name: Export digest
         run: |
@@ -100,8 +178,13 @@ jobs:
           retention-days: 1
 
   manifest:
-    needs: build
+    needs: [api, build]
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+      attestations: write
+      id-token: write
     steps:
       - name: Download digests
         uses: actions/download-artifact@v8
@@ -137,9 +220,81 @@ jobs:
 
       - name: Create manifest list and push
         working-directory: ${{ runner.temp }}/digests
+        shell: bash
+        env:
+          API_REVISION: ${{ needs.api.outputs.revision }}
+          API_SNAPSHOT_DIGEST: ${{ needs.api.outputs.snapshot_digest }}
+          IMAGE: ${{ env.IMAGE }}
         run: |
-          docker buildx imagetools create $(jq -cr '.tags | map("-t " + .) | join(" ")' <<< "$DOCKER_METADATA_OUTPUT_JSON") \
-            $(printf '${{ env.IMAGE }}@sha256:%s ' *)
+          set -euo pipefail
+
+          mapfile -t tags < <(jq -r '.tags[]' <<< "$DOCKER_METADATA_OUTPUT_JSON")
+          tag_args=()
+          for tag in "${tags[@]}"; do
+            tag_args+=(--tag "$tag")
+          done
+
+          shopt -s nullglob
+          digest_files=(*)
+          if (( ${#digest_files[@]} == 0 )); then
+            echo "No platform digests found" >&2
+            exit 1
+          fi
+
+          sources=()
+          for digest in "${digest_files[@]}"; do
+            if [[ ! "$digest" =~ ^[0-9a-f]{64}$ ]]; then
+              echo "Invalid platform digest: $digest" >&2
+              exit 1
+            fi
+            sources+=("${IMAGE}@sha256:${digest}")
+          done
+
+          docker buildx imagetools create \
+            --annotation "index:org.iptv-org.api.revision=${API_REVISION}" \
+            --annotation "index:org.iptv-org.api.snapshot-digest=sha256:${API_SNAPSHOT_DIGEST}" \
+            "${tag_args[@]}" \
+            "${sources[@]}"
+
+      - name: Resolve manifest digest
+        id: manifest
+        shell: bash
+        env:
+          IMAGE_REF: ${{ env.IMAGE }}:${{ steps.vars.outputs.short_sha }}
+        run: |
+          set -euo pipefail
+
+          digest="$(
+            docker buildx imagetools inspect "$IMAGE_REF" \
+              --format '{{json .Manifest}}' |
+              jq -er '.digest'
+          )"
+
+          if [[ ! "$digest" =~ ^sha256:[0-9a-f]{64}$ ]]; then
+            echo "Invalid manifest digest: $digest" >&2
+            exit 1
+          fi
+
+          echo "digest=$digest" >> "$GITHUB_OUTPUT"
+
+      - name: Attest multi-platform image
+        uses: actions/attest-build-provenance@0f67c3f4856b2e3261c31976d6725780e5e4c373 # v4.1.1
+        with:
+          subject-name: ${{ env.IMAGE }}
+          subject-digest: ${{ steps.manifest.outputs.digest }}
+          push-to-registry: true
+          create-storage-record: false
+
+      - name: Verify multi-platform attestation
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DIGEST: ${{ steps.manifest.outputs.digest }}
+          IMAGE: ${{ env.IMAGE }}
+        run: |
+          gh attestation verify \
+            "oci://${IMAGE}@${DIGEST}" \
+            --repo "$GITHUB_REPOSITORY" \
+            --bundle-from-oci
 
       - name: Inspect image
         run: |

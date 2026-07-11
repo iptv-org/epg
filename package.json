@@ -16,7 +16,7 @@
     "guides:export": "tsx scripts/commands/guides/export.ts",
     "workers:load": "tsx scripts/commands/workers/load.ts",
     "grab": "tsx scripts/commands/epg/grab.ts",
-    "lint": "npx eslint \"{scripts,tests,sites}/**/*.{ts,mts,js}\"",
+    "lint": "npx eslint \"{docker,scripts,tests,sites}/**/*.{ts,mts,js,mjs}\"",
     "test": "cross-env TZ=Pacific/Nauru npx jest --runInBand",
     "postinstall": "npm run api:load",
     "prepare": "husky"

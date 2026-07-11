@@ -1,9 +1,22 @@
 # syntax=docker/dockerfile:1.7
 
 ARG NODE_IMAGE=node:24-trixie-slim
+ARG API_DATA_SOURCE=default
+
+# ---------- Current API data fallback for local builds ----------
+FROM ${NODE_IMAGE} AS api-data-default
+
+COPY docker/api-snapshot.mjs /docker/api-snapshot.mjs
+
+# Keep the local fallback cache in sync with the current API branch head.
+ADD https://api.github.com/repos/iptv-org/api/commits/gh-pages /docker/api-head.json
+
+RUN node /docker/api-snapshot.mjs create \
+      --ref gh-pages \
+      --output /data
 
 # ---------- Dependencies and application ----------
-FROM ${NODE_IMAGE} AS builder
+FROM ${NODE_IMAGE} AS builder-base
 
 WORKDIR /epg
 
@@ -30,28 +43,20 @@ COPY sites ./sites
 COPY tsconfig.json ./tsconfig.json
 
 COPY pm2.config.js ./pm2.config.js
+COPY docker/api-snapshot.mjs /docker/api-snapshot.mjs
 
-RUN mkdir -p \
-      /epg/public \
-      /epg/temp/data \
- && npm run api:load \
- && for file in \
-      blocklist \
-      categories \
-      channels \
-      cities \
-      countries \
-      feeds \
-      guides \
-      languages \
-      logos \
-      regions \
-      streams \
-      subdivisions \
-      timezones; \
-    do \
-      test -s "/epg/temp/data/${file}.json"; \
-    done \
+FROM builder-base AS builder-default
+
+COPY --from=api-data-default /data /epg/data
+
+FROM builder-base AS builder-snapshot
+
+COPY --from=api-data / /epg/data
+
+FROM builder-${API_DATA_SOURCE} AS builder
+
+RUN node /docker/api-snapshot.mjs verify --directory /epg/data \
+ && mkdir -p /epg/public \
  && test -f /epg/node_modules/pm2/bin/pm2-runtime \
  && test -f /epg/node_modules/serve/build/main.js \
  && test -f /epg/node_modules/@freearhey/chronos/index.js \
@@ -61,6 +66,7 @@ RUN mkdir -p \
 FROM ${NODE_IMAGE} AS runner
 
 ENV NODE_ENV=production \
+    DATA_DIR=/epg/data \
     HOME=/home/node \
     PM2_HOME=/home/node/.pm2 \
     CRON_SCHEDULE="0 0 * * *" \
