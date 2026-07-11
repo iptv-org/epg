@@ -6,7 +6,7 @@ import Link from 'next/link'
 interface JobMeta {
   id: string
   region: string
-  status: 'running' | 'success' | 'failed'
+  status: 'running' | 'success' | 'failed' | 'interrupted'
   startedAt: string
   finishedAt: string | null
   exitCode: number | null
