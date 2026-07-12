@@ -96,11 +96,20 @@ RUN apt-get update \
       /home/node/.pm2/logs \
       /home/node/.pm2/pids \
       /home/node/.pm2/modules \
- && chown -R node:node /home/node/.pm2
+      /epg/public \
+ && chown -R node:node /home/node/.pm2 /epg/public
 
 WORKDIR /epg
 
-COPY --from=builder --chown=node:node /epg /epg
+COPY --from=builder --chown=node:node /epg/node_modules ./node_modules
+COPY --from=builder --chown=node:node /epg/scripts ./scripts
+COPY --from=builder --chown=node:node /epg/sites ./sites
+COPY --from=builder --chown=node:node /epg/data ./data
+COPY --from=builder --chown=node:node \
+  /epg/package.json \
+  /epg/pm2.config.js \
+  /epg/tsconfig.json \
+  ./
 
 USER node
 

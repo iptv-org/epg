@@ -13,6 +13,11 @@ guides
 tests
 .api
 
+sites/**/__data__/**
+sites/**/*.test.js
+sites/**/*.test.ts
+sites/**/*.md
+
 npm-debug.log*
 yarn.lock
 pnpm-lock.yaml
