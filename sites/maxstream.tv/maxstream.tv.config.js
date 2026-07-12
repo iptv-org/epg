@@ -1,15 +1,18 @@
+const crypto = require('crypto')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const doFetch = require('@ntlab/sfetch')
 
 dayjs.extend(utc)
 
+const UDID = crypto.randomUUID()
+const UUID = crypto.randomUUID()
 const headers = {
   'user-agent':
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 OPR/132.0.0.0',
   'channelid': 'VMPWEB',
   'webplatform': '878a6db06e0cd079b3b02408d246801d217c018f',
-  'x-data-centre': 'OTI5YTUyOWMtNjNmYi00MGMyLTkzNDktOGY1ODNjMTJjM2ZlfGRmZDIzY2EzLWE0NzUtNGJmNy1hZDkwLTE3Njk0NDhkMzRlYQ==',
+  'x-data-centre': btoa([UDID, UUID].join('|')),
   'x-localization': 'EN',
   'x-maxstream-version': '3.2.6'
 }
