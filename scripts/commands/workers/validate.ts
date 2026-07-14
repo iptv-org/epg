@@ -34,12 +34,12 @@ async function main() {
     if (lineNum === lines.length && line.trim() === '') return
 
     if (!line.endsWith('\r')) {
-      errors.push({ line: lineNum, type: 'missing_crlf', content: line.replace('\r', '') })
+      errors.push({ line: lineNum, type: 'missing_crlf', content: line.replace(/\r/g, '') })
       totalErrors++
     }
 
     if (line.includes(' ')) {
-      errors.push({ line: lineNum, type: 'contains_spaces', content: line.replace('\r', '') })
+      errors.push({ line: lineNum, type: 'contains_spaces', content: line.replace(/\r/g, '') })
       totalErrors++
     }
   })
