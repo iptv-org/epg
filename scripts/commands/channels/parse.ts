@@ -96,8 +96,8 @@ async function main() {
     )
 
     if (found) {
-      channel.xmltv_id = found.xmltv_id
-      channel.lang = found.lang
+      channel.xmltv_id = found.xmltv_id || channel.xmltv_id
+      channel.lang = found.lang || channel.lang
     }
 
     newChannelList.add(channel)
