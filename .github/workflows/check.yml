@@ -37,6 +37,13 @@ jobs:
           echo "channels_all_changed_files=$CHANNELS_ALL_CHANGED_FILES" >> "$GITHUB_OUTPUT"
           echo "channels_any_changed=$CHANNELS_ANY_CHANGED" >> "$GITHUB_OUTPUT"
           echo "any_changed=$ANY_CHANGED" >> "$GITHUB_OUTPUT"
+          WORKERS_ANY_CHANGED=false
+          WORKERS_CHANGED_FILES=$(git diff --diff-filter=ACMRT --name-only master -- workers.txt | tr '\n' ' ')
+          if [ -n "${WORKERS_CHANGED_FILES}" ]; then
+            WORKERS_ANY_CHANGED=true
+            ANY_CHANGED=true
+          fi
+          echo "workers_any_changed=$WORKERS_ANY_CHANGED" >> "$GITHUB_OUTPUT"
       - uses: actions/setup-node@v4
         if: steps.files.outputs.any_changed == 'true'
         with:
@@ -54,3 +61,27 @@ jobs:
           npm run postinstall
           npm run channels:lint -- ${{ steps.files.outputs.channels_all_changed_files }}
           npm run channels:validate -- ${{ steps.files.outputs.channels_all_changed_files }}
+      - name: Check changed workers.txt file
+        if: steps.files.outputs.workers_any_changed == 'true'
+        run: |
+          node -e "
+            const fs = require('fs');
+            const lines = fs.readFileSync('workers.txt', 'utf8').split('\n');
+            let errors = 0;
+
+            lines.forEach((line, index) => {
+              if (index === lines.length - 1 && !line.trim()) return;
+              const lineNum = index + 1;
+
+              if (!line.endsWith('\r')) {
+                console.error(' workers.txt\n ' + lineNum + ':1  line must use CRLF (Windows) line endings');
+                errors++;
+              }
+              if (line.includes(' ')) {
+                console.error(' workers.txt\n ' + lineNum + ':1  line cannot contain spaces');
+                errors++;
+              }
+            });
+
+            if (errors > 0) process.exit(1);
+          "
