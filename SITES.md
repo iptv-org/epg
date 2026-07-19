@@ -171,7 +171,7 @@
     <tr><td><a href="sites/syn.is">syn.is</a></td><td align="right">9</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/taiwanplus.com">taiwanplus.com</a></td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tapdmv.com">tapdmv.com</a></td><td align="right">39</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/tataplay.com">tataplay.com</a></td><td align="right">905</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/tataplay.com">tataplay.com</a></td><td align="right">905</td><td align="center">🟢</td><td>https://github.com/iptv-org/epg/issues/3210</td></tr>
     <tr><td><a href="sites/telebilbao.es">telebilbao.es</a></td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/teleboy.ch">teleboy.ch</a></td><td align="right">325</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/telenet.tv">telenet.tv</a></td><td align="right">260</td><td align="center">🟢</td><td></td></tr>
