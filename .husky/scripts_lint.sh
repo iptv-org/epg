@@ -1,6 +1,6 @@
 #!/bin/sh
 
-scripts_changed="$(git diff --staged --name-only --diff-filter=ACMR -- 'tests/**/*.ts' 'tests/**/*.js' 'scripts/**/*.ts' 'scripts/**/*.mts' 'scripts/**/*.js' 'sites/**/*.js' 'sites/**/*.ts' | sed 's| |\\ |g')"
+scripts_changed="$(git diff --staged --name-only --diff-filter=ACMR -- 'docker/*.mjs' 'docker/**/*.mjs' 'tests/**/*.ts' 'tests/**/*.js' 'scripts/**/*.ts' 'scripts/**/*.mts' 'scripts/**/*.js' 'sites/**/*.js' 'sites/**/*.ts' | sed 's| |\\ |g')"
         
 if [ ! -z "$scripts_changed" ]; then
     npx eslint $scripts_changed

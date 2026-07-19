@@ -72,9 +72,15 @@ program
       .env('JSON')
   )
   .addOption(
-    new Option('--curl', 'Display each request as CURL').argParser(parseBoolean).env('CURL')
+    new Option('--curl [boolean]', 'Display each request as CURL')
+      .argParser(parseBoolean)
+      .env('CURL')
   )
-  .addOption(new Option('--debug', 'Enable debug mode').argParser(parseBoolean).env('DEBUG'))
+  .addOption(
+    new Option('--debug [boolean]', 'Enable debug mode')
+      .argParser(parseBoolean)
+      .env('DEBUG')
+  )
   .parse()
 
 interface GrabOptions {
@@ -360,7 +366,7 @@ function getLogoForChannel(channel: Channel): string | null {
 
 function getCircularReplacer() {
   const seen = new WeakSet()
-  return (key: string, value: any) => {
+  return (key: string, value: unknown) => {
     if (typeof value === 'object' && value !== null) {
       if (seen.has(value)) {
         return '[Circular]'

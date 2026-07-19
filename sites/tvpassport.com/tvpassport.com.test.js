@@ -1,4 +1,4 @@
-const { parser, url } = require('./tvpassport.com.config.js')
+const { channels, parser, url } = require('./tvpassport.com.config.js')
 const axios = require('axios')
 const fs = require('fs')
 const path = require('path')
@@ -25,6 +25,12 @@ it('can generate valid url', async () => {
   expect(await url({ channel, date })).toBe(
     'https://www.tvpassport.com/tv-listings/stations/youtoo-america-network/5463/2022-10-04'
   )
+})
+
+it('can generate an empty channel list', async () => {
+  axios.get.mockResolvedValue({ data: '<urlset></urlset>' })
+
+  expect(await channels()).toEqual([])
 })
 
 it('can parse response', () => {
