@@ -1,0 +1,154 @@
+{
+  "Id": "LinearChannels",
+  "Title": "Kanäle",
+  "Tiles": [
+    {
+      "Id": "Linear:bj5o60qt6uoe1clfdsev239pr",
+      "AssetId": "bj5o60qt6uoe1clfdsev239pr",
+      "Title": "DAZN 1",
+      "LogoImage": {
+        "ImageMimeType": "png",
+        "ImageType": "image-logo",
+        "Id": "Logo_LTV_DAZN_1"
+      },
+      "LinearSchedule": {
+        "Now": {
+          "Title": "Spanish Copa del Rey Soccer",
+          "EpisodeTitle": "Atlético Madrid - FC Barcelona",
+          "Genre": [
+            {
+              "name": "Soccer",
+              "MappedValue": [1]
+            }
+          ],
+          "Description": "Aus dem Riyadh Air Metropolitano in Madrid, Spanien.",
+          "Start": "2026-07-19T15:00:00Z",
+          "End": "2026-07-19T17:00:00Z",
+          "Image": {
+            "ImageMimeType": "png",
+            "ImageType": "image-portrait",
+            "Id": "DAZN_1"
+          },
+          "BackgroundImage": {
+            "ImageMimeType": "jpg",
+            "ImageType": "image-background",
+            "Id": "111745_2026-07-19_EP037460110300_108429740567_2026-02-13T20:01:23Z_GNLZZGG002QL9SB"
+          },
+          "GradientBackgroundImage": {
+            "ImageMimeType": "jpg",
+            "ImageType": "image-background",
+            "Id": "111745_2026-07-19_EP037460110300_108429740567_2026-02-13T20:01:23Z_GNLZZGG002QL9SB"
+          },
+          "IsLive": false,
+          "EventYear": "2026",
+          "ProgramType": "Sports event",
+          "TvRating": null
+        },
+        "Next": {
+          "Title": "The Late Kick 2026",
+          "EpisodeTitle": "Folge 6",
+          "Genre": [
+            {
+              "name": "Soccer",
+              "MappedValue": [1]
+            }
+          ],
+          "Description": "",
+          "Start": "2026-07-19T17:00:00Z",
+          "End": "2026-07-19T17:50:00Z",
+          "Image": {
+            "ImageMimeType": "png",
+            "ImageType": "image-portrait",
+            "Id": "DAZN_1"
+          },
+          "BackgroundImage": {
+            "ImageMimeType": "jpg",
+            "ImageType": "image-background",
+            "Id": "111745_2026-07-19_SH064823960000_108834056900_2026-06-16T01:52:26Z_p33375908_st_h10_aa"
+          },
+          "GradientBackgroundImage": {
+            "ImageMimeType": "jpg",
+            "ImageType": "image-background",
+            "Id": "111745_2026-07-19_SH064823960000_108834056900_2026-06-16T01:52:26Z_p33375908_st_h10_aa"
+          },
+          "IsLive": false,
+          "EventYear": "2026",
+          "ProgramType": "Sports non-event",
+          "TvRating": null
+        },
+        "Later": [
+          {
+            "Title": "Best of DAZN - Highlights",
+            "EpisodeTitle": "",
+            "Genre": [
+              {
+                "name": "Entertainment"
+              }
+            ],
+            "Description": "Bei Best of DAZN erwarten euch ausgewählte Highlights.",
+            "Start": "2026-07-19T17:50:00Z",
+            "End": "2026-07-19T18:10:00Z",
+            "Image": {
+              "ImageMimeType": "png",
+              "ImageType": "image-portrait",
+              "Id": "DAZN_1"
+            },
+            "BackgroundImage": {
+              "ImageMimeType": "jpg",
+              "ImageType": "image-background",
+              "Id": "111745_2026-07-19_SH048946860000_101077135689_2022-04-22T10:18:32Z_p19111987_i_h8_aa"
+            },
+            "GradientBackgroundImage": {
+              "ImageMimeType": "jpg",
+              "ImageType": "image-background",
+              "Id": "111745_2026-07-19_SH048946860000_101077135689_2022-04-22T10:18:32Z_p19111987_i_h8_aa"
+            },
+            "IsLive": false,
+            "EventYear": "2020",
+            "ProgramType": "Sports non-event",
+            "TvRating": null
+          },
+          {
+            "Title": "Bundesliga Soccer",
+            "EpisodeTitle": "31. Spieltag",
+            "Genre": [
+              {
+                "name": "Soccer",
+                "MappedValue": [1]
+              }
+            ],
+            "Description": "Berichtet wird vom 31. Spieltag der Fußball-Bundesliga.",
+            "Start": "2026-07-20T06:00:00Z",
+            "End": "2026-07-20T07:05:00Z",
+            "Image": {
+              "ImageMimeType": "png",
+              "ImageType": "image-portrait",
+              "Id": "DAZN_1"
+            },
+            "BackgroundImage": {
+              "ImageMimeType": "jpg",
+              "ImageType": "image-background",
+              "Id": "111745_2026-07-20_SH037261360000_109454514209_2025-08-28T09:24:36Z_p7956966_i_h8_aj"
+            },
+            "IsLive": false,
+            "EventYear": "2026",
+            "ProgramType": "Sports non-event",
+            "TvRating": null
+          }
+        ]
+      }
+    },
+    {
+      "Id": "Linear:9dmerrb96eue11mjxhgbnyjho",
+      "AssetId": "9dmerrb96eue11mjxhgbnyjho",
+      "Title": "Rally TV",
+      "LogoImage": {
+        "ImageMimeType": "png",
+        "ImageType": "image-logo",
+        "Id": "Logo_Rally_TV"
+      },
+      "LinearSchedule": null
+    }
+  ],
+  "Type": "Linear"
+}
