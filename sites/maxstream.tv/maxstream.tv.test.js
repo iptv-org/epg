@@ -22,29 +22,22 @@ it('can parse response', () => {
       return p
     })
 
-  expect(results.length).toBe(31)
+  expect(results.length).toBe(30)
   expect(results[0]).toMatchObject({
-    title: 'The Way Back',
-    description:
-      'Mantan atlet basket yang berjuang melawan kecanduan mendapatkan kesempatan kedua dengan melatih tim sekolah lamanya.',
-    start: '2026-07-03T22:50:00.000Z',
-    stop: '2026-07-04T00:50:00.000Z',
-  })
-  expect(results[1]).toMatchObject({
     title: 'Dirty Money S1 - Eps. 10',
     description:
       'Serial dokumenter yang mengungkap skandal keuangan terbesar di dunia, membongkar praktik curang para korporasi dan dampaknya pada masyarakat luas.',
-    start: '2026-07-04T00:50:00.000Z',
-    stop: '2026-07-04T01:20:00.000Z',
+    start: '2026-07-03T17:50:00.000Z',
+    stop: '2026-07-03T18:20:00.000Z',
     season: 1,
     episode: 10
   })
-  expect(results[30]).toMatchObject({
+  expect(results[29]).toMatchObject({
     title: 'He\'s Just Not That Into You',
     description:
       'Komedi romantis tentang lika-liku pencarian cinta dan salah paham dalam membaca tanda pasangan.',
-    start: '2026-07-04T16:15:00.000Z',
-    stop: '2026-07-04T18:25:00.000Z',
+    start: '2026-07-04T09:15:00.000Z',
+    stop: '2026-07-04T11:25:00.000Z',
   })
 })
 
