@@ -1,3 +1,5 @@
+const fs = require('fs')
+const path = require('path')
 const crypto = require('crypto')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
@@ -69,19 +71,31 @@ module.exports = {
       url: 'https://api.maxstream.tv/v1/videos?filters%5BcontentType%5D=channel',
       params: { headers }
     }]
+    // helper to check channel for enabled schedule
+    const f = item => ({
+      url: module.exports.url({
+        channel: { site_id: item.id }
+      }),
+      params: { headers },
+      item
+    })
+    // always use known channels, sometime maxstream.tv does not show the channel in its website
+    // but the channel really exist there
+    const knownChannels = JSON.parse(fs.readFileSync(path.join(__dirname, '__data__', 'channels.json')))
+    for (const [id, title] of Object.entries(knownChannels)) {
+      queues.push(f({id, translations: { id: { title } } }))
+    }
+    // fetch channels
     await doFetch(queues, (queue, res) => {
       if (Array.isArray(res?.data?.items)) {
-        queues.push(
-          ...res.data.items
-            .filter(item => item?.contentType === 'Channel')
-            .map(item => ({
-              url: module.exports.url({
-                channel: { site_id: item.id }
-              }),
-              params: { headers },
-              item
-            }))
-        )
+        res.data.items
+          .filter(item => item?.contentType === 'Channel')
+          .forEach(item => {
+            // only queue new channel
+            if (knownChannels[item.id] === undefined) {
+              queue.push(f(item))
+            }
+          })
       }
       if (Array.isArray(res?.data?.data) && res?.data?.isEnable && queue.item) {
         channels.push({
