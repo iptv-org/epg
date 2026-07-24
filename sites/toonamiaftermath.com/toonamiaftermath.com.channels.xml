@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="toonamiaftermath.com" site_id="Toonami Aftermath EST" lang="en" xmltv_id="ToonamiAftermath.us@East">Toonami Aftermath EST</channel>
+  <channel site="toonamiaftermath.com" site_id="Snickelodeon EST" lang="en" xmltv_id="">Snickelodeon East</channel>
+  <channel site="toonamiaftermath.com" site_id="Snickelodeon EST+180" lang="en" xmltv_id="">Snickelodeon West</channel>
+  <channel site="toonamiaftermath.com" site_id="Toonami Aftermath EST" lang="en" xmltv_id="ToonamiAftermath.us@East">Toonami Aftermath East</channel>
+  <channel site="toonamiaftermath.com" site_id="Toonami Aftermath EST+180" lang="en" xmltv_id="ToonamiAftermath.us@West">Toonami Aftermath West</channel>
 </channels>
