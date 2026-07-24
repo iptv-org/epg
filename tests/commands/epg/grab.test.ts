@@ -1,11 +1,30 @@
 import { pathToFileURL } from 'node:url'
 import { execSync } from 'child_process'
+import dayjs from 'dayjs'
+import timezone from 'dayjs/plugin/timezone'
+import utc from 'dayjs/plugin/utc'
 import fs from 'fs-extra'
 import path from 'path'
 import pako from 'pako'
 
+dayjs.extend(utc)
+dayjs.extend(timezone)
+
 const ENV_VAR =
   'cross-env SITES_DIR=tests/__data__/input/epg_grab/sites CURR_DATE=2022-10-20 DATA_DIR=tests/__data__/input/data'
+
+interface GuideProgram {
+  channel: string
+  start: number
+  stop: number
+  titles: { value: string; lang: string }[]
+  descriptions: unknown[]
+  categories: unknown[]
+}
+
+interface GuideJson {
+  programs: GuideProgram[]
+}
 
 beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')
@@ -107,8 +126,8 @@ describe('epg:grab', () => {
       { to: 'string' }
     )
 
-    const output = new Set(outputString.split('\r\n'))
-    const expected = new Set(expectedString.split('\r\n'))
+    const output = new Set(normalizeContent(outputString).split('\r\n'))
+    const expected = new Set(normalizeContent(expectedString).split('\r\n'))
 
     expect(output).toEqual(expected)
   })
@@ -160,8 +179,8 @@ describe('epg:grab', () => {
       { to: 'string' }
     )
 
-    const output = new Set(outputString.split('\r\n'))
-    const expected = new Set(expectedString.split('\r\n'))
+    const output = new Set(normalizeContent(outputString).split('\r\n'))
+    const expected = new Set(normalizeContent(expectedString).split('\r\n'))
 
     expect(output).toEqual(expected)
   })
@@ -198,10 +217,175 @@ describe('epg:grab', () => {
       content('tests/__data__/expected/epg_grab/json/guide.json')
     )
   })
+
+  it('can fill schedule gaps with localized dummy programs', () => {
+    const outputPath = path.resolve('tests/__data__/output/guides/fill_gaps.guide.xml')
+    const cmd = `cross-env SITES_DIR=tests/__data__/input/fill_gaps/sites CURR_DATE=2022-10-20 DATA_DIR=tests/__data__/input/data npm run grab --- --sites=gapfill.com --fill-gaps --json --output="${outputPath}"`
+    const stdout = execSync(cmd, { encoding: 'utf8' })
+    if (process.env.DEBUG === 'true') console.log(cmd, stdout)
+
+    const xml = fs.readFileSync(pathToFileURL(outputPath), 'utf8')
+    const json = JSON.parse(
+      fs.readFileSync(pathToFileURL('tests/__data__/output/guides/fill_gaps.json'), 'utf8')
+    ) as GuideJson
+
+    const xmlProgrammeCount = (xml.match(/<programme /g) || []).length
+    expect(xmlProgrammeCount).toBe(47)
+    expect(json.programs).toHaveLength(47)
+
+    const enPrograms = json.programs.filter(
+      (program: GuideProgram) => program.channel === 'GapLong.us'
+    )
+    expect(enPrograms).toHaveLength(8)
+    expect(
+      enPrograms
+        .filter((program: GuideProgram) => program.titles[0].value === 'Off Air')
+        .map((program: GuideProgram) => [program.start, program.stop])
+    ).toEqual(
+      rangesInTimezone(
+        [
+          ['2022-10-20T00:00:00', '2022-10-20T00:30:00'],
+          ['2022-10-20T03:10:00', '2022-10-20T04:00:00'],
+          ['2022-10-20T04:00:00', '2022-10-20T08:00:00'],
+          ['2022-10-20T08:00:00', '2022-10-20T12:00:00'],
+          ['2022-10-20T12:00:00', '2022-10-20T16:00:00'],
+          ['2022-10-20T16:00:00', '2022-10-20T20:00:00'],
+          ['2022-10-20T20:00:00', '2022-10-21T00:00:00']
+        ],
+        'America/New_York'
+      )
+    )
+
+    const frPrograms = json.programs.filter(
+      (program: GuideProgram) => program.channel === 'GapEmpty.fr'
+    )
+    expect(frPrograms).toHaveLength(6)
+    expect(frPrograms.every((program: GuideProgram) => program.titles[0].value === 'Pause')).toBe(
+      true
+    )
+
+    const itPrograms = json.programs.filter(
+      (program: GuideProgram) => program.channel === 'GapMiddle.it'
+    )
+    expect(itPrograms).toHaveLength(8)
+    expect(
+      itPrograms
+        .filter((program: GuideProgram) => program.titles[0].value === 'Pausa')
+        .map((program: GuideProgram) => [program.start, program.stop])
+    ).toEqual(
+      rangesInTimezone(
+        [
+          ['2022-10-20T00:00:00', '2022-10-20T03:00:00'],
+          ['2022-10-20T04:00:00', '2022-10-20T07:00:00'],
+          ['2022-10-20T08:00:00', '2022-10-20T12:00:00'],
+          ['2022-10-20T12:00:00', '2022-10-20T16:00:00'],
+          ['2022-10-20T16:00:00', '2022-10-20T20:00:00'],
+          ['2022-10-20T20:00:00', '2022-10-21T00:00:00']
+        ],
+        'Europe/Rome'
+      )
+    )
+
+    const dePrograms = json.programs.filter(
+      (program: GuideProgram) => program.channel === 'GapOverlap.de'
+    )
+    expect(dePrograms).toHaveLength(7)
+    expect(
+      dePrograms
+        .filter((program: GuideProgram) => program.titles[0].value === 'Sendepause')
+        .map((program: GuideProgram) => [program.start, program.stop])
+    ).toEqual(
+      rangesInTimezone(
+        [
+          ['2022-10-20T00:00:00', '2022-10-20T03:00:00'],
+          ['2022-10-20T08:00:00', '2022-10-20T12:00:00'],
+          ['2022-10-20T12:00:00', '2022-10-20T16:00:00'],
+          ['2022-10-20T16:00:00', '2022-10-20T20:00:00'],
+          ['2022-10-20T20:00:00', '2022-10-21T00:00:00']
+        ],
+        'Europe/Berlin'
+      )
+    )
+
+    const esPrograms = json.programs.filter(
+      (program: GuideProgram) => program.channel === 'GapError.es'
+    )
+    expect(esPrograms).toHaveLength(0)
+    expect(stdout).toContain('ERR: Parser failure')
+
+    const fallbackPrograms = json.programs.filter(
+      (program: GuideProgram) => program.channel === 'GapFallback.xx'
+    )
+    const fallbackDummies = fallbackPrograms.filter(
+      (program: GuideProgram) => program.titles[0].value === 'Off Air'
+    )
+    expect(fallbackPrograms).toHaveLength(7)
+    expect(fallbackDummies).toHaveLength(6)
+    expect(fallbackDummies.every((program: GuideProgram) => program.titles[0].lang === 'xx')).toBe(
+      true
+    )
+
+    const boundaryPrograms = json.programs.filter(
+      (program: GuideProgram) => program.channel === 'GapBoundary.de'
+    )
+    expect(boundaryPrograms).toHaveLength(11)
+    expect(
+      boundaryPrograms
+        .filter((program: GuideProgram) => program.titles[0].value === 'Sendepause')
+        .map((program: GuideProgram) => [program.start, program.stop])
+    ).toEqual(
+      rangesInTimezone(
+        [
+          ['2022-10-20T00:00:00', '2022-10-20T02:45:00'],
+          ['2022-10-20T03:30:00', '2022-10-20T04:00:00'],
+          ['2022-10-20T04:00:00', '2022-10-20T08:00:00'],
+          ['2022-10-20T08:00:00', '2022-10-20T10:00:00'],
+          ['2022-10-20T13:00:00', '2022-10-20T14:00:00'],
+          ['2022-10-20T15:00:00', '2022-10-20T16:00:00'],
+          ['2022-10-20T16:00:00', '2022-10-20T20:00:00'],
+          ['2022-10-20T20:00:00', '2022-10-21T00:00:00']
+        ],
+        'Europe/Berlin'
+      )
+    )
+
+    const dummyPrograms = json.programs.filter((program: GuideProgram) => {
+      const title = program.titles[0].value
+      return ['Off Air', 'Pause', 'Pausa', 'Sendepause'].includes(title)
+    })
+    expect(
+      dummyPrograms.every(
+        (program: GuideProgram) => program.stop - program.start <= 4 * 60 * 60 * 1000
+      )
+    ).toBe(true)
+    expect(
+      dummyPrograms.every(
+        (program: GuideProgram) =>
+          program.descriptions.length === 0 && program.categories.length === 0
+      )
+    ).toBe(true)
+
+    expect(xml).toContain('<title lang="fr">Pause</title>')
+    expect(xml).toContain('<title lang="de">Sendepause</title>')
+    expect(xml).toContain('<title lang="xx">Off Air</title>')
+  })
 })
 
 function content(filepath: string) {
   const string = fs.readFileSync(pathToFileURL(filepath), 'utf8')
 
-  return new Set(string.split('\r\n'))
+  return new Set(normalizeContent(string).split('\r\n'))
+}
+
+function normalizeContent(content: string) {
+  return content
+    .replace(/<url>[^<]*<\/url>/g, '')
+    .replace(/,"url":"[^"]*"/g, ',"url":null')
+}
+
+function rangesInTimezone(ranges: string[][], timezoneName: string): number[][] {
+  return ranges.map(([start, stop]) => [
+    dayjs.tz(start, timezoneName).valueOf(),
+    dayjs.tz(stop, timezoneName).valueOf()
+  ])
 }
