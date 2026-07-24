@@ -1,35 +1,54 @@
-const axios = require('axios')
+const fs = require('fs')
+const path = require('path')
+const crypto = require('crypto')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
-const customParseFormat = require('dayjs/plugin/customParseFormat')
+const doFetch = require('@ntlab/sfetch')
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
-dayjs.extend(customParseFormat)
 
 const tz = 'Asia/Jakarta'
+const UDID = crypto.randomUUID()
+const UUID = crypto.randomUUID()
+const headers = {
+  'user-agent':
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 OPR/132.0.0.0',
+  'channelid': 'VMPWEB',
+  'webplatform': '878a6db06e0cd079b3b02408d246801d217c018f',
+  'x-data-centre': btoa([UDID, UUID].join('|')),
+  'x-localization': 'EN',
+  'x-maxstream-version': '3.2.6'
+}
 
 module.exports = {
   site: 'maxstream.tv',
   days: 2,
+  request: {
+    cache: {
+      ttl: 24 * 60 * 60 * 1000 // 1 day
+    },
+    headers
+  },
   url({ channel }) {
-    return `https://vmp.maxstream.tv/api/v3/videos/${channel.site_id}/schedules`
+    return `https://api.maxstream.tv/v1/videos/${channel.site_id}/schedule`
   },
   parser({ content, channel, date }) {
     const programs = []
     if (content && typeof content === 'string') {
       content = JSON.parse(content)
     }
-    if (Array.isArray(content?.data)) {
+    if (Array.isArray(content?.data?.data)) {
       const schedules = []
-      content.data.forEach(item => {
+      content.data.data.forEach(item => {
         schedules.push(...item.metadata)
       })
-      const f = dt => dayjs.tz(dt, tz).isSame(date, 'day')
+      const cdate = date.startOf('d')
+      const f = (dt, e) => (dt = dayjs.tz(dt, tz), dt.isSame(cdate, 'd') && (e ? dt > cdate : true))
       schedules
         .filter(
-          entry => entry.parentId === channel.site_id && (f(entry.startTime) || f(entry.endTime))
+          entry => entry.parentId === channel.site_id && (f(entry.startTime) || f(entry.endTime, true))
         )
         .forEach(entry => {
           const [, , , season, , , session2, , , episode] = entry.tvProgram.match(
@@ -51,22 +70,44 @@ module.exports = {
   },
   async channels() {
     const channels = []
-    const data = await axios
-      .get('https://vmp.maxstream.tv/api/v3/videos/list?contentType=channel')
-      .then(response => response.data)
-      .catch(console.error)
-
-    if (Array.isArray(data?.videos)) {
-      channels.push(
-        ...data.videos
-          .filter(item => item?.contentType === 'Channel')
-          .map(item => ({
-            lang: 'id',
-            site_id: item.id,
-            name: item.translations.id.title
-          }))
-      )
+    const queues = [{
+      url: 'https://api.maxstream.tv/v1/videos?filters%5BcontentType%5D=channel',
+      params: { headers }
+    }]
+    // helper to check channel for enabled schedule
+    const f = item => ({
+      url: module.exports.url({
+        channel: { site_id: item.id }
+      }),
+      params: { headers },
+      item
+    })
+    // always use known channels, sometime maxstream.tv does not show the channel in its website
+    // but the channel really exist there
+    const knownChannels = JSON.parse(fs.readFileSync(path.join(__dirname, '__data__', 'channels.json')))
+    for (const [id, title] of Object.entries(knownChannels)) {
+      queues.push(f({id, translations: { id: { title } } }))
     }
+    // fetch channels
+    await doFetch(queues, (queue, res) => {
+      if (Array.isArray(res?.data?.items)) {
+        res.data.items
+          .filter(item => item?.contentType === 'Channel')
+          .forEach(item => {
+            // only queue new channel
+            if (knownChannels[item.id] === undefined) {
+              queue.push(f(item))
+            }
+          })
+      }
+      if (Array.isArray(res?.data?.data) && res?.data?.isEnable && queue.item) {
+        channels.push({
+          lang: 'id',
+          site_id: queue.item.id,
+          name: queue.item.translations.id.title || queue.item.translations.en.title
+        })
+      }
+    })
 
     return channels
   }

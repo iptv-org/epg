@@ -2,6 +2,7 @@
 <channels>
   <channel site="maxstream.tv" site_id="0_armtdhuu" lang="id" xmltv_id="ABCAustralia.au@SD">ABC Australia</channel>
   <channel site="maxstream.tv" site_id="0_ss6ehuur" lang="id" xmltv_id="AlJazeera.qa@Arabic">Al Jazeera</channel>
+  <channel site="maxstream.tv" site_id="0_bhma6pov" lang="id" xmltv_id="AlQuranAlKareemTV.sa@SD">Al Quran Al Kareem</channel>
   <channel site="maxstream.tv" site_id="0_oyquzepi" lang="id" xmltv_id="AnimalPlanetSoutheastAsia.sg@SD">Animal Planet</channel>
   <channel site="maxstream.tv" site_id="0_86sal99e" lang="id" xmltv_id="AnimaxAsia.sg@SD">Animax</channel>
   <channel site="maxstream.tv" site_id="0_bidjh24z" lang="id" xmltv_id="AniplusAsia.sg@SD">Aniplus</channel>
@@ -15,10 +16,11 @@
   <channel site="maxstream.tv" site_id="0_urq0w0mp" lang="id" xmltv_id="BioskopIndonesia.id@SD">Bioskop Indonesia</channel>
   <channel site="maxstream.tv" site_id="0_ayq5nxva" lang="id" xmltv_id="BloombergTV.us@Asia">Bloomberg</channel>
   <channel site="maxstream.tv" site_id="0_gv023ysj" lang="id" xmltv_id="BTV.id@SD">BTV</channel>
+  <channel site="maxstream.tv" site_id="0_3x6829f7" lang="id" xmltv_id="CartoonitoAsia.sg@SD">Cartoonito</channel>
+  <channel site="maxstream.tv" site_id="0_1lrqq4s0" lang="id" xmltv_id="CartoonNetworkAsia.sg@SD">Cartoon Network</channel>
   <channel site="maxstream.tv" site_id="0_84kdjuht" lang="id" xmltv_id="CBeebiesAsia.uk@SD">CBeebies</channel>
   <channel site="maxstream.tv" site_id="0_xvxr7u43" lang="id" xmltv_id="CCTV4Asia.cn@SD">CCTV 4</channel>
   <channel site="maxstream.tv" site_id="0_vq7m2eeg" lang="id" xmltv_id="CelestialMoviesIndonesia.id@SD">Celestial Movies</channel>
-  <channel site="maxstream.tv" site_id="0_7csp48nr" lang="id" xmltv_id="CGTN.cn@SD">CGTN</channel>
   <channel site="maxstream.tv" site_id="0_ypi11pce" lang="id" xmltv_id="CGTNDocumentary.cn@SD">CGTN Documentary</channel>
   <channel site="maxstream.tv" site_id="0_yvb8lpzs" lang="id" xmltv_id="ChineseDrama.hk@SD">Chinese Drama</channel>
   <channel site="maxstream.tv" site_id="0_s7gzj2we" lang="id" xmltv_id="CinemaWorld.my@SD">CinemaWorld</channel>
@@ -66,7 +68,6 @@
   <channel site="maxstream.tv" site_id="0_fn0qos3d" lang="id" xmltv_id="iNews.id@SD">Inews</channel>
   <channel site="maxstream.tv" site_id="0_rkv5gee2" lang="id" xmltv_id="JakTV.id@SD">JAK TV</channel>
   <channel site="maxstream.tv" site_id="0_lrp6fabo" lang="id" xmltv_id="JawaPosTV.id@SD">Jawa Pos TV</channel>
-  <channel site="maxstream.tv" site_id="0_qesewoxv" lang="id" xmltv_id="JTV.id@SD">JTV</channel>
   <channel site="maxstream.tv" site_id="0_4oku2lux" lang="id" xmltv_id="KBSWorld.kr@SD">KBS World</channel>
   <channel site="maxstream.tv" site_id="0_jqlzd1wf" lang="id" xmltv_id="KIX.hk@SD">KIX</channel>
   <channel site="maxstream.tv" site_id="0_930nfsqj" lang="id" xmltv_id="KompasTV.id@SD">Kompas TV</channel>
@@ -79,7 +80,6 @@
   <channel site="maxstream.tv" site_id="0_1u20u1ok" lang="id" xmltv_id="MAXSports.id@SD">MAXSports</channel>
   <channel site="maxstream.tv" site_id="0_720wy4x6" lang="id" xmltv_id="MAXStreak.id@SD">MAXStreak</channel>
   <channel site="maxstream.tv" site_id="0_ixad1kw8" lang="id" xmltv_id="MAXStream.id@SD">MAXStream TV</channel>
-  <channel site="maxstream.tv" site_id="0_keojjla6" lang="id" xmltv_id="MDTV.id@HD">MDTV</channel>
   <channel site="maxstream.tv" site_id="0_0hjh536t" lang="id" xmltv_id="MentariTV.id@SD">Mentari TV</channel>
   <channel site="maxstream.tv" site_id="0_2jt2oz81" lang="id" xmltv_id="MetroTV.id@SD">Metro TV</channel>
   <channel site="maxstream.tv" site_id="0_3k1552mp" lang="id" xmltv_id="MNCTV.id@SD">MNC TV</channel>
@@ -99,7 +99,6 @@
   <channel site="maxstream.tv" site_id="0_gtyd8oju" lang="id" xmltv_id="PhoenixChineseChannel.hk@SD">Phoenix Chinese</channel>
   <channel site="maxstream.tv" site_id="0_40isuyzv" lang="id" xmltv_id="PhoenixInfoNewsChannel.hk@SD">Phoenix Info News</channel>
   <channel site="maxstream.tv" site_id="0_e59etfmm" lang="id" xmltv_id="Prambors.id@SD">Prambors</channel>
-  <channel site="maxstream.tv" site_id="0_hii9fpgx" lang="id" xmltv_id="RajawaliTV.id@SD">RTV</channel>
   <channel site="maxstream.tv" site_id="0_nwsd3m5r" lang="id" xmltv_id="RCTI.id@SD">RCTI</channel>
   <channel site="maxstream.tv" site_id="0_1gshn4os" lang="id" xmltv_id="ROCKAction.sg@SD">Rock Action</channel>
   <channel site="maxstream.tv" site_id="0_a98kaoda" lang="id" xmltv_id="ROCKEntertainment.sg@SD">Rock Entertainment</channel>
@@ -114,9 +113,7 @@
   <channel site="maxstream.tv" site_id="0_cms3x58k" lang="id" xmltv_id="TheIndonesiaChannel.id@SD">The Indonesia Channel</channel>
   <channel site="maxstream.tv" site_id="0_wiy2wbmv" lang="id" xmltv_id="Thrill.hk@SD">Thrill</channel>
   <channel site="maxstream.tv" site_id="0_57ujtr57" lang="id" xmltv_id="TLCSoutheastAsia.sg@SD">TLC</channel>
-  <channel site="maxstream.tv" site_id="0_a7dno7wk" lang="id" xmltv_id="Trans7.id@SD">TRANS 7</channel>
   <channel site="maxstream.tv" site_id="0_uakgnhip" lang="id" xmltv_id="TransTV.id@SD">Trans TV</channel>
-  <channel site="maxstream.tv" site_id="0_6y33rxed" lang="id" xmltv_id="TV5MondeAsia.fr@SD">TV5 MONDE</channel>
   <channel site="maxstream.tv" site_id="0_cbqtpojf" lang="id" xmltv_id="TV9Nusantara.id@SD">TV9</channel>
   <channel site="maxstream.tv" site_id="0_kp6grg1f" lang="id" xmltv_id="TVBSNews.tw@SD">TVBS News</channel>
   <channel site="maxstream.tv" site_id="0_j93el3os" lang="id" xmltv_id="TVMu.id@SD">TV MU</channel>
@@ -127,6 +124,7 @@
   <channel site="maxstream.tv" site_id="0_vu7lebet" lang="id" xmltv_id="TVRI.id@SD">TVRI</channel>
   <channel site="maxstream.tv" site_id="0_iu9ah7cu" lang="id" xmltv_id="TVRIWorld.id@SD">TVRI World</channel>
   <channel site="maxstream.tv" site_id="0_7i9iue7v" lang="id" xmltv_id="UChannel.id@SD">U Channel</channel>
+  <channel site="maxstream.tv" site_id="0_meap4fi2" lang="id" xmltv_id="WarnerTVAsia.us@SD">Warner TV</channel>
   <channel site="maxstream.tv" site_id="0_k6etp5l6" lang="id" xmltv_id="ZeeBioskop.id@SD">Zee Bioskop</channel>
   <channel site="maxstream.tv" site_id="0_r3bzcf53" lang="id" xmltv_id="ZhejiangInternationalChannel.cn@SD">Zhejiang Int</channel>
 </channels>
