@@ -1,0 +1,962 @@
+{
+  "_id": "6a22befed02137d17593d644",
+  "scheduleName": "Toonami Aftermath EST",
+  "startDate": "2026-07-04T10:00:00.000Z",
+  "playlist": {
+    "startTime": "6am",
+    "blocks": [
+      {
+        "tagline": "Weekends 6.0-8.0am",
+        "runtimeHoursTarget": 2,
+        "mediaList": [
+          {
+            "type": "file",
+            "mediaType": "series",
+            "filepath": "t:\\toonami\\series\\spiderman\\spiderman 7.avi",
+            "name": "Spiderman",
+            "episodeNumber": 7,
+            "runtime": 653.069083,
+            "playlistIndex": 0,
+            "startDate": "2026-07-04T10:00:00.000Z",
+            "endDate": "2026-07-04T10:10:53.069Z",
+            "info": {
+              "fullname": "Spider-Man",
+              "image": "https://i.imgur.com/rtVhGpO.gif",
+              "year": 1967,
+              "episode": "The Sky is Falling"
+            }
+          },
+          {
+            "type": "file",
+            "mediaType": "series",
+            "filepath": "t:\\toonami\\series\\spiderman\\spiderman 8.avi",
+            "name": "Spiderman",
+            "episodeNumber": 8,
+            "runtime": 652.1515,
+            "playlistIndex": 2,
+            "startDate": "2026-07-04T10:11:52.629Z",
+            "endDate": "2026-07-04T10:22:44.780Z",
+            "info": {
+              "fullname": "Spider-Man",
+              "image": "https://i.imgur.com/rtVhGpO.gif",
+              "year": 1967,
+              "episode": "Captured by J. Jonah Jameson"
+            }
+          },
+          {
+            "type": "file",
+            "mediaType": "series",
+            "filepath": "t:\\toonami\\series\\spiderman\\spiderman 9.avi",
+            "name": "Spiderman",
+            "episodeNumber": 9,
+            "runtime": 651.692708,
+            "playlistIndex": 5,
+            "startDate": "2026-07-04T10:24:01.335Z",
+            "endDate": "2026-07-04T10:34:53.027Z",
+            "info": {
+              "fullname": "Spider-Man",
+              "image": "https://i.imgur.com/rtVhGpO.gif",
+              "year": 1967,
+              "episode": "Never Step on a Scorpion"
+            }
+          },
+          {
+            "type": "file",
+            "mediaType": "series",
+            "filepath": "t:\\toonami\\series\\spiderman\\spiderman 10.avi",
+            "name": "Spiderman",
+            "episodeNumber": 10,
+            "runtime": 650.858542,
+            "playlistIndex": 8,
+            "startDate": "2026-07-04T10:36:03.388Z",
+            "endDate": "2026-07-04T10:46:54.246Z",
+            "info": {
+              "fullname": "Spider-Man",
+              "image": "https://i.imgur.com/rtVhGpO.gif",
+              "year": 1967,
+              "episode": "Sands of Crime"
+            }
+          },
+          {
+            "type": "file",
+            "mediaType": "series",
+            "filepath": "t:\\toonami\\series\\fantastic four\\fantastic four 18.avi",
+            "name": "Fantastic Four",
+            "episodeNumber": 18,
+            "runtime": 1224.56,
+            "playlistIndex": 13,
+            "startDate": "2026-07-04T10:48:20.992Z",
+            "endDate": "2026-07-04T11:08:45.552Z",
+            "info": {
+              "image": "https://i.imgur.com/Stqcavd.gif",
+              "year": 1967,
+              "episode": "Rama-Tut"
+            }
+          },
+          {
+            "type": "file",
+            "mediaType": "series",
+            "filepath": "t:\\toonami\\series\\iron man\\iron man 5.avi",
+            "name": "Iron Man",
+            "episodeNumber": 5,
+            "runtime": 1038.210612,
+            "playlistIndex": 17,
+            "startDate": "2026-07-04T11:10:10.139Z",
+            "endDate": "2026-07-04T11:27:28.349Z",
+            "info": {
+              "image": "https://i.imgur.com/ZkugjMx.gif",
+              "year": 1966,
+              "episode": "Crimson Dynamo!, The Crimson Dynamo Strikes, Captured"
+            }
+          },
+          {
+            "type": "file",
+            "mediaType": "series",
+            "filepath": "t:\\toonami\\series\\birdman\\birdman 29.avi",
+            "name": "Birdman",
+            "episodeNumber": 29,
+            "runtime": 387.653933,
+            "playlistIndex": 22,
+            "startDate": "2026-07-04T11:28:42.874Z",
+            "endDate": "2026-07-04T11:35:10.527Z",
+            "info": {
+              "image": "https://i.imgur.com/cAylbtL.gif",
+              "year": 1967,
+              "episode": "Birdman Meets Moray of the Deep"
+            }
+          },
+          {
+            "type": "file",
+            "mediaType": "series",
+            "filepath": "t:\\toonami\\series\\birdman\\birdman 30.avi",
+            "name": "Birdman",
+            "episodeNumber": 30,
+            "runtime": 389.4891,
+            "playlistIndex": 27,
+            "startDate": "2026-07-04T11:36:31.830Z",
+            "endDate": "2026-07-04T11:43:01.319Z",
+            "info": {
+              "image": "https://i.imgur.com/cAylbtL.gif",
+              "year": 1967,
+              "episode": "Birdman and the Monster of the Mountains"
+            }
+          },
+          {
+            "type": "file",
+            "mediaType": "series",
+            "filepath": "t:\\toonami\\series\\space ghost\\space ghost 21.avi",
+            "name": "Space Ghost",
+            "episodeNumber": 21,
+            "runtime": 379.5792,
+            "playlistIndex": 31,
+            "startDate": "2026-07-04T11:45:30.325Z",
+            "endDate": "2026-07-04T11:51:49.904Z",
+            "info": {
+              "image": "https://i.imgur.com/TKjCB1Z.gif",
+              "year": 1966,
+              "episode": "Space Birds"
+            }
+          },
+          {
+            "type": "file",
+            "mediaType": "series",
+            "filepath": "t:\\toonami\\series\\space ghost\\space ghost 22.avi",
+            "name": "Space Ghost",
+            "episodeNumber": 22,
+            "runtime": 379.379,
+            "playlistIndex": 39,
+            "startDate": "2026-07-04T11:53:40.616Z",
+            "endDate": "2026-07-04T12:00:00.000Z",
+            "info": {
+              "image": "https://i.imgur.com/TKjCB1Z.gif",
+              "year": 1966,
+              "episode": "Attack of the Saucer Crab"
+            }
+          }
+        ],
+        "type": "block",
+        "name": "Comic Corner",
+        "runtime": 7200,
+        "runtimeTarget": 7200,
+        "startDate": "2026-07-04T10:00:00.000Z",
+        "endDate": "2026-07-04T12:00:00.000Z"
+      },
+      {
+        "tagline": "Weekends 8.0-10.0am",
+        "runtimeHoursTarget": 2,
+        "mediaList": [
+          {
+            "type": "file",
+            "mediaType": "series",
+            "filepath": "t:\\toonami\\series\\earthworm jim\\earthworm jim 1.mkv",
+            "name": "Earthworm Jim",
+            "episodeNumber": 1,
+            "runtime": 1275.28,
+            "playlistIndex": 40,
+            "startDate": "2026-07-04T12:00:00.000Z",
+            "endDate": "2026-07-04T12:21:15.280Z",
+            "info": {
+              "image": "https://i.imgur.com/sQB7OBu.gif",
+              "episode": "Sidekicked"
+            }
+          },
+          {
+            "type": "file",
+            "mediaType": "series",
+            "filepath": "t:\\toonami\\series\\static shock\\static shock 1.avi",
+            "name": "Static Shock",
+            "episodeNumber": 1,
+            "runtime": 1269.548,
+            "playlistIndex": 47,
+            "startDate": "2026-07-04T12:24:33.550Z",
+            "endDate": "2026-07-04T12:45:43.098Z",
+            "info": {
+              "image": "https://i.imgur.com/riIBi2T.gif",
+              "episode": "Shock to the System"
+            }
+          },
+          {
+            "type": "file",
+            "mediaType": "series",
+            "filepath": "t:\\toonami\\series\\animaniacs\\animaniacs 9.mp4",
+            "name": "Animaniacs",
+            "episodeNumber": 9,
+            "runtime": 1276.108,
+            "playlistIndex": 55,
+            "startDate": "2026-07-04T12:49:17.023Z",
+            "endDate": "2026-07-04T13:10:33.131Z",
+            "info": {
+              "image": "https://i.imgur.com/Iahwehb.gif",
+              "episode": "Wally Llama / Where Rodents Dare"
+            }
+          },
+          {
+            "type": "file",
+            "mediaType": "series",
+            "filepath": "t:\\toonami\\series\\tick\\tick 30.mkv",
+            "name": "Tick",
+            "episodeNumber": 30,
+            "runtime": 1201.184,
+            "playlistIndex": 65,
+            "startDate": "2026-07-04T13:14:35.406Z",
+            "endDate": "2026-07-04T13:34:36.590Z",
+            "info": {
+              "fullname": "The Tick",
+              "image": "https://i.imgur.com/6LCtAKv.gif",
+              "year": 1994,
+              "episode": "Tick vs. Arthur"
+            }
+          },
+          {
+            "type": "file",
+            "mediaType": "series",
+            "filepath": "t:\\toonami\\series\\freakazoid\\freakazoid 7.avi",
+            "name": "Freakazoid",
+            "episodeNumber": 7,
+            "runtime": 1283.04,
+            "playlistIndex": 75,
+            "startDate": "2026-07-04T13:38:36.960Z",
+            "endDate": "2026-07-04T14:00:00.000Z",
+            "info": {
+              "image": "https://i.imgur.com/qaSxxx8.gif",
+              "episode": "The Chip (Part 2) /Freakazoid Is History"
+            }
+          }
+        ],
+        "type": "block",
+        "name": "Kids WB",
+        "runtime": 7200,
+        "runtimeTarget": 7200,
+        "startDate": "2026-07-04T12:00:00.000Z",
+        "endDate": "2026-07-04T14:00:00.000Z"
+      },
+      {
+        "tagline": "Weekends 10.0-12.0pm",
+        "runtimeHoursTarget": 2,
+        "mediaList": [
+          {
+            "type": "file",
+            "mediaType": "series",
+            "filepath": "t:\\toonami\\series\\digimon\\digimon 9.avi",
+            "name": "Digimon",
+            "episodeNumber": 9,
+            "runtime": 1233.232,
+            "playlistIndex": 78,
+            "startDate": "2026-07-04T14:00:45.548Z",
+            "endDate": "2026-07-04T14:21:18.780Z",
+            "info": {
+              "image": "https://i.imgur.com/rM5a4vc.gif",
+              "episode": "Subzero Ice Punch!"
+            }
+          },
+          {
+            "type": "file",
+            "mediaType": "series",
+            "filepath": "t:\\toonami\\series\\monster rancher\\monster rancher 34.mkv",
+            "name": "Monster Rancher",
+            "episodeNumber": 34,
+            "runtime": 1278.538,
+            "playlistIndex": 86,
+            "startDate": "2026-07-04T14:24:47.946Z",
+            "endDate": "2026-07-04T14:46:06.484Z",
+            "info": {
+              "fullname": "Monster Rancher",
+              "image": "https://i.imgur.com/8Q2xfrx.gif",
+              "episode": "The Town That Disappeared"
+            }
+          },
+          {
+            "type": "file",
+            "mediaType": "series",
+            "filepath": "t:\\toonami\\series\\yu-gi-oh!\\yu-gi-oh! 56.avi",
+            "name": "Yu-Gi-Oh!",
+            "episodeNumber": 56,
+            "runtime": 1219.302636,
+            "playlistIndex": 94,
+            "startDate": "2026-07-04T14:49:24.232Z",
+            "endDate": "2026-07-04T15:09:43.534Z",
+            "info": {
+              "image": "https://i.imgur.com/F5wIvS0.gif",
+              "episode": "Yugi VS the Rare Hunter (Part 1)"
+            }
+          },
+          {
+            "type": "file",
+            "mediaType": "series",
+            "filepath": "t:\\toonami\\series\\starship troopers\\starship troopers 15.mp4",
+            "name": "Starship Troopers",
+            "episodeNumber": 15,
+            "runtime": 1251.563,
+            "playlistIndex": 106,
+            "startDate": "2026-07-04T15:13:55.492Z",
+            "endDate": "2026-07-04T15:34:47.055Z",
+            "info": {
+              "fullname": "Roughnecks: Starship Troopers Chronicles",
+              "image": "https://i.imgur.com/aRS8xZQ.gif",
+              "episode": "The Face Of Truth"
+            }
+          },
+          {
+            "type": "file",
+            "mediaType": "series",
+            "filepath": "t:\\toonami\\series\\beast machines\\beast machines 4.avi",
+            "name": "Beast Machines",
+            "episodeNumber": 4,
+            "runtime": 1289.064,
+            "playlistIndex": 115,
+            "startDate": "2026-07-04T15:38:30.934Z",
+            "endDate": "2026-07-04T16:00:00.000Z",
+            "info": {
+              "image": "https://i.imgur.com/9E7F997.gif",
+              "episode": "Mercenary Pursuits"
+            }
+          }
+        ],
+        "type": "block",
+        "name": "Rising Sun",
+        "runtime": 7200,
+        "runtimeTarget": 7200,
+        "startDate": "2026-07-04T14:00:00.000Z",
+        "endDate": "2026-07-04T16:00:00.000Z"
+      },
+      {
+        "tagline": "Weekends 12.0-2.0pm",
+        "runtimeHoursTarget": 2,
+        "mediaList": [
+          {
+            "type": "file",
+            "mediaType": "series",
+            "filepath": "t:\\toonami\\series\\jonny quest real adventures\\jonny quest real adventures 18.avi",
+            "name": "Jonny Quest Real Adventures",
+            "episodeNumber": 18,
+            "runtime": 1261.28,
+            "playlistIndex": 117,
+            "startDate": "2026-07-04T16:01:28.680Z",
+            "endDate": "2026-07-04T16:22:29.960Z",
+            "info": {
+              "fullname": "The Real Adventures of Jonny Quest",
+              "image": "https://i.imgur.com/XOp3nEP.gif",
+              "episode": "The Mummies of Malenque"
+            }
+          },
+          {
+            "type": "file",
+            "mediaType": "series",
+            "filepath": "t:\\toonami\\series\\jonny quest real adventures\\jonny quest real adventures 19.avi",
+            "name": "Jonny Quest Real Adventures",
+            "episodeNumber": 19,
+            "runtime": 1255.44,
+            "playlistIndex": 121,
+            "startDate": "2026-07-04T16:23:39.593Z",
+            "endDate": "2026-07-04T16:44:35.033Z",
+            "info": {
+              "fullname": "The Real Adventures of Jonny Quest",
+              "image": "https://i.imgur.com/XOp3nEP.gif",
+              "episode": "Bloodlines"
+            }
+          },
+          {
+            "type": "file",
+            "mediaType": "series",
+            "filepath": "t:\\toonami\\series\\jonny quest\\jonny quest 25.avi",
+            "name": "Jonny Quest",
+            "episodeNumber": 25,
+            "runtime": 1512.0105,
+            "playlistIndex": 124,
+            "startDate": "2026-07-04T16:45:43.671Z",
+            "endDate": "2026-07-04T17:10:55.681Z",
+            "info": {
+              "image": "https://i.imgur.com/1LkPW7k.gif",
+              "year": 1964,
+              "episode": "The Sea Haunt"
+            }
+          },
+          {
+            "type": "file",
+            "mediaType": "series",
+            "filepath": "t:\\toonami\\series\\scooby doo\\scooby doo 20.mp4",
+            "name": "Scooby Doo",
+            "episodeNumber": 20,
+            "runtime": 1315.272,
+            "playlistIndex": 130,
+            "startDate": "2026-07-04T17:12:10.059Z",
+            "endDate": "2026-07-04T17:34:05.331Z",
+            "info": {
+              "fullname": "Scooby Doo, Where Are You!",
+              "image": "https://i.imgur.com/i1ZedHL.gif",
+              "episode": "Jeepers, It's the Creeper"
+            }
+          },
+          {
+            "type": "file",
+            "mediaType": "series",
+            "filepath": "t:\\toonami\\series\\scooby doo\\scooby doo 21.mp4",
+            "name": "Scooby Doo",
+            "episodeNumber": 21,
+            "runtime": 1315.272,
+            "playlistIndex": 135,
+            "startDate": "2026-07-04T17:35:30.754Z",
+            "endDate": "2026-07-04T17:57:26.026Z",
+            "info": {
+              "fullname": "Scooby Doo, Where Are You!",
+              "image": "https://i.imgur.com/i1ZedHL.gif",
+              "episode": "Scooby's Night with a Frozen Fright"
+            }
+          }
+        ],
+        "type": "block",
+        "name": "Cartoon High Noon",
+        "runtime": 7200,
+        "runtimeTarget": 7200,
+        "startDate": "2026-07-04T16:00:00.000Z",
+        "endDate": "2026-07-04T18:00:00.000Z"
+      },
+      {
+        "tagline": "Weekends 2.0-4.0pm",
+        "runtimeHoursTarget": 2,
+        "mediaList": [
+          {
+            "type": "file",
+            "mediaType": "series",
+            "filepath": "t:\\toonami\\series\\superman\\superman 15.avi",
+            "name": "Superman",
+            "episodeNumber": 15,
+            "runtime": 1286.287,
+            "playlistIndex": 140,
+            "startDate": "2026-07-04T18:00:30.256Z",
+            "endDate": "2026-07-04T18:21:56.543Z",
+            "info": {
+              "image": "https://i.imgur.com/hUYhp5I.gif",
+              "year": 1996,
+              "episode": "Blasts From the Past (Part 2)"
+            }
+          },
+          {
+            "type": "file",
+            "mediaType": "series",
+            "filepath": "t:\\toonami\\series\\batman\\batman 49.mp4",
+            "name": "Batman",
+            "episodeNumber": 49,
+            "runtime": 1342.763,
+            "playlistIndex": 144,
+            "startDate": "2026-07-04T18:24:06.302Z",
+            "endDate": "2026-07-04T18:46:29.065Z",
+            "info": {
+              "fullname": "Batman: The Animated Series",
+              "image": "https://i.imgur.com/nygJi6C.gif",
+              "episode": "Heart of Steel Part 1"
+            }
+          },
+          {
+            "type": "file",
+            "mediaType": "series",
+            "filepath": "t:\\toonami\\series\\batman beyond\\batman beyond 41.avi",
+            "name": "Batman Beyond",
+            "episodeNumber": 41,
+            "runtime": 1264.263,
+            "playlistIndex": 150,
+            "startDate": "2026-07-04T18:48:39.220Z",
+            "endDate": "2026-07-04T19:09:43.483Z",
+            "info": {
+              "image": "https://i.imgur.com/4bXZkXc.gif",
+              "episode": "Untouchable"
+            }
+          },
+          {
+            "type": "file",
+            "mediaType": "series",
+            "filepath": "t:\\toonami\\series\\justice league\\justice league 35.avi",
+            "name": "Justice League",
+            "episodeNumber": 35,
+            "runtime": 1372.162458,
+            "playlistIndex": 156,
+            "startDate": "2026-07-04T19:11:37.615Z",
+            "endDate": "2026-07-04T19:34:29.777Z",
+            "info": {
+              "image": "https://i.imgur.com/IAoWUJN.gif",
+              "year": 2001,
+              "episode": "Hearts and Minds: Part 1"
+            }
+          },
+          {
+            "type": "file",
+            "mediaType": "series",
+            "filepath": "t:\\toonami\\series\\justice league\\justice league 36.avi",
+            "name": "Justice League",
+            "episodeNumber": 36,
+            "runtime": 1401.14975,
+            "playlistIndex": 162,
+            "startDate": "2026-07-04T19:36:38.849Z",
+            "endDate": "2026-07-04T20:00:00.000Z",
+            "info": {
+              "image": "https://i.imgur.com/IAoWUJN.gif",
+              "year": 2001,
+              "episode": "Hearts and Minds: Part 2"
+            }
+          }
+        ],
+        "type": "block",
+        "name": "Hall of Justice",
+        "runtime": 7200,
+        "runtimeTarget": 7200,
+        "startDate": "2026-07-04T18:00:00.000Z",
+        "endDate": "2026-07-04T20:00:00.000Z"
+      },
+      {
+        "tagline": "Weekends 4.0-6.0pm",
+        "runtimeHoursTarget": 2.3,
+        "mediaList": [
+          {
+            "type": "file",
+            "mediaType": "series",
+            "filepath": "t:\\toonami\\series\\gaogaigar\\gaogaigar 18.mkv",
+            "name": "GaoGaiGar",
+            "episodeNumber": 18,
+            "runtime": 1460.459,
+            "playlistIndex": 163,
+            "startDate": "2026-07-04T20:00:00.000Z",
+            "endDate": "2026-07-04T20:24:20.459Z",
+            "info": {
+              "image": "https://i.imgur.com/5rCBrb9.gif",
+              "episode": "A Promise is the Light of another"
+            }
+          },
+          {
+            "type": "file",
+            "mediaType": "series",
+            "filepath": "t:\\toonami\\series\\big o\\big o 21.mkv",
+            "name": "Big O",
+            "episodeNumber": 21,
+            "runtime": 1427.655,
+            "playlistIndex": 170,
+            "startDate": "2026-07-04T20:27:07.723Z",
+            "endDate": "2026-07-04T20:50:55.378Z",
+            "info": {
+              "image": "https://i.imgur.com/0JJXLwO.gif",
+              "episode": "The Third Big"
+            }
+          },
+          {
+            "type": "file",
+            "mediaType": "series",
+            "filepath": "t:\\toonami\\series\\patlabor\\patlabor 14.mkv",
+            "name": "Patlabor",
+            "episodeNumber": 14,
+            "runtime": 1483.112,
+            "playlistIndex": 173,
+            "startDate": "2026-07-04T20:53:06.041Z",
+            "endDate": "2026-07-04T21:17:49.153Z",
+            "info": {
+              "fullname": "Patlabor: The Mobile Police",
+              "image": "https://i.imgur.com/lP8LKsc.gif",
+              "episode": "You Win!"
+            }
+          },
+          {
+            "type": "file",
+            "mediaType": "series",
+            "filepath": "t:\\toonami\\series\\gundam 0083\\gundam 0083 1.mkv",
+            "name": "Gundam 0083",
+            "episodeNumber": 1,
+            "rotationPremiere": true,
+            "runtime": 1615.696,
+            "playlistIndex": 178,
+            "startDate": "2026-07-04T21:20:42.059Z",
+            "endDate": "2026-07-04T21:47:37.755Z",
+            "info": {
+              "fullname": "Mobile Suit Gundam 0083: Stardust Memory",
+              "image": "https://i.imgur.com/6Gm5ykC.gif",
+              "episode": "Gundamjack"
+            }
+          },
+          {
+            "type": "file",
+            "mediaType": "series",
+            "filepath": "t:\\toonami\\series\\gundam 0083\\gundam 0083 2.mkv",
+            "name": "Gundam 0083",
+            "episodeNumber": 2,
+            "runtime": 1640.512,
+            "playlistIndex": 185,
+            "startDate": "2026-07-04T21:50:39.488Z",
+            "endDate": "2026-07-04T22:18:00.000Z",
+            "info": {
+              "fullname": "Mobile Suit Gundam 0083: Stardust Memory",
+              "image": "https://i.imgur.com/6Gm5ykC.gif",
+              "episode": "Endless Pursuit"
+            }
+          }
+        ],
+        "type": "block",
+        "name": "Giant Robot Hour",
+        "runtime": 8280,
+        "runtimeTarget": 8280,
+        "startDate": "2026-07-04T20:00:00.000Z",
+        "endDate": "2026-07-04T22:18:00.000Z"
+      },
+      {
+        "tagline": "Weekends 6.0-8.0pm",
+        "runtimeHoursTarget": 2.1,
+        "mediaList": [
+          {
+            "type": "file",
+            "mediaType": "series",
+            "filepath": "t:\\toonami\\series\\celebrity deathmatch\\celebrity deathmatch 77.mp4",
+            "name": "Celebrity Deathmatch",
+            "episodeNumber": 77,
+            "runtime": 1286.921,
+            "playlistIndex": 186,
+            "startDate": "2026-07-04T22:18:00.000Z",
+            "endDate": "2026-07-04T22:39:26.921Z",
+            "info": {
+              "image": "https://i.imgur.com/asKW14D.gif",
+              "episode": "Rockstarmagedon"
+            }
+          },
+          {
+            "type": "file",
+            "mediaType": "series",
+            "filepath": "t:\\toonami\\series\\initial d\\initial d 43.mkv",
+            "name": "Initial D",
+            "episodeNumber": 43,
+            "runtime": 1642.132,
+            "playlistIndex": 188,
+            "startDate": "2026-07-04T22:39:43.547Z",
+            "endDate": "2026-07-04T23:07:05.679Z",
+            "info": {
+              "image": "https://i.imgur.com/WzNYM0K.gif",
+              "episode": "Full Throttle! Downhill Battle"
+            }
+          },
+          {
+            "type": "file",
+            "mediaType": "series",
+            "filepath": "t:\\toonami\\series\\initial d\\initial d 44.mkv",
+            "name": "Initial D",
+            "episodeNumber": 44,
+            "runtime": 1642.09,
+            "playlistIndex": 189,
+            "startDate": "2026-07-04T23:07:05.679Z",
+            "endDate": "2026-07-04T23:34:27.769Z",
+            "info": {
+              "image": "https://i.imgur.com/WzNYM0K.gif",
+              "episode": "The Strongest Man of the Todo School"
+            }
+          },
+          {
+            "type": "file",
+            "mediaType": "series",
+            "filepath": "t:\\toonami\\series\\fighting spirit\\fighting spirit 20.mkv",
+            "name": "Fighting Spirit",
+            "episodeNumber": 20,
+            "runtime": 1445.912,
+            "playlistIndex": 191,
+            "startDate": "2026-07-04T23:34:57.366Z",
+            "endDate": "2026-07-04T23:59:03.278Z",
+            "info": {
+              "image": "https://i.imgur.com/q17pj8O.gif",
+              "year": 2000,
+              "episode": "The Threat of Shotgun"
+            }
+          },
+          {
+            "type": "file",
+            "mediaType": "series",
+            "filepath": "t:\\toonami\\series\\fighting spirit\\fighting spirit 21.mkv",
+            "name": "Fighting Spirit",
+            "episodeNumber": 21,
+            "runtime": 1444.525,
+            "playlistIndex": 195,
+            "startDate": "2026-07-04T23:59:55.475Z",
+            "endDate": "2026-07-05T00:24:00.000Z",
+            "info": {
+              "image": "https://i.imgur.com/q17pj8O.gif",
+              "year": 2000,
+              "episode": "The Way to Capture a Prodigy"
+            }
+          }
+        ],
+        "type": "block",
+        "name": "Toonami After 8: The Ocho",
+        "runtime": 7560,
+        "runtimeTarget": 7560,
+        "startDate": "2026-07-04T22:18:00.000Z",
+        "endDate": "2026-07-05T00:24:00.000Z"
+      },
+      {
+        "runtimeHoursTarget": 4.1,
+        "mediaList": [
+          {
+            "type": "file",
+            "mediaType": "movie",
+            "name": "Team America World Police",
+            "filepath": "t:\\toonami\\specials\\independence day\\team america world police.mp4",
+            "runtime": 5862.165333,
+            "playlistIndex": 196,
+            "startDate": "2026-07-05T00:24:00.000Z",
+            "endDate": "2026-07-05T02:01:42.165Z"
+          },
+          {
+            "type": "file",
+            "mediaType": "movie",
+            "name": "Rifftrax - Independence Day",
+            "filepath": "t:\\toonami\\rifftrax\\rifftrax - independence day.mp4",
+            "runtime": 8822.928,
+            "playlistIndex": 200,
+            "startDate": "2026-07-05T02:02:57.071Z",
+            "endDate": "2026-07-05T04:30:00.000Z"
+          }
+        ],
+        "type": "block",
+        "name": "Special: Independence Day",
+        "runtime": 14760,
+        "runtimeTarget": 14760,
+        "startDate": "2026-07-05T00:24:00.000Z",
+        "endDate": "2026-07-05T04:30:00.000Z"
+      },
+      {
+        "tagline": "Saturdays 11.0pm",
+        "mediaList": [
+          {
+            "type": "file",
+            "mediaType": "movie",
+            "isSpecialFeature": true,
+            "name": "Interstella 5555",
+            "filepath": "t:\\toonami\\movies\\interstella 5555.mp4",
+            "runtime": 3909.9,
+            "playlistIndex": 202,
+            "startDate": "2026-07-05T04:31:00.098Z",
+            "endDate": "2026-07-05T05:36:10.000Z",
+            "info": {
+              "image": "https://i.imgur.com/ODBlBOU.gif"
+            }
+          }
+        ],
+        "type": "block",
+        "name": "Special: Interstella 5555",
+        "runtime": 3969.998,
+        "startDate": "2026-07-05T04:30:00.000Z",
+        "endDate": "2026-07-05T05:36:10.000Z"
+      },
+      {
+        "mediaList": [
+          {
+            "type": "file",
+            "mediaType": "movie",
+            "name": "Rifftrax - Star Wars VI",
+            "filepath": "t:\\toonami\\rifftrax\\rifftrax - star wars vi.mp4",
+            "runtime": 8087.997,
+            "playlistIndex": 203,
+            "startDate": "2026-07-05T05:36:10.000Z",
+            "endDate": "2026-07-05T07:50:57.997Z"
+          },
+          {
+            "type": "file",
+            "mediaType": "movie",
+            "name": "Rifftrax - Laser Mission",
+            "filepath": "t:\\toonami\\rifftrax\\rifftrax - laser mission.mp4",
+            "runtime": 5080.943,
+            "playlistIndex": 205,
+            "startDate": "2026-07-05T07:53:07.172Z",
+            "endDate": "2026-07-05T09:17:48.115Z"
+          },
+          {
+            "type": "file",
+            "mediaType": "movie",
+            "name": "MST3K - S09E10 - The Final Sacrifice",
+            "filepath": "t:\\toonami\\mst3k\\mst3k - s09e10 - the final sacrifice.avi",
+            "runtime": 5513.913914,
+            "playlistIndex": 207,
+            "startDate": "2026-07-05T09:18:07.820Z",
+            "endDate": "2026-07-05T10:50:02.000Z"
+          }
+        ],
+        "type": "block",
+        "name": "Toonami AfterParty",
+        "runtime": 18831.733914,
+        "startDate": "2026-07-05T05:36:10.000Z",
+        "endDate": "2026-07-05T10:50:02.000Z"
+      },
+      {
+        "runtimeHoursTarget": 2,
+        "mediaList": [
+          {
+            "type": "file",
+            "mediaType": "short",
+            "filepath": "t:\\toonami\\rifftrax\\rifftrax shorts\\rifftrax - dont be a bloody idiot.mp4",
+            "runtime": 1005.872,
+            "playlistIndex": 208,
+            "startDate": "2026-07-05T10:50:02.000Z",
+            "endDate": "2026-07-05T11:06:47.872Z"
+          },
+          {
+            "type": "file",
+            "mediaType": "short",
+            "filepath": "t:\\toonami\\rifftrax\\rifftrax shorts\\rifftrax - one got fat.mp4",
+            "runtime": 895.028,
+            "playlistIndex": 212,
+            "startDate": "2026-07-05T11:08:15.853Z",
+            "endDate": "2026-07-05T11:23:10.881Z"
+          },
+          {
+            "type": "file",
+            "mediaType": "short",
+            "filepath": "t:\\toonami\\rifftrax\\rifftrax shorts\\rifftrax - buying food.mp4",
+            "runtime": 689.122,
+            "playlistIndex": 217,
+            "startDate": "2026-07-05T11:24:37.792Z",
+            "endDate": "2026-07-05T11:36:06.914Z"
+          },
+          {
+            "type": "file",
+            "mediaType": "short",
+            "filepath": "t:\\toonami\\rifftrax\\rifftrax shorts\\rifftrax - playing together.mp4",
+            "runtime": 616.116,
+            "playlistIndex": 221,
+            "startDate": "2026-07-05T11:37:38.004Z",
+            "endDate": "2026-07-05T11:47:54.120Z"
+          },
+          {
+            "type": "file",
+            "mediaType": "short",
+            "filepath": "t:\\toonami\\rifftrax\\rifftrax shorts\\rifftrax - fad diet circus.mp4",
+            "runtime": 611.745,
+            "playlistIndex": 225,
+            "startDate": "2026-07-05T11:49:23.487Z",
+            "endDate": "2026-07-05T11:59:35.232Z"
+          },
+          {
+            "type": "file",
+            "mediaType": "short",
+            "filepath": "t:\\toonami\\rifftrax\\rifftrax shorts\\rifftrax - carnivorous plants.mp4",
+            "runtime": 601.101,
+            "playlistIndex": 229,
+            "startDate": "2026-07-05T12:01:04.366Z",
+            "endDate": "2026-07-05T12:11:05.467Z"
+          },
+          {
+            "type": "file",
+            "mediaType": "short",
+            "filepath": "t:\\toonami\\rifftrax\\rifftrax shorts\\rifftrax - whatever the weather.mp4",
+            "runtime": 588.689,
+            "playlistIndex": 233,
+            "startDate": "2026-07-05T12:12:36.923Z",
+            "endDate": "2026-07-05T12:22:25.612Z"
+          },
+          {
+            "type": "file",
+            "mediaType": "short",
+            "filepath": "t:\\toonami\\rifftrax\\rifftrax shorts\\rifftrax - down and out.mp4",
+            "runtime": 551.685,
+            "playlistIndex": 238,
+            "startDate": "2026-07-05T12:23:57.574Z",
+            "endDate": "2026-07-05T12:33:09.259Z"
+          },
+          {
+            "type": "file",
+            "mediaType": "short",
+            "filepath": "t:\\toonami\\rifftrax\\rifftrax shorts\\rifftrax - why doesn't cathy eat breakfast - petaluma chicken.mp4",
+            "runtime": 468.635,
+            "playlistIndex": 243,
+            "startDate": "2026-07-05T12:34:41.247Z",
+            "endDate": "2026-07-05T12:42:29.882Z"
+          },
+          {
+            "type": "file",
+            "mediaType": "short",
+            "filepath": "t:\\toonami\\rifftrax\\rifftrax shorts\\rifftrax - one turkey two turkey.mp4",
+            "runtime": 358.992,
+            "playlistIndex": 247,
+            "startDate": "2026-07-05T12:44:03.008Z",
+            "endDate": "2026-07-05T12:50:02.000Z"
+          }
+        ],
+        "type": "block",
+        "name": "Rifftrax Shorts",
+        "runtime": 7200,
+        "runtimeTarget": 7200,
+        "startDate": "2026-07-05T10:50:02.000Z",
+        "endDate": "2026-07-05T12:50:02.000Z",
+        "rerun": true
+      }
+    ],
+    "modifiers": [
+      {
+        "swap": {
+          "playlist": "April Fools"
+        },
+        "condition": {
+          "holiday": "april fools"
+        }
+      },
+      {
+        "swap": {
+          "playlist": "Halloween"
+        },
+        "condition": {
+          "holiday": "halloween"
+        }
+      },
+      {
+        "swap": {
+          "playlist": "Christmas Eve"
+        },
+        "condition": {
+          "holiday": "christmas eve"
+        }
+      },
+      {
+        "swap": {
+          "playlist": "Christmas"
+        },
+        "condition": {
+          "holiday": "christmas"
+        }
+      }
+    ],
+    "name": "Weekends",
+    "type": "playlist",
+    "startDate": "2026-07-04T10:00:00.000Z",
+    "endDate": "2026-07-05T12:50:02.000Z"
+  },
+  "endDate": "2026-07-05T12:50:02.000Z"
+}
