@@ -63,7 +63,7 @@ function parseIcon($item) {
 }
 
 function parseStart($item, date) {
-  const timezone = 'Europe/Madrid'
+  const timezone = 'Europe/Lisbon'
   const time = $item('.hora').text().trim()
 
   return dayjs.tz(`${date.tz(timezone).format('YYYY-MM-DD')} ${time}`, 'YYYY-MM-DD HH:mm', timezone)
