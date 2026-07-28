@@ -62,7 +62,7 @@ const HEADERS = {
 }
 
 module.exports = {
-  site: 'dazn.de',
+  site: 'dazn.com',
   days: 3,
   url({ channel }) {
     const { country } = parseSiteId(channel.site_id)

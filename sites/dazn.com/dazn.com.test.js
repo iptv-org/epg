@@ -4,7 +4,7 @@ const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
-const { channels, parser, url } = require('./dazn.de.config.js')
+const { channels, parser, url } = require('./dazn.com.config.js')
 
 dayjs.extend(utc)
 dayjs.extend(customParseFormat)
