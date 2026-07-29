@@ -10,17 +10,16 @@ dayjs.extend(utc)
 
 doFetch.setCheckResult(false).setDebugger(debug)
 
-const API_ENDPOINT = 'https://awk.epgsky.com/hawk/linear'
+const ATLANTIS_API_ENDPOINT = 'https://atlantis.epgsky.com/as'
 const CHANNELS_FILE = path.join(__dirname, 'sky.com.channels.xml')
+const HAWK_API_ENDPOINT = 'https://awk.epgsky.com/hawk/linear'
 const LANG_BY_TERRITORY = {
   DE: 'de',
   GB: 'en',
   IT: 'it'
 }
 const MAX_SIDS_PER_REQUEST = 20
-const GRAB_START_DATE = dayjs
-  .utc(process.env.CURR_DATE || new Date().toISOString())
-  .startOf('d')
+const GRAB_START_DATE = dayjs.utc(process.env.CURR_DATE || new Date().toISOString()).startOf('d')
 const eventIds = new Set()
 const scheduleRequests = new Map()
 let scheduleBatches
@@ -30,7 +29,9 @@ module.exports = {
   days: 2,
   request: {
     headers({ channel }) {
-      return getHeaders(parseSiteId(channel.site_id).territory)
+      const { territory } = parseSiteId(channel.site_id)
+
+      return isUhdChannel(channel) ? getAtlantisHeaders(territory) : getHeaders(territory)
     },
     cache: {
       ttl: 24 * 60 * 60 * 1000, // 1 day
@@ -39,9 +40,13 @@ module.exports = {
   },
   url({ date, channel }) {
     const { sid } = parseSiteId(channel.site_id)
+    if (isUhdChannel(channel)) {
+      return `${ATLANTIS_API_ENDPOINT}/schedule/${date.format('YYYYMMDD')}/${sid}`
+    }
+
     const sids = getScheduleBatch(channel.site_id) || [sid]
 
-    return `${API_ENDPOINT}/schedule/${date.format('YYYYMMDD')}/${sids.join(',')}`
+    return `${HAWK_API_ENDPOINT}/schedule/${date.format('YYYYMMDD')}/${sids.join(',')}`
   },
   async parser({ content, channel, date, config }) {
     const programs = []
@@ -95,7 +100,7 @@ module.exports = {
       type: 'regions',
       lang,
       territory,
-      url: `${API_ENDPOINT}/regions`,
+      url: `${HAWK_API_ENDPOINT}/regions`,
       params: {
         headers: getHeaders(territory)
       }
@@ -135,16 +140,32 @@ module.exports = {
           if (regions.has(key)) continue
 
           regions.add(key)
-          state.serviceRequests++
-          queue.push({
-            type: 'services',
-            lang: request.lang,
-            territory: request.territory,
-            url: `${API_ENDPOINT}/services/${regionId}`,
-            params: {
+          const serviceRequests = [
+            {
+              source: 'hawk',
+              url: `${HAWK_API_ENDPOINT}/services/${regionId}`,
               headers: getHeaders(request.territory)
+            },
+            {
+              source: 'atlantis',
+              url: `${ATLANTIS_API_ENDPOINT}/services/${regionId}`,
+              headers: getAtlantisHeaders(request.territory)
             }
-          })
+          ]
+
+          state.serviceRequests += serviceRequests.length
+          for (const serviceRequest of serviceRequests) {
+            queue.push({
+              type: 'services',
+              lang: request.lang,
+              source: serviceRequest.source,
+              territory: request.territory,
+              url: serviceRequest.url,
+              params: {
+                headers: serviceRequest.headers
+              }
+            })
+          }
         }
         return
       }
@@ -162,15 +183,17 @@ module.exports = {
         }
 
         if (!service.t) continue
+        if (request.source === 'atlantis' && service.schedule !== true) continue
 
         const siteId = `${request.territory}#${service.sid}`
-        if (!channels.has(siteId)) {
+        if (!channels.has(siteId) || request.source === 'hawk') {
+          const isNew = !channels.has(siteId)
           channels.set(siteId, {
             lang: request.lang,
             site_id: siteId,
             name: service.t
           })
-          state.channels++
+          if (isNew) state.channels++
         }
       }
     })
@@ -187,9 +210,7 @@ module.exports = {
 
     if (incomplete.length || failures.length) {
       const reasons = [...new Set([...failures, ...incomplete])].join(', ')
-      throw new Error(
-        `Unable to load complete Sky channel list: ${reasons || 'no channels found'}`
-      )
+      throw new Error(`Unable to load complete Sky channel list: ${reasons || 'no channels found'}`)
     }
 
     return [...channels.values()]
@@ -202,15 +223,22 @@ function getHeaders(territory) {
   }
 }
 
+function getAtlantisHeaders(territory) {
+  return {
+    'X-SkyOTT-Proposition': 'SKYQ',
+    'X-SkyOTT-Provider': 'SKY',
+    ...getHeaders(territory)
+  }
+}
+
 function getEventId(channel, event) {
   return `${channel.site_id}:${event.eid}`
 }
 
 function getGrabRange(config) {
   const configuredDays = Number(config?.days)
-  const days = Number.isInteger(configuredDays) && configuredDays > 0
-    ? configuredDays
-    : module.exports.days
+  const days =
+    Number.isInteger(configuredDays) && configuredDays > 0 ? configuredDays : module.exports.days
   const stop = GRAB_START_DATE.add(days, 'd')
 
   return {
@@ -228,7 +256,7 @@ function getSchedule(channel, date) {
   if (!scheduleRequests.has(key)) {
     const request = axios
       .get(url, {
-        headers: getHeaders(territory)
+        headers: module.exports.request.headers({ channel })
       })
       .then(response => response.data)
       .catch(error => {
@@ -254,8 +282,11 @@ function loadScheduleBatches() {
     Object.keys(LANG_BY_TERRITORY).map(territory => [territory, new Set()])
   )
 
-  for (const match of channelsXml.matchAll(/\bsite_id="([^"]+)"/g)) {
-    const { sid, territory } = parseSiteId(match[1])
+  for (const match of channelsXml.matchAll(/<channel\b([^>]*)>([^<]*)<\/channel>/g)) {
+    const siteId = match[1].match(/\bsite_id="([^"]+)"/)?.[1]
+    if (!siteId || isUhdChannel({ name: match[2] })) continue
+
+    const { sid, territory } = parseSiteId(siteId)
     sidsByTerritory.get(territory).add(sid)
   }
 
@@ -287,6 +318,10 @@ function collectEvents(content, channel, events) {
       }
     }
   }
+}
+
+function isUhdChannel(channel) {
+  return /uhd|ultra\s*hd|4k/i.test(`${channel?.name || ''} ${channel?.xmltv_id || ''}`)
 }
 
 function parseSiteId(siteId) {
