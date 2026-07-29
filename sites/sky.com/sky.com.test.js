@@ -1,4 +1,6 @@
-const { parser, url } = require('./sky.com.config.js')
+process.env.CURR_DATE = '2026-06-08'
+
+const { channels, parser, request, url } = require('./sky.com.config.js')
 const fs = require('fs')
 const path = require('path')
 const axios = require('axios')
@@ -13,29 +15,73 @@ jest.mock('axios')
 
 const date = dayjs.utc('2026-06-08').startOf('d')
 const channel = {
-  site_id: '4086',
+  lang: 'en',
+  site_id: 'GB#4086',
   xmltv_id: 'SkyHistory.uk@HD'
 }
 
-axios.get.mockImplementation(url => {
+function mockScheduleRequest(url) {
   const urls = {
-    'https://awk.epgsky.com/hawk/linear/schedule/20260608/4086': 'content1.json',
-    'https://awk.epgsky.com/hawk/linear/schedule/20260609/4086': 'content2.json'
+    '20260608': 'content1.json',
+    '20260609': 'content2.json'
   }
   let data = ''
-  if (urls[url] !== undefined) {
-    data = fs.readFileSync(path.join(__dirname, '__data__', urls[url])).toString()
+  const match = url.match(/\/schedule\/(\d{8})\/([^/]+)$/)
+  if (match && match[2].split(',').includes('4086') && urls[match[1]] !== undefined) {
+    data = fs.readFileSync(path.join(__dirname, '__data__', urls[match[1]])).toString()
   }
-  return Promise.resolve({ data })
+  return Promise.resolve({ data, headers: {}, request: {} })
+}
+
+beforeEach(() => {
+  jest.clearAllMocks()
+  axios.get.mockImplementation(mockScheduleRequest)
 })
 
 it('can generate valid url', () => {
-  expect(url({ channel, date })).toBe('https://awk.epgsky.com/hawk/linear/schedule/20260608/4086')
+  const result = url({ channel, date })
+  const sids = result.split('/').pop().split(',')
+
+  expect(result).toContain('https://awk.epgsky.com/hawk/linear/schedule/20260608/')
+  expect(sids).toHaveLength(20)
+  expect(sids).toContain('4086')
+  expect(new Set(sids)).toHaveProperty('size', 20)
+
+  const companion = {
+    ...channel,
+    site_id: `GB#${sids.find(sid => sid !== '4086')}`
+  }
+  expect(url({ channel: companion, date })).toBe(result)
+})
+
+it('falls back to a single SID for a channel outside the repository XML', () => {
+  expect(url({ channel: { ...channel, site_id: 'GB#999999' }, date })).toBe(
+    'https://awk.epgsky.com/hawk/linear/schedule/20260608/999999'
+  )
+})
+
+it('rejects an unsupported territory in the site ID', () => {
+  expect(() => url({ channel: { ...channel, site_id: 'XX#4086' }, date })).toThrow(
+    'Expected "<territory>#<sid>"'
+  )
+})
+
+it('can generate territory headers from the site ID', () => {
+  expect(request.headers({ channel })).toEqual({
+    'X-SkyOTT-Territory': 'GB'
+  })
+  expect(request.headers({ channel: { ...channel, lang: 'en', site_id: 'DE#4086' } })).toEqual({
+    'X-SkyOTT-Territory': 'DE'
+  })
+  expect(request.headers({ channel: { ...channel, lang: 'it', site_id: 'IT#4086' } })).toEqual({
+    'X-SkyOTT-Territory': 'IT'
+  })
+  expect(request.cache.vary).toEqual(['X-SkyOTT-Territory'])
 })
 
 it('can parse response', async () => {
   const content = fs.readFileSync(path.join(__dirname, '__data__', 'content1.json'))
-  const result = (await parser({ content, channel, date }))
+  const result = (await parser({ config: { days: 1 }, content, channel, date }))
     .map(p => {
       p.start = p.start.toJSON()
       p.stop = p.stop.toJSON()
@@ -65,13 +111,196 @@ it('can parse response', async () => {
     icon: 'https://images.metadata.sky.com/pd-image/68152ae7-97d6-44c8-8a54-e78710b94a76/16-9/640',
     image: 'https://images.metadata.sky.com/pd-image/68152ae7-97d6-44c8-8a54-e78710b94a76/16-9/640'
   })
+  expect(axios.get).toHaveBeenCalledWith(
+    url({ channel, date: date.add(1, 'd') }),
+    {
+      headers: {
+        'X-SkyOTT-Territory': 'GB'
+      }
+    }
+  )
+})
+
+it('only loads a follow-up batch for the final requested date', async () => {
+  await parser({
+    config: { days: 2 },
+    content: '',
+    channel,
+    date
+  })
+  expect(axios.get).not.toHaveBeenCalled()
+
+  await parser({
+    config: { days: 2 },
+    content: '',
+    channel,
+    date: date.add(1, 'd')
+  })
+  expect(axios.get).toHaveBeenCalledTimes(1)
+  expect(axios.get).toHaveBeenCalledWith(
+    url({ channel, date: date.add(2, 'd') }),
+    {
+      headers: {
+        'X-SkyOTT-Territory': 'GB'
+      }
+    }
+  )
+})
+
+it('loads a shared follow-up batch only once', async () => {
+  const sids = url({ channel, date }).split('/').pop().split(',')
+  const companion = {
+    ...channel,
+    site_id: `GB#${sids.find(sid => sid !== '4086')}`
+  }
+  const finalDate = date.add(2, 'd')
+
+  await Promise.all([
+    parser({ config: { days: 3 }, content: '', channel, date: finalDate }),
+    parser({ config: { days: 3 }, content: '', channel: companion, date: finalDate })
+  ])
+
+  expect(axios.get).toHaveBeenCalledTimes(1)
+  expect(axios.get).toHaveBeenCalledWith(
+    url({ channel, date: finalDate.add(1, 'd') }),
+    {
+      headers: {
+        'X-SkyOTT-Territory': 'GB'
+      }
+    }
+  )
 })
 
 it('can handle empty guide', async () => {
   const result = await parser({
+    config: { days: 2 },
     date,
     channel,
     content: ''
   })
   expect(result).toMatchObject([])
+})
+
+it('keeps identical event IDs isolated by territory', async () => {
+  const content = JSON.stringify({
+    schedule: [
+      {
+        sid: '123',
+        events: [
+          {
+            eid: 'shared-event',
+            st: date.unix(),
+            d: 3600,
+            t: 'Shared event'
+          }
+        ]
+      }
+    ]
+  })
+  const englishChannel = { lang: 'en', site_id: 'GB#123' }
+  const germanChannel = { lang: 'de', site_id: 'DE#123' }
+
+  expect(await parser({ content, channel: englishChannel, date })).toHaveLength(1)
+  expect(await parser({ content, channel: germanChannel, date })).toHaveLength(1)
+  expect(await parser({ content, channel: englishChannel, date })).toHaveLength(0)
+})
+
+it('can load and deduplicate all territories by language and site ID', async () => {
+  axios.get.mockImplementation((url, options) => {
+    const territory = options.headers['X-SkyOTT-Territory']
+    const titles = {
+      DE: 'Sky One Deutschland HD',
+      GB: 'Sky One HD',
+      IT: 'Sky Uno HD'
+    }
+
+    if (url.endsWith('/regions')) {
+      return Promise.resolve({
+        data: {
+          regions: [
+            { bouquetId: 1, subBouquetId: 2 },
+            { bouquetId: 1, subBouquetId: 2 }
+          ]
+        },
+        headers: {},
+        request: {}
+      })
+    }
+
+    return Promise.resolve({
+      data: {
+        services: [
+          { sid: '123', t: titles[territory] },
+          { sid: '123', t: titles[territory] },
+          ...(territory === 'IT' ? [{ sid: '582' }] : [])
+        ]
+      },
+      headers: {},
+      request: {}
+    })
+  })
+
+  await expect(channels()).resolves.toEqual([
+    {
+      lang: 'de',
+      site_id: 'DE#123',
+      name: 'Sky One Deutschland HD'
+    },
+    {
+      lang: 'en',
+      site_id: 'GB#123',
+      name: 'Sky One HD'
+    },
+    {
+      lang: 'it',
+      site_id: 'IT#123',
+      name: 'Sky Uno HD'
+    }
+  ])
+  expect(axios.get).toHaveBeenCalledTimes(6)
+  expect(axios.get.mock.calls.map(([, options]) => options.headers)).toEqual(
+    expect.arrayContaining([
+      { 'X-SkyOTT-Territory': 'GB' },
+      { 'X-SkyOTT-Territory': 'DE' },
+      { 'X-SkyOTT-Territory': 'IT' }
+    ])
+  )
+})
+
+it('rejects unsupported channel territories', () => {
+  expect(() => request.headers({ channel: { ...channel, site_id: 'FR#4086' } })).toThrow(
+    'territory "DE", "GB" or "IT"'
+  )
+})
+
+it('rejects an incomplete channel list', async () => {
+  axios.get.mockImplementation((url, options) => {
+    if (url.endsWith('/regions')) {
+      return Promise.resolve({
+        data: {
+          regions: [{ bouquetId: 1, subBouquetId: 2 }]
+        },
+        headers: {},
+        request: {}
+      })
+    }
+
+    if (options.headers['X-SkyOTT-Territory'] === 'DE') {
+      return Promise.resolve({
+        data: {
+          services: [{ sid: '123', t: 'Sky One Deutschland HD' }]
+        },
+        headers: {},
+        request: {}
+      })
+    }
+
+    return Promise.resolve({
+      data: {},
+      headers: {},
+      request: {}
+    })
+  })
+
+  await expect(channels()).rejects.toThrow('Unable to load complete Sky channel list')
 })
