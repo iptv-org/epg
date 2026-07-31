@@ -40,6 +40,7 @@
     <tr><td><a href="sites/ctc.ru">ctc.ru</a></td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/cubmu.com">cubmu.com</a></td><td align="right">76</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/cyta.com.cy">cyta.com.cy</a></td><td align="right">117</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/dazn.com">dazn.com</a></td><td align="right">121</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/dens.tv">dens.tv</a></td><td align="right">43</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/derana.lk">derana.lk</a></td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/digea.gr">digea.gr</a></td><td align="right">88</td><td align="center">🟢</td><td></td></tr>
@@ -99,7 +100,7 @@
     <tr><td><a href="sites/mediaklikk.hu">mediaklikk.hu</a></td><td align="right">8</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/mediasetinfinity.mediaset.it">mediasetinfinity.mediaset.it</a></td><td align="right">13</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/melita.com">melita.com</a></td><td align="right">127</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/meo.pt">meo.pt</a></td><td align="right">212</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/meo.pt">meo.pt</a></td><td align="right">210</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/meuguia.tv">meuguia.tv</a></td><td align="right">102</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/mewatch.sg">mewatch.sg</a></td><td align="right">119</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/mi.tv">mi.tv</a></td><td align="right">2084</td><td align="center">🟢</td><td></td></tr>
@@ -117,7 +118,7 @@
     <tr><td><a href="sites/neo.io">neo.io</a></td><td align="right">337</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/nhkworldpremium.com">nhkworldpremium.com</a></td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/nhl.com">nhl.com</a></td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/nostv.pt">nostv.pt</a></td><td align="right">161</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/nostv.pt">nostv.pt</a></td><td align="right">154</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/novasports.gr">novasports.gr</a></td><td align="right">16</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/nowplayer.now.com">nowplayer.now.com</a></td><td align="right">130</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/nuevosiglo.com.uy">nuevosiglo.com.uy</a></td><td align="right">173</td><td align="center">🟢</td><td></td></tr>
@@ -185,7 +186,7 @@
     <tr><td><a href="sites/turksatkablo.com.tr">turksatkablo.com.tr</a></td><td align="right">177</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv-programme.telecablesat.fr">tv-programme.telecablesat.fr</a></td><td align="right">268</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv-spored.siol.net">tv-spored.siol.net</a></td><td align="right">312</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/tv.blue.ch">tv.blue.ch</a></td><td align="right">1030</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/tv.blue.ch">tv.blue.ch</a></td><td align="right">1148</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.boxbg.net">tv.boxbg.net</a></td><td align="right">83</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.cctv.com">tv.cctv.com</a></td><td align="right">94</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tv.dir.bg">tv.dir.bg</a></td><td align="right">100</td><td align="center">🟢</td><td></td></tr>
@@ -229,7 +230,7 @@
     <tr><td><a href="sites/virgintvgo.virginmedia.com">virgintvgo.virginmedia.com</a></td><td align="right">238</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/visionplus.id">visionplus.id</a></td><td align="right">132</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/vivoplay.com.br">vivoplay.com.br</a></td><td align="right">397</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/vodafone.pt">vodafone.pt</a></td><td align="right">146</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/vodafone.pt">vodafone.pt</a></td><td align="right">162</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/vrt.be">vrt.be</a></td><td align="right">10</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/vtm.be">vtm.be</a></td><td align="right">7</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/walesi.com.fj">walesi.com.fj</a></td><td align="right">9</td><td align="center">🟢</td><td></td></tr>
