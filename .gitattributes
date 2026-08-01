@@ -1,0 +1,15 @@
+# https://docs.github.com/en/get-started/git-basics/configuring-git-to-handle-line-endings
+
+# Set the default behavior, in case people don't have core.autocrlf set
+* text=auto
+
+# Files that will always have CRLF line endings on checkout
+*.js text eol=crlf
+*.mjs text eol=crlf
+*.ts text eol=crlf
+*.xml text eol=crlf
+*.md text eol=crlf
+workers.txt text eol=crlf
+
+# Files that will always have LF line endings on checkout
+*.sh text eol=lf
