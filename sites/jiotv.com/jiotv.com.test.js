@@ -79,6 +79,29 @@ it('can parse response', () => {
   })
 })
 
+it('can parse images served from the epgdata path', () => {
+  const content = JSON.stringify({
+    epg: [
+      {
+        showname: 'Power Lunch',
+        director: '',
+        starCast: '',
+        episodeThumbnail: 'epgdata/0e9fd651fd47416d3308954342235146.jpg',
+        episodePoster: 'epgdata/0e9fd651fd47416d3308954342235146.jpg',
+        startEpoch: 1753641000000,
+        endEpoch: 1753642800000
+      }
+    ]
+  })
+
+  const results = parser({ content })
+
+  expect(results[0]).toMatchObject({
+    icon: 'https://jiotvimages.cdn.jio.com/epgdata/0e9fd651fd47416d3308954342235146.jpg',
+    image: 'https://jiotvimages.cdn.jio.com/epgdata/0e9fd651fd47416d3308954342235146.jpg'
+  })
+})
+
 it('can handle empty guide', () => {
   const results = parser({
     content: ''

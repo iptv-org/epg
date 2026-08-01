@@ -64,15 +64,19 @@ function parseList(string) {
 }
 
 function parseIcon(item) {
-  return item.episodeThumbnail
-    ? `https://jiotvimages.cdn.jio.com/dare_images/shows/700/-/${item.episodeThumbnail}`
-    : null
+  return parseImageUrl(item.episodeThumbnail)
 }
 
 function parseImage(item) {
-  return item.episodePoster
-    ? `https://jiotvimages.cdn.jio.com/dare_images/shows/700/-/${item.episodePoster}`
-    : null
+  return parseImageUrl(item.episodePoster)
+}
+
+function parseImageUrl(value) {
+  if (!value) return null
+  // paths like "epgdata/<hash>.jpg" are served from the CDN root, not from /dare_images/shows/<width>/-/
+  if (value.startsWith('epgdata/')) return `https://jiotvimages.cdn.jio.com/${value}`
+
+  return `https://jiotvimages.cdn.jio.com/dare_images/shows/700/-/${value}`
 }
 
 function parseItems(content) {
