@@ -12,7 +12,7 @@
     <tr><td><a href="sites/allente.dk">allente.dk</a></td><td align="right">100</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/allente.fi">allente.fi</a></td><td align="right">89</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/allente.no">allente.no</a></td><td align="right">119</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/allente.se">allente.se</a></td><td align="right">147</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/allente.se">allente.se</a></td><td align="right">148</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/andorradifusio.ad">andorradifusio.ad</a></td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/anteltv.com.uy">anteltv.com.uy</a></td><td align="right">54</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/antennaeurope.gr">antennaeurope.gr</a></td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
@@ -86,7 +86,7 @@
     <tr><td><a href="sites/iltalehti.fi">iltalehti.fi</a></td><td align="right">147</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/ionplustv.com">ionplustv.com</a></td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/ipko.tv">ipko.tv</a></td><td align="right">201</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/jiotv.com">jiotv.com</a></td><td align="right">1094</td><td align="center">🟢</td><td>https://github.com/iptv-org/epg/issues/3216</td></tr>
+    <tr><td><a href="sites/jiotv.com">jiotv.com</a></td><td align="right">1094</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/knr.gl">knr.gl</a></td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/kvf.fo">kvf.fo</a></td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/m.tv.sms.cz">m.tv.sms.cz</a></td><td align="right">1027</td><td align="center">🟢</td><td></td></tr>
@@ -212,7 +212,7 @@
     <tr><td><a href="sites/tvheute.at">tvheute.at</a></td><td align="right">53</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvi.iol.pt">tvi.iol.pt</a></td><td align="right">7</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvim.tv">tvim.tv</a></td><td align="right">25</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/tvinsider.com">tvinsider.com</a></td><td align="right">374</td><td align="center">🟢</td><td>https://github.com/iptv-org/epg/issues/3144</td></tr>
+    <tr><td><a href="sites/tvinsider.com">tvinsider.com</a></td><td align="right">374</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvireland.ie">tvireland.ie</a></td><td align="right">334</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvkaista.org">tvkaista.org</a></td><td align="right">149</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvmi.mt">tvmi.mt</a></td><td align="right">3</td><td align="center">🟢</td><td></td></tr>
@@ -221,7 +221,7 @@
     <tr><td><a href="sites/tvpassport.com">tvpassport.com</a></td><td align="right">19214</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvplus.com.tr">tvplus.com.tr</a></td><td align="right">150</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tvprofil.com">tvprofil.com</a></td><td align="right">8865</td><td align="center">🔴</td><td>https://github.com/iptv-org/epg/issues/3032</td></tr>
-    <tr><td><a href="sites/tvtv.us">tvtv.us</a></td><td align="right">2299</td><td align="center">🟢</td><td>https://github.com/iptv-org/epg/issues/3187</td></tr>
+    <tr><td><a href="sites/tvtv.us">tvtv.us</a></td><td align="right">2299</td><td align="center">🔴</td><td>https://github.com/iptv-org/epg/issues/3187, https://github.com/iptv-org/epg/issues/3147</td></tr>
     <tr><td><a href="sites/v3.myafn.dodmedia.osd.mil">v3.myafn.dodmedia.osd.mil</a></td><td align="right">8</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/vantagetv.ee">vantagetv.ee</a></td><td align="right">4</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/vidio.com">vidio.com</a></td><td align="right">65</td><td align="center">🟢</td><td></td></tr>
