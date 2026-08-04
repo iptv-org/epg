@@ -13,7 +13,8 @@ module.exports = {
   },
   request: {
     headers: {
-      'x-teleboy-apikey': API_KEY
+      'x-teleboy-apikey': API_KEY,
+      'User-Agent': 'Mozilla/5.0'
     }
   },
   parser({ content }) {
