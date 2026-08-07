@@ -141,9 +141,54 @@ async function main() {
       ? new EPGGrabberMock(globalConfig)
       : new EPGGrabber(globalConfig)
 
+  // Check if we need to use Playwright adapter for sites that require it
+  let playwrightAdapter: ((config: unknown) => Promise<unknown>) | null = null
+  const sitesNeedingPlaywright = ['tvtv.us'] // Add more sites here as needed
+  
+  if (options.sites && options.sites.some((site: string) => sitesNeedingPlaywright.includes(site))) {
+    try {
+      const adapterPath = path.resolve(__dirname, '..', '..', 'helpers', 'playwright-adapter.js')
+      const adapter = require(adapterPath)
+      playwrightAdapter = adapter.playwrightAdapter
+      logger.info('Playwright adapter loaded')
+    } catch (error) {
+      const err = error as Error
+      logger.warn('Failed to load Playwright adapter:', err.message)
+    }
+  }
+
+  // Add response interceptor to handle Playwright responses
+  grabber.client.instance.interceptors.response.use(
+    response => response,
+    async error => {
+      // Handle Playwright responses
+      if (error.isPlaywrightResponse) {
+        return Promise.resolve(error.response)
+      }
+      return Promise.reject(error)
+    }
+  )
+
   grabber.client.instance.interceptors.request.use(
-    request => {
+    async request => {
       logger.debug(`request: ${JSON.stringify(request, getCircularReplacer(), 2)}`)
+
+      // Use Playwright adapter for tvtv.us
+      if (playwrightAdapter && request.url?.includes('tvtv.us')) {
+        try {
+          logger.debug('Using Playwright adapter for tvtv.us request')
+          const response = await playwrightAdapter(request)
+          // Throw with special flag to be caught by response interceptor
+          return Promise.reject({
+            config: request,
+            response,
+            isPlaywrightResponse: true
+          })
+        } catch (error) {
+          logger.error('Playwright adapter error:', error)
+          throw error
+        }
+      }
 
       const curl = globalConfig.curl || defaultConfig.curl
       if (curl) {
@@ -360,7 +405,7 @@ function getLogoForChannel(channel: Channel): string | null {
 
 function getCircularReplacer() {
   const seen = new WeakSet()
-  return (key: string, value: any) => {
+  return (key: string, value: unknown) => {
     if (typeof value === 'object' && value !== null) {
       if (seen.has(value)) {
         return '[Circular]'
