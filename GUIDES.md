@@ -6,7 +6,7 @@
   </thead>
   <tbody>
     <tr><td>worker-9dd4.onrender.com</td><td align="center">🟢</td><td align="right">2</td><td align="left">a day ago</td><td><a href="https://worker-9dd4.onrender.com/guide.xml">XML</a> | <a href="https://worker-9dd4.onrender.com/guide.xml.gz">GZIP</a> | <a href="https://worker-9dd4.onrender.com/guide.json">JSON</a></td></tr>
-    <tr><td>raw.githubusercontent.com/StrangeDrVN/epg/public/output</td><td align="center">🟢</td><td align="right">470</td><td align="left">a day ago</td><td><a href="https://raw.githubusercontent.com/StrangeDrVN/epg/public/guide.xml">XML</a> | <a href="https://raw.githubusercontent.com/StrangeDrVN/epg/public/guide.xml.gz">GZIP</a> | <a href="https://raw.githubusercontent.com/StrangeDrVN/epg/public/guide.json">JSON</a></td></tr>
+    <tr><td>raw.githubusercontent.com/StrangeDrVN/epg/public/output</td><td align="center">🟢</td><td align="right">478</td><td align="left">a day ago</td><td><a href="https://raw.githubusercontent.com/StrangeDrVN/epg/public/guide.xml">XML</a> | <a href="https://raw.githubusercontent.com/StrangeDrVN/epg/public/guide.xml.gz">GZIP</a> | <a href="https://raw.githubusercontent.com/StrangeDrVN/epg/public/guide.json">JSON</a></td></tr>
   </tbody>
 </table>
 
