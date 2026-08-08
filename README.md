@@ -64,6 +64,7 @@ Options:
   -x, --proxy <url>             Use the specified proxy (example: "socks5://username:password@127.0.0.1:1234")
   --days <days>                 Number of days for which the program will be loaded (defaults to the value from the site config)
   --maxConnections <number>     Number of concurrent requests (default: 1)
+  --fill-gaps                   Fill schedule gaps with localized dummy programs (default: false)
   --gzip [path]                 Specifies whether or not to create a compressed version of the guide (default: false)
   --json [path]                 Specifies whether or not to create a JSON version of the guide (default: false)
   --curl                        Display each request as CURL (default: false)
@@ -92,6 +93,16 @@ npm run grab --- --sites=example.com --maxConnections=10
 ```
 
 But be aware that under heavy load some sites may start return an error or completely block your access.
+
+### Fill schedule gaps
+
+Use `--fill-gaps` to fill empty schedule ranges with dummy programs:
+
+```sh
+npm run grab --- --sites=example.com --fill-gaps
+```
+
+Dummy programs follow the channel timezone and are split at local 4-hour boundaries (`00-04`, `04-08`, ..., `20-24`). Real programs trim overlapping dummy ranges. If a channel request fails, no dummy programs are created for that channel and day.
 
 ### Use custom channel list
 
@@ -200,6 +211,7 @@ docker run \
 -e GZIP=true \
 -e JSON=true \
 -e CURL=true \
+-e FILL_GAPS=true \
 -e PROXY="socks5://127.0.0.1:1234" \
 -e DAYS=14 \
 -e TIMEOUT=5 \
@@ -215,6 +227,7 @@ ghcr.io/iptv-org/epg:master
 | GZIP            | Boolean value indicating whether to create a compressed version of the guide (default: false)                      |
 | JSON            | Boolean value indicating whether to create a JSON version of the guide (default: false)                            |
 | CURL            | Display each request as CURL (default: false)                                                                      |
+| FILL_GAPS       | Fill schedule gaps with localized dummy programs (default: false)                                                  |
 | PROXY           | Use the specified proxy                                                                                            |
 | DAYS            | Number of days for which the guide will be loaded (defaults to the value from the site config)                     |
 | TIMEOUT         | Timeout for each request in milliseconds (default: 30000)                                                          |

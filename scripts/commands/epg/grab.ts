@@ -1,3 +1,11 @@
+import {
+  loadJs,
+  parseProxy,
+  parseNumber,
+  parseList,
+  parseBooleanOrString,
+  parseBoolean
+} from '../../core'
 import { Logger, Timer, Collection, Template } from '@freearhey/core'
 import epgGrabber, { EPGGrabber, EPGGrabberMock } from 'epg-grabber'
 import { CurlBody } from 'curl-generator/dist/bodies/body'
@@ -9,19 +17,17 @@ import { Storage } from '@freearhey/storage-js'
 import { CurlGenerator } from 'curl-generator'
 import { QueueItem } from '../../types/queue'
 import { Option, program } from 'commander'
-import { SITES_DIR } from '../../constants'
+import { ROOT_DIR, SITES_DIR } from '../../constants'
 import { data, loadData } from '../../api'
 import dayjs, { Dayjs } from 'dayjs'
+import timezone from 'dayjs/plugin/timezone'
+import utc from 'dayjs/plugin/utc'
 import merge from 'lodash.merge'
+import fs from 'fs'
 import path from 'path'
-import {
-  parseBooleanOrString,
-  parseBoolean,
-  parseNumber,
-  parseProxy,
-  parseList,
-  loadJs
-} from '../../core'
+
+dayjs.extend(utc)
+dayjs.extend(timezone)
 
 program
   .addOption(
@@ -62,6 +68,11 @@ program
       .env('MAX_CONNECTIONS')
   )
   .addOption(
+    new Option('--fill-gaps', 'Fill schedule gaps with a dummy program')
+      .argParser(parseBoolean)
+      .env('FILL_GAPS')
+  )
+  .addOption(
     new Option('--gzip [path]', 'Create a compressed version of the guide as well')
       .argParser(parseBooleanOrString)
       .env('GZIP')
@@ -91,9 +102,31 @@ interface GrabOptions {
   lang?: string
   days?: number
   proxy?: string
+  fillGaps?: boolean
 }
 
 const options: GrabOptions = program.opts()
+const DEFAULT_LANG = 'en'
+const DEFAULT_GAP_TITLE = 'Off Air'
+const DEFAULT_TIMEZONE = 'UTC'
+const GAP_DURATION_HOURS = 4
+const HOUR_MS = 60 * 60 * 1000
+const MAX_GAP_DURATION_MS = GAP_DURATION_HOURS * HOUR_MS
+const GAP_TITLES_PATH = path.resolve(ROOT_DIR, 'scripts/data/gap_titles.json')
+
+interface ChannelDayInfo {
+  channelId: string
+  site: string
+  lang: string
+  timezone: string
+  rangeStart: number
+  rangeEnd: number
+}
+
+interface ChannelDayState {
+  hasSuccess: boolean
+  hasFailure: boolean
+}
 
 async function main() {
   if (!Array.isArray(options.sites) && typeof options.channels !== 'string')
@@ -128,6 +161,7 @@ async function main() {
   if (typeof options.maxConnections === 'number')
     globalConfig.maxConnections = options.maxConnections
   if (typeof options.curl === 'boolean') globalConfig.curl = options.curl
+  if (typeof options.fillGaps === 'boolean') globalConfig.fillGaps = options.fillGaps
   if (typeof options.gzip === 'boolean' || typeof options.gzip === 'string')
     globalConfig.gzip = options.gzip
   if (typeof options.json === 'boolean' || typeof options.json === 'string')
@@ -219,11 +253,14 @@ async function main() {
 
   logger.info('creating queue...')
   const queue = new Collection<QueueItem>()
+  const channelDayInfoByKey = new Map<string, ChannelDayInfo>()
+  const channelDayStateByKey = new Map<string, ChannelDayState>()
 
   let index = 0
   for (const channel of channelsFromXML.all()) {
     channel.index = index++
     if (!channel.site || !channel.site_id || !channel.name) continue
+    const site = channel.site
 
     const config = merge({}, defaultConfig, await loadJs(channel.getConfigPath()))
 
@@ -232,11 +269,32 @@ async function main() {
     const days = globalConfig.days || config.days
     const currDate = dayjs.utc(process.env.CURR_DATE || new Date().toISOString())
     const dates = Array.from({ length: days }, (_, day) => currDate.add(day, 'd'))
+    const lang = channel.lang || DEFAULT_LANG
+    const timezone = resolveChannelTimezone(channel)
 
     dates.forEach((date: Dayjs) => {
+      const { rangeStart, rangeEnd } = getChannelDayRange(date, timezone)
+      const dayKey = buildDayKey(channel.xmltv_id, site, lang, rangeStart)
+
+      channelDayInfoByKey.set(dayKey, {
+        channelId: channel.xmltv_id,
+        site,
+        lang,
+        timezone,
+        rangeStart,
+        rangeEnd
+      })
+      if (!channelDayStateByKey.has(dayKey)) {
+        channelDayStateByKey.set(dayKey, {
+          hasSuccess: false,
+          hasFailure: false
+        })
+      }
+
       queue.add({
         channel,
         date,
+        dayKey,
         config: { ...config },
         error: null
       })
@@ -258,7 +316,9 @@ async function main() {
 
   const requests = queue.all().map((queueItem: QueueItem) =>
     limit(async () => {
-      const { channel, config, date } = queueItem
+      const { channel, config, date, dayKey } = queueItem
+      const dayState = channelDayStateByKey.get(dayKey)
+      const originalUrl = channel.url
 
       if (!channel.logo) {
         if (config.logo) {
@@ -270,33 +330,69 @@ async function main() {
 
       channels.add(channel)
 
-      const channelPrograms = await grabber.grab(
-        channel,
-        date,
-        config,
-        (context: epgGrabber.Types.GrabCallbackContext, error: Error | null) => {
-          logger.info(
-            `  [${i}/${total}] ${context.channel.site} (${context.channel.lang}) - ${
-              context.channel.xmltv_id
-            } - ${context.date.format('MMM D, YYYY')} (${context.programs.length} programs)`
-          )
-          if (i < total) i++
+      let hasError = false
 
-          if (error) {
-            logger.info(`    ERR: ${error.message}`)
+      try {
+        const channelPrograms = await grabber.grab(
+          channel,
+          date,
+          config,
+          (context: epgGrabber.Types.GrabCallbackContext, error: Error | null) => {
+            logger.info(
+              `  [${i}/${total}] ${context.channel.site} (${context.channel.lang}) - ${
+                context.channel.xmltv_id
+              } - ${context.date.format('MMM D, YYYY')} (${context.programs.length} programs)`
+            )
+            if (i < total) i++
+
+            if (error) {
+              hasError = true
+              logger.info(`    ERR: ${error.message}`)
+            }
+          }
+        )
+
+        const _programs = new Collection<epgGrabber.Program>(channelPrograms).map<Program>(
+          program => new Program(program.toObject())
+        )
+
+        programs.concat(_programs)
+
+        if (dayState) {
+          if (hasError) {
+            dayState.hasFailure = true
+          } else {
+            dayState.hasSuccess = true
           }
         }
-      )
-
-      const _programs = new Collection<epgGrabber.Program>(channelPrograms).map<Program>(
-        program => new Program(program.toObject())
-      )
-
-      programs.concat(_programs)
+      } catch (error) {
+        const currentIndex = i
+        if (i < total) i++
+        logger.info(
+          `  [${currentIndex}/${total}] ${channel.site} (${channel.lang}) - ${channel.xmltv_id} - ${date.format(
+            'MMM D, YYYY'
+          )} (0 programs)`
+        )
+        logger.info(`    ERR: ${(error as Error).message}`)
+        if (dayState) dayState.hasFailure = true
+      } finally {
+        channel.url = originalUrl
+      }
     })
   )
 
   await Promise.all(requests)
+
+  const fillGaps =
+    options.fillGaps === undefined ? Boolean(defaultConfig.fillGaps) : parseBoolean(options.fillGaps)
+  if (fillGaps) {
+    fillProgramGaps({
+      programs,
+      channelDayInfoByKey,
+      channelDayStateByKey,
+      gapTitlesByLang: loadGapTitles()
+    })
+  }
 
   const output = globalConfig.output || defaultConfig.output
 
@@ -341,6 +437,233 @@ async function main() {
 
 main()
 
+function fillProgramGaps({
+  programs,
+  channelDayInfoByKey,
+  channelDayStateByKey,
+  gapTitlesByLang
+}: {
+  programs: Collection<Program>
+  channelDayInfoByKey: Map<string, ChannelDayInfo>
+  channelDayStateByKey: Map<string, ChannelDayState>
+  gapTitlesByLang: Record<string, string>
+}) {
+  const programsByChannelKey = new Map<string, Program[]>()
+
+  for (const program of programs.all()) {
+    if (typeof program.start !== 'number' || typeof program.stop !== 'number') continue
+
+    const lang = resolveProgramLang(program)
+    const channelKey = buildChannelKey(program.channel, program.site, lang)
+    const groupPrograms = programsByChannelKey.get(channelKey) || []
+    groupPrograms.push(program)
+    programsByChannelKey.set(channelKey, groupPrograms)
+  }
+
+  const gapPrograms: Program[] = []
+
+  for (const [dayKey, dayInfo] of channelDayInfoByKey) {
+    const dayState = channelDayStateByKey.get(dayKey)
+    if (!dayState || dayState.hasFailure || !dayState.hasSuccess) continue
+
+    const channelKey = buildChannelKey(dayInfo.channelId, dayInfo.site, dayInfo.lang)
+    const groupPrograms = (programsByChannelKey.get(channelKey) || [])
+      .filter(program => isProgramInRange(program, dayInfo.rangeStart, dayInfo.rangeEnd))
+      .sort((a, b) => a.start - b.start || a.stop - b.stop)
+
+    const gapTitle = getGapTitle(dayInfo.lang, gapTitlesByLang)
+    let cursor = dayInfo.rangeStart
+
+    for (const program of groupPrograms) {
+      if (program.stop <= dayInfo.rangeStart) {
+        cursor = Math.max(cursor, program.stop)
+        continue
+      }
+      if (program.start >= dayInfo.rangeEnd) break
+
+      const programStart = Math.max(program.start, dayInfo.rangeStart)
+      const programStop = Math.min(program.stop, dayInfo.rangeEnd)
+
+      if (programStart > cursor) {
+        appendGapPrograms({
+          gapPrograms,
+          site: dayInfo.site,
+          channelId: dayInfo.channelId,
+          lang: dayInfo.lang,
+          timezone: dayInfo.timezone,
+          title: gapTitle,
+          start: cursor,
+          stop: programStart
+        })
+      }
+
+      cursor = Math.max(cursor, programStop)
+    }
+
+    if (cursor < dayInfo.rangeEnd) {
+      appendGapPrograms({
+        gapPrograms,
+        site: dayInfo.site,
+        channelId: dayInfo.channelId,
+        lang: dayInfo.lang,
+        timezone: dayInfo.timezone,
+        title: gapTitle,
+        start: cursor,
+        stop: dayInfo.rangeEnd
+      })
+    }
+  }
+
+  programs.concat(new Collection(gapPrograms))
+}
+
+function appendGapPrograms({
+  gapPrograms,
+  site,
+  channelId,
+  lang,
+  timezone,
+  title,
+  start,
+  stop
+}: {
+  gapPrograms: Program[]
+  site: string
+  channelId: string
+  lang: string
+  timezone: string
+  title: string
+  start: number
+  stop: number
+}) {
+  let cursor = start
+
+  while (cursor < stop) {
+    const nextBoundary = getNextGapBoundary(cursor, timezone)
+    const alignedStop = nextBoundary > cursor ? nextBoundary : cursor + MAX_GAP_DURATION_MS
+    const chunkStop = Math.min(alignedStop, stop)
+    gapPrograms.push(
+      new Program({
+        site,
+        channel: channelId,
+        start: cursor,
+        stop: chunkStop,
+        titles: [{ value: title, lang }]
+      } as epgGrabber.Program)
+    )
+    cursor = chunkStop
+  }
+}
+
+function isValidProgramRange(program: Program): boolean {
+  return (
+    typeof program.start === 'number' &&
+    typeof program.stop === 'number' &&
+    Number.isFinite(program.start) &&
+    Number.isFinite(program.stop) &&
+    program.stop > program.start
+  )
+}
+
+function isProgramInRange(program: Program, rangeStart: number, rangeEnd: number): boolean {
+  return isValidProgramRange(program) && program.stop > rangeStart && program.start < rangeEnd
+}
+
+function buildChannelKey(channelId: string, site: string, lang: string): string {
+  return `${channelId}:${site}:${lang}`
+}
+
+function buildDayKey(channelId: string, site: string, lang: string, rangeStart: number): string {
+  return `${channelId}:${site}:${lang}:${rangeStart}`
+}
+
+function getChannelDayRange(
+  date: Dayjs,
+  timezone: string
+): {
+  rangeStart: number
+  rangeEnd: number
+} {
+  return {
+    rangeStart: dayjs.tz(date.format('YYYY-MM-DD'), timezone).valueOf(),
+    rangeEnd: dayjs.tz(date.add(1, 'd').format('YYYY-MM-DD'), timezone).valueOf()
+  }
+}
+
+function getNextGapBoundary(cursor: number, timezone: string): number {
+  const localCursor = dayjs(cursor).tz(timezone)
+  const localHours =
+    localCursor.hour() +
+    localCursor.minute() / 60 +
+    localCursor.second() / (60 * 60) +
+    localCursor.millisecond() / HOUR_MS
+  let boundaryHour = Math.ceil(localHours / GAP_DURATION_HOURS) * GAP_DURATION_HOURS
+
+  if (boundaryHour === localHours) boundaryHour += GAP_DURATION_HOURS
+
+  const boundaryDate =
+    boundaryHour >= 24
+      ? localCursor.add(1, 'd').format('YYYY-MM-DD')
+      : localCursor.format('YYYY-MM-DD')
+  const boundaryHourOfDay = String(boundaryHour % 24).padStart(2, '0')
+
+  return dayjs.tz(`${boundaryDate}T${boundaryHourOfDay}:00:00`, timezone).valueOf()
+}
+
+function resolveProgramLang(program: Program): string {
+  const firstTitle = Array.isArray(program.titles) ? program.titles[0] : null
+  return firstTitle && firstTitle.lang ? firstTitle.lang : DEFAULT_LANG
+}
+
+function resolveChannelTimezone(channel: Channel): string {
+  const [channelId] = channel.xmltv_id.split('@')
+  const feedTimezone = getFirstTimezoneId(data.feedsKeyByStreamId.get(channel.xmltv_id)?.getTimezones())
+  if (feedTimezone) return feedTimezone
+
+  const mainFeedTimezone = getFirstTimezoneId(getMainFeed(channelId)?.getTimezones())
+  if (mainFeedTimezone) return mainFeedTimezone
+
+  const channelData = data.channelsKeyById.get(channelId)
+  const channelTimezone = getFirstTimezoneId(channelData?.getTimezones())
+  if (channelTimezone) return channelTimezone
+
+  const countryCode = channelData?.country || getCountryCodeFromChannelId(channelId)
+  const countryTimezones = countryCode
+    ? data.timezonesGroupedByCountryCode.get(countryCode.toUpperCase())
+    : null
+
+  return countryTimezones && countryTimezones.length ? countryTimezones[0].id : DEFAULT_TIMEZONE
+}
+
+function getMainFeed(channelId: string) {
+  const feeds = data.feedsGroupedByChannelId.get(channelId) || []
+
+  return feeds.find(feed => feed.is_main)
+}
+
+function getFirstTimezoneId(timezones?: Collection<{ id: string }>): string | null {
+  const timezone = timezones ? timezones.first() : null
+  return timezone ? timezone.id : null
+}
+
+function getCountryCodeFromChannelId(channelId: string): string | null {
+  const countryCode = channelId.split('.').pop()
+
+  return countryCode && /^[a-z]{2}$/i.test(countryCode) ? countryCode.toUpperCase() : null
+}
+
+function loadGapTitles(): Record<string, string> {
+  try {
+    return JSON.parse(fs.readFileSync(GAP_TITLES_PATH, 'utf8'))
+  } catch {
+    return {}
+  }
+}
+
+function getGapTitle(lang: string, gapTitlesByLang: Record<string, string>): string {
+  return gapTitlesByLang[lang] || gapTitlesByLang[DEFAULT_LANG] || DEFAULT_GAP_TITLE
+}
+
 function getLogoForChannel(channel: Channel): string | null {
   const feedData = data.feedsKeyByStreamId.get(channel.xmltv_id)
   if (feedData) {
@@ -359,8 +682,8 @@ function getLogoForChannel(channel: Channel): string | null {
 }
 
 function getCircularReplacer() {
-  const seen = new WeakSet()
-  return (key: string, value: any) => {
+  const seen = new WeakSet<object>()
+  return (key: string, value: unknown) => {
     if (typeof value === 'object' && value !== null) {
       if (seen.has(value)) {
         return '[Circular]'

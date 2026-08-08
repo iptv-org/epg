@@ -5,6 +5,7 @@ import { Dayjs } from 'dayjs'
 export interface QueueItem {
   channel: Channel
   date: Dayjs
+  dayKey: string
   config: epgGrabber.Types.SiteConfig
   error: string | null
 }
