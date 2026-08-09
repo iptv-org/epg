@@ -123,14 +123,23 @@ buckets.us.push(
   ...readChannels(path.join(FORK, 'sites/xumo.tv/xumo.tv.channels.xml'))
 )
 
-// Thailand — strip @SD suffix from gigatv xmltv_ids so they match the NBTC ids
+// Thailand — NBTC (official regulator DTT guide) is the primary source: it
+// covers all 20 national channels directly from the government EPG feed and
+// isn't a scraped 3rd-party aggregator. gigatv.3bbtv.co.th fills in extra
+// channels NBTC doesn't carry. tv.trueid.net was dropped — TrueID now sits
+// behind Incapsula bot-protection and returns 403 on every request, so it
+// contributed nothing but ~123 permanently-empty channel entries.
+// Strip @SD suffix from gigatv xmltv_ids so they line up with the NBTC ids.
+const nbtcChannels = readChannels(
+  path.join(FORK, 'sites/dttguide.nbtc.go.th/dttguide.nbtc.go.th.channels.xml')
+)
 const gigaChannels = readChannels(
   path.join(FORK, 'sites/gigatv.3bbtv.co.th/gigatv.3bbtv.co.th.channels.xml')
 ).map(ch => ({ ...ch, xmltvId: ch.xmltvId.replace(/@SD$/, '') }))
 
 buckets.th.push(
-  ...gigaChannels,
-  ...readChannels(path.join(FORK, 'sites/tv.trueid.net/tv.trueid.net_th.channels.xml'))
+  ...nbtcChannels,
+  ...gigaChannels
 )
 
 // 3. Write
