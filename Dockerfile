@@ -1,1 +1,18 @@
-RlJPTSBub2RlOjIyLWFscGluZQpBUkcgV09SS0RJUj0vZXBnCkVOViBDUk9OX1NDSEVEVUxFPSIwIDAgKiAqICoiCkVOViBSVU5fQVRfU1RBUlRVUD10cnVlClJVTiBhcGsgdXBkYXRlIFwKICAgICYmIGFwayB1cGdyYWRlIC0tYXZhaWxhYmxlIFwKICAgICYmIGFwayBhZGQgY3VybCB0emRhdGEgYmFzaCBjYWRkeSB1dGlsLWxpbnV4IFwKICAgICYmIG5wbSBpbnN0YWxsIHBtMiAtZyBcCiAgICAmJiBta2RpciAvcHVibGljCldPUktESVIgJFdPUktESVIKQ09QWSAuIC4KUlVOIG5wbSBpbnN0YWxsIFwKICAgICYmIGNkIHdlYiBcCiAgICAmJiBucG0gaW5zdGFsbCBcCiAgICAmJiBucG0gcnVuIGJ1aWxkClZPTFVNRSBbIi9lcGcvcHVibGljIiwgIi9lcGcvZGF0YSJdCkVYUE9TRSAzMDAwCkNNRCBbInNoIiwgIi1jIiwgIm5vZGUgc2NyaXB0cy9idWlsZC1jaGFubmVscy5qcyAmJiBleGVjIHBtMi1ydW50aW1lIHBtMi5jb25maWcuanMiXQo=
+FROM node:22-alpine
+ARG WORKDIR=/epg
+ENV CRON_SCHEDULE="0 0 * * *"
+ENV RUN_AT_STARTUP=true
+RUN apk update \
+    && apk upgrade --available \
+    && apk add curl tzdata bash caddy util-linux \
+    && npm install pm2 -g \
+    && mkdir /public
+WORKDIR $WORKDIR
+COPY . .
+RUN npm install \
+    && cd web \
+    && npm install \
+    && npm run build
+VOLUME ["/epg/public", "/epg/data"]
+EXPOSE 3000
+CMD ["sh", "-c", "node scripts/build-channels.js && exec pm2-runtime pm2.config.js"]
