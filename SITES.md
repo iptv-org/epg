@@ -121,6 +121,7 @@
     <tr><td><a href="sites/nostv.pt">nostv.pt</a></td><td align="right">154</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/novasports.gr">novasports.gr</a></td><td align="right">16</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/nowplayer.now.com">nowplayer.now.com</a></td><td align="right">130</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/ntv.co.jp">ntv.co.jp</a></td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/nuevosiglo.com.uy">nuevosiglo.com.uy</a></td><td align="right">173</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/nzxmltv.com">nzxmltv.com</a></td><td align="right">532</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/ontvtonight.com">ontvtonight.com</a></td><td align="right">17478</td><td align="center">🟢</td><td></td></tr>
