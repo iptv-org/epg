@@ -10,6 +10,10 @@ const API_IMAGE_ENDPOINT = 'https://staticqbr-prod-be.gnp.cloud.telenet.tv/image
 // and shared between all the channels of the same day
 const segments = {}
 
+// which day emitted an event, per channel, so a broadcast running past midnight is not repeated
+// by the day it ends in
+const claimed = {}
+
 module.exports = {
   site: 'telenet.tv',
   days: 2,
@@ -83,8 +87,8 @@ async function loadItems({ content, channel, date }) {
 
   const items = urls.flatMap(url => findEvents(segments[url], channel))
 
-  // an event that spans a segment boundary is listed in both segments
-  return uniqueItems(items)
+  // an event that spans a boundary is listed twice: by both segments, or by both days
+  return uniqueItems(items, channel, date)
 }
 
 // `res` is left out when a request fails, but only when sfetch is checking results, which is a
@@ -145,12 +149,22 @@ function findEvents(entries, channel) {
   return Array.isArray(channelData.events) ? channelData.events : []
 }
 
-function uniqueItems(items) {
+// Both guards are needed: the local set drops an event listed by two segments of this day, while
+// the claim drops one the previous day already emitted. Re-parsing a day it claimed itself stays
+// idempotent, so parsing the same day twice keeps returning the same programs.
+function uniqueItems(items, channel, date) {
+  const day = date.format('YYYYMMDD')
+  const claimedByChannel = claimed[channel.site_id] || (claimed[channel.site_id] = new Map())
   const seen = new Set()
 
   return items.filter(item => {
     if (seen.has(item.id)) return false
+
+    const owner = claimedByChannel.get(item.id)
+    if (owner !== undefined && owner !== day) return false
+
     seen.add(item.id)
+    claimedByChannel.set(item.id, day)
 
     return true
   })

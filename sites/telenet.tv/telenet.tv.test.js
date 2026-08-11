@@ -119,3 +119,33 @@ it('can handle empty guide', async () => {
 
   expect(results).toMatchObject([])
 })
+
+it('only lists a broadcast running past midnight on the day it starts', async () => {
+  // dates of their own again, so this does not run into the segments cached by the tests above
+  const first = dayjs.utc('2022-12-01', 'YYYY-MM-DD').startOf('d')
+  const second = first.add(1, 'd')
+  const content = JSON.stringify({
+    entries: [
+      {
+        channelId: channel.site_id,
+        events: [
+          {
+            id: 'overnight',
+            title: 'Overnight',
+            startTime: dayjs.utc('2022-12-01T23:30:00Z').unix(),
+            endTime: dayjs.utc('2022-12-02T04:00:00Z').unix()
+          }
+        ]
+      }
+    ]
+  })
+
+  axios.get.mockImplementation(() => Promise.resolve({ data: '' }))
+
+  // both days list the event, because it is on air when either of them begins or ends
+  expect(await parser({ content, channel, date: first })).toHaveLength(1)
+  expect(await parser({ content, channel, date: second })).toHaveLength(0)
+
+  // and the day that claimed it keeps returning it
+  expect(await parser({ content, channel, date: first })).toHaveLength(1)
+})
