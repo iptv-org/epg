@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="play.tv" site_id="play" lang="nl" xmltv_id="Play4.be">Play</channel>
-  <channel site="play.tv" site_id="actie" lang="nl" xmltv_id="">Play Actie</channel>
-  <channel site="play.tv" site_id="crime" lang="nl" xmltv_id="">Play Crime</channel>
-  <channel site="play.tv" site_id="fictie" lang="nl" xmltv_id="">Play Fictie</channel>
-  <channel site="play.tv" site_id="reality" lang="nl" xmltv_id="">Play Reality</channel>
+  <channel site="play.tv" site_id="play" lang="nl" xmltv_id="Play.be">Play</channel>
+  <channel site="play.tv" site_id="actie" lang="nl" xmltv_id="PlayActie.be">Play Actie</channel>
+  <channel site="play.tv" site_id="crime" lang="nl" xmltv_id="PlayCrime.be">Play Crime</channel>
+  <channel site="play.tv" site_id="fictie" lang="nl" xmltv_id="PlayFictie.be">Play Fictie</channel>
+  <channel site="play.tv" site_id="reality" lang="nl" xmltv_id="PlayReality.be">Play Reality</channel>
 </channels>
