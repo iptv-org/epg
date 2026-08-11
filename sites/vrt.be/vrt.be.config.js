@@ -5,32 +5,39 @@ const utc = require('dayjs/plugin/utc')
 dayjs.extend(utc)
 
 const EPG_QUERY = `
-query EpgPage($pageId: ID!, $lazyItemCount: Int = 100) {
+query EpgPage(
+  $pageId: ID!
+  $previousAfter: ID
+  $nextAfter: ID
+  $skipPrevious: Boolean = false
+  $skipNext: Boolean = false
+) {
   page(id: $pageId) {
     ... on ElectronicProgramGuidePage {
-      previous {
-        ...epgListFragment
+      previous @skip(if: $skipPrevious) {
+        paginatedItems(first: 100, after: $previousAfter) {
+          ...epgListFragment
+        }
       }
-      next {
-        ...epgListFragment
+      next @skip(if: $skipNext) {
+        paginatedItems(first: 100, after: $nextAfter) {
+          ...epgListFragment
+        }
       }
     }
   }
 }
 
-fragment epgListFragment on PaginatedTileList {
-  listId
-  paginatedItems(first: $lazyItemCount) {
-    edges {
-      cursor
-      node {
-        ...epgTileFragment
-      }
+fragment epgListFragment on TileConnection {
+  edges {
+    cursor
+    node {
+      ...epgTileFragment
     }
-    pageInfo {
-      hasNextPage
-      endCursor
-    }
+  }
+  pageInfo {
+    hasNextPage
+    endCursor
   }
 }
 
@@ -39,21 +46,10 @@ fragment epgTileFragment on Tile {
     title
     description
     primaryMeta {
-      value
       shortValue
     }
-    indexMeta {
+    statusMeta {
       value
-    }
-    progress {
-      durationInSeconds
-    }
-    status {
-      accessibilityLabel
-      text {
-        small
-        default
-      }
     }
     image {
       templateUrl
@@ -81,7 +77,6 @@ query ProgramGuidePage($pageId: ID!) {
             }
             action {
               ... on LinkAction {
-                link
                 linkTokens {
                   placeholder
                   value
@@ -95,7 +90,9 @@ query ProgramGuidePage($pageId: ID!) {
   }
 }
 `
+const SITE_URL = 'https://www.vrt.be'
 const API_ENDPOINT = 'https://www.vrt.be/vrtnu-api/graphql/public/v1'
+const MAX_PAGE_REQUESTS = 20
 const API_HEADERS = {
   'content-type': 'application/json',
   'user-agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0',
@@ -113,23 +110,24 @@ module.exports = {
       return {
         query: EPG_QUERY,
         variables: {
-          pageId: `/vrtmax/tv-gids/${channel.site_id}/${date.format('YYYY-MM-DD')}/`
+          pageId: buildPageId(channel, date)
         }
       }
     }
   },
-  parser({ content }) {
+  async parser({ content, channel, date }) {
     let data
     try {
       data = JSON.parse(content)
     } catch {
       return []
     }
-    if (!data.data?.page) return []
-
     const page = data.data?.page
-    const previousEdges = page.previous?.paginatedItems?.edges || []
-    const nextEdges = page.next?.paginatedItems?.edges || []
+    if (!page) return []
+
+    const pageId = buildPageId(channel, date)
+    const previousEdges = await loadAllEdges(page.previous?.paginatedItems, 'previous', pageId)
+    const nextEdges = await loadAllEdges(page.next?.paginatedItems, 'next', pageId)
     const edges = [...previousEdges, ...nextEdges]
 
     const programs = []
@@ -150,6 +148,7 @@ module.exports = {
         season: parseSeason(node.primaryMeta),
         episode: parseEpisode(node.primaryMeta),
         image: node.image?.templateUrl || null,
+        url: parseUrl(node.action),
         start,
         stop
       })
@@ -207,22 +206,71 @@ function parseEpisode(primaryMeta) {
 
 function parseCursor(cursor) {
   if (!cursor) return null
-  const iso = cursor.replace(/^epg#[^#]+#/, '')
-  const d = dayjs.utc(iso)
+
+  // Cursor looks like "o%49|O8|d%1786420800000||%", with the start time as epoch in milliseconds
+  const epoch = cursor.match(/\d{13}/)
+  if (!epoch) return null
+
+  const d = dayjs.utc(parseInt(epoch[0], 10))
   return d.isValid() ? d : null
 }
 
-function parseFallbackStop(start, node) {
-  // Try progress.durationInSeconds (radio)
-  const durationS = node.progress?.durationInSeconds
-  if (durationS) return start.add(durationS, 'second')
+function parseUrl(action) {
+  const link = action?.link
+  if (!link) return null
 
-  // Try status.text.small e.g. "16 min"
-  const statusSmall = node.status?.text?.small
-  if (statusSmall) {
-    const match = statusSmall.match(/(\d+)\s*min/)
-    if (match) return start.add(parseInt(match[1], 10), 'minute')
+  return link.startsWith('http') ? link : `${SITE_URL}${link}`
+}
+
+function buildPageId(channel, date) {
+  return `/vrtmax/tv-gids/${channel.site_id}/${date.format('YYYY-MM-DD')}/`
+}
+
+// The API caps every list at 50 items, whatever `first` asks for, so busy channels like Ketnet need
+// to be paged through with the cursor from pageInfo.
+async function loadAllEdges(paginatedItems, listName, pageId) {
+  if (!paginatedItems) return []
+
+  const edges = [...(paginatedItems.edges || [])]
+  let pageInfo = paginatedItems.pageInfo
+  let requests = 0
+
+  while (pageInfo?.hasNextPage && pageInfo.endCursor && requests < MAX_PAGE_REQUESTS) {
+    requests++
+
+    const data = await axios
+      .post(
+        API_ENDPOINT,
+        {
+          query: EPG_QUERY,
+          variables: {
+            pageId,
+            [`${listName}After`]: pageInfo.endCursor,
+            skipPrevious: listName !== 'previous',
+            skipNext: listName !== 'next'
+          }
+        },
+        { headers: API_HEADERS }
+      )
+      .then(r => r.data)
+      .catch(console.error)
+
+    const items = data?.data?.page?.[listName]?.paginatedItems
+    if (!items?.edges?.length) break
+
+    edges.push(...items.edges)
+    pageInfo = items.pageInfo
   }
 
-  return null
+  return edges
+}
+
+// The last program of the day has no successor to take its stop time from. statusMeta is the only
+// duration the API exposes for it, always formatted as "16 min".
+function parseFallbackStop(start, node) {
+  const statusMeta = node.statusMeta?.[0]?.value
+  if (!statusMeta) return null
+
+  const match = statusMeta.match(/(\d+)\s*min/)
+  return match ? start.add(parseInt(match[1], 10), 'minute') : null
 }

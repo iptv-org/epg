@@ -11,7 +11,7 @@ jest.mock('axios')
 const channelsContent = fs.readFileSync(path.resolve(__dirname, '__data__/channels.json'), 'utf8')
 axios.post.mockResolvedValue({ data: JSON.parse(channelsContent) })
 
-const date = dayjs.utc('2026-03-09').startOf('d')
+const date = dayjs.utc('2026-08-11').startOf('d')
 const channel = {
   lang: 'nl',
   site_id: 'vrt1'
@@ -32,14 +32,14 @@ it('can generate valid request headers', () => {
 it('can generate valid request data', () => {
   const data = request.data({ channel, date })
   expect(data.variables).toMatchObject({
-    pageId: '/vrtmax/tv-gids/vrt1/2026-03-09/'
+    pageId: '/vrtmax/tv-gids/vrt1/2026-08-11/'
   })
   expect(typeof data.query).toBe('string')
 })
 
-it('can parse response', () => {
+it('can parse response', async () => {
   const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'), 'utf8')
-  const result = parser({ content, channel, date }).map(p => {
+  const result = (await parser({ content, channel, date })).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
     return p
@@ -47,19 +47,30 @@ it('can parse response', () => {
 
   expect(result[0]).toMatchObject({
     title: 'Mr. Magoo',
-    description: 'Rondleiding door de stad',
-    image: 'https://images.vrt.be/orig/2024/12/07/7c0854d3-67e3-4271-9e4f-43ca80b63c87.jpg',
-    start: '2026-03-09T05:00:08.000Z',
-    stop: '2026-03-09T05:07:43.760Z'
+    description: 'Slaap zacht!',
+    season: 2,
+    episode: 50,
+    image: 'https://images.vrt.be/orig/2024/12/07/cd61594f-3ba6-46c3-8133-ab4673274028.jpg',
+    url: 'https://www.vrt.be/vrtmax/a-z/mr-magoo/2/mr-magoo-slaap-zacht/',
+    start: '2026-08-11T04:00:00.000Z',
+    stop: '2026-08-11T04:05:00.000Z'
   })
 
+  // last program of the day has no successor, so its stop time comes from statusMeta ("4 min")
   const last = result[result.length - 1]
   expect(last.title).toBe('Het weer')
-  expect(last.start).toBe('2026-03-10T00:37:00.120Z')
-  expect(last.stop).toBe('2026-03-10T00:40:00.120Z')
+  expect(last.start).toBe('2026-08-11T21:40:00.000Z')
+  expect(last.stop).toBe('2026-08-11T21:44:00.000Z')
 })
 
-it('can parse cursor with any channel prefix', () => {
+it('can parse program without action', async () => {
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'), 'utf8')
+  const result = await parser({ content, channel, date })
+
+  expect(result.find(p => p.title === 'Radio 2 aan Zee').url).toBe(null)
+})
+
+it('can parse cursor with any channel prefix', async () => {
   const content = JSON.stringify({
     data: {
       page: {
@@ -68,12 +79,12 @@ it('can parse cursor with any channel prefix', () => {
           paginatedItems: {
             edges: [
               {
-                cursor: 'epg#1H#2026-03-16T11:00:00.000Z',
-                node: { title: 'Test', description: null, indexMeta: [], progress: null, status: { text: { small: '30 min' } }, image: null, action: null }
+                cursor: 'o%49|1H|d%1786420800000||%',
+                node: { title: 'Test', description: null, statusMeta: [{ value: '30 min' }], image: null, action: null }
               },
               {
-                cursor: 'epg#1H#2026-03-16T11:30:00.000Z',
-                node: { title: 'Test 2', description: null, indexMeta: [], progress: null, status: null, image: null, action: null }
+                cursor: 'o%49|1H|d%1786422600000||%',
+                node: { title: 'Test 2', description: null, statusMeta: null, image: null, action: null }
               }
             ]
           }
@@ -81,20 +92,79 @@ it('can parse cursor with any channel prefix', () => {
       }
     }
   })
-  const result = parser({ content, channel, date }).map(p => {
+  const result = (await parser({ content, channel, date })).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
     return p
   })
   expect(result[0]).toMatchObject({
     title: 'Test',
-    start: '2026-03-16T11:00:00.000Z',
-    stop: '2026-03-16T11:30:00.000Z'
+    start: '2026-08-11T04:00:00.000Z',
+    stop: '2026-08-11T04:30:00.000Z'
   })
 })
 
-it('can handle empty guide', () => {
-  const result = parser({ content: '', channel, date })
+it('can load additional pages', async () => {
+  const tile = (title, statusMeta = null) => ({
+    title,
+    description: null,
+    statusMeta,
+    image: null,
+    action: null
+  })
+  const content = JSON.stringify({
+    data: {
+      page: {
+        previous: { paginatedItems: { edges: [], pageInfo: { hasNextPage: false, endCursor: null } } },
+        next: {
+          paginatedItems: {
+            edges: [{ cursor: 'o%49|O8|d%1786420800000||%', node: tile('Page 1') }],
+            pageInfo: { hasNextPage: true, endCursor: 'o%49|O8|d%1786420800000||%' }
+          }
+        }
+      }
+    }
+  })
+
+  axios.post.mockResolvedValueOnce({
+    data: {
+      data: {
+        page: {
+          previous: { paginatedItems: { edges: [], pageInfo: { hasNextPage: false, endCursor: null } } },
+          next: {
+            paginatedItems: {
+              edges: [
+                { cursor: 'o%49|O8|d%1786422600000||%', node: tile('Page 2', [{ value: '15 min' }]) }
+              ],
+              pageInfo: { hasNextPage: false, endCursor: null }
+            }
+          }
+        }
+      }
+    }
+  })
+
+  const result = await parser({ content, channel, date })
+
+  expect(axios.post).toHaveBeenCalledWith(
+    'https://www.vrt.be/vrtnu-api/graphql/public/v1',
+    expect.objectContaining({
+      variables: {
+        pageId: '/vrtmax/tv-gids/vrt1/2026-08-11/',
+        nextAfter: 'o%49|O8|d%1786420800000||%',
+        skipPrevious: true,
+        skipNext: false
+      }
+    }),
+    expect.anything()
+  )
+  expect(result.map(p => p.title)).toEqual(['Page 1', 'Page 2'])
+  expect(result[0].stop.toJSON()).toBe('2026-08-11T04:30:00.000Z')
+  expect(result[1].stop.toJSON()).toBe('2026-08-11T04:45:00.000Z')
+})
+
+it('can handle empty guide', async () => {
+  const result = await parser({ content: '', channel, date })
   expect(result).toMatchObject([])
 })
 
