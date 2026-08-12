@@ -4,6 +4,29 @@ const utc = require('dayjs/plugin/utc')
 
 dayjs.extend(utc)
 
+const TILE_FRAGMENT = `
+fragment epgTileFragment on Tile {
+  ... on ITile {
+    title
+    description
+    primaryMeta {
+      shortValue
+    }
+    statusMeta {
+      value
+    }
+    image {
+      templateUrl
+    }
+    action {
+      ... on LinkAction {
+        link
+      }
+    }
+  }
+}
+`
+
 const EPG_QUERY = `
 query EpgPage(
   $pageId: ID!
@@ -11,6 +34,7 @@ query EpgPage(
   $nextAfter: ID
   $skipPrevious: Boolean = false
   $skipNext: Boolean = false
+  $skipCurrent: Boolean = false
 ) {
   page(id: $pageId) {
     ... on ElectronicProgramGuidePage {
@@ -18,6 +42,9 @@ query EpgPage(
         paginatedItems(first: 100, after: $previousAfter) {
           ...epgListFragment
         }
+      }
+      current @skip(if: $skipCurrent) {
+        objectId
       }
       next @skip(if: $skipNext) {
         paginatedItems(first: 100, after: $nextAfter) {
@@ -40,28 +67,24 @@ fragment epgListFragment on TileConnection {
     endCursor
   }
 }
+${TILE_FRAGMENT}`
 
-fragment epgTileFragment on Tile {
-  ... on ITile {
-    title
-    description
-    primaryMeta {
-      shortValue
-    }
-    statusMeta {
-      value
-    }
-    image {
-      templateUrl
-    }
-    action {
-      ... on LinkAction {
-        link
+const SNAPSHOT_QUERY = `
+query LiveSnapshot($listId: ID!) {
+  list(listId: $listId) {
+    ... on PaginatedTileList {
+      paginatedItems(first: 1) {
+        edges {
+          cursor
+          node {
+            ...epgTileFragment
+          }
+        }
       }
     }
   }
 }
-`
+${TILE_FRAGMENT}`
 
 const CHANNELS_QUERY = `
 query ProgramGuidePage($pageId: ID!) {
@@ -128,18 +151,35 @@ module.exports = {
     const pageId = buildPageId(channel, date)
     const previousEdges = await loadAllEdges(page.previous?.paginatedItems, 'previous', pageId)
     const nextEdges = await loadAllEdges(page.next?.paginatedItems, 'next', pageId)
-    const edges = [...previousEdges, ...nextEdges]
 
-    const programs = []
-    edges.forEach((edge, index) => {
+    const items = []
+    ;[...previousEdges, ...nextEdges].forEach(edge => {
       const node = edge.node
       if (!node || !node.title) return
 
       const start = parseCursor(edge.cursor)
       if (!start) return
 
-      const nextEdge = edges[index + 1]
-      const stop = nextEdge ? parseCursor(nextEdge.cursor) : parseFallbackStop(start, node)
+      items.push({ start, node, url: parseUrl(node.action) })
+    })
+
+    const currentEdge = await loadCurrentEdge(page.current, [...previousEdges, ...nextEdges])
+    const currentStart = currentEdge?.node?.title ? parseCursor(currentEdge.cursor) : null
+    if (currentStart && !items.some(item => item.start.valueOf() === currentStart.valueOf())) {
+      items.push({
+        start: currentStart,
+        node: currentEdge.node,
+        url: parseUrl(currentEdge.node?.action)
+      })
+    }
+
+    items.sort((a, b) => a.start.valueOf() - b.start.valueOf())
+
+    const programs = []
+    items.forEach((item, index) => {
+      const { node, start } = item
+      const nextItem = items[index + 1]
+      const stop = nextItem ? nextItem.start : parseFallbackStop(start, node)
       if (!stop || !stop.isAfter(start)) return
 
       programs.push({
@@ -148,7 +188,7 @@ module.exports = {
         season: parseSeason(node.primaryMeta),
         episode: parseEpisode(node.primaryMeta),
         image: node.image?.templateUrl || null,
-        url: parseUrl(node.action),
+        url: item.url,
         start,
         stop
       })
@@ -219,11 +259,32 @@ function parseUrl(action) {
   const link = action?.link
   if (!link) return null
 
+  // Whatever is airing links to the channel's livestream rather than to itself.
+  if (link.startsWith('/vrtmax/livestream/')) return null
+
   return link.startsWith('http') ? link : `${SITE_URL}${link}`
 }
 
 function buildPageId(channel, date) {
   return `/vrtmax/tv-gids/${channel.site_id}/${date.format('YYYY-MM-DD')}/`
+}
+
+// previous/next skip the airing program, and the guide only has it as a livestream tile without a
+// cursor. The channel's "snapshot" list starts at whatever is on right now and does carry one.
+async function loadCurrentEdge(current, edges) {
+  // That list ignores the requested date, so without this it would leak into every other day too.
+  if (!current) return null
+
+  const channelCode = edges[0]?.cursor?.split('|')[1]
+  if (!channelCode) return null
+
+  const listId = `$${Buffer.from(`o%31|snapshot|${channelCode}||||%`).toString('base64')}`
+  const data = await axios
+    .post(API_ENDPOINT, { query: SNAPSHOT_QUERY, variables: { listId } }, { headers: API_HEADERS })
+    .then(r => r.data)
+    .catch(console.error)
+
+  return data?.data?.list?.paginatedItems?.edges?.[0] || null
 }
 
 // The API caps every list at 50 items, whatever `first` asks for, so busy channels like Ketnet need
@@ -247,7 +308,8 @@ async function loadAllEdges(paginatedItems, listName, pageId) {
             pageId,
             [`${listName}After`]: pageInfo.endCursor,
             skipPrevious: listName !== 'previous',
-            skipNext: listName !== 'next'
+            skipNext: listName !== 'next',
+            skipCurrent: true
           }
         },
         { headers: API_HEADERS }
