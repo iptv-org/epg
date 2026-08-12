@@ -86,7 +86,7 @@ it('can parse the currently airing program', async () => {
   })
 
   expect(axios.post).toHaveBeenCalledWith(
-    'https://www.vrt.be/vrtnu-api/graphql/public/v1',
+    'https://www.vrt.be/vrtnu-api/graphql/v1',
     expect.objectContaining({ variables: { listId: '$byUzMXxzbmFwc2hvdHxPOHx8fHwl' } }),
     expect.anything()
   )
@@ -116,6 +116,107 @@ it('leaves the airing program without a url rather than linking to the livestrea
   expect(result[19].url).toBe(null)
   expect(result[20].url).toBe(
     'https://www.vrt.be/vrtmax/event/byU0OXxPOHxkJTE3ODY1MzI0MDAwMDB8fCU=/'
+  )
+})
+
+it('resolves an airing episode from a non-active season by building that season list', async () => {
+  const content = JSON.stringify({
+    data: {
+      page: {
+        previous: {
+          paginatedItems: {
+            edges: [{ cursor: 'o%49|O8|d%1786531200000||%', node: { title: 'Before' } }]
+          }
+        },
+        current: { objectId: 'o%1|123|2026-08-12%' },
+        next: { paginatedItems: { edges: [] } }
+      }
+    }
+  })
+  // a season tab objectId ends with the season index; the config derives the season list id from it
+  const seasonObjectId =
+    '$' +
+    Buffer.from(
+      'o%2|o%47|p%/a-z/fc-de-kampioenen/|container|b%1%|banner|%|banner|b%1%|17|%'
+    ).toString('base64')
+
+  // 1. snapshot: airing tile with season/episode meta and the program link
+  axios.post.mockResolvedValueOnce({
+    data: {
+      data: {
+        list: {
+          paginatedItems: {
+            edges: [
+              {
+                cursor: 'o%49|O8|d%1786531500000||%',
+                node: {
+                  title: 'FC De Kampioenen',
+                  description: 'De nieuwe ober',
+                  primaryMeta: [{ shortValue: 'S17' }, { shortValue: 'Afl.2' }],
+                  statusMeta: [{ value: '30 min' }],
+                  action: { link: '/vrtmax/livestream/video/vrt1/' },
+                  actionItems: [{ action: { link: '/vrtmax/a-z/fc-de-kampioenen/' } }],
+                  whatsonId: 'W-17-2'
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  })
+  // 2. program page: a non-active season 17 tab
+  axios.post.mockResolvedValueOnce({
+    data: {
+      data: {
+        page: {
+          menu: {
+            items: [
+              {
+                components: [
+                  {
+                    __typename: 'ContainerNavigation',
+                    items: [
+                      {
+                        title: 'Seizoen 17 (12 afleveringen)',
+                        active: false,
+                        objectId: seasonObjectId
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    }
+  })
+  // 3. that season's episode list contains the airing whatsonId with its real link
+  axios.post.mockResolvedValueOnce({
+    data: {
+      data: {
+        list: {
+          paginatedItems: {
+            edges: [
+              {
+                node: {
+                  whatsonId: 'W-17-2',
+                  action: { link: '/vrtmax/a-z/fc-de-kampioenen/17/f-c--de-kampioenen-s17a2/' }
+                }
+              }
+            ],
+            pageInfo: { hasNextPage: false, endCursor: null }
+          }
+        }
+      }
+    }
+  })
+
+  const result = await parser({ content, channel, date: dayjs.utc('2026-08-12') })
+
+  expect(result.find(p => p.title === 'FC De Kampioenen').url).toBe(
+    'https://www.vrt.be/vrtmax/a-z/fc-de-kampioenen/17/f-c--de-kampioenen-s17a2/'
   )
 })
 

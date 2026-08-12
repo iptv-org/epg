@@ -78,6 +78,18 @@ query LiveSnapshot($listId: ID!) {
           cursor
           node {
             ...epgTileFragment
+            ... on ITile {
+              actionItems {
+                action {
+                  ... on LinkAction {
+                    link
+                  }
+                }
+              }
+            }
+            ... on EpisodeTile {
+              whatsonId
+            }
           }
         }
       }
@@ -85,6 +97,57 @@ query LiveSnapshot($listId: ID!) {
   }
 }
 ${TILE_FRAGMENT}`
+
+const PROGRAM_LISTS_QUERY = `
+query ProgramLists($id: ID!) {
+  page(id: $id) {
+    ... on ProgramPage {
+      menu {
+        items {
+          components {
+            __typename
+            ... on PaginatedTileList {
+              listId
+            }
+            ... on ContainerNavigation {
+              items {
+                title
+                active
+                objectId
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}`
+
+const EPISODE_LIST_QUERY = `
+query EpisodeList($listId: ID!, $after: ID) {
+  list(listId: $listId) {
+    ... on PaginatedTileList {
+      paginatedItems(first: 50, after: $after) {
+        edges {
+          node {
+            ... on EpisodeTile {
+              whatsonId
+              action {
+                ... on LinkAction {
+                  link
+                }
+              }
+            }
+          }
+        }
+        pageInfo {
+          hasNextPage
+          endCursor
+        }
+      }
+    }
+  }
+}`
 
 const CHANNELS_QUERY = `
 query ProgramGuidePage($pageId: ID!) {
@@ -115,6 +178,8 @@ query ProgramGuidePage($pageId: ID!) {
 `
 const SITE_URL = 'https://www.vrt.be'
 const API_ENDPOINT = 'https://www.vrt.be/vrtnu-api/graphql/public/v1'
+// The airing program's real url only surfaces on the non-public schema (whatsonId + actionItems).
+const PRIVATE_API_ENDPOINT = 'https://www.vrt.be/vrtnu-api/graphql/v1'
 const MAX_PAGE_REQUESTS = 20
 const API_HEADERS = {
   'content-type': 'application/json',
@@ -169,7 +234,7 @@ module.exports = {
       items.push({
         start: currentStart,
         node: currentEdge.node,
-        url: parseUrl(currentEdge.node?.action)
+        url: await resolveCurrentUrl(currentEdge.node)
       })
     }
 
@@ -280,11 +345,104 @@ async function loadCurrentEdge(current, edges) {
 
   const listId = `$${Buffer.from(`o%31|snapshot|${channelCode}||||%`).toString('base64')}`
   const data = await axios
-    .post(API_ENDPOINT, { query: SNAPSHOT_QUERY, variables: { listId } }, { headers: API_HEADERS })
+    .post(
+      PRIVATE_API_ENDPOINT,
+      { query: SNAPSHOT_QUERY, variables: { listId } },
+      { headers: API_HEADERS }
+    )
     .then(r => r.data)
     .catch(console.error)
 
   return data?.data?.list?.paginatedItems?.edges?.[0] || null
+}
+
+// The guide never exposes the airing slot's own /vrtmax/a-z/ url (its tile links to the livestream).
+// Recover it by matching the tile's whatsonId in the episode lists of its program page.
+async function resolveCurrentUrl(node) {
+  const whatsonId = node?.whatsonId
+  const programLink = (node?.actionItems || [])
+    .map(item => item?.action?.link)
+    .find(link => link?.startsWith('/vrtmax/a-z/'))
+  if (!whatsonId || !programLink) return null
+
+  const season = parseSeason(node.primaryMeta)
+  for (const listId of await loadProgramListIds(programLink, season)) {
+    const link = await findEpisodeLink(listId, whatsonId)
+    if (link) return link.startsWith('http') ? link : `${SITE_URL}${link}`
+  }
+
+  return null
+}
+
+// A program page carries flat lists plus (for multi-season programs) one episode list per season,
+// nested under a second ContainerNavigation. The episode airs from exactly one season, so only that
+// season's list is searched, alongside the program's flat lists.
+async function loadProgramListIds(programLink, season) {
+  const data = await postPrivate(PROGRAM_LISTS_QUERY, { id: programLink })
+  const items = data?.data?.page?.menu?.items || []
+
+  const flatLists = []
+  const seasonLists = []
+  items.forEach(item => {
+    ;(item.components || []).forEach(component => {
+      if (component?.__typename === 'PaginatedTileList' && component.listId) {
+        flatLists.push(component.listId)
+      }
+      if (component?.__typename === 'ContainerNavigation') {
+        ;(component.items || []).forEach(tab => {
+          const listId = buildSeasonListId(tab)
+          if (listId) seasonLists.push({ listId, number: seasonNumber(tab.title) })
+        })
+      }
+    })
+  })
+
+  const seasons =
+    season == null ? [] : seasonLists.filter(s => s.number === season).map(s => s.listId)
+  return [...seasons, ...flatLists]
+}
+
+// Season tabs only inline a usable listId for the active season; the others are derived from the
+// tab's objectId. The list wrapper is o%35 with a trailing marker that is b%0 for the active season
+// and b%1 for every other one.
+function buildSeasonListId(tab) {
+  if (!tab?.objectId?.startsWith('$')) return null
+
+  const inner = Buffer.from(tab.objectId.slice(1), 'base64').toString()
+  const index = inner.match(/\|(\d+)\|%$/)?.[1]
+  if (!index) return null
+
+  const marker = tab.active ? 0 : 1
+  return `$${Buffer.from(`o%35|${inner}|${index}|b%${marker}|n%1%`).toString('base64')}`
+}
+
+function seasonNumber(title) {
+  const match = (title || '').match(/\d+/)
+  return match ? parseInt(match[0], 10) : null
+}
+
+async function findEpisodeLink(listId, whatsonId) {
+  let after = null
+  for (let requests = 0; requests < MAX_PAGE_REQUESTS; requests++) {
+    const data = await postPrivate(EPISODE_LIST_QUERY, { listId, after })
+    const items = data?.data?.list?.paginatedItems
+    if (!items) return null
+
+    const match = (items.edges || []).find(edge => edge.node?.whatsonId === whatsonId)
+    if (match) return match.node.action?.link || null
+
+    if (!items.pageInfo?.hasNextPage) return null
+    after = items.pageInfo.endCursor
+  }
+
+  return null
+}
+
+function postPrivate(query, variables) {
+  return axios
+    .post(PRIVATE_API_ENDPOINT, { query, variables }, { headers: API_HEADERS })
+    .then(r => r.data)
+    .catch(console.error)
 }
 
 // The API caps every list at 50 items, whatever `first` asks for, so busy channels like Ketnet need
