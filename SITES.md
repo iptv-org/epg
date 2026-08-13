@@ -24,7 +24,7 @@
     <tr><td><a href="sites/artonline.tv">artonline.tv</a></td><td align="right">5</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/awilime.com">awilime.com</a></td><td align="right">110</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/ayn.om">ayn.om</a></td><td align="right">4</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/bein.com">bein.com</a></td><td align="right">73</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/bein.com">bein.com</a></td><td align="right">71</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/beinsports.com">beinsports.com</a></td><td align="right">78</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/berrymedia.co.kr">berrymedia.co.kr</a></td><td align="right">5</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/cableplus.com.uy">cableplus.com.uy</a></td><td align="right">171</td><td align="center">🟢</td><td></td></tr>
@@ -174,7 +174,7 @@
     <tr><td><a href="sites/tapdmv.com">tapdmv.com</a></td><td align="right">39</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/tataplay.com">tataplay.com</a></td><td align="right">905</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/telebilbao.es">telebilbao.es</a></td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/teleboy.ch">teleboy.ch</a></td><td align="right">325</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/teleboy.ch">teleboy.ch</a></td><td align="right">308</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/telenet.tv">telenet.tv</a></td><td align="right">260</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/teliatv.ee">teliatv.ee</a></td><td align="right">342</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/telkussa.fi">telkussa.fi</a></td><td align="right">66</td><td align="center">🟢</td><td></td></tr>
