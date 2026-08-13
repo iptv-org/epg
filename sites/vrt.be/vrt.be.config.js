@@ -321,11 +321,15 @@ function parseCursor(cursor) {
 }
 
 function parseUrl(action) {
-  const link = action?.link
-  if (!link) return null
+  return toProgramUrl(action?.link)
+}
 
-  // Whatever is airing links to the channel's livestream rather than to itself.
-  if (link.startsWith('/vrtmax/livestream/')) return null
+// Only a program's own page is useful downstream. A tile can also link to the channel's livestream
+// (that is what whatever is airing does) or to an /vrtmax/event/ slot, whose id is just the guide
+// timeslot in base64 — neither one plays.
+function toProgramUrl(link) {
+  if (!link) return null
+  if (link.startsWith('/vrtmax/livestream/') || link.startsWith('/vrtmax/event/')) return null
 
   return link.startsWith('http') ? link : `${SITE_URL}${link}`
 }
@@ -367,8 +371,8 @@ async function resolveCurrentUrl(node) {
 
   const season = parseSeason(node.primaryMeta)
   for (const listId of await loadProgramListIds(programLink, season)) {
-    const link = await findEpisodeLink(listId, whatsonId)
-    if (link) return link.startsWith('http') ? link : `${SITE_URL}${link}`
+    const url = toProgramUrl(await findEpisodeLink(listId, whatsonId))
+    if (url) return url
   }
 
   return null

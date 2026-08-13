@@ -114,9 +114,18 @@ it('leaves the airing program without a url rather than linking to the livestrea
   const result = await parser({ content, channel, date: dayjs.utc('2026-08-12') })
 
   expect(result[19].url).toBe(null)
-  expect(result[20].url).toBe(
-    'https://www.vrt.be/vrtmax/event/byU0OXxPOHxkJTE3ODY1MzI0MDAwMDB8fCU=/'
-  )
+})
+
+it('drops an event url instead of storing it', async () => {
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/current.json'), 'utf8')
+  const snapshot = fs.readFileSync(path.resolve(__dirname, '__data__/snapshot.json'), 'utf8')
+  axios.post.mockResolvedValueOnce({ data: JSON.parse(snapshot) })
+
+  const result = await parser({ content, channel, date: dayjs.utc('2026-08-12') })
+
+  // this tile links to /vrtmax/event/byU0OXxPOHxkJTE3ODY1MzI0MDAwMDB8fCU=/
+  expect(result[20]).toMatchObject({ title: 'VRT NWS journaal', url: null })
+  expect(result.some(p => p.url?.includes('/vrtmax/event/'))).toBe(false)
 })
 
 it('resolves an airing episode from a non-active season by building that season list', async () => {
