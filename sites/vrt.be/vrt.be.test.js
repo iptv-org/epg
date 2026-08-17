@@ -134,7 +134,7 @@ it('resolves an airing episode from a non-active season by building that season 
       page: {
         previous: {
           paginatedItems: {
-            edges: [{ cursor: 'o%49|O8|d%1786531200000||%', node: { title: 'Before' } }]
+            edges: [{ cursor: 'o%0|n%4|epg-entry|o#349#0O8#0d#31786531200000#0#0#3%', node: { title: 'Before' } }]
           }
         },
         current: { objectId: 'o%1|123|2026-08-12%' },
@@ -157,7 +157,7 @@ it('resolves an airing episode from a non-active season by building that season 
           paginatedItems: {
             edges: [
               {
-                cursor: 'o%49|O8|d%1786531500000||%',
+                cursor: 'o%0|n%4|epg-entry|o#349#0O8#0d#31786531500000#0#0#3%',
                 node: {
                   title: 'FC De Kampioenen',
                   description: 'De nieuwe ober',
@@ -235,7 +235,7 @@ it('can parse the airing program as last item of the day', async () => {
       page: {
         previous: {
           paginatedItems: {
-            edges: [{ cursor: 'o%49|O8|d%1786569000000||%', node: { title: 'Test' } }]
+            edges: [{ cursor: 'o%0|n%4|epg-entry|o#349#0O8#0d#31786569000000#0#0#3%', node: { title: 'Test' } }]
           }
         },
         current: { objectId: 'o%1|123|2026-08-11%' },
@@ -250,7 +250,7 @@ it('can parse the airing program as last item of the day', async () => {
           paginatedItems: {
             edges: [
               {
-                cursor: 'o%49|O8|d%1786571400000||%',
+                cursor: 'o%0|n%4|epg-entry|o#349#0O8#0d#31786571400000#0#0#3%',
                 node: { title: 'Test 2', statusMeta: [{ value: '20 min' }] }
               }
             ]
@@ -283,7 +283,7 @@ it('does not look for an airing program on a day that has none', async () => {
           paginatedItems: {
             edges: [
               {
-                cursor: 'o%49|O8|d%1786420800000||%',
+                cursor: 'o%0|n%4|epg-entry|o#349#0O8#0d#31786420800000#0#0#3%',
                 node: { title: 'Test', statusMeta: [{ value: '30 min' }] }
               }
             ]
@@ -308,11 +308,11 @@ it('can parse cursor with any channel prefix', async () => {
           paginatedItems: {
             edges: [
               {
-                cursor: 'o%49|1H|d%1786420800000||%',
+                cursor: 'o%0|n%4|epg-entry|o#349#01H#0d#31786420800000#0#0#3%',
                 node: { title: 'Test', description: null, statusMeta: [{ value: '30 min' }], image: null, action: null }
               },
               {
-                cursor: 'o%49|1H|d%1786422600000||%',
+                cursor: 'o%0|n%4|epg-entry|o#349#01H#0d#31786422600000#0#0#3%',
                 node: { title: 'Test 2', description: null, statusMeta: null, image: null, action: null }
               }
             ]
@@ -347,8 +347,8 @@ it('can load additional pages', async () => {
         previous: { paginatedItems: { edges: [], pageInfo: { hasNextPage: false, endCursor: null } } },
         next: {
           paginatedItems: {
-            edges: [{ cursor: 'o%49|O8|d%1786420800000||%', node: tile('Page 1') }],
-            pageInfo: { hasNextPage: true, endCursor: 'o%49|O8|d%1786420800000||%' }
+            edges: [{ cursor: 'o%0|n%4|epg-entry|o#349#0O8#0d#31786420800000#0#0#3%', node: tile('Page 1') }],
+            pageInfo: { hasNextPage: true, endCursor: 'o%0|n%4|epg-entry|o#349#0O8#0d#31786420800000#0#0#3%' }
           }
         }
       }
@@ -363,7 +363,7 @@ it('can load additional pages', async () => {
           next: {
             paginatedItems: {
               edges: [
-                { cursor: 'o%49|O8|d%1786422600000||%', node: tile('Page 2', [{ value: '15 min' }]) }
+                { cursor: 'o%0|n%4|epg-entry|o#349#0O8#0d#31786422600000#0#0#3%', node: tile('Page 2', [{ value: '15 min' }]) }
               ],
               pageInfo: { hasNextPage: false, endCursor: null }
             }
@@ -380,7 +380,7 @@ it('can load additional pages', async () => {
     expect.objectContaining({
       variables: {
         pageId: '/vrtmax/tv-gids/vrt1/2026-08-11/',
-        nextAfter: 'o%49|O8|d%1786420800000||%',
+        nextAfter: 'o%0|n%4|epg-entry|o#349#0O8#0d#31786420800000#0#0#3%',
         skipPrevious: true,
         skipNext: false,
         skipCurrent: true
@@ -391,6 +391,66 @@ it('can load additional pages', async () => {
   expect(result.map(p => p.title)).toEqual(['Page 1', 'Page 2'])
   expect(result[0].stop.toJSON()).toBe('2026-08-11T04:30:00.000Z')
   expect(result[1].stop.toJSON()).toBe('2026-08-11T04:45:00.000Z')
+})
+
+// The epoch sits behind a "3" number tag. Reading thirteen digits from the left of that swallows the
+// tag and drops the last digit, which lands in 2070 and squeezes ten days of guide onto one.
+it('does not read the number tag as part of the start time', async () => {
+  const content = JSON.stringify({
+    data: {
+      page: {
+        previous: { paginatedItems: { edges: [] } },
+        next: {
+          paginatedItems: {
+            edges: [
+              {
+                cursor: 'o%0|n%5|epg-entry|o#349#044#0d#31786982400000#0#0#3%',
+                node: { title: 'De Tijdloze', statusMeta: [{ value: '60 min' }] }
+              }
+            ]
+          }
+        }
+      }
+    }
+  })
+
+  const result = await parser({ content, channel, date })
+
+  expect(result[0].start.toJSON()).toBe('2026-08-17T16:00:00.000Z')
+  expect(result[0].stop.toJSON()).toBe('2026-08-17T17:00:00.000Z')
+})
+
+// The API moved to "#"-separated cursors in the summer of 2026; the older shape carries the same
+// epoch and channel code, only in other places.
+it('still understands the older cursor format', async () => {
+  const content = JSON.stringify({
+    data: {
+      page: {
+        previous: {
+          paginatedItems: {
+            edges: [
+              {
+                cursor: 'o%49|O8|d%1786420800000||%',
+                node: { title: 'Test', statusMeta: [{ value: '30 min' }] }
+              }
+            ]
+          }
+        },
+        current: { objectId: 'o%1|123|2026-08-11%' },
+        next: { paginatedItems: { edges: [] } }
+      }
+    }
+  })
+  axios.post.mockResolvedValueOnce({ data: { data: { list: null } } })
+
+  const result = await parser({ content, channel, date })
+
+  expect(axios.post).toHaveBeenCalledWith(
+    'https://www.vrt.be/vrtnu-api/graphql/v1',
+    expect.objectContaining({ variables: { listId: '$byUzMXxzbmFwc2hvdHxPOHx8fHwl' } }),
+    expect.anything()
+  )
+  expect(result[0].start.toJSON()).toBe('2026-08-11T04:00:00.000Z')
 })
 
 it('can handle empty guide', async () => {

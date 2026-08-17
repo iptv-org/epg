@@ -309,15 +309,29 @@ function parseEpisode(primaryMeta) {
   return item ? parseInt(item.shortValue.replace('Afl.', ''), 10) : null
 }
 
+// A cursor looks like "o%0|n%5|epg-entry|o#349#044#0d#31786982400000#0#0#3%": "#"-separated fields,
+// each behind a type tag, "3" for a number and "0" for a string. The start time is field "d", epoch
+// in milliseconds. Older cursors held the same value as "|"-separated "d%1786420800000".
 function parseCursor(cursor) {
   if (!cursor) return null
 
-  // Cursor looks like "o%49|O8|d%1786420800000||%", with the start time as epoch in milliseconds
-  const epoch = cursor.match(/\d{13}/)
+  // The tag has to be matched along with the number. Reading a bare run of 13 digits swallows the
+  // "3" in front instead of the last digit, which is a date 44 years out and folds ten days of
+  // guide onto one, because it also divides the value by ten.
+  const epoch = cursor.match(/d(?:%|#3)(\d{13})(?!\d)/)
   if (!epoch) return null
 
-  const d = dayjs.utc(parseInt(epoch[0], 10))
+  const d = dayjs.utc(parseInt(epoch[1], 10))
   return d.isValid() ? d : null
+}
+
+// The channel's own code ("O8" for VRT 1, "44" for De Tijdloze) is the third "#" field; the older
+// "|"-separated cursors carried it second.
+function parseChannelCode(cursor) {
+  if (!cursor) return null
+
+  const tagged = cursor.match(/^[^#]*#[^#]*#0([^#]+)#/)
+  return tagged ? tagged[1] : cursor.split('|')[1] || null
 }
 
 function parseUrl(action) {
@@ -344,7 +358,7 @@ async function loadCurrentEdge(current, edges) {
   // That list ignores the requested date, so without this it would leak into every other day too.
   if (!current) return null
 
-  const channelCode = edges[0]?.cursor?.split('|')[1]
+  const channelCode = parseChannelCode(edges[0]?.cursor)
   if (!channelCode) return null
 
   const listId = `$${Buffer.from(`o%31|snapshot|${channelCode}||||%`).toString('base64')}`
