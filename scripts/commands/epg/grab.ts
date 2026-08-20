@@ -95,6 +95,8 @@ interface GrabOptions {
 
 const options: GrabOptions = program.opts()
 
+let playwrightCleanup: (() => Promise<void>) | null = null
+
 async function main() {
   if (!Array.isArray(options.sites) && typeof options.channels !== 'string')
     throw new Error('One of the arguments must be presented: `--sites` or `--channels`')
@@ -145,11 +147,16 @@ async function main() {
   let playwrightAdapter: ((config: unknown) => Promise<unknown>) | null = null
   const sitesNeedingPlaywright = ['tvtv.us'] // Add more sites here as needed
   
-  if (options.sites && options.sites.some((site: string) => sitesNeedingPlaywright.includes(site))) {
+  const mayNeedPlaywright =
+    (options.sites && options.sites.some((site: string) => sitesNeedingPlaywright.includes(site))) ||
+    typeof options.channels === 'string'
+
+  if (mayNeedPlaywright) {
     try {
       const adapterPath = path.resolve(__dirname, '..', '..', 'helpers', 'playwright-adapter.js')
       const adapter = require(adapterPath)
       playwrightAdapter = adapter.playwrightAdapter
+      playwrightCleanup = adapter.cleanup
       logger.info('Playwright adapter loaded')
     } catch (error) {
       const err = error as Error
@@ -384,7 +391,11 @@ async function main() {
   logger.success(`  done in ${timer.format('HH[h] mm[m] ss[s]')}`)
 }
 
-main()
+main().finally(async () => {
+  if (playwrightCleanup) {
+    await playwrightCleanup()
+  }
+})
 
 function getLogoForChannel(channel: Channel): string | null {
   const feedData = data.feedsKeyByStreamId.get(channel.xmltv_id)
