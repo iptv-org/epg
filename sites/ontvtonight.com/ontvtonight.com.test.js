@@ -60,6 +60,37 @@ it('can parse response', () => {
   ])
 })
 
+it('can parse nested title and description markup', () => {
+  const content = `
+    <table>
+      <tbody>
+        <tr>
+          <td><h5>8:30 pm</h5></td>
+          <td>
+            <div>
+              <h5><a href="#">The Princess Diaries</a></h5>
+            </div>
+            <h6>Movie description</h6>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  `
+
+  const result = parser({ content, channel, date }).map(p => {
+    p.start = p.start.toJSON()
+    p.stop = p.stop.toJSON()
+    return p
+  })
+
+  expect(result).toMatchObject([
+    {
+      title: 'The Princess Diaries',
+      description: 'Movie description'
+    }
+  ])
+})
+
 it('can handle empty guide', () => {
   const result = parser({
     date,
