@@ -25,15 +25,15 @@ it('can parse response', () => {
     return p
   })
 
- expect(results.length).toBe(63)
+ expect(results.length).toBe(46)
 
  expect(results[0]).toMatchObject({
-  start: '2025-06-30T03:00:00.000Z',
-  stop: '2025-06-30T03:30:00.000Z',
-  title: 'Светът на здравето'
+  start: '2025-06-30T03:15:00.000Z',
+  stop: '2025-06-30T03:57:00.000Z',
+  title: 'Лице в лице'
  })
 
- expect(results[62]).toMatchObject({
+ expect(results[45]).toMatchObject({
   start: '2025-07-01T02:00:00.000Z',
   stop: '2025-07-01T02:30:00.000Z',
   title: 'Убийства в Рая , сезон 1 , епизод 7'
