@@ -55,7 +55,7 @@ module.exports = {
         lang: 'es',
         site_id: channel.CodCadenaTv,
         name: channel.Nombre,
-        logo: channel.Logo ? channel.Logos[0].url : null
+        logo: channel.Logo || channel.Logos?.[0]?.uri || null
       }
     })
   }
