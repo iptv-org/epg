@@ -4,56 +4,16 @@ const utc = require('dayjs/plugin/utc')
 
 dayjs.extend(utc)
 
-const EPG_QUERY = `
-query EpgPage($pageId: ID!, $lazyItemCount: Int = 100) {
-  page(id: $pageId) {
-    ... on ElectronicProgramGuidePage {
-      previous {
-        ...epgListFragment
-      }
-      next {
-        ...epgListFragment
-      }
-    }
-  }
-}
-
-fragment epgListFragment on PaginatedTileList {
-  listId
-  paginatedItems(first: $lazyItemCount) {
-    edges {
-      cursor
-      node {
-        ...epgTileFragment
-      }
-    }
-    pageInfo {
-      hasNextPage
-      endCursor
-    }
-  }
-}
-
+const TILE_FRAGMENT = `
 fragment epgTileFragment on Tile {
   ... on ITile {
     title
     description
     primaryMeta {
-      value
       shortValue
     }
-    indexMeta {
+    statusMeta {
       value
-    }
-    progress {
-      durationInSeconds
-    }
-    status {
-      accessibilityLabel
-      text {
-        small
-        default
-      }
     }
     image {
       templateUrl
@@ -66,6 +26,128 @@ fragment epgTileFragment on Tile {
   }
 }
 `
+
+const EPG_QUERY = `
+query EpgPage(
+  $pageId: ID!
+  $previousAfter: ID
+  $nextAfter: ID
+  $skipPrevious: Boolean = false
+  $skipNext: Boolean = false
+  $skipCurrent: Boolean = false
+) {
+  page(id: $pageId) {
+    ... on ElectronicProgramGuidePage {
+      previous @skip(if: $skipPrevious) {
+        paginatedItems(first: 100, after: $previousAfter) {
+          ...epgListFragment
+        }
+      }
+      current @skip(if: $skipCurrent) {
+        objectId
+      }
+      next @skip(if: $skipNext) {
+        paginatedItems(first: 100, after: $nextAfter) {
+          ...epgListFragment
+        }
+      }
+    }
+  }
+}
+
+fragment epgListFragment on TileConnection {
+  edges {
+    cursor
+    node {
+      ...epgTileFragment
+    }
+  }
+  pageInfo {
+    hasNextPage
+    endCursor
+  }
+}
+${TILE_FRAGMENT}`
+
+const SNAPSHOT_QUERY = `
+query LiveSnapshot($listId: ID!) {
+  list(listId: $listId) {
+    ... on PaginatedTileList {
+      paginatedItems(first: 1) {
+        edges {
+          cursor
+          node {
+            ...epgTileFragment
+            ... on ITile {
+              actionItems {
+                action {
+                  ... on LinkAction {
+                    link
+                  }
+                }
+              }
+            }
+            ... on EpisodeTile {
+              whatsonId
+            }
+          }
+        }
+      }
+    }
+  }
+}
+${TILE_FRAGMENT}`
+
+const PROGRAM_LISTS_QUERY = `
+query ProgramLists($id: ID!) {
+  page(id: $id) {
+    ... on ProgramPage {
+      menu {
+        items {
+          components {
+            __typename
+            ... on PaginatedTileList {
+              listId
+            }
+            ... on ContainerNavigation {
+              items {
+                title
+                active
+                objectId
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}`
+
+const EPISODE_LIST_QUERY = `
+query EpisodeList($listId: ID!, $after: ID) {
+  list(listId: $listId) {
+    ... on PaginatedTileList {
+      paginatedItems(first: 50, after: $after) {
+        edges {
+          node {
+            ... on EpisodeTile {
+              whatsonId
+              action {
+                ... on LinkAction {
+                  link
+                }
+              }
+            }
+          }
+        }
+        pageInfo {
+          hasNextPage
+          endCursor
+        }
+      }
+    }
+  }
+}`
 
 const CHANNELS_QUERY = `
 query ProgramGuidePage($pageId: ID!) {
@@ -81,7 +163,6 @@ query ProgramGuidePage($pageId: ID!) {
             }
             action {
               ... on LinkAction {
-                link
                 linkTokens {
                   placeholder
                   value
@@ -95,7 +176,11 @@ query ProgramGuidePage($pageId: ID!) {
   }
 }
 `
+const SITE_URL = 'https://www.vrt.be'
 const API_ENDPOINT = 'https://www.vrt.be/vrtnu-api/graphql/public/v1'
+// The airing program's real url only surfaces on the non-public schema (whatsonId + actionItems).
+const PRIVATE_API_ENDPOINT = 'https://www.vrt.be/vrtnu-api/graphql/v1'
+const MAX_PAGE_REQUESTS = 20
 const API_HEADERS = {
   'content-type': 'application/json',
   'user-agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0',
@@ -113,35 +198,53 @@ module.exports = {
       return {
         query: EPG_QUERY,
         variables: {
-          pageId: `/vrtmax/tv-gids/${channel.site_id}/${date.format('YYYY-MM-DD')}/`
+          pageId: buildPageId(channel, date)
         }
       }
     }
   },
-  parser({ content }) {
+  async parser({ content, channel, date }) {
     let data
     try {
       data = JSON.parse(content)
     } catch {
       return []
     }
-    if (!data.data?.page) return []
-
     const page = data.data?.page
-    const previousEdges = page.previous?.paginatedItems?.edges || []
-    const nextEdges = page.next?.paginatedItems?.edges || []
-    const edges = [...previousEdges, ...nextEdges]
+    if (!page) return []
 
-    const programs = []
-    edges.forEach((edge, index) => {
+    const pageId = buildPageId(channel, date)
+    const previousEdges = await loadAllEdges(page.previous?.paginatedItems, 'previous', pageId)
+    const nextEdges = await loadAllEdges(page.next?.paginatedItems, 'next', pageId)
+
+    const items = []
+    ;[...previousEdges, ...nextEdges].forEach(edge => {
       const node = edge.node
       if (!node || !node.title) return
 
       const start = parseCursor(edge.cursor)
       if (!start) return
 
-      const nextEdge = edges[index + 1]
-      const stop = nextEdge ? parseCursor(nextEdge.cursor) : parseFallbackStop(start, node)
+      items.push({ start, node, url: parseUrl(node.action) })
+    })
+
+    const currentEdge = await loadCurrentEdge(page.current, [...previousEdges, ...nextEdges])
+    const currentStart = currentEdge?.node?.title ? parseCursor(currentEdge.cursor) : null
+    if (currentStart && !items.some(item => item.start.valueOf() === currentStart.valueOf())) {
+      items.push({
+        start: currentStart,
+        node: currentEdge.node,
+        url: await resolveCurrentUrl(currentEdge.node)
+      })
+    }
+
+    items.sort((a, b) => a.start.valueOf() - b.start.valueOf())
+
+    const programs = []
+    items.forEach((item, index) => {
+      const { node, start } = item
+      const nextItem = items[index + 1]
+      const stop = nextItem ? nextItem.start : parseFallbackStop(start, node)
       if (!stop || !stop.isAfter(start)) return
 
       programs.push({
@@ -150,6 +253,7 @@ module.exports = {
         season: parseSeason(node.primaryMeta),
         episode: parseEpisode(node.primaryMeta),
         image: node.image?.templateUrl || null,
+        url: item.url,
         start,
         stop
       })
@@ -205,24 +309,206 @@ function parseEpisode(primaryMeta) {
   return item ? parseInt(item.shortValue.replace('Afl.', ''), 10) : null
 }
 
+// A cursor looks like "o%0|n%5|epg-entry|o#349#044#0d#31786982400000#0#0#3%": "#"-separated fields,
+// each behind a type tag, "3" for a number and "0" for a string. The start time is field "d", epoch
+// in milliseconds. Older cursors held the same value as "|"-separated "d%1786420800000".
 function parseCursor(cursor) {
   if (!cursor) return null
-  const iso = cursor.replace(/^epg#[^#]+#/, '')
-  const d = dayjs.utc(iso)
+
+  // The tag has to be matched along with the number. Reading a bare run of 13 digits swallows the
+  // "3" in front instead of the last digit, which is a date 44 years out and folds ten days of
+  // guide onto one, because it also divides the value by ten.
+  const epoch = cursor.match(/d(?:%|#3)(\d{13})(?!\d)/)
+  if (!epoch) return null
+
+  const d = dayjs.utc(parseInt(epoch[1], 10))
   return d.isValid() ? d : null
 }
 
-function parseFallbackStop(start, node) {
-  // Try progress.durationInSeconds (radio)
-  const durationS = node.progress?.durationInSeconds
-  if (durationS) return start.add(durationS, 'second')
+// The channel's own code ("O8" for VRT 1, "44" for De Tijdloze) is the third "#" field; the older
+// "|"-separated cursors carried it second.
+function parseChannelCode(cursor) {
+  if (!cursor) return null
 
-  // Try status.text.small e.g. "16 min"
-  const statusSmall = node.status?.text?.small
-  if (statusSmall) {
-    const match = statusSmall.match(/(\d+)\s*min/)
-    if (match) return start.add(parseInt(match[1], 10), 'minute')
+  const tagged = cursor.match(/^[^#]*#[^#]*#0([^#]+)#/)
+  return tagged ? tagged[1] : cursor.split('|')[1] || null
+}
+
+function parseUrl(action) {
+  return toProgramUrl(action?.link)
+}
+
+// Only a program's own page is useful downstream. A tile can also link to the channel's livestream
+// (that is what whatever is airing does) or to an /vrtmax/event/ slot, whose id is just the guide
+// timeslot in base64 — neither one plays.
+function toProgramUrl(link) {
+  if (!link) return null
+  if (link.startsWith('/vrtmax/livestream/') || link.startsWith('/vrtmax/event/')) return null
+
+  return link.startsWith('http') ? link : `${SITE_URL}${link}`
+}
+
+function buildPageId(channel, date) {
+  return `/vrtmax/tv-gids/${channel.site_id}/${date.format('YYYY-MM-DD')}/`
+}
+
+// previous/next skip the airing program, and the guide only has it as a livestream tile without a
+// cursor. The channel's "snapshot" list starts at whatever is on right now and does carry one.
+async function loadCurrentEdge(current, edges) {
+  // That list ignores the requested date, so without this it would leak into every other day too.
+  if (!current) return null
+
+  const channelCode = parseChannelCode(edges[0]?.cursor)
+  if (!channelCode) return null
+
+  const listId = `$${Buffer.from(`o%31|snapshot|${channelCode}||||%`).toString('base64')}`
+  const data = await axios
+    .post(
+      PRIVATE_API_ENDPOINT,
+      { query: SNAPSHOT_QUERY, variables: { listId } },
+      { headers: API_HEADERS }
+    )
+    .then(r => r.data)
+    .catch(console.error)
+
+  return data?.data?.list?.paginatedItems?.edges?.[0] || null
+}
+
+// The guide never exposes the airing slot's own /vrtmax/a-z/ url (its tile links to the livestream).
+// Recover it by matching the tile's whatsonId in the episode lists of its program page.
+async function resolveCurrentUrl(node) {
+  const whatsonId = node?.whatsonId
+  const programLink = (node?.actionItems || [])
+    .map(item => item?.action?.link)
+    .find(link => link?.startsWith('/vrtmax/a-z/'))
+  if (!whatsonId || !programLink) return null
+
+  const season = parseSeason(node.primaryMeta)
+  for (const listId of await loadProgramListIds(programLink, season)) {
+    const url = toProgramUrl(await findEpisodeLink(listId, whatsonId))
+    if (url) return url
   }
 
   return null
+}
+
+// A program page carries flat lists plus (for multi-season programs) one episode list per season,
+// nested under a second ContainerNavigation. The episode airs from exactly one season, so only that
+// season's list is searched, alongside the program's flat lists.
+async function loadProgramListIds(programLink, season) {
+  const data = await postPrivate(PROGRAM_LISTS_QUERY, { id: programLink })
+  const items = data?.data?.page?.menu?.items || []
+
+  const flatLists = []
+  const seasonLists = []
+  items.forEach(item => {
+    ;(item.components || []).forEach(component => {
+      if (component?.__typename === 'PaginatedTileList' && component.listId) {
+        flatLists.push(component.listId)
+      }
+      if (component?.__typename === 'ContainerNavigation') {
+        ;(component.items || []).forEach(tab => {
+          const listId = buildSeasonListId(tab)
+          if (listId) seasonLists.push({ listId, number: seasonNumber(tab.title) })
+        })
+      }
+    })
+  })
+
+  const seasons =
+    season == null ? [] : seasonLists.filter(s => s.number === season).map(s => s.listId)
+  return [...seasons, ...flatLists]
+}
+
+// Season tabs only inline a usable listId for the active season; the others are derived from the
+// tab's objectId. The list wrapper is o%35 with a trailing marker that is b%0 for the active season
+// and b%1 for every other one.
+function buildSeasonListId(tab) {
+  if (!tab?.objectId?.startsWith('$')) return null
+
+  const inner = Buffer.from(tab.objectId.slice(1), 'base64').toString()
+  const index = inner.match(/\|(\d+)\|%$/)?.[1]
+  if (!index) return null
+
+  const marker = tab.active ? 0 : 1
+  return `$${Buffer.from(`o%35|${inner}|${index}|b%${marker}|n%1%`).toString('base64')}`
+}
+
+function seasonNumber(title) {
+  const match = (title || '').match(/\d+/)
+  return match ? parseInt(match[0], 10) : null
+}
+
+async function findEpisodeLink(listId, whatsonId) {
+  let after = null
+  for (let requests = 0; requests < MAX_PAGE_REQUESTS; requests++) {
+    const data = await postPrivate(EPISODE_LIST_QUERY, { listId, after })
+    const items = data?.data?.list?.paginatedItems
+    if (!items) return null
+
+    const match = (items.edges || []).find(edge => edge.node?.whatsonId === whatsonId)
+    if (match) return match.node.action?.link || null
+
+    if (!items.pageInfo?.hasNextPage) return null
+    after = items.pageInfo.endCursor
+  }
+
+  return null
+}
+
+function postPrivate(query, variables) {
+  return axios
+    .post(PRIVATE_API_ENDPOINT, { query, variables }, { headers: API_HEADERS })
+    .then(r => r.data)
+    .catch(console.error)
+}
+
+// The API caps every list at 50 items, whatever `first` asks for, so busy channels like Ketnet need
+// to be paged through with the cursor from pageInfo.
+async function loadAllEdges(paginatedItems, listName, pageId) {
+  if (!paginatedItems) return []
+
+  const edges = [...(paginatedItems.edges || [])]
+  let pageInfo = paginatedItems.pageInfo
+  let requests = 0
+
+  while (pageInfo?.hasNextPage && pageInfo.endCursor && requests < MAX_PAGE_REQUESTS) {
+    requests++
+
+    const data = await axios
+      .post(
+        API_ENDPOINT,
+        {
+          query: EPG_QUERY,
+          variables: {
+            pageId,
+            [`${listName}After`]: pageInfo.endCursor,
+            skipPrevious: listName !== 'previous',
+            skipNext: listName !== 'next',
+            skipCurrent: true
+          }
+        },
+        { headers: API_HEADERS }
+      )
+      .then(r => r.data)
+      .catch(console.error)
+
+    const items = data?.data?.page?.[listName]?.paginatedItems
+    if (!items?.edges?.length) break
+
+    edges.push(...items.edges)
+    pageInfo = items.pageInfo
+  }
+
+  return edges
+}
+
+// The last program of the day has no successor to take its stop time from. statusMeta is the only
+// duration the API exposes for it, always formatted as "16 min".
+function parseFallbackStop(start, node) {
+  const statusMeta = node.statusMeta?.[0]?.value
+  if (!statusMeta) return null
+
+  const match = statusMeta.match(/(\d+)\s*min/)
+  return match ? start.add(parseInt(match[1], 10), 'minute') : null
 }
