@@ -78,12 +78,74 @@ it('can parse response', async () => {
       'Sharon Gless'
     ],
     season: 5,
-    episode: 8
+    episode: 8,
+    date: '2005',
+    country: 'US',
+    rating: { system: 'Kijkwijzer', value: '16' },
+    language: ['nl'],
+    subtitles: [],
+    new: false
+  })
+})
+
+it('can parse response without program details', async () => {
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content_0000.json'))
+
+  axios.get.mockImplementation(() => Promise.resolve({ data: '' }))
+
+  let results = await parser({ content, channel, date })
+  results = results.map(p => {
+    p.start = p.start.toJSON()
+    p.stop = p.stop.toJSON()
+    return p
+  })
+
+  expect(results[0]).toMatchObject({
+    start: '2022-10-29T23:56:00.000Z',
+    stop: '2022-10-30T01:44:00.000Z',
+    title: 'Queer as Folk USA',
+    rating: { system: 'Kijkwijzer', value: '16' },
+    language: ['nl']
   })
 })
 
 it('can handle empty guide', async () => {
-  let results = await parser({ content: '', channel, date })
+  // a date of its own, the segments of `date` are still held by the cache of the parser
+  const emptyDate = dayjs.utc('2022-11-30', 'YYYY-MM-DD').startOf('d')
+
+  axios.get.mockImplementation(() => Promise.resolve({ data: '' }))
+
+  let results = await parser({ content: '', channel, date: emptyDate })
 
   expect(results).toMatchObject([])
+})
+
+it('only lists a broadcast running past midnight on the day it starts', async () => {
+  // dates of their own again, so this does not run into the segments cached by the tests above
+  const first = dayjs.utc('2022-12-01', 'YYYY-MM-DD').startOf('d')
+  const second = first.add(1, 'd')
+  const content = JSON.stringify({
+    entries: [
+      {
+        channelId: channel.site_id,
+        events: [
+          {
+            id: 'overnight',
+            title: 'Overnight',
+            startTime: dayjs.utc('2022-12-01T23:30:00Z').unix(),
+            endTime: dayjs.utc('2022-12-02T04:00:00Z').unix()
+          }
+        ]
+      }
+    ]
+  })
+
+  axios.get.mockImplementation(() => Promise.resolve({ data: '' }))
+
+  // both days list the event, because it is on air when either of them begins or ends
+  expect(await parser({ content, channel, date: first })).toHaveLength(1)
+  expect(await parser({ content, channel, date: second })).toHaveLength(0)
+
+  // and the day that claimed it keeps returning it
+  expect(await parser({ content, channel, date: first })).toHaveLength(1)
 })
