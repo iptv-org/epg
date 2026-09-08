@@ -57,6 +57,12 @@ program
       .env('DAYS')
   )
   .addOption(
+    new Option('--past-days <days>', 'Load programs for the specified number of days in the past')
+      .argParser(parseNumber)
+      .env('PAST_DAYS')
+      .default(0)
+  )
+  .addOption(
     new Option('--maxConnections <number>', 'Limit on the number of concurrent requests')
       .argParser(parseNumber)
       .env('MAX_CONNECTIONS')
@@ -90,6 +96,7 @@ interface GrabOptions {
   delay?: number
   lang?: string
   days?: number
+  pastDays: number
   proxy?: string
 }
 
@@ -231,7 +238,11 @@ async function main() {
 
     const days = globalConfig.days || config.days
     const currDate = dayjs.utc(process.env.CURR_DATE || new Date().toISOString())
-    const dates = Array.from({ length: days }, (_, day) => currDate.add(day, 'd'))
+
+    const daysToLoad = days + options.pastDays
+    const startDate = currDate.subtract(options.pastDays, 'd')
+
+    const dates = Array.from({ length: daysToLoad }, (_, day) => startDate.add(day, 'd'))
 
     dates.forEach((date: Dayjs) => {
       queue.add({
