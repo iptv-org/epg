@@ -10,17 +10,17 @@ module.exports = {
   url() {
     return 'https://micindo.com/api/public/schedule'
   },
-  parser(content) {
+  parser(context) {
     try {
       let programs = []
-      const json = JSON.parse(content)
+      const json = JSON.parse(context.content)
       const jsonData = json.data
-      jsonData.forEach(program => {
+      jsonData.forEach(programItem => {
         programs.push({
-          title: program.program,
-          description: program.program_desc,
-          start: dayjs.tz(program.start_time, 'Asia/Jakarta'),
-          stop: dayjs.tz(program.end_time, 'Asia/Jakarta')
+          title: programItem.program.program,
+          description: programItem.program.program_desc,
+          start: dayjs.tz(programItem.date + 'T' + programItem.start_time, 'Asia/Jakarta'),
+          stop: dayjs.tz(programItem.date + 'T' + programItem.end_time, 'Asia/Jakarta')
         })
       })
       return programs
