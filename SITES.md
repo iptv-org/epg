@@ -100,6 +100,7 @@
     <tr><td><a href="sites/meuguia.tv">meuguia.tv</a></td><td align="right">102</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/mewatch.sg">mewatch.sg</a></td><td align="right">119</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/mi.tv">mi.tv</a></td><td align="right">2084</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/mic-indo.com">mic-indo.com</a></td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/mncvision.id">mncvision.id</a></td><td align="right">107</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/moji.id">moji.id</a></td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/mojmaxtv.hrvatskitelekom.hr">mojmaxtv.hrvatskitelekom.hr</a></td><td align="right">243</td><td align="center">🟢</td><td></td></tr>
