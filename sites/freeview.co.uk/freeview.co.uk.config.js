@@ -85,7 +85,12 @@ function parseItems(content, channel) {
 async function loadProgramDetails(item) {
   const url = `https://www.freeview.co.uk/api/program?pid=${item.program_id}&start_time=${item.start_time}&duration=${item.duration}`
   const data = await axios
-    .get(url)
+    .get(url, {
+      headers: {
+        'User-Agent':
+          'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36'
+      }
+    })
     .then(r => {
       const programs = r?.data?.data?.programs
       return Array.isArray(programs) && programs.length > 0 ? programs[0] : {}
