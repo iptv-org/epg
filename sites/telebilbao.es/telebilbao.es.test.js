@@ -35,6 +35,16 @@ it('can parse response', () => {
   })
 })
 
+it('can parse response with accents', () => {
+  const date = dayjs.utc('2025-01-18', 'YYYY-MM-DD').startOf('d')
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.html'))
+  let results = parser({ content, date })
+
+  expect(results.length).toBe(50)
+
+  results.forEach(r => expect(r.title).not.toBeUndefined())
+})
+
 it('can handle empty guide', () => {
   const results = parser({
     date,
