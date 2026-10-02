@@ -23,8 +23,8 @@ it('can parse response', () => {
   })
 
   expect(results[0]).toMatchObject({
-    start: '2024-11-21T12:00:00.000Z',
-    stop: '2024-11-21T13:00:00.000Z',
+    start: '2024-11-22T05:00:00.000Z',
+    stop: '2024-11-22T06:00:00.000Z',
     title: 'On The Fly',
     category: 'Sports'
   })
