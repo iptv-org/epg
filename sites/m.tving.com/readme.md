@@ -5,7 +5,7 @@ https://m.tving.com/guide/schedule.tving
 ### Download the guide
 
 ```sh
-npm run grab --- --site=m.tving.com
+npm run grab --- --sites=m.tving.com
 ```
 
 ### Update channel list

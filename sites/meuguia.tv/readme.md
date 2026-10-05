@@ -5,7 +5,7 @@ https://meuguia.tv/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=meuguia.tv
+npm run grab --- --sites=meuguia.tv
 ```
 
 ### Update channel list

@@ -5,7 +5,7 @@ https://streamingtvguides.com/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=streamingtvguides.com
+npm run grab --- --sites=streamingtvguides.com
 ```
 
 ### Update channel list

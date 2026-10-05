@@ -5,7 +5,7 @@ https://www.tvcubana.icrt.cu/cartelera-de-la-tv-cubana
 ### Download the guide
 
 ```sh
-npm run grab --- --site=tvcubana.icrt.cu
+npm run grab --- --sites=tvcubana.icrt.cu
 ```
 
 ### Test

@@ -5,7 +5,7 @@ https://www.telsu.fi/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=telsu.fi
+npm run grab --- --sites=telsu.fi
 ```
 
 ### Update channel list

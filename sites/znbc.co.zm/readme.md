@@ -5,7 +5,7 @@ https://www.znbc.co.zm/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=znbc.co.zm
+npm run grab --- --sites=znbc.co.zm
 ```
 
 ### Test

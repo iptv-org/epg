@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Всички бг канали програма,сериали и категории">
+    <meta name="author" content="Ivan Dimov">
+    <meta name="apple-itunes-app" content="app-id=456882655, affiliate-data=myAffiliateData, app-argument=myURL">
+    <meta name="google-play-app" content="app-id=net.boxbg.bgtvguide">
+    <title>  БГ TV Guide - БНТ1
+</title>
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="lEH7M1Y016FzaQPUulb8Kh3AtDpIRGDrNQBq4oiA">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/app.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="/css/public.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="/css/jquery.smartbanner.css" type="text/css" media="screen">
+        <link rel="apple-touch-icon"
+    href="/img/tvguideIcon.png"
+    type="image/png" id='iosicon'/>
+    <link rel="shortcut icon" href="/img/tvguideIcon.png"/>
+  </head>
+<body>
+<div id="vue-app">
+    <header class="fixed-top">
+        <div class="top_bar top-bar-desktop d-none d-lg-block">
+            <div class="container">
+                <div class="row">
+                    
+<div class="col-4">
+    <ul class="social">
+    <li><a href="http://katalozi-bg.info/">
+        <strong>Каталози</strong></a></li>
+    <li style="padding-left:15px;">
+        <a href="http://radio.boxbg.net/">
+        <strong>iРадио</strong></a></li>
+    </ul>
+</div>
+
+<div class="col-8">
+    <ul class="rightc">
+        <li><i class="fa fa-envelope-o"></i> support@boxbg.net</li>
+        <li><a href="http://BoxBg.Net" ><strong>BoxBg.Net</strong></a></li>
+    </ul>
+</div>
+
+                </div>
+            </div>
+        </div>
+        <div class="top_bar collapse navbar-collapse" id="navbarCollapse">
+            <div class="row">
+              
+<div class="col-4">
+    <ul class="social">
+    <li><a href="http://katalozi-bg.info/">
+        <strong>Каталози</strong></a></li>
+    <li style="padding-left:15px;">
+        <a href="http://radio.boxbg.net/">
+        <strong>iРадио</strong></a></li>
+    </ul>
+</div>
+
+<div class="col-8">
+    <ul class="rightc">
+        <li><i class="fa fa-envelope-o"></i> support@boxbg.net</li>
+        <li><a href="http://BoxBg.Net" ><strong>BoxBg.Net</strong></a></li>
+    </ul>
+</div>
+
+            </div>
+        </div>
+        <!--top_bar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container">
+                <a class="navbar-brand p-1 d-none d-lg-block" href="/">
+      <img src="/img/tvguideIcon.png" alt="" />
+      БГ TV Guide
+  </a>
+  <button type="button" id="" onClick="history.go(-1)"
+  class="btn btn-link p-3 pull-left d-block d-lg-none">
+  <i class="fa fa-chevron-left"></i>
+    <span class="pl-2"><strong>БГ TV Guide</strong></span>
+  </button>
+  <strong class="d-block d-lg-none">БНТ1</strong>
+
+                <!-- <a class="navbar-brand" href="#">Fixed navbar</a> -->
+
+
+        <button class="m-2 navbar-toggler btn-sm bg-light" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+        </button>
+
+
+
+
+        <ul class="navbar-nav justify-content-center">
+            <li class="nav-item ">
+                <a class="nav-link active" href="https://tv.boxbg.net"><strong>
+                Kанали</strong></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link " href="https://tv.boxbg.net/movies">
+                    <strong>Филми</strong>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link " href="https://tv.boxbg.net/series"><strong>Сериали</strong></a>
+            </li>
+            <li class="nav-item d-block d-lg-none">
+              <a href="https://tv.boxbg.net/category/movies" class="nav-link  " >
+                <strong>Категории</strong></a>
+            </li>
+            <li class="nav-item  dropdown d-none d-lg-block">
+                <a href="https://tv.boxbg.net/category/movies" class="nav-link dropdown-toggle" data-toggle="dropdown"><strong>Категории</strong></a>
+                <div class="dropdown-content">
+                    <a href="https://tv.boxbg.net/category/shows">Предавания</a>
+                    <a href="https://tv.boxbg.net/category/movies">Филми</a>
+                    <a href="https://tv.boxbg.net/category/sport">Спорт</a>
+                    <a href="https://tv.boxbg.net/category/science">Научнопопулярни</a>
+                    <a href="https://tv.boxbg.net/category/kids">Детски</a>
+                    <a href="https://tv.boxbg.net/category/music">Музика</a>
+                    <a href="https://tv.boxbg.net/category/news">Новини</a>
+                </div>
+            </li>
+            
+            <li class="nav-item dropdown d-none d-lg-block">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" class="nav-link" >
+                <strong>
+                    <i class="fa fa-mobile" style="font-size: 1.4em;" aria-hidden="true"></i> MobleApp
+                </strong>
+              </a>
+              <div class="dropdown-content">
+                    <a href="https://itunes.apple.com/bg/app/bg-tv-guide/id456882655?mt=8" target="_blank" style="width:180px; display:box;">
+                        <img src="/img/available-on-the-app-store.svg" style="height: 45px;" data-toggle="tooltip" data-placement="top" title="" data-original-title="Свали от AppStore за iOS">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=net.boxbg.bgtvguide" target="_blank" style="width:180px;">
+                        <img src="/img/en_generic_rgb_wo_60.png" style="height: 50px;" data-toggle="tooltip" data-placement="top" title="" data-original-title="Свали от GooglePlay за Android">
+                    </a>
+              </div>
+            </li>
+                        <li class="nav-item">
+              <a href="https://tv.boxbg.net/search" class="nav-link  " >
+                <strong><i class="fa fa-search fa-4 " aria-hidden="true"></i></strong>
+              </a>
+            </li>
+
+                    </ul>
+
+          </div>
+        </nav>
+    </header>
+    
+    
+    <div class="container">
+        <div class="row" style="margin-top:5px;">
+  <div class="col-sm-2 d-none d-sm-none d-md-block" style="padding-bottom: 10px;"><br>
+    <button type="button" class="btn btn-tvguide navbar-btn pull-left" onclick="history.go(-1)">
+             <i class="fa fa-chevron-left" aria-hidden="true"></i> Назад </button>
+  </div>
+  <div class="col-md-10 col-xs-12" align="center" style="padding:0;margin:0;min-height: 55px;">
+
+    <div style="width:100%; " id="google-ads-1">
+        <script type="text/javascript">
+        google_ad_client = "ca-pub-5347674045883414";
+        // AD UNITS YOU WANT TO DISPLAY FOR THIS POSITION.
+        var adsarr=[
+            // The format is [width, height, "ad slot number"]
+            [728, 90, "4079401502"],
+            [320, 50, "3800199900"]
+        ];
+
+        // This shows the adsense ad depending on your screen size.
+        adUnit   = document.getElementById("google-ads-1");
+        var width=adUnit.offsetWidth;
+
+        var got_adunit=0;
+        for (var i = 0; i < adsarr.length; i++) {
+            adunitarr=adsarr[i];
+            if(width >= adunitarr[0]) {
+                google_ad_width = adunitarr[0];
+                google_ad_height = adunitarr[1];
+                google_ad_slot = adunitarr[2];
+                got_adunit=1;
+                break;
+            }
+        }
+        if (got_adunit == 0) {
+          adunitarr=adsarr[2];
+            google_ad_width = adunitarr[0];
+              google_ad_height = adunitarr[1];
+              google_ad_slot = adunitarr[2];
+        }
+        </script>
+
+        <script type="text/javascript"
+        src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+        </script>
+      </div>
+
+  </div>
+</div>
+
+
+<div class="row" style="" ng-controller="WeekCtrl">
+
+
+  
+
+  <div class="col-sm-12 col-lg-8">
+    <div class="scroll-days overflow shadow">
+      <ul class="days-menu" style="width: 1340px;">
+        
+        
+        <li>
+          <i class="fa fa-chevron-left" aria-hidden="true"></i> 
+          <a href="?day=08082025">Предишна<br>Седмица</a>
+        </li>
+        
+                  <li class="">
+            <a href="?day=09082025"> 09<br>събота</a>
+          </li>
+                            <li class="">
+            <a href="?day=10082025"> 10<br>неделя</a>
+          </li>
+                            <li class="">
+            <a href="?day=11082025"> 11<br>понеделник</a>
+          </li>
+                            <li class="">
+            <a href="?day=12082025"> 12<br>вторник</a>
+          </li>
+                            <li class="active">
+            <a href="?day=13082025"> 13<br>сряда</a>
+          </li>
+                            <li class="">
+            <a href="?day=14082025"> 14<br>четвъртък</a>
+          </li>
+                            <li class="">
+            <a href="?day=15082025"> 15<br>петък</a>
+          </li>
+                            <li class="">
+            <a href="?day=16082025"> 16<br>събота</a>
+          </li>
+                            <li class="">
+            <a href="?day=17082025"> 17<br>неделя</a>
+          </li>
+                  
+        <li>
+          <a href="?day=17082025">Следваща<br>Седмица</a>
+          <i class="fa fa-chevron-right" aria-hidden="true"></i> 
+        </li>
+        
+      </ul>
+    </div>
+
+    <div class="row" style="margin-top:5px;margin-bottom:5px;margin-left:0px;margin-right: 0px;padding: 0px;">
+      <div class="col-xs-12 col-sm-12 col-md-12">
+              </div>
+    </div>
+
+      <div class="list-group list-events shadow">
+                <a href="#"  @click.prevent="eventLink($event,{&quot;id&quot;:13495497,&quot;text&quot;:&quot;65 \u0432 \u0435\u0444\u0438\u0440 - \/\u043f\/&quot;,&quot;start_at&quot;:&quot;2025-08-13 00:25:00&quot;,&quot;end_at&quot;:&quot;2025-08-13 00:55:00&quot;,&quot;duration&quot;:30,&quot;channel_id&quot;:29,&quot;categories&quot;:&quot;&quot;,&quot;programable_type&quot;:&quot;&quot;,&quot;programable_id&quot;:0,&quot;similar&quot;:&quot;&quot;,&quot;programable&quot;:null})" 
+          class="list-group-item event-row  " 
+          style="min-height:65px;" data-toggle="modal" data-target="#myModal">
+          <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+          <div class="week-cat ">
+            00:25 <br> <span></span>
+          </div>
+          65 в ефир - /п/
+        </a>
+
+                          <a href="#"  @click.prevent="eventLink($event,{&quot;id&quot;:13495498,&quot;text&quot;:&quot;\u041c\u0438\u0441\u0442\u0435\u0440\u0438\u0438\u0442\u0435 \u043d\u0430 \u0434\u043e\u043a\u0442\u043e\u0440 \u0411\u043b\u0435\u0439\u043a 3 - \u0442\u0432 \u0444\u0438\u043b\u043c \/7 \u0435\u043f\u0438\u0437\u043e\u0434\/\u043f\/ (12)&quot;,&quot;start_at&quot;:&quot;2025-08-13 00:55:00&quot;,&quot;end_at&quot;:&quot;2025-08-13 01:55:00&quot;,&quot;duration&quot;:60,&quot;channel_id&quot;:29,&quot;categories&quot;:&quot;\u0421\u0435\u0440\u0438\u0430\u043b&quot;,&quot;programable_type&quot;:&quot;Series&quot;,&quot;programable_id&quot;:1121,&quot;similar&quot;:&quot;&quot;,&quot;programable&quot;:{&quot;id&quot;:1121,&quot;title&quot;:&quot;The Doctor Blake Mysteries&quot;,&quot;bg_title&quot;:&quot;\u041c\u0438\u0441\u0442\u0435\u0440\u0438\u0438\u0442\u0435 \u043d\u0430 \u0434\u043e\u043a\u0442\u043e\u0440 \u0411\u043b\u0435\u0439\u043a&quot;,&quot;akas&quot;:null,&quot;description&quot;:&quot;\u041c\u0438\u0441\u0442\u0435\u0440\u0438\u0438\u0442\u0435 \u043d\u0430 \u0434\u043e\u043a\u0442\u043e\u0440 \u0411\u043b\u0435\u0439\u043a (\u043d\u0430 \u0430\u043d\u0433\u043b\u0438\u0439\u0441\u043a\u0438: The Doctor Blake Mysteries) \u0435 \u0430\u0432\u0441\u0442\u0440\u0430\u043b\u0438\u0439\u0441\u043a\u0438 \u0442\u0435\u043b\u0435\u0432\u0438\u0437\u0438\u043e\u043d\u0435\u043d \u0441\u0435\u0440\u0438\u0430\u043b, \u0438\u0437\u043b\u044a\u0447\u0435\u043d \u0437\u0430 \u043f\u044a\u0440\u0432\u0438 \u043f\u044a\u0442 \u043f\u043e ABC \u043d\u0430 1 \u0444\u0435\u0432\u0440\u0443\u0430\u0440\u0438 2013 \u0433. \u0432 20:30 \u0447\u0430\u0441\u0430[1]. \u041a\u0440\u0435\u0433 \u0414\u0443\u0433\u044a\u043b \u041c\u0430\u043a\u043b\u0430\u043b\u044a\u043d \u0435 \u0432 \u0440\u043e\u043b\u044f\u0442\u0430 \u043d\u0430 \u0434\u043e\u043a\u0442\u043e\u0440 \u041b\u0443\u0441\u0438\u0435\u043d \u0411\u043b\u0435\u0439\u043a, \u043a\u043e\u0439\u0442\u043e \u0441\u0435 \u0437\u0430\u0432\u0440\u044a\u0449\u0430 \u0432 \u0411\u0430\u043b\u0430\u0440\u0430\u0442, \u0441\u0435\u0432\u0435\u0440\u043e\u0437\u0430\u043f\u0430\u0434\u043d\u043e \u043e\u0442 \u041c\u0435\u043b\u0431\u044a\u0440\u043d, \u0432 \u043a\u0440\u0430\u044f \u043d\u0430 1950-\u0442\u0435 \u0433\u043e\u0434\u0438\u043d\u0438, \u0437\u0430 \u0434\u0430 \u043f\u043e\u0435\u043c\u0435 \u043e\u0431\u0449\u0430\u0442\u0430 \u043c\u0435\u0434\u0438\u0446\u0438\u043d\u0441\u043a\u0430 \u043f\u0440\u0430\u043a\u0442\u0438\u043a\u0430 \u043d\u0430 \u043f\u043e\u043a\u043e\u0439\u043d\u0438\u044f \u0441\u0438 \u0431\u0430\u0449\u0430 \u0438 \u0440\u043e\u043b\u044f\u0442\u0430 \u043d\u0430 \u043f\u043e\u043b\u0438\u0446\u0435\u0439\u0441\u043a\u0438 \u0445\u0438\u0440\u0443\u0440\u0433 \u0441\u043b\u0435\u0434 \u043e\u0442\u0441\u044a\u0441\u0442\u0432\u0438\u0435 \u043e\u0442 30 \u0433\u043e\u0434\u0438\u043d\u0438. \u041f\u0435\u0442 \u0441\u0435\u0437\u043e\u043d\u0430 \u0441\u0435 \u0438\u0437\u043b\u044a\u0447\u0432\u0430\u0442 \u0434\u043e 2017 \u0433., \u0441\u043b\u0435\u0434 \u043a\u043e\u0435\u0442\u043e \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u0430\u0442\u0430 \u0435 \u0437\u0430\u043a\u0440\u0438\u0442\u0430 \u0432 \u043a\u0440\u0430\u044f \u043d\u0430 \u043f\u0435\u0442\u0438\u044f \u0441\u0435\u0437\u043e\u043d. \u041f\u044a\u0440\u0432\u0438\u0442\u0435 \u0434\u0432\u0430 \u0441\u0435\u0437\u043e\u043d\u0430 \u0438\u043c\u0430\u0442 10 \u0435\u043f\u0438\u0437\u043e\u0434\u0430 \u0434\u043e\u043a\u0430\u0442\u043e \u0441\u043b\u0435\u0434\u0432\u0430\u0449\u0438\u0442\u0435 \u0438\u043c\u0430\u0442 \u043f\u043e 8. \u0412\u0441\u0435\u043a\u0438 \u0435\u043f\u0438\u0437\u043e\u0434 \u0435 \u043e\u043a\u043e\u043b\u043e \u0447\u0430\u0441 \u2013 \u043c\u0435\u0436\u0434\u0443 56 \u0438 59 \u043c\u0438\u043d\u0443\u0442\u0438.&quot;,&quot;origin_country&quot;:&quot;\u0410\u0432\u0441\u0442\u0440\u0430\u043b\u0438\u044f&quot;,&quot;runtime&quot;:60,&quot;startdate&quot;:&quot;2013-01-01&quot;,&quot;ended&quot;:&quot;2018-12-01&quot;,&quot;status&quot;:null,&quot;imdb_rating&quot;:&quot;8.00&quot;,&quot;banners&quot;:{&quot;poster&quot;:&quot;\/img\/series\/posters\/1121.jpg&quot;,&quot;banner&quot;:&quot;\/img\/series\/banners\/1121.jpg&quot;},&quot;alternate_ids&quot;:&quot;{\&quot;imdb\&quot;:\&quot;tt2375720\&quot;,\&quot;tvdb\&quot;:null}&quot;,&quot;links&quot;:&quot;[\&quot;http:\\\/\\\/www.imdb.com\\\/title\\\/tt2375720\\\/\&quot;,\&quot;http:\\\/\\\/thetvdb.com\\\/?tab=series&amp;id=\&quot;]&quot;,&quot;episodes&quot;:46,&quot;seasons&quot;:6,&quot;created_at&quot;:&quot;2023-05-25 10:01:01&quot;,&quot;updated_at&quot;:&quot;2023-05-25 10:01:01&quot;,&quot;locale_title&quot;:&quot;\u041c\u0438\u0441\u0442\u0435\u0440\u0438\u0438\u0442\u0435 \u043d\u0430 \u0434\u043e\u043a\u0442\u043e\u0440 \u0411\u043b\u0435\u0439\u043a&quot;}})" 
+          class="list-group-item event-row  " 
+          style="min-height:65px;" data-toggle="" data-target="#myModal">
+          <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+          <div class="week-cat series">
+            00:55 <br> <span>Сериал</span>
+          </div>
+          Мистериите на доктор Блейк 3 - тв филм /7 епизод/п/ (12)
+        </a>
+
+                          <a href="#"  @click.prevent="eventLink($event,{&quot;id&quot;:13495499,&quot;text&quot;:&quot;\u0428\u0435\u0442\u043b\u0430\u043d\u0434 3 - \u0442\u0432 \u0444\u0438\u043b\u043c \/4 \u0435\u043f\u0438\u0437\u043e\u0434\/\u043f\/ (14)&quot;,&quot;start_at&quot;:&quot;2025-08-13 01:55:00&quot;,&quot;end_at&quot;:&quot;2025-08-13 02:55:00&quot;,&quot;duration&quot;:60,&quot;channel_id&quot;:29,&quot;categories&quot;:&quot;\u0421\u0435\u0440\u0438\u0430\u043b&quot;,&quot;programable_type&quot;:&quot;Series&quot;,&quot;programable_id&quot;:1172,&quot;similar&quot;:&quot;&quot;,&quot;programable&quot;:{&quot;id&quot;:1172,&quot;title&quot;:&quot;Shetland&quot;,&quot;bg_title&quot;:&quot;\u0428\u0435\u0442\u043b\u0430\u043d\u0434&quot;,&quot;akas&quot;:null,&quot;description&quot;:&quot;Set against the stark backdrop of Scotland&#039;s rugged coastline, DI Jimmy Perez and his team investigate murders in the small island community of Shetland.&quot;,&quot;origin_country&quot;:&quot;\u0412\u0435\u043b\u0438\u043a\u043e\u0431\u0440\u0438\u0442\u0430\u043d\u0438\u044f&quot;,&quot;runtime&quot;:60,&quot;startdate&quot;:&quot;2013-01-01&quot;,&quot;ended&quot;:&quot;0000-00-00&quot;,&quot;status&quot;:null,&quot;imdb_rating&quot;:&quot;8.30&quot;,&quot;banners&quot;:{&quot;poster&quot;:&quot;\/img\/series\/posters\/1172.jpg&quot;,&quot;banner&quot;:&quot;\/img\/series\/banners\/1172.jpg&quot;},&quot;alternate_ids&quot;:&quot;{\&quot;imdb\&quot;:\&quot;tt2396135\&quot;,\&quot;tvdb\&quot;:null}&quot;,&quot;links&quot;:&quot;[\&quot;http:\\\/\\\/www.imdb.com\\\/title\\\/tt2396135\\\/\&quot;,\&quot;http:\\\/\\\/thetvdb.com\\\/?tab=series&amp;id=\&quot;]&quot;,&quot;episodes&quot;:44,&quot;seasons&quot;:8,&quot;created_at&quot;:&quot;2024-02-05 14:10:22&quot;,&quot;updated_at&quot;:&quot;2024-02-05 14:10:22&quot;,&quot;locale_title&quot;:&quot;\u0428\u0435\u0442\u043b\u0430\u043d\u0434&quot;}})" 
+          class="list-group-item event-row  " 
+          style="min-height:65px;" data-toggle="" data-target="#myModal">
+          <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+          <div class="week-cat series">
+            01:55 <br> <span>Сериал</span>
+          </div>
+          Шетланд 3 - тв филм /4 епизод/п/ (14)
+        </a>
+
+                          <a href="#"  @click.prevent="eventLink($event,{&quot;id&quot;:13495500,&quot;text&quot;:&quot;\u0420\u0435\u043b\u0438\u0433\u0438\u044f\u0442\u0430 \u0434\u043d\u0435\u0441 - \/\u043f\/&quot;,&quot;start_at&quot;:&quot;2025-08-13 02:55:00&quot;,&quot;end_at&quot;:&quot;2025-08-13 03:55:00&quot;,&quot;duration&quot;:60,&quot;channel_id&quot;:29,&quot;categories&quot;:&quot;&quot;,&quot;programable_type&quot;:&quot;&quot;,&quot;programable_id&quot;:0,&quot;similar&quot;:&quot;&quot;,&quot;programable&quot;:null})" 
+          class="list-group-item event-row  " 
+          style="min-height:65px;" data-toggle="modal" data-target="#myModal">
+          <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+          <div class="week-cat ">
+            02:55 <br> <span></span>
+          </div>
+          Религията днес - /п/
+        </a>
+
+                          <a href="#"  @click.prevent="eventLink($event,{&quot;id&quot;:13495501,&quot;text&quot;:&quot;\u0411\u044a\u043b\u0433\u0430\u0440\u0441\u043a\u043e\u0442\u043e \u0441\u0435\u043b\u043e - \/\u043f\/&quot;,&quot;start_at&quot;:&quot;2025-08-13 03:55:00&quot;,&quot;end_at&quot;:&quot;2025-08-13 04:25:00&quot;,&quot;duration&quot;:30,&quot;channel_id&quot;:29,&quot;categories&quot;:&quot;&quot;,&quot;programable_type&quot;:&quot;&quot;,&quot;programable_id&quot;:0,&quot;similar&quot;:&quot;&quot;,&quot;programable&quot;:null})" 
+          class="list-group-item event-row  " 
+          style="min-height:65px;" data-toggle="modal" data-target="#myModal">
+          <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+          <div class="week-cat ">
+            03:55 <br> <span></span>
+          </div>
+          Българското село - /п/
+        </a>
+
+                          <a href="#"  @click.prevent="eventLink($event,{&quot;id&quot;:13495502,&quot;text&quot;:&quot;\u0427\u0435\u0448\u0438\u0442\u0438 - \/\u043f\/&quot;,&quot;start_at&quot;:&quot;2025-08-13 04:25:00&quot;,&quot;end_at&quot;:&quot;2025-08-13 04:45:00&quot;,&quot;duration&quot;:20,&quot;channel_id&quot;:29,&quot;categories&quot;:&quot;&quot;,&quot;programable_type&quot;:&quot;&quot;,&quot;programable_id&quot;:0,&quot;similar&quot;:&quot;&quot;,&quot;programable&quot;:null})" 
+          class="list-group-item event-row  " 
+          style="min-height:65px;" data-toggle="modal" data-target="#myModal">
+          <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+          <div class="week-cat ">
+            04:25 <br> <span></span>
+          </div>
+          Чешити - /п/
+        </a>
+
+                          <a href="#"  @click.prevent="eventLink($event,{&quot;id&quot;:13495503,&quot;text&quot;:&quot;\u041f\u043e \u0441\u0432\u0435\u0442\u0430 \u0438 \u0443 \u043d\u0430\u0441 - \/\u043f\/&quot;,&quot;start_at&quot;:&quot;2025-08-13 04:45:00&quot;,&quot;end_at&quot;:&quot;2025-08-13 05:10:00&quot;,&quot;duration&quot;:25,&quot;channel_id&quot;:29,&quot;categories&quot;:&quot;&quot;,&quot;programable_type&quot;:&quot;&quot;,&quot;programable_id&quot;:0,&quot;similar&quot;:&quot;&quot;,&quot;programable&quot;:null})" 
+          class="list-group-item event-row  " 
+          style="min-height:65px;" data-toggle="modal" data-target="#myModal">
+          <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+          <div class="week-cat ">
+            04:45 <br> <span></span>
+          </div>
+          По света и у нас - /п/
+        </a>
+
+                          <a href="#"  @click.prevent="eventLink($event,{&quot;id&quot;:13495504,&quot;text&quot;:&quot;\u0411\u044a\u0440\u0437\u043e, \u043b\u0435\u0441\u043d\u043e, \u0432\u043a\u0443\u0441\u043d\u043e - \/\u043f\/&quot;,&quot;start_at&quot;:&quot;2025-08-13 05:10:00&quot;,&quot;end_at&quot;:&quot;2025-08-13 05:40:00&quot;,&quot;duration&quot;:30,&quot;channel_id&quot;:29,&quot;categories&quot;:&quot;&quot;,&quot;programable_type&quot;:&quot;&quot;,&quot;programable_id&quot;:0,&quot;similar&quot;:&quot;&quot;,&quot;programable&quot;:null})" 
+          class="list-group-item event-row  " 
+          style="min-height:65px;" data-toggle="modal" data-target="#myModal">
+          <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+          <div class="week-cat ">
+            05:10 <br> <span></span>
+          </div>
+          Бързо, лесно, вкусно - /п/
+        </a>
+
+                          <a href="#"  @click.prevent="eventLink($event,{&quot;id&quot;:13495505,&quot;text&quot;:&quot;\u0422\u0435\u043b\u0435\u043f\u0430\u0437\u0430\u0440\u0435\u043d \u043f\u0440\u043e\u0437\u043e\u0440\u0435\u0446&quot;,&quot;start_at&quot;:&quot;2025-08-13 05:40:00&quot;,&quot;end_at&quot;:&quot;2025-08-13 06:00:00&quot;,&quot;duration&quot;:20,&quot;channel_id&quot;:29,&quot;categories&quot;:&quot;&quot;,&quot;programable_type&quot;:&quot;&quot;,&quot;programable_id&quot;:0,&quot;similar&quot;:&quot;&quot;,&quot;programable&quot;:null})" 
+          class="list-group-item event-row  " 
+          style="min-height:65px;" data-toggle="modal" data-target="#myModal">
+          <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+          <div class="week-cat ">
+            05:40 <br> <span></span>
+          </div>
+          Телепазарен прозорец
+        </a>
+
+                          <a href="#"  @click.prevent="eventLink($event,{&quot;id&quot;:13495506,&quot;text&quot;:&quot;\u0411\u043b\u0443\u0438 - \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u043e\u043d\u0435\u043d \u0444\u0438\u043b\u043c&quot;,&quot;start_at&quot;:&quot;2025-08-13 06:00:00&quot;,&quot;end_at&quot;:&quot;2025-08-13 06:15:00&quot;,&quot;duration&quot;:15,&quot;channel_id&quot;:29,&quot;categories&quot;:&quot;\u0414\u0435\u0442\u0441\u043a\u043e,\u0424\u0438\u043b\u043c&quot;,&quot;programable_type&quot;:&quot;&quot;,&quot;programable_id&quot;:0,&quot;similar&quot;:&quot;&quot;,&quot;programable&quot;:null})" 
+          class="list-group-item event-row  " 
+          style="min-height:65px;" data-toggle="modal" data-target="#myModal">
+          <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+          <div class="week-cat ">
+            06:00 <br> <span>Детско,Филм</span>
+          </div>
+          Блуи - анимационен филм
+        </a>
+
+                          <a href="#"  @click.prevent="eventLink($event,{&quot;id&quot;:13495507,&quot;text&quot;:&quot;\u0410\u0440\u0442 \u0434\u044a\u0433\u0430 - \u043e\u0431\u0440\u0430\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u0435\u043d \u0444\u0438\u043b\u043c&quot;,&quot;start_at&quot;:&quot;2025-08-13 06:15:00&quot;,&quot;end_at&quot;:&quot;2025-08-13 06:35:00&quot;,&quot;duration&quot;:20,&quot;channel_id&quot;:29,&quot;categories&quot;:&quot;\u0424\u0438\u043b\u043c&quot;,&quot;programable_type&quot;:&quot;&quot;,&quot;programable_id&quot;:0,&quot;similar&quot;:&quot;&quot;,&quot;programable&quot;:null})" 
+          class="list-group-item event-row  " 
+          style="min-height:65px;" data-toggle="modal" data-target="#myModal">
+          <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+          <div class="week-cat movies">
+            06:15 <br> <span>Филм</span>
+          </div>
+          Арт дъга - образователен филм
+        </a>
+
+                          <a href="#"  @click.prevent="eventLink($event,{&quot;id&quot;:13495508,&quot;text&quot;:&quot;\u0418\u0437\u0433\u0443\u0431\u0435\u043d\u043e\u0442\u043e \u0434\u0435\u0442\u0435 - \u0434\u0435\u0442\u0441\u043a\u0438 \u0442\u0432 \u0444\u0438\u043b\u043c \/\u042f\u043f\u043e\u043d\u0438\u044f, 2019\u0433.\/&quot;,&quot;start_at&quot;:&quot;2025-08-13 06:35:00&quot;,&quot;end_at&quot;:&quot;2025-08-13 06:55:00&quot;,&quot;duration&quot;:20,&quot;channel_id&quot;:29,&quot;categories&quot;:&quot;\u0424\u0438\u043b\u043c&quot;,&quot;programable_type&quot;:&quot;&quot;,&quot;programable_id&quot;:0,&quot;similar&quot;:&quot;&quot;,&quot;programable&quot;:null})" 
+          class="list-group-item event-row  " 
+          style="min-height:65px;" data-toggle="modal" data-target="#myModal">
+          <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+          <div class="week-cat movies">
+            06:35 <br> <span>Филм</span>
+          </div>
+          Изгубеното дете - детски тв филм /Япония, 2019г./
+        </a>
+
+                          <a href="#"  @click.prevent="eventLink($event,{&quot;id&quot;:13495509,&quot;text&quot;:&quot;\u0414\u0435\u043d\u044f\u0442 \u0437\u0430\u043f\u043e\u0447\u0432\u0430 - \u0441\u0443\u0442\u0440\u0435\u0448\u0435\u043d \u0431\u043b\u043e\u043a \u0441 \u0425\u0440\u0438\u0441\u0442\u0438\u043d\u0430 \u0425\u0440\u0438\u0441\u0442\u043e\u0432\u0430 \u0438 \u0421\u0438\u043c\u0435\u043e\u043d \u0418\u0432\u0430\u043d\u043e\u0432&quot;,&quot;start_at&quot;:&quot;2025-08-13 06:55:00&quot;,&quot;end_at&quot;:&quot;2025-08-13 09:20:00&quot;,&quot;duration&quot;:145,&quot;channel_id&quot;:29,&quot;categories&quot;:&quot;&quot;,&quot;programable_type&quot;:&quot;&quot;,&quot;programable_id&quot;:0,&quot;similar&quot;:&quot;&quot;,&quot;programable&quot;:null})" 
+          class="list-group-item event-row  " 
+          style="min-height:65px;" data-toggle="modal" data-target="#myModal">
+          <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+          <div class="week-cat ">
+            06:55 <br> <span></span>
+          </div>
+          Денят започва - сутрешен блок с Христина Христова и Симеон Иванов
+        </a>
+
+                          <a href="#"  @click.prevent="eventLink($event,{&quot;id&quot;:13495510,&quot;text&quot;:&quot;\u041e\u0441\u0442\u0440\u043e\u0432\u044a\u0442 \u043d\u0430 \u0441\u0438\u043d\u0438\u0442\u0435 \u043f\u0442\u0438\u0446\u0438 - \u0434\u0435\u0442\u0441\u043a\u0438 \u0442\u0432 \u0444\u0438\u043b\u043c&quot;,&quot;start_at&quot;:&quot;2025-08-13 09:20:00&quot;,&quot;end_at&quot;:&quot;2025-08-13 10:20:00&quot;,&quot;duration&quot;:60,&quot;channel_id&quot;:29,&quot;categories&quot;:&quot;\u0424\u0438\u043b\u043c&quot;,&quot;programable_type&quot;:&quot;&quot;,&quot;programable_id&quot;:0,&quot;similar&quot;:&quot;&quot;,&quot;programable&quot;:null})" 
+          class="list-group-item event-row  " 
+          style="min-height:65px;" data-toggle="modal" data-target="#myModal">
+          <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+          <div class="week-cat movies">
+            09:20 <br> <span>Филм</span>
+          </div>
+          Островът на сините птици - детски тв филм
+        </a>
+
+                          <a href="#"  @click.prevent="eventLink($event,{&quot;id&quot;:13495511,&quot;text&quot;:&quot;\u041b\u044e\u0431\u043e\u0432 \u0438 \u0441\u0430\u043c\u043e\u0436\u0435\u0440\u0442\u0432\u0430 - \u0442\u0432 \u0444\u0438\u043b\u043c \/14 \u0438 15 \u0435\u043f\u0438\u0437\u043e\u0434\/&quot;,&quot;start_at&quot;:&quot;2025-08-13 10:20:00&quot;,&quot;end_at&quot;:&quot;2025-08-13 12:00:00&quot;,&quot;duration&quot;:100,&quot;channel_id&quot;:29,&quot;categories&quot;:&quot;\u0421\u0435\u0440\u0438\u0430\u043b&quot;,&quot;programable_type&quot;:&quot;&quot;,&quot;programable_id&quot;:0,&quot;similar&quot;:&quot;&quot;,&quot;programable&quot;:null})" 
+          class="list-group-item event-row  " 
+          style="min-height:65px;" data-toggle="modal" data-target="#myModal">
+          <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+          <div class="week-cat series">
+            10:20 <br> <span>Сериал</span>
+          </div>
+          Любов и саможертва - тв филм /14 и 15 епизод/
+        </a>
+
+                          <a href="#"  @click.prevent="eventLink($event,{&quot;id&quot;:13495512,&quot;text&quot;:&quot;\u041f\u043e \u0441\u0432\u0435\u0442\u0430 \u0438 \u0443 \u043d\u0430\u0441&quot;,&quot;start_at&quot;:&quot;2025-08-13 12:00:00&quot;,&quot;end_at&quot;:&quot;2025-08-13 12:35:00&quot;,&quot;duration&quot;:35,&quot;channel_id&quot;:29,&quot;categories&quot;:&quot;&quot;,&quot;programable_type&quot;:&quot;&quot;,&quot;programable_id&quot;:0,&quot;similar&quot;:&quot;&quot;,&quot;programable&quot;:null})" 
+          class="list-group-item event-row  " 
+          style="min-height:65px;" data-toggle="modal" data-target="#myModal">
+          <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+          <div class="week-cat ">
+            12:00 <br> <span></span>
+          </div>
+          По света и у нас
+        </a>
+
+                          <a href="#"  @click.prevent="eventLink($event,{&quot;id&quot;:13495513,&quot;text&quot;:&quot;\u041d\u043e\u0432\u0438\u043d\u0438 \u043d\u0430 \u0442\u0443\u0440\u0441\u043a\u0438 \u0435\u0437\u0438\u043a&quot;,&quot;start_at&quot;:&quot;2025-08-13 12:35:00&quot;,&quot;end_at&quot;:&quot;2025-08-13 12:45:00&quot;,&quot;duration&quot;:10,&quot;channel_id&quot;:29,&quot;categories&quot;:&quot;\u041d\u043e\u0432\u0438\u043d\u0438&quot;,&quot;programable_type&quot;:&quot;&quot;,&quot;programable_id&quot;:0,&quot;similar&quot;:&quot;&quot;,&quot;programable&quot;:null})" 
+          class="list-group-item event-row  " 
+          style="min-height:65px;" data-toggle="modal" data-target="#myModal">
+          <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+          <div class="week-cat ">
+            12:35 <br> <span>Новини</span>
+          </div>
+          Новини на турски език
+        </a>
+
+                          <a href="#"  @click.prevent="eventLink($event,{&quot;id&quot;:13495514,&quot;text&quot;:&quot;\u0422\u0435\u043b\u0435\u043f\u0430\u0437\u0430\u0440\u0435\u043d \u043f\u0440\u043e\u0437\u043e\u0440\u0435\u0446&quot;,&quot;start_at&quot;:&quot;2025-08-13 12:45:00&quot;,&quot;end_at&quot;:&quot;2025-08-13 13:00:00&quot;,&quot;duration&quot;:15,&quot;channel_id&quot;:29,&quot;categories&quot;:&quot;&quot;,&quot;programable_type&quot;:&quot;&quot;,&quot;programable_id&quot;:0,&quot;similar&quot;:&quot;&quot;,&quot;programable&quot;:null})" 
+          class="list-group-item event-row  " 
+          style="min-height:65px;" data-toggle="modal" data-target="#myModal">
+          <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+          <div class="week-cat ">
+            12:45 <br> <span></span>
+          </div>
+          Телепазарен прозорец
+        </a>
+
+                          <a href="#"  @click.prevent="eventLink($event,{&quot;id&quot;:13495515,&quot;text&quot;:&quot;\u041f\u043e\u0441\u043b\u0435\u0434\u043d\u0438\u044f\u0442 \u043f\u0435\u0447\u0435\u043b\u0438 - \u0437\u0430\u0431\u0430\u0432\u043d\u043e-\u043f\u043e\u0437\u043d\u0430\u0432\u0430\u0442\u0435\u043b\u043d\u043e \u0441\u0435\u043c\u0435\u0439\u043d\u043e \u043a\u0443\u0438\u0437 \u0448\u043e\u0443 \/\u0441\u0435\u0437\u043e\u043d 5, \u0435\u043f\u0438\u0437\u043e\u0434 147\/\u043f\/&quot;,&quot;start_at&quot;:&quot;2025-08-13 13:00:00&quot;,&quot;end_at&quot;:&quot;2025-08-13 14:00:00&quot;,&quot;duration&quot;:60,&quot;channel_id&quot;:29,&quot;categories&quot;:&quot;\u0421\u0435\u0440\u0438\u0430\u043b&quot;,&quot;programable_type&quot;:&quot;&quot;,&quot;programable_id&quot;:0,&quot;similar&quot;:&quot;&quot;,&quot;programable&quot;:null})" 
+          class="list-group-item event-row  " 
+          style="min-height:65px;" data-toggle="modal" data-target="#myModal">
+          <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+          <div class="week-cat series">
+            13:00 <br> <span>Сериал</span>
+          </div>
+          Последният печели - забавно-познавателно семейно куиз шоу /сезон 5, епизод 147/п/
+        </a>
+
+                          <a href="#"  @click.prevent="eventLink($event,{&quot;id&quot;:13495516,&quot;text&quot;:&quot;\u0422\u0435\u043b\u0435\u043f\u0430\u0437\u0430\u0440\u0435\u043d \u043f\u0440\u043e\u0437\u043e\u0440\u0435\u0446&quot;,&quot;start_at&quot;:&quot;2025-08-13 14:00:00&quot;,&quot;end_at&quot;:&quot;2025-08-13 14:15:00&quot;,&quot;duration&quot;:15,&quot;channel_id&quot;:29,&quot;categories&quot;:&quot;&quot;,&quot;programable_type&quot;:&quot;&quot;,&quot;programable_id&quot;:0,&quot;similar&quot;:&quot;&quot;,&quot;programable&quot;:null})" 
+          class="list-group-item event-row  " 
+          style="min-height:65px;" data-toggle="modal" data-target="#myModal">
+          <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+          <div class="week-cat ">
+            14:00 <br> <span></span>
+          </div>
+          Телепазарен прозорец
+        </a>
+
+                          <a href="#"  @click.prevent="eventLink($event,{&quot;id&quot;:13495517,&quot;text&quot;:&quot;\u0411\u043b\u0443\u0438 2 - \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u043e\u043d\u0435\u043d \u0444\u0438\u043b\u043c&quot;,&quot;start_at&quot;:&quot;2025-08-13 14:15:00&quot;,&quot;end_at&quot;:&quot;2025-08-13 14:30:00&quot;,&quot;duration&quot;:15,&quot;channel_id&quot;:29,&quot;categories&quot;:&quot;\u0414\u0435\u0442\u0441\u043a\u043e,\u0424\u0438\u043b\u043c&quot;,&quot;programable_type&quot;:&quot;&quot;,&quot;programable_id&quot;:0,&quot;similar&quot;:&quot;&quot;,&quot;programable&quot;:null})" 
+          class="list-group-item event-row  " 
+          style="min-height:65px;" data-toggle="modal" data-target="#myModal">
+          <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+          <div class="week-cat ">
+            14:15 <br> <span>Детско,Филм</span>
+          </div>
+          Блуи 2 - анимационен филм
+        </a>
+
+                          <a href="#"  @click.prevent="eventLink($event,{&quot;id&quot;:13495518,&quot;text&quot;:&quot;\u0425\u0440\u0443\u0441\u043a\u043e\u0432\u0446\u0438\u0442\u0435 - \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u043e\u043d\u0435\u043d \u0444\u0438\u043b\u043c&quot;,&quot;start_at&quot;:&quot;2025-08-13 14:30:00&quot;,&quot;end_at&quot;:&quot;2025-08-13 14:50:00&quot;,&quot;duration&quot;:20,&quot;channel_id&quot;:29,&quot;categories&quot;:&quot;\u0414\u0435\u0442\u0441\u043a\u043e,\u0424\u0438\u043b\u043c&quot;,&quot;programable_type&quot;:&quot;&quot;,&quot;programable_id&quot;:0,&quot;similar&quot;:&quot;&quot;,&quot;programable&quot;:null})" 
+          class="list-group-item event-row  " 
+          style="min-height:65px;" data-toggle="modal" data-target="#myModal">
+          <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+          <div class="week-cat ">
+            14:30 <br> <span>Детско,Филм</span>
+          </div>
+          Хрусковците - анимационен филм
+        </a>
+
+                          <a href="#"  @click.prevent="eventLink($event,{&quot;id&quot;:13495519,&quot;text&quot;:&quot;\u041a\u043d\u0438\u0433\u0430 \u043d\u0430 \u043a\u043d\u0438\u0433\u0438\u0442\u0435 4 - \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u043e\u043d\u0435\u043d \u0444\u0438\u043b\u043c&quot;,&quot;start_at&quot;:&quot;2025-08-13 14:50:00&quot;,&quot;end_at&quot;:&quot;2025-08-13 15:15:00&quot;,&quot;duration&quot;:25,&quot;channel_id&quot;:29,&quot;categories&quot;:&quot;\u0414\u0435\u0442\u0441\u043a\u043e,\u0424\u0438\u043b\u043c&quot;,&quot;programable_type&quot;:&quot;&quot;,&quot;programable_id&quot;:0,&quot;similar&quot;:&quot;&quot;,&quot;programable&quot;:null})" 
+          class="list-group-item event-row  " 
+          style="min-height:65px;" data-toggle="modal" data-target="#myModal">
+          <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+          <div class="week-cat ">
+            14:50 <br> <span>Детско,Филм</span>
+          </div>
+          Книга на книгите 4 - анимационен филм
+        </a>
+
+                          <a href="#"  @click.prevent="eventLink($event,{&quot;id&quot;:13495520,&quot;text&quot;:&quot;\u041c\u0430\u0433\u044c\u043e\u0441\u043d\u0438\u0446\u0438 - \u0442\u0432 \u0444\u0438\u043b\u043c&quot;,&quot;start_at&quot;:&quot;2025-08-13 15:15:00&quot;,&quot;end_at&quot;:&quot;2025-08-13 15:45:00&quot;,&quot;duration&quot;:30,&quot;channel_id&quot;:29,&quot;categories&quot;:&quot;\u0424\u0438\u043b\u043c&quot;,&quot;programable_type&quot;:&quot;&quot;,&quot;programable_id&quot;:0,&quot;similar&quot;:&quot;&quot;,&quot;programable&quot;:null})" 
+          class="list-group-item event-row  " 
+          style="min-height:65px;" data-toggle="modal" data-target="#myModal">
+          <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+          <div class="week-cat movies">
+            15:15 <br> <span>Филм</span>
+          </div>
+          Магьосници - тв филм
+        </a>
+
+                          <a href="#"  @click.prevent="eventLink($event,{&quot;id&quot;:13495521,&quot;text&quot;:&quot;\u0422\u0435\u043b\u0435\u043f\u0430\u0437\u0430\u0440\u0435\u043d \u043f\u0440\u043e\u0437\u043e\u0440\u0435\u0446&quot;,&quot;start_at&quot;:&quot;2025-08-13 15:45:00&quot;,&quot;end_at&quot;:&quot;2025-08-13 16:00:00&quot;,&quot;duration&quot;:15,&quot;channel_id&quot;:29,&quot;categories&quot;:&quot;&quot;,&quot;programable_type&quot;:&quot;&quot;,&quot;programable_id&quot;:0,&quot;similar&quot;:&quot;&quot;,&quot;programable&quot;:null})" 
+          class="list-group-item event-row  " 
+          style="min-height:65px;" data-toggle="modal" data-target="#myModal">
+          <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+          <div class="week-cat ">
+            15:45 <br> <span></span>
+          </div>
+          Телепазарен прозорец
+        </a>
+
+                          <a href="#"  @click.prevent="eventLink($event,{&quot;id&quot;:13495522,&quot;text&quot;:&quot;\u0411\u044a\u0440\u0437\u043e, \u043b\u0435\u0441\u043d\u043e, \u0432\u043a\u0443\u0441\u043d\u043e - \/\u043f\/&quot;,&quot;start_at&quot;:&quot;2025-08-13 16:00:00&quot;,&quot;end_at&quot;:&quot;2025-08-13 16:30:00&quot;,&quot;duration&quot;:30,&quot;channel_id&quot;:29,&quot;categories&quot;:&quot;&quot;,&quot;programable_type&quot;:&quot;&quot;,&quot;programable_id&quot;:0,&quot;similar&quot;:&quot;&quot;,&quot;programable&quot;:null})" 
+          class="list-group-item event-row  " 
+          style="min-height:65px;" data-toggle="modal" data-target="#myModal">
+          <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+          <div class="week-cat ">
+            16:00 <br> <span></span>
+          </div>
+          Бързо, лесно, вкусно - /п/
+        </a>
+
+                          <a href="#"  @click.prevent="eventLink($event,{&quot;id&quot;:13495523,&quot;text&quot;:&quot;\u0420\u0438\u0446\u0430\u0440\u044f\u0442 \u043d\u0430 \u0411\u044f\u043b\u0430\u0442\u0430 \u0434\u0430\u043c\u0430 - \u0434\u0435\u0442\u0441\u043a\u0438 \u0442\u0432 \u0444\u0438\u043b\u043c&quot;,&quot;start_at&quot;:&quot;2025-08-13 16:30:00&quot;,&quot;end_at&quot;:&quot;2025-08-13 17:30:00&quot;,&quot;duration&quot;:60,&quot;channel_id&quot;:29,&quot;categories&quot;:&quot;\u0424\u0438\u043b\u043c&quot;,&quot;programable_type&quot;:&quot;&quot;,&quot;programable_id&quot;:0,&quot;similar&quot;:&quot;&quot;,&quot;programable&quot;:null})" 
+          class="list-group-item event-row  " 
+          style="min-height:65px;" data-toggle="modal" data-target="#myModal">
+          <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+          <div class="week-cat movies">
+            16:30 <br> <span>Филм</span>
+          </div>
+          Рицарят на Бялата дама - детски тв филм
+        </a>
+
+                          <a href="#"  @click.prevent="eventLink($event,{&quot;id&quot;:13495524,&quot;text&quot;:&quot;\u0425\u043e\u0442\u0435\u043b\u044a\u0442 \u043d\u0430 \u0417\u0435\u043b\u0435\u043d\u0438\u044f \u043f\u043b\u0430\u0436 - \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u043b\u0435\u043d \u0444\u0438\u043b\u043c \/\u0427\u0435\u0440\u043d\u0430 \u0433\u043e\u0440\u0430, 2022\u0433.\/&quot;,&quot;start_at&quot;:&quot;2025-08-13 17:30:00&quot;,&quot;end_at&quot;:&quot;2025-08-13 18:00:00&quot;,&quot;duration&quot;:30,&quot;channel_id&quot;:29,&quot;categories&quot;:&quot;\u0424\u0438\u043b\u043c,\u041d\u0430\u0443\u0447\u043d\u043e&quot;,&quot;programable_type&quot;:&quot;&quot;,&quot;programable_id&quot;:0,&quot;similar&quot;:&quot;&quot;,&quot;programable&quot;:null})" 
+          class="list-group-item event-row  " 
+          style="min-height:65px;" data-toggle="modal" data-target="#myModal">
+          <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+          <div class="week-cat ">
+            17:30 <br> <span>Филм,Научно</span>
+          </div>
+          Хотелът на Зеления плаж - документален филм /Черна гора, 2022г./
+        </a>
+
+                          <a href="#"  @click.prevent="eventLink($event,{&quot;id&quot;:13495525,&quot;text&quot;:&quot;\u041f\u043e \u0441\u0432\u0435\u0442\u0430 \u0438 \u0443 \u043d\u0430\u0441&quot;,&quot;start_at&quot;:&quot;2025-08-13 18:00:00&quot;,&quot;end_at&quot;:&quot;2025-08-13 18:30:00&quot;,&quot;duration&quot;:30,&quot;channel_id&quot;:29,&quot;categories&quot;:&quot;&quot;,&quot;programable_type&quot;:&quot;&quot;,&quot;programable_id&quot;:0,&quot;similar&quot;:&quot;&quot;,&quot;programable&quot;:null})" 
+          class="list-group-item event-row  " 
+          style="min-height:65px;" data-toggle="modal" data-target="#myModal">
+          <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+          <div class="week-cat ">
+            18:00 <br> <span></span>
+          </div>
+          По света и у нас
+        </a>
+
+                          <a href="#"  @click.prevent="eventLink($event,{&quot;id&quot;:13495526,&quot;text&quot;:&quot;65 \u0432 \u0435\u0444\u0438\u0440&quot;,&quot;start_at&quot;:&quot;2025-08-13 18:30:00&quot;,&quot;end_at&quot;:&quot;2025-08-13 19:00:00&quot;,&quot;duration&quot;:30,&quot;channel_id&quot;:29,&quot;categories&quot;:&quot;&quot;,&quot;programable_type&quot;:&quot;&quot;,&quot;programable_id&quot;:0,&quot;similar&quot;:&quot;&quot;,&quot;programable&quot;:null})" 
+          class="list-group-item event-row  " 
+          style="min-height:65px;" data-toggle="modal" data-target="#myModal">
+          <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+          <div class="week-cat ">
+            18:30 <br> <span></span>
+          </div>
+          65 в ефир
+        </a>
+
+                          <a href="#"  @click.prevent="eventLink($event,{&quot;id&quot;:13495527,&quot;text&quot;:&quot;\u041f\u043e\u0441\u043b\u0435\u0434\u043d\u0438\u044f\u0442 \u043f\u0435\u0447\u0435\u043b\u0438 - \u0437\u0430\u0431\u0430\u0432\u043d\u043e-\u043f\u043e\u0437\u043d\u0430\u0432\u0430\u0442\u0435\u043b\u043d\u043e \u0441\u0435\u043c\u0435\u0439\u043d\u043e \u043a\u0443\u0438\u0437 \u0448\u043e\u0443 \/\u0441\u0435\u0437\u043e\u043d 5, \u0435\u043f\u0438\u0437\u043e\u0434 148\/\u043f\/&quot;,&quot;start_at&quot;:&quot;2025-08-13 19:00:00&quot;,&quot;end_at&quot;:&quot;2025-08-13 20:00:00&quot;,&quot;duration&quot;:60,&quot;channel_id&quot;:29,&quot;categories&quot;:&quot;\u0421\u0435\u0440\u0438\u0430\u043b&quot;,&quot;programable_type&quot;:&quot;&quot;,&quot;programable_id&quot;:0,&quot;similar&quot;:&quot;&quot;,&quot;programable&quot;:null})" 
+          class="list-group-item event-row  " 
+          style="min-height:65px;" data-toggle="modal" data-target="#myModal">
+          <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+          <div class="week-cat series">
+            19:00 <br> <span>Сериал</span>
+          </div>
+          Последният печели - забавно-познавателно семейно куиз шоу /сезон 5, епизод 148/п/
+        </a>
+
+                          <a href="#"  @click.prevent="eventLink($event,{&quot;id&quot;:13495528,&quot;text&quot;:&quot;\u041f\u043e \u0441\u0432\u0435\u0442\u0430 \u0438 \u0443 \u043d\u0430\u0441&quot;,&quot;start_at&quot;:&quot;2025-08-13 20:00:00&quot;,&quot;end_at&quot;:&quot;2025-08-13 20:45:00&quot;,&quot;duration&quot;:45,&quot;channel_id&quot;:29,&quot;categories&quot;:&quot;&quot;,&quot;programable_type&quot;:&quot;&quot;,&quot;programable_id&quot;:0,&quot;similar&quot;:&quot;&quot;,&quot;programable&quot;:null})" 
+          class="list-group-item event-row  " 
+          style="min-height:65px;" data-toggle="modal" data-target="#myModal">
+          <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+          <div class="week-cat ">
+            20:00 <br> <span></span>
+          </div>
+          По света и у нас
+        </a>
+
+                          <a href="#"  @click.prevent="eventLink($event,{&quot;id&quot;:13495529,&quot;text&quot;:&quot;\u0421\u043f\u043e\u0440\u0442\u043d\u0438 \u043d\u043e\u0432\u0438\u043d\u0438&quot;,&quot;start_at&quot;:&quot;2025-08-13 20:45:00&quot;,&quot;end_at&quot;:&quot;2025-08-13 21:00:00&quot;,&quot;duration&quot;:15,&quot;channel_id&quot;:29,&quot;categories&quot;:&quot;\u0421\u043f\u043e\u0440\u0442,\u041d\u043e\u0432\u0438\u043d\u0438&quot;,&quot;programable_type&quot;:&quot;&quot;,&quot;programable_id&quot;:0,&quot;similar&quot;:&quot;&quot;,&quot;programable&quot;:null})" 
+          class="list-group-item event-row  " 
+          style="min-height:65px;" data-toggle="modal" data-target="#myModal">
+          <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+          <div class="week-cat ">
+            20:45 <br> <span>Спорт,Новини</span>
+          </div>
+          Спортни новини
+        </a>
+
+                          <a href="#"  @click.prevent="eventLink($event,{&quot;id&quot;:13495530,&quot;text&quot;:&quot;\u0412\u0438\u043d\u0430 - \u0442\u0432 \u0444\u0438\u043b\u043c \/7 \u0435\u043f\u0438\u0437\u043e\u0434\/ (12)&quot;,&quot;start_at&quot;:&quot;2025-08-13 21:00:00&quot;,&quot;end_at&quot;:&quot;2025-08-13 22:00:00&quot;,&quot;duration&quot;:60,&quot;channel_id&quot;:29,&quot;categories&quot;:&quot;\u0421\u0435\u0440\u0438\u0430\u043b&quot;,&quot;programable_type&quot;:&quot;&quot;,&quot;programable_id&quot;:0,&quot;similar&quot;:&quot;&quot;,&quot;programable&quot;:null})" 
+          class="list-group-item event-row  " 
+          style="min-height:65px;" data-toggle="modal" data-target="#myModal">
+          <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+          <div class="week-cat series">
+            21:00 <br> <span>Сериал</span>
+          </div>
+          Вина - тв филм /7 епизод/ (12)
+        </a>
+
+                          <a href="#"  @click.prevent="eventLink($event,{&quot;id&quot;:13495531,&quot;text&quot;:&quot;\u041c\u0438\u0441\u0442\u0435\u0440\u0438\u0438\u0442\u0435 \u043d\u0430 \u0434\u043e\u043a\u0442\u043e\u0440 \u0411\u043b\u0435\u0439\u043a 3 - \u0442\u0432 \u0444\u0438\u043b\u043c \/8, \u043f\u043e\u0441\u043b\u0435\u0434\u0435\u043d \u0435\u043f\u0438\u0437\u043e\u0434\/ (12)&quot;,&quot;start_at&quot;:&quot;2025-08-13 22:00:00&quot;,&quot;end_at&quot;:&quot;2025-08-13 23:00:00&quot;,&quot;duration&quot;:60,&quot;channel_id&quot;:29,&quot;categories&quot;:&quot;\u0421\u0435\u0440\u0438\u0430\u043b&quot;,&quot;programable_type&quot;:&quot;Series&quot;,&quot;programable_id&quot;:1121,&quot;similar&quot;:&quot;&quot;,&quot;programable&quot;:{&quot;id&quot;:1121,&quot;title&quot;:&quot;The Doctor Blake Mysteries&quot;,&quot;bg_title&quot;:&quot;\u041c\u0438\u0441\u0442\u0435\u0440\u0438\u0438\u0442\u0435 \u043d\u0430 \u0434\u043e\u043a\u0442\u043e\u0440 \u0411\u043b\u0435\u0439\u043a&quot;,&quot;akas&quot;:null,&quot;description&quot;:&quot;\u041c\u0438\u0441\u0442\u0435\u0440\u0438\u0438\u0442\u0435 \u043d\u0430 \u0434\u043e\u043a\u0442\u043e\u0440 \u0411\u043b\u0435\u0439\u043a (\u043d\u0430 \u0430\u043d\u0433\u043b\u0438\u0439\u0441\u043a\u0438: The Doctor Blake Mysteries) \u0435 \u0430\u0432\u0441\u0442\u0440\u0430\u043b\u0438\u0439\u0441\u043a\u0438 \u0442\u0435\u043b\u0435\u0432\u0438\u0437\u0438\u043e\u043d\u0435\u043d \u0441\u0435\u0440\u0438\u0430\u043b, \u0438\u0437\u043b\u044a\u0447\u0435\u043d \u0437\u0430 \u043f\u044a\u0440\u0432\u0438 \u043f\u044a\u0442 \u043f\u043e ABC \u043d\u0430 1 \u0444\u0435\u0432\u0440\u0443\u0430\u0440\u0438 2013 \u0433. \u0432 20:30 \u0447\u0430\u0441\u0430[1]. \u041a\u0440\u0435\u0433 \u0414\u0443\u0433\u044a\u043b \u041c\u0430\u043a\u043b\u0430\u043b\u044a\u043d \u0435 \u0432 \u0440\u043e\u043b\u044f\u0442\u0430 \u043d\u0430 \u0434\u043e\u043a\u0442\u043e\u0440 \u041b\u0443\u0441\u0438\u0435\u043d \u0411\u043b\u0435\u0439\u043a, \u043a\u043e\u0439\u0442\u043e \u0441\u0435 \u0437\u0430\u0432\u0440\u044a\u0449\u0430 \u0432 \u0411\u0430\u043b\u0430\u0440\u0430\u0442, \u0441\u0435\u0432\u0435\u0440\u043e\u0437\u0430\u043f\u0430\u0434\u043d\u043e \u043e\u0442 \u041c\u0435\u043b\u0431\u044a\u0440\u043d, \u0432 \u043a\u0440\u0430\u044f \u043d\u0430 1950-\u0442\u0435 \u0433\u043e\u0434\u0438\u043d\u0438, \u0437\u0430 \u0434\u0430 \u043f\u043e\u0435\u043c\u0435 \u043e\u0431\u0449\u0430\u0442\u0430 \u043c\u0435\u0434\u0438\u0446\u0438\u043d\u0441\u043a\u0430 \u043f\u0440\u0430\u043a\u0442\u0438\u043a\u0430 \u043d\u0430 \u043f\u043e\u043a\u043e\u0439\u043d\u0438\u044f \u0441\u0438 \u0431\u0430\u0449\u0430 \u0438 \u0440\u043e\u043b\u044f\u0442\u0430 \u043d\u0430 \u043f\u043e\u043b\u0438\u0446\u0435\u0439\u0441\u043a\u0438 \u0445\u0438\u0440\u0443\u0440\u0433 \u0441\u043b\u0435\u0434 \u043e\u0442\u0441\u044a\u0441\u0442\u0432\u0438\u0435 \u043e\u0442 30 \u0433\u043e\u0434\u0438\u043d\u0438. \u041f\u0435\u0442 \u0441\u0435\u0437\u043e\u043d\u0430 \u0441\u0435 \u0438\u0437\u043b\u044a\u0447\u0432\u0430\u0442 \u0434\u043e 2017 \u0433., \u0441\u043b\u0435\u0434 \u043a\u043e\u0435\u0442\u043e \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u0430\u0442\u0430 \u0435 \u0437\u0430\u043a\u0440\u0438\u0442\u0430 \u0432 \u043a\u0440\u0430\u044f \u043d\u0430 \u043f\u0435\u0442\u0438\u044f \u0441\u0435\u0437\u043e\u043d. \u041f\u044a\u0440\u0432\u0438\u0442\u0435 \u0434\u0432\u0430 \u0441\u0435\u0437\u043e\u043d\u0430 \u0438\u043c\u0430\u0442 10 \u0435\u043f\u0438\u0437\u043e\u0434\u0430 \u0434\u043e\u043a\u0430\u0442\u043e \u0441\u043b\u0435\u0434\u0432\u0430\u0449\u0438\u0442\u0435 \u0438\u043c\u0430\u0442 \u043f\u043e 8. \u0412\u0441\u0435\u043a\u0438 \u0435\u043f\u0438\u0437\u043e\u0434 \u0435 \u043e\u043a\u043e\u043b\u043e \u0447\u0430\u0441 \u2013 \u043c\u0435\u0436\u0434\u0443 56 \u0438 59 \u043c\u0438\u043d\u0443\u0442\u0438.&quot;,&quot;origin_country&quot;:&quot;\u0410\u0432\u0441\u0442\u0440\u0430\u043b\u0438\u044f&quot;,&quot;runtime&quot;:60,&quot;startdate&quot;:&quot;2013-01-01&quot;,&quot;ended&quot;:&quot;2018-12-01&quot;,&quot;status&quot;:null,&quot;imdb_rating&quot;:&quot;8.00&quot;,&quot;banners&quot;:{&quot;poster&quot;:&quot;\/img\/series\/posters\/1121.jpg&quot;,&quot;banner&quot;:&quot;\/img\/series\/banners\/1121.jpg&quot;},&quot;alternate_ids&quot;:&quot;{\&quot;imdb\&quot;:\&quot;tt2375720\&quot;,\&quot;tvdb\&quot;:null}&quot;,&quot;links&quot;:&quot;[\&quot;http:\\\/\\\/www.imdb.com\\\/title\\\/tt2375720\\\/\&quot;,\&quot;http:\\\/\\\/thetvdb.com\\\/?tab=series&amp;id=\&quot;]&quot;,&quot;episodes&quot;:46,&quot;seasons&quot;:6,&quot;created_at&quot;:&quot;2023-05-25 10:01:01&quot;,&quot;updated_at&quot;:&quot;2023-05-25 10:01:01&quot;,&quot;locale_title&quot;:&quot;\u041c\u0438\u0441\u0442\u0435\u0440\u0438\u0438\u0442\u0435 \u043d\u0430 \u0434\u043e\u043a\u0442\u043e\u0440 \u0411\u043b\u0435\u0439\u043a&quot;}})" 
+          class="list-group-item event-row  " 
+          style="min-height:65px;" data-toggle="" data-target="#myModal">
+          <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+          <div class="week-cat series">
+            22:00 <br> <span>Сериал</span>
+          </div>
+          Мистериите на доктор Блейк 3 - тв филм /8, последен епизод/ (12)
+        </a>
+
+                          <a href="#"  @click.prevent="eventLink($event,{&quot;id&quot;:13495532,&quot;text&quot;:&quot;\u041f\u043e \u0441\u0432\u0435\u0442\u0430 \u0438 \u0443 \u043d\u0430\u0441&quot;,&quot;start_at&quot;:&quot;2025-08-13 23:00:00&quot;,&quot;end_at&quot;:&quot;2025-08-13 23:25:00&quot;,&quot;duration&quot;:25,&quot;channel_id&quot;:29,&quot;categories&quot;:&quot;&quot;,&quot;programable_type&quot;:&quot;&quot;,&quot;programable_id&quot;:0,&quot;similar&quot;:&quot;&quot;,&quot;programable&quot;:null})" 
+          class="list-group-item event-row  " 
+          style="min-height:65px;" data-toggle="modal" data-target="#myModal">
+          <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+          <div class="week-cat ">
+            23:00 <br> <span></span>
+          </div>
+          По света и у нас
+        </a>
+
+                          <a href="#"  @click.prevent="eventLink($event,{&quot;id&quot;:13495533,&quot;text&quot;:&quot;\u0428\u0435\u0442\u043b\u0430\u043d\u0434 3 - \u0442\u0432 \u0444\u0438\u043b\u043c \/5 \u0435\u043f\u0438\u0437\u043e\u0434\/ (14)&quot;,&quot;start_at&quot;:&quot;2025-08-13 23:25:00&quot;,&quot;end_at&quot;:&quot;2025-08-14 00:25:00&quot;,&quot;duration&quot;:60,&quot;channel_id&quot;:29,&quot;categories&quot;:&quot;\u0421\u0435\u0440\u0438\u0430\u043b&quot;,&quot;programable_type&quot;:&quot;Series&quot;,&quot;programable_id&quot;:1172,&quot;similar&quot;:&quot;&quot;,&quot;programable&quot;:{&quot;id&quot;:1172,&quot;title&quot;:&quot;Shetland&quot;,&quot;bg_title&quot;:&quot;\u0428\u0435\u0442\u043b\u0430\u043d\u0434&quot;,&quot;akas&quot;:null,&quot;description&quot;:&quot;Set against the stark backdrop of Scotland&#039;s rugged coastline, DI Jimmy Perez and his team investigate murders in the small island community of Shetland.&quot;,&quot;origin_country&quot;:&quot;\u0412\u0435\u043b\u0438\u043a\u043e\u0431\u0440\u0438\u0442\u0430\u043d\u0438\u044f&quot;,&quot;runtime&quot;:60,&quot;startdate&quot;:&quot;2013-01-01&quot;,&quot;ended&quot;:&quot;0000-00-00&quot;,&quot;status&quot;:null,&quot;imdb_rating&quot;:&quot;8.30&quot;,&quot;banners&quot;:{&quot;poster&quot;:&quot;\/img\/series\/posters\/1172.jpg&quot;,&quot;banner&quot;:&quot;\/img\/series\/banners\/1172.jpg&quot;},&quot;alternate_ids&quot;:&quot;{\&quot;imdb\&quot;:\&quot;tt2396135\&quot;,\&quot;tvdb\&quot;:null}&quot;,&quot;links&quot;:&quot;[\&quot;http:\\\/\\\/www.imdb.com\\\/title\\\/tt2396135\\\/\&quot;,\&quot;http:\\\/\\\/thetvdb.com\\\/?tab=series&amp;id=\&quot;]&quot;,&quot;episodes&quot;:44,&quot;seasons&quot;:8,&quot;created_at&quot;:&quot;2024-02-05 14:10:22&quot;,&quot;updated_at&quot;:&quot;2024-02-05 14:10:22&quot;,&quot;locale_title&quot;:&quot;\u0428\u0435\u0442\u043b\u0430\u043d\u0434&quot;}})" 
+          class="list-group-item event-row  " 
+          style="min-height:65px;" data-toggle="" data-target="#myModal">
+          <i class="fa fa-chevron-right pull-right" aria-hidden="true"></i>
+          <div class="week-cat series">
+            23:25 <br> <span>Сериал</span>
+          </div>
+          Шетланд 3 - тв филм /5 епизод/ (14)
+        </a>
+
+                        </div>
+
+    </div><!-- /.blog-main -->
+
+
+
+  <div class="mt-3 mt-lg-0 col-sm-12 col-md-12 col-lg-4">
+    <div class="card shadow" align="center">
+      <img class="card-img-top mx-auto" src="https://tv.boxbg.net/img/logos/29.jpg" style="max-width:120px;">
+      <div class="card-body">
+        <h5 class="card-title">БНТ1</h5>
+      </div>
+      <div class="list-group list-group-flush">
+        <a :class="[isFav ? 'bg-secondary text-white' : 'bg-white', 'list-group-item list-group-item-action']"
+          href="#" @click.prevent="toggleFav()">
+          <span v-show="!isFav"><i class="fa fa-plus" aria-hidden="true"></i> Добави към Любими</span>
+          <span v-show="isFav"><i class="fa fa-minus" aria-hidden="true"></i> Премахни от Любими</span>
+        </a>
+        <a class="list-group-item list-group-item-action" href="http://bnt.bg/" target="_blank">
+          <i class="fa fa-share" aria-hidden="true"></i> Саит </a>
+      </div>
+      <div class="card-body" style="height: 220px;">
+          <div style="width:100%; " id="google-ads-1">
+            <script type="text/javascript">
+            google_ad_client = "ca-pub-5347674045883414";
+            // AD UNITS YOU WANT TO DISPLAY FOR THIS POSITION.
+            var adsarr=[
+                // The format is [width, height, "ad slot number"]
+                [200, 200, "2044265103"],
+                [320, 50, "3800199900"]
+            ];
+
+            // This shows the adsense ad depending on your screen size.
+            adUnit   = document.getElementById("google-ads-1");
+            var width=adUnit.offsetWidth;
+
+            var got_adunit=0;
+            for (var i = 0; i < adsarr.length; i++) {
+                adunitarr=adsarr[i];
+                if(width >= adunitarr[0]) {
+                    google_ad_width = adunitarr[0];
+                    google_ad_height = adunitarr[1];
+                    google_ad_slot = adunitarr[2];
+                    got_adunit=1;
+                    break;
+                }
+            }
+            if (got_adunit == 0) {
+              adunitarr=adsarr[0];
+                google_ad_width = adunitarr[0];
+                  google_ad_height = adunitarr[1];
+                  google_ad_slot = adunitarr[2];
+            }
+            </script>
+
+            <script type="text/javascript"
+            src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+            </script>
+          </div>
+
+      </div>
+    </div>
+
+
+    </div>
+
+
+<event-modal :event-id="eventId" v-show="isModalVisible" @close="closeModal" ></event-modal>
+
+    </div>
+</div>
+
+<br><br>
+
+
+
+<footer id="myFooter">
+    <div class="container">
+      <div class="row">
+          <div class="col-md-3 links">
+              <h5></h5>
+              <ul>
+                  <li><a href="https://tv.boxbg.net"> Kанали </a></li>
+                  <li><a href="https://tv.boxbg.net/movies"> Филми </a>
+                  <li><a href="https://tv.boxbg.net/series"> Сериали </a>
+                  </li>
+                  <li><a href="https://tv.boxbg.net/series/catalog">
+                      Каталог Сериали</a></li>
+                  <li><a href="https://tv.boxbg.net/category/movies"> Категории</a></li>
+                  <!-- <li><a href="#">Контакти</a></li> -->
+              </ul>
+          </div>
+          <div class="col-md-3 info" style="text-align: center;">
+
+    <h5>
+        <img src="/img/kataloziLogo.png" alt="" style="width: 50px;">
+            Каталози
+    </h5>
+    <p> Разглеждаите каталози навсякъде с нашето мобилно приложение.</p>
+
+        <a href="https://itunes.apple.com/bg/app/katalozi/id632332937?ls=1&mt=8"
+        target="_blank" style="width:180px; display:box;">
+        <img src="/img/available-on-the-app-store.svg" style="height: 52px;margin-bottom: 10px;"
+        data-toggle="tooltip" data-placement="top" title="" data-original-title="Свали от AppStore за iOS">
+        </a>
+        <!-- -->
+        <a href="https://play.google.com/store/apps/details?id=net.boxbg.katalozi" target="_blank"
+        style="width:180px;">
+        <img src="/img/en_generic_rgb_wo_60.png" style="height: 52px;margin-bottom: 10px;"
+        data-toggle="tooltip" data-placement="top" title="" data-original-title="Свали от GooglePlay за Android">
+        </a>
+        <a href="http://katalozi-bg.info/" target="_blank" style="width:100px;">
+        <img src="/img/WebAppIconBanner.png" style="height: 52px;" data-toggle="tooltip"
+        data-placement="top" title="" data-original-title="Отвори Web версия на http://katalozi-bg.info/">
+        </a>
+
+</div>
+<div class="col-md-3 info text-center">
+    <h5>
+        <img src="/img/tvguideIcon.png" style="width: 50px;margin-right:5px;" alt="">
+        БгTvGuide
+    </h5>
+    <p> Следите седмичната програма на над 100 телевизии.</p>
+        <a href="https://itunes.apple.com/bg/app/bg-tv-guide/id456882655?mt=8"
+        target="_blank" style="width:180px; display:box;">
+        <img src="/img/available-on-the-app-store.svg" style="height: 52px;margin-bottom: 10px;"
+            data-toggle="tooltip" data-placement="top" title="" data-original-title="Свали от AppStore за iOS">
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=net.boxbg.bgtvguide" target="_blank" style="width:180px;">
+        <img src="/img/en_generic_rgb_wo_60.png" style="height: 52px;margin-bottom: 10px;"
+        data-toggle="tooltip" data-placement="top" title="" data-original-title="Свали от GooglePlay за Android">
+        </a>
+
+</div>
+<div class="col-md-3 info" style="text-align: center;">
+    <h5><img src="/img/FavIco_radio.png" style="width: 50px;margin-right:5px;" alt=""> iРадио</h5>
+    <p>Най-добрия начин да слушаш радио пред компютара.</p>
+    <a href="http://radio.boxbg.net/" target="_blank" style="width:150px;">
+        <img src="/img/WebAppIconBanner.png" style="height: 52px;" data-toggle="tooltip"
+        data-placement="top" title="" data-original-title="Отвори Web версия на https://radio.boxbg.net">
+    </a>
+</div>
+
+      </div>
+    </div>
+    <div class="second-bar">
+       <div class="container">
+            <span class="logo">
+                © 2022 БГ TV Guide
+            </span>
+            <div class="social-icons">
+                <a href="https://boxbg.net" target="_blank">BoxBg.net</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScripts -->
+<script type="text/javascript">
+   window.lang = 'bg'
+</script>
+<script src="/js/build/manifest.js?id=efd27b756eb5068ca7bd9b95e701afd3"></script>
+<script src="/js/build/vendor.js?id=5b492cd369625f843ec6b0fcb0509251"></script>
+
+<script defer src="https://umami.boxbg.net/script.js" data-website-id="f0c71d56-23e9-4f3c-be5f-3515ace40b3f"></script>
+
+<script type="text/javascript">
+  window.PHP = {
+    channel: {"id":29,"name":"\u0411\u041d\u04221","site":"http:\/\/bnt.bg\/","predavatelUrl":null,"categories":"\u0411\u044a\u043b\u0433\u0430\u0440\u0441\u043a\u0438","order":1,"logo_url":"https:\/\/tv.boxbg.net\/img\/logos\/29.jpg","program_until":"2025-08-18 05:40:00","created_at":"2014-02-28 21:58:42","updated_at":"2019-02-22 23:52:05"},
+  };
+</script>
+<script src="/js/build/week.js?id=a3729299bd5263e71d5c3d1693406ee3"></script>
+
+<!-- <script src="/js/jquery.smartbanner.js"></script> -->
+
+<script type="text/javascript">
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+$(window).scroll(function() {
+    if ($(document).scrollTop() > 60) {
+        console.log("hide");
+        $('.top-bar-desktop').removeClass('d-lg-block');
+        $('.top-bar-desktop').addClass('d-lg-none');
+    } else {
+        $('.top-bar-desktop').removeClass('d-lg-none');
+        $('.top-bar-desktop').addClass('d-lg-block');
+        // $('.top-bar-desktop .container').show();
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+  if ("IntersectionObserver" in window) {
+    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          let lazyImage = entry.target;
+          lazyImage.src = lazyImage.dataset.src;
+        //   console.log("lazy in IntersectionObserver");
+        //   lazyImage.srcset = lazyImage.dataset.srcset;
+          lazyImage.classList.remove("lazy");
+          lazyImageObserver.unobserve(lazyImage);
+        }
+      });
+    });
+
+    lazyImages.forEach(function(lazyImage) {
+      lazyImageObserver.observe(lazyImage);
+    });
+  } else {
+    // Possibly fall back to event handlers here
+  }
+});
+
+</script>
+
+</body>
+</html>

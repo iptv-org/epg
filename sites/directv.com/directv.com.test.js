@@ -10,35 +10,28 @@ dayjs.extend(utc)
 
 jest.mock('axios')
 
-const date = dayjs.utc('2023-01-15', 'YYYY-MM-DD').startOf('d')
+// Mock token fetching
+axios.post.mockImplementation((url) => {
+  if (url === 'https://api.cld.dtvce.com/authn-tokengo/v3/v2/tokens?client_id=DTVE_DFW_WEB_Chrome_G') {
+    return Promise.resolve({ data: '/S2dAVfUtUdnt6adfOBn+QrLZ2GymKSfxIGgfI/tRrOCf22bhs7aLmwmeKTUp0br3aHU2M/Rtv5Y43Kl9unTtNau8w48K3dNjVVH2gyrgvGvUxfVa8rXXuv9RBesXSric6ltlS4yDIjRtuOpmiU5Imt8O1zHWjA9K3/8M84oRQywb0HpE4tkTT3RBG5Cmz+wX5If6Hbb3ndFacEhUjpvCI0mAqPlI2r7x7/73quuoByp0+updUmyjWF+5SVkUBx5.ycdisTLMPpwxjYERYDmA7zm7Pq2ukk5KJk8duRW8lMg=' })
+  }
+})
+
+const date = dayjs.utc('2026-06-04', 'YYYY-MM-DD').startOf('d')
 const channel = {
-  site_id: '249#249',
+  site_id: '5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b',
   xmltv_id: 'ComedyCentralEast.us'
 }
 
 it('can generate valid url', () => {
   const result = url({ date, channel })
   expect(result).toBe(
-    'https://www.directv.com/json/channelschedule?channels=249&startTime=2023-01-15T00:00:00Z&hours=24&chId=249'
+    `https://api.cld.dtvce.com/discovery/edge/schedule/v1/service/schedule?startTime=${date.valueOf()}&endTime=${date.add(24, 'hour').valueOf()}&channelIds=5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b&include4K=false&is4Kcompatible=false&includeTVOD=true`
   )
 })
 
 it('can parse response', done => {
   const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'))
-
-  axios.get.mockImplementation(url => {
-    if (url === 'https://www.directv.com/json/program/flip/MV001173520000') {
-      return Promise.resolve({
-        data: JSON.parse(fs.readFileSync(path.resolve(__dirname, '__data__/program1.json')))
-      })
-    } else if (url === 'https://www.directv.com/json/program/flip/EP002298270445') {
-      return Promise.resolve({
-        data: JSON.parse(fs.readFileSync(path.resolve(__dirname, '__data__/program2.json')))
-      })
-    } else {
-      return Promise.resolve({ data: '' })
-    }
-  })
 
   parser({ content, channel })
     .then(result => {
@@ -48,38 +41,38 @@ it('can parse response', done => {
         return p
       })
 
-      expect(result).toMatchObject([
-        {
-          start: '2023-01-14T23:00:00.000Z',
-          stop: '2023-01-15T01:00:00.000Z',
-          title: 'Men in Black II',
-          description:
-            'Kay (Tommy Lee Jones) and Jay (Will Smith) reunite to provide our best line of defense against a seductress who levels the toughest challenge yet to the MIBs mission statement: protecting the earth from the scum of the universe. While investigating a routine crime, Jay uncovers a plot masterminded by Serleena (Boyle), a Kylothian monster who disguises herself as a lingerie model. When Serleena takes the MIB building hostage, there is only one person Jay can turn to -- his former MIB partner.',
-          date: '2002',
-          image: 'https://www.directv.com/db_photos/movies/AllPhotosAPGI/29160/29160_aa.jpg',
-          category: ['Comedy', 'Movies Anywhere', 'Action/Adventure', 'Science Fiction'],
+      expect(result).toHaveLength(47)
+
+      expect(result[0]).toMatchObject({
+        start: '2026-04-06T00:00:00.000Z',
+        stop: '2026-04-06T00:30:00.000Z',
+        title: 'Seinfeld',
+        sub_title: 'The Nap',
+          description: 'George finds the ideal napping spot at work; Jerry has his kitchen rebuilt; Elaine meets a new beau (Vince Grant).',
+          date: '1997-04-10',
+          season: 8,
+          episode: 18,
+          category: ['Sitcom'],
+          rating: {
+            system: 'MPA',
+            value: 'TVPG'
+          }
+      })
+
+      expect(result[46]).toMatchObject({
+        start: '2026-04-06T23:35:00.000Z',
+        stop: '2026-04-07T00:10:00.000Z',
+        title: 'The Office',
+        sub_title: 'The Convention',
+          description: 'Michael organizes a party in his hotel room when he, Dwight and Jan attend the Northeastern Mid-Market Office Supply Convention in Philadelphia.',
+          category: ['Comedy', 'Sitcom'],
+          season: 3,
+          episode: 2,
           rating: {
             system: 'MPA',
             value: 'TV14'
           }
-        },
-        {
-          start: '2023-01-15T06:00:00.000Z',
-          stop: '2023-01-15T06:30:00.000Z',
-          title: 'South Park',
-          sub_title: 'Goth Kids 3: Dawn of the Posers',
-          description: 'The goth kids are sent to a camp for troubled children.',
-          image:
-            'https://www.directv.com/db_photos/showcards/v5/AllPhotos/184338/p184338_b_v5_aa.jpg',
-          category: ['Series', 'Animation', 'Comedy'],
-          season: 17,
-          episode: 4,
-          rating: {
-            system: 'MPA',
-            value: 'TVMA'
-          }
-        }
-      ])
+      })
       done()
     })
     .catch(done)

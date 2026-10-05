@@ -1,11 +1,11 @@
 # tv.mail.ru
 
-https://tv.mail.ru/
+https://tv.mail.ru/moskva/
 
 ### Download the guide
 
 ```sh
-npm run grab --- --site=tv.mail.ru
+npm run grab --- --sites=tv.mail.ru
 ```
 
 ### Update channel list

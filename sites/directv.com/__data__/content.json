@@ -1,2953 +1,3016 @@
 {
-	"schedule": [
+	"schedules": [
 		{
-			"secLiveStreaming": "N",
-			"chNum": 249,
-			"authCode": "NA",
-			"chRec": true,
-			"chCall": "COMWHD",
-			"chId": 2598,
-			"secondaryChannelId": 0,
-			"chHd": true,
-			"secondary": false,
-			"blackOut": false,
-			"chAdult": false,
-			"chCat": [
-				"Entertainment & Music Channels",
-				"HDTV Channels"
-			],
-			"chLogoId": 157,
-			"detailsLinkUrl": "/Channels/Comedy-Central-West-HD-249",
-			"schedules": [
+			"channelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+			"contents": [
 				{
-					"primaryImageUrl": "/db_photos/movies/AllPhotosAPGI/19526/19526_aa.jpg",
-					"restartAllowed": false,
-					"subcategoryList": [
-						"Comedy",
-						"Movies Anywhere",
-						"Action/Adventure",
-						"Science Fiction"
+					"apgId": "EP000169160174",
+					"canonicalId": "fd8646f0-d4ee-e996-5dd4-a41648186aac",
+					"categories": [
+						"TVShow"
 					],
-					"gridViewPrimaryImageUrl": "/db_photos/movies/AllPhotosAPGI/19526/19526_aa_p.jpg",
-					"rating": "TV14",
-					"description": null,
-					"title": "Men in Black",
-					"episodeNumber": null,
-					"duration": 120,
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"V"
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"consumableType": "LINEAR",
+							"duration": 1800,
+							"endTime": "2026-04-06T00:30:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TVPG",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "b0c8df8c-3732-3874-8a36-6810951767c3",
+							"scheduleId": "b0c8df8c-3732-3874-8a36-6810951767c3",
+							"startTime": "2026-04-06T00:00:00Z"
+						}
 					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "MV000510190000",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T00:00:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": null,
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": null,
-					"listViewPrimaryImageUrl": "/db_photos/movies/AllPhotosAPGI/19526/19526_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "Movies",
-					"hd": 1,
-					"liveStreaming": "N"
-				},
-				{
-					"primaryImageUrl": "/db_photos/movies/AllPhotosAPGI/29160/29160_aa.jpg",
-					"restartAllowed": false,
-					"subcategoryList": [
-						"Comedy",
-						"Movies Anywhere",
-						"Action/Adventure",
-						"Science Fiction"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/movies/AllPhotosAPGI/29160/29160_aa_p.jpg",
-					"rating": "TV14",
-					"description": null,
-					"title": "Men in Black II",
-					"episodeNumber": null,
-					"duration": 120,
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "MV001173520000",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T02:00:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": null,
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": null,
-					"listViewPrimaryImageUrl": "/db_photos/movies/AllPhotosAPGI/29160/29160_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "Movies",
-					"hd": 1,
-					"liveStreaming": "N"
-				},
-				{
-					"primaryImageUrl": "/db_photos/movies/AllPhotosAPGI/8797139/8797139_aa.jpg",
-					"restartAllowed": false,
-					"subcategoryList": [
-						"Comedy",
-						"Movies Anywhere",
-						"Action/Adventure",
-						"Science Fiction"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/movies/AllPhotosAPGI/8797139/8797139_aa_p.jpg",
-					"rating": "TV14",
-					"description": null,
-					"title": "Men in Black 3",
-					"episodeNumber": null,
-					"duration": 150,
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "MV003695340000",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T04:00:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": null,
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": null,
-					"listViewPrimaryImageUrl": "/db_photos/movies/AllPhotosAPGI/8797139/8797139_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "Movies",
-					"hd": 1,
-					"liveStreaming": "N"
-				},
-				{
-					"primaryImageUrl": "/db_photos/movies/AllPhotosAPGI/11928727/11928727_aa.jpg",
-					"restartAllowed": false,
-					"subcategoryList": [
-						"Comedy",
-						"Movies Anywhere",
-						"Action/Adventure"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/movies/AllPhotosAPGI/11928727/11928727_aa_p.jpg",
-					"rating": "TV14",
-					"description": null,
-					"title": "Ride Along 2",
-					"episodeNumber": null,
-					"duration": 120,
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"V"
-					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "MV007793670000",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T06:30:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": null,
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": null,
-					"listViewPrimaryImageUrl": "/db_photos/movies/AllPhotosAPGI/11928727/11928727_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "Movies",
-					"hd": 1,
-					"liveStreaming": "N"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/184338/p184338_b_v5_aa.jpg",
-					"restartAllowed": false,
-					"subcategoryList": [
-						"Series",
-						"Animation",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/184338/p184338_b_v5_aa_p.jpg",
-					"rating": "TVMA",
-					"description": null,
-					"title": "South Park",
-					"episodeNumber": 2,
-					"duration": 30,
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"D",
-						"L"
-					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP002298270441",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T08:30:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "Informative Murder Porn",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 17,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/184338/p184338_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "N"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/184338/p184338_b_v5_aa.jpg",
-					"restartAllowed": false,
-					"subcategoryList": [
-						"Series",
-						"Animation",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/184338/p184338_b_v5_aa_p.jpg",
-					"rating": "TVMA",
-					"description": null,
-					"title": "South Park",
-					"episodeNumber": 4,
-					"duration": 30,
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"D",
-						"L"
-					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP002298270445",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T09:00:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "Goth Kids 3: Dawn of the Posers",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 17,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/184338/p184338_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "N"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/184338/p184338_b_v5_aa.jpg",
-					"restartAllowed": false,
-					"subcategoryList": [
-						"Series",
-						"Animation",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/184338/p184338_b_v5_aa_p.jpg",
-					"rating": "TVMA",
-					"description": null,
-					"title": "South Park",
-					"episodeNumber": 5,
-					"duration": 30,
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"D",
-						"L"
-					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP002298270446",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T09:30:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "Taming Strange",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 17,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/184338/p184338_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "N"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/184338/p184338_b_v5_aa.jpg",
-					"restartAllowed": false,
-					"subcategoryList": [
-						"Series",
-						"Animation",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/184338/p184338_b_v5_aa_p.jpg",
-					"rating": "TVMA",
-					"description": null,
-					"title": "South Park",
-					"episodeNumber": 10,
-					"duration": 30,
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"D",
-						"L"
-					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP002298270451",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T10:00:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "The Hobbit",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 17,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/184338/p184338_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "N"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/184338/p184338_b_v5_aa.jpg",
-					"restartAllowed": false,
-					"subcategoryList": [
-						"Series",
-						"Animation",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/184338/p184338_b_v5_aa_p.jpg",
-					"rating": "TVMA",
-					"description": null,
-					"title": "South Park",
-					"episodeNumber": 6,
-					"duration": 30,
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"L"
-					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP002298270782",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T10:30:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "Season Finale",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 23,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/184338/p184338_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "N"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/184338/p184338_b_v5_aa.jpg",
-					"restartAllowed": false,
-					"subcategoryList": [
-						"Series",
-						"Animation",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/184338/p184338_b_v5_aa_p.jpg",
-					"rating": "TVMA",
-					"description": null,
-					"title": "South Park",
-					"episodeNumber": 7,
-					"duration": 30,
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"L"
-					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP002298270783",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T11:00:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "Board Girls",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 23,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/184338/p184338_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "N"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/184338/p184338_b_v5_aa.jpg",
-					"restartAllowed": false,
-					"subcategoryList": [
-						"Series",
-						"Animation",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/184338/p184338_b_v5_aa_p.jpg",
-					"rating": "TVMA",
-					"description": null,
-					"title": "South Park",
-					"episodeNumber": 8,
-					"duration": 30,
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"L"
-					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP002298270784",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T11:30:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "Turd Burglars",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 23,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/184338/p184338_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "N"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/184338/p184338_b_v5_aa.jpg",
-					"restartAllowed": false,
-					"subcategoryList": [
-						"Series",
-						"Animation",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/184338/p184338_b_v5_aa_p.jpg",
-					"rating": "TVMA",
-					"description": null,
-					"title": "South Park",
-					"episodeNumber": 9,
-					"duration": 30,
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"L"
-					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP002298270785",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T12:00:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "Basic Cable",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 23,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/184338/p184338_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "N"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/184338/p184338_b_v5_aa.jpg",
-					"restartAllowed": false,
-					"subcategoryList": [
-						"Series",
-						"Animation",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/184338/p184338_b_v5_aa_p.jpg",
-					"rating": "TVMA",
-					"description": null,
-					"title": "South Park",
-					"episodeNumber": 8,
-					"duration": 30,
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP002298270467",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T12:30:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "C... Magic",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 18,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/184338/p184338_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "N"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/13662735/p13662735_b_v5_aa.jpg",
-					"restartAllowed": false,
-					"subcategoryList": [
-						"Series",
-						"Product Info",
-						"Shopping"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/13662735/p13662735_b_v5_aa_p.jpg",
-					"rating": "TVMA",
-					"description": null,
-					"title": "Sex Toys - 50 Percent OFF!",
-					"episodeNumber": null,
-					"duration": 30,
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "SH025929710000",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T13:00:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": null,
-					"authCode": "NA",
-					"format": "SD",
-					"seasonNumber": null,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/13662735/p13662735_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "N"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/16255884/p16255884_b_v5_aa.jpg",
-					"restartAllowed": false,
-					"subcategoryList": [
-						"Series",
-						"Product Info",
-						"Shopping"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/16255884/p16255884_b_v5_aa_p.jpg",
-					"rating": "NR (Not Rated)",
-					"description": null,
-					"title": "Men's Health: All-Natural Secret for Prostate Health",
-					"episodeNumber": null,
-					"duration": 30,
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "SH030991650000",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T13:30:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": null,
-					"authCode": "NA",
-					"format": "SD",
-					"seasonNumber": null,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/16255884/p16255884_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "N"
-				},
-				{
-					"primaryImageUrl": "/db_photos/default/TV/tv.jpg",
-					"restartAllowed": false,
-					"subcategoryList": [
-						"Series",
-						"Product Info",
-						"Shopping"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/default/TV/tv_p.jpg",
-					"rating": "TVG",
-					"description": null,
-					"title": "Jane Seymour, Kate Walsh share their skin secrets",
-					"episodeNumber": null,
-					"duration": 30,
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "SH043806090000",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T14:00:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": null,
-					"authCode": "NA",
-					"format": "SD",
-					"seasonNumber": null,
-					"listViewPrimaryImageUrl": "/db_photos/default/TV/tv_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "N"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/194833/p194833_b_v5_aa.jpg",
-					"restartAllowed": false,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/194833/p194833_b_v5_aa_p.jpg",
-					"rating": "TVPG",
-					"description": null,
-					"title": "Parks and Recreation",
-					"episodeNumber": 3,
-					"duration": 30,
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"D"
-					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP011281150009",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T14:30:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "Beauty Pageant",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 2,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/194833/p194833_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "N"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/194833/p194833_b_v5_aa.jpg",
-					"restartAllowed": false,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/194833/p194833_b_v5_aa_p.jpg",
-					"rating": "TVPG",
-					"description": null,
-					"title": "Parks and Recreation",
-					"episodeNumber": 4,
-					"duration": 30,
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"D",
-						"L"
-					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP011281150010",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T15:00:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "The Practice Date",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 2,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/194833/p194833_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "N"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/194833/p194833_b_v5_aa.jpg",
-					"restartAllowed": false,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/194833/p194833_b_v5_aa_p.jpg",
-					"rating": "TVPG",
-					"description": null,
-					"title": "Parks and Recreation",
-					"episodeNumber": 5,
-					"duration": 30,
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP011281150011",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T15:30:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "Sister City",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 2,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/194833/p194833_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "N"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH000169160000/EP000169160038/EP000169160038_aa.jpg",
-					"restartAllowed": false,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH000169160000/EP000169160038/EP000169160038_aa_p.jpg",
-					"rating": "TVPG",
-					"description": null,
-					"title": "Seinfeld",
-					"episodeNumber": 12,
-					"duration": 30,
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP000169160038",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T16:00:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "The Red Dot",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 3,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH000169160000/EP000169160038/EP000169160038_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "N"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH000169160000/EP000169160001/EP000169160001_aa.jpg",
-					"restartAllowed": false,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH000169160000/EP000169160001/EP000169160001_aa_p.jpg",
-					"rating": "TVPG",
-					"description": null,
-					"title": "Seinfeld",
-					"episodeNumber": 13,
-					"duration": 30,
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP000169160001",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T16:30:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "The Subway",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 3,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH000169160000/EP000169160001/EP000169160001_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "N"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH000169160000/EP000169160002/EP000169160002_aa.jpg",
-					"restartAllowed": false,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH000169160000/EP000169160002/EP000169160002_aa_p.jpg",
-					"rating": "TVPG",
-					"description": null,
-					"title": "Seinfeld",
-					"episodeNumber": 14,
-					"duration": 30,
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP000169160002",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T17:00:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "The Pez Dispenser",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 3,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH000169160000/EP000169160002/EP000169160002_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "N"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH000169160000/EP000169160006/EP000169160006_aa.jpg",
-					"restartAllowed": false,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH000169160000/EP000169160006/EP000169160006_aa_p.jpg",
-					"rating": "TVPG",
-					"description": null,
-					"title": "Seinfeld",
-					"episodeNumber": 16,
-					"duration": 30,
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP000169160006",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T17:30:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "The Fix-Up",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 3,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH000169160000/EP000169160006/EP000169160006_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "N"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/185008/p185008_b_v5_aa.jpg",
-					"restartAllowed": false,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/185008/p185008_b_v5_aa_p.jpg",
-					"rating": "TV14",
-					"description": null,
-					"title": "The Office",
-					"episodeNumber": 12,
-					"duration": 30,
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"D",
-						"L"
-					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP007261330123",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T18:00:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "Scott's Tots",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 6,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/185008/p185008_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "N"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/185008/p185008_b_v5_aa.jpg",
-					"restartAllowed": false,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/185008/p185008_b_v5_aa_p.jpg",
-					"rating": "TV14",
-					"description": null,
-					"title": "The Office",
-					"episodeNumber": 14,
-					"duration": 30,
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"D",
-						"L"
-					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP007261330125",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T18:30:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "The Banker",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 6,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/185008/p185008_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "N"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH007261330000/EP007261330126/EP007261330126_aa.jpg",
-					"restartAllowed": false,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH007261330000/EP007261330126/EP007261330126_aa_p.jpg",
-					"rating": "TV14",
-					"description": null,
-					"title": "The Office",
-					"episodeNumber": 15,
-					"duration": 30,
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"D",
-						"L"
-					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP007261330126",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T19:00:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "Sabre",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 6,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH007261330000/EP007261330126/EP007261330126_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "N"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH007261330000/EP007261330127/EP007261330127_aa.jpg",
-					"restartAllowed": false,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH007261330000/EP007261330127/EP007261330127_aa_p.jpg",
-					"rating": "TV14",
-					"description": null,
-					"title": "The Office",
-					"episodeNumber": 16,
-					"duration": 30,
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"D",
-						"L"
-					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP007261330127",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T19:30:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "Manager and Salesman",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 6,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH007261330000/EP007261330127/EP007261330127_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "N"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/185008/p185008_b_v5_aa.jpg",
-					"restartAllowed": false,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/185008/p185008_b_v5_aa_p.jpg",
-					"rating": "TV14",
-					"description": null,
-					"title": "The Office",
-					"episodeNumber": 17,
-					"duration": 30,
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"D",
-						"L"
-					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP007261330242",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T20:00:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "The Delivery",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 6,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/185008/p185008_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "N"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/185008/p185008_b_v5_aa.jpg",
-					"restartAllowed": false,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/185008/p185008_b_v5_aa_p.jpg",
-					"rating": "TV14",
-					"description": null,
-					"title": "The Office",
+					"contentType": "EPISODE",
+					"description": "George finds the ideal napping spot at work; Jerry has his kitchen rebuilt; Elaine meets a new beau (Vince Grant).",
+					"displayTitle": "Seinfeld",
 					"episodeNumber": 18,
-					"duration": 30,
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"D",
-						"L"
+					"episodeTitle": "The Nap",
+					"genres": [
+						"Sitcom"
 					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP007261330243",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T20:30:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "The Delivery",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 6,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/185008/p185008_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "N"
+					"metadataLanguage": "en",
+					"originalAirDate": "1997-04-10",
+					"parentalRating": "TVPG",
+					"releaseYear": 1997,
+					"seasonId": "5a75c460-5cbb-4ea3-acba-5911532801b3",
+					"seasonNumber": 8,
+					"seriesEditId": "42df0f3e-b723-4618-bb7a-170890de7e4f",
+					"seriesId": "f95949d9-807e-8584-e299-ad8c19f23b6f",
+					"stbContentId": "1 1 4214 AE",
+					"title": "Seinfeld",
+					"tmsConnectorId": "SH000169160000",
+					"tmsId": "EP000169160174",
+					"resourceType": "CONTENT",
+					"resourceId": "b0c8df8c-3732-3874-8a36-6810951767c3",
+					"editId": "46b19f74-eb27-4294-b260-aa73b9824e50",
+					"itemType": "VIDEO_PROGRAM"
 				},
 				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/185008/p185008_b_v5_aa.jpg",
-					"restartAllowed": false,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
+					"apgId": "EP000169160175",
+					"canonicalId": "6e06ec4d-fb11-4e76-e396-bbee1f52b798",
+					"categories": [
+						"TVShow"
 					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/185008/p185008_b_v5_aa_p.jpg",
-					"rating": "TV14",
-					"description": null,
-					"title": "The Office",
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"consumableType": "LINEAR",
+							"duration": 1800,
+							"endTime": "2026-04-06T01:00:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TVPG",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "5673f156-6b7f-3c69-9ae6-ffa8a818fe5b",
+							"scheduleId": "5673f156-6b7f-3c69-9ae6-ffa8a818fe5b",
+							"startTime": "2026-04-06T00:30:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "George begins to wonder what his new girlfriend (Suzanne Cryer) isn't telling him when she says, \"Yada, yada, yada.\"",
+					"displayTitle": "Seinfeld",
 					"episodeNumber": 19,
-					"duration": 30,
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"D",
-						"L"
+					"episodeTitle": "The Yada Yada",
+					"genres": [
+						"Sitcom"
 					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP007261330129",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T21:00:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "St. Patrick's Day",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 6,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/185008/p185008_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "N"
+					"metadataLanguage": "en",
+					"originalAirDate": "1997-04-24",
+					"parentalRating": "TVPG",
+					"releaseYear": 1997,
+					"seasonId": "5a75c460-5cbb-4ea3-acba-5911532801b3",
+					"seasonNumber": 8,
+					"seriesEditId": "42df0f3e-b723-4618-bb7a-170890de7e4f",
+					"seriesId": "f95949d9-807e-8584-e299-ad8c19f23b6f",
+					"stbContentId": "1 1 4214 AF",
+					"title": "Seinfeld",
+					"tmsConnectorId": "SH000169160000",
+					"tmsId": "EP000169160175",
+					"resourceType": "CONTENT",
+					"resourceId": "5673f156-6b7f-3c69-9ae6-ffa8a818fe5b",
+					"editId": "bf725e10-9e51-40eb-8e3a-bc85a7138c2d",
+					"itemType": "VIDEO_PROGRAM"
 				},
 				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/185008/p185008_b_v5_aa.jpg",
-					"restartAllowed": false,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
+					"apgId": "EP000169160176",
+					"canonicalId": "e816f1ec-5cba-e4d3-6bb6-62bfe4a52441",
+					"categories": [
+						"TVShow"
 					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/185008/p185008_b_v5_aa_p.jpg",
-					"rating": "TV14",
-					"description": null,
-					"title": "The Office",
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"consumableType": "LINEAR",
+							"duration": 1800,
+							"endTime": "2026-04-06T01:30:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TVPG",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "2a7eac91-13b5-3b67-a3d4-0cb622497beb",
+							"scheduleId": "2a7eac91-13b5-3b67-a3d4-0cb622497beb",
+							"startTime": "2026-04-06T01:00:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "Newman nixes Kramer's millennium-party plans; Jerry obsesses about his position on his girlfriend's speed dial.",
+					"displayTitle": "Seinfeld",
 					"episodeNumber": 20,
-					"duration": 30,
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"D",
-						"L"
+					"episodeTitle": "The Millennium",
+					"genres": [
+						"Sitcom"
 					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP007261330130",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T21:30:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "New Leads",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 6,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/185008/p185008_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "N"
+					"metadataLanguage": "en",
+					"originalAirDate": "1997-05-01",
+					"parentalRating": "TVPG",
+					"releaseYear": 1997,
+					"seasonId": "5a75c460-5cbb-4ea3-acba-5911532801b3",
+					"seasonNumber": 8,
+					"seriesEditId": "42df0f3e-b723-4618-bb7a-170890de7e4f",
+					"seriesId": "f95949d9-807e-8584-e299-ad8c19f23b6f",
+					"stbContentId": "1 1 4214 B0",
+					"title": "Seinfeld",
+					"tmsConnectorId": "SH000169160000",
+					"tmsId": "EP000169160176",
+					"resourceType": "CONTENT",
+					"resourceId": "2a7eac91-13b5-3b67-a3d4-0cb622497beb",
+					"editId": "efe18f88-382f-4e2c-838c-66c3124bfdc0",
+					"itemType": "VIDEO_PROGRAM"
 				},
 				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH007261330000/EP007261330131/EP007261330131_aa.jpg",
-					"restartAllowed": false,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
+					"apgId": "EP000169160177",
+					"canonicalId": "a2efb7ff-4c1f-9fba-97a0-a1016d69b82a",
+					"categories": [
+						"TVShow"
 					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH007261330000/EP007261330131/EP007261330131_aa_p.jpg",
-					"rating": "TV14",
-					"description": null,
-					"title": "The Office",
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"consumableType": "LINEAR",
+							"duration": 1800,
+							"endTime": "2026-04-06T02:00:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TVPG",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "8feb255f-0340-38f6-bf0d-f2d07363f77e",
+							"scheduleId": "8feb255f-0340-38f6-bf0d-f2d07363f77e",
+							"startTime": "2026-04-06T01:30:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "Elaine's new business, selling only the upper part of muffins, is challenged to dispose of the unused bottoms.",
+					"displayTitle": "Seinfeld",
 					"episodeNumber": 21,
-					"duration": 30,
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"D",
-						"L"
+					"episodeTitle": "The Muffin Tops",
+					"genres": [
+						"Sitcom"
 					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP007261330131",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T22:00:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "Happy Hour",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 6,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH007261330000/EP007261330131/EP007261330131_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "N"
+					"metadataLanguage": "en",
+					"originalAirDate": "1997-05-08",
+					"parentalRating": "TVPG",
+					"releaseYear": 1997,
+					"seasonId": "5a75c460-5cbb-4ea3-acba-5911532801b3",
+					"seasonNumber": 8,
+					"seriesEditId": "42df0f3e-b723-4618-bb7a-170890de7e4f",
+					"seriesId": "f95949d9-807e-8584-e299-ad8c19f23b6f",
+					"stbContentId": "1 1 4214 B1",
+					"title": "Seinfeld",
+					"tmsConnectorId": "SH000169160000",
+					"tmsId": "EP000169160177",
+					"resourceType": "CONTENT",
+					"resourceId": "8feb255f-0340-38f6-bf0d-f2d07363f77e",
+					"editId": "f445e903-00cf-4d92-92b9-2bf4d9f0bf80",
+					"itemType": "VIDEO_PROGRAM"
 				},
 				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/185008/p185008_b_v5_aa.jpg",
-					"restartAllowed": false,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
+					"apgId": "EP002960010307",
+					"canonicalId": "941d52c6-2784-6c0b-d048-9733311ff085",
+					"categories": [
+						"TVShow"
 					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/185008/p185008_b_v5_aa_p.jpg",
-					"rating": "TV14",
-					"description": null,
-					"title": "The Office",
-					"episodeNumber": 22,
-					"duration": 30,
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"D",
-						"L"
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"consumableType": "LINEAR",
+							"duration": 1800,
+							"endTime": "2026-04-06T02:30:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TV14",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC"
+							],
+							"resourceId": "5c23b28f-8883-3f03-a1ee-4ca03a0d10c8",
+							"scheduleId": "5c23b28f-8883-3f03-a1ee-4ca03a0d10c8",
+							"startTime": "2026-04-06T02:00:00Z"
+						}
 					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP007261330134",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T22:30:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "Secretary's Day",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 6,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/185008/p185008_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "N"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH007261330000/EP007261330135/EP007261330135_aa.jpg",
-					"restartAllowed": false,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH007261330000/EP007261330135/EP007261330135_aa_p.jpg",
-					"rating": "TV14",
-					"description": null,
-					"title": "The Office",
-					"episodeNumber": 23,
-					"duration": 30,
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"D",
-						"L"
-					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP007261330135",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T23:00:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "Body Language",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 6,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH007261330000/EP007261330135/EP007261330135_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "N"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/185008/p185008_b_v5_aa.jpg",
-					"restartAllowed": false,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/185008/p185008_b_v5_aa_p.jpg",
-					"rating": "TV14",
-					"description": null,
-					"title": "The Office",
-					"episodeNumber": 24,
-					"duration": 30,
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"D",
-						"L"
-					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP007261330136",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T23:30:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "The Cover-Up",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 6,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/185008/p185008_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "N"
-				}
-			],
-			"chKey": "2598_1571684400000",
-			"chName": "Comedy Central West HD",
-			"chDesc": "The only 24-hour, all-comedy network. Spotlights Emmy and CableAce Award-winning shows like Dr. Katz: Professional Therapist, plus sitcoms, stand-up, animation, talk shows and movies.",
-			"liveStreaming": "N",
-			"digitalAdInsertableLive": false
-		},
-		{
-			"secLiveStreaming": "N",
-			"chNum": 249,
-			"authCode": "NA",
-			"chRec": true,
-			"chCall": "COMHD",
-			"chId": 3035,
-			"secondaryChannelId": 0,
-			"chHd": true,
-			"secondary": false,
-			"blackOut": false,
-			"chAdult": false,
-			"chCat": [
-				"Alternate content",
-				"Entertainment & Music Channels",
-				"HDTV Channels"
-			],
-			"chLogoId": 390,
-			"detailsLinkUrl": "/Channels/Comedy-Central-HD-249",
-			"schedules": [
-				{
-					"primaryImageUrl": "/db_photos/movies/AllPhotosAPGI/29160/29160_aa.jpg",
-					"restartAllowed": true,
-					"subcategoryList": [
-						"Comedy",
-						"Movies Anywhere",
-						"Action/Adventure",
-						"Science Fiction"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/movies/AllPhotosAPGI/29160/29160_aa_p.jpg",
-					"rating": "TV14",
-					"description": null,
-					"title": "Men in Black II",
-					"episodeNumber": null,
-					"duration": 120,
-					"disableFastForward": true,
-					"restartMaterialId": "B007881332U3",
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "MV001173520000",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-14T23:00:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": null,
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": null,
-					"listViewPrimaryImageUrl": "/db_photos/movies/AllPhotosAPGI/29160/29160_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "Movies",
-					"hd": 1,
-					"liveStreaming": "B"
-				},
-				{
-					"primaryImageUrl": "/db_photos/movies/AllPhotosAPGI/8797139/8797139_aa.jpg",
-					"restartAllowed": true,
-					"subcategoryList": [
-						"Comedy",
-						"Movies Anywhere",
-						"Action/Adventure",
-						"Science Fiction"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/movies/AllPhotosAPGI/8797139/8797139_aa_p.jpg",
-					"rating": "TV14",
-					"description": null,
-					"title": "Men in Black 3",
-					"episodeNumber": null,
-					"duration": 150,
-					"disableFastForward": true,
-					"restartMaterialId": "B007881439U3",
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "MV003695340000",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T01:00:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": null,
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": null,
-					"listViewPrimaryImageUrl": "/db_photos/movies/AllPhotosAPGI/8797139/8797139_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "Movies",
-					"hd": 1,
-					"liveStreaming": "B"
-				},
-				{
-					"primaryImageUrl": "/db_photos/movies/AllPhotosAPGI/11928727/11928727_aa.jpg",
-					"restartAllowed": true,
-					"subcategoryList": [
-						"Comedy",
-						"Movies Anywhere",
-						"Action/Adventure"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/movies/AllPhotosAPGI/11928727/11928727_aa_p.jpg",
-					"rating": "TV14",
-					"description": null,
-					"title": "Ride Along 2",
-					"episodeNumber": null,
-					"duration": 120,
-					"disableFastForward": true,
-					"restartMaterialId": "B007881572U3",
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"V"
-					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "MV007793670000",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T03:30:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": null,
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": null,
-					"listViewPrimaryImageUrl": "/db_photos/movies/AllPhotosAPGI/11928727/11928727_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "Movies",
-					"hd": 1,
-					"liveStreaming": "B"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/184338/p184338_b_v5_aa.jpg",
-					"restartAllowed": true,
-					"subcategoryList": [
-						"Series",
-						"Animation",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/184338/p184338_b_v5_aa_p.jpg",
-					"rating": "TVMA",
-					"description": null,
-					"title": "South Park",
-					"episodeNumber": 2,
-					"duration": 30,
-					"disableFastForward": true,
-					"restartMaterialId": "B007882364U3",
-					"price": 0,
-					"repeat": true,
-					"lookBack": true,
-					"tvAdvisory": [
-						"D",
-						"L"
-					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP002298270441",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T05:30:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "Informative Murder Porn",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 17,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/184338/p184338_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "B"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/184338/p184338_b_v5_aa.jpg",
-					"restartAllowed": true,
-					"subcategoryList": [
-						"Series",
-						"Animation",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/184338/p184338_b_v5_aa_p.jpg",
-					"rating": "TVMA",
-					"description": null,
-					"title": "South Park",
+					"contentType": "EPISODE",
+					"description": "Viewers are taken for a behind-the-scenes look at a \"Family Guy\" production week; Peter is replaced and pitches a new series to Fox Television Group Chairmen and CEO's Dana Walden and Gary Newman.",
+					"displayTitle": "Family Guy",
 					"episodeNumber": 4,
-					"duration": 30,
-					"disableFastForward": true,
-					"restartMaterialId": "B007882409U3",
-					"price": 0,
-					"repeat": true,
-					"lookBack": true,
-					"tvAdvisory": [
-						"D",
-						"L"
+					"episodeTitle": "Inside Family Guy",
+					"genres": [
+						"Comedy",
+						"Sitcom",
+						"Animated"
 					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP002298270445",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T06:00:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "Goth Kids 3: Dawn of the Posers",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 17,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/184338/p184338_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "B"
+					"metadataLanguage": "en",
+					"originalAirDate": "2016-10-23",
+					"parentalRating": "TV14",
+					"releaseYear": 2016,
+					"seasonId": "7f1d42d9-0f8e-468f-a354-ddd552c95c53",
+					"seasonNumber": 15,
+					"seriesEditId": "fd684468-02d1-4a9d-a05a-83e7ba5b84c0",
+					"seriesId": "e79aa78f-f6b0-20fa-6b4c-a167fb50afe7",
+					"stbContentId": "1 1 48441 133",
+					"title": "Family Guy",
+					"tmsConnectorId": "SH002960010000",
+					"tmsId": "EP002960010307",
+					"resourceType": "CONTENT",
+					"resourceId": "5c23b28f-8883-3f03-a1ee-4ca03a0d10c8",
+					"editId": "9dc1b4ad-0ebf-4981-9a18-1d90c23127c8",
+					"itemType": "VIDEO_PROGRAM"
 				},
 				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/184338/p184338_b_v5_aa.jpg",
-					"restartAllowed": true,
-					"subcategoryList": [
-						"Series",
-						"Animation",
-						"Comedy"
+					"apgId": "EP002960010308",
+					"canonicalId": "1ad407eb-28e4-45fc-11ad-b6ef842e9a46",
+					"categories": [
+						"TVShow"
 					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/184338/p184338_b_v5_aa_p.jpg",
-					"rating": "TVMA",
-					"description": null,
-					"title": "South Park",
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"consumableType": "LINEAR",
+							"duration": 1800,
+							"endTime": "2026-04-06T03:00:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TV14",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC"
+							],
+							"resourceId": "ae1db982-7a91-3f55-9767-0fa294ac63ba",
+							"scheduleId": "ae1db982-7a91-3f55-9767-0fa294ac63ba",
+							"startTime": "2026-04-06T02:30:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "Taylor Swift agrees to go to the homecoming dance with Chris; Peter decides to become an Uber driver.",
+					"displayTitle": "Family Guy",
 					"episodeNumber": 5,
-					"duration": 30,
-					"disableFastForward": true,
-					"restartMaterialId": "B007882432U3",
-					"price": 0,
-					"repeat": true,
-					"lookBack": true,
-					"tvAdvisory": [
-						"D",
-						"L"
+					"episodeTitle": "Chris Has Got a Date, Date, Date, Date, Date",
+					"genres": [
+						"Comedy",
+						"Sitcom",
+						"Animated"
 					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP002298270446",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T06:30:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "Taming Strange",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 17,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/184338/p184338_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "B"
+					"metadataLanguage": "en",
+					"originalAirDate": "2016-11-06",
+					"parentalRating": "TV14",
+					"releaseYear": 2016,
+					"seasonId": "7f1d42d9-0f8e-468f-a354-ddd552c95c53",
+					"seasonNumber": 15,
+					"seriesEditId": "fd684468-02d1-4a9d-a05a-83e7ba5b84c0",
+					"seriesId": "e79aa78f-f6b0-20fa-6b4c-a167fb50afe7",
+					"stbContentId": "1 1 48441 134",
+					"title": "Family Guy",
+					"tmsConnectorId": "SH002960010000",
+					"tmsId": "EP002960010308",
+					"resourceType": "CONTENT",
+					"resourceId": "ae1db982-7a91-3f55-9767-0fa294ac63ba",
+					"editId": "97134128-8626-4670-b544-2e31b6d78575",
+					"itemType": "VIDEO_PROGRAM"
 				},
 				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/184338/p184338_b_v5_aa.jpg",
-					"restartAllowed": true,
-					"subcategoryList": [
-						"Series",
-						"Animation",
-						"Comedy"
+					"apgId": "EP002960010309",
+					"canonicalId": "3a548ce4-8087-349e-9f43-6f149f3e38b4",
+					"categories": [
+						"TVShow"
 					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/184338/p184338_b_v5_aa_p.jpg",
-					"rating": "TVMA",
-					"description": null,
-					"title": "South Park",
-					"episodeNumber": 10,
-					"duration": 30,
-					"disableFastForward": true,
-					"restartMaterialId": "B007882467U3",
-					"price": 0,
-					"repeat": true,
-					"lookBack": true,
-					"tvAdvisory": [
-						"D",
-						"L"
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"consumableType": "LINEAR",
+							"duration": 1800,
+							"endTime": "2026-04-06T03:30:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TV14",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC"
+							],
+							"resourceId": "52956f83-5d07-3796-9524-893b571a22ae",
+							"scheduleId": "52956f83-5d07-3796-9524-893b571a22ae",
+							"startTime": "2026-04-06T03:00:00Z"
+						}
 					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP002298270451",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T07:00:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "The Hobbit",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 17,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/184338/p184338_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "B"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/184338/p184338_b_v5_aa.jpg",
-					"restartAllowed": true,
-					"subcategoryList": [
-						"Series",
-						"Animation",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/184338/p184338_b_v5_aa_p.jpg",
-					"rating": "TVMA",
-					"description": null,
-					"title": "South Park",
+					"contentType": "EPISODE",
+					"description": "Peter and Lois decide not to vaccinate Stewie after reading about the potential side effects; the rest of Quahog soon follows suit.",
+					"displayTitle": "Family Guy",
 					"episodeNumber": 6,
-					"duration": 30,
-					"disableFastForward": true,
-					"restartMaterialId": "B007882501U3",
-					"price": 0,
-					"repeat": true,
-					"lookBack": true,
-					"tvAdvisory": [
-						"L"
+					"episodeTitle": "Hot Shots",
+					"genres": [
+						"Comedy",
+						"Sitcom",
+						"Animated"
 					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP002298270782",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T07:30:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "Season Finale",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 23,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/184338/p184338_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "B"
+					"metadataLanguage": "en",
+					"originalAirDate": "2016-11-13",
+					"parentalRating": "TV14",
+					"releaseYear": 2016,
+					"seasonId": "7f1d42d9-0f8e-468f-a354-ddd552c95c53",
+					"seasonNumber": 15,
+					"seriesEditId": "fd684468-02d1-4a9d-a05a-83e7ba5b84c0",
+					"seriesId": "e79aa78f-f6b0-20fa-6b4c-a167fb50afe7",
+					"stbContentId": "1 1 48441 135",
+					"title": "Family Guy",
+					"tmsConnectorId": "SH002960010000",
+					"tmsId": "EP002960010309",
+					"resourceType": "CONTENT",
+					"resourceId": "52956f83-5d07-3796-9524-893b571a22ae",
+					"editId": "ca06af67-9e0e-44f4-bdb6-934af5efaebb",
+					"itemType": "VIDEO_PROGRAM"
 				},
 				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/184338/p184338_b_v5_aa.jpg",
-					"restartAllowed": true,
-					"subcategoryList": [
-						"Series",
-						"Animation",
-						"Comedy"
+					"apgId": "EP002960010310",
+					"canonicalId": "8efeb1d4-724f-ca8f-11da-6559586fa6d4",
+					"categories": [
+						"TVShow"
 					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/184338/p184338_b_v5_aa_p.jpg",
-					"rating": "TVMA",
-					"description": null,
-					"title": "South Park",
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"consumableType": "LINEAR",
+							"duration": 1800,
+							"endTime": "2026-04-06T04:00:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TV14",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC"
+							],
+							"resourceId": "6e5d270b-68a4-3c16-b847-dab23cd5e392",
+							"scheduleId": "6e5d270b-68a4-3c16-b847-dab23cd5e392",
+							"startTime": "2026-04-06T03:30:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "The cast re-enacts \"The Great Gatsby,\" \"The Adventures of Huckleberry Finn\" and \"Of Mice and Men.\"",
+					"displayTitle": "Family Guy",
 					"episodeNumber": 7,
-					"duration": 30,
-					"disableFastForward": true,
-					"restartMaterialId": "B007882549U3",
-					"price": 0,
-					"repeat": true,
-					"lookBack": true,
-					"tvAdvisory": [
-						"L"
+					"episodeTitle": "High School English",
+					"genres": [
+						"Comedy",
+						"Sitcom",
+						"Animated"
 					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP002298270783",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T08:00:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "Board Girls",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 23,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/184338/p184338_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "B"
+					"metadataLanguage": "en",
+					"originalAirDate": "2016-11-20",
+					"parentalRating": "TV14",
+					"releaseYear": 2016,
+					"seasonId": "7f1d42d9-0f8e-468f-a354-ddd552c95c53",
+					"seasonNumber": 15,
+					"seriesEditId": "fd684468-02d1-4a9d-a05a-83e7ba5b84c0",
+					"seriesId": "e79aa78f-f6b0-20fa-6b4c-a167fb50afe7",
+					"stbContentId": "1 1 48441 136",
+					"title": "Family Guy",
+					"tmsConnectorId": "SH002960010000",
+					"tmsId": "EP002960010310",
+					"resourceType": "CONTENT",
+					"resourceId": "6e5d270b-68a4-3c16-b847-dab23cd5e392",
+					"editId": "04b0a0cf-f485-434f-b578-db84bb62ccbb",
+					"itemType": "VIDEO_PROGRAM"
 				},
 				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/184338/p184338_b_v5_aa.jpg",
-					"restartAllowed": true,
-					"subcategoryList": [
-						"Series",
-						"Animation",
-						"Comedy"
+					"apgId": "EP002960010311",
+					"canonicalId": "98432cdb-31bb-27af-850c-dcd0a348656f",
+					"categories": [
+						"TVShow"
 					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/184338/p184338_b_v5_aa_p.jpg",
-					"rating": "TVMA",
-					"description": null,
-					"title": "South Park",
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"consumableType": "LINEAR",
+							"duration": 1800,
+							"endTime": "2026-04-06T04:30:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TV14",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC"
+							],
+							"resourceId": "36d7fc6f-1f70-3c52-89c9-3cf400f0b064",
+							"scheduleId": "36d7fc6f-1f70-3c52-89c9-3cf400f0b064",
+							"startTime": "2026-04-06T04:00:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "When Peter overhears Carter's plan to save money by using toxic chemicals in the brewery's beer cans, he tells a journalist about it; Brian asks for Stewie's help when his driver's license expired.",
+					"displayTitle": "Family Guy",
 					"episodeNumber": 8,
-					"duration": 30,
-					"disableFastForward": true,
-					"restartMaterialId": "B007882576U3",
-					"price": 0,
-					"repeat": true,
-					"lookBack": true,
-					"tvAdvisory": [
-						"L"
+					"episodeTitle": "Carter and Tricia",
+					"genres": [
+						"Comedy",
+						"Sitcom",
+						"Animated"
 					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP002298270784",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T08:30:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "Turd Burglars",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 23,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/184338/p184338_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "B"
+					"metadataLanguage": "en",
+					"originalAirDate": "2016-12-04",
+					"parentalRating": "TV14",
+					"releaseYear": 2016,
+					"seasonId": "7f1d42d9-0f8e-468f-a354-ddd552c95c53",
+					"seasonNumber": 15,
+					"seriesEditId": "fd684468-02d1-4a9d-a05a-83e7ba5b84c0",
+					"seriesId": "e79aa78f-f6b0-20fa-6b4c-a167fb50afe7",
+					"stbContentId": "1 1 48441 137",
+					"title": "Family Guy",
+					"tmsConnectorId": "SH002960010000",
+					"tmsId": "EP002960010311",
+					"resourceType": "CONTENT",
+					"resourceId": "36d7fc6f-1f70-3c52-89c9-3cf400f0b064",
+					"editId": "9f6d1653-17ae-480e-ae4d-7501c9c29454",
+					"itemType": "VIDEO_PROGRAM"
 				},
 				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/184338/p184338_b_v5_aa.jpg",
-					"restartAllowed": true,
-					"subcategoryList": [
-						"Series",
-						"Animation",
-						"Comedy"
+					"apgId": "EP002960010312",
+					"canonicalId": "2c37fbe3-6535-9ead-d3b8-ccbfba3ab936",
+					"categories": [
+						"TVShow"
 					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/184338/p184338_b_v5_aa_p.jpg",
-					"rating": "TVMA",
-					"description": null,
-					"title": "South Park",
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"consumableType": "LINEAR",
+							"duration": 1800,
+							"endTime": "2026-04-06T05:00:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TV14",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC"
+							],
+							"resourceId": "65011367-6a08-3e42-94e2-0bc67b4f0cca",
+							"scheduleId": "65011367-6a08-3e42-94e2-0bc67b4f0cca",
+							"startTime": "2026-04-06T04:30:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "Peter gets power hungry when he's asked to fill in for a mall Santa; Stewie and Brian decide to crash holiday office parties for free food, fun and women.",
+					"displayTitle": "Family Guy",
 					"episodeNumber": 9,
-					"duration": 30,
-					"disableFastForward": true,
-					"restartMaterialId": "B007882621U3",
-					"price": 0,
-					"repeat": true,
-					"lookBack": true,
-					"tvAdvisory": [
-						"L"
+					"episodeTitle": "How the Griffin Stole Christmas",
+					"genres": [
+						"Comedy",
+						"Sitcom",
+						"Holiday",
+						"Animated"
 					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP002298270785",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T09:00:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "Basic Cable",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 23,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/184338/p184338_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "B"
+					"metadataLanguage": "en",
+					"originalAirDate": "2016-12-11",
+					"parentalRating": "TV14",
+					"releaseYear": 2016,
+					"seasonId": "7f1d42d9-0f8e-468f-a354-ddd552c95c53",
+					"seasonNumber": 15,
+					"seriesEditId": "fd684468-02d1-4a9d-a05a-83e7ba5b84c0",
+					"seriesId": "e79aa78f-f6b0-20fa-6b4c-a167fb50afe7",
+					"stbContentId": "1 1 48441 138",
+					"title": "Family Guy",
+					"tmsConnectorId": "SH002960010000",
+					"tmsId": "EP002960010312",
+					"resourceType": "CONTENT",
+					"resourceId": "65011367-6a08-3e42-94e2-0bc67b4f0cca",
+					"editId": "ca489484-cfc4-4e48-bccc-3c9e5da60f9c",
+					"itemType": "VIDEO_PROGRAM"
 				},
 				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/184338/p184338_b_v5_aa.jpg",
-					"restartAllowed": true,
-					"subcategoryList": [
-						"Series",
-						"Animation",
-						"Comedy"
+					"apgId": "EP002298270305",
+					"canonicalId": "f75fc527-993f-d52c-4732-163087c1ba2f",
+					"categories": [
+						"TVShow"
 					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/184338/p184338_b_v5_aa_p.jpg",
-					"rating": "TVMA",
-					"description": null,
-					"title": "South Park",
-					"episodeNumber": 8,
-					"duration": 30,
-					"disableFastForward": true,
-					"restartMaterialId": "B007882665U3",
-					"price": 0,
-					"repeat": true,
-					"lookBack": true,
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP002298270467",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T09:30:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "C... Magic",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 18,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/184338/p184338_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "B"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/13662735/p13662735_b_v5_aa.jpg",
-					"restartAllowed": true,
-					"subcategoryList": [
-						"Series",
-						"Product Info",
-						"Shopping"
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"consumableType": "LINEAR",
+							"duration": 1800,
+							"endTime": "2026-04-06T05:30:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TVMA",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "db8a692e-7033-324a-908a-6f8bd938df7a",
+							"scheduleId": "db8a692e-7033-324a-908a-6f8bd938df7a",
+							"startTime": "2026-04-06T05:00:00Z"
+						}
 					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/13662735/p13662735_b_v5_aa_p.jpg",
-					"rating": "TVMA",
-					"description": null,
-					"title": "Sex Toys - 50 Percent OFF!",
-					"episodeNumber": null,
-					"duration": 30,
-					"disableFastForward": true,
-					"restartMaterialId": "B007882701U3",
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "SH025929710000",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T10:00:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": null,
-					"authCode": "NA",
-					"format": "SD",
-					"seasonNumber": null,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/13662735/p13662735_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "B"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/16255884/p16255884_b_v5_aa.jpg",
-					"restartAllowed": true,
-					"subcategoryList": [
-						"Series",
-						"Product Info",
-						"Shopping"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/16255884/p16255884_b_v5_aa_p.jpg",
-					"rating": "NR (Not Rated)",
-					"description": null,
-					"title": "Men's Health: All-Natural Secret for Prostate Health",
-					"episodeNumber": null,
-					"duration": 30,
-					"disableFastForward": true,
-					"restartMaterialId": "B007882739U3",
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "SH030991650000",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T10:30:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": null,
-					"authCode": "NA",
-					"format": "SD",
-					"seasonNumber": null,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/16255884/p16255884_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "B"
-				},
-				{
-					"primaryImageUrl": "/db_photos/default/TV/tv.jpg",
-					"restartAllowed": true,
-					"subcategoryList": [
-						"Series",
-						"Product Info",
-						"Shopping"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/default/TV/tv_p.jpg",
-					"rating": "TVG",
-					"description": null,
-					"title": "Jane Seymour, Kate Walsh share their skin secrets",
-					"episodeNumber": null,
-					"duration": 30,
-					"disableFastForward": true,
-					"restartMaterialId": "B007882812U3",
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "SH043806090000",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T11:00:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": null,
-					"authCode": "NA",
-					"format": "SD",
-					"seasonNumber": null,
-					"listViewPrimaryImageUrl": "/db_photos/default/TV/tv_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "B"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/194833/p194833_b_v5_aa.jpg",
-					"restartAllowed": true,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/194833/p194833_b_v5_aa_p.jpg",
-					"rating": "TVPG",
-					"description": null,
-					"title": "Parks and Recreation",
-					"episodeNumber": 3,
-					"duration": 30,
-					"disableFastForward": true,
-					"restartMaterialId": "B007882858U3",
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"D"
-					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP011281150009",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T11:30:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "Beauty Pageant",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 2,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/194833/p194833_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "B"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/194833/p194833_b_v5_aa.jpg",
-					"restartAllowed": true,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/194833/p194833_b_v5_aa_p.jpg",
-					"rating": "TVPG",
-					"description": null,
-					"title": "Parks and Recreation",
-					"episodeNumber": 4,
-					"duration": 30,
-					"disableFastForward": true,
-					"restartMaterialId": "B007882910U3",
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"D",
-						"L"
-					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP011281150010",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T12:00:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "The Practice Date",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 2,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/194833/p194833_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "B"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/194833/p194833_b_v5_aa.jpg",
-					"restartAllowed": true,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/194833/p194833_b_v5_aa_p.jpg",
-					"rating": "TVPG",
-					"description": null,
-					"title": "Parks and Recreation",
-					"episodeNumber": 5,
-					"duration": 30,
-					"disableFastForward": true,
-					"restartMaterialId": "B007882952U3",
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP011281150011",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T12:30:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "Sister City",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 2,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/194833/p194833_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "B"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH000169160000/EP000169160038/EP000169160038_aa.jpg",
-					"restartAllowed": true,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH000169160000/EP000169160038/EP000169160038_aa_p.jpg",
-					"rating": "TVPG",
-					"description": null,
-					"title": "Seinfeld",
-					"episodeNumber": 12,
-					"duration": 30,
-					"disableFastForward": true,
-					"restartMaterialId": "B007882999U3",
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP000169160038",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T13:00:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "The Red Dot",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 3,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH000169160000/EP000169160038/EP000169160038_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "B"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH000169160000/EP000169160001/EP000169160001_aa.jpg",
-					"restartAllowed": true,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH000169160000/EP000169160001/EP000169160001_aa_p.jpg",
-					"rating": "TVPG",
-					"description": null,
-					"title": "Seinfeld",
-					"episodeNumber": 13,
-					"duration": 30,
-					"disableFastForward": true,
-					"restartMaterialId": "B007883030U3",
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP000169160001",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T13:30:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "The Subway",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 3,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH000169160000/EP000169160001/EP000169160001_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "B"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH000169160000/EP000169160002/EP000169160002_aa.jpg",
-					"restartAllowed": true,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH000169160000/EP000169160002/EP000169160002_aa_p.jpg",
-					"rating": "TVPG",
-					"description": null,
-					"title": "Seinfeld",
-					"episodeNumber": 14,
-					"duration": 30,
-					"disableFastForward": true,
-					"restartMaterialId": "B007883080U3",
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP000169160002",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T14:00:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "The Pez Dispenser",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 3,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH000169160000/EP000169160002/EP000169160002_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "B"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH000169160000/EP000169160006/EP000169160006_aa.jpg",
-					"restartAllowed": true,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH000169160000/EP000169160006/EP000169160006_aa_p.jpg",
-					"rating": "TVPG",
-					"description": null,
-					"title": "Seinfeld",
-					"episodeNumber": 16,
-					"duration": 30,
-					"disableFastForward": true,
-					"restartMaterialId": "B007883111U3",
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP000169160006",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T14:30:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "The Fix-Up",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 3,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH000169160000/EP000169160006/EP000169160006_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "B"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/185008/p185008_b_v5_aa.jpg",
-					"restartAllowed": true,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/185008/p185008_b_v5_aa_p.jpg",
-					"rating": "TV14",
-					"description": null,
-					"title": "The Office",
-					"episodeNumber": 12,
-					"duration": 30,
-					"disableFastForward": true,
-					"restartMaterialId": "B007883166U3",
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"D",
-						"L"
-					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP007261330123",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T15:00:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "Scott's Tots",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 6,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/185008/p185008_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "B"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/185008/p185008_b_v5_aa.jpg",
-					"restartAllowed": true,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/185008/p185008_b_v5_aa_p.jpg",
-					"rating": "TV14",
-					"description": null,
-					"title": "The Office",
-					"episodeNumber": 14,
-					"duration": 30,
-					"disableFastForward": true,
-					"restartMaterialId": "B007883199U3",
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"D",
-						"L"
-					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP007261330125",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T15:30:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "The Banker",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 6,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/185008/p185008_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "B"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH007261330000/EP007261330126/EP007261330126_aa.jpg",
-					"restartAllowed": true,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH007261330000/EP007261330126/EP007261330126_aa_p.jpg",
-					"rating": "TV14",
-					"description": null,
-					"title": "The Office",
-					"episodeNumber": 15,
-					"duration": 30,
-					"disableFastForward": true,
-					"restartMaterialId": "B007883237U3",
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"D",
-						"L"
-					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP007261330126",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T16:00:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "Sabre",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 6,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH007261330000/EP007261330126/EP007261330126_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "B"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH007261330000/EP007261330127/EP007261330127_aa.jpg",
-					"restartAllowed": true,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH007261330000/EP007261330127/EP007261330127_aa_p.jpg",
-					"rating": "TV14",
-					"description": null,
-					"title": "The Office",
-					"episodeNumber": 16,
-					"duration": 30,
-					"disableFastForward": true,
-					"restartMaterialId": "B007883274U3",
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"D",
-						"L"
-					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP007261330127",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T16:30:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "Manager and Salesman",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 6,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH007261330000/EP007261330127/EP007261330127_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "B"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/185008/p185008_b_v5_aa.jpg",
-					"restartAllowed": true,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/185008/p185008_b_v5_aa_p.jpg",
-					"rating": "TV14",
-					"description": null,
-					"title": "The Office",
-					"episodeNumber": 17,
-					"duration": 30,
-					"disableFastForward": true,
-					"restartMaterialId": "B007883325U3",
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"D",
-						"L"
-					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP007261330242",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T17:00:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "The Delivery",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 6,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/185008/p185008_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "B"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/185008/p185008_b_v5_aa.jpg",
-					"restartAllowed": true,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/185008/p185008_b_v5_aa_p.jpg",
-					"rating": "TV14",
-					"description": null,
-					"title": "The Office",
-					"episodeNumber": 18,
-					"duration": 30,
-					"disableFastForward": true,
-					"restartMaterialId": "B007883353U3",
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"D",
-						"L"
-					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP007261330243",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T17:30:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "The Delivery",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 6,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/185008/p185008_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "B"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/185008/p185008_b_v5_aa.jpg",
-					"restartAllowed": true,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/185008/p185008_b_v5_aa_p.jpg",
-					"rating": "TV14",
-					"description": null,
-					"title": "The Office",
-					"episodeNumber": 19,
-					"duration": 30,
-					"disableFastForward": true,
-					"restartMaterialId": "B007883369U3",
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"D",
-						"L"
-					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP007261330129",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T18:00:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "St. Patrick's Day",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 6,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/185008/p185008_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "B"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/185008/p185008_b_v5_aa.jpg",
-					"restartAllowed": true,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/185008/p185008_b_v5_aa_p.jpg",
-					"rating": "TV14",
-					"description": null,
-					"title": "The Office",
-					"episodeNumber": 20,
-					"duration": 30,
-					"disableFastForward": true,
-					"restartMaterialId": "B007883424U3",
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"D",
-						"L"
-					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP007261330130",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T18:30:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "New Leads",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 6,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/185008/p185008_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "B"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH007261330000/EP007261330131/EP007261330131_aa.jpg",
-					"restartAllowed": true,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH007261330000/EP007261330131/EP007261330131_aa_p.jpg",
-					"rating": "TV14",
-					"description": null,
-					"title": "The Office",
-					"episodeNumber": 21,
-					"duration": 30,
-					"disableFastForward": true,
-					"restartMaterialId": "B007883486U3",
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"D",
-						"L"
-					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP007261330131",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T19:00:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "Happy Hour",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 6,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH007261330000/EP007261330131/EP007261330131_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "B"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/185008/p185008_b_v5_aa.jpg",
-					"restartAllowed": true,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/185008/p185008_b_v5_aa_p.jpg",
-					"rating": "TV14",
-					"description": null,
-					"title": "The Office",
-					"episodeNumber": 22,
-					"duration": 30,
-					"disableFastForward": true,
-					"restartMaterialId": "B007883509U3",
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"D",
-						"L"
-					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP007261330134",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T19:30:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "Secretary's Day",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 6,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/185008/p185008_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "B"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH007261330000/EP007261330135/EP007261330135_aa.jpg",
-					"restartAllowed": true,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH007261330000/EP007261330135/EP007261330135_aa_p.jpg",
-					"rating": "TV14",
-					"description": null,
-					"title": "The Office",
-					"episodeNumber": 23,
-					"duration": 30,
-					"disableFastForward": true,
-					"restartMaterialId": "B007883536U3",
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"D",
-						"L"
-					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP007261330135",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T20:00:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "Body Language",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 6,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH007261330000/EP007261330135/EP007261330135_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "B"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/185008/p185008_b_v5_aa.jpg",
-					"restartAllowed": true,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/185008/p185008_b_v5_aa_p.jpg",
-					"rating": "TV14",
-					"description": null,
-					"title": "The Office",
-					"episodeNumber": 24,
-					"duration": 30,
-					"disableFastForward": true,
-					"restartMaterialId": "B007883577U3",
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"D",
-						"L"
-					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP007261330136",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T20:30:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "The Cover-Up",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 6,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/185008/p185008_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "B"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/185008/p185008_b_v5_aa.jpg",
-					"restartAllowed": true,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/185008/p185008_b_v5_aa_p.jpg",
-					"rating": "TV14",
-					"description": null,
-					"title": "The Office",
-					"episodeNumber": 25,
-					"duration": 30,
-					"disableFastForward": true,
-					"restartMaterialId": "B007883619U3",
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"D",
-						"L"
-					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP007261330137",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T21:00:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "The Chump",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 6,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/185008/p185008_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "B"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/185008/p185008_b_v5_aa.jpg",
-					"restartAllowed": true,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/185008/p185008_b_v5_aa_p.jpg",
-					"rating": "TV14",
-					"description": null,
-					"title": "The Office",
-					"episodeNumber": 26,
-					"duration": 30,
-					"disableFastForward": true,
-					"restartMaterialId": "B007883652U3",
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"D",
-						"L"
-					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP007261330138",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T21:30:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "Whistleblower",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 6,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/185008/p185008_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "B"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH007261330000/EP007261330142/EP007261330142_aa.jpg",
-					"restartAllowed": true,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH007261330000/EP007261330142/EP007261330142_aa_p.jpg",
-					"rating": "TV14",
-					"description": null,
-					"title": "The Office",
+					"contentType": "EPISODE",
+					"description": "South Park citizens contend with widespread use of a racial slur.",
+					"displayTitle": "South Park",
 					"episodeNumber": 1,
-					"duration": 30,
-					"disableFastForward": true,
-					"restartMaterialId": "B007883695U3",
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"D",
-						"L"
+					"episodeTitle": "With Apologies to Jesse Jackson",
+					"genres": [
+						"Sitcom",
+						"Animated"
 					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP007261330142",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T22:00:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "Nepotism",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 7,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH007261330000/EP007261330142/EP007261330142_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "B"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH007261330000/EP007261330143/EP007261330143_aa.jpg",
-					"restartAllowed": true,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH007261330000/EP007261330143/EP007261330143_aa_p.jpg",
-					"rating": "TV14",
-					"description": null,
-					"title": "The Office",
-					"episodeNumber": 2,
-					"duration": 30,
-					"disableFastForward": true,
-					"restartMaterialId": "B007883731U3",
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"D",
-						"L"
-					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP007261330143",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T22:30:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "Counseling",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 7,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH007261330000/EP007261330143/EP007261330143_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "B"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/185008/p185008_b_v5_aa.jpg",
-					"restartAllowed": true,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/185008/p185008_b_v5_aa_p.jpg",
-					"rating": "TV14",
-					"description": null,
-					"title": "The Office",
-					"episodeNumber": 3,
-					"duration": 30,
-					"disableFastForward": true,
-					"restartMaterialId": "B007883784U3",
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"D",
-						"L"
-					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP007261330144",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T23:00:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "Andy's Play",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 7,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/185008/p185008_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "B"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH007261330000/EP007261330145/EP007261330145_aa.jpg",
-					"restartAllowed": true,
-					"subcategoryList": [
-						"Series",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH007261330000/EP007261330145/EP007261330145_aa_p.jpg",
-					"rating": "TV14",
-					"description": null,
-					"title": "The Office",
-					"episodeNumber": 4,
-					"duration": 30,
-					"disableFastForward": true,
-					"restartMaterialId": "B007883797U3",
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
-						"D",
-						"L"
-					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP007261330145",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T23:30:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "Sex Ed",
-					"authCode": "NA",
-					"format": "HD",
-					"seasonNumber": 7,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/episodes/SH007261330000/EP007261330145/EP007261330145_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 1,
-					"liveStreaming": "B"
-				}
-			],
-			"chKey": "3035_1668769200000",
-			"chName": "Comedy Central HD",
-			"chDesc": "The only 24-hour, all-comedy network. Spotlights Emmy and CableAce Award-winning shows like Dr. Katz: Professional Therapist, plus sitcoms, stand-up, animation, talk shows and movies.",
-			"liveStreaming": "B",
-			"digitalAdInsertableLive": false
-		},
-		{
-			"secLiveStreaming": "N",
-			"chNum": 249,
-			"authCode": "NA",
-			"chRec": true,
-			"chCall": "COM",
-			"chId": 249,
-			"secondaryChannelId": 0,
-			"chHd": false,
-			"secondary": false,
-			"blackOut": false,
-			"chAdult": false,
-			"chCat": [
-				"Entertainment & Music Channels"
-			],
-			"chLogoId": 272,
-			"detailsLinkUrl": "/Channels/Comedy-Central-249",
-			"schedules": [
-				{
-					"primaryImageUrl": "/db_photos/movies/AllPhotosAPGI/29160/29160_aa.jpg",
-					"restartAllowed": false,
-					"subcategoryList": [
-						"Comedy",
-						"Movies Anywhere",
-						"Action/Adventure",
-						"Science Fiction"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/movies/AllPhotosAPGI/29160/29160_aa_p.jpg",
-					"rating": "TV14",
-					"description": null,
-					"title": "Men in Black II",
-					"episodeNumber": null,
-					"duration": 120,
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "MV001173520000",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-14T23:00:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": null,
-					"authCode": "NA",
-					"format": "SD",
-					"seasonNumber": null,
-					"listViewPrimaryImageUrl": "/db_photos/movies/AllPhotosAPGI/29160/29160_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "Movies",
-					"hd": 0,
-					"liveStreaming": "N"
-				},
-				{
-					"primaryImageUrl": "/db_photos/showcards/v5/AllPhotos/184338/p184338_b_v5_aa.jpg",
-					"restartAllowed": false,
-					"subcategoryList": [
-						"Series",
-						"Animation",
-						"Comedy"
-					],
-					"gridViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/184338/p184338_b_v5_aa_p.jpg",
-					"rating": "TVMA",
-					"description": null,
+					"metadataLanguage": "en",
+					"originalAirDate": "2007-03-07",
+					"parentalRating": "TVMA",
+					"releaseYear": 2007,
+					"seasonId": "69efb6e8-17ee-4a05-a87f-33e5bf671eb7",
+					"seasonNumber": 11,
+					"seriesEditId": "bf0ea01c-3e9f-458c-ac80-2ab99798c7ec",
+					"seriesId": "daa235fb-5ddc-f267-6016-1b84897680ce",
+					"stbContentId": "1 1 381C3 131",
 					"title": "South Park",
+					"tmsConnectorId": "SH002298270000",
+					"tmsId": "EP002298270305",
+					"resourceType": "CONTENT",
+					"resourceId": "db8a692e-7033-324a-908a-6f8bd938df7a",
+					"editId": "739bebd6-7df3-425c-acbf-8dc2e3efee91",
+					"itemType": "VIDEO_PROGRAM"
+				},
+				{
+					"apgId": "EP002298270308",
+					"canonicalId": "8ece3941-1c89-b379-b1e8-2acfe3f86a17",
+					"categories": [
+						"TVShow"
+					],
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"consumableType": "LINEAR",
+							"duration": 1800,
+							"endTime": "2026-04-06T06:00:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TV14",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "a1abddcf-cce8-365d-bd56-4588b7715c9b",
+							"scheduleId": "a1abddcf-cce8-365d-bd56-4588b7715c9b",
+							"startTime": "2026-04-06T05:30:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "Hillary Clinton comes to South Park for a campaign rally; Cartman follows a lead on a possible terrorist attack.",
+					"displayTitle": "South Park",
 					"episodeNumber": 4,
-					"duration": 30,
-					"price": 0,
-					"repeat": true,
-					"lookBack": false,
-					"tvAdvisory": [
+					"episodeTitle": "The Snuke",
+					"genres": [
+						"Sitcom",
+						"Animated"
+					],
+					"metadataLanguage": "en",
+					"originalAirDate": "2007-03-28",
+					"parentalRating": "TV14",
+					"releaseYear": 2007,
+					"seasonId": "69efb6e8-17ee-4a05-a87f-33e5bf671eb7",
+					"seasonNumber": 11,
+					"seriesEditId": "bf0ea01c-3e9f-458c-ac80-2ab99798c7ec",
+					"seriesId": "daa235fb-5ddc-f267-6016-1b84897680ce",
+					"stbContentId": "1 1 381C3 134",
+					"title": "South Park",
+					"tmsConnectorId": "SH002298270000",
+					"tmsId": "EP002298270308",
+					"resourceType": "CONTENT",
+					"resourceId": "a1abddcf-cce8-365d-bd56-4588b7715c9b",
+					"editId": "9e6bdcd9-26a3-4f1f-aaf9-9c9d9eebac2e",
+					"itemType": "VIDEO_PROGRAM"
+				},
+				{
+					"apgId": "EP002298270309",
+					"canonicalId": "eaba4aa9-6e23-5769-177c-607e713a6383",
+					"categories": [
+						"TVShow"
+					],
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"consumableType": "LINEAR",
+							"duration": 1800,
+							"endTime": "2026-04-06T06:30:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TVMA",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "ca99de1f-7303-3041-984d-e305eff1ecae",
+							"scheduleId": "ca99de1f-7303-3041-984d-e305eff1ecae",
+							"startTime": "2026-04-06T06:00:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "Stan searches for the real story behind eggs and bunnies in the Easter ritual.",
+					"displayTitle": "South Park",
+					"episodeNumber": 5,
+					"episodeTitle": "Fantastic Easter Special",
+					"genres": [
+						"Sitcom",
+						"Holiday",
+						"Animated"
+					],
+					"metadataLanguage": "en",
+					"originalAirDate": "2007-04-04",
+					"parentalRating": "TVMA",
+					"releaseYear": 2007,
+					"seasonId": "69efb6e8-17ee-4a05-a87f-33e5bf671eb7",
+					"seasonNumber": 11,
+					"seriesEditId": "bf0ea01c-3e9f-458c-ac80-2ab99798c7ec",
+					"seriesId": "daa235fb-5ddc-f267-6016-1b84897680ce",
+					"stbContentId": "1 1 381C3 135",
+					"title": "South Park",
+					"tmsConnectorId": "SH002298270000",
+					"tmsId": "EP002298270309",
+					"resourceType": "CONTENT",
+					"resourceId": "ca99de1f-7303-3041-984d-e305eff1ecae",
+					"editId": "a62d5d1f-38a3-41b8-8f1a-17c8159ea8a3",
+					"itemType": "VIDEO_PROGRAM"
+				},
+				{
+					"apgId": "EP002298270442",
+					"canonicalId": "12e579ef-5f24-6c76-75d6-fd004f2030c4",
+					"categories": [
+						"TVShow"
+					],
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"consumableType": "LINEAR",
+							"duration": 1800,
+							"endTime": "2026-04-06T07:00:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TV14",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "76e94f25-73d1-39e6-b71b-0652a6a9a4a1",
+							"scheduleId": "76e94f25-73d1-39e6-b71b-0652a6a9a4a1",
+							"startTime": "2026-04-06T06:30:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "When Ms. Garrison is the victim of another failed relationship, she takes it out on the fourth-graders.",
+					"displayTitle": "South Park",
+					"episodeNumber": 6,
+					"episodeTitle": "D-Yikes!",
+					"genres": [
+						"Sitcom",
+						"Animated"
+					],
+					"metadataLanguage": "en",
+					"originalAirDate": "2007-04-11",
+					"parentalRating": "TV14",
+					"releaseYear": 2007,
+					"seasonId": "69efb6e8-17ee-4a05-a87f-33e5bf671eb7",
+					"seasonNumber": 11,
+					"seriesEditId": "bf0ea01c-3e9f-458c-ac80-2ab99798c7ec",
+					"seriesId": "daa235fb-5ddc-f267-6016-1b84897680ce",
+					"stbContentId": "1 1 381C3 1BA",
+					"title": "South Park",
+					"tmsConnectorId": "SH002298270000",
+					"tmsId": "EP002298270442",
+					"resourceType": "CONTENT",
+					"resourceId": "76e94f25-73d1-39e6-b71b-0652a6a9a4a1",
+					"editId": "39061e8c-e88d-4dd2-ba26-253379ceb78d",
+					"itemType": "VIDEO_PROGRAM"
+				},
+				{
+					"apgId": "EP002298270311",
+					"canonicalId": "619c4f4e-7ed9-1926-53fa-f01132c4a2eb",
+					"categories": [
+						"TVShow"
+					],
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"consumableType": "LINEAR",
+							"duration": 1800,
+							"endTime": "2026-04-06T07:30:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TV14",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "0e0a32a2-5b63-3f20-8265-34e1e7226f98",
+							"scheduleId": "0e0a32a2-5b63-3f20-8265-34e1e7226f98",
+							"startTime": "2026-04-06T07:00:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "The boys attempt to find a solution to the increasing number of homeless people in South Park.",
+					"displayTitle": "South Park",
+					"episodeNumber": 7,
+					"episodeTitle": "Night of the Living Homeless",
+					"genres": [
+						"Sitcom",
+						"Animated"
+					],
+					"metadataLanguage": "en",
+					"originalAirDate": "2007-04-18",
+					"parentalRating": "TV14",
+					"releaseYear": 2007,
+					"seasonId": "69efb6e8-17ee-4a05-a87f-33e5bf671eb7",
+					"seasonNumber": 11,
+					"seriesEditId": "bf0ea01c-3e9f-458c-ac80-2ab99798c7ec",
+					"seriesId": "daa235fb-5ddc-f267-6016-1b84897680ce",
+					"stbContentId": "1 1 381C3 137",
+					"title": "South Park",
+					"tmsConnectorId": "SH002298270000",
+					"tmsId": "EP002298270311",
+					"resourceType": "CONTENT",
+					"resourceId": "0e0a32a2-5b63-3f20-8265-34e1e7226f98",
+					"editId": "76a97798-517b-4cc3-82f6-431b04ed0bc2",
+					"itemType": "VIDEO_PROGRAM"
+				},
+				{
+					"apgId": "EP002298270313",
+					"canonicalId": "ae4aa43f-5e15-a525-f51a-4e1a8201655f",
+					"categories": [
+						"TVShow"
+					],
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"consumableType": "LINEAR",
+							"duration": 1800,
+							"endTime": "2026-04-06T08:00:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TVMA",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "332f3ca8-e60f-3698-b01c-f7972faeda91",
+							"scheduleId": "332f3ca8-e60f-3698-b01c-f7972faeda91",
+							"startTime": "2026-04-06T07:30:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "Cartman discovers the joys of having Tourette's syndrome; drunk with the power of saying whatever he wants without getting in trouble for it, he lines up National TV Coverage to take advantage of his new life with no filters.",
+					"displayTitle": "South Park",
+					"episodeNumber": 8,
+					"episodeTitle": "Le Petit Tourette",
+					"genres": [
+						"Sitcom",
+						"Animated"
+					],
+					"metadataLanguage": "en",
+					"originalAirDate": "2007-10-03",
+					"parentalRating": "TVMA",
+					"releaseYear": 2007,
+					"seasonId": "69efb6e8-17ee-4a05-a87f-33e5bf671eb7",
+					"seasonNumber": 11,
+					"seriesEditId": "bf0ea01c-3e9f-458c-ac80-2ab99798c7ec",
+					"seriesId": "daa235fb-5ddc-f267-6016-1b84897680ce",
+					"stbContentId": "1 1 381C3 139",
+					"title": "South Park",
+					"tmsConnectorId": "SH002298270000",
+					"tmsId": "EP002298270313",
+					"resourceType": "CONTENT",
+					"resourceId": "332f3ca8-e60f-3698-b01c-f7972faeda91",
+					"editId": "ee106ae9-87c4-4343-b76a-c60f33808032",
+					"itemType": "VIDEO_PROGRAM"
+				},
+				{
+					"apgId": "EP002298270314",
+					"canonicalId": "4b81dd62-9575-53fa-2945-66c2fbdc6d3b",
+					"categories": [
+						"TVShow"
+					],
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"consumableType": "LINEAR",
+							"duration": 1800,
+							"endTime": "2026-04-06T08:30:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TV14",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "dd1ab194-ea31-3827-b94f-f6b70d0c55ee",
+							"scheduleId": "dd1ab194-ea31-3827-b94f-f6b70d0c55ee",
+							"startTime": "2026-04-06T08:00:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "Randy becomes a local hero when he thinks that he may have broken a world record.",
+					"displayTitle": "South Park",
+					"episodeNumber": 9,
+					"episodeTitle": "More Crap",
+					"genres": [
+						"Sitcom",
+						"Animated"
+					],
+					"metadataLanguage": "en",
+					"originalAirDate": "2007-10-10",
+					"parentalRating": "TV14",
+					"releaseYear": 2007,
+					"seasonId": "69efb6e8-17ee-4a05-a87f-33e5bf671eb7",
+					"seasonNumber": 11,
+					"seriesEditId": "bf0ea01c-3e9f-458c-ac80-2ab99798c7ec",
+					"seriesId": "daa235fb-5ddc-f267-6016-1b84897680ce",
+					"stbContentId": "1 1 381C3 13A",
+					"title": "South Park",
+					"tmsConnectorId": "SH002298270000",
+					"tmsId": "EP002298270314",
+					"resourceType": "CONTENT",
+					"resourceId": "dd1ab194-ea31-3827-b94f-f6b70d0c55ee",
+					"editId": "bce6075c-8685-487a-8219-9de9ba12d288",
+					"itemType": "VIDEO_PROGRAM"
+				},
+				{
+					"apgId": "EP002298270318",
+					"canonicalId": "5d34cb14-422b-27cd-427c-7f46dc610306",
+					"categories": [
+						"TVShow"
+					],
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"consumableType": "LINEAR",
+							"duration": 1800,
+							"endTime": "2026-04-06T09:00:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TV14",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "09c8ec39-e426-38c4-83f4-0446bc7f116d",
+							"scheduleId": "09c8ec39-e426-38c4-83f4-0446bc7f116d",
+							"startTime": "2026-04-06T08:30:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "Stan's superior skills on \"Guitar Hero\" damage his friendship with Kyle.",
+					"displayTitle": "South Park",
+					"episodeNumber": 13,
+					"episodeTitle": "Guitar Queer-O",
+					"genres": [
+						"Sitcom",
+						"Animated"
+					],
+					"metadataLanguage": "en",
+					"originalAirDate": "2007-11-07",
+					"parentalRating": "TV14",
+					"releaseYear": 2007,
+					"seasonId": "69efb6e8-17ee-4a05-a87f-33e5bf671eb7",
+					"seasonNumber": 11,
+					"seriesEditId": "bf0ea01c-3e9f-458c-ac80-2ab99798c7ec",
+					"seriesId": "daa235fb-5ddc-f267-6016-1b84897680ce",
+					"stbContentId": "1 1 381C3 13E",
+					"title": "South Park",
+					"tmsConnectorId": "SH002298270000",
+					"tmsId": "EP002298270318",
+					"resourceType": "CONTENT",
+					"resourceId": "09c8ec39-e426-38c4-83f4-0446bc7f116d",
+					"editId": "aedaecdc-65ef-4010-a527-39b03bd7ca1c",
+					"itemType": "VIDEO_PROGRAM"
+				},
+				{
+					"apgId": "EP002298270319",
+					"canonicalId": "b6afaaae-d303-8c88-f4e8-a6ad2c02dd36",
+					"categories": [
+						"TVShow"
+					],
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"consumableType": "LINEAR",
+							"duration": 1800,
+							"endTime": "2026-04-06T09:30:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TV14",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "57d4a1ba-f935-3658-8911-e4200d02cfef",
+							"scheduleId": "57d4a1ba-f935-3658-8911-e4200d02cfef",
+							"startTime": "2026-04-06T09:00:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "A secret list created by the girls in the fourth grade, rates every boy's looks from cutest to ugliest.",
+					"displayTitle": "South Park",
+					"episodeNumber": 14,
+					"episodeTitle": "The List",
+					"genres": [
+						"Sitcom",
+						"Animated"
+					],
+					"metadataLanguage": "en",
+					"originalAirDate": "2007-11-14",
+					"parentalRating": "TV14",
+					"releaseYear": 2007,
+					"seasonId": "69efb6e8-17ee-4a05-a87f-33e5bf671eb7",
+					"seasonNumber": 11,
+					"seriesEditId": "bf0ea01c-3e9f-458c-ac80-2ab99798c7ec",
+					"seriesId": "daa235fb-5ddc-f267-6016-1b84897680ce",
+					"stbContentId": "1 1 381C3 13F",
+					"title": "South Park",
+					"tmsConnectorId": "SH002298270000",
+					"tmsId": "EP002298270319",
+					"resourceType": "CONTENT",
+					"resourceId": "57d4a1ba-f935-3658-8911-e4200d02cfef",
+					"editId": "cbd113ac-91e7-456e-899a-160d9dfd048d",
+					"itemType": "VIDEO_PROGRAM"
+				},
+				{
+					"apgId": "EP002298270331",
+					"canonicalId": "a524e22a-4855-64c4-3b52-f3299810bdf8",
+					"categories": [
+						"TVShow"
+					],
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"consumableType": "LINEAR",
+							"duration": 1800,
+							"endTime": "2026-04-06T10:00:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TV14",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "5959e97c-0f39-310a-a72a-2b2e18eb3934",
+							"scheduleId": "5959e97c-0f39-310a-a72a-2b2e18eb3934",
+							"startTime": "2026-04-06T09:30:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "Cartman comes face to face with his own mortality when his routine tonsillectomy goes horribly wrong.",
+					"displayTitle": "South Park",
+					"episodeNumber": 1,
+					"episodeTitle": "Tonsil Trouble",
+					"genres": [
+						"Sitcom",
+						"Animated"
+					],
+					"metadataLanguage": "en",
+					"originalAirDate": "2008-03-12",
+					"parentalRating": "TV14",
+					"releaseYear": 2008,
+					"seasonId": "83f1699b-6e35-45a7-a50f-c02fd4afabbe",
+					"seasonNumber": 12,
+					"seriesEditId": "bf0ea01c-3e9f-458c-ac80-2ab99798c7ec",
+					"seriesId": "daa235fb-5ddc-f267-6016-1b84897680ce",
+					"stbContentId": "1 1 381C3 14B",
+					"title": "South Park",
+					"tmsConnectorId": "SH002298270000",
+					"tmsId": "EP002298270331",
+					"resourceType": "CONTENT",
+					"resourceId": "5959e97c-0f39-310a-a72a-2b2e18eb3934",
+					"editId": "c80486a5-1de7-4f49-ac59-3e9ad072a6a4",
+					"itemType": "VIDEO_PROGRAM"
+				},
+				{
+					"apgId": "EP010591100066",
+					"canonicalId": "ba545ed6-ec0b-4b33-405f-eff9eb957a6c",
+					"categories": [
+						"TVShow"
+					],
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"consumableType": "LINEAR",
+							"duration": 1800,
+							"endTime": "2026-04-06T10:30:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TV14",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "744a6214-6a41-305f-8105-41598ac3098d",
+							"scheduleId": "744a6214-6a41-305f-8105-41598ac3098d",
+							"startTime": "2026-04-06T10:00:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "Cleveland volunteers to take Roberta on a college visit to his alma mater as an excuse to relive his college days; Rallo helps Cleveland Jr. learn to sleep without a stuffed animal.",
+					"displayTitle": "The Cleveland Show",
+					"episodeNumber": 18,
+					"episodeTitle": "B.M.O.C.",
+					"genres": [
+						"Sitcom",
+						"Animated"
+					],
+					"metadataLanguage": "en",
+					"originalAirDate": "2012-04-29",
+					"parentalRating": "TV14",
+					"releaseYear": 2012,
+					"seasonId": "6753a5b1-9f29-456a-800f-2ab45bcd3360",
+					"seasonNumber": 3,
+					"seriesEditId": "0179dc85-d2a9-4d22-af98-b88db99cb47a",
+					"seriesId": "1fa48e75-65cb-b625-77d0-fcdd09e245bb",
+					"stbContentId": "1 1 102926 42",
+					"title": "The Cleveland Show",
+					"tmsConnectorId": "SH010591100000",
+					"tmsId": "EP010591100066",
+					"resourceType": "CONTENT",
+					"resourceId": "744a6214-6a41-305f-8105-41598ac3098d",
+					"editId": "5351fe68-f43a-404c-a87a-7528a0de9ba3",
+					"itemType": "VIDEO_PROGRAM"
+				},
+				{
+					"apgId": "EP010591100067",
+					"canonicalId": "88d1a4fe-5bf0-eea7-cb04-eee2d88f3c17",
+					"categories": [
+						"TVShow"
+					],
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"consumableType": "LINEAR",
+							"duration": 1800,
+							"endTime": "2026-04-06T11:00:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TV14",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "bf99a4cc-42c4-3656-9a5a-42b9df1bbe4b",
+							"scheduleId": "bf99a4cc-42c4-3656-9a5a-42b9df1bbe4b",
+							"startTime": "2026-04-06T10:30:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "Cleveland Jr. goes on a church trip to impress the girl he likes; Donna's ex-boyfriend returns from Iraq to find her married.",
+					"displayTitle": "The Cleveland Show",
+					"episodeNumber": 19,
+					"episodeTitle": "Jesus Walks",
+					"genres": [
+						"Sitcom",
+						"Animated"
+					],
+					"metadataLanguage": "en",
+					"originalAirDate": "2012-04-29",
+					"parentalRating": "TV14",
+					"releaseYear": 2012,
+					"seasonId": "6753a5b1-9f29-456a-800f-2ab45bcd3360",
+					"seasonNumber": 3,
+					"seriesEditId": "0179dc85-d2a9-4d22-af98-b88db99cb47a",
+					"seriesId": "1fa48e75-65cb-b625-77d0-fcdd09e245bb",
+					"stbContentId": "1 1 102926 43",
+					"title": "The Cleveland Show",
+					"tmsConnectorId": "SH010591100000",
+					"tmsId": "EP010591100067",
+					"resourceType": "CONTENT",
+					"resourceId": "bf99a4cc-42c4-3656-9a5a-42b9df1bbe4b",
+					"editId": "3f1a2f0c-8ebb-45f0-a629-6560125a0706",
+					"itemType": "VIDEO_PROGRAM"
+				},
+				{
+					"apgId": "EP010591100068",
+					"canonicalId": "a9eba177-502d-5cd4-1c3e-4aa4894f4146",
+					"categories": [
+						"TVShow"
+					],
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"consumableType": "LINEAR",
+							"duration": 1800,
+							"endTime": "2026-04-06T11:30:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TV14",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "af5bf021-39bf-3a42-ab07-048eab522fad",
+							"scheduleId": "af5bf021-39bf-3a42-ab07-048eab522fad",
+							"startTime": "2026-04-06T11:00:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "Cleveland Jr. loses respect for his father when Cleveland falls off the toilet and gets a concussion; Rallo is finally tall enough to ride his favorite roller coaster.",
+					"displayTitle": "The Cleveland Show",
+					"episodeNumber": 20,
+					"episodeTitle": "Flush of Genius",
+					"genres": [
+						"Sitcom",
+						"Animated"
+					],
+					"metadataLanguage": "en",
+					"originalAirDate": "2012-05-06",
+					"parentalRating": "TV14",
+					"releaseYear": 2012,
+					"seasonId": "6753a5b1-9f29-456a-800f-2ab45bcd3360",
+					"seasonNumber": 3,
+					"seriesEditId": "0179dc85-d2a9-4d22-af98-b88db99cb47a",
+					"seriesId": "1fa48e75-65cb-b625-77d0-fcdd09e245bb",
+					"stbContentId": "1 1 102926 44",
+					"title": "The Cleveland Show",
+					"tmsConnectorId": "SH010591100000",
+					"tmsId": "EP010591100068",
+					"resourceType": "CONTENT",
+					"resourceId": "af5bf021-39bf-3a42-ab07-048eab522fad",
+					"editId": "27ab7a56-ae3e-4759-8d0d-00c131be4a59",
+					"itemType": "VIDEO_PROGRAM"
+				},
+				{
+					"apgId": "EP010591100069",
+					"canonicalId": "ce5af602-3fc1-ae87-7b51-e3d12313698e",
+					"categories": [
+						"TVShow"
+					],
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"consumableType": "LINEAR",
+							"duration": 1800,
+							"endTime": "2026-04-06T12:00:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TV14",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "4e3974cf-abf0-3329-8e28-2427298076be",
+							"scheduleId": "4e3974cf-abf0-3329-8e28-2427298076be",
+							"startTime": "2026-04-06T11:30:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "When an unexpected event leads Donna's estranged mother to find Cleveland, he arranges to reunite the two women.",
+					"displayTitle": "The Cleveland Show",
+					"episodeNumber": 21,
+					"episodeTitle": "Mama Drama",
+					"genres": [
+						"Sitcom",
+						"Animated"
+					],
+					"metadataLanguage": "en",
+					"originalAirDate": "2012-05-13",
+					"parentalRating": "TV14",
+					"releaseYear": 2012,
+					"seasonId": "6753a5b1-9f29-456a-800f-2ab45bcd3360",
+					"seasonNumber": 3,
+					"seriesEditId": "0179dc85-d2a9-4d22-af98-b88db99cb47a",
+					"seriesId": "1fa48e75-65cb-b625-77d0-fcdd09e245bb",
+					"stbContentId": "1 1 102926 45",
+					"title": "The Cleveland Show",
+					"tmsConnectorId": "SH010591100000",
+					"tmsId": "EP010591100069",
+					"resourceType": "CONTENT",
+					"resourceId": "4e3974cf-abf0-3329-8e28-2427298076be",
+					"editId": "1aec0101-9245-4332-9f78-7575403db707",
+					"itemType": "VIDEO_PROGRAM"
+				},
+				{
+					"apgId": "EP002298270332",
+					"canonicalId": "a013b67f-ce33-349e-212f-104560bdcc63",
+					"categories": [
+						"TVShow"
+					],
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"consumableType": "LINEAR",
+							"duration": 1800,
+							"endTime": "2026-04-06T12:30:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TVMA",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "166eef89-1ba8-3ebd-b17b-eac85dccde02",
+							"scheduleId": "166eef89-1ba8-3ebd-b17b-eac85dccde02",
+							"startTime": "2026-04-06T12:00:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "When the boys help Britney Spears get to the North Pole, they discover the shocking secret behind her popularity.",
+					"displayTitle": "South Park",
+					"episodeNumber": 2,
+					"episodeTitle": "Britney's New Look",
+					"genres": [
+						"Sitcom",
+						"Animated"
+					],
+					"metadataLanguage": "en",
+					"originalAirDate": "2008-03-19",
+					"parentalRating": "TVMA",
+					"releaseYear": 2008,
+					"seasonId": "83f1699b-6e35-45a7-a50f-c02fd4afabbe",
+					"seasonNumber": 12,
+					"seriesEditId": "bf0ea01c-3e9f-458c-ac80-2ab99798c7ec",
+					"seriesId": "daa235fb-5ddc-f267-6016-1b84897680ce",
+					"stbContentId": "1 1 381C3 14C",
+					"title": "South Park",
+					"tmsConnectorId": "SH002298270000",
+					"tmsId": "EP002298270332",
+					"resourceType": "CONTENT",
+					"resourceId": "166eef89-1ba8-3ebd-b17b-eac85dccde02",
+					"editId": "ba4cf7f5-ad02-4c28-8be8-79190f3e6c63",
+					"itemType": "VIDEO_PROGRAM"
+				},
+				{
+					"apgId": "EP002298270333",
+					"canonicalId": "7651a8e6-8d0e-a6d3-4c33-18388bcba670",
+					"categories": [
+						"TVShow"
+					],
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"consumableType": "LINEAR",
+							"duration": 1800,
+							"endTime": "2026-04-06T13:00:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TVMA",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "5905e2b3-dc74-3300-a930-eb7608a1ffce",
+							"scheduleId": "5905e2b3-dc74-3300-a930-eb7608a1ffce",
+							"startTime": "2026-04-06T12:30:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "In a South Park homage to the 1981 film, Heavy Metal, the boys are trying to get Kenny off the latest drug craze that's captured the junior high and under set.",
+					"displayTitle": "South Park",
+					"episodeNumber": 3,
+					"episodeTitle": "Major Boobage",
+					"genres": [
+						"Sitcom",
+						"Animated"
+					],
+					"metadataLanguage": "en",
+					"originalAirDate": "2008-03-26",
+					"parentalRating": "TVMA",
+					"releaseYear": 2008,
+					"seasonId": "83f1699b-6e35-45a7-a50f-c02fd4afabbe",
+					"seasonNumber": 12,
+					"seriesEditId": "bf0ea01c-3e9f-458c-ac80-2ab99798c7ec",
+					"seriesId": "daa235fb-5ddc-f267-6016-1b84897680ce",
+					"stbContentId": "1 1 381C3 14D",
+					"title": "South Park",
+					"tmsConnectorId": "SH002298270000",
+					"tmsId": "EP002298270333",
+					"resourceType": "CONTENT",
+					"resourceId": "5905e2b3-dc74-3300-a930-eb7608a1ffce",
+					"editId": "be1e9e68-9817-4292-b3aa-daf9b903bc31",
+					"itemType": "VIDEO_PROGRAM"
+				},
+				{
+					"apgId": "EP002298270334",
+					"canonicalId": "c441fbd0-65cd-16ec-128f-e0a6e2eeb7a0",
+					"categories": [
+						"TVShow"
+					],
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"consumableType": "LINEAR",
+							"duration": 2100,
+							"endTime": "2026-04-06T13:35:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TVMA",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "b3575918-4302-372b-a0c0-0fdd501d5c94",
+							"scheduleId": "b3575918-4302-372b-a0c0-0fdd501d5c94",
+							"startTime": "2026-04-06T13:00:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "The head of the World Canadian Bureau leads the country into a strike and the responsibility of brokering a settlement rests with the boys.",
+					"displayTitle": "South Park",
+					"episodeNumber": 4,
+					"episodeTitle": "Canada on Strike!",
+					"genres": [
+						"Sitcom",
+						"Animated"
+					],
+					"metadataLanguage": "en",
+					"originalAirDate": "2008-04-02",
+					"parentalRating": "TVMA",
+					"releaseYear": 2008,
+					"seasonId": "83f1699b-6e35-45a7-a50f-c02fd4afabbe",
+					"seasonNumber": 12,
+					"seriesEditId": "bf0ea01c-3e9f-458c-ac80-2ab99798c7ec",
+					"seriesId": "daa235fb-5ddc-f267-6016-1b84897680ce",
+					"stbContentId": "1 1 381C3 14E",
+					"title": "South Park",
+					"tmsConnectorId": "SH002298270000",
+					"tmsId": "EP002298270334",
+					"resourceType": "CONTENT",
+					"resourceId": "b3575918-4302-372b-a0c0-0fdd501d5c94",
+					"editId": "bcf57fd5-61e2-40ab-a02b-85ae04bed519",
+					"itemType": "VIDEO_PROGRAM"
+				},
+				{
+					"apgId": "EP002298270335",
+					"canonicalId": "a7d11091-8bb7-9616-194d-3e8db3433975",
+					"categories": [
+						"TVShow"
+					],
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"consumableType": "LINEAR",
+							"duration": 2100,
+							"endTime": "2026-04-06T14:10:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TV14",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "6c380fcf-8b95-3b4d-84c6-02781822112d",
+							"scheduleId": "6c380fcf-8b95-3b4d-84c6-02781822112d",
+							"startTime": "2026-04-06T13:35:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "While Ms. Garrison is off trying to find a way to become the man he was always intended to be, Cartman is put in charge of the classroom.",
+					"displayTitle": "South Park",
+					"episodeNumber": 5,
+					"episodeTitle": "Eek, a Penis!",
+					"genres": [
+						"Sitcom",
+						"Animated"
+					],
+					"metadataLanguage": "en",
+					"originalAirDate": "2008-04-09",
+					"parentalRating": "TV14",
+					"releaseYear": 2008,
+					"seasonId": "83f1699b-6e35-45a7-a50f-c02fd4afabbe",
+					"seasonNumber": 12,
+					"seriesEditId": "bf0ea01c-3e9f-458c-ac80-2ab99798c7ec",
+					"seriesId": "daa235fb-5ddc-f267-6016-1b84897680ce",
+					"stbContentId": "1 1 381C3 14F",
+					"title": "South Park",
+					"tmsConnectorId": "SH002298270000",
+					"tmsId": "EP002298270335",
+					"resourceType": "CONTENT",
+					"resourceId": "6c380fcf-8b95-3b4d-84c6-02781822112d",
+					"editId": "c1d5977e-dc4c-4039-82dd-740ee1a4e5a8",
+					"itemType": "VIDEO_PROGRAM"
+				},
+				{
+					"apgId": "EP002298270336",
+					"canonicalId": "dba0be33-c499-db0b-fa4f-3cb18c0beb4d",
+					"categories": [
+						"TVShow"
+					],
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"consumableType": "LINEAR",
+							"duration": 2100,
+							"endTime": "2026-04-06T14:45:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TV14",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "e692efb0-ab25-319b-bcd5-9d15801bc5c8",
+							"scheduleId": "e692efb0-ab25-319b-bcd5-9d15801bc5c8",
+							"startTime": "2026-04-06T14:10:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "Randy packs up his family and heads west when he wakes up to find the Internet is gone.",
+					"displayTitle": "South Park",
+					"episodeNumber": 6,
+					"episodeTitle": "Over Logging",
+					"genres": [
+						"Sitcom",
+						"Animated"
+					],
+					"metadataLanguage": "en",
+					"originalAirDate": "2008-04-16",
+					"parentalRating": "TV14",
+					"releaseYear": 2008,
+					"seasonId": "83f1699b-6e35-45a7-a50f-c02fd4afabbe",
+					"seasonNumber": 12,
+					"seriesEditId": "bf0ea01c-3e9f-458c-ac80-2ab99798c7ec",
+					"seriesId": "daa235fb-5ddc-f267-6016-1b84897680ce",
+					"stbContentId": "1 1 381C3 150",
+					"title": "South Park",
+					"tmsConnectorId": "SH002298270000",
+					"tmsId": "EP002298270336",
+					"resourceType": "CONTENT",
+					"resourceId": "e692efb0-ab25-319b-bcd5-9d15801bc5c8",
+					"editId": "b61eff7d-0f52-4f60-9e5f-6f67c35997f5",
+					"itemType": "VIDEO_PROGRAM"
+				},
+				{
+					"apgId": "EP002298270337",
+					"canonicalId": "f6add436-828e-c88d-c165-48a20f0afc24",
+					"categories": [
+						"TVShow"
+					],
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"consumableType": "LINEAR",
+							"duration": 1800,
+							"endTime": "2026-04-06T15:15:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TV14",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "bc7e16b7-be94-3e27-a8f2-ec2a7f85b646",
+							"scheduleId": "bc7e16b7-be94-3e27-a8f2-ec2a7f85b646",
+							"startTime": "2026-04-06T14:45:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "While the kids are on a field trip to a living museum, Cartman makes Butters sneak away from the class to go to the amusement center next door.",
+					"displayTitle": "South Park",
+					"episodeNumber": 7,
+					"episodeTitle": "Super Fun Time",
+					"genres": [
+						"Sitcom",
+						"Animated"
+					],
+					"metadataLanguage": "en",
+					"originalAirDate": "2008-04-23",
+					"parentalRating": "TV14",
+					"releaseYear": 2008,
+					"seasonId": "83f1699b-6e35-45a7-a50f-c02fd4afabbe",
+					"seasonNumber": 12,
+					"seriesEditId": "bf0ea01c-3e9f-458c-ac80-2ab99798c7ec",
+					"seriesId": "daa235fb-5ddc-f267-6016-1b84897680ce",
+					"stbContentId": "1 1 381C3 151",
+					"title": "South Park",
+					"tmsConnectorId": "SH002298270000",
+					"tmsId": "EP002298270337",
+					"resourceType": "CONTENT",
+					"resourceId": "bc7e16b7-be94-3e27-a8f2-ec2a7f85b646",
+					"editId": "b08d9ff0-7bfd-40a7-afa8-243f514a3677",
+					"itemType": "VIDEO_PROGRAM"
+				},
+				{
+					"apgId": "EP002298270340",
+					"canonicalId": "ff578271-3944-c625-5d5e-ba1a2de53916",
+					"categories": [
+						"TVShow"
+					],
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"consumableType": "LINEAR",
+							"duration": 2100,
+							"endTime": "2026-04-06T15:50:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TV14",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "2a96124f-e0ef-3c73-b4aa-1a6f89578bf0",
+							"scheduleId": "2a96124f-e0ef-3c73-b4aa-1a6f89578bf0",
+							"startTime": "2026-04-06T15:15:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "Butters stands with Cartman as he confronts the Chinese after a tragic event.",
+					"displayTitle": "South Park",
+					"episodeNumber": 8,
+					"episodeTitle": "The China Probrem",
+					"genres": [
+						"Sitcom",
+						"Animated"
+					],
+					"metadataLanguage": "en",
+					"originalAirDate": "2008-10-08",
+					"parentalRating": "TV14",
+					"releaseYear": 2008,
+					"seasonId": "83f1699b-6e35-45a7-a50f-c02fd4afabbe",
+					"seasonNumber": 12,
+					"seriesEditId": "bf0ea01c-3e9f-458c-ac80-2ab99798c7ec",
+					"seriesId": "daa235fb-5ddc-f267-6016-1b84897680ce",
+					"stbContentId": "1 1 381C3 154",
+					"title": "South Park",
+					"tmsConnectorId": "SH002298270000",
+					"tmsId": "EP002298270340",
+					"resourceType": "CONTENT",
+					"resourceId": "2a96124f-e0ef-3c73-b4aa-1a6f89578bf0",
+					"editId": "4e419c66-0058-41fc-84fa-fd8b43532f6b",
+					"itemType": "VIDEO_PROGRAM"
+				},
+				{
+					"apgId": "EP002298270341",
+					"canonicalId": "d44ba864-fbfd-deac-b5eb-51604bfde847",
+					"categories": [
+						"TVShow"
+					],
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"consumableType": "LINEAR",
+							"duration": 2100,
+							"endTime": "2026-04-06T16:25:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TVMA",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "a2658147-adfd-3bcd-820d-36fc4acdc6b9",
+							"scheduleId": "a2658147-adfd-3bcd-820d-36fc4acdc6b9",
+							"startTime": "2026-04-06T15:50:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "Wendy gets in trouble when she threatens to beat up Cartman after school.",
+					"displayTitle": "South Park",
+					"episodeNumber": 9,
+					"episodeTitle": "Breast Cancer Show Ever",
+					"genres": [
+						"Sitcom",
+						"Animated"
+					],
+					"metadataLanguage": "en",
+					"originalAirDate": "2008-10-15",
+					"parentalRating": "TVMA",
+					"releaseYear": 2008,
+					"seasonId": "83f1699b-6e35-45a7-a50f-c02fd4afabbe",
+					"seasonNumber": 12,
+					"seriesEditId": "bf0ea01c-3e9f-458c-ac80-2ab99798c7ec",
+					"seriesId": "daa235fb-5ddc-f267-6016-1b84897680ce",
+					"stbContentId": "1 1 381C3 155",
+					"title": "South Park",
+					"tmsConnectorId": "SH002298270000",
+					"tmsId": "EP002298270341",
+					"resourceType": "CONTENT",
+					"resourceId": "a2658147-adfd-3bcd-820d-36fc4acdc6b9",
+					"editId": "f43a75d4-edcd-4dbf-b121-6e277bedec70",
+					"itemType": "VIDEO_PROGRAM"
+				},
+				{
+					"apgId": "EP002298270344",
+					"canonicalId": "224bc66a-bf44-6776-7d01-dc16bfb73384",
+					"categories": [
+						"TVShow"
+					],
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"consumableType": "LINEAR",
+							"duration": 2100,
+							"endTime": "2026-04-06T17:00:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TVMA",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "653abb31-2110-352c-a073-8c288a3aeeb2",
+							"scheduleId": "653abb31-2110-352c-a073-8c288a3aeeb2",
+							"startTime": "2026-04-06T16:25:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "While the country celebrates the outcome of the election, the new President-elect arrives at the White House prematurely.",
+					"displayTitle": "South Park",
+					"episodeNumber": 12,
+					"episodeTitle": "About Last Night...",
+					"genres": [
+						"Sitcom",
+						"Animated"
+					],
+					"metadataLanguage": "en",
+					"originalAirDate": "2008-11-05",
+					"parentalRating": "TVMA",
+					"releaseYear": 2008,
+					"seasonId": "83f1699b-6e35-45a7-a50f-c02fd4afabbe",
+					"seasonNumber": 12,
+					"seriesEditId": "bf0ea01c-3e9f-458c-ac80-2ab99798c7ec",
+					"seriesId": "daa235fb-5ddc-f267-6016-1b84897680ce",
+					"stbContentId": "1 1 381C3 158",
+					"title": "South Park",
+					"tmsConnectorId": "SH002298270000",
+					"tmsId": "EP002298270344",
+					"tvAdvisories": [
 						"D",
 						"L"
 					],
-					"dimension": "2D",
-					"ltd": "",
-					"programID": "EP002298270445",
-					"blackoutCode": "NA",
-					"airTime": "2023-01-15T06:00:00.000+0000",
-					"secLiveStreaming": "N",
-					"prOrd": 0,
-					"episodeTitle": "Goth Kids 3: Dawn of the Posers",
-					"authCode": "NA",
-					"format": "SD",
-					"seasonNumber": 17,
-					"listViewPrimaryImageUrl": "/db_photos/showcards/v5/AllPhotosAPGT/184338/p184338_b_v5_aa_l.jpg",
-					"eventCode": "",
-					"mainCategory": "TV",
-					"hd": 0,
-					"liveStreaming": "N"
+					"resourceType": "CONTENT",
+					"resourceId": "653abb31-2110-352c-a073-8c288a3aeeb2",
+					"editId": "495d289a-f80f-454c-a070-61f7b8589503",
+					"itemType": "VIDEO_PROGRAM"
+				},
+				{
+					"apgId": "EP002298270345",
+					"canonicalId": "9a7dce54-49bc-3bba-9b03-22118dc7f4ce",
+					"categories": [
+						"TVShow"
+					],
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"consumableType": "LINEAR",
+							"duration": 1800,
+							"endTime": "2026-04-06T17:30:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TV14",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "92ba1a5c-583a-3a10-99f0-01466e5cb7ea",
+							"scheduleId": "92ba1a5c-583a-3a10-99f0-01466e5cb7ea",
+							"startTime": "2026-04-06T17:00:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "The boys must embrace the latest fad to hit South Park Elementary or risk their status as the coolest kids in school.",
+					"displayTitle": "South Park",
+					"episodeNumber": 13,
+					"episodeTitle": "Elementary School Musical",
+					"genres": [
+						"Sitcom",
+						"Animated"
+					],
+					"metadataLanguage": "en",
+					"originalAirDate": "2008-11-12",
+					"parentalRating": "TV14",
+					"releaseYear": 2008,
+					"seasonId": "83f1699b-6e35-45a7-a50f-c02fd4afabbe",
+					"seasonNumber": 12,
+					"seriesEditId": "bf0ea01c-3e9f-458c-ac80-2ab99798c7ec",
+					"seriesId": "daa235fb-5ddc-f267-6016-1b84897680ce",
+					"stbContentId": "1 1 381C3 159",
+					"title": "South Park",
+					"tmsConnectorId": "SH002298270000",
+					"tmsId": "EP002298270345",
+					"tvAdvisories": [
+						"D",
+						"L"
+					],
+					"resourceType": "CONTENT",
+					"resourceId": "92ba1a5c-583a-3a10-99f0-01466e5cb7ea",
+					"editId": "8186158a-894c-45a8-beec-d993780e2da8",
+					"itemType": "VIDEO_PROGRAM"
+				},
+				{
+					"apgId": "EP002298270346",
+					"canonicalId": "6abb8eb7-263a-b734-e7c4-a05adddfc4c5",
+					"categories": [
+						"TVShow"
+					],
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"consumableType": "LINEAR",
+							"duration": 1800,
+							"endTime": "2026-04-06T18:00:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TV14",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "27b1368e-5de5-36a8-b3e4-7cea765f0b59",
+							"scheduleId": "27b1368e-5de5-36a8-b3e4-7cea765f0b59",
+							"startTime": "2026-04-06T17:30:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "The Goth Kids are angry when the other children can't tell the difference between a goth and a vampire.",
+					"displayTitle": "South Park",
+					"episodeNumber": 14,
+					"episodeTitle": "The Ungroundable",
+					"genres": [
+						"Sitcom",
+						"Animated"
+					],
+					"metadataLanguage": "en",
+					"originalAirDate": "2008-11-19",
+					"parentalRating": "TV14",
+					"releaseYear": 2008,
+					"seasonId": "83f1699b-6e35-45a7-a50f-c02fd4afabbe",
+					"seasonNumber": 12,
+					"seriesEditId": "bf0ea01c-3e9f-458c-ac80-2ab99798c7ec",
+					"seriesId": "daa235fb-5ddc-f267-6016-1b84897680ce",
+					"stbContentId": "1 1 381C3 15A",
+					"title": "South Park",
+					"tmsConnectorId": "SH002298270000",
+					"tmsId": "EP002298270346",
+					"tvAdvisories": [
+						"L",
+						"D"
+					],
+					"resourceType": "CONTENT",
+					"resourceId": "27b1368e-5de5-36a8-b3e4-7cea765f0b59",
+					"editId": "93f318ee-8334-47b7-8a18-247af2a078cd",
+					"itemType": "VIDEO_PROGRAM"
+				},
+				{
+					"apgId": "EP000169160178",
+					"canonicalId": "9086d8fc-1048-eaef-3a64-3a861831c57c",
+					"categories": [
+						"TVShow"
+					],
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"consumableType": "LINEAR",
+							"duration": 1800,
+							"endTime": "2026-04-06T18:30:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TVPG",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "ecc310aa-471b-3190-943d-1bc6cc6b3772",
+							"scheduleId": "ecc310aa-471b-3190-943d-1bc6cc6b3772",
+							"startTime": "2026-04-06T18:00:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "George's plans for a summer getaway are foiled; Elaine's well-meaning criticism of a co-worker is not well-received.",
+					"displayTitle": "Seinfeld",
+					"episodeNumber": 22,
+					"episodeTitle": "The Summer of George",
+					"genres": [
+						"Sitcom"
+					],
+					"metadataLanguage": "en",
+					"originalAirDate": "1997-05-15",
+					"parentalRating": "TVPG",
+					"releaseYear": 1997,
+					"seasonId": "5a75c460-5cbb-4ea3-acba-5911532801b3",
+					"seasonNumber": 8,
+					"seriesEditId": "42df0f3e-b723-4618-bb7a-170890de7e4f",
+					"seriesId": "f95949d9-807e-8584-e299-ad8c19f23b6f",
+					"stbContentId": "1 1 4214 B2",
+					"title": "Seinfeld",
+					"tmsConnectorId": "SH000169160000",
+					"tmsId": "EP000169160178",
+					"resourceType": "CONTENT",
+					"resourceId": "ecc310aa-471b-3190-943d-1bc6cc6b3772",
+					"editId": "0508c9ca-8088-4640-8a02-707bb1710c9e",
+					"itemType": "VIDEO_PROGRAM"
+				},
+				{
+					"apgId": "EP000169160180",
+					"canonicalId": "ca7a2846-ca64-5da9-1d21-a44080f6ff5b",
+					"categories": [
+						"TVShow"
+					],
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"consumableType": "LINEAR",
+							"duration": 1800,
+							"endTime": "2026-04-06T19:00:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TVPG",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "2571bb90-019f-32bc-b3f0-f3b2f893650f",
+							"scheduleId": "2571bb90-019f-32bc-b3f0-f3b2f893650f",
+							"startTime": "2026-04-06T18:30:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "Competing comic Bania warms to Jerry's crowds; Elaine and David unite for a European trip; Kramer reconsiders butter.",
+					"displayTitle": "Seinfeld",
+					"episodeNumber": 1,
+					"episodeTitle": "The Butter Shave",
+					"genres": [
+						"Sitcom"
+					],
+					"metadataLanguage": "en",
+					"originalAirDate": "1997-09-25",
+					"parentalRating": "TVPG",
+					"releaseYear": 1997,
+					"seasonId": "6020c194-97b3-4ba3-8636-0b1f7700797d",
+					"seasonNumber": 9,
+					"seriesEditId": "42df0f3e-b723-4618-bb7a-170890de7e4f",
+					"seriesId": "f95949d9-807e-8584-e299-ad8c19f23b6f",
+					"stbContentId": "1 1 4214 B4",
+					"title": "Seinfeld",
+					"tmsConnectorId": "SH000169160000",
+					"tmsId": "EP000169160180",
+					"resourceType": "CONTENT",
+					"resourceId": "2571bb90-019f-32bc-b3f0-f3b2f893650f",
+					"editId": "f871f0d2-9a80-40e9-ac27-b703b8f7fa34",
+					"itemType": "VIDEO_PROGRAM"
+				},
+				{
+					"apgId": "EP000169160181",
+					"canonicalId": "20c58bda-283a-83a4-d5cd-65b1604da15b",
+					"categories": [
+						"TVShow"
+					],
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"consumableType": "LINEAR",
+							"duration": 1800,
+							"endTime": "2026-04-06T19:30:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TVPG",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "d4fc0134-a38a-3484-85f1-556057e60bbd",
+							"scheduleId": "d4fc0134-a38a-3484-85f1-556057e60bbd",
+							"startTime": "2026-04-06T19:00:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "Jerry finds part of his new date's anatomy of interest; George's job is threatened; Elaine's relationship sputters.",
+					"displayTitle": "Seinfeld",
+					"episodeNumber": 2,
+					"episodeTitle": "The Voice",
+					"genres": [
+						"Sitcom"
+					],
+					"metadataLanguage": "en",
+					"originalAirDate": "1997-10-02",
+					"parentalRating": "TVPG",
+					"releaseYear": 1997,
+					"seasonId": "6020c194-97b3-4ba3-8636-0b1f7700797d",
+					"seasonNumber": 9,
+					"seriesEditId": "42df0f3e-b723-4618-bb7a-170890de7e4f",
+					"seriesId": "f95949d9-807e-8584-e299-ad8c19f23b6f",
+					"stbContentId": "1 1 4214 B5",
+					"title": "Seinfeld",
+					"tmsConnectorId": "SH000169160000",
+					"tmsId": "EP000169160181",
+					"resourceType": "CONTENT",
+					"resourceId": "d4fc0134-a38a-3484-85f1-556057e60bbd",
+					"editId": "7f3a29cc-f08f-484b-8ba0-c57327d933e7",
+					"itemType": "VIDEO_PROGRAM"
+				},
+				{
+					"apgId": "EP000169160182",
+					"canonicalId": "47eb6bce-b7ca-a3a5-d180-df9ec2999572",
+					"categories": [
+						"TVShow"
+					],
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"consumableType": "LINEAR",
+							"duration": 1800,
+							"endTime": "2026-04-06T20:00:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TVPG",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "65983181-91ba-372d-90d1-bcbb157ac34b",
+							"scheduleId": "65983181-91ba-372d-90d1-bcbb157ac34b",
+							"startTime": "2026-04-06T19:30:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "Jerry tries to reveal more of his feelings on the advice of his new girlfriend (Lori Loughlin). With Jason Alexander.",
+					"displayTitle": "Seinfeld",
+					"episodeNumber": 3,
+					"episodeTitle": "The Serenity Now",
+					"genres": [
+						"Sitcom"
+					],
+					"metadataLanguage": "en",
+					"originalAirDate": "1997-10-09",
+					"parentalRating": "TVPG",
+					"releaseYear": 1997,
+					"seasonId": "6020c194-97b3-4ba3-8636-0b1f7700797d",
+					"seasonNumber": 9,
+					"seriesEditId": "42df0f3e-b723-4618-bb7a-170890de7e4f",
+					"seriesId": "f95949d9-807e-8584-e299-ad8c19f23b6f",
+					"stbContentId": "1 1 4214 B6",
+					"title": "Seinfeld",
+					"tmsConnectorId": "SH000169160000",
+					"tmsId": "EP000169160182",
+					"resourceType": "CONTENT",
+					"resourceId": "65983181-91ba-372d-90d1-bcbb157ac34b",
+					"editId": "27e4f5e7-e8dc-494c-98f6-ba1bc83db816",
+					"itemType": "VIDEO_PROGRAM"
+				},
+				{
+					"apgId": "EP000169160183",
+					"canonicalId": "3d76869a-42ef-4d84-59d8-deb1afb4ce69",
+					"categories": [
+						"TVShow"
+					],
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"badges": [
+								"OnNow"
+							],
+							"consumableType": "LINEAR",
+							"duration": 1800,
+							"endTime": "2026-04-06T20:30:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TVPG",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "5a881f69-2e7a-3ff4-9698-23e4f0306af7",
+							"scheduleId": "5a881f69-2e7a-3ff4-9698-23e4f0306af7",
+							"startTime": "2026-04-06T20:00:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "At his parents' insistence, Jerry is coached by personal trainer Izzy Mandelbaum (Lloyd Bridges) to lose weight.",
+					"displayTitle": "Seinfeld",
+					"episodeNumber": 4,
+					"episodeTitle": "The Blood",
+					"genres": [
+						"Sitcom"
+					],
+					"metadataLanguage": "en",
+					"originalAirDate": "1997-10-16",
+					"parentalRating": "TVPG",
+					"releaseYear": 1997,
+					"seasonId": "6020c194-97b3-4ba3-8636-0b1f7700797d",
+					"seasonNumber": 9,
+					"seriesEditId": "42df0f3e-b723-4618-bb7a-170890de7e4f",
+					"seriesId": "f95949d9-807e-8584-e299-ad8c19f23b6f",
+					"stbContentId": "1 1 4214 B7",
+					"title": "Seinfeld",
+					"tmsConnectorId": "SH000169160000",
+					"tmsId": "EP000169160183",
+					"resourceType": "CONTENT",
+					"resourceId": "5a881f69-2e7a-3ff4-9698-23e4f0306af7",
+					"editId": "eb701267-4bd4-4794-93ac-94bfc103d237",
+					"itemType": "VIDEO_PROGRAM"
+				},
+				{
+					"apgId": "EP000169160184",
+					"canonicalId": "c97d635a-7370-8b56-7908-f5049a0c5f86",
+					"categories": [
+						"TVShow"
+					],
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"badges": [
+								"AiringOn"
+							],
+							"consumableType": "LINEAR",
+							"duration": 1800,
+							"endTime": "2026-04-06T21:00:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TVPG",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "c38d520b-f414-3d65-aa15-787e7f909565",
+							"scheduleId": "c38d520b-f414-3d65-aa15-787e7f909565",
+							"startTime": "2026-04-06T20:30:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "Jerry, promised a vehicle as payment for a performance, winds up getting a van instead of a car; Elaine meets a new man; Kramer has no need for mail.",
+					"displayTitle": "Seinfeld",
+					"episodeNumber": 5,
+					"episodeTitle": "The Junk Mail",
+					"genres": [
+						"Sitcom"
+					],
+					"metadataLanguage": "en",
+					"originalAirDate": "1997-10-30",
+					"parentalRating": "TVPG",
+					"releaseYear": 1997,
+					"seasonId": "6020c194-97b3-4ba3-8636-0b1f7700797d",
+					"seasonNumber": 9,
+					"seriesEditId": "42df0f3e-b723-4618-bb7a-170890de7e4f",
+					"seriesId": "f95949d9-807e-8584-e299-ad8c19f23b6f",
+					"stbContentId": "1 1 4214 B8",
+					"title": "Seinfeld",
+					"tmsConnectorId": "SH000169160000",
+					"tmsId": "EP000169160184",
+					"resourceType": "CONTENT",
+					"resourceId": "c38d520b-f414-3d65-aa15-787e7f909565",
+					"editId": "2cbd7da2-3b27-4c60-a9c3-f5bb331fa55f",
+					"itemType": "VIDEO_PROGRAM"
+				},
+				{
+					"apgId": "EP007261330025",
+					"canonicalId": "64ad4956-d5b9-d833-13bb-1f4d0d0e6f6a",
+					"categories": [
+						"TVShow"
+					],
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"badges": [
+								"AiringOn"
+							],
+							"consumableType": "LINEAR",
+							"duration": 1800,
+							"endTime": "2026-04-06T21:30:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TV14",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "be6f5511-6f50-318e-b1c4-92d2082c3d1b",
+							"scheduleId": "be6f5511-6f50-318e-b1c4-92d2082c3d1b",
+							"startTime": "2026-04-06T21:00:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "Michael takes the Dunder Mifflin employees ice skating to celebrate his birthday; Kevin waits nervously for test results.",
+					"displayTitle": "The Office",
+					"episodeNumber": 19,
+					"episodeTitle": "Michael's Birthday",
+					"genres": [
+						"Sitcom"
+					],
+					"metadataLanguage": "en",
+					"originalAirDate": "2006-03-30",
+					"parentalRating": "TV14",
+					"releaseYear": 2006,
+					"seasonId": "d2866d40-460c-4a91-9fd7-97e58414692e",
+					"seasonNumber": 2,
+					"seriesEditId": "f18e497e-0521-4854-9f7f-f06ea7678696",
+					"seriesId": "7777272c-b235-c317-c2b5-34eec10be5f9",
+					"stbContentId": "1 1 B1475 19",
+					"title": "The Office",
+					"tmsConnectorId": "SH007261330000",
+					"tmsId": "EP007261330025",
+					"tvAdvisories": [
+						"D",
+						"L"
+					],
+					"resourceType": "CONTENT",
+					"resourceId": "be6f5511-6f50-318e-b1c4-92d2082c3d1b",
+					"editId": "0601e6c9-2987-44c0-9668-267880d6d2db",
+					"itemType": "VIDEO_PROGRAM"
+				},
+				{
+					"apgId": "EP007261330026",
+					"canonicalId": "b455fe85-60df-c74d-afe4-561680ee4e4b",
+					"categories": [
+						"TVShow"
+					],
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"badges": [
+								"AiringOn"
+							],
+							"consumableType": "LINEAR",
+							"duration": 1800,
+							"endTime": "2026-04-06T22:00:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TV14",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "2858d7cf-1f71-3a81-97d2-d6b58e46655e",
+							"scheduleId": "2858d7cf-1f71-3a81-97d2-d6b58e46655e",
+							"startTime": "2026-04-06T21:30:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "Dwight finds half a joint in the parking lot and launches a full investigation; Michael asks an unusual favor.",
+					"displayTitle": "The Office",
+					"episodeNumber": 20,
+					"episodeTitle": "Drug Testing",
+					"genres": [
+						"Comedy",
+						"Sitcom"
+					],
+					"metadataLanguage": "en",
+					"originalAirDate": "2006-04-27",
+					"parentalRating": "TV14",
+					"releaseYear": 2006,
+					"seasonId": "d2866d40-460c-4a91-9fd7-97e58414692e",
+					"seasonNumber": 2,
+					"seriesEditId": "f18e497e-0521-4854-9f7f-f06ea7678696",
+					"seriesId": "7777272c-b235-c317-c2b5-34eec10be5f9",
+					"stbContentId": "1 1 B1475 1A",
+					"title": "The Office",
+					"tmsConnectorId": "SH007261330000",
+					"tmsId": "EP007261330026",
+					"tvAdvisories": [
+						"D",
+						"L"
+					],
+					"resourceType": "CONTENT",
+					"resourceId": "2858d7cf-1f71-3a81-97d2-d6b58e46655e",
+					"editId": "1edad4e2-7e46-47d9-8d9c-120ea02fce4f",
+					"itemType": "VIDEO_PROGRAM"
+				},
+				{
+					"apgId": "EP007261330027",
+					"canonicalId": "31b61ce4-f7cc-4728-7261-d4ee2ba9a684",
+					"categories": [
+						"TVShow"
+					],
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"badges": [
+								"AiringOn"
+							],
+							"consumableType": "LINEAR",
+							"duration": 1800,
+							"endTime": "2026-04-06T22:30:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TV14",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "5021f00b-f422-3f4e-8b32-e784308aa354",
+							"scheduleId": "5021f00b-f422-3f4e-8b32-e784308aa354",
+							"startTime": "2026-04-06T22:00:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "Chaos ensues when Michael takes responsibility for conflict resolution from the Human Relations department.",
+					"displayTitle": "The Office",
+					"episodeNumber": 21,
+					"episodeTitle": "Conflict Resolution",
+					"genres": [
+						"Comedy",
+						"Sitcom"
+					],
+					"metadataLanguage": "en",
+					"originalAirDate": "2006-05-04",
+					"parentalRating": "TV14",
+					"releaseYear": 2006,
+					"seasonId": "d2866d40-460c-4a91-9fd7-97e58414692e",
+					"seasonNumber": 2,
+					"seriesEditId": "f18e497e-0521-4854-9f7f-f06ea7678696",
+					"seriesId": "7777272c-b235-c317-c2b5-34eec10be5f9",
+					"stbContentId": "1 1 B1475 1B",
+					"title": "The Office",
+					"tmsConnectorId": "SH007261330000",
+					"tmsId": "EP007261330027",
+					"tvAdvisories": [
+						"D",
+						"L"
+					],
+					"resourceType": "CONTENT",
+					"resourceId": "5021f00b-f422-3f4e-8b32-e784308aa354",
+					"editId": "ff96f579-5f52-4f66-8671-4cb370c5c239",
+					"itemType": "VIDEO_PROGRAM"
+				},
+				{
+					"apgId": "EP007261330028",
+					"canonicalId": "19930fc0-2d74-d74b-f100-ece9d354a7c6",
+					"categories": [
+						"TVShow"
+					],
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"badges": [
+								"AiringOn"
+							],
+							"consumableType": "LINEAR",
+							"duration": 1800,
+							"endTime": "2026-04-06T23:00:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TV14",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "d7a1de1a-058b-39b7-8c7c-72ce4c885e6c",
+							"scheduleId": "d7a1de1a-058b-39b7-8c7c-72ce4c885e6c",
+							"startTime": "2026-04-06T22:30:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "Employees take some big gambles when they host a charity casino-night in their warehouse.",
+					"displayTitle": "The Office",
+					"episodeNumber": 22,
+					"episodeTitle": "Casino Night",
+					"genres": [
+						"Comedy",
+						"Sitcom"
+					],
+					"metadataLanguage": "en",
+					"originalAirDate": "2006-05-11",
+					"parentalRating": "TV14",
+					"releaseYear": 2006,
+					"seasonId": "d2866d40-460c-4a91-9fd7-97e58414692e",
+					"seasonNumber": 2,
+					"seriesEditId": "f18e497e-0521-4854-9f7f-f06ea7678696",
+					"seriesId": "7777272c-b235-c317-c2b5-34eec10be5f9",
+					"stbContentId": "1 1 B1475 1C",
+					"title": "The Office",
+					"tmsConnectorId": "SH007261330000",
+					"tmsId": "EP007261330028",
+					"tvAdvisories": [
+						"D",
+						"L"
+					],
+					"resourceType": "CONTENT",
+					"resourceId": "d7a1de1a-058b-39b7-8c7c-72ce4c885e6c",
+					"editId": "575416ca-102c-4580-be04-fc89612eb658",
+					"itemType": "VIDEO_PROGRAM"
+				},
+				{
+					"apgId": "EP007261330030",
+					"canonicalId": "be6fdd4f-3bed-150d-2cf9-4d250840798c",
+					"categories": [
+						"TVShow"
+					],
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"badges": [
+								"AiringOn"
+							],
+							"consumableType": "LINEAR",
+							"duration": 2100,
+							"endTime": "2026-04-06T23:35:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TV14",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "3e5add4b-ce49-3ebd-9198-a2cae149b3d6",
+							"scheduleId": "3e5add4b-ce49-3ebd-9198-a2cae149b3d6",
+							"startTime": "2026-04-06T23:00:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "Michael unintentionally outs a gay employee; the situation with Jim and Pam.",
+					"displayTitle": "The Office",
+					"episodeNumber": 1,
+					"episodeTitle": "Gay Witch Hunt",
+					"genres": [
+						"Comedy",
+						"Sitcom"
+					],
+					"metadataLanguage": "en",
+					"originalAirDate": "2006-09-21",
+					"parentalRating": "TV14",
+					"releaseYear": 2006,
+					"seasonId": "f02f89ca-ad62-412e-a454-0529d1c5c4e2",
+					"seasonNumber": 3,
+					"seriesEditId": "f18e497e-0521-4854-9f7f-f06ea7678696",
+					"seriesId": "7777272c-b235-c317-c2b5-34eec10be5f9",
+					"stbContentId": "1 1 B1475 1E",
+					"title": "The Office",
+					"tmsConnectorId": "SH007261330000",
+					"tmsId": "EP007261330030",
+					"tvAdvisories": [
+						"L",
+						"S",
+						"D"
+					],
+					"resourceType": "CONTENT",
+					"resourceId": "3e5add4b-ce49-3ebd-9198-a2cae149b3d6",
+					"editId": "b72d0da1-7b19-4c77-8f5d-5ae25b9ac02b",
+					"itemType": "VIDEO_PROGRAM"
+				},
+				{
+					"apgId": "EP007261330031",
+					"canonicalId": "c2d06f78-fef5-314e-9d21-8384332af0e4",
+					"categories": [
+						"TVShow"
+					],
+					"consumables": [
+						{
+							"augmentation": {
+								"constraints": {
+									"isPlayable": false,
+									"isRecordable": false,
+									"isRestart": true,
+									"isLookback": false,
+									"isDAI": false,
+									"isFastForwardDisabled": true,
+									"isExtendable": false,
+									"isCDVRUpsell": false
+								}
+							},
+							"badges": [
+								"AiringOn"
+							],
+							"consumableType": "LINEAR",
+							"duration": 2100,
+							"endTime": "2026-04-07T00:10:00Z",
+							"format": "HD",
+							"metadataLanguage": "en",
+							"parentalRating": "TV14",
+							"programChannelId": "5070bc2e-dd69-4dee-98b4-a4c5e3b1fd7b",
+							"qualifiers": [
+								"CC",
+								"1080p",
+								"HDTV"
+							],
+							"resourceId": "00dfec0b-2e5f-3cbb-96a6-820b68b35537",
+							"scheduleId": "00dfec0b-2e5f-3cbb-96a6-820b68b35537",
+							"startTime": "2026-04-06T23:35:00Z"
+						}
+					],
+					"contentType": "EPISODE",
+					"description": "Michael organizes a party in his hotel room when he, Dwight and Jan attend the Northeastern Mid-Market Office Supply Convention in Philadelphia.",
+					"displayTitle": "The Office",
+					"episodeNumber": 2,
+					"episodeTitle": "The Convention",
+					"genres": [
+						"Comedy",
+						"Sitcom"
+					],
+					"metadataLanguage": "en",
+					"originalAirDate": "2006-09-28",
+					"parentalRating": "TV14",
+					"releaseYear": 2006,
+					"seasonId": "f02f89ca-ad62-412e-a454-0529d1c5c4e2",
+					"seasonNumber": 3,
+					"seriesEditId": "f18e497e-0521-4854-9f7f-f06ea7678696",
+					"seriesId": "7777272c-b235-c317-c2b5-34eec10be5f9",
+					"stbContentId": "1 1 B1475 1F",
+					"title": "The Office",
+					"tmsConnectorId": "SH007261330000",
+					"tmsId": "EP007261330031",
+					"tvAdvisories": [
+						"D",
+						"L"
+					],
+					"resourceType": "CONTENT",
+					"resourceId": "00dfec0b-2e5f-3cbb-96a6-820b68b35537",
+					"editId": "e9a95e8f-8be1-4e09-94db-b05970a25485",
+					"itemType": "VIDEO_PROGRAM"
 				}
-			],
-			"chKey": "249_1586426400000",
-			"chName": "Comedy Central",
-			"chDesc": "Comedy Central - The only 24-hour, all-comedy network. Spotlights Emmy and CableAce Award-winning shows like Dr. Katz: Professional Therapist, plus sitcoms, stand-up, animation, talk shows and movies.",
-			"liveStreaming": "N",
-			"digitalAdInsertableLive": false
+			]
 		}
-	],
-	"reporting": {
-		"channelschedules": {
-			"success": false,
-			"reportingData": "reporting for app/json/channelschedules/channelschedules not implemented yet"
-		}
-	},
-	"messagekeys": null,
-	"contingencies": []
+	]
 }

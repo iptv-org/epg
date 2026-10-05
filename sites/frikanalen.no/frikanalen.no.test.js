@@ -1,4 +1,6 @@
 const { parser, url } = require('./frikanalen.no.config.js')
+const fs = require('fs')
+const path = require('path')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -18,8 +20,7 @@ it('can generate valid url', () => {
 })
 
 it('can parse response', () => {
-  const content =
-    '{"count":83,"next":null,"previous":null,"results":[{"id":135605,"video":{"id":626094,"name":"FSCONS 2017 - Keynote: TBA - Linda Sandvik","header":"Linda Sandvik\'s keynote at FSCONS 2017\\r\\n\\r\\nRecorded by NUUG for FSCONS.","description":null,"creator":"davidwnoble@gmail.com","organization":{"id":82,"name":"NUUG","homepage":"https://www.nuug.no/","description":"Forening NUUG er for alle som er interessert i fri programvare, åpne standarder og Unix-lignende operativsystemer.","postalAddress":"","streetAddress":"","editorId":2148,"editorName":"David Noble","editorEmail":"davidwnoble@gmail.com","editorMsisdn":"","fkmember":true},"duration":"00:57:55.640000","categories":["Samfunn"]},"schedulereason":5,"starttime":"2022-01-19T00:47:00+01:00","endtime":"2022-01-19T01:44:55.640000+01:00","duration":"00:57:55.640000"}]}'
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'))
   const result = parser({ content }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
@@ -41,7 +42,7 @@ it('can handle empty guide', () => {
   const result = parser({
     date,
     channel,
-    content: '{"count":0,"next":null,"previous":null,"results":[]}'
+    content: fs.readFileSync(path.resolve(__dirname, '__data__/no_content.json'))
   })
   expect(result).toMatchObject([])
 })

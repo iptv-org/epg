@@ -2,10 +2,14 @@
 
 https://www.sky.com/tv-guide
 
+All Sky countries are covered: Germany, Austria and Switzerland (`DE`), the United Kingdom and Ireland (`GB`), and Italy (`IT`).
+
+Channel IDs use the format `<territory>#<sid>` (`GB#...`, `IT#...` or `DE#...`).
+
 ### Download the guide
 
 ```sh
-npm run grab --- --site=sky.com
+npm run grab --- --sites=sky.com
 ```
 
 ### Update channel list

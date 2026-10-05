@@ -5,7 +5,7 @@ https://zap.co.ao/tv/guia-tv
 ### Download the guide
 
 ```sh
-npm run grab --- --site=zap.co.ao
+npm run grab --- --sites=zap.co.ao
 ```
 
 ### Update channel list

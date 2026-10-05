@@ -5,7 +5,7 @@ https://www.tvireland.ie/tv/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=tvireland.ie
+npm run grab --- --sites=tvireland.ie
 ```
 
 ### Update channel list

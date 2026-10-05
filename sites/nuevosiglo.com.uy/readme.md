@@ -5,7 +5,7 @@ https://nuevosiglo.com.uy/ _[Geo-blocked]_
 ### Download the guide
 
 ```sh
-npm run grab --- --site=nuevosiglo.com.uy
+npm run grab --- --sites=nuevosiglo.com.uy
 ```
 
 ### Update channel list

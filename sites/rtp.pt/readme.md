@@ -5,7 +5,7 @@ https://www.rtp.pt/tv/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=rtp.pt
+npm run grab --- --sites=rtp.pt
 ```
 
 ### Test

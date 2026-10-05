@@ -5,7 +5,7 @@ https://www.taiwanplus.com/taiwanplustv/schedule
 ### Download the guide
 
 ```sh
-npm run grab --- --site=taiwanplus.com
+npm run grab --- --sites=taiwanplus.com
 ```
 
 ### Test

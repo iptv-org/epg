@@ -19,7 +19,7 @@ module.exports = {
   url({ date, channel }) {
     const [region] = channel.site_id.split('#')
 
-    return `https://epg.abctv.net.au/processed/${region}_${date.format('YYYY-MM-DD')}.json`
+    return `https://cdn.iview.abc.net.au/epg/processed/${region}_${date.format('YYYY-MM-DD')}.json`
   },
   parser({ content, channel }) {
     let programs = []
@@ -41,42 +41,43 @@ module.exports = {
 
     return programs
   },
-  async channels() {
+  async channels({ region = 'syd' }) {
     const now = dayjs()
-    const regions = [
-      'Sydney',
-      'Melbourne',
-      'Brisbane',
-      'GoldCoast',
-      'Perth',
-      'Adelaide',
-      'Hobart',
-      'Darwin',
-      'Canberra',
-      'New South Wales',
-      'Victoria',
-      'Townsville',
-      'Queensland',
-      'Western Australia',
-      'South Australia',
-      'Tasmania',
-      'Northern Territory'
-    ]
+    const regions = {
+      syd: 'Sydney',
+      mel: 'Melbourne',
+      bri: 'Brisbane',
+      gc: 'GoldCoast',
+      per: 'Perth',
+      adl: 'Adelaide',
+      hbr: 'Hobart',
+      drw: 'Darwin',
+      cbr: 'Canberra',
+      nsw: 'New South Wales',
+      vic: 'Victoria',
+      tsv: 'Townsville',
+      qld: 'Queensland',
+      wa: 'Western Australia',
+      sa: 'South Australia',
+      tas: 'Tasmania',
+      nt: 'Northern Territory'
+    }
 
     let channels = []
-    for (let region of regions) {
-      const data = await axios
-        .get(`https://epg.abctv.net.au/processed/${region}_${now.format('YYYY-MM-DD')}.json`)
-        .then(r => r.data)
-        .catch(console.log)
+    const regionName = regions[region]
+    const data = await axios
+      .get(
+        `https://cdn.iview.abc.net.au/epg/processed/${regionName}_${now.format('YYYY-MM-DD')}.json`
+      )
+      .then(r => r.data)
+      .catch(console.log)
 
-      for (let item of data.schedule) {
-        channels.push({
-          lang: 'en',
-          site_id: `${region}#${item.channel}`,
-          name: item.channel
-        })
-      }
+    for (let item of data.schedule) {
+      channels.push({
+        lang: 'en',
+        site_id: `${regionName}#${item.channel}`,
+        name: item.channel
+      })
     }
 
     return channels
@@ -92,7 +93,7 @@ function parseItems(content, channel) {
     const [, channelId] = channel.site_id.split('#')
     const channelData = data.schedule.find(i => i.channel == channelId)
     return channelData.listing && Array.isArray(channelData.listing) ? channelData.listing : []
-  } catch (err) {
+  } catch {
     return []
   }
 }

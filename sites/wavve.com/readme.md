@@ -5,7 +5,7 @@ https://wavve.com/ _[Geo-blocked]_
 ### Download the guide
 
 ```sh
-npm run grab --- --site=wavve.com
+npm run grab --- --sites=wavve.com
 ```
 
 ### Update channel list

@@ -5,7 +5,7 @@ https://www.awilime.com/tv/musor
 ### Download the guide
 
 ```sh
-npm run grab --- --site=awilime.com
+npm run grab --- --sites=awilime.com
 ```
 
 ### Update channel list

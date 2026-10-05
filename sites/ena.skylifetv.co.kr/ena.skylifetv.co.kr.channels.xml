@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="ena.skylifetv.co.kr" lang="ko" xmltv_id="ENA.kr" site_id="ENA">ENA</channel>
-  <channel site="ena.skylifetv.co.kr" lang="ko" xmltv_id="ENAPLAY.kr" site_id="ENA_PLAY">ENA PLAY</channel>
-  <channel site="ena.skylifetv.co.kr" lang="ko" xmltv_id="KidsTalkTalkPlus.kr" site_id="kidstalktalkplus">kids talk talk plus</channel>
-  <channel site="ena.skylifetv.co.kr" lang="ko" xmltv_id="OLIFE.kr" site_id="OLIFE">OLIFE</channel>
-  <channel site="ena.skylifetv.co.kr" lang="ko" xmltv_id="ONCE.kr" site_id="ONCE">ONCE</channel>
-  <channel site="ena.skylifetv.co.kr" lang="ko" xmltv_id="skyUHD.kr" site_id="skyUHD">skyUHD</channel>
+  <channel site="ena.skylifetv.co.kr" site_id="ENA" lang="ko" xmltv_id="ENA.kr@SD">ENA</channel>
+  <channel site="ena.skylifetv.co.kr" site_id="ENA_PLAY" lang="ko" xmltv_id="ENAPLAY.kr@SD">ENA PLAY</channel>
+  <channel site="ena.skylifetv.co.kr" site_id="kidstalktalkplus" lang="ko" xmltv_id="KidsTalkTalkPlus.kr@SD">kids talk talk plus</channel>
+  <channel site="ena.skylifetv.co.kr" site_id="OLIFE" lang="ko" xmltv_id="OLIFE.kr@SD">OLIFE</channel>
+  <channel site="ena.skylifetv.co.kr" site_id="ONCE" lang="ko" xmltv_id="ONCE.kr@SD">ONCE</channel>
+  <channel site="ena.skylifetv.co.kr" site_id="skyUHD" lang="ko" xmltv_id="skyUHD.kr@SD">skyUHD</channel>
 </channels>

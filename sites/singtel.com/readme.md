@@ -5,7 +5,7 @@ https://www.singtel.com/personal/products-services/tv/tv-programme-guide
 ### Download the guide
 
 ```sh
-npm run grab --- --site=singtel.com
+npm run grab --- --sites=singtel.com
 ```
 
 ### Update channel list

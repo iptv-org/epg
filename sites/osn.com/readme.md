@@ -1,19 +1,19 @@
 # osn.com
 
-https://osn.com/ _[Geo-blocked]_
+https://www.osn.com/en-sa/watch/tv-schedule _[Geo-blocked]_
 
 ### Download the guide
 
 Arabic:
 
 ```sh
-npm run grab --- --site=osn.com --lang=ar
+npm run grab --- --sites=osn.com --lang=ar
 ```
 
 English:
 
 ```sh
-npm run grab --- --site=osn.com --lang=en
+npm run grab --- --sites=osn.com --lang=en
 ```
 
 ### Update channel list

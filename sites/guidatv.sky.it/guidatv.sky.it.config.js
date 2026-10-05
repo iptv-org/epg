@@ -1,4 +1,5 @@
 const dayjs = require('dayjs')
+const axios = require('axios')
 
 module.exports = {
   site: 'guidatv.sky.it',
@@ -31,29 +32,21 @@ module.exports = {
     return programs
   },
   async channels() {
-    const axios = require('axios')
-    const cheerio = require('cheerio')
+    const res = await axios.get('https://apid.sky.it/gtv/v1/channels?env=DTH')
+    const list = res.data?.channels || []
+    const channels = list.map(ch => {
+      const num = (ch.number >= 251 && ch.number <= 259) ? ch.number : ''
+      const hd = /\bHD\b/i.test(ch.name)
+      const plus = ch.name.match(/\+(1|24)\b/)?.[1]
+      const feeds = (hd ? '@HD' : '') + (plus ? (plus === '1' ? '@Plus1' : '@Plus24') : '')
 
-    const data = await axios
-      .get(`https://guidatv.sky.it/canali`)
-      .then(r => r.data)
-      .catch(console.log)
-
-    const $ = cheerio.load(data)
-
-    let channels = []
-    $('.c-channelsCard__container').each((i, el) => {
-      const name = $(el).find('.c-channelsCard__title').text()
-      const url = $(el).find('.c-channelsCard__link').attr('href')
-      const [, channelId] = url.match(/\/(\d+)$/)
-
-      channels.push({
+      return {
         lang: 'it',
-        site_id: `DTH#${channelId}`,
-        name
-      })
+        site_id: `DTH#${ch.id}`,
+        name: ch.name,
+        xmltv_id: ch.name.replace(/ |HD|\+1|\+24/g, '') + num + '.it' + feeds, 
+      }
     })
-
     return channels
   }
 }

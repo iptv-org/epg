@@ -1,5 +1,4 @@
 const axios = require('axios')
-const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
@@ -62,7 +61,7 @@ function parseItems(content) {
   let data
   try {
     data = JSON.parse(content)
-  } catch (error) {
+  } catch {
     return []
   }
 

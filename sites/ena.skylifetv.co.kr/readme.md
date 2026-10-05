@@ -5,7 +5,7 @@ https://ena.skylifetv.co.kr/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=ena.skylifetv.co.kr
+npm run grab --- --sites=ena.skylifetv.co.kr
 ```
 
 ### Test

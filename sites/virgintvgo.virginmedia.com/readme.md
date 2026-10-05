@@ -5,7 +5,7 @@ https://virgintvgo.virginmedia.com/en/epg/initial
 ### Download the guide
 
 ```sh
-npm run grab --- --site=virgintvgo.virginmedia.com
+npm run grab --- --sites=virgintvgo.virginmedia.com
 ```
 
 ### Update channel list

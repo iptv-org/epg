@@ -5,7 +5,7 @@ https://www.mewatch.sg/channel-guide
 ### Download the guide
 
 ```sh
-npm run grab --- --site=mewatch.sg
+npm run grab --- --sites=mewatch.sg
 ```
 
 ### Update channel list

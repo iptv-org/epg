@@ -5,7 +5,7 @@ https://www.tvarenasport.hr/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=tvarenasport.hr
+npm run grab --- --sites=tvarenasport.hr
 ```
 
 ### Update channel list

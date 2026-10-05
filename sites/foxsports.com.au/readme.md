@@ -5,7 +5,7 @@ https://www.foxsports.com.au/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=foxsports.com.au
+npm run grab --- --sites=foxsports.com.au
 ```
 
 ### Update channel list

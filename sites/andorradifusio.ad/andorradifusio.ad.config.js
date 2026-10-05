@@ -1,5 +1,9 @@
 const cheerio = require('cheerio')
-const { DateTime } = require('luxon')
+const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
+dayjs.extend(utc)
+dayjs.extend(timezone)
 
 module.exports = {
   site: 'andorradifusio.ad',
@@ -15,12 +19,12 @@ module.exports = {
       let start = parseStart(item, date)
       if (prev) {
         if (start < prev.start) {
-          start = start.plus({ days: 1 })
+          start = start.add(1, 'd')
           date = date.add(1, 'd')
         }
         prev.stop = start
       }
-      const stop = start.plus({ hours: 1 })
+      const stop = start.add(1, 'h')
       programs.push({
         title: item.title,
         start,
@@ -35,12 +39,12 @@ module.exports = {
 function parseStart(item, date) {
   const dateString = `${date.format('MM/DD/YYYY')} ${item.time}`
 
-  return DateTime.fromFormat(dateString, 'MM/dd/yyyy HH:mm', { zone: 'Europe/Madrid' }).toUTC()
+  return dayjs.tz(dateString, 'MM/DD/YYYY HH:mm', 'Europe/Madrid').utc()
 }
 
 function parseItems(content, date) {
   const $ = cheerio.load(content)
-  const day = DateTime.fromMillis(date.valueOf()).setLocale('ca').toFormat('dd LLLL').toLowerCase()
+  const day = dayjs(date.valueOf()).locale('ca').format('DD MMMM').toLowerCase()
   const column = $('.programacio-dia > h3 > .dia')
     .filter((i, el) => $(el).text() === day.slice(0, 6) + '.')
     .first()

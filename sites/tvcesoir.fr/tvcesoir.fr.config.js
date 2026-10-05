@@ -3,6 +3,7 @@ const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+const uniqBy = require('lodash.uniqby')
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
@@ -42,14 +43,13 @@ module.exports = {
   },
   async channels() {
     const axios = require('axios')
-    const _ = require('lodash')
 
     const providers = ['-1', '-2', '-3', '-4', '-5']
 
     const channels = []
     for (let provider of providers) {
       const data = await axios
-        .post(`https://www.tvcesoir.fr/guide/schedule`, null, {
+        .post('https://www.tvcesoir.fr/guide/schedule', null, {
           params: {
             provider,
             region: 'France',
@@ -77,11 +77,11 @@ module.exports = {
       })
     }
 
-    return _.uniqBy(channels, 'site_id')
+    return uniqBy(channels, x => x.site_id)
   }
 }
 
-function parseStart($item, date, channel) {
+function parseStart($item, date) {
   const timeString = $item('td:eq(0)').text().trim()
   const dateString = `${date.format('YYYY-MM-DD')} ${timeString}`
 

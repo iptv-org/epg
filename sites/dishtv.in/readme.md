@@ -5,7 +5,7 @@ https://www.dishtv.in/channelguide/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=dishtv.in
+npm run grab --- --sites=dishtv.in
 ```
 
 ### Update channel list

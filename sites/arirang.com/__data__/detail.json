@@ -1,187 +1,159 @@
 {
-    "resultCode": {
-        "code": 200000,
-        "http_status": 200,
-        "timestamp": 0,
-        "message": null,
-        "trace": null,
-        "access_token": null,
-        "expire_time": 0
+  "resultCode": {
+    "code": 200000,
+    "http_status": 200,
+    "timestamp": 0,
+    "message": null,
+    "trace": null,
+    "access_token": null,
+    "expire_time": 0
+  },
+  "program_id": 230,
+  "order": 10070,
+  "is_news_allow": false,
+  "bis_program": [
+    {
+      "bis_program_code": "2025006T",
+      "bis_program_title": "DIPLOMAT'S ARCHIVE: HIDDEN STORIES"
+    }
+  ],
+  "bis_bundle_program_code": "2025006T",
+  "bis_category_code": "교양",
+  "program_type": "tv",
+  "category_Info": [
+    {
+      "category_id": 29,
+      "local": "en",
+      "title": "Current Affairs"
     },
-    "program_id": 173,
-    "order": 21,
-    "is_news_allow": true,
-    "bis_program": [
-        {
-            "bis_program_code": "2023003T",
-            "bis_program_title": "WITHIN THE FRAME [L]"
-        },
-        {
-            "bis_program_code": "2023004T",
-            "bis_program_title": "WITHIN THE FRAME [R]"
-        }
-    ],
-    "bis_bundle_program_code": "2023003T",
-    "bis_category_code": "시사보도",
-    "program_type": "tv",
-    "category_Info": [
-        {
-            "category_id": 29,
-            "local": "en",
-            "title": "Current Affairs"
-        },
-        {
-            "category_id": 29,
-            "local": "ko",
-            "title": "Current Affairs"
-        }
-    ],
-    "title": [
-        {
-            "lan_code": "en",
-            "text": "WITHIN THE FRAME [L]"
-        },
-        {
-            "lan_code": "ko",
-            "text": "WITHIN THE FRAME [L]"
-        }
-    ],
-    "content": [
-        {
-            "lan_code": "en",
-            "text": "NEWS<div></div>"
-        },
-        {
-            "lan_code": "ko",
-            "text": "NEWS 대담<div></div>"
-        }
-    ],
-    "property": {
-        "open_status": {
-            "is_allow": true,
-            "is_origin_allow": null,
-            "start_date": null,
-            "end_date": null
-        },
-        "is_onair": true,
-        "is_teaser_allow": false,
-        "running_time": 30,
-        "schedule": [
-            {
-                "week": [
-                    "Mon",
-                    "Tue",
-                    "Wed",
-                    "Thu",
-                    "Fri"
-                ],
-                "start_time": 1110
-            },
-            {
-                "week": [
-                    ""
-                ],
-                "start_time": -1
-            },
-            {
-                "week": [
-                    ""
-                ],
-                "start_time": -1
-            },
-            {
-                "week": [
-                    ""
-                ],
-                "start_time": -1
-            },
-            {
-                "week": [
-                    ""
-                ],
-                "start_time": -1
-            },
-            {
-                "week": [
-                    ""
-                ],
-                "start_time": -1
-            },
-            {
-                "week": [
-                    ""
-                ],
-                "start_time": -1
-            },
-            {
-                "week": [
-                    ""
-                ],
-                "start_time": -1
-            },
-            {
-                "week": [
-                    ""
-                ],
-                "start_time": -1
-            },
-            {
-                "week": [
-                    ""
-                ],
-                "start_time": -1
-            }
-        ]
+    {
+      "category_id": 29,
+      "local": "ko",
+      "title": "Current Affairs"
+    }
+  ],
+  "title": [
+    {
+      "lan_code": "en",
+      "text": "Diplomat Archives: Hidden Stories"
     },
-    "platform": {
-        "is_aos_allow": true,
-        "is_ios_allow": true,
-        "is_smat_tv_allow": true
+    {
+      "lan_code": "ko",
+      "text": "Diplomat Archives: Hidden Stories"
+    }
+  ],
+  "content": [
+    {
+      "lan_code": "en",
+      "text": "As of April 2025, S. Korea has established diplomatic relations with a total of 194 countries.\nAmong them are countries that have had ties and exchanges with Korea for hundreds of years.\nWith such long-standing relationships with so many nations,\nmight there be fascinating hidden stories between Korea and the rest of the world that we don’t know yet? \n\n\"Diplomat’s Archives: Hidden Stories\" begins with this very question.\nTogether with foreign embassies in Korea, the series uncovers and sheds light on meaningful yet lesser-known stories between Korea and other countries.\nThrough this, we aim to reaffirm the deep friendships that have been built over time, highlight how countries are interconnected—bilaterally and multilaterally—\nand emphasize the importance of cooperation on the global stage today."
     },
-    "image": [
-        {
-            "order": 0,
-            "type": "horizontal",
-            "name": "2080840096998752900.png",
-            "action": null,
-            "url": "https://img.arirang.com/v1/AUTH_d52449c16d3b4bbca17d4fffd9fc44af/public/images/202308/2080840096998752900.png"
-        },
-        {
-            "order": 0,
-            "type": "vertical",
-            "name": "1773516657138860509.png",
-            "action": null,
-            "url": "https://img.arirang.com/v1/AUTH_d52449c16d3b4bbca17d4fffd9fc44af/public/images/202301/1773516657138860509.png"
-        },
-        {
-            "order": 0,
-            "type": "mobile",
-            "name": "1773516657893835229.png",
-            "action": null,
-            "url": "https://img.arirang.com/v1/AUTH_d52449c16d3b4bbca17d4fffd9fc44af/public/images/202301/1773516657893835229.png"
-        },
-        {
-            "order": 0,
-            "type": "pc",
-            "name": "1773742773929771485.png",
-            "action": null,
-            "url": "https://img.arirang.com/v1/AUTH_d52449c16d3b4bbca17d4fffd9fc44af/public/images/202301/1773742773929771485.png"
-        },
-        {
-            "order": 0,
-            "type": "smarttv",
-            "name": "1773742775607493085.png",
-            "action": null,
-            "url": "https://img.arirang.com/v1/AUTH_d52449c16d3b4bbca17d4fffd9fc44af/public/images/202301/1773742775607493085.png"
-        },
-        {
-            "order": 0,
-            "type": "square",
-            "name": "1773742767839642077.png",
-            "action": null,
-            "url": "https://img.arirang.com/v1/AUTH_d52449c16d3b4bbca17d4fffd9fc44af/public/images/202301/1773742767839642077.png"
-        }
-    ],
-    "reg_date": "2023-01-03 10:21:56.0",
-    "update_date": "2023-08-03 10:55:34.0"
+    {
+      "lan_code": "ko",
+      "text": "<div>  2025년 1월 기준, 대한민국과 수교를 맺고 있는 국가 총 193개... \n  이 중 몇몇 국가는 한국과 이미 몇백 년 전부터 \n  관계를 맺어오고 교류해 오기도 했다.\n    \n  이렇게 많은 국가들과 오랜 기간 관계를 맺어온 한국...\n  한국과 다른 국가들 사이 \n  우리가 모르는 흥미로운 숨겨진 이야기가 잊지 않을까?\n    \n    Diplomat‘s Archives: Hidden Stories는 \n    이 질문으로부터 시작해, 사람들이 많이 모르고 있는, \n    한국과 다른 국가들 사이의 의미 있는 이야기들을 주한 대사관들과 함께 찾고 깊이 있게 조명한다.\n    이를 통해 한국과 다른 나라들 사이, 오랜 기간 이어온 돈독한 우정을 재확인하고\n    양자적, 또 다자적으로 각국이 어떻게 연결되어 있는지,\n    오늘날 세계 무대에서의 협력이 왜 중요한가를 강조하고자 한다. <div></div></div>"
+    }
+  ],
+  "property": {
+    "open_status": {
+      "is_allow": true,
+      "is_origin_allow": null,
+      "start_date": null,
+      "end_date": null
+    },
+    "is_onair": true,
+    "is_teaser_allow": false,
+    "running_time": 30,
+    "schedule": [
+      {
+        "week": ["Mon"],
+        "start_time": 900
+      },
+      {
+        "week": [""],
+        "start_time": -1
+      },
+      {
+        "week": [""],
+        "start_time": -1
+      },
+      {
+        "week": [""],
+        "start_time": -1
+      },
+      {
+        "week": [""],
+        "start_time": -1
+      },
+      {
+        "week": [""],
+        "start_time": -1
+      },
+      {
+        "week": [""],
+        "start_time": -1
+      },
+      {
+        "week": [""],
+        "start_time": -1
+      },
+      {
+        "week": [""],
+        "start_time": -1
+      },
+      {
+        "week": [""],
+        "start_time": -1
+      }
+    ]
+  },
+  "platform": {
+    "is_aos_allow": true,
+    "is_ios_allow": true,
+    "is_smat_tv_allow": true
+  },
+  "image": [
+    {
+      "order": 0,
+      "type": "horizontal",
+      "name": "2985531324875408146.jpg",
+      "action": null,
+      "url": "https://img.arirang.com/v1/AUTH_d52449c16d3b4bbca17d4fffd9fc44af/public/images/202504/2985531324875408146.jpg"
+    },
+    {
+      "order": 0,
+      "type": "vertical",
+      "name": "2985531391564841746.jpg",
+      "action": null,
+      "url": "https://img.arirang.com/v1/AUTH_d52449c16d3b4bbca17d4fffd9fc44af/public/images/202504/2985531391564841746.jpg"
+    },
+    {
+      "order": 0,
+      "type": "mobile",
+      "name": "2985531460485645074.jpg",
+      "action": null,
+      "url": "https://img.arirang.com/v1/AUTH_d52449c16d3b4bbca17d4fffd9fc44af/public/images/202504/2985531460485645074.jpg"
+    },
+    {
+      "order": 0,
+      "type": "pc",
+      "name": "2985531491473163026.jpg",
+      "action": null,
+      "url": "https://img.arirang.com/v1/AUTH_d52449c16d3b4bbca17d4fffd9fc44af/public/images/202504/2985531491473163026.jpg"
+    },
+    {
+      "order": 0,
+      "type": "smarttv",
+      "name": "2985531522460680978.jpg",
+      "action": null,
+      "url": "https://img.arirang.com/v1/AUTH_d52449c16d3b4bbca17d4fffd9fc44af/public/images/202504/2985531522460680978.jpg"
+    },
+    {
+      "order": 0,
+      "type": "square",
+      "name": "2985531423240225554.png",
+      "action": null,
+      "url": "https://img.arirang.com/v1/AUTH_d52449c16d3b4bbca17d4fffd9fc44af/public/images/202504/2985531423240225554.png"
+    }
+  ],
+  "reg_date": "2025-04-11 15:57:44.0",
+  "update_date": "2025-04-18 13:46:04.0"
 }

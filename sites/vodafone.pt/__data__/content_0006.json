@@ -1,0 +1,1094 @@
+{
+	"result": {
+		"objectType": "KalturaAssetListResponse",
+		"totalCount": 4,
+		"objects": [
+			{
+				"objectType": "KalturaProgramAsset",
+				"createDate": 1758758403,
+				"description": "Taís decide contar à avó a verdade sobre a morte de Teresa. Catarina aumenta a chantagem com Arthur e pede-lhe um apartamento em Nova Iorque para continuar a encontrar-se com ele. Arthur aceita a proposta. Lígia conta a Eduardo que a conta bancária de Arthur tem levantamentos astronómicos.[S]",
+				"endDate": 1758676501,
+				"externalId": "223403622_imi:110_88370239",
+				"id": 201100895,
+				"images": [
+					{
+						"objectType": "KalturaMediaImage",
+						"id": "0eb23fca81c0411eab54c1b144499bc9",
+						"imageTypeId": 93,
+						"imageTypeName": "cc",
+						"ratio": "cc",
+						"url": "https://3038.images-vfp2.ott.kaltura.com/Service.svc/GetImage/p/3038/entry_id/0eb23fca81c0411eab54c1b144499bc9/version/0",
+						"version": 0
+					},
+					{
+						"objectType": "KalturaMediaImage",
+						"id": "3647ca57ed0442ed967f822c72295543",
+						"imageTypeId": 91,
+						"imageTypeName": "bg",
+						"ratio": "bg",
+						"url": "https://3038.images-vfp2.ott.kaltura.com/Service.svc/GetImage/p/3038/entry_id/3647ca57ed0442ed967f822c72295543/version/0",
+						"version": 0
+					}
+				],
+				"indexStatus": "Ok",
+				"metas": {
+					"onAir start time": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "09/24/2025 00:19:18"
+					},
+					"onAir end time": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "09/24/2025 01:15:01"
+					},
+					"channel ID": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "110"
+					},
+					"display duration": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "PT00H55M43S"
+					},
+					"actual duration": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "PT00H55M43S"
+					},
+					"sign language available": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "false"
+					},
+					"episode num": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "72"
+					},
+					"series ID": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "IPS1099983H"
+					},
+					"unifiedSeriesID": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "IPS1099983H"
+					},
+					"season ID": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "IPS1099983H_152908"
+					},
+					"season number": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "1"
+					},
+					"year": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "2025"
+					},
+					"program unique ID": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "223403622"
+					},
+					"catchupInHome": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					},
+					"catchupOutOfHome": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					},
+					"startOver": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					},
+					"allowRecording": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					},
+					"downloadable": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					},
+					"liveTVOutOfHome": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					},
+					"timeShifting": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					}
+				},
+				"name": "Balacobaco",
+				"relatedEntities": {},
+				"startDate": 1758673158,
+				"tags": {
+					"genre": {
+						"objectType": "KalturaMultilingualStringValueArray",
+						"objects": [
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "Telenovela"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "Filmes e séries"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "Série"
+							}
+						]
+					},
+					"genre_desc": {
+						"objectType": "KalturaMultilingualStringValueArray",
+						"objects": [
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "1510"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "BF02"
+							}
+						]
+					},
+					"actors": {
+						"objectType": "KalturaMultilingualStringValueArray",
+						"objects": [
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "Juliana Silveira"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "Roger Gobeth"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "Letícia Medina"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "Bruno Ferrari"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "Barbara Borges"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "Roberta Gualda"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "Victor Pecoraro"
+							}
+						]
+					},
+					"director": {
+						"objectType": "KalturaMultilingualStringValueArray",
+						"objects": [
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "Edson Spinello"
+							}
+						]
+					},
+					"subtitles available": {
+						"objectType": "KalturaMultilingualStringValueArray",
+						"objects": [
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "POR"
+							}
+						]
+					},
+					"parental Rating": {
+						"objectType": "KalturaMultilingualStringValueArray",
+						"objects": [
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "12"
+							}
+						]
+					},
+					"country of production": {
+						"objectType": "KalturaMultilingualStringValueArray",
+						"objects": [
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "BR"
+							}
+						]
+					},
+					"contentTags": {
+						"objectType": "KalturaMultilingualStringValueArray",
+						"objects": [
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "g_rec=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "g_cu_rb=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "s_restart=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "s_catchup=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "s_npvr=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_en=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_live=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_live_ooh=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_restart=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_restart_ooh=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_catchup=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_catchup_ooh=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_npvr=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_npvr_ooh=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "w_en=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "w_live=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "w_restart=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "w_catchup=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "w_npvr=1"
+							}
+						]
+					}
+				},
+				"type": 0,
+				"updateDate": 1758758403,
+				"enableCatchUp": true,
+				"enableCdvr": false,
+				"crid": "223403622",
+				"epgChannelId": 3028,
+				"epgId": "223403622_imi:110_88370239",
+				"externalOfferIds": "",
+				"linearAssetId": 636403,
+				"relatedMediaId": 0,
+				"enableStartOver": true,
+				"enableTrickPlay": false
+			},
+			{
+				"objectType": "KalturaProgramAsset",
+				"createDate": 1758758403,
+				"description": "Pensado a partir da essência da apresentadora, Tânia Ribas de Oliveira, o programa \"A Nossa Tarde\" tem, por isso, um lado mais emocional, com base em histórias com final feliz, e um lado muito divertido, ou não fosse a nossa Tânia uma pessoa que gosta de dar umas belas e sonoras gargalhadas.",
+				"endDate": 1758683631,
+				"externalId": "588370241_imi:110_88370241",
+				"id": 201100896,
+				"images": [
+					{
+						"objectType": "KalturaMediaImage",
+						"id": "def9b5a85bce4d089fec377039ddf0c5",
+						"imageTypeId": 93,
+						"imageTypeName": "cc",
+						"ratio": "cc",
+						"url": "https://3038.images-vfp2.ott.kaltura.com/Service.svc/GetImage/p/3038/entry_id/def9b5a85bce4d089fec377039ddf0c5/version/0",
+						"version": 0
+					},
+					{
+						"objectType": "KalturaMediaImage",
+						"id": "5843e2a8b8ba420683bbbbdcacf07370",
+						"imageTypeId": 91,
+						"imageTypeName": "bg",
+						"ratio": "bg",
+						"url": "https://3038.images-vfp2.ott.kaltura.com/Service.svc/GetImage/p/3038/entry_id/5843e2a8b8ba420683bbbbdcacf07370/version/0",
+						"version": 0
+					}
+				],
+				"indexStatus": "Ok",
+				"metas": {
+					"onAir start time": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "09/24/2025 01:15:01"
+					},
+					"onAir end time": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "09/24/2025 03:13:51"
+					},
+					"channel ID": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "110"
+					},
+					"display duration": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "PT01H58M50S"
+					},
+					"actual duration": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "PT01H58M50S"
+					},
+					"sign language available": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "false"
+					},
+					"series ID": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "23312925"
+					},
+					"unifiedSeriesID": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "23312925"
+					},
+					"season ID": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "23312925_1"
+					},
+					"season number": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "1"
+					},
+					"year": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "2025"
+					},
+					"episode name": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "qua 24-set, 02:15"
+					},
+					"program unique ID": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "588370241"
+					},
+					"catchupInHome": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					},
+					"catchupOutOfHome": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					},
+					"startOver": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					},
+					"allowRecording": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					},
+					"downloadable": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					},
+					"liveTVOutOfHome": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					},
+					"timeShifting": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					}
+				},
+				"name": "A Nossa Tarde",
+				"relatedEntities": {},
+				"startDate": 1758676501,
+				"tags": {
+					"genre": {
+						"objectType": "KalturaMultilingualStringValueArray",
+						"objects": [
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "Talk Show"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "Entretenimento"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "Série"
+							}
+						]
+					},
+					"genre_desc": {
+						"objectType": "KalturaMultilingualStringValueArray",
+						"objects": [
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "3300"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "BF02"
+							}
+						]
+					},
+					"actors": {
+						"objectType": "KalturaMultilingualStringValueArray",
+						"objects": [
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "Tânia Ribas de Oliveira"
+							}
+						]
+					},
+					"parental Rating": {
+						"objectType": "KalturaMultilingualStringValueArray",
+						"objects": [
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "0"
+							}
+						]
+					},
+					"country of production": {
+						"objectType": "KalturaMultilingualStringValueArray",
+						"objects": [
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "PT"
+							}
+						]
+					},
+					"contentTags": {
+						"objectType": "KalturaMultilingualStringValueArray",
+						"objects": [
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "g_rec=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "g_cu_rb=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "s_restart=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "s_catchup=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "s_npvr=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_en=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_live=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_live_ooh=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_restart=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_restart_ooh=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_catchup=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_catchup_ooh=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_npvr=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_npvr_ooh=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "w_en=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "w_live=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "w_restart=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "w_catchup=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "w_npvr=1"
+							}
+						]
+					}
+				},
+				"type": 0,
+				"updateDate": 1758758403,
+				"enableCatchUp": true,
+				"enableCdvr": false,
+				"crid": "588370241",
+				"epgChannelId": 3028,
+				"epgId": "588370241_imi:110_88370241",
+				"externalOfferIds": "",
+				"linearAssetId": 636403,
+				"relatedMediaId": 0,
+				"enableStartOver": true,
+				"enableTrickPlay": false
+			},
+			{
+				"objectType": "KalturaProgramAsset",
+				"createDate": 1758758403,
+				"description": "Todos os dias, um espaço dedicado a vendas por televisão, em que são feitas demonstrações dos produtos.",
+				"endDate": 1758689997,
+				"externalId": "588370245_imi:110_88370245",
+				"id": 201100897,
+				"images": [
+					{
+						"objectType": "KalturaMediaImage",
+						"id": "b91a455ea5074c729908993637d6dbf2",
+						"imageTypeId": 93,
+						"imageTypeName": "cc",
+						"ratio": "cc",
+						"url": "https://3038.images-vfp2.ott.kaltura.com/Service.svc/GetImage/p/3038/entry_id/b91a455ea5074c729908993637d6dbf2/version/0",
+						"version": 0
+					},
+					{
+						"objectType": "KalturaMediaImage",
+						"id": "30815462a65e459aae3c0378e88ed922",
+						"imageTypeId": 91,
+						"imageTypeName": "bg",
+						"ratio": "bg",
+						"url": "https://3038.images-vfp2.ott.kaltura.com/Service.svc/GetImage/p/3038/entry_id/30815462a65e459aae3c0378e88ed922/version/0",
+						"version": 0
+					}
+				],
+				"indexStatus": "Ok",
+				"metas": {
+					"onAir start time": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "09/24/2025 03:13:51"
+					},
+					"onAir end time": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "09/24/2025 04:59:57"
+					},
+					"channel ID": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "110"
+					},
+					"display duration": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "PT01H46M06S"
+					},
+					"actual duration": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "PT01H46M06S"
+					},
+					"sign language available": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "false"
+					},
+					"series ID": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "235523"
+					},
+					"unifiedSeriesID": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "235523"
+					},
+					"season ID": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "235523_1"
+					},
+					"season number": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "1"
+					},
+					"year": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "2025"
+					},
+					"episode name": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "qua 24-set, 04:14"
+					},
+					"program unique ID": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "588370245"
+					},
+					"catchupInHome": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					},
+					"catchupOutOfHome": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					},
+					"startOver": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					},
+					"allowRecording": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					},
+					"downloadable": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					},
+					"liveTVOutOfHome": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					},
+					"timeShifting": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					}
+				},
+				"name": "Televendas",
+				"relatedEntities": {},
+				"startDate": 1758683631,
+				"tags": {
+					"genre": {
+						"objectType": "KalturaMultilingualStringValueArray",
+						"objects": [
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "Televendas"
+							}
+						]
+					},
+					"genre_desc": {
+						"objectType": "KalturaMultilingualStringValueArray",
+						"objects": [
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "A600"
+							}
+						]
+					},
+					"parental Rating": {
+						"objectType": "KalturaMultilingualStringValueArray",
+						"objects": [
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "0"
+							}
+						]
+					},
+					"country of production": {
+						"objectType": "KalturaMultilingualStringValueArray",
+						"objects": [
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "PT"
+							}
+						]
+					},
+					"contentTags": {
+						"objectType": "KalturaMultilingualStringValueArray",
+						"objects": [
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "g_rec=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "g_cu_rb=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "s_restart=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "s_catchup=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "s_npvr=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_en=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_live=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_live_ooh=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_restart=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_restart_ooh=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_catchup=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_catchup_ooh=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_npvr=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_npvr_ooh=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "w_en=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "w_live=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "w_restart=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "w_catchup=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "w_npvr=1"
+							}
+						]
+					}
+				},
+				"type": 0,
+				"updateDate": 1758758403,
+				"enableCatchUp": true,
+				"enableCdvr": false,
+				"crid": "588370245",
+				"epgChannelId": 3028,
+				"epgId": "588370245_imi:110_88370245",
+				"externalOfferIds": "",
+				"linearAssetId": 636403,
+				"relatedMediaId": 0,
+				"enableStartOver": true,
+				"enableTrickPlay": false
+			},
+			{
+				"objectType": "KalturaProgramAsset",
+				"createDate": 1758758403,
+				"description": "O Bom Dia Portugal é um programa de informação apresentado por João Tomé de Carvalho e Carla Trafaria. Todos os dias, o Bom Dia Portugal dedica espaços específicos às notícias da atualidade nacional e internacional, desporto, meteorologia, trânsito e economia.[S]",
+				"endDate": 1758704284,
+				"externalId": "588376034_imi:110_88376034",
+				"id": 201100898,
+				"images": [
+					{
+						"objectType": "KalturaMediaImage",
+						"id": "0657dffe77e54654a105a0003c7b612e",
+						"imageTypeId": 93,
+						"imageTypeName": "cc",
+						"ratio": "cc",
+						"url": "https://3038.images-vfp2.ott.kaltura.com/Service.svc/GetImage/p/3038/entry_id/0657dffe77e54654a105a0003c7b612e/version/0",
+						"version": 0
+					},
+					{
+						"objectType": "KalturaMediaImage",
+						"id": "4d2e6a8c245b4fa89a1c37c01842342b",
+						"imageTypeId": 91,
+						"imageTypeName": "bg",
+						"ratio": "bg",
+						"url": "https://3038.images-vfp2.ott.kaltura.com/Service.svc/GetImage/p/3038/entry_id/4d2e6a8c245b4fa89a1c37c01842342b/version/0",
+						"version": 0
+					}
+				],
+				"indexStatus": "Ok",
+				"metas": {
+					"onAir start time": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "09/24/2025 04:59:57"
+					},
+					"onAir end time": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "09/24/2025 08:58:04"
+					},
+					"channel ID": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "110"
+					},
+					"display duration": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "PT03H58M07S"
+					},
+					"actual duration": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "PT03H58M07S"
+					},
+					"sign language available": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "false"
+					},
+					"series ID": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "2326300"
+					},
+					"unifiedSeriesID": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "2326300"
+					},
+					"season ID": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "2326300_1"
+					},
+					"season number": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "1"
+					},
+					"year": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "2025"
+					},
+					"episode name": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "qua 24-set, 06:00"
+					},
+					"program unique ID": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "588376034"
+					},
+					"catchupInHome": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					},
+					"catchupOutOfHome": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					},
+					"startOver": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					},
+					"allowRecording": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					},
+					"downloadable": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					},
+					"liveTVOutOfHome": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					},
+					"timeShifting": {
+						"objectType": "KalturaMultilingualStringValue",
+						"value": "yes"
+					}
+				},
+				"name": "Bom Dia Portugal",
+				"relatedEntities": {},
+				"startDate": 1758689997,
+				"tags": {
+					"genre": {
+						"objectType": "KalturaMultilingualStringValueArray",
+						"objects": [
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "Notícias"
+							}
+						]
+					},
+					"genre_desc": {
+						"objectType": "KalturaMultilingualStringValueArray",
+						"objects": [
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "2000"
+							}
+						]
+					},
+					"actors": {
+						"objectType": "KalturaMultilingualStringValueArray",
+						"objects": [
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "João Tomé de Carvalho"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "Carla Trafaria"
+							}
+						]
+					},
+					"subtitles available": {
+						"objectType": "KalturaMultilingualStringValueArray",
+						"objects": [
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "POR"
+							}
+						]
+					},
+					"parental Rating": {
+						"objectType": "KalturaMultilingualStringValueArray",
+						"objects": [
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "0"
+							}
+						]
+					},
+					"country of production": {
+						"objectType": "KalturaMultilingualStringValueArray",
+						"objects": [
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "PT"
+							}
+						]
+					},
+					"contentTags": {
+						"objectType": "KalturaMultilingualStringValueArray",
+						"objects": [
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "g_rec=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "g_cu_rb=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "s_restart=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "s_catchup=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "s_npvr=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_en=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_live=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_live_ooh=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_restart=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_restart_ooh=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_catchup=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_catchup_ooh=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_npvr=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "m_npvr_ooh=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "w_en=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "w_live=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "w_restart=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "w_catchup=1"
+							},
+							{
+								"objectType": "KalturaMultilingualStringValue",
+								"value": "w_npvr=1"
+							}
+						]
+					}
+				},
+				"type": 0,
+				"updateDate": 1758758403,
+				"enableCatchUp": true,
+				"enableCdvr": false,
+				"crid": "588376034",
+				"epgChannelId": 3028,
+				"epgId": "588376034_imi:110_88376034",
+				"externalOfferIds": "",
+				"linearAssetId": 636403,
+				"relatedMediaId": 0,
+				"enableStartOver": true,
+				"enableTrickPlay": false
+			}
+		]
+	}
+}

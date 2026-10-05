@@ -5,7 +5,7 @@ https://www.reportv.com.ar/buscador/Buscador.php?aid=2337
 ### Download the guide
 
 ```sh
-npm run grab --- --site=reportv.com.ar
+npm run grab --- --sites=reportv.com.ar
 ```
 
 ### Update channel list

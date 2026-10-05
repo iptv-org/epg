@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="mediaklikk.hu" lang="hu" xmltv_id="Duna.hu" site_id="3">Duna</channel>
-  <channel site="mediaklikk.hu" lang="hu" xmltv_id="DunaWorld.hu" site_id="4">Duna World</channel>
-  <channel site="mediaklikk.hu" lang="hu" xmltv_id="M1.hu" site_id="1">M1</channel>
-  <channel site="mediaklikk.hu" lang="hu" xmltv_id="M2.hu" site_id="2">M2</channel>
-  <channel site="mediaklikk.hu" lang="hu" xmltv_id="M3.hu" site_id="26">M3</channel>
-  <channel site="mediaklikk.hu" lang="hu" xmltv_id="M4Sport.hu" site_id="30">M4 Sport</channel>
-  <channel site="mediaklikk.hu" lang="hu" xmltv_id="M4SportPlus.hu" site_id="34">M4 Sport +</channel>
-  <channel site="mediaklikk.hu" lang="hu" xmltv_id="M5.hu" site_id="33">M5</channel>
+  <channel site="mediaklikk.hu" site_id="1" lang="hu" xmltv_id="M1.hu@SD">M1</channel>
+  <channel site="mediaklikk.hu" site_id="2" lang="hu" xmltv_id="M2.hu@SD">M2</channel>
+  <channel site="mediaklikk.hu" site_id="3" lang="hu" xmltv_id="Duna.hu@SD">Duna</channel>
+  <channel site="mediaklikk.hu" site_id="4" lang="hu" xmltv_id="DunaWorld.hu@SD">Duna World</channel>
+  <channel site="mediaklikk.hu" site_id="26" lang="hu" xmltv_id="M3.hu@SD">M3</channel>
+  <channel site="mediaklikk.hu" site_id="30" lang="hu" xmltv_id="M4Sport.hu@SD">M4 Sport</channel>
+  <channel site="mediaklikk.hu" site_id="33" lang="hu" xmltv_id="M5.hu@SD">M5</channel>
+  <channel site="mediaklikk.hu" site_id="34" lang="hu" xmltv_id="M4SportPlus.hu@SD">M4 Sport +</channel>
 </channels>

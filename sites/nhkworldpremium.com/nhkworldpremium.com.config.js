@@ -50,7 +50,7 @@ function parseItems(content, date) {
     if (!data || !data.item || !Array.isArray(data.item.episodes)) return []
 
     return data.item.episodes.filter(ep => ep.schedule.startsWith(date.format('YYYY-MM-DD')))
-  } catch (err) {
+  } catch {
     return []
   }
 }

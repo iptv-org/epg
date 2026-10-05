@@ -5,7 +5,7 @@ https://ionplustv.com/schedule
 ### Download the guide
 
 ```sh
-npm run grab --- --site=ionplustv.com
+npm run grab --- --sites=ionplustv.com
 ```
 
 ### Test

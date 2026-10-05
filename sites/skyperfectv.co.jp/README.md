@@ -12,7 +12,7 @@
 ## Download the guide
 
 ```sh
-npm run grab --- --site=skyperfectv.co.jp
+npm run grab --- --sites=skyperfectv.co.jp
 ```
 
 ## Update channel list

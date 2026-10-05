@@ -1,4 +1,6 @@
 const { parser, url } = require('./foxsports.com.au.config.js')
+const fs = require('fs')
+const path = require('path')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 dayjs.extend(utc)
@@ -15,9 +17,7 @@ it('can generate valid url', () => {
 })
 
 it('can parse response', () => {
-  const content =
-    '{"channel-programme":[{"id":"31cc8b4c-3711-49f0-bf22-2ec3993b0a07","programmeTitle":"NRL","title":"Eels v Titans","startTime":"2022-12-14T00:00:00+11:00","endTime":"2022-12-14T01:00:00+11:00","duration":60,"live":false,"genreId":"5c389cf4-8db7-4b52-9773-52355bd28559","channelId":2,"channelName":"FOX League","channelAbbreviation":"LEAGUE","programmeUID":235220,"round":"R1","statsMatchId":null,"closedCaptioned":true,"statsFixtureId":10207,"genreTitle":"Rugby League","parentGenreId":"a953f929-2d12-41a4-b0e9-97f401afff11","parentGenreTitle":"Sport","pmgId":"PMG01306944","statsSport":"league","type":"GAME","hiDef":true,"widescreen":true,"classification":"","synopsis":"The Eels and Titans have plenty of motivation this season after heartbreaking Finals losses in 2021. Parramatta has won their past five against Gold Coast.","preGameStartTime":null,"closeCaptioned":true}]}'
-
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'))
   const result = parser({ content, channel }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
@@ -38,11 +38,6 @@ it('can parse response', () => {
 })
 
 it('can handle empty guide', () => {
-  const result = parser(
-    {
-      content: '{"channel-programme":[]}'
-    },
-    channel
-  )
+  const result = parser({content: fs.readFileSync(path.resolve(__dirname, '__data__/no_content.json'))}, channel)
   expect(result).toMatchObject([])
 })

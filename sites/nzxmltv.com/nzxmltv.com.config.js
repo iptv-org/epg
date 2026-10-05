@@ -20,14 +20,14 @@ module.exports = {
       const program = {
         title: item.title?.[0]?.value,
         description: item.desc?.[0]?.value,
-        icon: item.icon?.[0],
+        icon: item.icon?.[0]?.src,
         start: item.start,
         stop: item.stop
       }
       if (item.episodeNum) {
         item.episodeNum.forEach(ep => {
           if (ep.system === 'xmltv_ns') {
-            const [season, episode, _] = ep.value.split('.')
+            const [season, episode] = ep.value.split('.')
             program.season = parseInt(season) + 1
             program.episode = parseInt(episode) + 1
             return true

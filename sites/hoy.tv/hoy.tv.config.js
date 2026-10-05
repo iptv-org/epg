@@ -16,7 +16,7 @@ module.exports = {
   url: function ({ channel, date }) {
     return `https://epg-file.hoy.tv/hoy/OTT${channel.site_id}${date.format('YYYYMMDD')}.xml`
   },
-  parser({ content, channel, date }) {
+  parser({ content, date }) {
     const data = convert.xml2js(content, {
       compact: true,
       ignoreDeclaration: true,
@@ -28,7 +28,7 @@ module.exports = {
     for (let item of data.ProgramGuide.Channel.EpgItem) {
       const start = dayjs.tz(item.EpgStartDateTime._text, 'YYYY-MM-DD HH:mm:ss', 'Asia/Hong_Kong')
 
-      if (! date.isSame(start, 'day')) {
+      if (!date.isSame(start, 'day')) {
         continue
       }
 
@@ -40,13 +40,13 @@ module.exports = {
         sub_title: subtitle,
         description: item.EpisodeInfo.EpisodeLongDescription._text,
         start,
-        stop: dayjs.tz(item.EpgEndDateTime._text, 'YYYY-MM-DD HH:mm:ss', 'Asia/Hong_Kong'),
+        stop: dayjs.tz(item.EpgEndDateTime._text, 'YYYY-MM-DD HH:mm:ss', 'Asia/Hong_Kong')
       })
     }
 
     return programs
   },
-  async channels({ lang }) {
+  async channels() {
     const data = await axios
       .get('https://api2.hoy.tv/api/v2/a/channel')
       .then(r => r.data)
@@ -56,7 +56,7 @@ module.exports = {
       return {
         site_id: c.videos.id,
         name: c.name.zh_hk,
-        lang: 'zh',
+        lang: 'zh'
       }
     })
   }

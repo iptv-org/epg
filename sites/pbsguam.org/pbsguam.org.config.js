@@ -27,7 +27,7 @@ function parseItems(content, date) {
   let data
   try {
     data = JSON.parse(json)
-  } catch (error) {
+  } catch {
     return []
   }
 

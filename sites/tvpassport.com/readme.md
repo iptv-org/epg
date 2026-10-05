@@ -5,7 +5,7 @@ https://www.tvpassport.com/tv-listings
 ### Download the guide
 
 ```sh
-npm run grab --- --site=tvpassport.com
+npm run grab --- --sites=tvpassport.com
 ```
 
 ### Update channel list

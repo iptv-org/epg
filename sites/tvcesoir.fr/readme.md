@@ -5,7 +5,7 @@ https://www.tvcesoir.fr/programme-tv/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=tvcesoir.fr
+npm run grab --- --sites=tvcesoir.fr
 ```
 
 ### Update channel list

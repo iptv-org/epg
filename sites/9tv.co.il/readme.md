@@ -5,7 +5,7 @@ https://www.9tv.co.il/BroadcastSchedule
 ### Download the guide
 
 ```sh
-npm run grab --- --site=9tv.co.il
+npm run grab --- --sites=9tv.co.il
 ```
 
 ### Test

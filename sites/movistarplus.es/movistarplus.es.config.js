@@ -1,65 +1,118 @@
-const { DateTime } = require('luxon')
+const axios = require('axios')
+const dayjs = require('dayjs')
+const timezone = require('dayjs/plugin/timezone')
+const utc = require('dayjs/plugin/utc')
+dayjs.extend(utc)
+dayjs.extend(timezone)
+dayjs.tz.setDefault('Europe/Madrid')
 
 module.exports = {
   site: 'movistarplus.es',
   days: 2,
-  url: function ({ date }) {
-    return `https://www.movistarplus.es/programacion-tv/${date.format('YYYY-MM-DD')}?v=json`
+  url({ channel, date }) {
+    return `https://ottcache.dof6.com/movistarplus/webplayer/OTT/epg?from=${date.format('YYYY-MM-DDTHH:mm:ss')}&span=1&channel=${channel.site_id}&version=8&mdrm=true&tlsstream=true&demarcation=18`
   },
-  parser({ content, channel, date }) {
+  request: {
+    headers: {
+      'User-Agent':
+        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+      Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+      'Accept-Language': 'es-ES,es;q=0.9,en;q=0.8',
+      Referer: 'https://www.movistarplus.es/programacion-tv'
+    },
+    maxRedirects: 5
+  },
+  async parser({ content }) {
     let programs = []
-    let items = parseItems(content, channel)
+    let items = await parseItems(content)
     if (!items.length) return programs
-    let guideDate = date
-    items.forEach(item => {
-      let startTime = DateTime.fromFormat(
-        `${guideDate.format('YYYY-MM-DD')} ${item.HORA_INICIO}`,
-        'yyyy-MM-dd HH:mm',
-        {
-          zone: 'Europe/Madrid'
-        }
-      ).toUTC()
-      let stopTime = DateTime.fromFormat(
-        `${guideDate.format('YYYY-MM-DD')} ${item.HORA_FIN}`,
-        'yyyy-MM-dd HH:mm',
-        {
-          zone: 'Europe/Madrid'
-        }
-      ).toUTC()
-      if (stopTime < startTime) {
-        guideDate = guideDate.add(1, 'd')
-        stopTime = stopTime.plus({ days: 1 })
-      }
+
+    items.forEach(el => {
       programs.push({
-        title: item.TITULO,
-        category: item.GENERO,
-        start: startTime,
-        stop: stopTime
+        title: el.title,
+        description: el.description,
+        icon: el.icon,
+        images: el.images,
+        season: el.season,
+        episode: el.episode,
+        start: el.start,
+        stop: el.stop
       })
     })
     return programs
   },
   async channels() {
-    const axios = require('axios')
-    const dayjs = require('dayjs')
-    const data = await axios
-      .get(`https://www.movistarplus.es/programacion-tv/${dayjs().format('YYYY-MM-DD')}?v=json`)
+    const json = await axios
+      .get(
+        'https://ottcache.dof6.com/movistarplus/webplayer/OTT/contents/channels?mdrm=true&tlsstream=true&demarcation=18&version=8'
+      )
       .then(r => r.data)
       .catch(console.log)
 
-    return Object.values(data.data).map(item => {
+    // Load JSON, CodCadenaTv is the closest to the old MVSTR site ch. ID
+    return json.map(channel => {
       return {
         lang: 'es',
-        site_id: item.DATOS_CADENA.CODIGO,
-        name: item.DATOS_CADENA.NOMBRE
+        site_id: channel.CodCadenaTv,
+        name: channel.Nombre,
+        logo: channel.Logo ? channel.Logos[0].url : null
       }
     })
   }
 }
 
-function parseItems(content, channel) {
-  const json = typeof content === 'string' ? JSON.parse(content) : content
-  if (!(`${channel.site_id}-CODE` in json.data)) return []
-  const data = json.data[`${channel.site_id}-CODE`]
-  return data ? data.PROGRAMAS : []
+function parseImages(images) {
+  return images.filter(image => image.id === 'watch2tgr-end').map(image => image.uri)
+}
+
+async function parseItems(content) {
+  try {
+    const data = JSON.parse(content)
+    const programs = Array.isArray(data) ? data : [data]
+    return await Promise.all(
+      programs.map(async json => {
+        const start = dayjs.utc(Number(json?.FechaHoraInicio))
+        const stop = dayjs.utc(Number(json?.FechaHoraFin))
+        const ficha = json?.Ficha || null
+        if (!ficha) {
+          return {
+            title: json?.Titulo || '',
+            description: json?.Resena || '',
+            icon: json?.Imagen || '',
+            images: json.Imagenes ? parseImages(json.Imagenes) : [],
+            start,
+            stop
+          }
+        } else {
+          try {
+            const fichaJson = await axios.get(ficha).then(r => r.data)
+            return {
+              title: json?.Titulo || fichaJson?.Titulo || '',
+              description: fichaJson?.Descripcion || json?.Resena || '',
+              icon: fichaJson?.Imagen || '',
+              images: fichaJson.Imagenes ? parseImages(fichaJson.Imagenes) : [],
+              actors: fichaJson?.Actores || [],
+              directors: fichaJson?.Directores || [],
+              classification: fichaJson?.Clasificacion || '',
+              season: fichaJson?.Temporada || null,
+              episode: fichaJson?.NumeroEpisodio || null,
+              start,
+              stop
+            }
+          } catch {
+            return {
+              title: json?.Titulo || '',
+              description: json?.Resena || '',
+              icon: json?.Imagen || '',
+              images: json.Imagenes ? parseImages(json.Imagenes) : [],
+              start,
+              stop
+            }
+          }
+        }
+      })
+    )
+  } catch {
+    return []
+  }
 }

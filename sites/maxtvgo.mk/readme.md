@@ -5,7 +5,7 @@ https://maxtvgo.mk/epg
 ### Download the guide
 
 ```sh
-npm run grab --- --site=maxtvgo.mk
+npm run grab --- --sites=maxtvgo.mk
 ```
 
 ### Update channel list

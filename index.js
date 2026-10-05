@@ -7,7 +7,7 @@ const app = express()
 shell.echo('EPG Scheduled')
 
 cron.schedule('0 4 * * *', () => {
-  shell.exec('npm run grab --- --site=allente.se --output="./public/guide.xml" --lang=sv')
+  shell.exec('npm run grab --- --sites=allente.se --output="./public/guide.xml" --lang=se')
 })
 
 app.use(express.static('public'))

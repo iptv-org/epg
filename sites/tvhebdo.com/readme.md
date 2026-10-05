@@ -5,7 +5,7 @@ https://www.tvhebdo.com/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=tvhebdo.com
+npm run grab --- --sites=tvhebdo.com
 ```
 
 ### Update channel list

@@ -1,0 +1,146 @@
+const axios = require('axios')
+const cheerio = require('cheerio')
+const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
+const customParseFormat = require('dayjs/plugin/customParseFormat')
+const doFetch = require('@ntlab/sfetch')
+
+dayjs.extend(utc)
+dayjs.extend(timezone)
+dayjs.extend(customParseFormat)
+
+const tz = 'Asia/Jakarta'
+let $
+
+module.exports = {
+  site: 'tivie.id',
+  days: 2,
+  url({ channel, date }) {
+    return `https://tivie.id/channel/${channel.site_id}/${date.format('YYYYMMDD')}`
+  },
+  async parser({ content, date }) {
+    const programs = []
+    if (content) {
+      $ = cheerio.load(content)
+      const items = $('ul[x-data] > li[id*="event-"] > div.w-full')
+        .toArray()
+        .map(item => {
+          const $item = $(item)
+          const time = $item.find('div:nth-child(1) span:nth-child(1)')
+          const info = $item.find('div:nth-child(2) h5')
+          const detail = info.find('a')
+          const p = {
+            start: dayjs.tz(`${date.format('YYYY-MM-DD')} ${time.html()}`, 'YYYY-MM-DD HH:mm', tz)
+          }
+          if (detail.length) {
+            const subtitle = detail.find('div')
+            p.title = parseText(subtitle.length ? prune(subtitle, '.sr-only') :
+              prune(detail, '.sr-only'))
+            p.url = detail.attr('href')
+          } else {
+            p.title = parseText(prune(info, '.sr-only'))
+          }
+          if (p.title) {
+            const [, , season, episode] = p.title.match(/( S(\d+))?, Ep\. (\d+)/) || [
+              null,
+              null,
+              null,
+              null
+            ]
+            if (season) {
+              p.season = parseInt(season)
+            }
+            if (episode) {
+              p.episode = parseInt(episode)
+            }
+          }
+          return p
+        })
+      // fetch detailed guide if necessary
+      const queues = items
+        .filter(i => i.url)
+        .map(i => {
+          const url = i.url
+          delete i.url
+          return { i, url }
+        })
+      if (queues.length) {
+        await doFetch(queues, (queue, res) => {
+          if (res) {
+            $ = cheerio.load(res)
+            const info = $('#main-content > div > div:nth-child(2)')
+            // program description
+            const desc = info.find('div[class=""] > p')
+            if (desc.length) {
+              queue.i.description = parseText(prune(desc, '.hide'))
+            }
+            // program categories
+            const cat = info.find('div[class=""] > a')
+            if (cat.length) {
+              queue.i.categories = cat.toArray().map(el => parseText($(el)))
+            }
+            // program image
+            const img = $('#main-content > div > div:nth-child(1) img')
+            if (img.length) {
+              queue.i.image = img.attr('src')
+            }
+          }
+        })
+      }
+      // fill start-stop
+      for (let i = 0; i < items.length; i++) {
+        if (i < items.length - 1) {
+          items[i].stop = items[i + 1].start
+        } else {
+          items[i].stop = dayjs.tz(
+            `${date.add(1, 'd').format('YYYY-MM-DD')} 00:00`,
+            'YYYY-MM-DD HH:mm',
+            tz
+          )
+        }
+      }
+      // add programs
+      programs.push(...items)
+    }
+
+    return programs
+  },
+  async channels({ lang = 'id' }) {
+    const result = await axios
+      .get('https://tivie.id/channel')
+      .then(response => response.data)
+      .catch(console.error)
+
+    const $ = cheerio.load(result)
+    const items = $('ul[x-data] li[x-data] div header h2 a').toArray()
+    const channels = items.map(item => {
+      const $item = $(item)
+      const url = $item.attr('href')
+      return {
+        lang,
+        site_id: url.substr(url.lastIndexOf('/') + 1, url.lastIndexOf('?') - url.lastIndexOf('/') - 1),
+        name: $item.find('strong').text()
+      }
+    })
+
+    return channels
+  }
+}
+
+function parseText($item) {
+  return $item.text()
+    .replace(/\t/g, '')
+    .replace(/\n/g, ' ')
+    .replace(/\s{2,}/g, ' ')
+    .trim()
+}
+
+function prune($item, selector) {
+  if ($) {
+    $item.find(selector)
+      .toArray()
+      .forEach(el => $(el).remove())
+  }
+  return $item
+}

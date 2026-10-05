@@ -1,0 +1,30 @@
+name: ✍️ Channel Request
+description: Request to add a channel to the guide
+labels: ['channel request']
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill out the request as much as possible so we can efficiently process your request.
+
+  - type: input
+    attributes:
+      label: Site
+      description: The name of the site
+      placeholder: 'guidatv.sky.it'
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Channels
+      description: List of channels to be added
+      placeholder: 'BBC One'
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Notes
+      description: Anything else we should know?

@@ -5,7 +5,7 @@ https://www.artonline.tv/guide/1
 ### Download the guide
 
 ```sh
-npm run grab --- --site=artonline.tv
+npm run grab --- --sites=artonline.tv
 ```
 
 ### Test

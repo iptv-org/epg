@@ -5,7 +5,7 @@ https://guidatv.sky.it/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=guidatv.sky.it
+npm run grab --- --sites=guidatv.sky.it
 ```
 
 ### Update channel list

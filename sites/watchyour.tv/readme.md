@@ -5,7 +5,7 @@ https://watchyour.tv/tvexperience.php
 ### Download the guide
 
 ```sh
-npm run grab --- --site=watchyour.tv
+npm run grab --- --sites=watchyour.tv
 ```
 
 ### Update channel list

@@ -5,91 +5,92 @@ const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
 jest.mock('axios')
 
-const date = dayjs.utc('2022-10-28', 'YYYY-MM-DD').startOf('d')
+const date = dayjs.utc('2026-05-30').startOf('d')
 const channel = {
-  site_id: 'NL_000001_019401',
-  xmltv_id: 'NPO1.nl',
-  lang: 'nl'
+  site_id: 'NL_000007_019181',
+  xmltv_id: 'RTL7.nl@SD'
 }
 
+axios.get.mockImplementation(url => {
+  const urls = {
+    'https://staticqbr-prod-nl.gnp.cloud.ziggogo.tv/eng/web/epg-service-lite/nl/en/events/segments/20260530000000':
+      'content00.json',
+    'https://staticqbr-prod-nl.gnp.cloud.ziggogo.tv/eng/web/epg-service-lite/nl/en/events/segments/20260530060000':
+      'content06.json',
+    'https://staticqbr-prod-nl.gnp.cloud.ziggogo.tv/eng/web/epg-service-lite/nl/en/events/segments/20260530120000':
+      'content12.json',
+    'https://staticqbr-prod-nl.gnp.cloud.ziggogo.tv/eng/web/epg-service-lite/nl/en/events/segments/20260530180000':
+      'content18.json',
+    'https://spark-prod-nl.gnp.cloud.ziggogo.tv/eng/web/linear-service/v2/replayEvent/crid:~~2F~~2Fgn.tv~~2F32036579~~2FSH062278610000~~2F492767862,imi:25ee264da729e66ee9ab4cb70d30ab2d76b661f4?returnLinearContent=true&forceLinearResponse=true&language=nl':
+      'program01.json',
+    'https://spark-prod-nl.gnp.cloud.ziggogo.tv/eng/web/linear-service/v2/replayEvent/crid:~~2F~~2Fgn.tv~~2F18311595~~2FEP027840300446,imi:dc898b6240c51d7bb7aa0c13d38409e025ce0a71?returnLinearContent=true&forceLinearResponse=true&language=nl':
+      'program02.json'
+  }
+  let data = ''
+  if (urls[url] !== undefined) {
+    data = fs.readFileSync(path.join(__dirname, '__data__', urls[url])).toString()
+    if (!urls[url].startsWith('content00')) {
+      data = JSON.parse(data)
+    }
+  }
+  return Promise.resolve({ data })
+})
+
 it('can generate valid url', () => {
-  expect(url({ date, channel })).toBe(
-    'https://static.spark.ziggogo.tv/eng/web/epg-service-lite/nl/nl/events/segments/20221028000000'
+  expect(url({ date })).toBe(
+    'https://staticqbr-prod-nl.gnp.cloud.ziggogo.tv/eng/web/epg-service-lite/nl/en/events/segments/20260530000000'
   )
 })
 
 it('can parse response', async () => {
-  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content_0000.json'))
-
-  axios.get.mockImplementation(url => {
-    if (
-      url ===
-      'https://static.spark.ziggogo.tv/eng/web/epg-service-lite/nl/nl/events/segments/20221028060000'
-    ) {
-      return Promise.resolve({
-        data: fs.readFileSync(path.resolve(__dirname, '__data__/content_0600.json'))
-      })
-    } else if (
-      url ===
-      'https://static.spark.ziggogo.tv/eng/web/epg-service-lite/nl/nl/events/segments/20221028120000'
-    ) {
-      return Promise.resolve({
-        data: fs.readFileSync(path.resolve(__dirname, '__data__/content_1200.json'))
-      })
-    } else if (
-      url ===
-      'https://static.spark.ziggogo.tv/eng/web/epg-service-lite/nl/nl/events/segments/20221028180000'
-    ) {
-      return Promise.resolve({
-        data: fs.readFileSync(path.resolve(__dirname, '__data__/content_1800.json'))
-      })
-    } else if (
-      url ===
-      'https://prod.spark.ziggogo.tv/eng/web/linear-service/v2/replayEvent/crid:~~2F~~2Fgn.tv~~2F817615~~2FSH010806510000~~2F144222201,imi:ea187e3432c4a98b5ea45bcc5525c7a93c77b47b?returnLinearContent=true&language=nl'
-    ) {
-      return Promise.resolve({
-        data: JSON.parse(fs.readFileSync(path.resolve(__dirname, '__data__/program.json')))
-      })
-    } else {
-      return Promise.resolve({ data: '' })
-    }
-  })
-
-  let results = await parser({ content, channel, date })
-  results = results.map(p => {
+  const content = await axios
+    .get(url({ date }))
+    .then(response => response.data)
+    .catch(console.error)
+  const result = (await parser({ content, channel, date })).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
     return p
   })
 
-  expect(results[0]).toMatchObject({
-    start: '2022-10-27T23:40:00.000Z',
-    stop: '2022-10-28T00:07:00.000Z',
-    title: 'NOS Journaal',
+  expect(result.length).toBe(21)
+  expect(result[2]).toMatchObject({
+    start: '2026-05-30T04:00:00.000Z',
+    stop: '2026-05-30T11:03:00.000Z',
+    title: 'Telvero',
     description:
-      'Met het laatste nieuws, gebeurtenissen van nationaal en internationaal belang en de weersverwachting voor de avond en komende dagen.',
-    category: ['Nieuws'],
-    actors: [
-      'Malou Petter',
-      'Mark Visser',
-      'Rob Trip',
-      'Jeroen Overbeek',
-      'Simone Weimans',
-      'Annechien Steenhuizen',
-      'Jeroen Tjepkema',
-      'Saïda Maggé',
-      'Winfried Baijens'
-    ]
+      'Homeshoppingprogramma waarin de kijker via de telefoon allerlei producten kan aanschaffen.',
+    category: ["Consumentenprogramma's", 'Shoppen'],
+    // The source sends internal ids here rather than real numbering
+    // (season 78610000, episode 492767862), so they are dropped.
+    season: null,
+    episode: null
+  })
+  expect(result[19]).toMatchObject({
+    start: '2026-05-30T22:44:00.000Z',
+    stop: '2026-05-30T23:39:00.000Z',
+    title: 'Pawn Stars',
+    subTitle: 'Mystery Safe',
+    description:
+      'Rick en Chum onderhandelen over een Superman-pyjama. Rick tikt een vintage industriële snijmachine op de kop. Chum roept de hulp in van Alex als hij een zeldzaam jasje uit de Tweede Wereldoorlog tegenkomt.',
+    category: ['Reality', 'Veiling'],
+    season: 17,
+    episode: 24,
+    actor: ['Corey Harrison', 'Rick Harrison', 'Austin Chumlee Russell']
   })
 })
 
 it('can handle empty guide', async () => {
-  let results = await parser({ content: '', channel, date })
-
-  expect(results).toMatchObject([])
+  const result = await parser({
+    content: '',
+    channel,
+    date
+  })
+  expect(result).toMatchObject([])
 })

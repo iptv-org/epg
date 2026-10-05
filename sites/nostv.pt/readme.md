@@ -5,7 +5,7 @@ https://nostv.pt/guia/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=nostv.pt
+npm run grab --- --sites=nostv.pt
 ```
 
 ### Update channel list

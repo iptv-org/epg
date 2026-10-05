@@ -7,13 +7,13 @@ https://sat.tv/tv-channels
 Arabic:
 
 ```sh
-npm run grab --- --site=sat.tv --lang=ar
+npm run grab --- --sites=sat.tv --lang=ar
 ```
 
 English:
 
 ```sh
-npm run grab --- --site=sat.tv --lang=en
+npm run grab --- --sites=sat.tv --lang=en
 ```
 
 ### Update channel list

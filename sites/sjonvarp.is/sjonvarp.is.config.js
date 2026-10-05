@@ -44,7 +44,7 @@ module.exports = {
     const cheerio = require('cheerio')
 
     const data = await axios
-      .get(`https://sjonvarp.is/`)
+      .get('https://sjonvarp.is/')
       .then(r => r.data)
       .catch(console.log)
 

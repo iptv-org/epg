@@ -5,7 +5,7 @@ https://programacion-tv.elpais.com/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=programacion-tv.elpais.com
+npm run grab --- --sites=programacion-tv.elpais.com
 ```
 
 ### Update channel list

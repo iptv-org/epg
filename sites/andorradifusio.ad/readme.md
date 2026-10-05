@@ -5,7 +5,7 @@ https://andorradifusio.ad/programacio/atv
 ### Download the guide
 
 ```sh
-npm run grab --- --site=andorradifusio.ad
+npm run grab --- --sites=andorradifusio.ad
 ```
 
 ### Test

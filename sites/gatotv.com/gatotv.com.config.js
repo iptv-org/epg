@@ -1,8 +1,11 @@
 const axios = require('axios')
 const cheerio = require('cheerio')
-const url = require('url')
 const path = require('path')
-const { DateTime } = require('luxon')
+const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
+dayjs.extend(utc)
+dayjs.extend(timezone)
 
 module.exports = {
   site: 'gatotv.com',
@@ -13,18 +16,18 @@ module.exports = {
   parser({ content, date }) {
     let programs = []
     const items = parseItems(content)
-    date = date.subtract(1, 'd')
+    date = date.subtract(1, 'day')
     items.forEach((item, i) => {
       const $item = cheerio.load(item)
       let start = parseStart($item, date)
-      if (i === 0 && start.hour >= 5) {
-        start = start.plus({ days: 1 })
-        date = date.add(1, 'd')
+      if (i === 0 && start.hour() >= 5) {
+        start = start.add(1, 'day')
+        date = date.add(1, 'day')
       }
       let stop = parseStop($item, date)
       if (stop < start) {
-        stop = stop.plus({ days: 1 })
-        date = date.add(1, 'd')
+        stop = stop.add(1, 'day')
+        date = date.add(1, 'day')
       }
 
       programs.push({
@@ -40,24 +43,36 @@ module.exports = {
   },
   async channels() {
     const data = await axios
-      .get('https://www.gatotv.com/guia_tv/completa')
+      .get('https://www.gatotv.com/canales_de_tv')
       .then(response => response.data)
       .catch(console.log)
 
     const $ = cheerio.load(data)
-    const items = $('.tbl_EPG_row,.tbl_EPG_rowAlternate').toArray()
+    const items = $('table.tbl_tv_guide tr.tbl_EPG_row, table.tbl_tv_guide tr.tbl_EPG_rowAlternate').toArray()
 
-    return items.map(item => {
-      const $item = cheerio.load(item)
-      const link = $item('td:nth-child(1) > div:nth-child(2) > a:nth-child(3)').attr('href')
-      const parsed = url.parse(link)
+    return items
+      .map(item => {
+        const $item = cheerio.load(item)
+        const link = $item('a[href*="/canal/"]').first().attr('href')
+        if (!link) return null
 
-      return {
-        lang: 'es',
-        site_id: path.basename(parsed.pathname),
-        name: $item('td:nth-child(1) > div:nth-child(2) > a:nth-child(3)').text()
-      }
-    })
+        let pathname
+        try {
+          pathname = new URL(link, 'https://www.gatotv.com').pathname
+        } catch {
+          return null
+        }
+
+        const name = $item('td:nth-child(2) a').text().trim() || $item('a[href*="/canal/"]').last().text().trim()
+        if (!name) return null
+
+        return {
+          lang: 'es',
+          site_id: path.basename(pathname),
+          name
+        }
+      })
+      .filter(Boolean)
   }
 }
 
@@ -78,17 +93,13 @@ function parseImage($item) {
 function parseStart($item, date) {
   const time = $item('td:nth-child(1) > div > time').attr('datetime')
 
-  return DateTime.fromFormat(`${date.format('YYYY-MM-DD')} ${time}`, 'yyyy-MM-dd HH:mm', {
-    zone: 'EST'
-  }).toUTC()
+  return dayjs.tz(`${date.format('YYYY-MM-DD')} ${time}`, 'YYYY-MM-DD HH:mm', 'EST').utc()
 }
 
 function parseStop($item, date) {
   const time = $item('td:nth-child(2) > div > time').attr('datetime')
 
-  return DateTime.fromFormat(`${date.format('YYYY-MM-DD')} ${time}`, 'yyyy-MM-dd HH:mm', {
-    zone: 'EST'
-  }).toUTC()
+  return dayjs.tz(`${date.format('YYYY-MM-DD')} ${time}`, 'YYYY-MM-DD HH:mm', 'EST').utc()
 }
 
 function parseItems(content) {

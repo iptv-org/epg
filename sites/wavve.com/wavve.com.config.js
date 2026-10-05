@@ -1,5 +1,9 @@
 const axios = require('axios')
-const { DateTime } = require('luxon')
+const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
+dayjs.extend(utc)
+dayjs.extend(timezone)
 
 module.exports = {
   site: 'wavve.com',
@@ -47,11 +51,11 @@ module.exports = {
 }
 
 function parseStart(item) {
-  return DateTime.fromFormat(item.starttime, 'yyyy-MM-dd HH:mm', { zone: 'Asia/Seoul' }).toUTC()
+  return dayjs.tz(item.starttime, 'YYYY-MM-DD HH:mm', 'Asia/Seoul').utc()
 }
 
 function parseStop(item) {
-  return DateTime.fromFormat(item.endtime, 'yyyy-MM-dd HH:mm', { zone: 'Asia/Seoul' }).toUTC()
+  return dayjs.tz(item.endtime, 'YYYY-MM-DD HH:mm', 'Asia/Seoul').utc()
 }
 
 function parseItems(content) {

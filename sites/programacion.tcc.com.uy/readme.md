@@ -5,7 +5,7 @@ https://programacion.tcc.com.uy/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=programacion.tcc.com.uy
+npm run grab --- --sites=programacion.tcc.com.uy
 ```
 
 ### Update channel list

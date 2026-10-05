@@ -5,7 +5,7 @@ https://www.programetv.ro/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=programetv.ro
+npm run grab --- --sites=programetv.ro
 ```
 
 ### Update channel list

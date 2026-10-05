@@ -5,7 +5,7 @@ https://moji.id/schedule
 ### Download the guide
 
 ```sh
-npm run grab --- --site=moji.id
+npm run grab --- --sites=moji.id
 ```
 
 ### Test

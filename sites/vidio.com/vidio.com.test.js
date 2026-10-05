@@ -1,53 +1,67 @@
-const { parser, url } = require('./vidio.com.config.js')
+const { parser, url, request } = require('./vidio.com.config.js')
+const fs = require('fs')
+const path = require('path')
+const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
-const date = dayjs.utc('2021-11-24', 'YYYY-MM-DD').startOf('d')
+jest.mock('axios')
+
+const date = dayjs.utc('2025-07-01', 'YYYY-MM-DD').startOf('d')
 const channel = {
-  site_id: '7464',
-  xmltv_id: 'AjwaTV.id'
+  site_id: '204',
+  xmltv_id: 'SCTV.id'
 }
 
 it('can generate valid url', () => {
-  expect(url({ channel })).toBe('https://www.vidio.com/live/7464/schedules')
+  expect(url({ channel, date })).toBe(
+    'https://api.vidio.com/livestreamings/204/schedules?filter[date]=2025-07-01'
+  )
+})
+
+it('can generate valid request headers', async () => {
+  axios.post.mockImplementation(url => {
+    if (url === 'https://www.vidio.com/auth') {
+      return Promise.resolve({
+        data: JSON.parse(fs.readFileSync(path.resolve(__dirname, '__data__/auth.json')))
+      })
+    } else {
+      return Promise.resolve({ data: '' })
+    }
+  })
+
+  const result = await request.headers()
+  expect(result).toMatchObject({
+    'X-API-Key':
+      'CH1ZFsN4N/MIfAds1DL9mP151CNqIpWHqZGRr+LkvUyiq3FRPuP1Kt6aK+pG3nEC1FXt0ZAAJ5FKP8QU8CZ5/jQdSYLVeFwl9NoIkegVpR6b7W2ZwbaF00OPr6ON1/FpLQ3RiUzTPpAqe7f+fwhOr0KrKy8PpCa54OHogaEjI3w=',
+    'X-Secure-Level': 2,
+  })
 })
 
 it('can parse response', () => {
-  const content =
-    '<div class="b-livestreaming-daily-schedule__section b-livestreaming-daily-schedule__contents"> <div class="b-livestreaming-daily-schedule__content" id="schedule-content-20211124"> <div class="js-ahoy b-livestreaming-schedule__ahoy-impression" data-ahoy-component="Ahoy::Builder" data-ahoy-impression="true" data-ahoy-title="LIVESTREAMING" data-use-bounding-client-rect="true" ></div><div class="b-livestreaming-daily-schedule__scroll-container"> <a class="" href="/watch/2361692-30-hari-30-juz-24-november-2021" ><div class="b-livestreaming-daily-schedule__item js-ahoy" data-ahoy-click="true" data-ahoy-component="Ahoy::Builder" data-ahoy-props=\'{"section":"schedule","stream_type":"TvStream","livestreaming_id":7464,"schedule_day":-1,"schedule_id":1471806,"schedule_title":"30 Hari 30 Juz","action":"click"}\' data-ahoy-title="LIVESTREAMING" id="schedule-item-1471806" > <div class="b-livestreaming-daily-schedule__item-icon"> <div class="b-livestreaming-daily-schedule__item-icon-play"></div></div><div class="b-livestreaming-daily-schedule__item-content"> <div class="b-livestreaming-daily-schedule__item-content-caption"> 00:30 - 01:30 WIB </div><div class="b-livestreaming-daily-schedule__item-content-title">30 Hari 30 Juz</div></div></div></a ><a class="" href="/watch/2361785-makkah-live-24-november-2021" ><div class="b-livestreaming-daily-schedule__item js-ahoy" data-ahoy-click="true" data-ahoy-component="Ahoy::Builder" data-ahoy-props=\'{"section":"schedule","stream_type":"TvStream","livestreaming_id":7464,"schedule_day":-1,"schedule_id":1471807,"schedule_title":"Makkah Live","action":"click"}\' data-ahoy-title="LIVESTREAMING" id="schedule-item-1471807" > <div class="b-livestreaming-daily-schedule__item-icon"> <div class="b-livestreaming-daily-schedule__item-icon-play"></div></div><div class="b-livestreaming-daily-schedule__item-content"> <div class="b-livestreaming-daily-schedule__item-content-caption"> 01:30 - 04:00 WIB </div><div class="b-livestreaming-daily-schedule__item-content-title">Makkah Live</div></div></div></a ><a class="" href="/watch/2362889-ftv-islami-24-november-2021" ><div class="b-livestreaming-daily-schedule__item js-ahoy" data-ahoy-click="true" data-ahoy-component="Ahoy::Builder" data-ahoy-props=\'{"section":"schedule","stream_type":"TvStream","livestreaming_id":7464,"schedule_day":-1,"schedule_id":1473829,"schedule_title":"FTV Islami","action":"click"}\' data-ahoy-title="LIVESTREAMING" id="schedule-item-1473829" > <div class="b-livestreaming-daily-schedule__item-icon"> <div class="b-livestreaming-daily-schedule__item-icon-play"></div></div><div class="b-livestreaming-daily-schedule__item-content"> <div class="b-livestreaming-daily-schedule__item-content-caption"> 22:30 - 00:30 WIB </div><div class="b-livestreaming-daily-schedule__item-content-title">FTV Islami</div></div></div></a > </div></div><div class="b-livestreaming-daily-schedule__content tab-active" id="schedule-content-20211125"> <div class="js-ahoy b-livestreaming-schedule__ahoy-impression" data-ahoy-component="Ahoy::Builder" data-ahoy-impression="true" data-ahoy-title="LIVESTREAMING" data-use-bounding-client-rect="true" ></div><div class="b-livestreaming-daily-schedule__scroll-container"> <a class="" href="/watch/2362921-30-hari-30-juz-25-november-2021" ><div class="b-livestreaming-daily-schedule__item js-ahoy" data-ahoy-click="true" data-ahoy-component="Ahoy::Builder" data-ahoy-props=\'{"section":"schedule","stream_type":"TvStream","livestreaming_id":7464,"schedule_day":0,"schedule_id":1473830,"schedule_title":"30 Hari 30 Juz","action":"click"}\' data-ahoy-title="LIVESTREAMING" id="schedule-item-1473830" > <div class="b-livestreaming-daily-schedule__item-icon"> <div class="b-livestreaming-daily-schedule__item-icon-play"></div></div><div class="b-livestreaming-daily-schedule__item-content"> <div class="b-livestreaming-daily-schedule__item-content-caption"> 00:30 - 01:30 WIB </div><div class="b-livestreaming-daily-schedule__item-content-title">30 Hari 30 Juz</div></div></div></a > </div></div></div>'
-  const result = parser({ content, date }).map(p => {
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'))
+  const results = parser({ content, channel, date }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
     return p
   })
 
-  expect(result).toMatchObject([
-    {
-      start: '2021-11-23T17:30:00.000Z',
-      stop: '2021-11-23T18:30:00.000Z',
-      title: '30 Hari 30 Juz'
-    },
-    {
-      start: '2021-11-23T18:30:00.000Z',
-      stop: '2021-11-23T21:00:00.000Z',
-      title: 'Makkah Live'
-    },
-    {
-      start: '2021-11-24T15:30:00.000Z',
-      stop: '2021-11-24T17:30:00.000Z',
-      title: 'FTV Islami'
-    }
-  ])
+  expect(results.length).toBe(21)
+  expect(results[0]).toMatchObject({
+    start: '2025-06-30T15:57:00.000Z',
+    stop: '2025-06-30T17:29:00.000Z',
+    title: 'Ftv PrimeTime : Cinta Dodol Inilah Yang Membuatku Lengket Padamu',
+    description: 'Film televisi yang mengangkat kisah romantisme kehidupan dengan konflik yang menarik. tayang setiap hari'
+  })
 })
 
 it('can handle empty guide', () => {
-  const result = parser({
-    date,
-    channel,
-    content: '<!DOCTYPE html><html><head></head><body></body></html>'
-  })
-  expect(result).toMatchObject([])
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/no_content.json'))
+  const results = parser({ content, channel })
+
+  expect(results).toMatchObject([])
 })

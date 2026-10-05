@@ -1,4 +1,6 @@
 const { parser, url, request } = require('./siba.com.co.config.js')
+const fs = require('fs')
+const path = require('path')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -10,8 +12,6 @@ const channel = {
   site_id: '395',
   xmltv_id: 'CanalClaro.cl'
 }
-const content =
-  '{"list":[{"id":"395","nom":"CANAL CLARO","num":"102","logo":"7c4b9e8566a6e867d1db4c7ce845f1f4.jpg","cat":"Exclusivos Claro","prog":[{"id":"665724465","nom":"Worst Cooks In America","ini":1636588800,"fin":1636592400}]}],"error":null}'
 
 it('can generate valid url', () => {
   expect(url).toBe('http://devportal.siba.com.co/index.php?action=grilla')
@@ -32,6 +32,7 @@ it('can generate valid request data', () => {
 })
 
 it('can parse response', () => {
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'))
   const result = parser({ date, channel, content })
   expect(result).toMatchObject([
     {
@@ -46,7 +47,8 @@ it('can handle empty guide', () => {
   const result = parser({
     date,
     channel,
-    content: '{"list":[],"error":null}'
+    content: fs.readFileSync(path.resolve(__dirname, '__data__/no_content.json'))
+
   })
   expect(result).toMatchObject([])
 })

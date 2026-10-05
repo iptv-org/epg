@@ -1,4 +1,4 @@
-const { parser, url, request } = require('./starhubtvplus.com.config.js')
+const { parser, url } = require('./starhubtvplus.com.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -33,12 +33,15 @@ it('can parse response', async () => {
     {
       start: '2024-12-03T17:25:00.000Z',
       stop: '2024-12-03T18:20:00.000Z',
-      title: 'Northern Rexposure',
-      subTitle: 'Hudson & Rex (Season 5)',
+      title: 'Hudson & Rex (Season 5)',
+      subTitle: 'Northern Rexposure',
       description:
-        'When Jesse\'s sister contacts him for help, he, Sarah and Rex head to Northern Ontario and find themselves in the middle of a deadly situation.',
+        "When Jesse's sister contacts him for help, he, Sarah and Rex head to Northern Ontario and find themselves in the middle of a deadly situation.",
       category: ['Drama'],
-      image: ['https://poster.starhubgo.com/poster/ch511_hudson_rex5.jpg?w=960&h=540', 'https://poster.starhubgo.com/poster/ch511_hudson_rex5.jpg?w=341&h=192'],
+      image: [
+        'https://poster.starhubgo.com/poster/ch511_hudson_rex5.jpg?w=960&h=540',
+        'https://poster.starhubgo.com/poster/ch511_hudson_rex5.jpg?w=341&h=192'
+      ],
       season: 5,
       episode: 15,
       rating: 'PG13'

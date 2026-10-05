@@ -1,0 +1,143 @@
+{
+  "manifest": {
+    "mpx": {
+      "accountPid": "mdeprod",
+      "locationIdUri": "http://data.entertainment.tv.theplatform.eu/entertainment/data/Location/245991976396",
+      "feeds": {
+        "allChannelSchedulesFeed": "https://feed.entertainment.tv.theplatform.eu/f/{MpxAccountPid}/{MpxAccountPid}-all-channel-schedules",
+        "allChannelStationsFeed": "https://feed.entertainment.tv.theplatform.eu/f/{MpxAccountPid}/{MpxAccountPid}-channel-stations-main"
+      }
+    }
+  },
+  "channels": {
+    "startIndex": 1,
+    "itemsPerPage": 2,
+    "entryCount": 2,
+    "entries": [
+      {
+        "id": "http://data.entertainment.tv.theplatform.eu/entertainment/data/ChannelSchedule/259549736360",
+        "title": "Das Erste HD - Main",
+        "stations": {
+          "http://data.entertainment.tv.theplatform.eu/entertainment/data/Station/259550248018": {
+            "id": "http://data.entertainment.tv.theplatform.eu/entertainment/data/Station/259550248018",
+            "title": "Das Erste",
+            "guid": "das_erste_hd",
+            "thumbnails": {
+              "stationLogoColored": {
+                "url": "https://example.com/das-erste-colored.png",
+                "width": 120,
+                "height": 48
+              },
+              "stationLogo": {
+                "url": "https://example.com/das-erste.png",
+                "width": 120,
+                "height": 48
+              }
+            },
+            "dt$serviceId": "das-erste",
+            "dt$quality": "HD"
+          }
+        },
+        "dt$displayChannelNumber": 1,
+        "dt$isAdult": false,
+        "dt$isRadio": false
+      },
+      {
+        "id": "http://data.entertainment.tv.theplatform.eu/entertainment/data/ChannelSchedule/265809960058",
+        "title": "DabeiTV Radio - Main",
+        "stations": {
+          "http://data.entertainment.tv.theplatform.eu/entertainment/data/Station/265809960059": {
+            "id": "http://data.entertainment.tv.theplatform.eu/entertainment/data/Station/265809960059",
+            "title": "DabeiTV Radio",
+            "guid": "dabei_radio",
+            "dt$serviceId": "dabei-radio"
+          }
+        },
+        "dt$displayChannelNumber": 865,
+        "dt$isAdult": false,
+        "dt$isRadio": true
+      }
+    ]
+  },
+  "schedule": {
+    "startIndex": 1,
+    "itemsPerPage": 1,
+    "entryCount": 1,
+    "entries": [
+      {
+        "id": "http://data.entertainment.tv.theplatform.eu/entertainment/data/ChannelSchedule/262270504164",
+        "guid": "sat1_hd-245991976396",
+        "channelNumber": 4,
+        "listings": [
+          {
+            "id": "http://data.entertainment.tv.theplatform.eu/entertainment/data/Listing/775359528265",
+            "guid": "sat1_hd_03078f33",
+            "startTime": 1778458200000,
+            "endTime": 1778461620000,
+            "program": {
+              "id": "http://data.entertainment.tv.theplatform.eu/entertainment/data/Program/775354920143",
+              "title": "FBI: Special Crime Unit",
+              "description": "Eine gigantische Explosion in Brooklyn ruft das FBI auf den Plan. Hinweise deuten auf eine vorsätzliche Fremdeinwirkung hin.",
+              "isAdult": false,
+              "programType": "episode",
+              "ratings": [
+                {
+                  "scheme": "telekom-age-rating-2020",
+                  "rating": "UNKNOWN",
+                  "subRatings": []
+                }
+              ],
+              "runtime": 3473,
+              "secondaryTitle": "Aufstand",
+              "seriesId": "http://data.entertainment.tv.theplatform.eu/entertainment/data/Program/guid/2709353023/telekom.de-110697",
+              "tags": [
+                {
+                  "scheme": "category",
+                  "title": "200-Serie",
+                  "titleLocalized": {}
+                },
+                {
+                  "scheme": "genre-primary",
+                  "title": "Krimi",
+                  "titleLocalized": {}
+                },
+                {
+                  "scheme": "genre-secondary",
+                  "title": "Action",
+                  "titleLocalized": {}
+                },
+                {
+                  "scheme": "genre-secondary",
+                  "title": "Thriller",
+                  "titleLocalized": {}
+                },
+                {
+                  "scheme": "genre-secondary",
+                  "title": "Krimi",
+                  "titleLocalized": {}
+                },
+                {
+                  "scheme": "programSubType",
+                  "title": "linear_program",
+                  "titleLocalized": {}
+                }
+              ],
+              "tvSeasonEpisodeNumber": null,
+              "tvSeasonNumber": null,
+              "year": 2025,
+              "dt$countries": "us",
+              "dt$originalIds": {
+                "cmlsProgramId": "03078f33",
+                "tva": "crid://telekom.de/03078f33"
+              }
+            },
+            "stationId": "http://data.entertainment.tv.theplatform.eu/entertainment/data/Station/262269992390",
+            "dt$languages": ["deu"],
+            "dt$programInfo": "{'tvSeasonEpisodeNumber' : 7, 'tvSeasonNumber' : 8, 'seriesEpisodeNumber' : null}",
+            "dt$seriesTitle": "FBI: Special Crime Unit"
+          }
+        ]
+      }
+    ]
+  }
+}

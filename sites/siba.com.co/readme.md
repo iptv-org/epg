@@ -5,7 +5,7 @@ https://web.siba.com.co/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=siba.com.co
+npm run grab --- --sites=siba.com.co
 ```
 
 ### Test

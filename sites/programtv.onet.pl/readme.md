@@ -5,7 +5,7 @@ https://programtv.onet.pl/ _[Geo-blocked]_
 ### Download the guide
 
 ```sh
-npm run grab --- --site=programtv.onet.pl
+npm run grab --- --sites=programtv.onet.pl
 ```
 
 ### Update channel list

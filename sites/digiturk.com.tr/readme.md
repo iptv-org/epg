@@ -1,11 +1,11 @@
 # digiturk.com.tr
 
-https://www.digiturk.com.tr/yayin-akisi
+https://www.digiturk.com.tr/yayin-akisi (only accessible with a Turkish IP address)
 
 ### Download the guide
 
 ```sh
-npm run grab --- --site=digiturk.com.tr
+npm run grab --- --sites=digiturk.com.tr
 ```
 
 ### Update channel list

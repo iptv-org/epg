@@ -5,7 +5,7 @@ https://www.tvarenasport.com/tv-scheme
 ### Download the guide
 
 ```sh
-npm run grab --- --site=tvarenasport.com
+npm run grab --- --sites=tvarenasport.com
 ```
 
 ### Update channel list

@@ -12,22 +12,28 @@ module.exports = {
   },
   request: {
     headers: {
-      'x-requested-with': 'XMLHttpRequest'
+      'x-requested-with': 'XMLHttpRequest',
+      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36',
+      'referer': 'https://tvprofil.com/tvprogram/',
+      'accept': 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01'
     }
   },
   parser: function ({ content }) {
     let programs = []
     const items = parseItems(content)
     items.forEach(item => {
-      const $item = cheerio.load(item)
-      const title = parseTitle($item)
-      const category = parseCategory($item)
-      const start = parseStart($item)
-      const duration = parseDuration($item)
-      const stop = start.add(duration, 's')
-      const image = parseImage($item)
+      const $ = cheerio.load(item)
+      $('div.row').each((_, el) => {
+        const $item = $(el)
+        const title = parseTitle($item)
+        const category = parseCategory($item)
+        const start = parseStart($item)
+        const duration = parseDuration($item)
+        const stop = start.add(duration, 's')
+        const icon = parseImage($item)
 
-      programs.push({ title, category, start, stop, image })
+        programs.push({ title, category, start, stop, icon })
+      })
     })
 
     return programs
@@ -45,7 +51,7 @@ module.exports = {
       de: { channelsPath: '/de', progsPath: 'de/tvprogramm', lang: 'de' },
       es: { channelsPath: '/es', progsPath: 'es/programacion-tv', lang: 'es' },
       fr: { channelsPath: '/fr', progsPath: 'fr/programme-tv', lang: 'fr' },
-      hr: { channelsPath: '', progsPath: 'tvprogram', lang: 'hr' },
+      hr: { channelsPath: '',    progsPath: 'tvprogram', lang: 'hr' },
       hu: { channelsPath: '/hu', progsPath: 'hu/tvmusor', lang: 'hu' },
       ie: { channelsPath: '/ie', progsPath: 'ie/tvschedule', lang: 'en' },
       it: { channelsPath: '/it', progsPath: 'it/guida-tv', lang: 'it' },
@@ -74,6 +80,12 @@ module.exports = {
         .get(url, {
           params: {
             callback: 'cb'
+          },
+          headers: {
+            'x-requested-with': 'XMLHttpRequest',
+            'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36',
+            'referer': 'https://tvprofil.com/programtv/',
+            'accept': 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
           }
         })
         .then(r => r.data)
@@ -91,6 +103,7 @@ module.exports = {
           channels.push({
             lang,
             site_id: `${config.progsPath}#${item.urlID}`,
+            xmltv_id: `${item.title.replaceAll(/[ '&]/g, '')}.${country}`,
             name: item.title
           })
         })
@@ -102,63 +115,72 @@ module.exports = {
 }
 
 function parseImage($item) {
-  return $item(':root').data('image')
+  return $item.attr('data-image') || null
 }
 
 function parseDuration($item) {
-  return $item(':root').data('len')
+  return parseInt($item.attr('data-len'))
 }
 
 function parseStart($item) {
-  const timestamp = $item(':root').data('ts')
-
+  const timestamp = parseInt($item.attr('data-ts'))
   return dayjs.unix(timestamp)
 }
 
 function parseCategory($item) {
-  return $item('.col:nth-child(2) > small').text() || null
+  return $item.find('.col:nth-child(2) > small').text() || null
 }
 
 function parseTitle($item) {
-  let title = $item('.col:nth-child(2) > a').text()
-  title += $item('.col:nth-child(2)').clone().children().remove().end().text()
+  let title = $item.find('.col:nth-child(2) > a').text()
+  title += $item.find('.col:nth-child(2)').clone().children().remove().end().text()
 
   return title.replace('®', '').trim().replace(/,$/, '')
 }
 
 function parseItems(content) {
-  let data = (content.match(/cb\((.*)\)/) || [null, null])[1]
+  let data = (content.match(/^[^(]+\(([\s\S]*)\)$/) || [null, null])[1]
   if (!data) return []
   let json = JSON.parse(data)
   if (!json || !json.data || !json.data.program) return []
 
-  const $ = cheerio.load(json.data.program)
-
-  return $('.row').toArray()
+  return [json.data.program]
 }
 
 function buildQuery(site_id, date) {
   const query = {
     datum: date.format('YYYY-MM-DD'),
-    kanal: site_id,
-    callback: 'cb'
+    kanal: site_id
+    // callback: 'cb' // possibly still working
   }
 
   let c = 4
-  const a = query.datum + query.kanal + c
-  const ua = query.kanal + query.datum
+  let a = query.datum + query.kanal + c
+  let ua = query.kanal + query.datum
 
-  let i = a.length,
-    b = 2
+  if (
+    typeof ua === 'undefined' ||
+    ua === null ||
+    ua === '' ||
+    ua === 0 ||
+    ua === '0' ||
+    ua !== ua
+  ) {
+    ua = 'none'
+  }
 
   for (let j = 0; j < ua.length; j++) c += ua.charCodeAt(j)
+
+  let i = a.length
+  let b = 2
   while (i--) {
     b += (a.charCodeAt(i) + c * 2) * i
   }
 
   b = b.toString()
-  const key = 'b' + b.charCodeAt(b.length - 1)
-
+  const lastCharCode = b.charCodeAt(b.length - 1)
+  const key = 'b' + lastCharCode
+  query['callback'] = `tvprogramit${lastCharCode}`
   query[key] = b
 
   return new URLSearchParams(query).toString()

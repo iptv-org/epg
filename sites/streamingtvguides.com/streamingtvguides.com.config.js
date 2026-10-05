@@ -2,7 +2,8 @@ const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 const timezone = require('dayjs/plugin/timezone')
-const _ = require('lodash')
+const sortBy = require('lodash.sortby')
+const uniqBy = require('lodash.uniqby')
 
 dayjs.extend(customParseFormat)
 dayjs.extend(timezone)
@@ -29,14 +30,17 @@ module.exports = {
       })
     })
 
-    programs = _.orderBy(_.uniqBy(programs, 'start'), 'start')
+    programs = sortBy(
+      uniqBy(programs, p => p.start),
+      p => p.start.valueOf()
+    )
 
     return programs
   },
-  async channels({ country, lang }) {
+  async channels() {
     const axios = require('axios')
     const data = await axios
-      .get(`https://streamingtvguides.com/Preferences`)
+      .get('https://streamingtvguides.com/Preferences')
       .then(r => r.data)
       .catch(console.log)
 
@@ -44,7 +48,7 @@ module.exports = {
 
     const $ = cheerio.load(data)
     $('#channel-group-all > div > div').each((i, el) => {
-      const site_id = $(el).find('input').attr('value').replace('&', '&amp;')
+      const site_id = $(el).find('input').attr('value').replace(/&/g, '&amp;')
       const label = $(el).text().trim()
       const svgTitle = $(el).find('svg').attr('alt')
       const name = (label || svgTitle || '').replace(site_id, '').trim()

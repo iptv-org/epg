@@ -13,10 +13,12 @@ module.exports = {
   request: {
     headers: {
       'Accept-Language': 'en-US,en;',
-      Cookie: 'AAMC_foxtel_0=REGION|6'
+      Cookie: 'AAMC_foxtel_0=REGION|7',
+      'User-Agent':
+        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
     }
   },
-  parser: function ({ content, date }) {
+  async parser({ content, date }) {
     let programs = []
     const items = parseItems(content)
     for (let item of items) {
@@ -31,9 +33,18 @@ module.exports = {
         prev.stop = start
       }
       const stop = start.add(30, 'm')
+
+      const programId = parseProgramId($item)
+      const details = await loadProgramDetails(programId)
+      let description
+      if (details) {
+        description = parseDescription(details)
+      }
+
       programs.push({
         title: parseTitle($item),
         sub_title: parseSubTitle($item),
+        description,
         image: parseImage($item),
         rating: parseRating($item),
         season: parseSeason($item),
@@ -69,6 +80,34 @@ module.exports = {
       }
     })
   }
+}
+
+function parseProgramId($item) {
+  const href = $item('*').attr('href')
+
+  return href.split('/')[1]
+}
+
+async function loadProgramDetails(programId) {
+  if (!programId) return {}
+
+  return await axios
+    .get(
+      `https://www.foxtel.com.au/webepg/ws/foxtel/event/${programId}?movieHeight=213&tvShowHeight=213&regionId=8336`,
+      {
+        headers: {
+          'sec-fetch-dest': 'empty',
+          'sec-fetch-site': 'same-origin',
+          'User-Agent': 'insomnia/2022.7.5'
+        }
+      }
+    )
+    .then(r => r.data)
+    .catch(console.log)
+}
+
+function parseDescription(details) {
+  return details?.event?.shortSynopsis
 }
 
 function parseSeason($item) {

@@ -5,7 +5,7 @@ https://entertainment.ie/tv/all-channels/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=entertainment.ie
+npm run grab --- --sites=entertainment.ie
 ```
 
 ### Update channel list

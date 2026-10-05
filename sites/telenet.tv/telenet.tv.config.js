@@ -1,9 +1,9 @@
 const axios = require('axios')
 const dayjs = require('dayjs')
 
-const API_STATIC_ENDPOINT = 'https://static.spark.telenet.tv/eng/web/epg-service-lite/be'
+const API_STATIC_ENDPOINT = 'https://staticqbr-prod-be.gnp.cloud.telenet.tv/eng/web/epg-service-lite/be'
 const API_PROD_ENDPOINT = 'https://spark-prod-be.gnp.cloud.telenet.tv/eng/web/linear-service/v2'
-const API_IMAGE_ENDPOINT = 'https://staticqbr-prod-be.gnp.cloud.telenet.tv/image-service';
+const API_IMAGE_ENDPOINT = 'https://staticqbr-prod-be.gnp.cloud.telenet.tv/image-service'
 
 module.exports = {
   site: 'telenet.tv',
@@ -14,7 +14,7 @@ module.exports = {
     }
   },
   url: function ({ date, channel }) {
-    return `${API_STATIC_ENDPOINT}/${channel.lang}/events/segments/${date.format('YYYYMMDDHHmmss')}`
+    return `${API_STATIC_ENDPOINT}/${channel.lang}/events/segments/${date.format('YYYYMMDD')}000000`
   },
   async parser({ content, channel, date }) {
     let programs = []
@@ -22,25 +22,19 @@ module.exports = {
     if (!items.length) return programs
     const promises = [
       axios.get(
-        `${API_STATIC_ENDPOINT}/${channel.lang}/events/segments/${date
-          .add(6, 'h')
-          .format('YYYYMMDDHHmmss')}`,
+        `${API_STATIC_ENDPOINT}/${channel.lang}/events/segments/${date.format('YYYYMMDD')}060000`,
         {
           responseType: 'arraybuffer'
         }
       ),
       axios.get(
-        `${API_STATIC_ENDPOINT}/${channel.lang}/events/segments/${date
-          .add(12, 'h')
-          .format('YYYYMMDDHHmmss')}`,
+        `${API_STATIC_ENDPOINT}/${channel.lang}/events/segments/${date.format('YYYYMMDD')}120000`,
         {
           responseType: 'arraybuffer'
         }
       ),
       axios.get(
-        `${API_STATIC_ENDPOINT}/${channel.lang}/events/segments/${date
-          .add(18, 'h')
-          .format('YYYYMMDDHHmmss')}`,
+        `${API_STATIC_ENDPOINT}/${channel.lang}/events/segments/${date.format('YYYYMMDD')}180000`,
         {
           responseType: 'arraybuffer'
         }
@@ -63,6 +57,7 @@ module.exports = {
       const detail = await loadProgramDetails(item, channel)
       programs.push({
         title: item.title,
+        subTitle: detail.episodeName,
         icon: parseIcon(item),
         description: detail.longDescription,
         category: detail.genres,
@@ -94,7 +89,7 @@ module.exports = {
 
 async function loadProgramDetails(item, channel) {
   if (!item.id) return {}
-    const url = `${API_PROD_ENDPOINT}/replayEvent/${item.id}?returnLinearContent=true&language=${channel.lang}`
+  const url = `${API_PROD_ENDPOINT}/replayEvent/${item.id}?returnLinearContent=true&language=${channel.lang}`
   const data = await axios
     .get(url)
     .then(r => r.data)
@@ -134,5 +129,5 @@ function parseEpisode(detail) {
 }
 
 function parseIcon(item) {
-  return `${API_IMAGE_ENDPOINT}/intent/${item.id}/posterTile`;
+  return `${API_IMAGE_ENDPOINT}/intent/${item.id}/posterTile`
 }

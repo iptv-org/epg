@@ -5,7 +5,7 @@ https://www.dsmart.com.tr/yayin-akisi
 ### Download the guide
 
 ```sh
-npm run grab --- --site=dsmart.com.tr
+npm run grab --- --sites=dsmart.com.tr
 ```
 
 ### Update channel list

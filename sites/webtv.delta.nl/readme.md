@@ -5,7 +5,7 @@ https://webtv.delta.nl/#/guide
 ### Download the guide
 
 ```sh
-npm run grab --- --site=webtv.delta.nl
+npm run grab --- --sites=webtv.delta.nl
 ```
 
 ### Update channel list

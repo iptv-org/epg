@@ -1,54 +1,59 @@
-const { parser, url, request } = require('./mts.rs.config.js')
+const { parser, url } = require('./mts.rs.config.js')
+const fs = require('fs')
+const path = require('path')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
-const date = dayjs.utc('2021-11-07', 'YYYY-MM-DD').startOf('d')
+const date = dayjs.utc('2025-01-23', 'YYYY-MM-DD').startOf('d')
 const channel = {
-  site_id: '101#597',
-  xmltv_id: 'RTS1.rs'
+  site_id: 'rts_1_hd',
+  xmltv_id: 'RTS1HD.rs'
 }
-const content =
-  '{"page":0,"total_pages":1,"date":"2021-11-07","channels":[{"id":"597","name":"RTS 1","description":null,"link":null,"image":"https://mts.rs/oec/images/tv_channels/904ddd8cd6720a4a1c23eae513b5b957.jpg","position":"101","positions":"101","items":[{"id_channel":"597","title":"Zaboravljeni zlo\u010din","description":"Novinarka-fotoreporter, D\u017ein, istra\u017euje okrutno i senzacionalno, nere\u0161eno ubistvo sekirom iz davne 1873. godine. Ubistvo koje koincidira sa nedavnim identi\u010dnim brutalnim dvostrukim ubistvom. Zaplet se odvija izme\u0111u pri\u010de o\u010devica iz toga doba - pri\u010de iz novinske arhive i D\u017einine privatne borbe sa ljubomorom i sumnjom koje prate njen brak.","start":"00:00:00","duration":"103.00","full_start":"2021-11-06 23:44:00","full_end":"2021-11-07 01:43:00","image":"https://mts.rs/oec/images/epg/2_abb81cc24d8ce957eece50f991a31e59780e4e53_E7D8ECDE568E84E3C86CCDBDB647355E.jpg","category":"Bioskopski film","subcategory":""}]}]}'
 
 it('can generate valid url', () => {
-  const result = url({ date, channel })
-  expect(result).toBe('https://mts.rs/oec/epg/program?date=2021-11-07&position=101')
-})
-
-it('can generate valid request headers', () => {
-  expect(request.headers).toMatchObject({
-    'X-Requested-With': 'XMLHttpRequest'
-  })
+  expect(url({ date })).toBe(
+    'https://mts.rs/hybris/ecommerce/b2c/v1/products/search?sort=pozicija-rastuce&searchQueryContext=CHANNEL_PROGRAM&query=:pozicija-rastuce:tip-kanala-radio:TV kanali:channelProgramDates:2025-01-23&pageSize=10000'
+  )
 })
 
 it('can parse response', () => {
-  const result = parser({ date, channel, content }).map(p => {
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.json'))
+  const results = parser({ channel, content }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
     return p
   })
-  expect(result).toMatchObject([
-    {
-      start: '2021-11-06T22:44:00.000Z',
-      stop: '2021-11-07T00:43:00.000Z',
-      title: 'Zaboravljeni zlo\u010din',
-      category: 'Bioskopski film',
-      image:
-        'https://mts.rs/oec/images/epg/2_abb81cc24d8ce957eece50f991a31e59780e4e53_E7D8ECDE568E84E3C86CCDBDB647355E.jpg',
-      description:
-        'Novinarka-fotoreporter, D\u017ein, istra\u017euje okrutno i senzacionalno, nere\u0161eno ubistvo sekirom iz davne 1873. godine. Ubistvo koje koincidira sa nedavnim identi\u010dnim brutalnim dvostrukim ubistvom. Zaplet se odvija izme\u0111u pri\u010de o\u010devica iz toga doba - pri\u010de iz novinske arhive i D\u017einine privatne borbe sa ljubomorom i sumnjom koje prate njen brak.'
-    }
-  ])
+
+  expect(results.length).toBe(31)
+  expect(results[0]).toMatchObject({
+    start: '2025-01-22T23:25:00.000Z',
+    stop: '2025-01-23T00:15:00.000Z',
+    title: 'Jeloustoun',
+    category: 'Tv-serijali',
+    image:
+      'https://mediasb2c.mts.rs/medias/5-72517fcb4505f9d7809814598fed5ce6d84571a1-99415C04AED37264BC49C11115B94633.jpg?context=bWFzdGVyfHJvb3R8Nzc4MjN8aW1hZ2UvanBlZ3xhRFpsTDJoa01pODBOakF6T0RnME9UVTROVEU0TWk4MVh6Y3lOVEUzWm1OaU5EVXdOV1k1WkRjNE1EazRNVFExT1RobVpXUTFZMlUyWkRnME5UY3hZVEZmT1RrME1UVkRNRFJCUlVRek56STJORUpETkRsRE1URXhNVFZDT1RRMk16TXVhbkJufGUwZDIyMWU4MDIxZWVhZjY5MDY0ODQ0YjI5OWVjMGJjMDNlNWI3ZjMwNmE0MjYwMWJlMWQxNGFiMzNlMzU1NDE',
+    description:
+      'Serija prati život Džona Datona, koga tumači oskarovac Kevin Kostner, koji mora da se bori sa spoljnim i unutrašnjim pretnjama kako bi zaštitio svoju porodicu, ranč i imanje. Smeštena u divlje prostranstvo Montane, serija istražuje složene moralne dileme, borbe za opstanak i porodične sukobe u modernom zapadnom okruženju. Sa prelepim pejzažima i napetim zapletima, Jeloustoun nudi priču o ljubavi, lojalnosti, moći i borbi za očuvanje tradicije. Kevin Kostner nije samo glumac u seriji, već i jedan od producenata. Njegovo bogato iskustvo u filmskoj industriji, uključujući režiju i produkciju, pomoglo je da Jeloustoun bude verodostojan i autentičan prikaz života na ranču. Serija je dobila silne nagrade, a među njima i Zlatni globus za najbolju televizijsku seriju (drama) 2021. godine, dok je Kevin Kostner je osvojio nagradu za Najboljeg glumca u dramskoj televizijskoj seriji, iste godine godine. Nekoliko puta je bila nominovana za nagradu Emi.'
+  })
+  expect(results[30]).toMatchObject({
+    start: '2025-01-23T23:30:00.000Z',
+    stop: '2025-01-24T00:20:00.000Z',
+    title: 'Jeloustoun',
+    category: 'Tv-serijali',
+    image:
+      'https://mediasb2c.mts.rs/medias/5-72517fcb4505f9d7809814598fed5ce6d84571a1-99415C04AED37264BC49C11115B94633.jpg?context=bWFzdGVyfHJvb3R8Nzc4MjN8aW1hZ2UvanBlZ3xhRFpsTDJoa01pODBOakF6T0RnME9UVTROVEU0TWk4MVh6Y3lOVEUzWm1OaU5EVXdOV1k1WkRjNE1EazRNVFExT1RobVpXUTFZMlUyWkRnME5UY3hZVEZmT1RrME1UVkRNRFJCUlVRek56STJORUpETkRsRE1URXhNVFZDT1RRMk16TXVhbkJufGUwZDIyMWU4MDIxZWVhZjY5MDY0ODQ0YjI5OWVjMGJjMDNlNWI3ZjMwNmE0MjYwMWJlMWQxNGFiMzNlMzU1NDE',
+    description:
+      'Serija prati život Džona Datona, koga tumači oskarovac Kevin Kostner, koji mora da se bori sa spoljnim i unutrašnjim pretnjama kako bi zaštitio svoju porodicu, ranč i imanje. Smeštena u divlje prostranstvo Montane, serija istražuje složene moralne dileme, borbe za opstanak i porodične sukobe u modernom zapadnom okruženju. Sa prelepim pejzažima i napetim zapletima, Jeloustoun nudi priču o ljubavi, lojalnosti, moći i borbi za očuvanje tradicije. Kevin Kostner nije samo glumac u seriji, već i jedan od producenata. Njegovo bogato iskustvo u filmskoj industriji, uključujući režiju i produkciju, pomoglo je da Jeloustoun bude verodostojan i autentičan prikaz života na ranču. Serija je dobila silne nagrade, a među njima i Zlatni globus za najbolju televizijsku seriju (drama) 2021. godine, dok je Kevin Kostner je osvojio nagradu za Najboljeg glumca u dramskoj televizijskoj seriji, iste godine godine. Nekoliko puta je bila nominovana za nagradu Emi.'
+  })
 })
 
 it('can handle empty guide', () => {
   const result = parser({
-    date,
     channel,
-    content: '{"message":"Nema rezultata."}'
+    content: fs.readFileSync(path.resolve(__dirname, '__data__/no_content.json'))
   })
   expect(result).toMatchObject([])
 })

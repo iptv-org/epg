@@ -12,7 +12,7 @@
 ## Download the guide
 
 ```sh
-npm run grab --- --site=s.mxtv.jp
+npm run grab --- --sites=s.mxtv.jp
 ```
 
 ## Update channel list

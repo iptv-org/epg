@@ -5,7 +5,7 @@ https://frikanalen.no/schedule
 ### Download the guide
 
 ```sh
-npm run grab --- --site=frikanalen.no
+npm run grab --- --sites=frikanalen.no
 ```
 
 ### Test

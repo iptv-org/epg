@@ -5,7 +5,7 @@ https://sjonvarp.is/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=sjonvarp.is
+npm run grab --- --sites=sjonvarp.is
 ```
 
 ### Update channel list

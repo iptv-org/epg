@@ -74,7 +74,10 @@ module.exports = {
       axios.get(`${API_ENDPOINT}/epg/10006/19700101/0.json?limit=50&offset=150`),
       axios.get(`${API_ENDPOINT}/epg/10006/19700101/0.json?limit=50&offset=200`),
       axios.get(`${API_ENDPOINT}/epg/10006/19700101/0.json?limit=50&offset=250`),
-      axios.get(`${API_ENDPOINT}/epg/10006/19700101/0.json?limit=50&offset=300`)
+      axios.get(`${API_ENDPOINT}/epg/10006/19700101/0.json?limit=50&offset=300`),
+      axios.get(`${API_ENDPOINT}/epg/10006/19700101/0.json?limit=50&offset=350`),
+      axios.get(`${API_ENDPOINT}/epg/10006/19700101/0.json?limit=50&offset=400`),
+      axios.get(`${API_ENDPOINT}/epg/10006/19700101/0.json?limit=50&offset=450`)
     ]
 
     const output = []

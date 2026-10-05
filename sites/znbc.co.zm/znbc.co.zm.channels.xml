@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="znbc.co.zm" lang="en" xmltv_id="ZNBCTV1.zm" site_id="tv1">TV1</channel>
-  <channel site="znbc.co.zm" lang="en" xmltv_id="ZNBCTV2.zm" site_id="tv2">TV2</channel>
-  <channel site="znbc.co.zm" lang="en" xmltv_id="ZNBCTV3.zm" site_id="tv3">TV3</channel>
-  <channel site="znbc.co.zm" lang="en" xmltv_id="ZNBCTV4.zm" site_id="tv4">TV4</channel>
+  <channel site="znbc.co.zm" site_id="tv1" lang="en" xmltv_id="ZNBCTV1.zm@SD">TV1</channel>
+  <channel site="znbc.co.zm" site_id="tv2" lang="en" xmltv_id="ZNBCTV2.zm@SD">TV2</channel>
+  <channel site="znbc.co.zm" site_id="tv3" lang="en" xmltv_id="ZNBCTV3.zm@SD">TV3</channel>
+  <channel site="znbc.co.zm" site_id="tv4" lang="en" xmltv_id="ZNBCTV4.zm@SD">TV4</channel>
 </channels>

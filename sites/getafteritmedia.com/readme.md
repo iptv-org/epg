@@ -5,7 +5,7 @@ https://www.getafteritmedia.com/guia_tv/completa
 ### Download the guide
 
 ```sh
-npm run grab --- --site=getafteritmedia.com
+npm run grab --- --sites=getafteritmedia.com
 ```
 
 ### Test

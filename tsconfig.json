@@ -1,13 +1,18 @@
 {
   "compilerOptions": {
-    "outDir": "dist",
     "strict": true,
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "target": "es2020",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "target": "es2022",
     "esModuleInterop": true,
     "declaration": true,
-    "typeRoots": ["./node_modules/@types", "./src/types"],
-    "allowJs": true
-  }
+    "typeRoots": [
+      "./node_modules/@types",
+      "./scripts/types"
+    ],
+    "allowJs": true,
+    "outDir": "./dist"
+  },
+  "include": ["scripts/**/*", "tests/**/*"],
+  "exclude": ["node_modules", "dist"]
 }

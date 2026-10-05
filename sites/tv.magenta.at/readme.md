@@ -5,7 +5,7 @@ https://tv.magenta.at/epg
 ### Download the guide
 
 ```sh
-npm run grab --- --site=tv.magenta.at
+npm run grab --- --sites=tv.magenta.at
 ```
 
 ### Update channel list

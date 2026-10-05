@@ -1,104 +1,130 @@
-const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+const duration = require('dayjs/plugin/duration')
+const doFetch = require('@ntlab/sfetch')
+const debug = require('debug')('site:dsmart.com.tr')
 
 dayjs.extend(utc)
 dayjs.extend(customParseFormat)
+dayjs.extend(duration)
 
-const API_ENDPOINT = 'https://www.dsmart.com.tr/api/v1/public/epg/schedules'
+doFetch.setDebugger(debug)
+
+const channelsWithSchedule = true
+const pageLimit = 10
+const caches = {}
 
 module.exports = {
   site: 'dsmart.com.tr',
   days: 2,
-  url({ date, channel }) {
-    const [page] = channel.site_id.split('#')
-
-    return `${API_ENDPOINT}?page=${page}&limit=1&day=${date.format('YYYY-MM-DD')}`
+  request: {
+    cache: {
+      ttl: 24 * 60 * 60 * 1000 // 1 day
+    }
   },
-  parser: function ({ content, channel }) {
-    let programs = []
-    const items = parseItems(content, channel)
-    items.forEach(item => {
-      const prev = programs[programs.length - 1]
-      let start
-      if (prev) {
-        start = parseStart(item, prev.stop)
-      } else {
-        start = parseStart(item, dayjs.utc(item.day))
+  url({ date, page = 1 }) {
+    return `https://www.dsmart.com.tr/api/v1/public/epg/schedules?page=${
+      page
+    }&limit=${
+      pageLimit
+    }&day=${
+      date.format('YYYY-MM-DD')
+    }`
+  },
+  async parser({ content, channel, date, useCache = true }) {
+    const programs = []
+    if (content) {
+      if (typeof content === 'string') {
+        content = JSON.parse(content)
       }
-      let duration = parseDuration(item)
-      let stop = start.add(duration, 's')
-
-      programs.push({
-        title: item.program_name,
-        category: parseCategory(item),
-        description: item.description.trim(),
-        start,
-        stop
-      })
-    })
+      if (useCache) {
+        const cacheKey = date.format('YYYYMMDD')
+        // cache whole channels for the day
+        if (caches[cacheKey] === undefined) {
+          if (content?.data?.total) {
+            const queues = []
+            const pages = Math.ceil(content.data.total / pageLimit)
+            for (let page = 2; page <= pages; page++) {
+              queues.push(module.exports.url({ date, page }))
+            }
+            await doFetch(queues, (url, res) => {
+              if (Array.isArray(res?.data?.channels)) {
+                content.data.channels.push(...res.data.channels)
+              }
+            })
+            caches[cacheKey] = content
+          }
+        } else {
+          content = caches[cacheKey]
+        }
+      }
+      if (Array.isArray(content?.data?.channels)) {
+        content.data.channels
+          .filter(i => i._id === channel.site_id)
+          .forEach(i => {
+            if (i.schedule.length) {
+              let dayStart, ofs
+              programs.push(...i.schedule
+                .map(p => {
+                  const baseDate = dayjs.utc(p.day)
+                  const startDate = dayjs.utc(p.start_date)
+                  // calculate base offset if needed
+                  if (!dayStart) {
+                    dayStart = startDate
+                    ofs = dayjs.duration(dayjs.utc(`${p.day.substr(0, 11)}${p.start_date.substr(11)}`).diff(baseDate))
+                      .asSeconds()
+                  }
+                  const delta = dayjs.duration(startDate.diff(dayStart)).asSeconds()
+                  // ignore days in duration
+                  const [h, m, s] = (p.duration.includes(',') ? p.duration.split(',')[1].trim() : p.duration)
+                    .split(':').map(Number)
+                  const duration = (h * 3600) + (m * 60) + s
+                  const start = baseDate.add(ofs + delta, 's')
+                  const stop = start.add(duration, 's')
+                  return {
+                    title: p.program_name,
+                    description: p.description,
+                    category: p.genre && p.genre.includes('/') ?
+                      p.genre.split('/').map(g => `${g.substr(0, 1).toUpperCase()}${g.substr(1)}`) : null,
+                    start,
+                    stop
+                  }
+                })
+              )
+            }
+          })
+      }
+    }
 
     return programs
   },
   async channels() {
-    const perPage = 1
-    const totalChannels = 210
-    const pages = Math.ceil(totalChannels / perPage)
-
     const channels = []
-    for (let i in Array(pages).fill(0)) {
-      const page = parseInt(i) + 1
-      const url = `${API_ENDPOINT}?page=${page}&limit=${perPage}&day=${dayjs().format(
-        'YYYY-MM-DD'
-      )}`
-      let offset = i * perPage
-      await axios
-        .get(url)
-        .then(r => r.data)
-        .then(data => {
-          offset++
-          if (data && data.data && Array.isArray(data.data.channels)) {
-            data.data.channels.forEach((item, j) => {
-              const index = offset + j
-              channels.push({
-                lang: 'tr',
-                name: item.channel_name,
-                site_id: index + '#' + item._id
-              })
-            })
-          }
-        })
-        .catch(err => {
-          console.log(err.message)
-        })
-    }
+    const f = page => this.url({ date: dayjs(), page })
+    let pages, page = 1
+    const queues = [f(page)]
+    await doFetch(queues, (url, res) => {
+      if (!pages && res.data.total) {
+        pages = Math.ceil(res.data.total / pageLimit)
+        while (page < pages) {
+          queues.push(f(++page))
+        }
+      }
+      if (Array.isArray(res?.data?.channels)) {
+        channels.push(...res.data.channels
+          .filter(i => (channelsWithSchedule && i.schedule.length) || !channelsWithSchedule)
+          .map(i => {
+            return {
+              lang: 'tr',
+              name: i.channel_name,
+              site_id: i._id
+            }
+          })
+        )
+      }
+    })
 
     return channels
   }
-}
-
-function parseCategory(item) {
-  return item.genre !== '0' ? item.genre : null
-}
-
-function parseStart(item, date) {
-  const time = dayjs.utc(item.start_date)
-
-  return dayjs.utc(`${date.format('YYYY-MM-DD')} ${time.format('HH:mm:ss')}`, 'YYYY-MM-DD HH:mm:ss')
-}
-
-function parseDuration(item) {
-  const [, H, mm, ss] = item.duration.match(/(\d+):(\d+):(\d+)$/)
-
-  return parseInt(H) * 3600 + parseInt(mm) * 60 + parseInt(ss)
-}
-
-function parseItems(content, channel) {
-  const [, channelId] = channel.site_id.split('#')
-  const data = JSON.parse(content)
-  if (!data || !data.data || !Array.isArray(data.data.channels)) return null
-  const channelData = data.data.channels.find(i => i._id == channelId)
-
-  return channelData && Array.isArray(channelData.schedule) ? channelData.schedule : []
 }

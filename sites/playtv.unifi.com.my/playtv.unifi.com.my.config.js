@@ -43,7 +43,7 @@ module.exports = {
     const axios = require('axios')
     const data = await axios
       .post(
-        `https://playtv.unifi.com.my:7053/VSP/V3/QueryAllChannel`,
+        'https://playtv.unifi.com.my:7053/VSP/V3/QueryAllChannel',
         { isReturnAllMedia: '0' },
         {
           params: {
@@ -74,7 +74,7 @@ function parseItems(content, channel) {
 
     const channelData = data.find(i => i.id == channel.site_id)
     return channelData.items && Array.isArray(channelData.items) ? channelData.items : []
-  } catch (err) {
+  } catch {
     return []
   }
 }

@@ -42,7 +42,7 @@ module.exports = {
         .catch(console.error)
 
       if (content) {
-        const [ $, items ] = getItems(content)
+        const [$, items] = getItems(content)
         if (seq === 0) {
           queues.push(...items.map(category => baseUrl + $(category).attr('href')))
         } else {
@@ -86,7 +86,11 @@ function parseItems(content, date) {
         data.season = parseInt(ep[1])
         data.episode = parseInt(ep[2])
       }
-      data.start = dayjs.tz(`${lastDate} ${$item.find('.time').text()}`, 'DD/MM/YYYY HH:mm', 'America/Sao_Paulo')
+      data.start = dayjs.tz(
+        `${lastDate} ${$item.find('.time').text()}`,
+        'DD/MM/YYYY HH:mm',
+        'America/Sao_Paulo'
+      )
       result.push(data)
     }
   }

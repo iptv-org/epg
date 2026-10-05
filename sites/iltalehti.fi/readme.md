@@ -5,7 +5,7 @@ https://www.iltalehti.fi/telkku/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=iltalehti.fi
+npm run grab --- --sites=iltalehti.fi
 ```
 
 ### Update channel list

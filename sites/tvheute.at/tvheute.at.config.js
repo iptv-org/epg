@@ -28,7 +28,7 @@ module.exports = {
   async channels() {
     const axios = require('axios')
     const html = await axios
-      .get(`https://tvheute.at/part/channel-selection`)
+      .get('https://tvheute.at/part/channel-selection')
       .then(r => r.data)
       .catch(console.log)
 

@@ -5,7 +5,7 @@ https://directv.com.ar/ _[Geo-blocked]_
 ### Download the guide
 
 ```sh
-npm run grab --- --site=directv.com.ar
+npm run grab --- --sites=directv.com.ar
 ```
 
 ### Test

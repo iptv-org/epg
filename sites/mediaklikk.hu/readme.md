@@ -5,7 +5,7 @@ https://mediaklikk.hu/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=mediaklikk.hu
+npm run grab --- --sites=mediaklikk.hu
 ```
 
 ### Test

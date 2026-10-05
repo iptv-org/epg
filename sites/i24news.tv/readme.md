@@ -5,7 +5,7 @@ https://www.i24news.tv/en/schedules
 ### Download the guide
 
 ```sh
-npm run grab --- --site=i24news.tv
+npm run grab --- --sites=i24news.tv
 ```
 
 ### Test

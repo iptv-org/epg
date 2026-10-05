@@ -48,8 +48,10 @@ function parseItems(context) {
       schDayPrograms.forEach((program, i) => {
         const itemDay = {
           progStart: parseStart($(schDayMonth), $(program)),
-          progStop: parseStop($(schDayMonth), schDayPrograms[i + 1] ?
-            $(schDayPrograms[i + 1]) : null),
+          progStop: parseStop(
+            $(schDayMonth),
+            schDayPrograms[i + 1] ? $(schDayPrograms[i + 1]) : null
+          ),
           progTitle: parseTitle($(program)),
           progDesc: parseDescription($(program))
         }
@@ -91,7 +93,9 @@ function parseStop(schDayMonth, itemNext) {
     )
   } else {
     return dayjs.tz(
-      `${currentYear}-${monthDate[0]}-${(parseInt(monthDate[1]) + 1).toString().padStart(2, '0')} 00:00`,
+      `${currentYear}-${monthDate[0]}-${(parseInt(monthDate[1]) + 1)
+        .toString()
+        .padStart(2, '0')} 00:00`,
       'YYYY-MMM-DD HH:mm',
       tz
     )

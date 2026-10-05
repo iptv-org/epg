@@ -5,7 +5,7 @@ https://www.skylife.co.kr/product/tv/channelNo/chart
 ### Download the guide
 
 ```sh
-npm run grab --- --site=skylife.co.kr
+npm run grab --- --sites=skylife.co.kr
 ```
 
 ### Update channel list

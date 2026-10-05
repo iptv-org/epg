@@ -5,7 +5,7 @@ https://www.tv.nu/alla-kanaler
 ### Download the guide
 
 ```sh
-npm run grab --- --site=tv.nu
+npm run grab --- --sites=tv.nu
 ```
 
 ### Update channel list

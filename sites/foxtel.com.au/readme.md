@@ -5,7 +5,7 @@ https://www.foxtel.com.au/ _[Geo-blocked]_
 ### Download the guide
 
 ```sh
-npm run grab --- --site=foxtel.com.au
+npm run grab --- --sites=foxtel.com.au
 ```
 
 ### Update channel list

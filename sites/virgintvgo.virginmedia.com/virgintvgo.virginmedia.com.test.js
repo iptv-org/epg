@@ -32,7 +32,7 @@ axios.get.mockImplementation(url => {
     'https://spark-prod-gb.gnp.cloud.virgintvgo.virginmedia.com/eng/web/linear-service/v2/replayEvent/crid:~~2F~~2Fgn.tv~~2F17641069~~2FEP026460800059,imi:23c363d12af79f43134f4a15b96dd12df81b19ab?returnLinearContent=true&forceLinearResponse=true&language=en':
       'program02.json',
     'https://spark-prod-gb.gnp.cloud.virgintvgo.virginmedia.com/eng/web/linear-service/v2/replayEvent/crid:~~2F~~2Fgn.tv~~2F19221598~~2FSH037146530000~~2F333458689,imi:f1060b3f63cd5399e0f97901b25a85ef71097891?returnLinearContent=true&forceLinearResponse=true&language=en':
-      'program03.json',
+      'program03.json'
   }
   let data = ''
   if (urls[url] !== undefined) {
@@ -50,16 +50,16 @@ it('can generate valid url', () => {
   )
 })
 
-it('can parse response', async() => {
-  const content = await axios.get(url({ date }))
+it('can parse response', async () => {
+  const content = await axios
+    .get(url({ date }))
     .then(response => response.data)
     .catch(console.error)
-  const result = (await parser({ content, channel, date }))
-    .map(p => {
-      p.start = p.start.toJSON()
-      p.stop = p.stop.toJSON()
-      return p
-    })
+  const result = (await parser({ content, channel, date })).map(p => {
+    p.start = p.start.toJSON()
+    p.stop = p.stop.toJSON()
+    return p
+  })
 
   expect(result.length).toBe(3)
   expect(result[0]).toMatchObject({

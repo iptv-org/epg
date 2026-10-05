@@ -1,0 +1,77 @@
+{
+  "status": "OK",
+  "message": "The request has succeeded.",
+  "response": {
+    "liveChannels": [
+      {
+        "id": 1,
+        "name": "DISCOVERY KIDS HD",
+        "type": "INFANTIS",
+        "logo": "https://www.clarotvmais.com.br/img/channels/discovery_kids.png",
+        "channelLogo": "discovery-kids",
+        "mondrianLogo": "discovery-kids",
+        "hasStreaming": true,
+        "is4GFree": false,
+        "isFree": false,
+        "stamp": null,
+        "playerBuffer": 60,
+        "source": "defaultContentProvider",
+        "channelNumber": 600,
+        "isLowLatency": false,
+        "replayTvTime": null,
+        "player": null,
+        "schedules": [
+          {
+            "id": -1,
+            "programId": null,
+            "episodeName": null,
+            "title": "Conteúdo não disponível",
+            "description": "",
+            "startTime": 1765580400,
+            "endTime": 1755208799,
+            "formattedTime": "Sexta-feira, 12 de Dezembro, das 20:00 às 18:59",
+            "image": null,
+            "tvChannels": [
+              {
+                "id": 1,
+                "name": "DISCOVERY KIDS HD",
+                "type": "INFANTIS",
+                "logo": "https://www.clarotvmais.com.br/img/channels/discovery_kids.png",
+                "channelLogo": "discovery-kids",
+                "mondrianLogo": "discovery-kids",
+                "hasStreaming": true,
+                "is4GFree": false,
+                "isFree": false,
+                "stamp": null,
+                "playerBuffer": 60,
+                "source": "defaultContentProvider",
+                "channelNumber": 600,
+                "isLowLatency": false,
+                "replayTvTime": null,
+                "player": null
+              }
+            ],
+            "isCatchup": false,
+            "isStartOver": false,
+            "isRecordable": false,
+            "isBlackout": false,
+            "isGap": true,
+            "seriesId": 0,
+            "isBlockedForTvVas": false,
+            "duration": -10371601,
+            "progress": 100,
+            "type": "liveNoContent",
+            "url": "",
+            "rating": {
+              "code": null,
+              "selfParental": false,
+              "descriptor": []
+            }
+          }
+        ]
+      }
+    ],
+    "total": 1
+  },
+  "requestId": "c1dc9baa-fbc8-4cc2-892a-505692565918"
+}

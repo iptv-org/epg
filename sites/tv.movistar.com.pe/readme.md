@@ -5,7 +5,7 @@ http://tv.movistar.com.pe/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=tv.movistar.com.pe
+npm run grab --- --sites=tv.movistar.com.pe
 ```
 
 ### Update channel list

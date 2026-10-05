@@ -5,13 +5,13 @@ https://www.allente.fi/tv-guide/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=allente.fi
+npm run grab --- --sites=allente.fi
 ```
 
 ### Update channel list
 
 ```sh
-npm run channels:parse --- --config=./sites/allente.fi/allente.fi.config.js --output=./sites/allente.fi/allente.fi.channels.xml
+npm run channels:parse --- --config=./sites/allente.fi/allente.fi.config.js --output=./sites/allente.fi/allente.fi_fi.channels.xml
 ```
 
 ### Test

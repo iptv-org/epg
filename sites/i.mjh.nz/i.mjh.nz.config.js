@@ -18,30 +18,30 @@ module.exports = {
     },
     maxContentLength: 100 * 1024 * 1024 // 100Mb
   },
-  url: function ({ channel }) {
+  url({ channel }) {
     const [path] = channel.site_id.split('#')
 
     return `${API_ENDPOINT}/${path}.xml`
   },
-  parser: function ({ content, channel, date }) {
+  parser({ content, channel, date }) {
     const items = parseItems(content, channel, date)
 
-    let programs = items.map(item => {
+    const programs = items.map(item => {
       return {
         ...item,
         title: getTitle(item),
         description: getDescription(item),
-        categories: getCategories(item)
+        categories: getCategories(item),
+        icon: getIcon(item)
       }
     })
 
-    programs = mergeMovieParts(programs)
-
-    return programs
+    return mergeMovieParts(programs)
   },
   async channels({ provider }) {
     const providers = {
       pluto: [
+        { path: 'PlutoTV/ar', lang: 'es' },
         { path: 'PlutoTV/br', lang: 'pt' },
         { path: 'PlutoTV/ca', lang: 'en' },
         { path: 'PlutoTV/cl', lang: 'es' },
@@ -60,6 +60,8 @@ module.exports = {
         { path: 'Plex/au', lang: 'en' },
         { path: 'Plex/ca', lang: 'en' },
         { path: 'Plex/es', lang: 'es' },
+        { path: 'Plex/fr', lang: 'fr' },
+        { path: 'Plex/gb', lang: 'en' },
         { path: 'Plex/mx', lang: 'es' },
         { path: 'Plex/nz', lang: 'en' },
         { path: 'Plex/us', lang: 'en' }
@@ -78,16 +80,14 @@ module.exports = {
         { path: 'SamsungTVPlus/us', lang: 'en' }
       ],
       skygo: [{ path: 'SkyGo/epg', lang: 'en' }],
-      stirr: [{ path: 'Stirr/all', lang: 'en' }],
       foxtel: [{ path: 'Foxtel/epg', lang: 'en' }],
       binge: [{ path: 'Binge/epg', lang: 'en' }],
       dstv: [{ path: 'DStv/za', lang: 'en' }],
       flash: [{ path: 'Flash/epg', lang: 'en' }],
       kayo: [{ path: 'Kayo/epg', lang: 'en' }],
       metv: [{ path: 'MeTV/epg', lang: 'en' }],
-      optus: [{ path: 'Optus/epg', lang: 'en' }],
       pbs: [{ path: 'PBS/all', lang: 'en' }],
-      roku: [{ path: 'Roku/epg', lang: 'en' }],
+      roku: [{ path: 'Roku/all', lang: 'en' }],
       singtel: [{ path: 'Singtel/epg', lang: 'en' }],
       skysportnow: [{ path: 'SkySportNow/epg', lang: 'en' }],
       au: [
@@ -104,22 +104,32 @@ module.exports = {
       nz: [{ path: 'nz/epg', lang: 'en' }]
     }
 
-    let channels = []
+    const channels = []
+    const added = new Set()
 
     const providerOptions = providers[provider]
     for (const option of providerOptions) {
       const xml = await axios
         .get(`${API_ENDPOINT}/${option.path}.xml`)
         .then(r => r.data)
-        .catch(console.log)
+        .catch(err => {
+          console.error(`Error fetching ${option.path}: ${err.message}`)
+          return null
+        })
+      if (!xml) continue
+
       const data = parser.parse(xml)
 
       data.channels.forEach(item => {
-        channels.push({
-          lang: option.lang,
-          site_id: `${option.path}#${item.id}`,
-          name: item.name[0].value
-        })
+        const site_id = `${option.path}#${item.id}`
+        if (!added.has(site_id)) {
+          added.add(site_id)
+          channels.push({
+            lang: option.lang,
+            site_id,
+            name: item.displayName?.[0]?.value || item.name?.[0]?.value || item.id
+          })
+        }
       })
     }
 
@@ -128,7 +138,7 @@ module.exports = {
 }
 
 function mergeMovieParts(programs) {
-  let output = []
+  const output = []
 
   programs.forEach(prog => {
     let prev = output[output.length - 1]
@@ -160,6 +170,10 @@ function getCategories(item) {
   return item.category.map(c => c.value)
 }
 
+function getIcon(item) {
+  return item.icon && item.icon.length ? item.icon[0].src : null
+}
+
 function parseItems(content, channel, date) {
   try {
     const curr_day = date
@@ -168,11 +182,18 @@ function parseItems(content, channel, date) {
     const data = parser.parse(content)
     if (!data || !Array.isArray(data.programs)) return []
 
-    return data.programs.filter(
-      p =>
-        p.channel === site_id && dayjs(p.start, 'YYYYMMDDHHmmss ZZ').isBetween(curr_day, next_day)
-    )
-  } catch (error) {
+    return data.programs
+      .filter(
+        p =>
+          p.channel === site_id && dayjs(p.start, 'YYYYMMDDHHmmss ZZ').isBetween(curr_day, next_day)
+      )
+      .map(p => {
+        if (Array.isArray(p.date) && p.date.length) {
+          p.date = p.date[0]
+        }
+        return p
+      })
+  } catch {
     return []
   }
 }

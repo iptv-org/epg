@@ -13,9 +13,9 @@ module.exports = {
   site: 'dens.tv',
   days: 2,
   url({ channel, date }) {
-    return `https://www.dens.tv/api/dens3/tv/TvChannels/listEpgByDate?date=${date.format('YYYY-MM-DD')}&id_channel=${
-      channel.site_id
-    }&app_type=10`
+    return `https://www.dens.tv/api/dens3/tv/TvChannels/listEpgByDate?date=${date.format(
+      'YYYY-MM-DD'
+    )}&id_channel=${channel.site_id}&app_type=10`
   },
   parser({ content }) {
     // parsing
@@ -25,8 +25,9 @@ module.exports = {
     if (Array.isArray(response?.data)) {
       response.data.forEach(item => {
         const title = item.title
-        const [, , , season, , , episode] = title.match(/( (Season |Season|S)(\d+))?( (Episode|Ep) (\d+))/) ||
-          [null, null, null, null, null, null, null]
+        const [, , , season, , , episode] = title.match(
+          /( (Season |Season|S)(\d+))?( (Episode|Ep) (\d+))/
+        ) || [null, null, null, null, null, null, null]
         programs.push({
           title,
           description: item.description,
@@ -52,7 +53,7 @@ module.exports = {
     const channels = []
     for (const id_category of Object.values(categories)) {
       const data = await axios
-        .get(`https://www.dens.tv/api/dens3/tv/TvChannels/listByCategory`, {
+        .get('https://www.dens.tv/api/dens3/tv/TvChannels/listByCategory', {
           params: { id_category }
         })
         .then(r => r.data)

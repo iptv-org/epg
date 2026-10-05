@@ -5,7 +5,7 @@ https://www.zuragt.mn/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=zuragt.mn
+npm run grab --- --sites=zuragt.mn
 ```
 
 ### Update channel list

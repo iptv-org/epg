@@ -11,9 +11,7 @@ dayjs.extend(timezone)
 dayjs.extend(utc)
 dayjs.extend(customParseFormat)
 
-doFetch
-  .setCheckResult(false)
-  .setDebugger(debug)
+doFetch.setCheckResult(false).setDebugger(debug)
 
 const tz = 'Asia/Riyadh'
 const defaultHeaders = {
@@ -42,12 +40,13 @@ module.exports = {
     if (items.length) {
       const queues = []
       for (const item of items) {
-        const url = `https://rotana.net/${channel.lang}/streams?channel=${channel.site_id}&itemId=${item.program}`
+        const url =
+          `https://rotana.net/${channel.lang}/streams?channel=${channel.site_id}&itemId=${item.program}&playnow=0`
         const params = {
           headers: {
             ...defaultHeaders,
             'X-Requested-With': 'XMLHttpRequest',
-            cookie: cookies[channel.lang],
+            cookie: cookies[channel.lang]
           }
         }
         queues.push({ i: item, url, params })
@@ -60,18 +59,26 @@ module.exports = {
     return programs
   },
   async channels({ lang = 'en' }) {
+    const channels = []
     const result = await axios
-      .get(`https://rotana.net/api/channels`)
+      .get(`https://rotana.net/${lang}/streams`, { headers: defaultHeaders })
       .then(response => response.data)
       .catch(console.error)
 
-    return result.data.map(item => {
-      return {
-        lang,
-        site_id: item.id,
-        name: item.name[lang]
-      }
-    })
+    if (result) {
+      const $ = cheerio.load(result)
+      $('#channels-list > li > a')
+        .toArray()
+        .forEach(item => {
+          channels.push({
+            lang,
+            site_id: $(item).attr('href').match(/channel=(\d+)/)[1],
+            name: $(item).text().trim()
+          })
+        })
+    }
+
+    return channels
   }
 }
 
@@ -84,38 +91,41 @@ function parseProgram(item, result) {
         case 'Text':
           if (item.description === undefined) {
             const desc = $(el).text().trim()
-            if (desc) {
+            if (desc.length) {
               item.description = desc
             }
           }
-          break;
+          break
         case 'Element':
           if (el.name === 'span') {
-            const [k, v] = $(el).text().split(':').map(a => a.trim())
+            const [k, v] = $(el)
+              .text()
+              .split(':')
+              .map(a => a.trim())
             switch (k) {
               case 'Category':
               case 'التصنيف':
-                item.category = v;
-                break;
+                item.category = v
+                break
               case 'Country':
               case 'البلد':
-                item.country = v;
-                break;
+                item.country = v
+                break
               case 'Director':
               case 'المخرج':
-                item.director = v;
-                break;
+                item.director = v
+                break
               case 'Language':
               case 'اللغة':
-                item.language = v;
-                break;
+                item.language = v
+                break
               case 'Release Year':
               case 'سنة الإصدار':
-                item.date = v;
-                break;
+                item.date = v
+                break
             }
           }
-          break;
+          break
       }
     }
   }
@@ -142,7 +152,9 @@ function parseItems(content, date) {
       const heading = top.find('.iq-accordion-title .big-title')
       if (heading.length) {
         const progId = top.attr('id')
-        const title = heading.find('span:eq(1)').text()
+        const title = heading
+          .find('span:eq(1)')
+          .text()
           .split('\n')
           .map(a => a.trim())
           .join(' ')
@@ -151,7 +163,7 @@ function parseItems(content, date) {
         items.push({
           program: progId.substr(progId.indexOf('-') + 1),
           title: title ? title.trim() : title,
-          start: `${y}-${m}-${d} ${time.trim()}`,
+          start: `${y}-${m}-${d} ${time.trim()}`
         })
       }
     }
@@ -178,9 +190,8 @@ function parseItems(content, date) {
 function parseCookies(headers) {
   const cookies = []
   if (headers && Array.isArray(headers['set-cookie'])) {
-    headers['set-cookie'].forEach(cookie => {
-      cookies.push(cookie.split('; ')[0])
-    })
+    cookies.push(...headers['set-cookie']
+      .map(cookie => cookie.split(';')[0].trim()))
   }
   return cookies.length ? cookies.join('; ') : null
 }

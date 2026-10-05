@@ -1,0 +1,83 @@
+{
+  "duration": 21600,
+  "entries": [
+    {
+      "channelId": "NL_000007_019181",
+      "events": [
+        {
+          "audioLanguages": [
+            {
+              "lang": "nl"
+            }
+          ],
+          "endTime": 1780171560,
+          "id": "crid:~~2F~~2Fgn.tv~~2F15653159~~2FMV011684920000,imi:5792d84cbfef05fb085335ae41c43811c2698eca",
+          "mergedId": "15653159|nl",
+          "minimumAge": 16,
+          "minimumAgeWarnings": [
+            "5",
+            "2"
+          ],
+          "replayTVMinAge": 16,
+          "startTime": 1780164000,
+          "title": "De Lift"
+        },
+        {
+          "audioLanguages": [
+            {
+              "lang": "nl"
+            }
+          ],
+          "endTime": 1780181040,
+          "hasReplayTV": false,
+          "hasReplayTVOTT": false,
+          "hasStartOver": false,
+          "id": "crid:~~2F~~2Fgn.tv~~2F10549100~~2FMV010384040000,imi:4132290d496719dc560c37b32320f0608384a8a9",
+          "mergedId": "10549100|nl",
+          "minimumAge": 16,
+          "minimumAgeWarnings": [
+            "1",
+            "5",
+            "6",
+            "4"
+          ],
+          "replayTVMinAge": 16,
+          "startTime": 1780171560,
+          "title": "The Equalizer"
+        },
+        {
+          "audioLanguages": [
+            {
+              "lang": "nl"
+            }
+          ],
+          "endTime": 1780184340,
+          "id": "crid:~~2F~~2Fgn.tv~~2F18311595~~2FEP027840300446,imi:dc898b6240c51d7bb7aa0c13d38409e025ce0a71",
+          "mergedId": "3565439|nl",
+          "minimumAge": 0,
+          "replayTVMinAge": 16,
+          "seriesName": "Mystery Safe",
+          "seriesPremiereAirings": true,
+          "startTime": 1780181040,
+          "title": "Pawn Stars"
+        },
+        {
+          "audioLanguages": [
+            {
+              "lang": "nl"
+            }
+          ],
+          "endTime": 1780186200,
+          "id": "crid:~~2F~~2Fgn.tv~~2F14554329~~2FSH027788870000~~2F492767880,imi:6541add8e166432bfb584db6d3d6ca477aea0f43",
+          "isPlaceHolder": true,
+          "mergedId": "14554329|nl",
+          "minimumAge": 0,
+          "replayTVMinAge": 0,
+          "startTime": 1780184340,
+          "title": "Tommy Teleshopping"
+        }
+      ]
+    }
+ ],
+  "time": 1780164000
+}

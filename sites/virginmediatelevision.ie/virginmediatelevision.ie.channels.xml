@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="virginmediatelevision.ie" lang="en" xmltv_id="VirginMediaFour.ie" site_id="vm_four">Four</channel>
-  <channel site="virginmediatelevision.ie" lang="en" xmltv_id="VirginMediaMore.ie" site_id="vm_more">More</channel>
-  <channel site="virginmediatelevision.ie" lang="en" xmltv_id="VirginMediaOne.ie" site_id="one">One</channel>
-  <channel site="virginmediatelevision.ie" lang="en" xmltv_id="VirginMediaThree.ie" site_id="three">Three</channel>
-  <channel site="virginmediatelevision.ie" lang="en" xmltv_id="VirginMediaTwo.ie" site_id="two">Two</channel>
+  <channel site="virginmediatelevision.ie" site_id="one" lang="en" xmltv_id="VirginMediaOne.ie@SD">One</channel>
+  <channel site="virginmediatelevision.ie" site_id="three" lang="en" xmltv_id="VirginMediaThree.ie@SD">Three</channel>
+  <channel site="virginmediatelevision.ie" site_id="two" lang="en" xmltv_id="VirginMediaTwo.ie@SD">Two</channel>
+  <channel site="virginmediatelevision.ie" site_id="vm_four" lang="en" xmltv_id="VirginMediaFour.ie@SD">Four</channel>
+  <channel site="virginmediatelevision.ie" site_id="vm_more" lang="en" xmltv_id="VirginMediaMore.ie@SD">More</channel>
 </channels>

@@ -5,7 +5,7 @@ https://www.gatotv.com/guia_tv/completa
 ### Download the guide
 
 ```sh
-npm run grab --- --site=gatotv.com
+npm run grab --- --sites=gatotv.com
 ```
 
 ### Update channel list

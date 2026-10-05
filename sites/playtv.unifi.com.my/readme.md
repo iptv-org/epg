@@ -5,7 +5,7 @@ https://playtv.unifi.com.my/EPG/WEBTV/index.html#/tvguide
 ### Download the guide
 
 ```sh
-npm run grab --- --site=playtv.unifi.com.my
+npm run grab --- --sites=playtv.unifi.com.my
 ```
 
 ### Update channel list

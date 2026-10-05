@@ -1,0 +1,56 @@
+{
+  "duration": 21600,
+  "entries": [
+    {
+      "channelId": "NL_000007_019181",
+      "events": [
+        {
+          "audioLanguages": [
+            {
+              "lang": "nl"
+            }
+          ],
+          "endTime": 1780138980,
+          "id": "crid:~~2F~~2Fgn.tv~~2F32036579~~2FSH062278610000~~2F492767862,imi:25ee264da729e66ee9ab4cb70d30ab2d76b661f4",
+          "isPlaceHolder": true,
+          "mergedId": "32036579|nl",
+          "minimumAge": 0,
+          "replayTVMinAge": 9,
+          "startTime": 1780113600,
+          "title": "Telvero"
+        },
+        {
+          "audioLanguages": [
+            {
+              "lang": "nl"
+            }
+          ],
+          "endTime": 1780140720,
+          "id": "crid:~~2F~~2Fgn.tv~~2F33027308~~2FEP064104340002,imi:a24b366ed3e67743d5c6350821ee04ef24788075",
+          "mergedId": "32982456|nl",
+          "minimumAge": 0,
+          "replayTVMinAge": 9,
+          "seriesPremiereAirings": true,
+          "startTime": 1780138980,
+          "title": "Innoverend Nederland"
+        },
+        {
+          "audioLanguages": [
+            {
+              "lang": "nl"
+            }
+          ],
+          "endTime": 1780142460,
+          "id": "crid:~~2F~~2Fgn.tv~~2F33027307~~2FEP051178210026,imi:53bc5cdaeddeac51615f4df67319e8f788430a48",
+          "mergedId": "27291958|nl",
+          "minimumAge": 0,
+          "replayTVMinAge": 9,
+          "seriesPremiereAirings": true,
+          "startTime": 1780140720,
+          "title": "Klimaat Bewust Werkt"
+        }
+      ]
+    }
+ ],
+  "time": 1780120800
+}

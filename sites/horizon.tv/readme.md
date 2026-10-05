@@ -5,7 +5,7 @@ https://horizon.tv/
 ### Download the guide
 
 ```sh
-npm run grab --- --site=horizon.tv
+npm run grab --- --sites=horizon.tv
 ```
 
 ### Update channel list

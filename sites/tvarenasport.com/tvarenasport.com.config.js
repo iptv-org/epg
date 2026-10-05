@@ -9,9 +9,12 @@ dayjs.extend(utc)
 dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
+const CHANNEL_LOGO_REGEX = /chanel-([\w-]+?)\.png/
+const TIMEZONE = 'Europe/Belgrade'
+
 module.exports = {
   site: 'tvarenasport.com',
-  tz: 'Europe/Belgrade',
+  tz: TIMEZONE,
   lang: 'sr',
   days: 2,
   request: {
@@ -23,101 +26,77 @@ module.exports = {
   parser({ content, channel, date }) {
     const programs = []
     const expectedDate = date.format('YYYY-MM-DD')
-    if (content) {
-      const dates = []
-      const $ = cheerio.load(content)
-      const parent = $(`.tv-scheme-chanel-header img[src*="chanel-${channel.site_id}.png"]`)
-        .parents('div')
-      parent
-        .siblings('.tv-scheme-days')
-        .find('a').toArray()
-          .forEach(el => {
-            const a = $(el)
-            const dt = a.find('span:nth-child(3)').text()
-            dates.push(dayjs(dt + date.year(), 'DD.MM.YYYY')) 
-          })
-      parent
-        .siblings('.tv-scheme-new-slider-wrapper')
-        .find('.tv-scheme-new-slider-item').toArray()
-          .forEach((el, i) => {
-            programs.push(...parseSchedules($(el), dates[i], module.exports.tz))
-          })
-      programs.forEach((s, i) => {
-        if (i < programs.length - 2) {
-          s.stop = programs[i + 1].start
-        } else {
-          s.stop = s.start.startOf('d').add(1, 'd')
-        }
+    const $ = cheerio.load(content)
+
+    $('.tv-scheme-chanel').each((_, el) => {
+      const $ch = $(el)
+      const logo = $ch.find('.tv-scheme-chanel-header img').attr('src') || ''
+      const m = logo.match(CHANNEL_LOGO_REGEX)
+      if (!m || m[1] !== channel.site_id) return
+      const dates = $ch.find('.tv-scheme-days a').map((i, d) => {
+        const t = $(d).find('span:nth-child(3)').text().trim()
+        return dayjs(`${t}${date.year()}`, 'DD.MM.YYYY')
+      }).get()
+      const startIdx = dates.findIndex(d => d.format('YYYY-MM-DD') === expectedDate)
+      if (startIdx === -1) return
+      const sliders = $ch.find('.tv-scheme-new-slider-item')
+      const slider = sliders.eq(startIdx)
+      if (!slider.length) return
+      let entries = parseSchedules($, slider, dates[startIdx])
+      entries.forEach((e, i) => {
+        const nxt = entries[i + 1]
+        e.stop = nxt
+          ? nxt.start
+          : dayjs.tz(`${expectedDate} 23:59`, 'YYYY-MM-DD HH:mm', TIMEZONE)
       })
-    }
-
-    return programs
-      .filter(p => p.start.format('YYYY-MM-DD') === expectedDate || p.stop.format('YYYY-MM-DD') === expectedDate)
-  },
-  async channels() {
-    const channels = []
-    const data = await axios
-      .get(this.url)
-      .then(r => r.data)
-      .catch(console.error)
-
-    if (data) {
-      // channel naming rule
-      const names = id => {
-        let match = id.match(/^\d+$/)
-        if (match) {
-          return `Arena Sport ${parseInt(id)}`
-        }
-        match = id.match(/^\d/)
-        if (match) {
-          return `Arena Sport ${id}`
-        }
-        match = id.match(/^a(\d+)(p)?/)
-        if (match) {
-          return `Arena ${parseInt(match[1])}${match[2] === 'p' ? ' Premium' : ''}`
-        }
-        return `Arena ${id}`
-      }
-      const $ = cheerio.load(data)
-      const items = $('.tv-scheme-chanel-header img').toArray()
-      for (const item of items) {
-        const [, id] = $(item).attr('src').match(/chanel-([a-z0-9]+)\.png/) || [null, null]
-        if (id) {
-          channels.push({
-            lang: this.lang,
-            site_id: id,
-            name: names(id)
-          })
-        }
-      }
-    }
-
-    return channels
-  }
-}
-
-function parseSchedules($s, date, tz) {
-  const schedules = []
-  const $ = $s._make
-  $s.find('.slider-content').toArray()
-    .forEach(el => {
-      schedules.push(parseSchedule($(el), date, tz))
+      programs.push(...entries)
     })
+    return programs
+  },
 
-  return schedules
+  async channels() {
+    const data = await axios.get(this.url).then(r => r.data).catch(console.error)
+    if (!data) return []
+    const $ = cheerio.load(data)
+    return $('.tv-scheme-chanel-header img')
+      .map((_, img) => {
+        const src = $(img).attr('src') || ''
+        const m = src.match(CHANNEL_LOGO_REGEX)
+        if (!m) return null
+        const id = m[1]
+        const displayName = getDisplayName(id)
+        const xmltvId = displayName.replaceAll(' ', '').replace(/Serbia$/, '.rs')
+        const logourl = `https://www.${this.site}${src}`
+        return { site_id: id, lang: this.lang, xmltv_id: xmltvId, name: displayName, logo: logourl }
+      })
+      .get()
+  }
 }
 
-function parseSchedule($s, date, tz) {
-  const time = $s.find('.slider-content-top span').text()
-  const start = dayjs.tz(`${date.format('YYYY-MM-DD')} ${time}`, 'YYYY-MM-DD HH:mm', tz)
-  const category = $s.find('.slider-content-middle span').text()
-  const title = $s.find('.slider-content-bottom p').text()
-  const description = $s.find('.slider-content-bottom span:first').text()
+function getDisplayName(id) {
+  const template = name => `Arena Sport ${name} Serbia`
+  let m
+  if ((m = /^0*(\d+)$/.exec(id))) return template(m[1])
+  if ((m = /^a+(\d+)p$/.exec(id))) return template(`${m[1]} Premium`)
+  const formattedId = id.replace(/^a-/, '').replace(/^./, c => c.toUpperCase())
+  return template(formattedId)
+}
 
-  return {
-    title: description ? description : title,
-    description: description ? title : description,
-    category,
-    start
-  }
+function parseSchedules($, $slider, date) {
+  return $slider
+    .find('.slider-content')
+    .map((_, el) => parseSchedule($(el), date))
+    .get()
+}
+
+function parseSchedule($s, date) {
+  const time = $s.find('.slider-content-top span').text().trim()
+  const start = dayjs.tz(`${date.format('YYYY-MM-DD')} ${time}`, 'YYYY-MM-DD HH:mm', TIMEZONE)
+  const sport = $s.find('.slider-content-middle span').text().trim()
+  const titleText = $s.find('.slider-content-bottom p').text().trim()
+  const league = $s.find('.slider-content-bottom span')
+    .not('.live-title, .blob-text, .blob-border, .blob').first().text().trim()
+  const isLive = $s.find('.blob-text').text().trim().toLowerCase() === 'uživo'
+  const title = (isLive ? '(Uživo) ' : '') + (league ? `${league}: ${titleText}` : titleText)
+  return { title, category: sport, start }
 }

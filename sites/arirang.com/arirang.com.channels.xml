@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="arirang.com" lang="en" xmltv_id="ArirangTV.kr" site_id="CH_K">KOREA</channel>
-  <channel site="arirang.com" lang="en" xmltv_id="ArirangUN.kr" site_id="CH_Z">UN</channel>
-  <channel site="arirang.com" lang="en" xmltv_id="ArirangWorld.kr" site_id="CH_W">WORLD</channel>
+  <channel site="arirang.com" site_id="CH_K" lang="en" xmltv_id="ArirangTV.kr@SD">KOREA</channel>
+  <channel site="arirang.com" site_id="CH_W" lang="en" xmltv_id="ArirangWorld.kr@SD">WORLD</channel>
+  <channel site="arirang.com" site_id="CH_Z" lang="en" xmltv_id="ArirangUN.kr@SD">UN</channel>
 </channels>

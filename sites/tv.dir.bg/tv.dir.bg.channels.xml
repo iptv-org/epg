@@ -1,114 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="" site_id="46">MTV 00s</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="" site_id="143">History</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="" site_id="221">MTV Live HD</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="" site_id="238">Eurosport HD</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="" site_id="240">History HD</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="" site_id="241">Nick HD</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="" site_id="242">Планета HD</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="" site_id="248">Disney Junior</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="" site_id="252">Nat Geo HD</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="" site_id="254">MTV 80s</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="" site_id="271">Comedy Central</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="" site_id="311">ID Xtra</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="" site_id="347">MovieSTAR</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="" site_id="354">FilmBox</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="" site_id="384">MTV 90s</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="24Kitchen.bg" site_id="190">24kitchen</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="78TV.bg" site_id="372">ТВ 7/8</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="AlfaTV.bg" site_id="359">Алфа</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="AMC.bg" site_id="124">AMC</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="AnimalPlanetEurope.uk" site_id="65">Animal Planet</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="AXNBlack.us" site_id="264">AXN Black</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="AXNEurope.gr" site_id="64">AXN</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="AXNWhite.us" site_id="265">AXN White</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="BalkanikaTV.bg" site_id="74">Балканика МТВ</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="BloombergTVBulgaria.bg" site_id="316">Bloomberg TV Bulgaria</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="BNT1.bg" site_id="21">БНТ1</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="BNT2.bg" site_id="203">БНТ2</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="BNT3.bg" site_id="292">БНТ3</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="BNT4.bg" site_id="22">БНТ4</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="bTV.bg" site_id="12">bTV</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="bTVAction.bg" site_id="228">bTV Action</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="bTVCinema.bg" site_id="153">bTV Cinema</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="bTVComedy.bg" site_id="68">bTV Comedy</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="bTVLady.bg" site_id="223">bTV Lady</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="BulgariaOnAir.bg" site_id="24">Bulgaria ON AIR</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="CartoonNetwork.bg" site_id="6">Cartoon Network</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="CBSRealityEMEA.uk" site_id="93">CBS Reality</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="ChannelOne.ru" site_id="55">Первый канал</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="Cinemax2CentralEuropeHD.hu" site_id="105">Cinemax2</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="CinemaxCentralEuropeHD.hu" site_id="90">Cinemax</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="CrimePlusInvestigation.uk" site_id="219">Crime + Investigation</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="DaVinci.de" site_id="176">Da Vinci</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="Diema.bg" site_id="9">Diema</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="DiemaFamily.bg" site_id="79">Diema Family</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="DiemaSport2.bg" site_id="310">Diema Sport 2</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="DiemaSport3.bg" site_id="375">Diema Sport 3</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="DiemaSport.bg" site_id="299">Diema Sport</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="DiscoveryChannel.bg" site_id="10">Discovery Channel</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="DiscoveryScience.us" site_id="98">Discovery Science</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="DisneyChannel.bg" site_id="185">Disney Channel</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="DocuBox.nl" site_id="279">DocuBox</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="EKids.bg" site_id="363">E-Kids</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="EpicDrama.se" site_id="351">Epic Drama</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="Eurocom.bg" site_id="14">Евроком</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="Eurosport1.fr" site_id="13">Eurosport 1</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="Eurosport2.fr" site_id="101">Eurosport 2</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="ExtremeSportsChannel.nl" site_id="220">Extreme Sports Channel</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="FenFolkTV.bg" site_id="301">Фен Фолк</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="FenTV.bg" site_id="71">Фен</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="FilmBoxExtra.bg" site_id="282">FilmBox Extra</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="FilmBoxStars.bg" site_id="355">FilmBox+</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="FoodNetworkEMEA.us" site_id="234">Food Network</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="FREEDOM.ua" site_id="378">UA TV</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="HBO2CentralEurope.hu" site_id="89">HBO2</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="HBO3CentralEurope.hu" site_id="319">HBO3</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="HBOCentralEuropeHD.hu" site_id="58">HBO</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="HGTVPanregional.us" site_id="382">HG TV</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="HobbyTV.bg" site_id="80">Хоби</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="InvestigationDiscoveryEurope.us" site_id="246">Investigation Discovery</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="JimJamEurope.uk" site_id="210">JimJam</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="KinoNova.bg" site_id="63">Kino Nova</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="LoveNature.ca" site_id="380">Love Nature</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="MaxSport1.bg" site_id="365">MAX Sport 1</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="MaxSport2.bg" site_id="366">MAX Sport 2</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="MaxSport3.bg" site_id="367">MAX Sport 3</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="MaxSport4.bg" site_id="368">MAX Sport 4</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="MCMTop.fr" site_id="50">MCM</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="NationalGeographic.bg" site_id="27">National Geographic</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="NationalGeographicWild.bg" site_id="150">Nat Geo Wild</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="Nickelodeon.bg" site_id="232">Nickelodeon</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="NickJr.bg" site_id="253">Nick Jr.</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="Nova.bg" site_id="28">NOVA</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="NovaNews.bg" site_id="19">Nova News</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="NovaSport.bg" site_id="167">Nova Sport</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="NTVMir.ru" site_id="379">НТВ Мир</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="Okhotairybalka.ru" site_id="156">Охота и рыбалка</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="PlanetaFolk.bg" site_id="114">Планета Фолк</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="PlanetaTV.bg" site_id="60">Планета</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="POTV.bg" site_id="211">Тракия (Пловдив)</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="RING.bg" site_id="33">RING</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="RMTV.bg" site_id="374">RM TV</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="SKAT.bg" site_id="38">Скат</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="StarChannel.bg" site_id="230">FOX</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="StarCrime.bg" site_id="86">FOX Crime</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="StarLife.bg" site_id="69">FOX Life</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="Telemedia.bg" site_id="325">Телемедиа</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="TLCBalkan.us" site_id="178">TLC</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="TravelChannelEMEA.uk" site_id="243">Travel Channel</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="TV1.bg" site_id="216">TV1</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="TVEvropa.bg" site_id="56">Euronews Bulgaria</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="TVVraca.bg" site_id="269">Враца</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="ViasatExplore.se" site_id="91">Viasat Explore</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="ViasatHistory.se" site_id="7">Viasat History</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="ViasatNature.se" site_id="168">Viasat Nature</channel>
-  <channel site="tv.dir.bg" lang="bg" xmltv_id="vijuTV1000.ru" site_id="76">TV 1000</channel>
-  <channel site="tv.dir.bg" lang="en" xmltv_id="FashionTVEurope.fr" site_id="233">Fashion TV</channel>
-  <channel site="tv.dir.bg" lang="en" xmltv_id="FightBox.nl" site_id="280">FightBox</channel>
-  <channel site="tv.dir.bg" lang="en" xmltv_id="FUELTV.at" site_id="283">Fuel TV</channel>
-  <channel site="tv.dir.bg" lang="en" xmltv_id="MezzoLive.fr" site_id="381">Mezzo Live HD</channel>
-  <channel site="tv.dir.bg" lang="en" xmltv_id="MTVHits.uk" site_id="251">MTV Hits</channel>
-  <channel site="tv.dir.bg" lang="en" xmltv_id="TraceSportStars.fr" site_id="300">Trace Sport Stars</channel>
+  <channel site="tv.dir.bg" site_id="1" lang="bg" xmltv_id="France24.fr@French">France 24</channel>
+  <channel site="tv.dir.bg" site_id="2" lang="bg" xmltv_id="MovieStar.bg@SD">MovieSTAR</channel>
+  <channel site="tv.dir.bg" site_id="3" lang="bg" xmltv_id="StarCrime.bg@SD">STAR Crime (f.k.a FOX Crime)</channel>
+  <channel site="tv.dir.bg" site_id="4" lang="bg" xmltv_id="DiscoveryChannel.bg@SD">Discovery Channel</channel>
+  <channel site="tv.dir.bg" site_id="5" lang="bg" xmltv_id="SKAT.bg@SD">SKAT TV</channel>
+  <channel site="tv.dir.bg" site_id="6" lang="bg" xmltv_id="RTL.de@SD">RTL</channel>
+  <channel site="tv.dir.bg" site_id="7" lang="bg" xmltv_id="DW.de@Deutsch">DW TV</channel>
+  <channel site="tv.dir.bg" site_id="8" lang="bg" xmltv_id="NationalGeographicWild.bg@SD">National Geographic Wild</channel>
+  <channel site="tv.dir.bg" site_id="9" lang="bg" xmltv_id="AlJazeeraBalkans.ba@SD">Al Jazeera</channel>
+  <channel site="tv.dir.bg" site_id="10" lang="bg" xmltv_id="CodeFashionTV.bg@SD">Code Fashion TV</channel>
+  <channel site="tv.dir.bg" site_id="11" lang="bg" xmltv_id="CodeHealthTV.bg@SD">Code Health TV</channel>
+  <channel site="tv.dir.bg" site_id="12" lang="bg" xmltv_id="MaxSport4.bg@SD">MAX Sport 4</channel>
+  <channel site="tv.dir.bg" site_id="13" lang="bg" xmltv_id="Kanal3.bg@SD">Kanal 3 (Канал 3)</channel>
+  <channel site="tv.dir.bg" site_id="14" lang="bg" xmltv_id="Cinemax2CentralEurope.hu@HD">Cinemax 2</channel>
+  <channel site="tv.dir.bg" site_id="15" lang="bg" xmltv_id="HBO3CentralEurope.hu@SD">HBO3</channel>
+  <channel site="tv.dir.bg" site_id="16" lang="bg" xmltv_id="DiemaSport.bg@SD">Diema Sport</channel>
+  <channel site="tv.dir.bg" site_id="17" lang="bg" xmltv_id="HBO2CentralEurope.hu@SD">HBO2</channel>
+  <channel site="tv.dir.bg" site_id="18" lang="bg" xmltv_id="">FilmBox Basic</channel>
+  <channel site="tv.dir.bg" site_id="19" lang="bg" xmltv_id="TLCBalkan.us@SD">TLC</channel>
+  <channel site="tv.dir.bg" site_id="20" lang="bg" xmltv_id="">Dizi (Timeless Drama Channel)</channel>
+  <channel site="tv.dir.bg" site_id="21" lang="bg" xmltv_id="CinemaxCentralEurope.hu@HD">Cinemax</channel>
+  <channel site="tv.dir.bg" site_id="22" lang="bg" xmltv_id="HGTVLatinAmerica.us@Panregional">HGTV (Discovery Home &amp; Garden)</channel>
+  <channel site="tv.dir.bg" site_id="23" lang="bg" xmltv_id="AnimalPlanetEurope.uk@SD">Animal Planet</channel>
+  <channel site="tv.dir.bg" site_id="24" lang="bg" xmltv_id="">Fightklub HD (Bulgaria)</channel>
+  <channel site="tv.dir.bg" site_id="25" lang="bg" xmltv_id="MTVGlobal.uk@SD">MTV Europe</channel>
+  <channel site="tv.dir.bg" site_id="26" lang="bg" xmltv_id="Nostalgia.bg@SD">Nostalgia TV</channel>
+  <channel site="tv.dir.bg" site_id="27" lang="bg" xmltv_id="SuperToons.bg@SD">Super Toons</channel>
+  <channel site="tv.dir.bg" site_id="28" lang="bg" xmltv_id="MaxSport3.bg@SD">MAX Sport 3</channel>
+  <channel site="tv.dir.bg" site_id="29" lang="bg" xmltv_id="">CineStar TV</channel>
+  <channel site="tv.dir.bg" site_id="30" lang="bg" xmltv_id="StarLife.bg@SD">STAR Life (f.k.a. FOX Life)</channel>
+  <channel site="tv.dir.bg" site_id="31" lang="bg" xmltv_id="DiemaSport2.bg@SD">Diema Sport 2</channel>
+  <channel site="tv.dir.bg" site_id="32" lang="bg" xmltv_id="vijuTV1000.ru@SD">Viasat Kino (TV1000)</channel>
+  <channel site="tv.dir.bg" site_id="33" lang="bg" xmltv_id="">CineStar TV Action&amp;Thriller</channel>
+  <channel site="tv.dir.bg" site_id="34" lang="bg" xmltv_id="">FilmBox Extra</channel>
+  <channel site="tv.dir.bg" site_id="35" lang="bg" xmltv_id="">FilmBox Stars (FilmBox Plus)</channel>
+  <channel site="tv.dir.bg" site_id="36" lang="bg" xmltv_id="AXNWhite.us@SD">AXN White</channel>
+  <channel site="tv.dir.bg" site_id="37" lang="bg" xmltv_id="Eurosport4K.fr@France">Eurosport 4K</channel>
+  <channel site="tv.dir.bg" site_id="38" lang="bg" xmltv_id="">History Bulgaria</channel>
+  <channel site="tv.dir.bg" site_id="39" lang="bg" xmltv_id="">The History Channel 2</channel>
+  <channel site="tv.dir.bg" site_id="40" lang="bg" xmltv_id="FoodNetworkEMEA.us@SD">Food Network HD</channel>
+  <channel site="tv.dir.bg" site_id="41" lang="bg" xmltv_id="MaxSport1.bg@SD">MAX Sport 1</channel>
+  <channel site="tv.dir.bg" site_id="42" lang="bg" xmltv_id="HBOCentralEurope.hu@SD">HBO</channel>
+  <channel site="tv.dir.bg" site_id="43" lang="bg" xmltv_id="AXNBlack.us@Bulgary">AXN Black</channel>
+  <channel site="tv.dir.bg" site_id="44" lang="bg" xmltv_id="VivacomArena.bg@SD">Vivacom Arena (Виваком Арена)</channel>
+  <channel site="tv.dir.bg" site_id="45" lang="bg" xmltv_id="EpicDrama.uk@Sweden">Epic Drama</channel>
+  <channel site="tv.dir.bg" site_id="46" lang="bg" xmltv_id="EuronewsEnglish.fr@SD">Euronews</channel>
+  <channel site="tv.dir.bg" site_id="47" lang="bg" xmltv_id="CNN.us@SD">CNN</channel>
+  <channel site="tv.dir.bg" site_id="48" lang="bg" xmltv_id="CrimePlusInvestigation.uk@SD">Crime &amp; Investigation</channel>
+  <channel site="tv.dir.bg" site_id="49" lang="bg" xmltv_id="BBCNews.uk@Africa">BBC News (former BBC World News)</channel>
+  <channel site="tv.dir.bg" site_id="50" lang="bg" xmltv_id="Eurosport2.fr@France">Eurosport 2</channel>
+  <channel site="tv.dir.bg" site_id="51" lang="bg" xmltv_id="DiemaSport3.bg@SD">Diema Sport 3</channel>
+  <channel site="tv.dir.bg" site_id="52" lang="bg" xmltv_id="">Skyshowtime 2</channel>
+  <channel site="tv.dir.bg" site_id="53" lang="bg" xmltv_id="">Skyshowtime 1</channel>
+  <channel site="tv.dir.bg" site_id="54" lang="bg" xmltv_id="Cinemania.rs@SD">Cinemania</channel>
+  <channel site="tv.dir.bg" site_id="55" lang="bg" xmltv_id="InvestigationDiscoveryEurope.us@SD">ID (Investigation Discovery)</channel>
+  <channel site="tv.dir.bg" site_id="56" lang="bg" xmltv_id="MaxSport2.bg@SD">MAX Sport 2</channel>
+  <channel site="tv.dir.bg" site_id="57" lang="bg" xmltv_id="BNT1.bg@SD">BNT1 (БНТ1)</channel>
+  <channel site="tv.dir.bg" site_id="58" lang="bg" xmltv_id="bTVCinema.bg@SD">bTV Cinema</channel>
+  <channel site="tv.dir.bg" site_id="59" lang="bg" xmltv_id="RING.bg@SD">Ring.bg (bTV Sport)</channel>
+  <channel site="tv.dir.bg" site_id="60" lang="bg" xmltv_id="Nova.bg@SD">NOVA TV</channel>
+  <channel site="tv.dir.bg" site_id="61" lang="bg" xmltv_id="bTV.bg@SD">bTV</channel>
+  <channel site="tv.dir.bg" site_id="62" lang="bg" xmltv_id="NovaSport.bg@SD">NOVA Sport</channel>
+  <channel site="tv.dir.bg" site_id="63" lang="bg" xmltv_id="Diema.bg@SD">Diema</channel>
+  <channel site="tv.dir.bg" site_id="64" lang="bg" xmltv_id="BNT4.bg@SD">BNT4 (БНТ4)</channel>
+  <channel site="tv.dir.bg" site_id="65" lang="bg" xmltv_id="BloombergTVBulgaria.bg@SD">Bloomberg TV Bulgaria</channel>
+  <channel site="tv.dir.bg" site_id="66" lang="bg" xmltv_id="Eurocom.bg@SD">Eurocom</channel>
+  <channel site="tv.dir.bg" site_id="67" lang="bg" xmltv_id="Eurosport1.fr@France">Eurosport</channel>
+  <channel site="tv.dir.bg" site_id="68" lang="bg" xmltv_id="ViasatHistory.se@SD">Viasat History</channel>
+  <channel site="tv.dir.bg" site_id="69" lang="bg" xmltv_id="StarChannel.bg@SD">STAR Channel (f.k.a. FOX)</channel>
+  <channel site="tv.dir.bg" site_id="70" lang="bg" xmltv_id="DisneyChannel.bg@SD">Disney Channel</channel>
+  <channel site="tv.dir.bg" site_id="71" lang="bg" xmltv_id="TV1.bg@SD">TV1 Bulgaria</channel>
+  <channel site="tv.dir.bg" site_id="72" lang="bg" xmltv_id="TravelChannelEMEA.uk@SD">Travel Channel</channel>
+  <channel site="tv.dir.bg" site_id="73" lang="bg" xmltv_id="ViasatExplore.se@SD">Viasat Explore</channel>
+  <channel site="tv.dir.bg" site_id="74" lang="bg" xmltv_id="bTVLady.bg@SD">bTV Story (f.k.a bTV Lady)</channel>
+  <channel site="tv.dir.bg" site_id="75" lang="bg" xmltv_id="">Magic TV</channel>
+  <channel site="tv.dir.bg" site_id="76" lang="bg" xmltv_id="NovaNews.bg@SD">Kanal 4 (Канал 4)</channel>
+  <channel site="tv.dir.bg" site_id="77" lang="bg" xmltv_id="ViasatNature.se@SD">Viasat Nature</channel>
+  <channel site="tv.dir.bg" site_id="78" lang="bg" xmltv_id="Nickelodeon.bg@SD">Nickelodeon</channel>
+  <channel site="tv.dir.bg" site_id="79" lang="bg" xmltv_id="BabyTV.uk@UK">Baby TV</channel>
+  <channel site="tv.dir.bg" site_id="80" lang="bg" xmltv_id="CartoonitoWesternEurope.uk@Sweden">Cartoonito (f.k.a Boomerang TV)</channel>
+  <channel site="tv.dir.bg" site_id="81" lang="bg" xmltv_id="bTVComedy.bg@SD">bTV Comedy</channel>
+  <channel site="tv.dir.bg" site_id="82" lang="bg" xmltv_id="BNT3.bg@SD">BNT3 (БНТ3)</channel>
+  <channel site="tv.dir.bg" site_id="83" lang="bg" xmltv_id="NationalGeographic.bg@SD">National Geographic</channel>
+  <channel site="tv.dir.bg" site_id="84" lang="bg" xmltv_id="">Cartoon Network Bulgaria</channel>
+  <channel site="tv.dir.bg" site_id="85" lang="bg" xmltv_id="NovaNews.bg@SD">Nova News HD</channel>
+  <channel site="tv.dir.bg" site_id="86" lang="bg" xmltv_id="KinoNova.bg@SD">Kino Nova</channel>
+  <channel site="tv.dir.bg" site_id="87" lang="bg" xmltv_id="">Duck TV</channel>
+  <channel site="tv.dir.bg" site_id="88" lang="bg" xmltv_id="">The Voice TV</channel>
+  <channel site="tv.dir.bg" site_id="89" lang="bg" xmltv_id="">Viasat True Crime</channel>
+  <channel site="tv.dir.bg" site_id="90" lang="bg" xmltv_id="DiemaFamily.bg@SD">Diema Family</channel>
+  <channel site="tv.dir.bg" site_id="91" lang="bg" xmltv_id="TVEvropa.bg@SD">Euronews Bulgaria (f.k.a Evropa TV)</channel>
+  <channel site="tv.dir.bg" site_id="92" lang="bg" xmltv_id="">AXN</channel>
+  <channel site="tv.dir.bg" site_id="93" lang="bg" xmltv_id="LoveNature.ca@SD">Love Nature</channel>
+  <channel site="tv.dir.bg" site_id="94" lang="bg" xmltv_id="Nicktoons.bg@SD">Nicktoons</channel>
+  <channel site="tv.dir.bg" site_id="95" lang="bg" xmltv_id="bTVAction.bg@SD">bTV Action</channel>
+  <channel site="tv.dir.bg" site_id="96" lang="bg" xmltv_id="">24 Kitchen</channel>
+  <channel site="tv.dir.bg" site_id="97" lang="bg" xmltv_id="NickJr.bg@SD">Nick Jr</channel>
+  <channel site="tv.dir.bg" site_id="98" lang="bg" xmltv_id="78TV.bg@SD">7/8 TV</channel>
+  <channel site="tv.dir.bg" site_id="99" lang="bg" xmltv_id="BNT2.bg@SD">BNT2 (БНТ2)</channel>
+  <channel site="tv.dir.bg" site_id="100" lang="bg" xmltv_id="BulgariaOnAir.bg@SD">Bulgaria ON AIR (България Он Еър)</channel>
 </channels>
