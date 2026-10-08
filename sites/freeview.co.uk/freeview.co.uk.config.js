@@ -5,6 +5,11 @@ const parseDuration = require('parse-duration').default
 
 dayjs.extend(utc)
 
+const HEADERS = {
+  'User-Agent':
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36'
+}
+
 module.exports = {
   site: 'freeview.co.uk',
   days: 2,
@@ -41,7 +46,9 @@ module.exports = {
     for (let networkId = 64257; networkId <= 64425; networkId++) { // loop through all valid networkIds starting from 64257 (Greater London) to 64425 (Belfast) to ensure we can get all the channels available on freeview
       console.log(networkId)
       const data = await axios
-        .get(`https://www.freeview.co.uk/api/tv-guide?nid=${networkId}&start=${startTimestamp}`)
+        .get(`https://www.freeview.co.uk/api/tv-guide?nid=${networkId}&start=${startTimestamp}`, {
+          headers: HEADERS
+        })
         .then(r => r.data)
         .catch(console.log)
 
@@ -85,7 +92,7 @@ function parseItems(content, channel) {
 async function loadProgramDetails(item) {
   const url = `https://www.freeview.co.uk/api/program?pid=${item.program_id}&start_time=${item.start_time}&duration=${item.duration}`
   const data = await axios
-    .get(url)
+    .get(url, { headers: HEADERS })
     .then(r => {
       const programs = r?.data?.data?.programs
       return Array.isArray(programs) && programs.length > 0 ? programs[0] : {}
