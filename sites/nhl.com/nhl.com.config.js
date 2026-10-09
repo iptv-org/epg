@@ -1,4 +1,11 @@
 const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
+
+dayjs.extend(utc)
+dayjs.extend(timezone)
+
+const TIMEZONE = 'America/New_York'
 
 module.exports = {
   site: 'nhl.com',
@@ -34,11 +41,11 @@ module.exports = {
 // }
 
 function parseStart(item) {
-  return dayjs(item.startTime)
+  return dayjs.tz(item.startTime, TIMEZONE)
 }
 
 function parseStop(item) {
-  return dayjs(item.endTime)
+  return dayjs.tz(item.endTime, TIMEZONE)
 }
 
 function parseItems(content) {
