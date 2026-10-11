@@ -15,7 +15,14 @@ const channel = {
 
 it('can generate valid url', async () => {
   expect(url({ date, channel })).toBe(
-    'https://mts-pro-envoy-vip.dna.fi/hbx/api/pub/xrtv/g/media?q=channel:ch-216356&q=profile:pr&q=start-interval:1736906400000/1736992799000'
+    'https://mts-pro-envoy-vip.dna.fi/hbx/api/pub/xrtv/g/media?q=channel:ch-216356&q=profile:pr&q=start-interval:1736906400000/1736992799000&limit=1000'
+  )
+})
+
+it('can generate valid url during daylight saving time', async () => {
+  const dstDate = dayjs.utc('2025-07-15', 'YYYY-MM-DD').startOf('d')
+  expect(url({ date: dstDate, channel })).toBe(
+    'https://mts-pro-envoy-vip.dna.fi/hbx/api/pub/xrtv/g/media?q=channel:ch-216356&q=profile:pr&q=start-interval:1752541200000/1752627599000&limit=1000'
   )
 })
 
@@ -135,4 +142,11 @@ it('can handle empty guide', () => {
   })
 
   expect(results).toMatchObject([])
+})
+
+it('throws on unexpected response', () => {
+  expect(() => parser({ date, content: '<html>Error</html>' })).toThrow()
+  expect(() => parser({ date, content: '{"message":"Internal Server Error"}' })).toThrow(
+    'Unexpected response structure'
+  )
 })

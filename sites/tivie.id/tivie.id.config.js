@@ -5,13 +5,10 @@ const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 const doFetch = require('@ntlab/sfetch')
-const debug = require('debug')('site:tivie.id')
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
-
-doFetch.setDebugger(debug)
 
 const tz = 'Asia/Jakarta'
 let $
@@ -76,7 +73,7 @@ module.exports = {
             // program description
             const desc = info.find('div[class=""] > p')
             if (desc.length) {
-              queue.i.description = parseText(prune(desc, '.hidden'))
+              queue.i.description = parseText(prune(desc, '.hide'))
             }
             // program categories
             const cat = info.find('div[class=""] > a')

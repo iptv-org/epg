@@ -30,29 +30,29 @@ it('can parse response', () => {
     title: 'As aventuras do Gato das Botas',
     description: null,
     icon: 'https://img.iol.pt/image/id/66d6fb1ad34e94b82904c3ce/300.jpg',
-    start: '2025-01-26T05:15:00.000Z',
-    stop: '2025-01-26T05:45:00.000Z'
+    start: '2025-01-26T06:15:00.000Z',
+    stop: '2025-01-26T06:45:00.000Z'
   })
   expect(results[5]).toMatchObject({
     title: 'Missa',
     description: 'Gondomar',
     icon: 'https://img.iol.pt/image/id/6218de030cf21a10a4218ba3/300.jpg',
-    start: '2025-01-26T09:00:00.000Z',
-    stop: '2025-01-26T10:00:00.000Z'
+    start: '2025-01-26T10:00:00.000Z',
+    stop: '2025-01-26T11:00:00.000Z'
   })
   expect(results[7]).toMatchObject({
     title: 'Por um Triz',
     description: 'Um segundo pode mudar tudo.',
     icon: 'https://img.iol.pt/image/id/6777dcffd34e94b829094756/300.jpg',
-    start: '2025-01-26T11:00:00.000Z',
-    stop: '2025-01-26T11:58:00.000Z'
+    start: '2025-01-26T12:00:00.000Z',
+    stop: '2025-01-26T12:58:00.000Z'
   })
   expect(results[15]).toMatchObject({
     title: 'As aventuras do Gato das Botas',
     description: null,
     icon: 'https://img.iol.pt/image/id/66d6fb1ad34e94b82904c3ce/300.jpg',
-    start: '2025-01-27T04:50:00.000Z',
-    stop: '2025-01-27T05:20:00.000Z'
+    start: '2025-01-27T05:50:00.000Z',
+    stop: '2025-01-27T06:20:00.000Z'
   })
 })
 

@@ -1,1 +1,204 @@
-[{"responseElementType": "ProgramList", "channelExternalId": "1010", "programs": [{"startDate": 1736636100000, "endDate": 1736642400000, "attachments": [{"name": "COVER", "value": "/epg/COVER/COVER_2247567.jpg"}], "seriesSeason": "", "episodeId": "", "referenceProgramId": "780906206", "prLevel": 7, "id": 15071377885, "description": "Cassie tenía un brillante futuro por delante. Sin embargo, un incidente provocó que no pudiese cumplir sus sueños. Con el paso del tiempo, tendrá la oportunidad de enmendar los errores del pasado.", "seriesName": "", "genres": [{"externalId": "Cine", "name": "Cine", "id": 128839623}, {"externalId": "Drama", "name": "Drama", "id": 862336010}, {"externalId": "Suspense", "name": "Suspense", "id": 862337524}], "name": "Una joven prometedora", "flags": 14}, {"startDate": 1736642400000, "endDate": 1736648100000, "attachments": [{"name": "COVER", "value": "/epg/COVER/COVER_3522912.jpg"}], "seriesSeason": "", "episodeId": "", "referenceProgramId": "780916568", "prLevel": 1, "id": 15073959700, "description": "César deambula por las calles de Montmarte en París, donde interpreta su música. Un día, se encuentra con Salomé, a quien dejó sin decir palabra un tiempo atrás, y descubre que es padre de una niña.", "seriesName": "", "genres": [{"externalId": "Cine", "name": "Cine", "id": 128839623}, {"externalId": "Comedia", "name": "Comedia", "id": 862331198}], "name": "Una comedia romántica", "flags": 14}, {"startDate": 1736648100000, "endDate": 1736658000000, "attachments": [{"name": "COVER", "value": "/epg/COVER/COVER_3108557.jpg"}], "seriesSeason": "", "episodeId": "", "referenceProgramId": "780871990", "prLevel": 1, "id": 15058341721, "description": "Noticias de los servicios informativos del Canal 24 Horas", "seriesName": "", "genres": [{"externalId": "Programa", "name": "Programa", "id": 9169074970}, {"externalId": "Informativo", "name": "Informativo", "id": 862353792}], "name": "Noticias 24H", "flags": 14}, {"startDate": 1736658000000, "endDate": 1736674500000, "attachments": [{"name": "COVER", "value": "/epg/COVER/COVER_3108557.jpg"}], "seriesSeason": "", "episodeId": "", "referenceProgramId": "780871999", "prLevel": 1, "id": 15058342585, "description": "Noticias de los servicios informativos del Canal 24 Horas", "seriesName": "", "genres": [{"externalId": "Programa", "name": "Programa", "id": 9169074970}, {"externalId": "Informativo", "name": "Informativo", "id": 862353792}], "name": "Noticias 24H", "flags": 14}]}]
+[
+  {
+    "responseElementType": "ProgramList",
+    "channelExternalId": "1010",
+    "programs": [
+      {
+        "startDate": 1780003434000,
+        "endDate": 1780009582000,
+        "attachments": [
+          {
+            "name": "COVER",
+            "value": "/epg/COVER/COVER_4609317.jpg"
+          }
+        ],
+        "seriesSeason": "",
+        "episodeId": "",
+        "referenceProgramId": "785692318",
+        "prLevel": 4,
+        "id": 16078166515,
+        "description": "Marina es una monja atípica, recién llegada a El Parral, un colegio con niños problemáticos. A pesar de que los internos, niños sin familia, la reciben con mil trastadas, poco a poco se crearán entre ellos vínculos casi familiares.",
+        "seriesName": "",
+        "genres": [
+          {
+            "externalId": "Cine",
+            "name": "Cine",
+            "id": 128839623
+          },
+          {
+            "externalId": "Comedia",
+            "name": "Comedia",
+            "id": 862331198
+          },
+          {
+            "externalId": "Familiar",
+            "name": "Familiar",
+            "id": 1713938080
+          }
+        ],
+        "name": "Llenos de gracia",
+        "flags": 14
+      },
+      {
+        "startDate": 1780009582000,
+        "endDate": 1780014300000,
+        "attachments": [
+          {
+            "name": "COVER",
+            "value": "/epg/COVER/COVER_4765552.jpg"
+          }
+        ],
+        "seriesSeason": "",
+        "episodeId": "",
+        "referenceProgramId": "785692316",
+        "prLevel": 4,
+        "id": 16078166290,
+        "description": "Los monjes de un monasterio en quiebra solo tienen una única oportunidad: ganar la \"Champions Clerum\". Pero en esa congregación no juega al fútbol \"ni Dios\", y este inesperado equipo necesitará algo más para salvar su casa.",
+        "seriesName": "",
+        "genres": [
+          {
+            "externalId": "Cine",
+            "name": "Cine",
+            "id": 128839623
+          },
+          {
+            "externalId": "Comedia",
+            "name": "Comedia",
+            "id": 862331198
+          }
+        ],
+        "name": "Que baje Dios y lo vea",
+        "flags": 14
+      },
+      {
+        "startDate": 1780014300000,
+        "endDate": 1780023600000,
+        "attachments": [
+          {
+            "name": "COVER",
+            "value": "/epg/COVER/COVER_4020396.jpg"
+          }
+        ],
+        "seriesSeason": "2026",
+        "episodeId": "42",
+        "referenceProgramId": "785692312",
+        "prLevel": 1,
+        "id": 16078166815,
+        "description": "Informativo diario en el que se repasa y analiza la actualidad del día",
+        "seriesName": "La noche en 24 horas",
+        "genres": [
+          {
+            "externalId": "Programa",
+            "name": "Programa",
+            "id": 9169074970
+          },
+          {
+            "externalId": "Informativo",
+            "name": "Informativo",
+            "id": 862353792
+          }
+        ],
+        "name": "La noche en 24 horas - T2026, E42: Episodio 42",
+        "flags": 15
+      },
+      {
+        "startDate": 1780023600000,
+        "endDate": 1780027200000,
+        "attachments": [
+          {
+            "name": "COVER",
+            "value": "/epg/COVER/COVER_3997940.jpg"
+          }
+        ],
+        "seriesSeason": "2026",
+        "episodeId": "160",
+        "referenceProgramId": "785692296",
+        "prLevel": 1,
+        "id": 16078165690,
+        "description": "Información continua 24 horas  nacional e internacional, 366 dias al año",
+        "seriesName": "Noticias 24H",
+        "genres": [
+          {
+            "externalId": "Programa",
+            "name": "Programa",
+            "id": 9169074970
+          },
+          {
+            "externalId": "Informativo",
+            "name": "Informativo",
+            "id": 862353792
+          }
+        ],
+        "name": "Noticias 24H - T2026, E160: Episodio 160",
+        "flags": 15
+      },
+      {
+        "startDate": 1780027200000,
+        "endDate": 1780033800000,
+        "attachments": [
+          {
+            "name": "COVER",
+            "value": "/epg/COVER/COVER_4020388.jpg"
+          }
+        ],
+        "seriesSeason": "2026",
+        "episodeId": "364",
+        "referenceProgramId": "785628699",
+        "prLevel": 1,
+        "id": 16067265700,
+        "description": "Espacio de información diaria con noticias nacionales e internacionales",
+        "seriesName": "Telediario Matinal",
+        "genres": [
+          {
+            "externalId": "Programa",
+            "name": "Programa",
+            "id": 9169074970
+          },
+          {
+            "externalId": "Informativo",
+            "name": "Informativo",
+            "id": 862353792
+          }
+        ],
+        "name": "Telediario Matinal - T2026, E364: Episodio 364",
+        "flags": 15
+      },
+      {
+        "startDate": 1780033800000,
+        "endDate": 1780043700000,
+        "attachments": [
+          {
+            "name": "COVER",
+            "value": "/epg/COVER/COVER_3997920.jpg"
+          }
+        ],
+        "seriesSeason": "2026",
+        "episodeId": "105",
+        "referenceProgramId": "785628646",
+        "prLevel": 7,
+        "id": 16067266000,
+        "description": "El programa cuenta con  reportajes y entrevistas, dedicados a analizar en profundidad el mundo de la política y la actualidad.",
+        "seriesName": "La hora de La 1",
+        "genres": [
+          {
+            "externalId": "Programa",
+            "name": "Programa",
+            "id": 9169074970
+          },
+          {
+            "externalId": "Informativo",
+            "name": "Informativo",
+            "id": 862353792
+          },
+          {
+            "externalId": "Otros",
+            "name": "Otros",
+            "id": 24434204
+          }
+        ],
+        "name": "La hora de La 1 - T2026, E105: La hora de La 1 - 29.05.2026",
+        "flags": 15
+      }
+    ]
+  }
+]

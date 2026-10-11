@@ -74,11 +74,17 @@ module.exports = {
         const id = $(el).attr('id')
         if (!id || !/^channels_\d+/.test(id)) return
         const [, channelId] = id.split('_')
+        let name = channelId
+        const href = $(el).find('a').attr('href')
+        if (href) {
+          const [, , , channelSlug] = href.split('/')
+          name = channelSlug
+        }
 
         channels.push({
           lang,
           site_id: `${category}#${channelId}`,
-          name: channelId
+          name
         })
       })
     }

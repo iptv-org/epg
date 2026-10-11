@@ -1,239 +1,241 @@
 {
-    "duration": 21600,
-    "entries": [
+  "duration": 21600,
+  "entries": [
+    {
+      "channelId": "NL_000007_019181",
+      "events": [
         {
-            "channelId": "NL_000001_019401",
-            "events": [
-                {
-                    "audioLanguages": [
-                        {
-                            "lang": "nl"
-                        }
-                    ],
-                    "endTime": 1734438000,
-                    "id": "crid:~~2F~~2Fgn.tv~~2F817615~~2FSH010806510000~~2F333413685,imi:539d42e5dc6d0f5857fa9c13071cae89ceff9d50",
-                    "isPlaceHolder": true,
-                    "mergedId": "817615|nl",
-                    "minimumAge": 0,
-                    "replayTVMinAge": 0,
-                    "startTime": 1734436800,
-                    "title": "NOS Journaal"
-                },
-                {
-                    "audioLanguages": [
-                        {
-                            "lang": "nl"
-                        }
-                    ],
-                    "endTime": 1734440400,
-                    "id": "crid:~~2F~~2Fgn.tv~~2F28846670~~2FEP041927080295,imi:33cbc0a832f9544ef945734c74e3ae634f74d996",
-                    "mergedId": "21574304|nl",
-                    "premiere": true,
-                    "replayTVMinAge": 0,
-                    "seriesPremiereAirings": true,
-                    "startTime": 1734438000,
-                    "title": "Ongehoord Nieuws"
-                },
-                {
-                    "audioLanguages": [
-                        {
-                            "lang": "nl"
-                        }
-                    ],
-                    "endTime": 1734444000,
-                    "id": "crid:~~2F~~2Fgn.tv~~2F28846748~~2FEP027812200406,imi:8dce8a936d09d1a2d9b7eee6c907dbde8664b329",
-                    "mergedId": "14567018|nl",
-                    "premiere": true,
-                    "replayTVMinAge": 0,
-                    "seriesPremiereAirings": true,
-                    "startTime": 1734440400,
-                    "title": "NOS het vragenuurtje"
-                },
-                {
-                    "audioLanguages": [
-                        {
-                            "lang": "nl"
-                        }
-                    ],
-                    "endTime": 1734445200,
-                    "id": "crid:~~2F~~2Fgn.tv~~2F817615~~2FSH010806510000~~2F333413689,imi:e885706a6e0500464ad98492794657a93a30784b",
-                    "isPlaceHolder": true,
-                    "mergedId": "817615|nl",
-                    "minimumAge": 0,
-                    "replayTVMinAge": 0,
-                    "startTime": 1734444000,
-                    "title": "NOS Journaal"
-                },
-                {
-                    "audioLanguages": [
-                        {
-                            "lang": "nl"
-                        }
-                    ],
-                    "endTime": 1734446100,
-                    "id": "crid:~~2F~~2Fgn.tv~~2F817615~~2FSH010806510000~~2F333413690,imi:23a731e1015c2bd03b82e6b47fce26db8ddfc5b5",
-                    "isPlaceHolder": true,
-                    "mergedId": "817615|nl",
-                    "minimumAge": 0,
-                    "replayTVMinAge": 0,
-                    "startTime": 1734445200,
-                    "title": "NOS Journaal"
-                },
-                {
-                    "audioLanguages": [
-                        {
-                            "lang": "nl"
-                        }
-                    ],
-                    "endTime": 1734447300,
-                    "id": "crid:~~2F~~2Fgn.tv~~2F817615~~2FSH010806510000~~2F333413691,imi:a5799a218edbd62acf72d4764562dedad834e051",
-                    "isPlaceHolder": true,
-                    "mergedId": "817615|nl",
-                    "minimumAge": 0,
-                    "replayTVMinAge": 9,
-                    "startTime": 1734446100,
-                    "title": "NOS Journaal"
-                },
-                {
-                    "audioLanguages": [
-                        {
-                            "lang": "nl"
-                        }
-                    ],
-                    "endTime": 1734451080,
-                    "id": "crid:~~2F~~2Fgn.tv~~2F28728829~~2FEP052397600066,imi:34a0b026912de96e3546b15ad2983070a250dfd5",
-                    "mergedId": "28002368|nl",
-                    "minimumAge": 9,
-                    "replayTVMinAge": 9,
-                    "seriesPremiereAirings": true,
-                    "startTime": 1734447300,
-                    "title": "Bar Laat"
-                },
-                {
-                    "audioLanguages": [
-                        {
-                            "lang": "nl"
-                        }
-                    ],
-                    "endTime": 1734451200,
-                    "id": "crid:~~2F~~2Fgn.tv~~2F23984539~~2FEP021725790095,imi:76077546def36be37717b1c2d46bd863de8d9755",
-                    "mergedId": "11721811|nl",
-                    "replayTVMinAge": 9,
-                    "seriesName": "CARE Nederland",
-                    "seriesPremiereAirings": true,
-                    "startTime": 1734451080,
-                    "title": "Socutera"
-                },
-                {
-                    "audioLanguages": [
-                        {
-                            "lang": "nl"
-                        }
-                    ],
-                    "endTime": 1734451800,
-                    "id": "crid:~~2F~~2Fgn.tv~~2F28047447~~2FSH052589890000~~2F333413694,imi:c4c64504eaeb701fc0561b0b95ef44f76e5350e1",
-                    "isPlaceHolder": true,
-                    "mergedId": "28047447|nl",
-                    "minimumAge": 0,
-                    "replayTVMinAge": 9,
-                    "startTime": 1734451200,
-                    "title": "NOS Journaal in Makkelijke Taal"
-                },
-                {
-                    "audioLanguages": [
-                        {
-                            "lang": "nl"
-                        }
-                    ],
-                    "endTime": 1734454500,
-                    "id": "crid:~~2F~~2Fgn.tv~~2F28844615~~2FEP021727633058,imi:b614b60f0ee90c3fe3d98d828827381cd3071ef8",
-                    "mergedId": "959050|nl",
-                    "minimumAge": 0,
-                    "premiere": true,
-                    "replayTVMinAge": 0,
-                    "seriesName": "Vluchtelingenwerk NL",
-                    "seriesPremiereAirings": true,
-                    "startTime": 1734451800,
-                    "title": "Tijd voor MAX And Hallo Nederland"
-                },
-                {
-                    "audioLanguages": [
-                        {
-                            "lang": "nl"
-                        }
-                    ],
-                    "endTime": 1734454620,
-                    "id": "crid:~~2F~~2Fgn.tv~~2F14043893~~2FEP021725040022,imi:3a229c4847ca8162cde658c13732b25eb45953b7",
-                    "mergedId": "11721625|nl",
-                    "replayTVMinAge": 0,
-                    "seriesName": "FvD",
-                    "seriesPremiereAirings": true,
-                    "startTime": 1734454500,
-                    "title": "Politieke Partijen"
-                },
-                {
-                    "audioLanguages": [
-                        {
-                            "lang": "nl"
-                        }
-                    ],
-                    "endTime": 1734454800,
-                    "id": "crid:~~2F~~2Fgn.tv~~2F19527612~~2FEP021725040026,imi:d8ccbacaf474ae289c1c2d3b4a4fecb816262a2a",
-                    "mergedId": "11721625|nl",
-                    "replayTVMinAge": 0,
-                    "seriesName": "JA21",
-                    "seriesPremiereAirings": true,
-                    "startTime": 1734454620,
-                    "title": "Politieke Partijen"
-                },
-                {
-                    "audioLanguages": [
-                        {
-                            "lang": "nl"
-                        }
-                    ],
-                    "endTime": 1734455700,
-                    "id": "crid:~~2F~~2Fgn.tv~~2F19275926~~2FSH037283250000~~2F333413698,imi:0c3e271c7a81ec4b8ec2e56c968ab209ed73df7a",
-                    "isPlaceHolder": true,
-                    "mergedId": "19275926|nl",
-                    "minimumAge": 0,
-                    "replayTVMinAge": 0,
-                    "startTime": 1734454800,
-                    "title": "NOS Journaal 18.00 uur"
-                },
-                {
-                    "audioLanguages": [
-                        {
-                            "lang": "nl"
-                        }
-                    ],
-                    "endTime": 1734456600,
-                    "id": "crid:~~2F~~2Fgn.tv~~2F28689945~~2FEP010806570933,imi:fa3fd8a287520b2b29e574c1a578a9a6c0bc4b2f",
-                    "mergedId": "817618|nl",
-                    "premiere": true,
-                    "replayTVMinAge": 0,
-                    "seriesPremiereAirings": true,
-                    "startTime": 1734455700,
-                    "title": "NOS Sportjournaal"
-                },
-                {
-                    "audioLanguages": [
-                        {
-                            "lang": "nl"
-                        }
-                    ],
-                    "endTime": 1734458700,
-                    "id": "crid:~~2F~~2Fgn.tv~~2F28844566~~2FEP027607161611,imi:a235382a2fb37bc84737285ac486fa24c650464f",
-                    "mergedId": "663871|nl",
-                    "minimumAge": 0,
-                    "premiere": true,
-                    "replayTVMinAge": 0,
-                    "seriesPremiereAirings": true,
-                    "startTime": 1734456600,
-                    "title": "EenVandaag"
-                }
-            ]
+          "audioLanguages": [
+            {
+              "lang": "nl"
+            }
+          ],
+          "endTime": 1780142460,
+          "id": "crid:~~2F~~2Fgn.tv~~2F33027307~~2FEP051178210026,imi:53bc5cdaeddeac51615f4df67319e8f788430a48",
+          "mergedId": "27291958|nl",
+          "minimumAge": 0,
+          "replayTVMinAge": 9,
+          "seriesPremiereAirings": true,
+          "startTime": 1780140720,
+          "title": "Klimaat Bewust Werkt"
+        },
+        {
+          "audioLanguages": [
+            {
+              "lang": "nl"
+            }
+          ],
+          "endTime": 1780144260,
+          "id": "crid:~~2F~~2Fgn.tv~~2F19504814~~2FEP027864860118,imi:627dd8d8535ba6e3650e22701510e98e2521981a",
+          "mergedId": "14595447|nl",
+          "minimumAge": 9,
+          "minimumAgeWarnings": [
+            "2"
+          ],
+          "replayTVMinAge": 9,
+          "seriesPremiereAirings": true,
+          "startTime": 1780142460,
+          "title": "Idioten op de weg"
+        },
+        {
+          "audioLanguages": [
+            {
+              "lang": "nl"
+            }
+          ],
+          "endTime": 1780146120,
+          "id": "crid:~~2F~~2Fgn.tv~~2F20107794~~2FEP027864860145,imi:f46395cfdc609aaf890b749936d046d98d3585d9",
+          "mergedId": "14595447|nl",
+          "minimumAge": 9,
+          "minimumAgeWarnings": [
+            "2"
+          ],
+          "replayTVMinAge": 9,
+          "seriesPremiereAirings": true,
+          "startTime": 1780144260,
+          "title": "Idioten op de weg"
+        },
+        {
+          "audioLanguages": [
+            {
+              "lang": "nl"
+            }
+          ],
+          "endTime": 1780147920,
+          "id": "crid:~~2F~~2Fgn.tv~~2F33027310~~2FEP062402210006,imi:69c903f7d09c612f1d1ff7cd9f962501429a3a20",
+          "mergedId": "32089778|nl",
+          "minimumAge": 0,
+          "replayTVMinAge": 9,
+          "seriesPremiereAirings": true,
+          "startTime": 1780146120,
+          "title": "AI Storm"
+        },
+        {
+          "audioLanguages": [
+            {
+              "lang": "nl"
+            }
+          ],
+          "endTime": 1780149720,
+          "id": "crid:~~2F~~2Fgn.tv~~2F19504824~~2FEP027864860120,imi:e6987d185617bd73c7496ae61cba4327657f3b46",
+          "mergedId": "14595447|nl",
+          "minimumAge": 9,
+          "minimumAgeWarnings": [
+            "2"
+          ],
+          "replayTVMinAge": 9,
+          "seriesPremiereAirings": true,
+          "startTime": 1780147920,
+          "title": "Idioten op de weg"
+        },
+        {
+          "audioLanguages": [
+            {
+              "lang": "nl"
+            }
+          ],
+          "endTime": 1780151520,
+          "id": "crid:~~2F~~2Fgn.tv~~2F19504828~~2FEP027864860121,imi:9e445bd35a9dbc131687f9f942cba74fbe519abe",
+          "mergedId": "14595447|nl",
+          "minimumAge": 9,
+          "minimumAgeWarnings": [
+            "2"
+          ],
+          "replayTVMinAge": 9,
+          "seriesPremiereAirings": true,
+          "startTime": 1780149720,
+          "title": "Idioten op de weg"
+        },
+        {
+          "audioLanguages": [
+            {
+              "lang": "nl"
+            }
+          ],
+          "endTime": 1780153380,
+          "id": "crid:~~2F~~2Fgn.tv~~2F33027304~~2FEP063727610006,imi:3b6dde66a9ee91d21a8f953f1de0c7f73521e7e1",
+          "mergedId": "32785202|nl",
+          "minimumAge": 0,
+          "replayTVMinAge": 9,
+          "seriesPremiereAirings": true,
+          "startTime": 1780151520,
+          "title": "Riders TV"
+        },
+        {
+          "audioLanguages": [
+            {
+              "lang": "nl"
+            }
+          ],
+          "endTime": 1780155300,
+          "id": "crid:~~2F~~2Fgn.tv~~2F19504830~~2FEP027864860122,imi:acae3c47ef7a2724e162582f0649f186477b064c",
+          "mergedId": "14595447|nl",
+          "minimumAge": 9,
+          "minimumAgeWarnings": [
+            "2"
+          ],
+          "replayTVMinAge": 9,
+          "seriesPremiereAirings": true,
+          "startTime": 1780153380,
+          "title": "Idioten op de weg"
+        },
+        {
+          "audioLanguages": [
+            {
+              "lang": "nl"
+            }
+          ],
+          "endTime": 1780157100,
+          "id": "crid:~~2F~~2Fgn.tv~~2F33027311~~2FEP027840560190,imi:be83b8c333b96c800cf0b6fbf1111c4b7332f608",
+          "mergedId": "14582265|nl",
+          "minimumAge": 0,
+          "replayTVMinAge": 16,
+          "seriesPremiereAirings": true,
+          "startTime": 1780155300,
+          "title": "RTL Autowereld"
+        },
+        {
+          "audioLanguages": [
+            {
+              "lang": "nl"
+            }
+          ],
+          "endTime": 1780158840,
+          "id": "crid:~~2F~~2Fgn.tv~~2F8830989~~2FEP028429430054,imi:ccb25b504c55a632a1e4d8c700e7159e3a9eff84",
+          "mergedId": "7959226|nl",
+          "minimumAge": 6,
+          "minimumAgeWarnings": [
+            "1",
+            "5"
+          ],
+          "replayTVMinAge": 16,
+          "seriesName": "Drop the Bomb",
+          "seriesPremiereAirings": true,
+          "startTime": 1780157100,
+          "title": "Hardcore Pawn"
+        },
+        {
+          "audioLanguages": [
+            {
+              "lang": "nl"
+            }
+          ],
+          "endTime": 1780160460,
+          "id": "crid:~~2F~~2Fgn.tv~~2F8831115~~2FEP028429430055,imi:5b2329b3a564ff3be25a731ea80868b4c7b87ca6",
+          "mergedId": "7959226|nl",
+          "minimumAge": 6,
+          "minimumAgeWarnings": [
+            "1",
+            "5"
+          ],
+          "replayTVMinAge": 16,
+          "seriesName": "Total Meltdown",
+          "seriesPremiereAirings": true,
+          "startTime": 1780158840,
+          "title": "Hardcore Pawn"
+        },
+        {
+          "audioLanguages": [
+            {
+              "lang": "nl"
+            }
+          ],
+          "endTime": 1780162200,
+          "id": "crid:~~2F~~2Fgn.tv~~2F8876420~~2FEP028429430063,imi:bebfb614892a9efafa58fc001298eecf573a316b",
+          "mergedId": "7959226|nl",
+          "minimumAge": 6,
+          "minimumAgeWarnings": [
+            "1",
+            "5"
+          ],
+          "replayTVMinAge": 16,
+          "seriesName": "Aftermath",
+          "seriesPremiereAirings": true,
+          "startTime": 1780160460,
+          "title": "Hardcore Pawn"
+        },
+        {
+          "audioLanguages": [
+            {
+              "lang": "nl"
+            }
+          ],
+          "endTime": 1780164000,
+          "id": "crid:~~2F~~2Fgn.tv~~2F8876590~~2FEP028429430062,imi:f31b6aa35661d2bb52de2d22a0000259c8200450",
+          "mergedId": "7959226|nl",
+          "minimumAge": 6,
+          "minimumAgeWarnings": [
+            "1",
+            "5"
+          ],
+          "replayTVMinAge": 16,
+          "seriesName": "Final Decision",
+          "seriesPremiereAirings": true,
+          "startTime": 1780162200,
+          "title": "Hardcore Pawn"
         }
-    ],
-    "time": 1734436800
+      ]
+    }
+ ],
+  "time": 1780142400
 }

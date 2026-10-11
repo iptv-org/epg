@@ -3,7 +3,7 @@ import fs from 'fs-extra'
 import { pathToFileURL } from 'node:url'
 
 const ENV_VAR =
-  'cross-env SITES_DIR=tests/__data__/input/guides_export/sites API_DIR=tests/__data__/output'
+  'cross-env SITES_DIR=tests/__data__/input/guides_export/sites DATA_DIR=tests/__data__/input/data API_DIR=tests/__data__/output'
 
 beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')

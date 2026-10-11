@@ -44,23 +44,21 @@ export class Guide {
   }
 
   async save({ logger }: { logger: Logger }) {
-    const dir = path.dirname(this.filepath)
-    const storage = new Storage(dir)
-    const xmlFilepath = this.filepath
-    const xmlFilename = path.basename(xmlFilepath)
-    logger.info(`  saving to "${xmlFilepath}"...`)
+    const storage = new Storage()
     const xmltv = this.toString()
-    await storage.save(xmlFilename, xmltv)
+    const xmlFilepath = this.filepath
+    logger.info(`  saving to "${xmlFilepath}"...`)
+    await storage.save(xmlFilepath, xmltv)
 
     if (this.gzip) {
       const compressed = pako.gzip(xmltv)
       const gzFilepath = typeof this.gzip === 'string' ? this.gzip : `${this.filepath}.gz`
-      const gzFilename = path.basename(gzFilepath)
       logger.info(`  saving to "${gzFilepath}"...`)
-      await storage.save(gzFilename, compressed)
+      await storage.save(gzFilepath, compressed)
     }
 
     if (this.json) {
+      const dir = path.dirname(this.filepath)
       const filename = path.basename(this.filepath).split('.')[0]
       const jsonFilepath =
         typeof this.json === 'string' ? this.json : path.join(dir, `${filename}.json`)

@@ -21,7 +21,7 @@ it('can generate valid url', () => {
 
 it('can parse response', () => {
   const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.html'), 'utf8')
-  const result = parser({ content, date }).map(p => {
+  const result = parser({ content, date, channel }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
     return p

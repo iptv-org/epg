@@ -1,6 +1,6 @@
 # tv.mail.ru
 
-https://tv.mail.ru/
+https://tv.mail.ru/moskva/
 
 ### Download the guide
 

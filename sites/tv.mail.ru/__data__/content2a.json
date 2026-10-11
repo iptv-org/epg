@@ -1,0 +1,238 @@
+{
+  "data": {
+    "schedule": {
+      "items": [
+        {
+          "id": 3161,
+          "name": "Мосфильм. Золотая коллекция",
+          "url": "/moskva/channel/3161/",
+          "logo_picture": {
+            "uuid": "68dc738d-986d-5247-b33e-f314113ef9cb",
+            "key": "AAACoQ27_vcIk20hmphmYeLcyCNxk32Ful-NTVWnqlCGhe6lDYifu2DKVm7CE5ewfsEYS3_UEZFsAm-yCDKmIJa_nPc",
+            "width": 128,
+            "height": 128,
+            "source": {
+              "id": 1,
+              "title": "",
+              "url": ""
+            },
+            "params": {
+              "dpr": [200],
+              "scale": true
+            },
+            "fmt": [
+              "png"
+            ],
+            "title": "",
+            "error": "NO_ERROR",
+            "baseURL": "https://resizer.mail.ru/p/"
+          },
+          "has_live": false,
+          "events": [
+            {
+              "id": 277465072,
+              "url": "/moskva/event/1086762/?event_id=277465072",
+              "name": "Братья Карамазовы (2-я серия)",
+              "start": "05:10",
+              "start_ts": 1781662200,
+              "stop_ts": 1781665500,
+              "image": "https://tv.mail.ru/tvpic/1/09/6080192.jpg",
+              "category_id": 2
+            },
+            {
+              "id": 277465083,
+              "url": "/moskva/event/1086762/?event_id=277465083",
+              "name": "Братья Карамазовы (3-я серия)",
+              "start": "06:05",
+              "start_ts": 1781665500,
+              "stop_ts": 1781668800,
+              "image": "https://tv.mail.ru/tvpic/1/09/6080192.jpg",
+              "category_id": 2
+            },
+            {
+              "id": 277465080,
+              "url": "/moskva/event/1086762/?event_id=277465080",
+              "name": "Братья Карамазовы (3-я серия)",
+              "start": "07:00",
+              "start_ts": 1781668800,
+              "stop_ts": 1781673900,
+              "image": "https://tv.mail.ru/tvpic/1/09/6080192.jpg",
+              "category_id": 2
+            },
+            {
+              "id": 277465081,
+              "url": "/moskva/event/329965/?event_id=277465081",
+              "name": "Заколдованный мальчик",
+              "start": "08:25",
+              "start_ts": 1781673900,
+              "stop_ts": 1781676900,
+              "image": "https://tv.mail.ru/tvpic/6/65/651001.jpg",
+              "category_id": 20
+            },
+            {
+              "id": 277182078,
+              "url": "/moskva/event/307742/?event_id=277182078",
+              "name": "Еще раз про любовь",
+              "start": "09:15",
+              "start_ts": 1781676900,
+              "stop_ts": 1781683200,
+              "image": "https://tv.mail.ru/tvpic/2/06/3511811.jpg",
+              "category_id": 1
+            },
+            {
+              "id": 277182191,
+              "url": "/moskva/event/171015/?event_id=277182191",
+              "name": "Вечный зов (В каменном мешке)",
+              "start": "11:00",
+              "start_ts": 1781683200,
+              "stop_ts": 1781687700,
+              "image": "https://tv.mail.ru/tvpic/4/03/8603506.jpg",
+              "category_id": 2
+            },
+            {
+              "id": 277182161,
+              "url": "/moskva/event/171015/?event_id=277182161",
+              "name": "Вечный зов (Возвращение)",
+              "start": "12:15",
+              "start_ts": 1781687700,
+              "stop_ts": 1781693100,
+              "image": "https://tv.mail.ru/tvpic/4/03/8603506.jpg",
+              "category_id": 2
+            },
+            {
+              "id": 277182197,
+              "url": "/moskva/event/730547/?event_id=277182197",
+              "name": "Родня",
+              "start": "13:45",
+              "start_ts": 1781693100,
+              "stop_ts": 1781699400,
+              "image": "https://tv.mail.ru/tvpic/2/74/9560704.jpg",
+              "category_id": 1
+            },
+            {
+              "id": 277182177,
+              "url": "/moskva/event/124552/?event_id=277182177",
+              "name": "Белорусский вокзал",
+              "start": "15:30",
+              "start_ts": 1781699400,
+              "stop_ts": 1781706300,
+              "image": "https://tv.mail.ru/tvpic/2/98/1925676.jpg",
+              "category_id": 1
+            },
+            {
+              "id": 277465075,
+              "url": "/moskva/event/829566/?event_id=277465075",
+              "name": "Тайны следствия (Практикантка: Часть 1-я)",
+              "start": "17:25",
+              "start_ts": 1781706300,
+              "stop_ts": 1781709300,
+              "image": "https://tv.mail.ru/tvpic/1/29/6544072.jpg",
+              "category_id": 2
+            },
+            {
+              "id": 277465074,
+              "url": "/moskva/event/829566/?event_id=277465074",
+              "name": "Тайны следствия (Практикантка: Часть 2-я)",
+              "start": "18:15",
+              "start_ts": 1781709300,
+              "stop_ts": 1781712300,
+              "image": "https://tv.mail.ru/tvpic/1/29/6544072.jpg",
+              "category_id": 2
+            },
+            {
+              "id": 277465073,
+              "url": "/moskva/event/165260/?event_id=277465073",
+              "name": "Верные друзья",
+              "start": "19:05",
+              "start_ts": 1781712300,
+              "stop_ts": 1781719200,
+              "image": "https://tv.mail.ru/tvpic/2/20/5467305.jpg",
+              "category_id": 1
+            },
+            {
+              "id": 277182195,
+              "url": "/moskva/event/247758/?event_id=277182195",
+              "name": "Девчата",
+              "start": "20:50",
+              "start_ts": 1781718600,
+              "stop_ts": 1781724900,
+              "image": "https://tv.mail.ru/tvpic/2/79/799077.jpg",
+              "category_id": 1
+            },
+            {
+              "id": 277465082,
+              "url": "/moskva/event/247758/?event_id=277465082",
+              "name": "Девчата",
+              "start": "21:00",
+              "start_ts": 1781719200,
+              "stop_ts": 1781725800,
+              "image": "https://tv.mail.ru/tvpic/2/79/799077.jpg",
+              "category_id": 1
+            },
+            {
+              "id": 277182107,
+              "url": "/moskva/event/247342/?event_id=277182107",
+              "name": "Девушка без адреса",
+              "start": "22:35",
+              "start_ts": 1781724900,
+              "stop_ts": 1781730900,
+              "image": "https://tv.mail.ru/tvpic/4/22/9200713.jpg",
+              "category_id": 1
+            },
+            {
+              "id": 277465079,
+              "url": "/moskva/event/247342/?event_id=277465079",
+              "name": "Девушка без адреса",
+              "start": "22:50",
+              "start_ts": 1781725800,
+              "stop_ts": 1781731800,
+              "image": "https://tv.mail.ru/tvpic/4/22/9200713.jpg",
+              "category_id": 1
+            },
+            {
+              "id": 277465078,
+              "url": "/moskva/event/107011/?event_id=277465078",
+              "name": "Артистка из Грибово",
+              "start": "00:30",
+              "start_ts": 1781731800,
+              "stop_ts": 1781740200,
+              "image": "https://tv.mail.ru/tvpic/1/61/9929675.jpg",
+              "category_id": 1
+            },
+            {
+              "id": 277465076,
+              "url": "/moskva/event/777111/?event_id=277465076",
+              "name": "Слезы капали",
+              "start": "02:50",
+              "start_ts": 1781740200,
+              "stop_ts": 1781745300,
+              "image": "https://tv.mail.ru/tvpic/3/72/8639450.jpg",
+              "category_id": 1
+            },
+            {
+              "id": 277182201,
+              "url": "/moskva/event/355430/?event_id=277182201",
+              "name": "Золотой теленок",
+              "start": "04:05",
+              "start_ts": 1781744700,
+              "stop_ts": 1781754900,
+              "image": "https://tv.mail.ru/tvpic/5/61/686247.jpg",
+              "category_id": 1
+            },
+            {
+              "id": 277465077,
+              "url": "/moskva/event/355430/?event_id=277465077",
+              "name": "Золотой теленок",
+              "start": "04:15",
+              "start_ts": 1781745300,
+              "stop_ts": 1781755500,
+              "image": "https://tv.mail.ru/tvpic/5/61/686247.jpg",
+              "category_id": 1
+            }
+          ]
+        }
+      ],
+      "has_next_page": true
+    }
+  }
+}

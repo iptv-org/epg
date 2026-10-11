@@ -2,13 +2,6 @@
 
 https://www.allente.no/tv-guide/
 
-### Available countries
-
-no = Norway
-fi = Finland
-dk = Danemark
-se = Sweden
-
 ### Download the guide
 
 ```sh
@@ -18,7 +11,7 @@ npm run grab --- --sites=allente.no
 ### Update channel list
 
 ```sh
-npm run channels:parse --- --config=./sites/allente.no/allente.no.config.js --output=./sites/allente.no/allente.no_<COUNTRY>.channels.xml --set=country:<COUNTRY>
+npm run channels:parse --- --config=./sites/allente.no/allente.no.config.js --output=./sites/allente.no/allente.no_no.channels.xml
 ```
 
 ### Test

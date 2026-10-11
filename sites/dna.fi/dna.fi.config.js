@@ -1,20 +1,35 @@
 const axios = require('axios')
 const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
+
+dayjs.extend(utc)
+dayjs.extend(timezone)
+
+// The API groups programmes into broadcast days that start at 04:00
+// Europe/Helsinki. Requesting exactly that window (instead of a fixed
+// UTC+2 offset) keeps the interval aligned year-round; a misaligned
+// interval gets answered with a "303 See Other" to a widened window.
+// Without an explicit `limit` the API paginates 20 items per response,
+// so only the first ~20 programmes of each day would be returned.
+const dayStart = date => dayjs.tz(date.format('YYYY-MM-DD'), 'Europe/Helsinki').add(4, 'h')
 
 module.exports = {
   site: 'dna.fi',
   days: 2,
   url({ date, channel }) {
-    const beginTimestamp = date.add(2, 'h').valueOf()
-    const endTimestamp = date.add(1, 'd').add(2, 'h').subtract(1, 's').valueOf()
+    const beginTimestamp = dayStart(date).valueOf()
+    const endTimestamp = dayStart(date.add(1, 'd')).subtract(1, 's').valueOf()
 
-    return `https://mts-pro-envoy-vip.dna.fi/hbx/api/pub/xrtv/g/media?q=channel:${channel.site_id}&q=profile:pr&q=start-interval:${beginTimestamp}/${endTimestamp}`
+    return `https://mts-pro-envoy-vip.dna.fi/hbx/api/pub/xrtv/g/media?q=channel:${channel.site_id}&q=profile:pr&q=start-interval:${beginTimestamp}/${endTimestamp}&limit=1000`
   },
-  parser({ content, date }) {
+  parser({ content }) {
     let programs = []
-    let items = parseItems(content, date)
+    let items = parseItems(content)
     items.forEach(item => {
       const data = item?._embedded?.['xrtv:meta']?.data
+      if (!data?.start) return
+
       programs.push({
         title: data?.title,
         subtitle: data?.episode_title,
@@ -27,8 +42,8 @@ module.exports = {
         images: parseImages(item),
         directors: parseCast(data, 'director'),
         actors: parseCast(data, 'actors'),
-        start: dayjs(data?.start),
-        stop: dayjs(data?.end)
+        start: dayjs(data.start),
+        stop: dayjs(data.end)
       })
     })
 
@@ -80,20 +95,17 @@ function parseImages(item) {
   return Array.isArray(images) ? images.map(image => image.src) : []
 }
 
-function parseItems(content, date) {
-  try {
-    const data = JSON.parse(content)
-    let items = data?._embedded?.['xrtv:media-item']
-    items = Array.isArray(items) ? items : []
-    items = items.filter(item => {
-      const start = item?._embedded?.['xrtv:meta']?.data?.start
-      if (!start) return false
+function parseItems(content) {
+  if (!content) return []
 
-      return date.isSame(dayjs(start), 'day')
-    })
-
-    return items
-  } catch {
-    return []
+  // Let malformed content (e.g. an HTML error page) throw, so the grab
+  // is reported as an error instead of silently producing no programmes.
+  const data = JSON.parse(content)
+  if (!data?.page) {
+    throw new Error('Unexpected response structure')
   }
+
+  const items = data?._embedded?.['xrtv:media-item']
+
+  return Array.isArray(items) ? items : []
 }

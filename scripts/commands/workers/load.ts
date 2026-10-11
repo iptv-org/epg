@@ -56,7 +56,7 @@ async function main() {
 
     if (!workerConfig) {
       worker.setStatus('MISSING_WORKER_CONFIG')
-      logger.error('Unable to load "workers.json"')
+      logger.error('Unable to load "worker.json"')
       continue
     }
 

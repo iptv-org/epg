@@ -2,6 +2,8 @@ import { execSync } from 'child_process'
 import { pathToFileURL } from 'node:url'
 import fs from 'fs-extra'
 
+const ENV_VAR = 'cross-env DATA_DIR=tests/__data__/input/data'
+
 beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')
   fs.copySync(
@@ -12,7 +14,7 @@ beforeEach(() => {
 
 describe('channels:format', () => {
   it('can format *.channels.xml files', () => {
-    const cmd = 'npm run channels:format --- tests/__data__/output/example.com.channels.xml'
+    const cmd = `${ENV_VAR} npm run channels:format --- tests/__data__/output/example.com.channels.xml`
     const stdout = execSync(cmd, { encoding: 'utf8' })
     if (process.env.DEBUG === 'true') console.log(cmd, stdout)
 

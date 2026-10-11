@@ -2,6 +2,7 @@
 <channels>
   <channel site="pluto.tv" site_id="62e925bc68d18a00077bb990" lang="en" xmltv_id="">48 Hours</channel>
   <channel site="pluto.tv" site_id="63e36b374e83e70008987c58" lang="en" xmltv_id="">Aftershock</channel>
+  <channel site="pluto.tv" site_id="69b03041cafd86d9dc5763c3" lang="en" xmltv_id="">All My Children</channel>
   <channel site="pluto.tv" site_id="69172f1699758a0f03459c5b" lang="en" xmltv_id="">America&apos;s Funniest Home Videos</channel>
   <channel site="pluto.tv" site_id="68679fc6bb46d0bdd38ac9a4" lang="en" xmltv_id="">America&apos;s Next Top Model</channel>
   <channel site="pluto.tv" site_id="6408ae8f9b39550008caf94f" lang="en" xmltv_id="">American Pickers</channel>
@@ -20,6 +21,7 @@
   <channel site="pluto.tv" site_id="6310cbee5a8ad300070fdb7c" lang="en" xmltv_id="">Best of The Drew Barrymore Show</channel>
   <channel site="pluto.tv" site_id="62fb9844db5a4a0007ebc2a3" lang="en" xmltv_id="">Beyond History</channel>
   <channel site="pluto.tv" site_id="62b976b93279cb000772c6f9" lang="en" xmltv_id="">Bloomberg TV+</channel>
+  <channel site="pluto.tv" site_id="696e647b07ea70192d49f6a5" lang="en" xmltv_id="">Bonanza</channel>
   <channel site="pluto.tv" site_id="66166989635c7500084105a2" lang="en" xmltv_id="">Bondi Rescue</channel>
   <channel site="pluto.tv" site_id="62fb9c4539183b00076a3875" lang="en" xmltv_id="">Busted at the Border</channel>
   <channel site="pluto.tv" site_id="64f8a2a23a0d700008a6ed7b" lang="en" xmltv_id="">Catfish</channel>
@@ -37,11 +39,9 @@
   <channel site="pluto.tv" site_id="638e0f4832494900074481e7" lang="en" xmltv_id="">Confess by Nosey</channel>
   <channel site="pluto.tv" site_id="6601948129adfd0008a1c0ba" lang="en" xmltv_id="">Crime &amp; Justice</channel>
   <channel site="pluto.tv" site_id="6703a96763292d000836b4fa" lang="en" xmltv_id="">Crime Up Close</channel>
-  <channel site="pluto.tv" site_id="62e9224f41d5e100076db2b6" lang="en" xmltv_id="">CSI</channel>
   <channel site="pluto.tv" site_id="6540fec1770cf1000866b65b" lang="en" xmltv_id="">Dance Moms</channel>
   <channel site="pluto.tv" site_id="647f07e74cfc2c0008a2e557" lang="en" xmltv_id="">DAZN TV</channel>
   <channel site="pluto.tv" site_id="62e92951c2db99000787c00d" lang="en" xmltv_id="">Deal or no Deal</channel>
-  <channel site="pluto.tv" site_id="62bdaf9cf1bdc500073a8bcb" lang="en" xmltv_id="">Declassified</channel>
   <channel site="pluto.tv" site_id="62bdaf3470f09a000714a2f6" lang="en" xmltv_id="">Degrassi</channel>
   <channel site="pluto.tv" site_id="65fd548f29adfd00089c662c" lang="en" xmltv_id="">Diagnosis Murder</channel>
   <channel site="pluto.tv" site_id="62e922f6675f71000736db3b" lang="en" xmltv_id="">Doc Martin</channel>
@@ -78,7 +78,10 @@
   <channel site="pluto.tv" site_id="62ea45010d0611000839868c" lang="en" xmltv_id="">Gordon Ramsay&apos;s Hell&apos;s Kitchen</channel>
   <channel site="pluto.tv" site_id="62e916affb29c60007211c8a" lang="en" xmltv_id="">Gunsmoke</channel>
   <channel site="pluto.tv" site_id="62e917b5e354cf0007b97a67" lang="en" xmltv_id="">Happy Days</channel>
+  <channel site="pluto.tv" site_id="691b012d1148fa1cd8a75d5c" lang="en" xmltv_id="">Hardcore Pawn</channel>
   <channel site="pluto.tv" site_id="63934c218ef524000757b122" lang="en" xmltv_id="">HauntTV</channel>
+  <channel site="pluto.tv" site_id="69dd5d7bfcb9bf5e3063cb16" lang="en" xmltv_id="">History &amp; Warfare</channel>
+  <channel site="pluto.tv" site_id="69b83e4169056557a9252f61" lang="en" xmltv_id="">Hit Sitcoms</channel>
   <channel site="pluto.tv" site_id="62e92967cd663f0007e604fd" lang="en" xmltv_id="">Homeful</channel>
   <channel site="pluto.tv" site_id="65a803b607e03a0008925118" lang="en" xmltv_id="">Hot Ones</channel>
   <channel site="pluto.tv" site_id="63a2f1dda0d69700078b7cba" lang="en" xmltv_id="">I Love Lucy</channel>
@@ -91,9 +94,10 @@
   <channel site="pluto.tv" site_id="62e91b5ca909cb0008114ae4" lang="en" xmltv_id="">Leave it to Bryan</channel>
   <channel site="pluto.tv" site_id="64c2201a2a7f2200089a0af2" lang="en" xmltv_id="">Let&apos;s Make a deal</channel>
   <channel site="pluto.tv" site_id="62b97c5f0d8c8e0007cf48b9" lang="en" xmltv_id="">Life &amp; Legend of Wyatt Earp</channel>
-  <channel site="pluto.tv" site_id="66166ccaaec96800080f6b59" lang="en" xmltv_id="">Massive Makers</channel>
+  <channel site="pluto.tv" site_id="66bb3212fe11e5000883ea6b" lang="en" xmltv_id="">Married... with Children</channel>
   <channel site="pluto.tv" site_id="63da365f60bc8f0008a50f44" lang="en" xmltv_id="">Matlock</channel>
   <channel site="pluto.tv" site_id="62fb6a4feb32e8000708f4d0" lang="en" xmltv_id="">Max &amp; Ruby</channel>
+  <channel site="pluto.tv" site_id="64e89cfc9c1e3900084ca663" lang="en" xmltv_id="">Mayday: Air Disaster</channel>
   <channel site="pluto.tv" site_id="62e92447ea1e2a000735ed33" lang="en" xmltv_id="">Midsomer Murders</channel>
   <channel site="pluto.tv" site_id="62ea43aa0c43540007f2db96" lang="en" xmltv_id="">Mission Impossible</channel>
   <channel site="pluto.tv" site_id="6540ff2d770cf1000866b90a" lang="en" xmltv_id="">Modern Marvels</channel>
@@ -112,41 +116,43 @@
   <channel site="pluto.tv" site_id="65cf8d7428730900087c5907" lang="en" xmltv_id="">Nashville</channel>
   <channel site="pluto.tv" site_id="62f4f5de1c100100075665ef" lang="en" xmltv_id="">NCIS</channel>
   <channel site="pluto.tv" site_id="66a106c8a79dea0008aa5ef3" lang="en" xmltv_id="">NCIS: Los Angeles</channel>
-  <channel site="pluto.tv" site_id="62bdb75c3afd1200079146a6" lang="en" xmltv_id="">Nick Jr. Pluto TV</channel>
+  <channel site="pluto.tv" site_id="62bdb75c3afd1200079146a6" lang="en" xmltv_id="NickJrPlutoTV.us@CA">Nick Jr. Pluto TV</channel>
   <channel site="pluto.tv" site_id="654ca7f92c1d3300086b608c" lang="en" xmltv_id="">NickToons</channel>
   <channel site="pluto.tv" site_id="62fb9ade112ca70007d8441d" lang="en" xmltv_id="">Nonstop Drama</channel>
   <channel site="pluto.tv" site_id="62e93d0a80d8d10008a0181e" lang="en" xmltv_id="">Nosey</channel>
   <channel site="pluto.tv" site_id="62e94ec74823db0007277a8f" lang="en" xmltv_id="">One Piece</channel>
-  <channel site="pluto.tv" site_id="6368e15a51e9560007c592ed" lang="en" xmltv_id="">Out TV Proud</channel>
+  <channel site="pluto.tv" site_id="6368e15a51e9560007c592ed" lang="en" xmltv_id="">OUTflix Movies</channel>
   <channel site="pluto.tv" site_id="63e20bd160bc8f0008b4c949" lang="en" xmltv_id="">Perry Mason</channel>
   <channel site="pluto.tv" site_id="66dad50215d2c60008d7afbd" lang="en" xmltv_id="">Pluto Classic Movie Westerns</channel>
-  <channel site="pluto.tv" site_id="66d717c6abec540008ba7eb5" lang="en" xmltv_id="">Pluto TV 80&apos;s Action</channel>
-  <channel site="pluto.tv" site_id="62ea3c2e4823db00072788ed" lang="en" xmltv_id="">Pluto TV Action Movies</channel>
-  <channel site="pluto.tv" site_id="653bdb0fbdf3cf00089cc395" lang="en" xmltv_id="">Pluto TV Adventure</channel>
-  <channel site="pluto.tv" site_id="68d25b620a0f3829b116bb6f" lang="en" xmltv_id="">Pluto TV Anime</channel>
-  <channel site="pluto.tv" site_id="638e11951177840007fdd6b2" lang="en" xmltv_id="">Pluto TV British Comedy</channel>
-  <channel site="pluto.tv" site_id="62e91af00c43540007f2bb43" lang="en" xmltv_id="">Pluto TV Classic TV Families</channel>
-  <channel site="pluto.tv" site_id="68d25c623175a2780d051d3a" lang="en" xmltv_id="">Pluto TV Classic TV Variety</channel>
-  <channel site="pluto.tv" site_id="62e92178946c8000079a3160" lang="en" xmltv_id="">Pluto TV Comedy</channel>
-  <channel site="pluto.tv" site_id="62ea3d24b8e02600071fa296" lang="en" xmltv_id="">Pluto TV Comedy Movies</channel>
-  <channel site="pluto.tv" site_id="62e92708a7ce600007b2676a" lang="en" xmltv_id="">Pluto TV Crime Drama</channel>
-  <channel site="pluto.tv" site_id="62bdb0bcd707b9000739d2e5" lang="en" xmltv_id="">Pluto TV Drama Movies</channel>
-  <channel site="pluto.tv" site_id="693adae77f21340ef9746f56" lang="en" xmltv_id="">Pluto TV FBI</channel>
-  <channel site="pluto.tv" site_id="66fe4f71b2ffb100080baae3" lang="en" xmltv_id="">Pluto TV Hibernation Movies</channel>
-  <channel site="pluto.tv" site_id="62ea3f8a38acc80007072d26" lang="en" xmltv_id="">Pluto TV Horror</channel>
-  <channel site="pluto.tv" site_id="62e92a58f3e4290007290c96" lang="en" xmltv_id="">Pluto TV Paranormal</channel>
-  <channel site="pluto.tv" site_id="67922858b83355184c699699" lang="en" xmltv_id="">Pluto TV Reality</channel>
-  <channel site="pluto.tv" site_id="630f1e6073bd1800082107f0" lang="en" xmltv_id="">Pluto TV Retro Crime Drama</channel>
-  <channel site="pluto.tv" site_id="6408b41b83f58900081d91ad" lang="en" xmltv_id="">Pluto TV Retro Kid</channel>
-  <channel site="pluto.tv" site_id="66166cb1307fa30008f275e7" lang="en" xmltv_id="">Pluto TV Sci-fi</channel>
-  <channel site="pluto.tv" site_id="639b4f75d3d35c0007d37b30" lang="en" xmltv_id="">Pluto TV Snooker 900</channel>
-  <channel site="pluto.tv" site_id="62e9289f8d467f0007fbc701" lang="en" xmltv_id="">Pluto TV True Crime</channel>
-  <channel site="pluto.tv" site_id="62bdacc96a3751000811842d" lang="en" xmltv_id="">Pluto TV Westerns</channel>
+  <channel site="pluto.tv" site_id="66d717c6abec540008ba7eb5" lang="en" xmltv_id="PlutoTV80sAction.us@CA">Pluto TV 80&apos;s Action</channel>
+  <channel site="pluto.tv" site_id="62ea3c2e4823db00072788ed" lang="en" xmltv_id="PlutoTVActionMovies.us@CA">Pluto TV Action Movies</channel>
+  <channel site="pluto.tv" site_id="653bdb0fbdf3cf00089cc395" lang="en" xmltv_id="PlutoTVAdventure.us@CA">Pluto TV Adventure</channel>
+  <channel site="pluto.tv" site_id="68d25b620a0f3829b116bb6f" lang="en" xmltv_id="PlutoTVAnime.us@CA">Pluto TV Anime</channel>
+  <channel site="pluto.tv" site_id="638e11951177840007fdd6b2" lang="en" xmltv_id="BritishComedy.us@CA">Pluto TV British Comedy</channel>
+  <channel site="pluto.tv" site_id="69c592dff0f1a7d732dc6e36" lang="en" xmltv_id="PlutoTVCars.us@CA">Pluto TV Cars</channel>
+  <channel site="pluto.tv" site_id="62e91af00c43540007f2bb43" lang="en" xmltv_id="ClassicTVFamilies.us@CA">Pluto TV Classic TV Families</channel>
+  <channel site="pluto.tv" site_id="68d25c623175a2780d051d3a" lang="en" xmltv_id="PlutoTVClassicTVVariety.us@CA">Pluto TV Classic TV Variety</channel>
+  <channel site="pluto.tv" site_id="62e92178946c8000079a3160" lang="en" xmltv_id="PlutoTVComedy.us@CA">Pluto TV Comedy</channel>
+  <channel site="pluto.tv" site_id="62ea3d24b8e02600071fa296" lang="en" xmltv_id="PlutoTVComedyMovies.us@CA">Pluto TV Comedy Movies</channel>
+  <channel site="pluto.tv" site_id="62e92708a7ce600007b2676a" lang="en" xmltv_id="PlutoTVCrimeDrama.us@CA">Pluto TV Crime Drama</channel>
+  <channel site="pluto.tv" site_id="62bdb0bcd707b9000739d2e5" lang="en" xmltv_id="PlutoTVDramaMovies.us@CA">Pluto TV Drama Movies</channel>
+  <channel site="pluto.tv" site_id="693adae77f21340ef9746f56" lang="en" xmltv_id="PlutoTVFBI.us@CA">Pluto TV FBI</channel>
+  <channel site="pluto.tv" site_id="62ea3f8a38acc80007072d26" lang="en" xmltv_id="PlutoTVHorror.us@CA">Pluto TV Horror</channel>
+  <channel site="pluto.tv" site_id="62e92a58f3e4290007290c96" lang="en" xmltv_id="PlutoTVParanormal.us@CA">Pluto TV Paranormal</channel>
+  <channel site="pluto.tv" site_id="67922858b83355184c699699" lang="en" xmltv_id="PlutoTVReality.us@CA">Pluto TV Reality</channel>
+  <channel site="pluto.tv" site_id="69a9ae4d3bd16a4ed04240d7" lang="en" xmltv_id="PlutoTVRetroActionMovies.us@CA">Pluto TV Retro Action Movies</channel>
+  <channel site="pluto.tv" site_id="69aee8a1acb7eb0bb68df641" lang="en" xmltv_id="PlutoTVRetroCrimeAction.us@CA">Pluto TV Retro Crime Action</channel>
+  <channel site="pluto.tv" site_id="630f1e6073bd1800082107f0" lang="en" xmltv_id="PlutoTVRetroCrimeDrama.us@CA">Pluto TV Retro Crime Drama</channel>
+  <channel site="pluto.tv" site_id="6408b41b83f58900081d91ad" lang="en" xmltv_id="PlutoTVRetroKid.us@CA">Pluto TV Retro Kid</channel>
+  <channel site="pluto.tv" site_id="66166cb1307fa30008f275e7" lang="en" xmltv_id="PlutoTVSciFi.us@CA">Pluto TV Sci-fi</channel>
+  <channel site="pluto.tv" site_id="639b4f75d3d35c0007d37b30" lang="en" xmltv_id="PlutoTVSnooker900.us@CA">Pluto TV Snooker 900</channel>
+  <channel site="pluto.tv" site_id="62e9289f8d467f0007fbc701" lang="en" xmltv_id="PlutoTVTrueCrime.us@CA">Pluto TV True Crime</channel>
+  <channel site="pluto.tv" site_id="62bdacc96a3751000811842d" lang="en" xmltv_id="PlutoTVWesterns.us@CA">Pluto TV Westerns</channel>
   <channel site="pluto.tv" site_id="66ebf4a88131f10008b74739" lang="en" xmltv_id="">Pokémon</channel>
   <channel site="pluto.tv" site_id="681b16158f97d58ff194a3a9" lang="en" xmltv_id="">Project Runway</channel>
+  <channel site="pluto.tv" site_id="696e61287d2afdec4ff2cb75" lang="en" xmltv_id="">Puto TV Classic TV Crime Drama</channel>
   <channel site="pluto.tv" site_id="64240d3d466225000827412b" lang="en" xmltv_id="">Qello Concerts</channel>
   <channel site="pluto.tv" site_id="65660223635c3c00086c2578" lang="en" xmltv_id="">Rawhide</channel>
-  <channel site="pluto.tv" site_id="64e89cfc9c1e3900084ca663" lang="en" xmltv_id="">Real Disaster Channel</channel>
   <channel site="pluto.tv" site_id="62fb61992443200008c59aef" lang="en" xmltv_id="">Reno Duo</channel>
   <channel site="pluto.tv" site_id="62fb6057f923fb0007eafb24" lang="en" xmltv_id="">Reno Rehab</channel>
   <channel site="pluto.tv" site_id="681b196b896dcc617f8558fe" lang="en" xmltv_id="">RigTV</channel>
@@ -154,7 +160,6 @@
   <channel site="pluto.tv" site_id="64a28c62d609b60008ca4933" lang="en" xmltv_id="">Rock Channel</channel>
   <channel site="pluto.tv" site_id="62fb6cd97b90e60007bc318a" lang="en" xmltv_id="">Romance 365</channel>
   <channel site="pluto.tv" site_id="6874ad2f3484d60732267ba8" lang="en" xmltv_id="">Scare Tactics</channel>
-  <channel site="pluto.tv" site_id="63920159db0dea0007dd9932" lang="en" xmltv_id="">Shades of Black</channel>
   <channel site="pluto.tv" site_id="62bdb1c5e25122000798ac79" lang="en" xmltv_id="">South Park</channel>
   <channel site="pluto.tv" site_id="65df4934f7f0af0008c32545" lang="en" xmltv_id="">South Park: Cartman Collection</channel>
   <channel site="pluto.tv" site_id="65df47f428730900089f83ac" lang="en" xmltv_id="">South Park: Kenny Collection</channel>
@@ -162,10 +167,9 @@
   <channel site="pluto.tv" site_id="65df48ba28730900089f8480" lang="en" xmltv_id="">South Park: Stan Collection</channel>
   <channel site="pluto.tv" site_id="663115d923e24f000843b49c" lang="en" xmltv_id="">South Park: Welcome to Canada!</channel>
   <channel site="pluto.tv" site_id="63f87d057533d80008ab9549" lang="en" xmltv_id="">SpongeBob SquarePants</channel>
-  <channel site="pluto.tv" site_id="66601d838ce3110008a9d7bf" lang="en" xmltv_id="">Star Trek: The Next Generation</channel>
-  <channel site="pluto.tv" site_id="66601e338ea5560008f7820e" lang="en" xmltv_id="">Star Trek: The Original Series</channel>
-  <channel site="pluto.tv" site_id="693a85c44b296a40bb0cb3b8" lang="en" xmltv_id="">Star Trek: Voyager</channel>
   <channel site="pluto.tv" site_id="693bf37b75432d022c85ef01" lang="en" xmltv_id="">Stargate</channel>
+  <channel site="pluto.tv" site_id="6654adb1f99922000854388c" lang="en" xmltv_id="">Summer of Movies</channel>
+  <channel site="pluto.tv" site_id="68d66a89064e0a4756f0b3fe" lang="en" xmltv_id="">SUMO Paris 2026</channel>
   <channel site="pluto.tv" site_id="6729d651c7626f0008b5dacf" lang="en" xmltv_id="">Super Channel Hearties</channel>
   <channel site="pluto.tv" site_id="6874ac742704ca31d815b8ed" lang="en" xmltv_id="">Survivor</channel>
   <channel site="pluto.tv" site_id="62e9186f8b685d000773cf58" lang="en" xmltv_id="">Taxi</channel>
@@ -175,7 +179,6 @@
   <channel site="pluto.tv" site_id="66e2a94d167a8b000813485d" lang="en" xmltv_id="">The Conners</channel>
   <channel site="pluto.tv" site_id="62e91384210bec0007ba714c" lang="en" xmltv_id="">The Dick Van Dyke Show</channel>
   <channel site="pluto.tv" site_id="66289716039f940008cf20a2" lang="en" xmltv_id="">The Dog Whisperer with Caesar Millan</channel>
-  <channel site="pluto.tv" site_id="62ea459c8d467f0007fbec86" lang="en" xmltv_id="">The Emeril Lagasse Channel</channel>
   <channel site="pluto.tv" site_id="66166ce7aec96800080f6bd3" lang="en" xmltv_id="">The Graham Norton Show</channel>
   <channel site="pluto.tv" site_id="62e92e536f28870007fa9b3a" lang="en" xmltv_id="">The Judge Judy Channel</channel>
   <channel site="pluto.tv" site_id="62e91563ce7ce300076f917e" lang="en" xmltv_id="">The Love Boat</channel>
@@ -192,14 +195,16 @@
   <channel site="pluto.tv" site_id="6540ff4f7312a40008297b59" lang="en" xmltv_id="">Tiny House Nation</channel>
   <channel site="pluto.tv" site_id="62ea4dadce395f0007086df2" lang="en" xmltv_id="">TNA Wrestling</channel>
   <channel site="pluto.tv" site_id="638e10220aa6a6000726979f" lang="en" xmltv_id="">Top Gear</channel>
-  <channel site="pluto.tv" site_id="62e93b8eb8e02600071f8b1d" lang="en" xmltv_id="">Total Crime</channel>
   <channel site="pluto.tv" site_id="62e95265c9fd030007268fb9" lang="en" xmltv_id="">Totally Turtles</channel>
   <channel site="pluto.tv" site_id="63da36dea995710008727d4d" lang="en" xmltv_id="">Transformers</channel>
+  <channel site="pluto.tv" site_id="69dd5d9dceddf13a1a7e39c2" lang="en" xmltv_id="">True Crime Now</channel>
   <channel site="pluto.tv" site_id="66ed3eb27358ce000830df49" lang="en" xmltv_id="">UFC</channel>
   <channel site="pluto.tv" site_id="62e924f2be69bc0007b7d53d" lang="en" xmltv_id="">Unsolved Mysteries</channel>
   <channel site="pluto.tv" site_id="635659445b4c4700076d2ad1" lang="en" xmltv_id="">Walker Texas Ranger</channel>
   <channel site="pluto.tv" site_id="688a44cf5d73ec0a3f49718b" lang="en" xmltv_id="">Weeds / Nurse Jackie</channel>
   <channel site="pluto.tv" site_id="6728c561daad7f000881ac83" lang="en" xmltv_id="">Wicked Tuna</channel>
+  <channel site="pluto.tv" site_id="6972546cc62833833a187f50" lang="en" xmltv_id="">Willow Sports</channel>
+  <channel site="pluto.tv" site_id="667d419415f35c0008942dd1" lang="en" xmltv_id="">World of Love Island</channel>
   <channel site="pluto.tv" site_id="62ea4b755e8e770007387b79" lang="en" xmltv_id="">World Poker Tour</channel>
   <channel site="pluto.tv" site_id="654102ed770cf1000866c307" lang="en" xmltv_id="">Yo! MTV</channel>
   <channel site="pluto.tv" site_id="66588931a3865300085ca800" lang="fr" xmltv_id="">Bob l&apos;éponge</channel>

@@ -7,10 +7,12 @@ dayjs.extend(utc)
 
 doFetch.setDebugger(debug)
 
-const API_PROGRAM_ENDPOINT = 'https://epg.orangetv.orange.es/epg/Smartphone_Android/1_PRO'
-const API_CHANNEL_ENDPOINT =
-  'https://pc.orangetv.orange.es/pc/api/rtv/v1/GetChannelList?bouquet_id=1&model_external_id=PC&filter_unsupported_channels=false&client=json'
+const API_PROGRAM_ENDPOINT = 'https://epg.orangetv.orange.es/epg/SmartTV_Android/1_PRO'
 const API_IMAGE_ENDPOINT = 'https://pc.orangetv.orange.es/pc/api/rtv/v1/images'
+const API_CHANNEL_ENDPOINT =
+  'https://pc.orangetv.orange.es/pc/api/rtv/v1/GetChannelList?bouquet_external_id=1_PRO&model_external_id=PC&filter_unsupported_channels=true&max_pr_level=8&client=json'
+
+const caches = {}
 
 module.exports = {
   site: 'orangetv.orange.es',
@@ -23,20 +25,32 @@ module.exports = {
       'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36'
     }
   },
-  url: function({ date, segment = 1 }) {
-    return `${API_PROGRAM_ENDPOINT}/${date.format('YYYYMMDD')}_8h_${segment}.json`
+  url({ date }) {
+    return segmentUrl(date)
   },
   async parser({ content, channel, date }) {
     const programs = []
     const items = parseItems(content, channel)
     if (items.length) {
-      const queues = [
-        module.exports.url({ date, segment: 2 }),
-        module.exports.url({ date, segment: 3 })
-      ]
-      await doFetch(queues, (url, res) => {
-        items.push(...parseItems(res, channel))
-      })
+      const queues = []
+      // fetch other segments or use cache if exist
+      for (let i = 2; i <= 3; i++) {
+        const url = segmentUrl(date, i)
+        if (caches[url] !== undefined) {
+          items.push(...caches[url])
+        } else {
+          queues.push({ url, params: module.exports.request })
+        }
+      }
+      if (queues.length) {
+        await doFetch(queues, (queue, res) => {
+          const segments = parseItems(res, channel)
+          items.push(...segments)
+          if (caches[queue.url] === undefined) {
+            caches[queue.url] = segments
+          }
+        })
+      }
       programs.push(
         ...items.map(item => {
           return {
@@ -71,6 +85,10 @@ module.exports = {
       }
     })
   }
+}
+
+function segmentUrl(date, segment = 1) {
+  return `${API_PROGRAM_ENDPOINT}/${date.format('YYYYMMDD')}_8h_${segment}.json`
 }
 
 function parseIcon(item) {

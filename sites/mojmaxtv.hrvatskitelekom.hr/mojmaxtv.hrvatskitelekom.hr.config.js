@@ -8,7 +8,7 @@ const sortBy = require('lodash.sortby')
 const NATCO_CODE = 'hr'
 const APP_LANGUAGE = 'hr'
 const APP_KEY = 'GWaBW4RTloLwpUgYVzOiW5zUxFLmoMj5'
-const APP_VERSION = '02.0.1080'
+const APP_VERSION = '02.0.1470'
 const NATCO_KEY = 'l2lyvGVbUm2EKJE96ImQgcc8PKMZWtbE'
 const SITE_URL = 'mojmaxtv.hrvatskitelekom.hr'
 
@@ -30,27 +30,12 @@ const SESSION_ID = crypto.randomUUID()
 
 const cached = {}
 
-const getHeaders = () => ({
-  'app_key': APP_KEY,
-  'app_version': APP_VERSION,
-  'device-id': DEVICE_ID,
-  'tenant': 'tv',
-  'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36',
-  'origin': `https://${SITE_URL}`,
-  'x-request-session-id': SESSION_ID,
-  'x-request-tracking-id': crypto.randomUUID(),
-  'x-tv-step': 'EPG_SCHEDULES',
-  'x-tv-flow': 'EPG',
-  'x-call-type': 'GUEST_USER',
-  'x-user-agent': `web|web|Chrome-133|${APP_VERSION}|1`
-})
-
 module.exports = {
   site: SITE_URL,
   url({ date }) {
     return `${API_ENDPOINT}/epg/channel/schedules?date=${date.format(
       'YYYY-MM-DD'
-    )}&hour_offset=0&hour_range=3&channelMap_id&filler=true&app_language=${APP_LANGUAGE}&natco_code=${NATCO_CODE}`
+    )}&hour_offset=0&hour_range=3&channelMap_id=&filler=true&app_language=${APP_LANGUAGE}&natco_code=${NATCO_CODE}`
   },
   request: {
     headers: getHeaders(),
@@ -90,11 +75,20 @@ module.exports = {
 
     // Fetch program details for each item
     const programs = []
-    for (let item of items) {
-      const detail = await loadProgramDetails(item)
-
-//      detectUnknownRoles(detail)
-
+    const queues = items
+      .filter(item => item.program_id)
+      .map(item => ({
+        url: `${API_ENDPOINT}/details/series/${item.program_id}?natco_code=${NATCO_CODE}`,
+        params: {
+          headers: getHeaders()
+        },
+        item
+      }))
+    await doFetch(queues, (queue, res) => {
+      queue.item.detail = res
+    })
+    items.forEach(item => {
+      const detail = item.detail || {}
       programs.push({
         title: item.description,
         sub_title: item.episode_name,
@@ -111,7 +105,7 @@ module.exports = {
         start: item.start_time,
         stop: item.end_time
       })
-    }
+    })
 
     return programs
   },
@@ -130,17 +124,6 @@ module.exports = {
       site_id: channel.station_id
     }))
   }
-}
-
-async function loadProgramDetails(item) {
-  if (!item.program_id) return {}
-  const url = `${API_ENDPOINT}/details/series/${item.program_id}?natco_code=${NATCO_CODE}`
-  const data = await axios
-    .get(url, { headers: getHeaders() })
-    .then(r => r.data)
-    .catch(console.log)
-
-  return data || {}
 }
 
 function parseData(content) {
@@ -189,4 +172,33 @@ function parseDescription(item) {
 function parseRoles(item, role_name) {
   if (!item.roles) return null
   return item.roles.filter(role => role.role_name === role_name).map(role => role.person_name)
+}
+
+function getHeaders() {
+  const res = {
+    'app_key': APP_KEY,
+    'app_version': APP_VERSION,
+    'device-id': DEVICE_ID,
+    'tenant': 'tv',
+    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36',
+    'origin': `https://${SITE_URL}`,
+    'x-call-type': 'GUEST_USER',
+    'x-call-time': new Date().getTime(),
+    'x-request-session-id': SESSION_ID,
+    'x-request-tracking-id': crypto.randomUUID(),
+    'x-tv-step': 'EPG_SCHEDULES',
+    'x-tv-flow': 'EPG',
+    'x-txn-id': null,
+    'x-user-agent': `web|web|Chrome-149|${APP_VERSION}|1`
+  }
+  const hash = crypto.createHash('sha256')
+  hash.update([
+    res['x-request-tracking-id'],
+    res['x-request-session-id'],
+    res['device-id'],
+    res['x-call-time']
+  ].join(''))
+  res['x-txn-id'] = hash.digest('hex').substr(0, 32)
+
+  return res
 }
