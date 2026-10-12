@@ -215,15 +215,9 @@ async function fetchCookiesOrToken(url) {
     }
   }
   await f()
-  if (awsWafTokenFetching) {
+  while (awsWafTokenFetching) {
     // delay other connection to finish if token is fetching
-    await new Promise(resolve => {
-      process.nextTick(() => {
-        if (!awsWafTokenFetching) {
-          resolve()
-        }
-      })
-    })
+    await new Promise(resolve => setTimeout(resolve, 100))
   }
 }
 
