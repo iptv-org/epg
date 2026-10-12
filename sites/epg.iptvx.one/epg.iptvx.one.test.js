@@ -36,6 +36,22 @@ it('can parse response', () => {
   })
 })
 
+it('can parse the next day from the cached file', () => {
+  const buffer = fs.readFileSync(path.resolve(__dirname, '__data__/content.xml.gz'))
+  parser({ date, buffer, channel })
+  const results = parser({ date: date.add(1, 'd'), buffer, channel, cached: true })
+
+  expect(results.length).toBe(35)
+  expect(results[0]).toMatchObject({
+    start: '2025-09-25T00:00:00.000Z',
+    stop: '2025-09-25T00:25:00.000Z',
+    title: 'Час новостей'
+  })
+
+  const unknown = parser({ date, buffer, channel: { site_id: 'unknown' }, cached: true })
+  expect(unknown).toMatchObject([])
+})
+
 it('can handle empty guide', () => {
   const result = parser({
     date,
