@@ -37,6 +37,29 @@ it('can parse response', () => {
   })
 })
 
+it('can parse other channels and days from the same file', () => {
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content.xml'))
+  const other = { ...channel, site_id: 'Plex/all#5e20b730f2f8d5003d739db7-6018913ea15130002b284191' }
+
+  const today = parser({ content, channel: other, date })
+  expect(today.length).toBe(113)
+  expect(today[0]).toMatchObject({
+    start: '2023-06-23T07:33:51.000Z',
+    stop: '2023-06-23T07:46:00.000Z'
+  })
+
+  const tomorrow = parser({ content, channel: other, date: date.add(1, 'd') })
+  expect(tomorrow.length).toBe(49)
+  expect(tomorrow[0]).toMatchObject({
+    start: '2023-06-24T00:07:33.000Z',
+    stop: '2023-06-24T00:19:59.000Z',
+    title: 'Mario Bautista ft. De La Guetto - #Maldeamores'
+  })
+
+  const unknown = parser({ content, channel: { ...channel, site_id: 'Plex/all#unknown' }, date })
+  expect(unknown).toMatchObject([])
+})
+
 it('can handle empty guide', () => {
   const result = parser({
     content: '404: Not Found',

@@ -178,8 +178,10 @@ function parseItems(content, channel, date) {
   try {
     const curr_day = date
     const next_day = date.add(1, 'd')
-    const [, site_id] = channel.site_id.split('#')
-    const data = parser.parse(content)
+    const [path, site_id] = channel.site_id.split('#')
+    const programmes = indexProgrammes(path, content).get(site_id)
+    if (!programmes) return []
+    const data = parser.parse(`<tv>${programmes.join('')}</tv>`)
     if (!data || !Array.isArray(data.programs)) return []
 
     return data.programs
@@ -196,4 +198,36 @@ function parseItems(content, channel, date) {
   } catch {
     return []
   }
+}
+
+// Each platform file is up to 100MB, and parsing all of it for every channel and day runs the
+// grabber out of memory. Index its <programme> elements by channel once per download instead, and
+// parse only the requested channel's.
+const indexes = new Map()
+
+function indexProgrammes(path, content) {
+  const xml = content.toString()
+  const cached = indexes.get(path)
+  if (cached && cached.length === xml.length) return cached.byChannel
+
+  const byChannel = new Map()
+  for (const [element] of xml.matchAll(/<programme\b[^>]*?(?:\/>|>[\s\S]*?<\/programme>)/g)) {
+    const match = element.match(/\bchannel="([^"]*)"/)
+    if (!match) continue
+    const id = unescapeXml(match[1])
+    if (!byChannel.has(id)) byChannel.set(id, [])
+    byChannel.get(id).push(element)
+  }
+  indexes.set(path, { length: xml.length, byChannel })
+
+  return byChannel
+}
+
+function unescapeXml(value) {
+  return value
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&apos;/g, "'")
+    .replace(/&amp;/g, '&')
 }
