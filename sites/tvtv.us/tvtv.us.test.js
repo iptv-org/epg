@@ -13,10 +13,7 @@ const date = dayjs.utc('2026-08-07', 'YYYY-MM-DD').startOf('d')
 const channel = { site_id: '10709' }
 
 it('can generate valid url', () => {
-  const result = url({ channel, date })
-  expect(result).toContain('https://www.tvtv.us/partial/source/')
-  expect(result).toContain('/10709')
-})
+  expect(result).toBe('https://www.tvtv.us/partial/source/1786060800000/10709')
 
 it('can parse response', async () => {
   const content = `<div class="grid-row" data-source="10709">
