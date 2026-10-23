@@ -1,8 +1,7 @@
 import { Storage, File } from '@freearhey/storage-js'
 import { Collection, Logger } from '@freearhey/core'
 import epgGrabber, { EPGGrabber } from 'epg-grabber'
-import { generateChannelsXML } from '../../core'
-import { pathToFileURL } from 'node:url'
+import { generateChannelsXML, loadJs } from '../../core'
 import { Channel } from '../../models'
 import { Command } from 'commander'
 
@@ -45,7 +44,7 @@ async function main() {
   const logger = new Logger()
   const file = new File(options.config)
   const dir = file.dirname()
-  const config = (await import(pathToFileURL(options.config).toString())).default
+  const config = await loadJs(options.config)
   const outputFilepath = options.output || `${dir}/${config.site}.channels.xml`
 
   const args: Record<string, string> = {}
