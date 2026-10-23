@@ -204,6 +204,15 @@ function parseItems(content) {
     }
     
     const $ = cheerio.load(json.html)
+    // Now the site gives 3 columns (prev day, current day, next day)
+    // Before it was 2 columns (current day, next day)
+    const broadcasts = $('.day-broadcast-list')
+
+    // Remove prev day column
+    if (broadcasts.length >= 3) {
+      broadcasts.first().remove()
+    }
+    
     const items = $('.broadcast-item').toArray()
     
     return items
