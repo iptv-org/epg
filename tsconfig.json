@@ -13,6 +13,12 @@
     "allowJs": true,
     "outDir": "./dist"
   },
-  "include": ["scripts/**/*", "tests/**/*"],
-  "exclude": ["node_modules", "dist"]
+  "include": [
+    "scripts/**/*",
+    "tests/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }

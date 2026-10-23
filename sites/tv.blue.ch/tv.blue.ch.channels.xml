@@ -34,12 +34,12 @@
   <channel site="tv.blue.ch" site_id="33" lang="ro" xmltv_id="B1.ro@SD">B1 TV</channel>
   <channel site="tv.blue.ch" site_id="34" lang="en" xmltv_id="BBCEntertainment.uk@SD">BBC Entertainment</channel>
   <channel site="tv.blue.ch" site_id="35" lang="en" xmltv_id="BBCFour.uk@UK">BBC Four</channel>
-  <channel site="tv.blue.ch" site_id="36" lang="en" xmltv_id="BBCNews.uk@Africa">BBC News</channel>
+  <channel site="tv.blue.ch" site_id="36" lang="en" xmltv_id="BBCNews.uk@UK">BBC News</channel>
   <channel site="tv.blue.ch" site_id="37" lang="en" xmltv_id="BBCOne.uk@London">BBC One</channel>
-  <channel site="tv.blue.ch" site_id="38" lang="en" xmltv_id="BBCThree.uk@SD">BBC Three</channel>
+  <channel site="tv.blue.ch" site_id="38" lang="en" xmltv_id="BBCThree.uk@HD">BBC Three</channel>
   <channel site="tv.blue.ch" site_id="39" lang="en" xmltv_id="BBCTwo.uk@England">BBC Two</channel>
   <channel site="tv.blue.ch" site_id="40" lang="en" xmltv_id="BBCNews.uk@Europe">BBC World News</channel>
-  <channel site="tv.blue.ch" site_id="41" lang="fr" xmltv_id="TeleSwizz.ch@SD">CARAC 5</channel>
+  <channel site="tv.blue.ch" site_id="41" lang="fr" xmltv_id="Carac5.ch@SD">CARAC 5</channel>
   <channel site="tv.blue.ch" site_id="42" lang="fr" xmltv_id="BFMBusiness.fr@SD">BFM Business</channel>
   <channel site="tv.blue.ch" site_id="43" lang="fr" xmltv_id="BFMTV.fr@SD">BFM TV</channel>
   <channel site="tv.blue.ch" site_id="44" lang="de" xmltv_id="BibelTV.de@SD">Bibel TV</channel>
@@ -79,7 +79,7 @@
   <channel site="tv.blue.ch" site_id="82" lang="fr" xmltv_id="CartoonNetworkCEE.uk@France">Cartoon Network F</channel>
   <channel site="tv.blue.ch" site_id="83" lang="de" xmltv_id="CartoonNetworkCEE.uk@Germany">Cartoon Network D</channel>
   <channel site="tv.blue.ch" site_id="84" lang="it" xmltv_id="Cartoonito.it@SD">cartoonito I</channel>
-  <channel site="tv.blue.ch" site_id="85" lang="en" xmltv_id="CBBC.uk@SD">BBC Three / CBBC</channel>
+  <channel site="tv.blue.ch" site_id="85" lang="en" xmltv_id="BBCThreeCBBC.uk@HD">BBC Three / CBBC</channel>
   <channel site="tv.blue.ch" site_id="86" lang="en" xmltv_id="CBeebies.uk@SD">CBeebies</channel>
   <channel site="tv.blue.ch" site_id="87" lang="en" xmltv_id="CGTN.cn@SD">CGTN</channel>
   <channel site="tv.blue.ch" site_id="88" lang="en" xmltv_id="CCTV4Europe.cn@SD">CCTV4</channel>
@@ -207,7 +207,7 @@
   <channel site="tv.blue.ch" site_id="223" lang="fr" xmltv_id="">ELLE GIRL</channel>
   <channel site="tv.blue.ch" site_id="224" lang="de" xmltv_id="Junior.de@SD">Junior</channel>
   <channel site="tv.blue.ch" site_id="225" lang="it" xmltv_id="K2.it@SD">K2</channel>
-  <channel site="tv.blue.ch" site_id="226" lang="de" xmltv_id="kabeleinsSchweiz.ch@SD">Kabel eins</channel>
+  <channel site="tv.blue.ch" site_id="226" lang="de" xmltv_id="kabeleins.de@SD">Kabel eins</channel>
   <channel site="tv.blue.ch" site_id="227" lang="de" xmltv_id="Kanal9.ch@SD">Kanal 9</channel>
   <channel site="tv.blue.ch" site_id="228" lang="de" xmltv_id="KiKA.de@SD">KiKa</channel>
   <channel site="tv.blue.ch" site_id="229" lang="ru" xmltv_id="NashKinomir.de@SD">Kinomir</channel>
@@ -225,7 +225,7 @@
   <channel site="tv.blue.ch" site_id="243" lang="it" xmltv_id="La5.it@SD">La5</channel>
   <channel site="tv.blue.ch" site_id="244" lang="fr" xmltv_id="LemanBleu.ch@SD">Léman Bleu Télévision</channel>
   <channel site="tv.blue.ch" site_id="245" lang="fr" xmltv_id="LEquipe.fr@SD">L&apos;Equipe</channel>
-  <channel site="tv.blue.ch" site_id="246" lang="fr" xmltv_id="LFMTV.ch@SD">CARAC 3</channel>
+  <channel site="tv.blue.ch" site_id="246" lang="fr" xmltv_id="Carac3.ch@SD">CARAC 3</channel>
   <channel site="tv.blue.ch" site_id="248" lang="fr" xmltv_id="">M6 Boutique</channel>
   <channel site="tv.blue.ch" site_id="249" lang="fr" xmltv_id="M6.ch@SD">M6</channel>
   <channel site="tv.blue.ch" site_id="250" lang="fr" xmltv_id="">RMC Sport Access 2</channel>
@@ -273,7 +273,7 @@
   <channel site="tv.blue.ch" site_id="297" lang="de" xmltv_id="ntv.de@SD">n-tv</channel>
   <channel site="tv.blue.ch" site_id="298" lang="fr" xmltv_id="RMCStory.fr@SD">RMC Story</channel>
   <channel site="tv.blue.ch" site_id="299" lang="it" xmltv_id="">Nuvola61</channel>
-  <channel site="tv.blue.ch" site_id="301" lang="fr" xmltv_id="OneTV.ch@SD">CARAC 2</channel>
+  <channel site="tv.blue.ch" site_id="301" lang="fr" xmltv_id="Carac2.ch@SD">CARAC 2</channel>
   <channel site="tv.blue.ch" site_id="302" lang="de" xmltv_id="ORF2.at@SD">ORF 2</channel>
   <channel site="tv.blue.ch" site_id="303" lang="de" xmltv_id="ORF1.at@SD">ORF 1</channel>
   <channel site="tv.blue.ch" site_id="304" lang="fr" xmltv_id="ParamountNetwork.fr@SD">Paramount F</channel>
@@ -324,10 +324,10 @@
   <channel site="tv.blue.ch" site_id="352" lang="es" xmltv_id="TelehitMusica.mx@SD">Telehit Music</channel>
   <channel site="tv.blue.ch" site_id="353" lang="fr" xmltv_id="RMCDecouverte.fr@SD">RMC Découverte</channel>
   <channel site="tv.blue.ch" site_id="354" lang="de" xmltv_id="RomanceTV.de@SD">Romance TV</channel>
-  <channel site="tv.blue.ch" site_id="355" lang="fr" xmltv_id="RougeTV.ch@SD">CARAC 1</channel>
+  <channel site="tv.blue.ch" site_id="355" lang="fr" xmltv_id="Carac1.ch@SD">CARAC 1</channel>
   <channel site="tv.blue.ch" site_id="356" lang="it" xmltv_id="RSILa1.ch@SD">RSI LA 1</channel>
   <channel site="tv.blue.ch" site_id="357" lang="it" xmltv_id="RSILa2.ch@SD">RSI LA 2</channel>
-  <channel site="tv.blue.ch" site_id="358" lang="sq" xmltv_id="RTK1.xk@SD">RTK 1</channel>
+  <channel site="tv.blue.ch" site_id="358" lang="sq" xmltv_id="RTK1Sat.xk@SD">RTK 1</channel>
   <channel site="tv.blue.ch" site_id="359" lang="de" xmltv_id="RTLZwei.de@SD">RTL ZWEI</channel>
   <channel site="tv.blue.ch" site_id="360" lang="de" xmltv_id="RTL.de@SD">RTL</channel>
   <channel site="tv.blue.ch" site_id="361" lang="de" xmltv_id="RTLCrime.de@SD">RTL Crime</channel>
@@ -619,7 +619,7 @@
   <channel site="tv.blue.ch" site_id="1079" lang="fr" xmltv_id="TraceUrban.fr@SD">Trace Urban</channel>
   <channel site="tv.blue.ch" site_id="1080" lang="de" xmltv_id="">Netflix</channel>
   <channel site="tv.blue.ch" site_id="1081" lang="fr" xmltv_id="AB3.be@SD">AB 3</channel>
-  <channel site="tv.blue.ch" site_id="1082" lang="fr" xmltv_id="TVSuissePlus.ch@SD">CARAC 4</channel>
+  <channel site="tv.blue.ch" site_id="1082" lang="fr" xmltv_id="Carac4.ch@SD">CARAC 4</channel>
   <channel site="tv.blue.ch" site_id="1083" lang="de" xmltv_id="SonyChannel.de@SD">AXN White</channel>
   <channel site="tv.blue.ch" site_id="1123" lang="de" xmltv_id="SkyOne.de@SD">Sky 1</channel>
   <channel site="tv.blue.ch" site_id="1124" lang="de" xmltv_id="UniversalTV.de@SD">Universal TV</channel>
@@ -671,7 +671,7 @@
   <channel site="tv.blue.ch" site_id="1297" lang="tr" xmltv_id="ShowMax.tr@SD">Showmax</channel>
   <channel site="tv.blue.ch" site_id="1325" lang="de" xmltv_id="">Session National Council</channel>
   <channel site="tv.blue.ch" site_id="1326" lang="de" xmltv_id="">Session Council Of States</channel>
-  <channel site="tv.blue.ch" site_id="1328" lang="fr" xmltv_id="GrandGeneveTV.fr@SD">ici TV Romandie</channel>
+  <channel site="tv.blue.ch" site_id="1328" lang="fr" xmltv_id="">ici TV Romandie</channel>
   <channel site="tv.blue.ch" site_id="1329" lang="fr" xmltv_id="WarnerTV.fr@SD">Warner TV</channel>
   <channel site="tv.blue.ch" site_id="1330" lang="fr" xmltv_id="Toonami.fr@SD">WarnerTV Next</channel>
   <channel site="tv.blue.ch" site_id="1331" lang="fr" xmltv_id="TVOnex.ch@SD">TV Onex</channel>
@@ -791,7 +791,7 @@
   <channel site="tv.blue.ch" site_id="1504" lang="de" xmltv_id="">TV Central</channel>
   <channel site="tv.blue.ch" site_id="1507" lang="en" xmltv_id="UDave.uk@SD">U&amp;Dave</channel>
   <channel site="tv.blue.ch" site_id="1509" lang="en" xmltv_id="FoxNewsChannel.us@SD">Fox News</channel>
-  <channel site="tv.blue.ch" site_id="1510" lang="de" xmltv_id="HGTV.us@East">Home &amp; Garden TV</channel>
+  <channel site="tv.blue.ch" site_id="1510" lang="de" xmltv_id="HGTV.de@SD">Home &amp; Garden TV</channel>
   <channel site="tv.blue.ch" site_id="1525" lang="en" xmltv_id="">MyMTV Music</channel>
   <channel site="tv.blue.ch" site_id="1527" lang="hu" xmltv_id="M2.hu@SD">M2</channel>
   <channel site="tv.blue.ch" site_id="1528" lang="hu" xmltv_id="M1.hu@SD">M1</channel>
