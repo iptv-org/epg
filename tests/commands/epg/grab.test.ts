@@ -100,11 +100,11 @@ describe('epg:grab', () => {
     )
 
     const outputString = pako.ungzip(fs.readFileSync('tests/__data__/output/guides/guide.xml.gz'), {
-      toText: true
+      to: 'string'
     })
     const expectedString = pako.ungzip(
       fs.readFileSync('tests/__data__/expected/epg_grab/gzip/guide.xml.gz'),
-      { toText: true }
+      { to: 'string' }
     )
 
     const output = new Set(outputString.split('\r\n'))
@@ -125,11 +125,11 @@ describe('epg:grab', () => {
     )
 
     const outputString = pako.ungzip(fs.readFileSync('tests/__data__/output/guides/guide.xml.gz'), {
-      toText: true
+      to: 'string'
     })
     const expectedString = pako.ungzip(
       fs.readFileSync('tests/__data__/expected/epg_grab/gzip/guide.xml.gz'),
-      { toText: true }
+      { to: 'string' }
     )
 
     const output = new Set(outputString.split('\r\n'))
@@ -152,12 +152,12 @@ describe('epg:grab', () => {
     const outputString = pako.ungzip(
       fs.readFileSync('tests/__data__/output/guides/custom.xml.gz'),
       {
-        toText: true
+        to: 'string'
       }
     )
     const expectedString = pako.ungzip(
       fs.readFileSync('tests/__data__/expected/epg_grab/gzip/guide.xml.gz'),
-      { toText: true }
+      { to: 'string' }
     )
 
     const output = new Set(outputString.split('\r\n'))

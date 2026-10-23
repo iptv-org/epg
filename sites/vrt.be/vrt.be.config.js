@@ -4,56 +4,16 @@ const utc = require('dayjs/plugin/utc')
 
 dayjs.extend(utc)
 
-const EPG_QUERY = `
-query EpgPage($pageId: ID!, $lazyItemCount: Int = 100) {
-  page(id: $pageId) {
-    ... on ElectronicProgramGuidePage {
-      previous {
-        ...epgListFragment
-      }
-      next {
-        ...epgListFragment
-      }
-    }
-  }
-}
-
-fragment epgListFragment on PaginatedTileList {
-  listId
-  paginatedItems(first: $lazyItemCount) {
-    edges {
-      cursor
-      node {
-        ...epgTileFragment
-      }
-    }
-    pageInfo {
-      hasNextPage
-      endCursor
-    }
-  }
-}
-
+const TILE_FRAGMENT = `
 fragment epgTileFragment on Tile {
   ... on ITile {
     title
     description
     primaryMeta {
-      value
       shortValue
     }
-    indexMeta {
+    statusMeta {
       value
-    }
-    progress {
-      durationInSeconds
-    }
-    status {
-      accessibilityLabel
-      text {
-        small
-        default
-      }
     }
     image {
       templateUrl
@@ -63,9 +23,78 @@ fragment epgTileFragment on Tile {
         link
       }
     }
+    actionItems {
+      action {
+        ... on LinkAction {
+          link
+        }
+      }
+    }
+    trackingData {
+      data
+    }
   }
 }
 `
+
+const EPG_QUERY = `
+query EpgPage(
+  $pageId: ID!
+  $previousAfter: ID
+  $nextAfter: ID
+  $skipPrevious: Boolean = false
+  $skipNext: Boolean = false
+  $skipCurrent: Boolean = false
+) {
+  page(id: $pageId) {
+    ... on ElectronicProgramGuidePage {
+      previous @skip(if: $skipPrevious) {
+        paginatedItems(first: 100, after: $previousAfter) {
+          ...epgListFragment
+        }
+      }
+      current @skip(if: $skipCurrent) {
+        objectId
+      }
+      next @skip(if: $skipNext) {
+        paginatedItems(first: 100, after: $nextAfter) {
+          ...epgListFragment
+        }
+      }
+    }
+  }
+}
+
+fragment epgListFragment on TileConnection {
+  edges {
+    cursor
+    node {
+      ...epgTileFragment
+    }
+  }
+  pageInfo {
+    hasNextPage
+    endCursor
+  }
+}
+${TILE_FRAGMENT}`
+
+const SNAPSHOT_QUERY = `
+query LiveSnapshot($listId: ID!) {
+  list(listId: $listId) {
+    ... on PaginatedTileList {
+      paginatedItems(first: 1) {
+        edges {
+          cursor
+          node {
+            ...epgTileFragment
+          }
+        }
+      }
+    }
+  }
+}
+${TILE_FRAGMENT}`
 
 const CHANNELS_QUERY = `
 query ProgramGuidePage($pageId: ID!) {
@@ -81,7 +110,6 @@ query ProgramGuidePage($pageId: ID!) {
             }
             action {
               ... on LinkAction {
-                link
                 linkTokens {
                   placeholder
                   value
@@ -95,7 +123,19 @@ query ProgramGuidePage($pageId: ID!) {
   }
 }
 `
+const SITE_URL = 'https://www.vrt.be'
+// Radio only: a programme's own page, read off the episode link.
+// /vrtmax/luister/radio/a/all-that-jazz~31-76/all-that-jazz~31-31884-0/ belongs to the season-less
+// /vrtmax/luister/radio/a/all-that-jazz~31-76/. Television does not need this — see parseProgramLink.
+const RADIO_PROGRAM_PATH_RE = /^(\/vrtmax\/luister\/[^/]+\/[^/]+\/[^/]+)\//
+// A tile's actions also hold "Delen" and, on the airing slot, the livestream; only these two shapes
+// are a page of a programme.
+const PROGRAM_LINK_RE = /^\/vrtmax\/(?:a-z|luister)\//
 const API_ENDPOINT = 'https://www.vrt.be/vrtnu-api/graphql/public/v1'
+// Where the airing program's snapshot list is asked for. The public schema answers it with the same
+// tile today (checked 2026-09-07); this stays on the schema it came from.
+const PRIVATE_API_ENDPOINT = 'https://www.vrt.be/vrtnu-api/graphql/v1'
+const MAX_PAGE_REQUESTS = 20
 const API_HEADERS = {
   'content-type': 'application/json',
   'user-agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0',
@@ -113,35 +153,53 @@ module.exports = {
       return {
         query: EPG_QUERY,
         variables: {
-          pageId: `/vrtmax/tv-gids/${channel.site_id}/${date.format('YYYY-MM-DD')}/`
+          pageId: buildPageId(channel, date)
         }
       }
     }
   },
-  parser({ content }) {
+  async parser({ content, channel, date }) {
     let data
     try {
       data = JSON.parse(content)
     } catch {
       return []
     }
-    if (!data.data?.page) return []
-
     const page = data.data?.page
-    const previousEdges = page.previous?.paginatedItems?.edges || []
-    const nextEdges = page.next?.paginatedItems?.edges || []
-    const edges = [...previousEdges, ...nextEdges]
+    if (!page) return []
 
-    const programs = []
-    edges.forEach((edge, index) => {
+    const pageId = buildPageId(channel, date)
+    const previousEdges = await loadAllEdges(page.previous?.paginatedItems, 'previous', pageId)
+    const nextEdges = await loadAllEdges(page.next?.paginatedItems, 'next', pageId)
+
+    const items = []
+    ;[...previousEdges, ...nextEdges].forEach(edge => {
       const node = edge.node
       if (!node || !node.title) return
 
       const start = parseCursor(edge.cursor)
       if (!start) return
 
-      const nextEdge = edges[index + 1]
-      const stop = nextEdge ? parseCursor(nextEdge.cursor) : parseFallbackStop(start, node)
+      items.push({ start, node, url: buildUrls(parseEpisodeUrl(node, start), parseProgramUrl(node)) })
+    })
+
+    const currentEdge = await loadCurrentEdge(page.current, [...previousEdges, ...nextEdges])
+    const currentStart = currentEdge?.node?.title ? parseCursor(currentEdge.cursor) : null
+    if (currentStart && !items.some(item => item.start.valueOf() === currentStart.valueOf())) {
+      items.push({
+        start: currentStart,
+        node: currentEdge.node,
+        url: resolveCurrentUrls(currentEdge.node, currentStart)
+      })
+    }
+
+    items.sort((a, b) => a.start.valueOf() - b.start.valueOf())
+
+    const programs = []
+    items.forEach((item, index) => {
+      const { node, start } = item
+      const nextItem = items[index + 1]
+      const stop = nextItem ? nextItem.start : parseFallbackStop(start, node)
       if (!stop || !stop.isAfter(start)) return
 
       programs.push({
@@ -150,6 +208,7 @@ module.exports = {
         season: parseSeason(node.primaryMeta),
         episode: parseEpisode(node.primaryMeta),
         image: node.image?.templateUrl || null,
+        url: item.url,
         start,
         stop
       })
@@ -205,24 +264,207 @@ function parseEpisode(primaryMeta) {
   return item ? parseInt(item.shortValue.replace('Afl.', ''), 10) : null
 }
 
+// A cursor looks like "o%0|n%5|epg-entry|o#349#044#0d#31786982400000#0#0#3%": "#"-separated fields,
+// each behind a type tag, "3" for a number and "0" for a string. The start time is field "d", epoch
+// in milliseconds. Older cursors held the same value as "|"-separated "d%1786420800000".
 function parseCursor(cursor) {
   if (!cursor) return null
-  const iso = cursor.replace(/^epg#[^#]+#/, '')
-  const d = dayjs.utc(iso)
+
+  // The tag has to be matched along with the number. Reading a bare run of 13 digits swallows the
+  // "3" in front instead of the last digit, which is a date 44 years out and folds ten days of
+  // guide onto one, because it also divides the value by ten.
+  const epoch = cursor.match(/d(?:%|#3)(\d{13})(?!\d)/)
+  if (!epoch) return null
+
+  const d = dayjs.utc(parseInt(epoch[1], 10))
   return d.isValid() ? d : null
 }
 
-function parseFallbackStop(start, node) {
-  // Try progress.durationInSeconds (radio)
-  const durationS = node.progress?.durationInSeconds
-  if (durationS) return start.add(durationS, 'second')
+// The channel's own code ("O8" for VRT 1, "44" for De Tijdloze) is the third "#" field; the older
+// "|"-separated cursors carried it second.
+function parseChannelCode(cursor) {
+  if (!cursor) return null
 
-  // Try status.text.small e.g. "16 min"
-  const statusSmall = node.status?.text?.small
-  if (statusSmall) {
-    const match = statusSmall.match(/(\d+)\s*min/)
-    if (match) return start.add(parseInt(match[1], 10), 'minute')
+  const tagged = cursor.match(/^[^#]*#[^#]*#0([^#]+)#/)
+  return tagged ? tagged[1] : cursor.split('|')[1] || null
+}
+
+function parseUrl(action) {
+  return toEpisodeUrl(action?.link)
+}
+
+// What a programme gets in the guide: the episode that airs as <url system="episode">, and the
+// programme it belongs to as <url system="program">. Both are named, so a reader picks the one it
+// wants rather than counting elements; the episode stays first for one that does not look. Either
+// half may be missing on its own.
+function buildUrls(episodeUrl, programUrl) {
+  const urls = []
+  if (episodeUrl) urls.push({ system: 'episode', value: episodeUrl })
+
+  const program = programUrl || toRadioProgramUrl(episodeUrl)
+  if (program) urls.push({ system: 'program', value: program })
+
+  return urls
+}
+
+// The tile's "Ga naar dit programma" action, which is the programme page VRT itself points at. A
+// television tile has it whether or not the episode exists yet, so a slot still to air — every news
+// bulletin, and anything else not published ahead of broadcast — keeps a programme url where before
+// it had none. Radio tiles carry no actionItems at all, and are the reason toRadioProgramUrl stays.
+function parseProgramLink(node) {
+  const links = (node?.actionItems || []).map(item => item?.action?.link)
+
+  return links.find(link => PROGRAM_LINK_RE.test(link)) || null
+}
+
+function parseProgramUrl(node) {
+  const link = parseProgramLink(node)
+
+  return link ? `${SITE_URL}${link}` : null
+}
+
+function toRadioProgramUrl(episodeUrl) {
+  const match = episodeUrl ? episodeUrl.replace(SITE_URL, '').match(RADIO_PROGRAM_PATH_RE) : null
+
+  return match ? `${SITE_URL}${match[1]}/` : null
+}
+
+// The tile's own action, and its tracking payload only where that action names no episode. The two
+// say the same thing wherever both are there -- byte for byte, on 275 of 275 tiles -- so the action
+// stays the authority and $tapu only fills in.
+//
+// **Only once the slot has started.** $tapu names the episode page whether or not it has been
+// published, and for a broadcast still to come that page does not exist yet: it answers as an error
+// page and the guide would be claiming there is something to watch. The page appears about a minute
+// into the broadcast -- the 13:00 news answered as an error page at 12:56 and as itself at 13:01,
+// Bumba the same -- and until then the slot keeps what the action gives it, which for anything with
+// a repeat behind it is the episode anyway. Nothing is lost by waiting: today's slots are grabbed
+// again every hour.
+function parseEpisodeUrl(node, start) {
+  const fromAction = parseUrl(node?.action)
+  if (fromAction || !hasStarted(start)) return fromAction
+
+  return parseTrackingEpisodeUrl(node)
+}
+
+function hasStarted(start) {
+  return !!start && start.valueOf() <= Date.now()
+}
+
+// $tapu, the page a tile stands for.
+function parseTrackingEpisodeUrl(node) {
+  let path
+  try {
+    path = JSON.parse(node?.trackingData?.data || '{}').$tapu
+  } catch {
+    return null
   }
 
-  return null
+  return toEpisodeUrl(path)
+}
+
+// Only a page that plays something is useful downstream. A tile can also link to the channel's
+// livestream (that is what whatever is airing does) or to an /vrtmax/event/ slot, whose id is just
+// the guide timeslot in base64 — neither one plays.
+function toEpisodeUrl(link) {
+  if (!link) return null
+  if (link.startsWith('/vrtmax/livestream/') || link.startsWith('/vrtmax/event/')) return null
+
+  return link.startsWith('http') ? link : `${SITE_URL}${link}`
+}
+
+function buildPageId(channel, date) {
+  return `/vrtmax/tv-gids/${channel.site_id}/${date.format('YYYY-MM-DD')}/`
+}
+
+// previous/next skip the airing program, and the guide only has it as a livestream tile without a
+// cursor. The channel's "snapshot" list starts at whatever is on right now and does carry one.
+async function loadCurrentEdge(current, edges) {
+  // That list ignores the requested date, so without this it would leak into every other day too.
+  if (!current) return null
+
+  const channelCode = parseChannelCode(edges[0]?.cursor)
+  if (!channelCode) return null
+
+  const listId = `$${Buffer.from(`o%31|snapshot|${channelCode}||||%`).toString('base64')}`
+  const data = await axios
+    .post(
+      PRIVATE_API_ENDPOINT,
+      { query: SNAPSHOT_QUERY, variables: { listId } },
+      { headers: API_HEADERS }
+    )
+    .then(r => r.data)
+    .catch(console.error)
+
+  return data?.data?.list?.paginatedItems?.edges?.[0] || null
+}
+
+// The airing slot's tile links to the livestream instead of to the episode, so parseEpisodeUrl
+// falls through to the tracking payload. It is given the start for the same reason every other
+// tile is: VRT's "what is on now" list runs a few minutes ahead of the schedule -- at 12:56 it
+// already answered with the 13:00 news -- and that slot has not started. Television gets its programme page from the tile's own
+// action as always; radio, which has no actions at all, derives it off the episode url.
+//
+// This replaced a search that matched the tile's whatsonId against the episode lists of its
+// program page. Measured over 18 tiles whose own action link gives the answer away, treated as if
+// they were airing (2026-09-07, three channels): trackingData named the right episode 18 times for
+// nothing, the search 10 times for 36 requests. The search never answered wrongly, it just did not
+// find repeats and anything outside the season it looked in -- Thuis, Tik Tak, Blokken. The page
+// $tapu names carries the tile's whatsonId back as $epci, so it is the same episode, not a
+// lookalike.
+function resolveCurrentUrls(node, start) {
+  const programLink = parseProgramLink(node)
+
+  return buildUrls(parseEpisodeUrl(node, start), programLink ? `${SITE_URL}${programLink}` : null)
+}
+
+
+// The API caps every list at 50 items, whatever `first` asks for, so busy channels like Ketnet need
+// to be paged through with the cursor from pageInfo.
+async function loadAllEdges(paginatedItems, listName, pageId) {
+  if (!paginatedItems) return []
+
+  const edges = [...(paginatedItems.edges || [])]
+  let pageInfo = paginatedItems.pageInfo
+  let requests = 0
+
+  while (pageInfo?.hasNextPage && pageInfo.endCursor && requests < MAX_PAGE_REQUESTS) {
+    requests++
+
+    const data = await axios
+      .post(
+        API_ENDPOINT,
+        {
+          query: EPG_QUERY,
+          variables: {
+            pageId,
+            [`${listName}After`]: pageInfo.endCursor,
+            skipPrevious: listName !== 'previous',
+            skipNext: listName !== 'next',
+            skipCurrent: true
+          }
+        },
+        { headers: API_HEADERS }
+      )
+      .then(r => r.data)
+      .catch(console.error)
+
+    const items = data?.data?.page?.[listName]?.paginatedItems
+    if (!items?.edges?.length) break
+
+    edges.push(...items.edges)
+    pageInfo = items.pageInfo
+  }
+
+  return edges
+}
+
+// The last program of the day has no successor to take its stop time from. statusMeta is the only
+// duration the API exposes for it, always formatted as "16 min".
+function parseFallbackStop(start, node) {
+  const statusMeta = node.statusMeta?.[0]?.value
+  if (!statusMeta) return null
+
+  const match = statusMeta.match(/(\d+)\s*min/)
+  return match ? start.add(parseInt(match[1], 10), 'minute') : null
 }
