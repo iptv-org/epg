@@ -10,7 +10,7 @@ doFetch.setDebugger(debug)
 const API_PROGRAM_ENDPOINT = 'https://epg.orangetv.orange.es/epg/SmartTV_Android/1_PRO'
 const API_IMAGE_ENDPOINT = 'https://pc.orangetv.orange.es/pc/api/rtv/v1/images'
 const API_CHANNEL_ENDPOINT =
-  'https://pc.orangetv.orange.es/pc/api/rtv/v1/GetChannelList?bouquet_external_id=1_PRO&model_external_id=PC&filter_unsupported_channels=true&max_pr_level=8&client=json'
+  'https://smarttv.orangetv.orange.es/stv/api/rtv/v1/GetChannelList?bouquet_external_id=1_PRO&model_external_id=SmartTV_Android&filter_unsupported_channels=true&max_pr_level=8&client=json'
 
 const caches = {}
 
@@ -37,17 +37,18 @@ module.exports = {
       for (let i = 2; i <= 3; i++) {
         const url = segmentUrl(date, i)
         if (caches[url] !== undefined) {
-          items.push(...caches[url])
+          items.push(...parseItems(caches[url], channel))
         } else {
           queues.push({ url, params: module.exports.request })
         }
       }
       if (queues.length) {
         await doFetch(queues, (queue, res) => {
-          const segments = parseItems(res, channel)
-          items.push(...segments)
+          // cache the unfiltered segment so every channel can be extracted from it
+          const json = typeof res === 'string' ? JSON.parse(res) : res
+          items.push(...parseItems(json, channel))
           if (caches[queue.url] === undefined) {
-            caches[queue.url] = segments
+            caches[queue.url] = json
           }
         })
       }
@@ -81,7 +82,8 @@ module.exports = {
       return {
         lang: 'es',
         name: item.name,
-        site_id: item.externalChannelId
+        site_id: item.externalChannelId,
+        logo: parseChannelLogo(item)
       }
     })
   }
@@ -97,6 +99,13 @@ function parseIcon(item) {
     if (cover) {
       return `${API_IMAGE_ENDPOINT}${cover.value}`
     }
+  }
+}
+
+function parseChannelLogo(item) {
+  const logo = (item.attachments || []).find(i => i.name === 'LOGO')
+  if (logo) {
+    return `${API_IMAGE_ENDPOINT}${logo.value}`
   }
 }
 
