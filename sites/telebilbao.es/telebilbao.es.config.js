@@ -24,7 +24,7 @@ module.exports = {
     let programs = []
     const items = parseItems(content, date)
     items.forEach(item => {
-      const prev = programs[programs.length - 1]
+      const prev = programs.at(-1)
       let start = parseStart(item, date)
       if (prev) {
         if (start.isBefore(prev.start)) {
@@ -50,12 +50,19 @@ function parseStart(item, date) {
   return dayjs.tz(`${date.format('YYYY-MM-DD')} ${item.time}`, 'YYYY-MM-DD HH:mm', 'Europe/Madrid')
 }
 
+function removeAccents(value) {
+  return value.normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+}
+
 function parseItems(content, date) {
   const $ = cheerio.load(content)
   const tableHtml = $('table.programacion').html()
   let tableArray = table2array(`<table>${tableHtml}</table>`)
-  const day = date.locale('es').format('dddd\nD MMMM').toUpperCase()
+  const day = removeAccents(date.locale('es').format('dddd\nD MMMM')).toUpperCase()
   if (!tableArray[0]) return []
+  for(let i = 0; i < tableArray[0].length; i++) {
+    tableArray[0][i] = removeAccents(tableArray[0][i]).toUpperCase()
+  }
   const indexOfColumn = tableArray[0].indexOf(day)
   tableArray.pop()
   const items = []
