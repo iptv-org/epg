@@ -72,8 +72,8 @@ module.exports = {
           subTitle: event.episodeName,
           description: event.longDescription ? event.longDescription : event.shortDescription,
           category: event.genres,
-          season: event.seasonNumber,
-          episode: event.episodeNumber,
+          season: parsePlausibleNumber(event.seasonNumber, 1000),
+          episode: parsePlausibleNumber(event.episodeNumber, 100000),
           country: event.countryOfOrigin,
           actor: event.actors,
           director: event.directors,
@@ -113,6 +113,13 @@ module.exports = {
 
     return channels
   }
+}
+
+function parsePlausibleNumber(value, max) {
+  // events without real season/episode data carry internal ids in these fields
+  // (e.g. seasonNumber 93850000, episodeNumber 513104549); the ziggogo.tv
+  // frontend hides such values, so drop anything outside a plausible range
+  return value > 0 && value < max ? value : null
 }
 
 function segmentUrl(date, segment = 0) {
