@@ -5,9 +5,9 @@ import { Collection } from '@freearhey/core'
 import { Channel } from '../models/channel'
 import { AxiosProxyConfig } from 'axios'
 import { Octokit } from '@octokit/core'
-import { pathToFileURL } from 'url'
 import { Issue } from '../models'
-import { URL } from 'node:url'
+import { URL, fileURLToPath } from 'node:url'
+import path from 'node:path'
 
 export function generateChannelsXML(channels: Collection<Channel>): string {
   let output = `<?xml version="1.0" encoding="UTF-8"?>${EOL}<channels>${EOL}`
@@ -33,13 +33,13 @@ export function escapeString(value: string, defaultValue = '') {
 
   const regex = new RegExp(
     '((?:[\0-\x08\x0B\f\x0E-\x1F\uFFFD\uFFFE\uFFFF]|[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?:[^\uD800-\uDBFF]|^)[\uDC00-\uDFFF]))|([\\x7F-\\x84]|[\\x86-\\x9F]|[\\uFDD0-\\uFDEF]|(?:\\uD83F[\\uDFFE\\uDFFF])|(?:\\uD87F[\\uDF' +
-      'FE\\uDFFF])|(?:\\uD8BF[\\uDFFE\\uDFFF])|(?:\\uD8FF[\\uDFFE\\uDFFF])|(?:\\uD93F[\\uDFFE\\uD' +
-      'FFF])|(?:\\uD97F[\\uDFFE\\uDFFF])|(?:\\uD9BF[\\uDFFE\\uDFFF])|(?:\\uD9FF[\\uDFFE\\uDFFF])' +
-      '|(?:\\uDA3F[\\uDFFE\\uDFFF])|(?:\\uDA7F[\\uDFFE\\uDFFF])|(?:\\uDABF[\\uDFFE\\uDFFF])|(?:\\' +
-      'uDAFF[\\uDFFE\\uDFFF])|(?:\\uDB3F[\\uDFFE\\uDFFF])|(?:\\uDB7F[\\uDFFE\\uDFFF])|(?:\\uDBBF' +
-      '[\\uDFFE\\uDFFF])|(?:\\uDBFF[\\uDFFE\\uDFFF])(?:[\\0-\\t\\x0B\\f\\x0E-\\u2027\\u202A-\\uD7FF\\' +
-      'uE000-\\uFFFF]|[\\uD800-\\uDBFF][\\uDC00-\\uDFFF]|[\\uD800-\\uDBFF](?![\\uDC00-\\uDFFF])|' +
-      '(?:[^\\uD800-\\uDBFF]|^)[\\uDC00-\\uDFFF]))',
+    'FE\\uDFFF])|(?:\\uD8BF[\\uDFFE\\uDFFF])|(?:\\uD8FF[\\uDFFE\\uDFFF])|(?:\\uD93F[\\uDFFE\\uD' +
+    'FFF])|(?:\\uD97F[\\uDFFE\\uDFFF])|(?:\\uD9BF[\\uDFFE\\uDFFF])|(?:\\uD9FF[\\uDFFE\\uDFFF])' +
+    '|(?:\\uDA3F[\\uDFFE\\uDFFF])|(?:\\uDA7F[\\uDFFE\\uDFFF])|(?:\\uDABF[\\uDFFE\\uDFFF])|(?:\\' +
+    'uDAFF[\\uDFFE\\uDFFF])|(?:\\uDB3F[\\uDFFE\\uDFFF])|(?:\\uDB7F[\\uDFFE\\uDFFF])|(?:\\uDBBF' +
+    '[\\uDFFE\\uDFFF])|(?:\\uDBFF[\\uDFFE\\uDFFF])(?:[\\0-\\t\\x0B\\f\\x0E-\\u2027\\u202A-\\uD7FF\\' +
+    'uE000-\\uFFFF]|[\\uD800-\\uDBFF][\\uDC00-\\uDFFF]|[\\uD800-\\uDBFF](?![\\uDC00-\\uDFFF])|' +
+    '(?:[^\\uD800-\\uDBFF]|^)[\\uDC00-\\uDFFF]))',
     'g'
   )
 
@@ -73,9 +73,13 @@ export function parseProxy(string: string): AxiosProxyConfig {
 }
 
 export async function loadJs(filepath: string) {
-  const fileUrl = pathToFileURL(filepath).toString()
+  const resolvedPath = filepath.startsWith('file://')
+    ? fileURLToPath(filepath)
+    : path.resolve(filepath)
 
-  return (await import(fileUrl)).default
+  const mod = require(resolvedPath)
+
+  return mod.default || mod
 }
 
 export async function loadIssues(props?: { labels: string[] | string }) {

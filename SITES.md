@@ -13,7 +13,7 @@
     <tr><td><a href="sites/allente.fi">allente.fi</a></td><td align="right">89</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/allente.no">allente.no</a></td><td align="right">119</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/allente.se">allente.se</a></td><td align="right">148</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/andorradifusio.ad">andorradifusio.ad</a></td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/andorradifusio.ad">andorradifusio.ad</a></td><td align="right">1</td><td align="center">🟢</td><td>https://github.com/iptv-org/epg/issues/3283</td></tr>
     <tr><td><a href="sites/anteltv.com.uy">anteltv.com.uy</a></td><td align="right">54</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/antennaeurope.gr">antennaeurope.gr</a></td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/antennapacific.gr">antennapacific.gr</a></td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
@@ -165,7 +165,7 @@
     <tr><td><a href="sites/skyperfectv.co.jp">skyperfectv.co.jp</a></td><td align="right">196</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/snrt.ma">snrt.ma</a></td><td align="right">11</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/sporttv.pt">sporttv.pt</a></td><td align="right">8</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/starhubtvplus.com">starhubtvplus.com</a></td><td align="right">118</td><td align="center">🟢</td><td>https://github.com/iptv-org/epg/issues/3262</td></tr>
+    <tr><td><a href="sites/starhubtvplus.com">starhubtvplus.com</a></td><td align="right">118</td><td align="center">🔴</td><td>https://github.com/iptv-org/epg/issues/3262</td></tr>
     <tr><td><a href="sites/startimestv.com">startimestv.com</a></td><td align="right">77</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/streamingtvguides.com">streamingtvguides.com</a></td><td align="right">3066</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/superguidatv.it">superguidatv.it</a></td><td align="right">204</td><td align="center">🟢</td><td></td></tr>
@@ -253,7 +253,7 @@
     <tr><td><a href="sites/zap.co.ao">zap.co.ao</a></td><td align="right">114</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/zap2it.com">zap2it.com</a></td><td align="right">595</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/zee5.com">zee5.com</a></td><td align="right">116</td><td align="center">🟢</td><td></td></tr>
-    <tr><td><a href="sites/ziggogo.tv">ziggogo.tv</a></td><td align="right">160</td><td align="center">🟡</td><td>https://github.com/iptv-org/epg/issues/2977</td></tr>
+    <tr><td><a href="sites/ziggogo.tv">ziggogo.tv</a></td><td align="right">160</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/znbc.co.zm">znbc.co.zm</a></td><td align="right">4</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/zuragt.mn">zuragt.mn</a></td><td align="right">34</td><td align="center">🟢</td><td></td></tr>
   </tbody>
