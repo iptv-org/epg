@@ -2,6 +2,7 @@ const { parser, url, request } = require('./ontvtonight.com.config.js')
 const fs = require('fs')
 const path = require('path')
 const axios = require('axios')
+const AwsWaf = require('@ntlab/awswaf')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
@@ -16,6 +17,7 @@ const channel = {
 }
 
 jest.mock('axios')
+jest.mock('@ntlab/awswaf')
 
 axios.head.mockImplementation(() => Promise.resolve({}))
 
@@ -98,4 +100,28 @@ it('can handle empty guide', () => {
     content: fs.readFileSync(path.resolve(__dirname, '__data__/no_content.html'), 'utf8')
   })
   expect(result).toMatchObject([])
+})
+
+it('waits for a WAF token being fetched by another request', async () => {
+  let release
+  AwsWaf.mockImplementation(() => ({
+    getToken: () => new Promise(resolve => (release = () => resolve('token')))
+  }))
+  const waf = new axios.AxiosError()
+  waf.status = 405
+  waf.response = {
+    data: '<script src="https://example.token.awswaf.com/example/challenge.js"></script>'
+  }
+  axios.head.mockImplementationOnce(() => Promise.reject(waf))
+  axios.get.mockImplementationOnce(() => Promise.reject(waf))
+  const tick = () => new Promise(resolve => setTimeout(resolve))
+
+  const first = request.headers({ channel, date })
+  await tick()
+  const second = request.headers({ channel, date })
+  await tick()
+  release()
+
+  const headers = await Promise.all([first, second])
+  headers.forEach(h => expect(h.cookie).toContain('aws-waf-token=token'))
 })

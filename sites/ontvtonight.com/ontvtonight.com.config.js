@@ -28,7 +28,7 @@ module.exports = {
     async headers({ date, channel }) {
       await fetchCookiesOrToken(getSiteUrl(channel, date))
 
-      return  getHeaders()
+      return getHeaders()
     }
   },
   parser({ content, date, channel }) {
@@ -84,10 +84,10 @@ module.exports = {
       const url = urls.shift()
       await fetchCookiesOrToken(url)
       const data = await axios.request({
-          url,
-          method: url.includes('tvbycity') ? 'get' : 'post',
-          headers: getHeaders()
-        })
+        url,
+        method: url.includes('tvbycity') ? 'get' : 'post',
+        headers: getHeaders()
+      })
         .then(res => res.data)
         .catch(() => {
           // ignore error
@@ -182,11 +182,9 @@ function getSiteUrl(channel, date) {
 }
 
 function getScheduleUrl(country, provider, region) {
-  return `${getBaseUrl(country)}/guide/schedule?provider=${
-    provider
-  }&region=${
-    region
-  }&TVperiod=Night&date=${dayjs().format('YYYY-MM-DD')}&st=0&u_time=0000&is_mobile=1`
+  return `${getBaseUrl(country)}/guide/schedule?provider=${provider
+    }&region=${region
+    }&TVperiod=Night&date=${dayjs().format('YYYY-MM-DD')}&st=0&u_time=0000&is_mobile=1`
 }
 
 async function fetchCookiesOrToken(url) {
@@ -203,7 +201,6 @@ async function fetchCookiesOrToken(url) {
       if (m === 'head') {
         await f('get')
       } else if (waf.data) {
-        console.log(`WAF triggered from ${url}, fetching token...`)
         awsWafTokenFetching = true
         try {
           await fetchWafToken(waf.data)
@@ -215,15 +212,9 @@ async function fetchCookiesOrToken(url) {
     }
   }
   await f()
-  if (awsWafTokenFetching) {
+  while (awsWafTokenFetching) {
     // delay other connection to finish if token is fetching
-    await new Promise(resolve => {
-      process.nextTick(() => {
-        if (!awsWafTokenFetching) {
-          resolve()
-        }
-      })
-    })
+    await new Promise(resolve => setTimeout(resolve, 100))
   }
 }
 
@@ -251,7 +242,6 @@ async function fetchWafToken(content) {
     const waf = new AwsWaf(endpoint, 'www.ontvtonight.com', headers['user-agent'])
     awsWafToken = await waf.getToken()
     if (awsWafToken) {
-      console.log(`Got WAF token ${awsWafToken}...`)
       cookies['aws-waf-token'] = awsWafToken
     }
   }
