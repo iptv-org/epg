@@ -15,7 +15,7 @@ const channel = {
 
 it('can generate valid url', () => {
   expect(url({ channel, date })).toBe(
-    'https://waf-starhub-metadata-api-p001.ifs.vubiquity.com/v3.1/epg/schedules?locale=${languages[channel.lang]}&locale_default=${languages[channel.lang]}&device=1&in_channel_id=${channel.site_id}&gt_end=${date.unix()}&lt_start=${date.add(1, 'd').unix()}&limit=100&page=1'
+    'https://waf-starhub-metadata-api-p001.sh-ifs.com/v3.1/epg/schedules?locale=en_US&locale_default=en_US&device=1&in_channel_id=d258444e-b66b-4cbe-88db-e09f31ab8a1f&gt_end=1733270400&lt_start=1733356800&limit=100&page=1'
   )
 })
 
