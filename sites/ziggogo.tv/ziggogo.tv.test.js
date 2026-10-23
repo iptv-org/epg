@@ -67,8 +67,10 @@ it('can parse response', async () => {
     description:
       'Homeshoppingprogramma waarin de kijker via de telefoon allerlei producten kan aanschaffen.',
     category: ["Consumentenprogramma's", 'Shoppen'],
-    season: 78610000,
-    episode: 492767862
+    // The source sends internal ids here rather than real numbering
+    // (season 78610000, episode 492767862), so they are dropped.
+    season: null,
+    episode: null
   })
   expect(result[19]).toMatchObject({
     start: '2026-05-30T22:44:00.000Z',
