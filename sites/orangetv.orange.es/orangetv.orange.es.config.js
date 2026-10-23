@@ -31,26 +31,25 @@ module.exports = {
   async parser({ content, channel, date }) {
     const programs = []
     const items = parseItems(content, channel)
-    if (items.length) {
-      const queues = []
-      // fetch other segments or use cache if exist
-      for (let i = 2; i <= 3; i++) {
-        const url = segmentUrl(date, i)
-        if (caches[url] !== undefined) {
-          items.push(...caches[url])
-        } else {
-          queues.push({ url, params: module.exports.request })
+    const queues = []
+    // fetch other segments or use cache if exist
+    for (let i = 2; i <= 3; i++) {
+      const url = segmentUrl(date, i)
+      if (caches[url] !== undefined) {
+        items.push(...parseItems(caches[url], channel))
+      } else {
+        queues.push({ url, params: module.exports.request })
+      }
+    }
+    if (queues.length) {
+      await doFetch(queues, (queue, res) => {
+        if (caches[queue.url] === undefined) {
+          caches[queue.url] = res
         }
-      }
-      if (queues.length) {
-        await doFetch(queues, (queue, res) => {
-          const segments = parseItems(res, channel)
-          items.push(...segments)
-          if (caches[queue.url] === undefined) {
-            caches[queue.url] = segments
-          }
-        })
-      }
+        items.push(...parseItems(res, channel))
+      })
+    }
+    if (items.length) {
       programs.push(
         ...items.map(item => {
           return {
@@ -110,7 +109,7 @@ function parseItems(content, channel) {
     typeof content === 'string' ? JSON.parse(content) : Array.isArray(content) ? content : []
   if (Array.isArray(json)) {
     json
-      .filter(i => i.channelExternalId === channel.site_id)
+      .filter(i => String(i.channelExternalId) === String(channel.site_id))
       .forEach(i => {
         result.push(...i.programs)
       })
