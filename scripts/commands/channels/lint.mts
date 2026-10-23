@@ -1,4 +1,5 @@
-import { XmlDocument, XsdValidator, XmlValidateError, ErrorDetail } from 'libxml2-wasm'
+import { XmlDocument, XsdValidator, XmlValidateError } from 'libxml2-wasm'
+import type { ErrorDetail } from 'libxml2-wasm'
 import { Storage, File } from '@freearhey/storage-js'
 import { program } from 'commander'
 import chalk from 'chalk'
