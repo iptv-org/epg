@@ -149,11 +149,11 @@ function parseStart($item, date, channel) {
 }
 
 function parseTitle($item) {
-  return $item.find('td:nth-child(2) > h5').text().trim()
+  return $item.find('td:nth-child(2) h5').text().trim()
 }
 
 function parseDescription($item) {
-  return $item.find('td:nth-child(2) > h6').text().trim()
+  return $item.find('td:nth-child(2) h6').text().trim()
 }
 
 function parseItems(content) {
