@@ -1,15 +1,10 @@
-# https://docs.github.com/en/get-started/git-basics/configuring-git-to-handle-line-endings
+# https://docs.github.com/en/get-started/git-basics/configuring-git-to-handle-line-endings[cite: 1]
 
-# Set the default behavior, in case people don't have core.autocrlf set
+# 1. Let Git automatically manage text files (converts to LF in repo, CRLF on Windows checkout)
 * text=auto
 
-# Files that will always have CRLF line endings on checkout
-*.js text eol=crlf
-*.mjs text eol=crlf
-*.ts text eol=crlf
-*.xml text eol=crlf
-*.md text eol=crlf
-workers.txt text eol=crlf
+# 2. Prevent any conversion/normalization in ALL __data__ folders anywhere in the repo
+**/__data__/** -text
 
-# Files that will always have LF line endings on checkout
+# 3. Force shell scripts to always use LF (prevents "command not found" errors on CI/CD or Linux)
 *.sh text eol=lf
