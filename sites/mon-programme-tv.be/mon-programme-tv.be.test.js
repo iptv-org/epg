@@ -61,3 +61,19 @@ it('can handle empty guide', () => {
 
   expect(results).toMatchObject([])
 })
+
+it('ignores the evening highlights at the top of the page', () => {
+  const content = fs.readFileSync(path.resolve(__dirname, '__data__/content_with_highlights.html'))
+  const results = parser({ content, date: dayjs.utc('2026-10-18', 'YYYY-MM-DD').startOf('d') }).map(p => ({
+    start: p.start.toJSON(),
+    title: p.title
+  }))
+
+  expect(results).toMatchObject([
+    { start: '2026-10-18T08:00:00.000Z', title: 'Automoto' },
+    { start: '2026-10-18T08:50:00.000Z', title: 'Téléfoot' },
+    { start: '2026-10-18T19:10:00.000Z', title: 'Doctor Strange in the Multiverse of Madness' },
+    { start: '2026-10-18T21:25:00.000Z', title: 'Creed 3' },
+    { start: '2026-10-18T23:30:00.000Z', title: 'Programmes de la nuit' }
+  ])
+})
