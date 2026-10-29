@@ -33,7 +33,6 @@ export default [
       '@typescript-eslint/no-require-imports': 'off',
       '@typescript-eslint/no-var-requires': 'off',
       'no-case-declarations': 'off',
-      '@stylistic/linebreak-style': ['error', 'windows'],
       quotes: ['error', 'single', { avoidEscape: true }],
       semi: ['error', 'never']
     }
