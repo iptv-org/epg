@@ -276,8 +276,7 @@ async function main() {
         config,
         (context: epgGrabber.Types.GrabCallbackContext, error: Error | null) => {
           logger.info(
-            `  [${i}/${total}] ${context.channel.site} (${context.channel.lang}) - ${
-              context.channel.xmltv_id
+            `  [${i}/${total}] ${context.channel.site} (${context.channel.lang}) - ${context.channel.xmltv_id
             } - ${context.date.format('MMM D, YYYY')} (${context.programs.length} programs)`
           )
           if (i < total) i++
@@ -360,7 +359,7 @@ function getLogoForChannel(channel: Channel): string | null {
 
 function getCircularReplacer() {
   const seen = new WeakSet()
-  return (key: string, value: any) => {
+  return (key: string, value: unknown) => {
     if (typeof value === 'object' && value !== null) {
       if (seen.has(value)) {
         return '[Circular]'
