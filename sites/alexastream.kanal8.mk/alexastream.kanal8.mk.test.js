@@ -6,6 +6,7 @@ const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(utc)
 dayjs.extend(customParseFormat)
 
+const date = dayjs.utc('2026-11-16', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: 'Kanal8.mk',
   xmltv_id: 'Kanal8.mk@HD'
@@ -27,7 +28,7 @@ it('can parse response', () => {
   </programme>
 </tv>`
 
-  const results = parser({ content, channel }).map(p => {
+  const results = parser({ content, channel, date }).map(p => {
     p.start = p.start.toJSON()
     p.stop = p.stop.toJSON()
     return p
