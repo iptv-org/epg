@@ -11,6 +11,7 @@ raw.githubusercontent.com/StrangeDrVN/epg/public/output
 jtbsclassic.dpdns.org/epg/
 epg.kanya.io/us/
 epg.kanya.io/ke/
+broadcastatlas.com
 </td><td align="center">🔴</td><td align="right">0</td><td align="left">-</td><td>-</td></tr>
   </tbody>
 </table>
