@@ -8,6 +8,7 @@
     <tr><td><a href="sites/9tv.co.il">9tv.co.il</a></td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/abc.net.au">abc.net.au</a></td><td align="right">548</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/airtelxstream.in">airtelxstream.in</a></td><td align="right">718</td><td align="center">🟢</td><td></td></tr>
+    <tr><td><a href="sites/alexastream.kanal8.mk">alexastream.kanal8.mk</a></td><td align="right">1</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/aljazeera.com">aljazeera.com</a></td><td align="right">3</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/allente.dk">allente.dk</a></td><td align="right">100</td><td align="center">🟢</td><td></td></tr>
     <tr><td><a href="sites/allente.fi">allente.fi</a></td><td align="right">89</td><td align="center">🟢</td><td></td></tr>
