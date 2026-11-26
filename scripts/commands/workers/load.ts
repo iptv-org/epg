@@ -16,7 +16,7 @@ async function main() {
 
   logger.info('loading workers.txt...')
   const workersTxt = await rootStorage.load('workers.txt')
-  const hosts = workersTxt.split('\r\n')
+  const hosts = workersTxt.split(/\r?\n/)
 
   hosts.forEach((host: string) => {
     if (!host) return
