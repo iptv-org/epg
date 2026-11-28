@@ -9,9 +9,9 @@
     <tr><td>raw.githubusercontent.com/StrangeDrVN/epg/public/output</td><td align="center">🔴</td><td align="right">0</td><td align="left">-</td><td>-</td></tr>
     <tr><td>194.163.157.137:8080</td><td align="center">🔴</td><td align="right">0</td><td align="left">-</td><td>-</td></tr>
     <tr><td>jtbsclassic.dpdns.org/epg/</td><td align="center">🔴</td><td align="right">0</td><td align="left">-</td><td>-</td></tr>
-    <tr><td>epg.kanya.io/us/</td><td align="center">🟢</td><td align="right">1401</td><td align="left">4 days ago</td><td><a href="https://epg.kanya.io/us/guide.xml">XML</a> | <a href="https://epg.kanya.io/us/guide.xml.gz">GZIP</a></td></tr>
-    <tr><td>epg.kanya.io/ke/</td><td align="center">🟢</td><td align="right">157</td><td align="left">19 days ago</td><td><a href="https://epg.kanya.io/ke/guide.xml">XML</a> | <a href="https://epg.kanya.io/ke/guide.xml.gz">GZIP</a></td></tr>
-    <tr><td>broadcastatlas.com</td><td align="center">🟢</td><td align="right">355</td><td align="left">20 minutes ago</td><td><a href="https://broadcastatlas.com/guide.xml">XML</a> | <a href="https://broadcastatlas.com/guide.xml.gz">GZIP</a></td></tr>
+    <tr><td>epg.kanya.io/us/</td><td align="center">🟢</td><td align="right">1401</td><td align="left">5 days ago</td><td><a href="https://epg.kanya.io/us/guide.xml">XML</a> | <a href="https://epg.kanya.io/us/guide.xml.gz">GZIP</a></td></tr>
+    <tr><td>epg.kanya.io/ke/</td><td align="center">🟢</td><td align="right">157</td><td align="left">20 days ago</td><td><a href="https://epg.kanya.io/ke/guide.xml">XML</a> | <a href="https://epg.kanya.io/ke/guide.xml.gz">GZIP</a></td></tr>
+    <tr><td>broadcastatlas.com</td><td align="center">🟢</td><td align="right">352</td><td align="left">an hour ago</td><td><a href="https://broadcastatlas.com/guide.xml">XML</a> | <a href="https://broadcastatlas.com/guide.xml.gz">GZIP</a></td></tr>
   </tbody>
 </table>
 
